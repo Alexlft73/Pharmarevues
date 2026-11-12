@@ -241,6 +241,35 @@ html.dark #recostab .rdt{color:#7dd3fc}
 html.dark #recostab .rlinks{border-top-color:var(--line)}
 html.dark #recostab .rlinks a{color:#38bdf8}
 html.dark #recostab .cfoot{color:var(--muted);border-top-color:var(--line)}
+/* ==== CSS MODULE PÉDIATRIE (#pedtab) ==== */
+#pedtab .pbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:12px 0}
+#pedtab .pbar label{font-weight:700;font-size:.92rem;color:#0f172a}
+#pedtab #pds{width:110px;padding:9px 12px;border:1.5px solid #e2e8f0;border-radius:10px;font-size:.95rem;font-weight:700;color:#0f172a}
+#pedtab .punit{font-weight:700;color:#64748b;margin-right:8px}
+#pedtab .phint{font-size:.82rem;color:#64748b}
+#pedtab .pscroll{overflow-x:auto;border:1px solid #e2e8f0;border-radius:12px;background:#fff}
+#pedtab table.ptab{width:100%;border-collapse:collapse;font-size:.84rem;min-width:900px}
+#pedtab .ptab th{background:#0f766e;color:#fff;text-align:left;padding:10px 12px;font-size:.78rem;letter-spacing:.3px;white-space:nowrap}
+#pedtab .ptab td{padding:10px 12px;border-top:1px solid #e2e8f0;vertical-align:top;color:#334155;line-height:1.5}
+#pedtab .ptab tr:nth-child(even) td{background:#f8fafc}
+#pedtab .psrc{font-size:.7rem;color:#0f766e;text-decoration:underline;text-underline-offset:2px;margin-left:4px;white-space:nowrap}
+#pedtab .pdc{white-space:nowrap;font-weight:700;color:#0f172a}
+#pedtab .pdim{font-weight:400;color:#94a3b8;font-size:.78rem;white-space:normal}
+#pedtab .pcap{color:#b91c1c;font-weight:700;margin-top:3px;white-space:normal}
+#pedtab .pnote{font-size:.78rem;color:#475569}
+#pedtab .pdis{margin:10px 2px 0;font-size:.8rem;color:#b91c1c;background:#fef2f2;border:1px solid #fecaca;border-radius:8px;padding:8px 11px;line-height:1.5}
+#pedtab .cfoot{margin-top:20px;font-size:.8rem;color:#64748b;text-align:center;border-top:1px solid #e2e8f0;padding-top:12px}
+html.dark #pedtab .pbar label{color:var(--ink)}
+html.dark #pedtab #pds{background:var(--card);color:var(--ink);border-color:var(--line)}
+html.dark #pedtab .punit,html.dark #pedtab .phint{color:var(--muted)}
+html.dark #pedtab .pscroll{background:var(--card);border-color:var(--line)}
+html.dark #pedtab .ptab td{color:var(--muted);border-top-color:var(--line)}
+html.dark #pedtab .ptab tr:nth-child(even) td{background:rgba(148,163,184,.06)}
+html.dark #pedtab .pdc{color:var(--ink)}
+html.dark #pedtab .psrc{color:#38bdf8}
+html.dark #pedtab .pnote{color:var(--muted)}
+html.dark #pedtab .pdis{background:rgba(220,38,38,.12);border-color:rgba(220,38,38,.35);color:#fca5a5}
+html.dark #pedtab .cfoot{color:var(--muted);border-top-color:var(--line)}
 
 </style>
 <style id="pv-skin">
@@ -415,6 +444,7 @@ html.dark #classestab .cfoot{color:var(--muted);border-top-color:var(--line)}
       <button class="tab on" id="btn-revues" onclick="showTab('revues')">📚 Mes revues</button>
       <button class="tab" id="btn-classes" onclick="showTab('classes')">💊 Classes de médicaments</button>
       <button class="tab" id="btn-recos" onclick="showTab('recos')">📋 Recommandations</button>
+      <button class="tab" id="btn-pedi" onclick="showTab('pedi')">🧸 Pédiatrie mg/kg</button>
     </nav>
   </div>
 </header>
@@ -522,6 +552,17 @@ html.dark #classestab .cfoot{color:var(--muted);border-top-color:var(--line)}
   <div id="rchips"></div>
   <div id="rgrid"></div>
   <p class="cfoot">📋 Recommandations &amp; guidelines — sociétés savantes et agences (HAS, ESC, GINA, GOLD, ADA, EASL, EULAR, ESMO, KDIGO, NICE, EuroGuiDerm/EDF, CNGOF, AFU, SFORL). Documents sources accessibles en un clic — toujours se référer au texte intégral en vigueur.</p>
+</section>
+
+<script><section id="pedtab" class="panel" style="display:none">
+  <div class="pbar">
+    <label for="pds">⚖️ Poids de l'enfant</label>
+    <input id="pds" type="text" inputmode="decimal" placeholder="ex. 12,5">
+    <span class="punit">kg</span>
+    <span class="phint">→ doses par prise et par jour calculées automatiquement</span>
+  </div>
+  <div id="pdgrid"></div>
+  <p class="cfoot">🧸 Doses indicatives issues des fiches HAS « Choix et durées d'antibiothérapies », des RCP (ANSM) et du Vidal — outil d'aide à la <b>vérification d'ordonnance</b> : toujours confronter au RCP de la spécialité délivrée, à l'âge de l'enfant et au contexte clinique (allergies, fonction rénale, poids extrêmes).</p>
 </section>
 
 <script>
@@ -923,15 +964,18 @@ document.getElementById("fcoi").addEventListener("change", e=>{ state.coi = e.ta
 document.getElementById("fannee").addEventListener("change", e=>{ state.annee = e.target.value; apply(); });
 
 function showTab(t){
-  const rev = (t==="revues"), cl = (t==="classes"), rc = (t==="recos");
+  const rev = (t==="revues"), cl = (t==="classes"), rc = (t==="recos"), pd = (t==="pedi");
   document.getElementById("toolrev").style.display = rev ? "" : "none";
   document.getElementById("legendrev").style.display = rev ? "" : "none";
   document.getElementById("mainrev").style.display = rev ? "" : "none";
   document.getElementById("classestab").style.display = cl ? "" : "none";
   document.getElementById("recostab").style.display = rc ? "" : "none";
+  document.getElementById("pedtab").style.display = pd ? "" : "none";
   document.getElementById("btn-revues").className = "tab" + (rev ? " on" : "");
   document.getElementById("btn-classes").className = "tab" + (cl ? " on" : "");
   document.getElementById("btn-recos").className = "tab" + (rc ? " on" : "");
+  document.getElementById("btn-pedi").className = "tab" + (pd ? " on" : "");
+  if (pd) { try { document.getElementById("pds").focus(); } catch(e){} }
 }
 
 function esc(s){ return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;"); }
@@ -1357,6 +1401,93 @@ document.getElementById("rq").addEventListener("input", e=>{ rstate.q = e.target
 rrenderChips();
 rgo();
 /* ==== FIN MODULE RECO ==== */
+
+/* ==== MODULE PÉDIATRIE mg/kg (onglet 4) ==== */
+const PEDI = [
+{d:"Paracétamol", ind:"Douleur / fièvre", mg:[15,15], f:4, cap:3000, capTxt:"3 g/j",
+ pos:"<b>15 mg/kg/prise</b><br>× 4 prises/j (délai ≥ 6 h)<br>Max 60 mg/kg/j",
+ n:"Toutes tranches d'âge (nourrisson &lt; 3 mois : avis médical). Plafond adulte 3 g/j.",
+ src:[["Vidal","https://www.vidal.fr/actualites/30064-penurie-de-paracetamol-pediatrique-les-medicaments-classes-selon-le-poids-de-l-enfant.html"],["Pharmacomedicale","https://pharmacomedicale.org/medicaments/par-specialites/item/paracetamol"]]},
+{d:"Ibuprofène", ind:"Douleur / fièvre", mg:[7,10], f:3,
+ pos:"<b>7–10 mg/kg/prise</b><br>× 3 prises/j (délai ≥ 6 h)<br>20–30 mg/kg/j",
+ n:"Nourrisson <b>≥ 3 mois ET &gt; 5 kg</b> uniquement. Jamais 2 AINS associés ; prudence si varicelle, déshydratation, insuffisance rénale.",
+ src:[["RCP (BDN)","https://base-donnees-publique.medicaments.gouv.fr/medicament/61136221/extrait"]]},
+{d:"Amoxicilline", ind:"Angine aiguë (≥ 3 ans, TDR SGA +)", mg:[25,25], f:2, cap:2000, capTxt:"2 g/j",
+ pos:"<b>25 mg/kg/prise</b><br>× 2 prises/j (50 mg/kg/j)<br>Max 2 g/j",
+ n:"1re intention — <b>6 jours</b> (fiche HAS maj. mai 2025).",
+ src:[["HAS","https://www.has-sante.fr/jcms/p_3529229/fr/choix-et-durees-d-antibiotherapies-angine-aigue-de-l-enfant"]]},
+{d:"Amoxicilline", ind:"Otite moyenne aiguë purulente", mg:[40,40], f:2, cap:3000, capTxt:"3 g/j",
+ pos:"<b>40 mg/kg/prise</b><br>× 2 prises/j (80 mg/kg/j)<br>Max 3 g/j",
+ n:"3 mois–&lt;2 ans : <b>10 jours</b> · &gt;2 ans, symptômes importants : <b>5 jours</b> (10 j si otorrhée ou récidive) · &gt;2 ans, symptômes modérés : pas d'antibiotique d'emblée.",
+ src:[["HAS","https://www.has-sante.fr/jcms/c_2722749/fr/choix-et-durees-d-antibiotherapies-otite-moyenne-aigue-purulente-de-l-enfant"]]},
+{d:"Amoxicilline-ac. clavulanique", ind:"OMA + syndrome otite-conjonctivite", mg:[40,40], f:2, cap:3000, capTxt:"3 g/j",
+ pos:"<b>40 mg/kg/prise</b> (exprimé en amoxicilline)<br>× 2 prises/j (80 mg/kg/j)<br>Max 3 g/j",
+ n:"10 jours si &lt; 2 ans ; 5 jours si &gt; 2 ans (fiche HAS).",
+ src:[["HAS","https://www.has-sante.fr/jcms/c_2722749/fr/choix-et-durees-d-antibiotherapies-otite-moyenne-aigue-purulente-de-l-enfant"]]},
+{d:"Azithromycine", ind:"Angine — CI bêta-lactamines", mg:[20,20], f:1, cap:500, capTxt:"500 mg/j",
+ pos:"<b>20 mg/kg/j</b> en 1 prise unique<br>Max 500 mg/j",
+ n:"<b>3 jours</b> (RCP) — alternative si contre-indication aux bêta-lactamines.",
+ src:[["RCP (ANSM)","https://agence-prd.ansm.sante.fr/php/ecodex/rcp/R0294040.htm"],["Zithromax (BDN)","https://base-donnees-publique.medicaments.gouv.fr/medicament/67287098/extrait"]]},
+{d:"Cefpodoxime proxétil", ind:"Angine — allergie pénicillines", mg:[4,4], f:2, cap:200, capTxt:"200 mg/j",
+ pos:"<b>4 mg/kg/prise</b><br>× 2 prises/j (8 mg/kg/j)<br>Max 200 mg/j",
+ n:"<b>5 jours</b> (fiche HAS, allergie documentée sans CI aux céphalosporines).",
+ src:[["HAS","https://www.has-sante.fr/jcms/p_3529229/fr/choix-et-durees-d-antibiotherapies-angine-aigue-de-l-enfant"]]},
+{d:"Cefpodoxime proxétil", ind:"OMA — allergie pénicillines", mg:[4,4], f:2, cap:400, capTxt:"400 mg/j",
+ pos:"<b>4 mg/kg/prise</b><br>× 2 prises/j (8 mg/kg/j)<br>Max 400 mg/j",
+ n:"<b>10 jours</b> (fiche HAS).",
+ src:[["HAS","https://www.has-sante.fr/jcms/c_2722749/fr/choix-et-durees-d-antibiotherapies-otite-moyenne-aigue-purulente-de-l-enfant"]]},
+{d:"Clarithromycine", ind:"Angine — CI bêta-lactamines", mg:[7.5,7.5], f:2, cap:500, capTxt:"500 mg/j",
+ pos:"<b>7,5 mg/kg/prise</b><br>× 2 prises/j (15 mg/kg/j)<br>Max 500 mg/j",
+ n:"<b>5 jours</b> (fiche HAS 2024).",
+ src:[["HAS","https://www.has-sante.fr/jcms/p_3529229/fr/choix-et-durees-d-antibiotherapies-angine-aigue-de-l-enfant"]]},
+{d:"Sulfaméthoxazole + triméthoprime", ind:"OMA — CI bêta-lactamines", mg:[15,15], f:2, cap:800, capTxt:"800/160 mg/j",
+ pos:"<b>15 mg/kg/prise</b> (SMX)<br>× 2 prises/j<br>SMX 30 mg/kg/j + TMP 6 mg/kg/j",
+ n:"<b>10 jours</b>. Calcul affiché pour le sulfaméthoxazole ; triméthoprime = moitié (6 mg/kg/j), max 800/160 mg/j.",
+ src:[["HAS","https://www.has-sante.fr/jcms/c_2722749/fr/choix-et-durees-d-antibiotherapies-otite-moyenne-aigue-purulente-de-l-enfant"]]},
+{d:"Prednisolone / prednisone", ind:"Crise d'asthme (exacerbation modérée à sévère)", mg:[1,2], f:1, cap:60, capTxt:"60 mg/j",
+ pos:"<b>1–2 mg/kg/j</b> en 1 prise/jour<br>Max 60 mg/j",
+ n:"<b>3 à 5 jours</b> (recommandations Vidal — traitement de la crise).",
+ src:[["Vidal","https://www.vidal.fr/maladies/recommandations/asthme-de-l-enfant-traitement-des-crises-2749.html"]]},
+{d:"Dexaméthasone", ind:"Laryngite aiguë (croup)", mg:[0.15,0.15], f:1,
+ pos:"<b>0,15 mg/kg</b><br>en 1 prise unique",
+ n:"Dose unique par voie orale (protocole Pas à Pas en pédiatrie).",
+ src:[["Pas à Pas Pédiatrie","https://pap-pediatrie.fr/download-article/5i8k6ejn0c"]]},
+{d:"Racecadotril", ind:"Diarrhée aiguë — complément de la réhydratation", mg:[1.5,1.5], f:3,
+ pos:"<b>1,5 mg/kg/prise</b><br>× 3 prises/j",
+ n:"≥ 3 mois. Antisécrétoire intestinal : ne remplace jamais la réhydratation orale.",
+ src:[["RCP (ANSM)","https://agence-prd.ansm.sante.fr/php/ecodex/rcp/R0415612.htm"],["Tiorfan (BDN)","https://base-donnees-publique.medicaments.gouv.fr/medicament/69778288/extrait"]]}
+];
+
+function pdfmt(x){
+  if (x < 1) return (Math.round(x*100)/100).toString().replace(".",",");
+  if (x < 100) { const r = Math.round(x*10)/10; return (r % 1 === 0 ? String(r) : r.toString().replace(".",",")); }
+  return String(Math.round(x));
+}
+function pdgo(){
+  const grid = document.getElementById("pdgrid");
+  const raw = document.getElementById("pds").value || "";
+  const w = parseFloat(raw.replace(",", "."));
+  const ok = isFinite(w) && w > 0 && w < 200;
+  let h = "<div class='pscroll'><table class='ptab'><thead><tr><th>Médicament</th><th>Indication</th><th>Dose standard (mg/kg)</th><th class='pdc'>" + (ok ? "Pour " + pdfmt(w) + " kg" : "Poids → dose calculée") + "</th><th>Durée &amp; points de vigilance</th></tr></thead><tbody>";
+  PEDI.forEach(function(e){
+    let calc = "<span class='pdim'>saisir un poids<br>ci-dessus</span>";
+    if (ok) {
+      const lo = e.mg[0]*w, hi = e.mg[1]*w;
+      let prise = (lo === hi) ? pdfmt(lo) : pdfmt(lo) + "–" + pdfmt(hi);
+      let jLo = lo*e.f, jHi = hi*e.f;
+      let jour = (jLo === jHi) ? pdfmt(jLo) : pdfmt(jLo) + "–" + pdfmt(jHi);
+      calc = prise + " mg / prise<br>" + jour + " mg / jour";
+      if (e.cap && jHi > e.cap) calc += "<div class='pcap'>⚠ plafonné à " + e.capTxt + "</div>";
+    }
+    h += "<tr><td><b>" + e.d + "</b><a class='psrc' href='" + e.src[0][1] + "' target='_blank' rel='noopener'>[" + e.src[0][0] + "]</a></td><td>" + e.ind + "</td><td>" + e.pos + "</td><td class='pdc'>" + calc + "</td><td class='pnote'>" + e.n + "</td></tr>";
+  });
+  h += "</tbody></table></div>";
+  if (ok) h += "<p class='pdis'>⚠️ Doses calculées pour " + pdfmt(w) + " kg — indicatives, issues des sources citées (HAS · RCP ANSM · Vidal). Toujours confronter au RCP de la spécialité délivrée, à la forme pharmaceutique et à l'âge de l'enfant.</p>";
+  grid.innerHTML = h;
+}
+document.getElementById("pds").addEventListener("input", pdgo);
+pdgo();
+/* ==== FIN MODULE PÉDIATRIE ==== */
 
 </script>
 </body>
