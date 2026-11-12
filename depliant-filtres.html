@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta name="color-scheme" content="light dark">
+<script id="pv-theme-init">
+(function(){try{var d=document.documentElement;var t=null;try{t=localStorage.getItem("pv-theme")}catch(e){}if(t!=="dark"&&t!=="light")t=(window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";if(t==="dark")d.classList.add("dark");window.addEventListener("beforeprint",function(){d.classList.remove("dark")});window.addEventListener("afterprint",function(){var v=null;try{v=localStorage.getItem("pv-theme")}catch(e){}if(v==="dark")d.classList.add("dark")});document.addEventListener("DOMContentLoaded",function(){var b=document.getElementById("themeBtn");if(!b)return;function sync(){var dk=d.classList.contains("dark");b.textContent=dk?"\u2600\uFE0F":"\uD83C\uDF19";b.title=dk?"Passer en mode clair":"Passer en mode sombre"}sync();b.addEventListener("click",function(){var dk=d.classList.toggle("dark");try{localStorage.setItem("pv-theme",dk?"dark":"light")}catch(e){}sync()});}catch(e){}})();
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PharmaVeille — Le dépliant des filtres</title>
+<style>
+  :root{
+    --bg:#f4f6f9; --card:#ffffff; --ink:#16213a; --muted:#5b6478; --line:#e3e8f0;
+    --accent:#0d5b8c; --accent2:#0b3f66;
+    --n1:#047857; --n2:#2563eb; --n3:#d97706; --n4:#7c3aed; --n5:#64748b;
+    --compl:#c2410c; --med:#0d5b8c; --vac:#0f766e; --ale:#b91c1c;
+    --off:#334155; --eco:#9d174d; --ali:#4d7c0f;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  body{font-family:"Segoe UI", system-ui, -apple-system, sans-serif; background:var(--bg); color:var(--ink); line-height:1.38; font-size:9.2pt}
+  .sheet{max-width:210mm; margin:0 auto; background:var(--card); padding:0 0 8px}
+  header{background:linear-gradient(135deg,var(--accent),var(--accent2)); color:#fff; padding:11px 14px 9px; border-radius:0 0 10px 10px}
+  header h1{font-size:15.5pt; letter-spacing:.3px}
+  header .sub{font-size:8.6pt; opacity:.92; margin-top:2px}
+  header .tag{display:inline-block; background:rgba(255,255,255,.16); border:1px solid rgba(255,255,255,.35); border-radius:99px; padding:1px 9px; font-size:8pt; margin-top:4px}
+  .cols{column-count:3; column-gap:5.5mm; padding:9px 5.5mm 0; column-fill:auto}
+  section{break-inside:avoid; margin-bottom:7px; border:1px solid var(--line); border-radius:8px; padding:6px 7px; background:#fbfcfe}
+  h2{font-size:9.6pt; color:var(--accent2); margin-bottom:3px}
+  h2 .num{display:inline-block; background:var(--accent); color:#fff; border-radius:6px; padding:0 5px; margin-right:4px; font-size:8.6pt}
+  p, li{font-size:8.5pt}
+  ul{padding-left:13px; margin:2px 0}
+  li{margin-bottom:1.5px}
+  .ex{color:var(--muted); font-style:italic}
+  .chip{display:inline-block; border:1px solid var(--line); background:#fff; border-radius:99px; padding:0 6px; margin:1px 1px; font-size:7.6pt; white-space:nowrap}
+  .chip b{color:var(--accent); font-weight:700}
+  .bdg{display:inline-flex; align-items:center; gap:4px; font-size:8.2pt; margin:1.5px 0}
+  .dot{display:inline-block; width:8px; height:8px; border-radius:50%; flex:0 0 auto}
+  .tag2{display:inline-block; color:#fff; border-radius:5px; padding:0 6px; font-size:7.6pt; font-weight:600}
+  .tip{background:#eef6f1; border:1px solid #cfe6d8}
+  .tip h2{color:#047857}
+  footer{padding:5px 5.5mm 0; text-align:center; font-size:7.6pt; color:var(--muted)}
+  .fold{border-top:1px dashed #b9c4d4; margin:6px 5.5mm 0; text-align:center; font-size:6.8pt; color:#9aa7ba; padding-top:2px}
+  .printbtn{display:block; margin:10px auto 4px; background:var(--accent); color:#fff; border:none; border-radius:9px; padding:8px 16px; font-size:10pt; font-weight:600; cursor:pointer}
+  @media print{
+    body{background:#fff; font-size:8.6pt}
+    .sheet{max-width:none; border-radius:0}
+    .printbtn{display:none}
+    header{border-radius:0}
+    @page{size:A4 portrait; margin:6mm}
+    .cols{column-count:3; column-gap:5mm}
+  }
+</style>
+<style id="pv-skin">
+
+/* ===== PV-SKIN : finitions + bascule clair/sombre (ne pas supprimer) ===== */
+html{scroll-behavior:smooth}
+body{transition:background .25s ease,color .25s ease}
+::selection{background:rgba(13,91,140,.18)}
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-thumb{background:#c3cfe0;border-radius:8px;border:2px solid transparent;background-clip:content-box}
+::-webkit-scrollbar-thumb:hover{background:#9fb2cc;border:2px solid transparent;background-clip:content-box}
+::-webkit-scrollbar-track{background:transparent}
+.themebtn{position:absolute;top:14px;right:16px;z-index:60;width:42px;height:42px;border-radius:50%;border:1px solid rgba(255,255,255,.45);background:rgba(255,255,255,.14);color:#fff;font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(6px);transition:transform .18s,background .18s}
+.themebtn:hover{background:rgba(255,255,255,.3);transform:scale(1.07)}
+.themebtn:active{transform:scale(.93)}
+@media print{.themebtn{display:none}}
+
+/* — Finitions mode clair — */
+header{position:relative;overflow:hidden;background:linear-gradient(130deg,#0a5a97 0%,#0a3d6b 52%,#0e6e68 125%)}
+header::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background:radial-gradient(420px 160px at 88% -50%,rgba(56,189,248,.3),transparent 60%)}
+header h1{position:relative;z-index:1}
+header .sub{position:relative;z-index:1}
+header .tag{position:relative;z-index:1}
+.printbtn{border-radius:11px;box-shadow:0 3px 10px rgba(10,90,151,.25);transition:transform .15s,filter .15s}
+.printbtn:hover{transform:translateY(-1px);filter:brightness(1.08)}
+
+/* — Mode sombre (écran ; l impression repasse en clair) — */
+html.dark{
+  --bg:#0a1120; --card:#101a30; --ink:#e7eefb; --muted:#95a5c2; --line:#22334f;
+  --accent:#53c1f5; --accent2:#8bd4fc;
+  --n1:#3ddc97; --n2:#6aa9fa; --n3:#fbbf24; --n4:#b39dfa; --n5:#93a6c4;
+  --compl:#fb9a4c; --med:#53c1f5; --vac:#33d6c3; --ale:#fb7185;
+  --off:#bcc9de; --eco:#f58ec2; --ali:#b5e06a;
+}
+html.dark header{background:linear-gradient(130deg,#0d1f38 0%,#0b2b47 52%,#0c3a38 125%)}
+html.dark header::before{background:radial-gradient(420px 160px at 88% -50%,rgba(56,189,248,.14),transparent 60%)}
+html.dark .themebtn{top:8px}
+@media print{
+  html.dark,body{background:#fff !important;color:#16213a !important}
+  header{background:linear-gradient(135deg,#0d5b8c,#0b3f66) !important;color:#fff !important}
+}
+
+</style>
+</head>
+<body>
+<div class="sheet">
+<button class="printbtn" onclick="print()">🖨️ Imprimer le dépliant (A4)</button>
+
+<header>
+  <button id="themeBtn" class="themebtn" aria-label="Basculer le mode sombre"></button>
+  <h1>📘 PharmaVeille · Le dépliant des filtres</h1>
+  <div class="sub">226 revues sourcées · 2024–2026 · 24 disciplines · niveaux de preuve N1–N5 · mise à jour du 12/11/2026</div>
+  <span class="tag">Trouver la bonne revue en trois gestes : une discipline, un type, un niveau de preuve</span>
+</header>
+
+<div class="cols">
+
+<section>
+  <h2><span class="num">1</span>🔎 La recherche plein texte</h2>
+  <p>La barre de recherche filtre sur <b>tous les champs</b> d’une revue : titre, substance, résumé, message « À dire au patient », discipline et type.</p>
+  <ul>
+    <li><b>« sémaglutide »</b> → toutes les revues mentionnant la molécule.</li>
+    <li><b>« genou »</b>, <b>« Pédiatrie »</b>, <b>« arthrose »</b>… : le mot-clé suffit.</li>
+    <li>Elle se <b>combine</b> avec tous les filtres ci-dessous.</li>
+  </ul>
+</section>
+
+<section>
+  <h2><span class="num">2</span>🏷️ Les pastilles « Discipline »</h2>
+  <p>Chaque pastille porte son <b>compteur</b>. Un clic filtre, un second clic retire le filtre. « Toutes disciplines » (226) réinitialise.</p>
+  <p style="margin-top:3px">
+    <span class="chip">Obésité &amp; Métabolisme <b>9</b></span>
+    <span class="chip">Nutrition &amp; Compléments <b>47</b></span>
+    <span class="chip">Infectiologie &amp; Vaccins <b>12</b></span>
+    <span class="chip">Soins primaires &amp; Officine <b>16</b></span>
+    <span class="chip">Économie de la Santé <b>9</b></span>
+    <span class="chip">Rhumatologie <b>8</b></span>
+    <span class="chip">Oncologie <b>19</b></span>
+    <span class="chip">Dermatologie &amp; peau <b>17</b></span>
+    <span class="chip">Psychiatrie <b>7</b></span>
+    <span class="chip">Pneumologie <b>8</b></span>
+    <span class="chip">Cardiologie <b>9</b></span>
+    <span class="chip">Néphrologie <b>9</b></span>
+    <span class="chip">Autorisations &amp; Sécurité <b>11</b></span>
+    <span class="chip">Diabète &amp; Endocrinologie <b>6</b></span>
+    <span class="chip">Neurologie <b>5</b></span>
+    <span class="chip">Douleur &amp; Migraine <b>8</b></span>
+    <span class="chip">Gynécologie &amp; Ménopause <b>9</b></span>
+  </p>
+</section>
+
+<section>
+  <h2><span class="num">3</span>🧪 Le filtre « Type »</h2>
+  <p>Sept familles, chacune avec la couleur de son badge sur les cartes :</p>
+  <p>
+    <span class="bdg"><span class="dot" style="background:var(--med)"></span>Médicament</span>
+    <span class="bdg"><span class="dot" style="background:var(--compl)"></span>Complément alimentaire</span>
+    <span class="bdg"><span class="dot" style="background:var(--ali)"></span>Alimentation (aliments, régimes)</span>
+    <span class="bdg"><span class="dot" style="background:var(--vac)"></span>Vaccin</span>
+    <span class="bdg"><span class="dot" style="background:var(--ale)"></span>Alerte</span>
+    <span class="bdg"><span class="dot" style="background:var(--off)"></span>Officine (services pharmaceutiques)</span>
+    <span class="bdg"><span class="dot" style="background:var(--eco)"></span>Économie (coût-efficacité, dépense)</span>
+  </p>
+  <p class="ex">Ex. : « Complément alimentaire » + pastille « Nutrition » = les 40 revues compléments, prêtes pour le conseil au comptoir.</p>
+</section>
+
+<section>
+  <h2><span class="num">4</span>💪 Le filtre « Force d’étude »</h2>
+  <p>Le cœur de PharmaVeille : trier la revue par la <b>solidité de la preuve</b>, pas par le buzz.</p>
+  <ul>
+    <li><span class="dot" style="background:var(--n1); vertical-align:-1px"></span> <b>N1 · Méta-analyse / revue systématique</b> — le socle. <span class="ex">Ex. créatine &amp; cerveau ; coût-utilité de la déprescription.</span></li>
+    <li><span class="dot" style="background:var(--n2); vertical-align:-1px"></span> <b>N2 · Essai randomisé de phase 3</b> — l’essai pivot. <span class="ex">Ex. ATTAIN-1 (orforglipron) ; RASolute 302 (pancréas).</span></li>
+    <li><span class="dot" style="background:var(--n3); vertical-align:-1px"></span> <b>N3 · Phase 2 / petit essai</b> — un signal à confirmer. <span class="ex">Ex. pilote benzo + TCC pleine conscience.</span></li>
+    <li><span class="dot" style="background:var(--n4); vertical-align:-1px"></span> <b>N4 · Observationnel / vie réelle</b> — l’usage réel. <span class="ex">Ex. efficacité réelle des vaccins RSV ; chiffres Cnam.</span></li>
+    <li><span class="dot" style="background:var(--n5); vertical-align:-1px"></span> <b>N5 · Revue / alerte / préliminaire</b> — à savoir, pas à prescrire. <span class="ex">Ex. alerte Garcinia ; protocole CHAMP.</span></li>
+  </ul>
+</section>
+
+<section>
+  <h2><span class="num">5</span>⚖️ Le filtre « Conflits d’intérêts »</h2>
+  <p>Lecture du badge de chaque carte :</p>
+  <p>
+    <span class="bdg"><span class="dot" style="background:var(--n1)"></span><b>Indépendant</b> — académique ou public</span>
+    <span class="bdg"><span class="dot" style="background:var(--n3)"></span><b>Mixte</b> — financements publics et privés</span>
+    <span class="bdg"><span class="dot" style="background:var(--ale)"></span><b>Industrie</b> — sponsor = fabricant</span>
+    <span class="bdg"><span class="dot" style="background:var(--n5)"></span><b>À vérifier</b> — non déterminable dans les sources</span>
+  </p>
+  <ul>
+    <li>Le statut est <b>déduit du sponsor connu</b> ; le détail du financement est donné dans la dernière ligne de chaque carte.</li>
+    <li>Un résultat sponsorisé n’est pas faux : c’est un résultat à <b>regarder avec son sponsor</b>.</li>
+  </ul>
+</section>
+
+<section>
+  <h2><span class="num">6</span>📅 L’année et le tri</h2>
+  <ul>
+    <li><b>« Année »</b> — la base couvre trois années de veille : <b>2026</b> (96 revues) · <b>2025</b> (99) · <b>2024</b> (31). Le filtre isole l’année voulue.</li>
+    <li><b>« Tri : force d’étude »</b> (par défaut) — les preuves les plus solides d’abord.</li>
+    <li><b>« Tri : année → pertinence »</b> — revues groupées par année (séparateurs « 2026 / 2025 / 2024 »), et dans chaque année classées par force d’étude : la chronologie, puis la hiérarchie des preuves.</li>
+    <li><b>« Tri : plus récent »</b> — la veille du mois en tête, utile pour le Flash info.</li>
+  </ul>
+</section>
+
+<section>
+  <h2><span class="num">7</span>🌐 L’onglet « Recherche &amp; conflits d’intérêts »</h2>
+  <ul>
+    <li><b>PubMed en direct</b> : requête instantanée, résultats avec résumé et date.</li>
+    <li><b>Analyse COI d’un PMID</b> : l’outil va chercher la déclaration de financement et les conflits déclarés de l’article (Europe PMC).</li>
+    <li><b>8 moteurs en un clic</b> : PubMed, Europe PMC, Google Scholar, Cochrane, ClinicalTrials.gov, HAL, TRIP, OpenAlex.</li>
+  </ul>
+  <p class="ex">Réflexe : avant de relayer une « étude qui remplace tout », collez son PMID dans l’onglet 2.</p>
+</section>
+
+<section class="tip">
+  <h2>✅ Trois réflexes pro</h2>
+  <ul>
+    <li><b>Préparer un conseil / une FMC</b> : pastille discipline + filtre <b>N1</b> → uniquement les synthèses prêtes à citer.</li>
+    <li><b>Douter d’une promo laboratoire</b> : filtre <b>Industrie</b> + lire la ligne de financement de la carte.</li>
+    <li><b>Actualiser la base</b> : demander « <i>mets à jour PharmaVeille sur [sujet]</i> » — sources vérifiées, jamais de lien inventé.</li>
+  </ul>
+</section>
+
+</div>
+
+<div class="fold">pliure ▲</div>
+<div class="fold">pliure ▼</div>
+<footer>PharmaVeille · dépliant des filtres · v4.4 — 12/11/2026 · 226 revues sur 3 années (2024–2026), 24 disciplines · À imprimer en A4 (les marques de pliure indiquent les trois volets) — ouvrable hors ligne dans tout navigateur.</footer>
+</div>
+</body>
+</html>

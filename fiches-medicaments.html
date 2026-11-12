@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta name="color-scheme" content="light dark">
+<script id="pv-theme-init">
+(function(){try{var d=document.documentElement;var t=null;try{t=localStorage.getItem("pv-theme")}catch(e){}if(t!=="dark"&&t!=="light")t=(window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";if(t==="dark")d.classList.add("dark");window.addEventListener("beforeprint",function(){d.classList.remove("dark")});window.addEventListener("afterprint",function(){var v=null;try{v=localStorage.getItem("pv-theme")}catch(e){}if(v==="dark")d.classList.add("dark")});document.addEventListener("DOMContentLoaded",function(){var b=document.getElementById("themeBtn");if(!b)return;function sync(){var dk=d.classList.contains("dark");b.textContent=dk?"\u2600\uFE0F":"\uD83C\uDF19";b.title=dk?"Passer en mode clair":"Passer en mode sombre"}sync();b.addEventListener("click",function(){var dk=d.classList.toggle("dark");try{localStorage.setItem("pv-theme",dk?"dark":"light")}catch(e){}sync()});}catch(e){}})();
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PharmaVeille — Fiches Médicaments pro / patient</title>
+<style>
+:root{--ink:#0f172a;--mut:#64748b;--line:#e2e8f0;--bg:#f8fafc;--acc:#0d5b8c;--pro:#0d5b8c;--pat:#0f766e;
+--n1:#047857;--n2:#2563eb;--n3:#d97706;--n4:#7c3aed;--n5:#64748b}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;color:var(--ink);background:var(--bg);line-height:1.5}
+header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line);padding:10px 16px;display:flex;gap:14px;align-items:center;flex-wrap:wrap;box-shadow:0 1px 4px rgba(15,23,42,.06)}
+header h1{font-size:17px;white-space:nowrap}
+header h1 span{color:var(--acc)}
+#back{display:none;border:1px solid var(--line);background:#fff;border-radius:8px;padding:7px 12px;font-size:13.5px;cursor:pointer;color:var(--ink)}
+#back:hover{border-color:var(--acc);color:var(--acc)}
+.searchbox{flex:1;min-width:200px;display:flex}
+.searchbox input{flex:1;border:1.5px solid var(--line);border-radius:8px;padding:9px 12px;font-size:15px}
+.searchbox input:focus{outline:none;border-color:var(--acc)}
+#count{font-size:13px;color:var(--mut);white-space:nowrap}
+#count b{color:var(--ink)}
+.wrap{max-width:920px;margin:0 auto;padding:18px 16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(265px,1fr));gap:12px}
+.fcard{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;cursor:pointer;transition:box-shadow .15s,transform .15s}
+.fcard:hover{box-shadow:0 3px 12px rgba(15,23,42,.10);transform:translateY(-1px)}
+.fcard .top{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:6px}
+.fcard h3{font-size:15.5px;margin-bottom:3px}
+.fcard .cl{font-size:12.5px;color:var(--mut)}
+.fcard .res{font-size:13px;color:#334155;margin-top:6px}
+.tag{font-size:11px;font-weight:700;border-radius:5px;padding:2px 7px;color:#fff}
+.tag.new{background:#2563eb}
+.tag.old{background:#64748b}
+.tag.cl{background:#334155}
+/* fiche vue */
+.fiche{display:none}
+.fhead{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:14px}
+.fhead h2{font-size:21px;margin-bottom:2px}
+.fhead .noms{color:var(--mut);font-size:13.5px;margin-bottom:10px}
+.toggle{display:flex;gap:0;border:1.5px solid var(--line);border-radius:10px;overflow:hidden;width:fit-content;margin-top:10px}
+.toggle button{border:none;background:#fff;padding:10px 18px;font-size:14px;font-weight:600;cursor:pointer;color:var(--mut)}
+.toggle button.on{color:#fff}
+.toggle button.p.on{background:var(--pro)}
+.toggle button.g.on{background:var(--pat)}
+.toggle .hint{align-self:center;margin-left:12px;font-size:12px;color:var(--mut)}
+.sec{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:12px}
+.sec h3{font-size:14.5px;margin-bottom:8px;display:flex;align-items:center;gap:7px}
+.sec p{font-size:14.5px;color:#1e293b}
+.sec p+p{margin-top:8px}
+.fiche.vue-patient .sec.pro-only,.fiche.vue-pro .sec.pat-only{display:none}
+.fiche.vue-pro .sec h3{color:var(--pro)}
+.fiche.vue-patient .sec h3{color:var(--pat)}
+.big-idea{background:#f0fdfa;border-left:4px solid var(--pat);border-radius:0 10px 10px 0;padding:12px 14px;font-size:14.5px}
+.fiche.vue-pro .big-idea{background:#eff6ff;border-left-color:var(--pro)}
+.moabox{background:#f8fafc;border:1px dashed #cbd5e1;border-radius:10px;padding:13px 15px;font-size:14px}
+.moabox b{color:var(--pro)}
+.srcs{font-size:12.5px;color:var(--mut);padding:4px 2px 24px}
+.srcs a{color:var(--acc);text-decoration:none;font-weight:600}
+.srcs a:hover{text-decoration:underline}
+footer{max-width:920px;margin:0 auto;padding:10px 16px 28px;color:var(--mut);font-size:12px}
+.empty{text-align:center;color:var(--mut);padding:30px}
+@media(max-width:600px){.toggle .hint{display:none}.fhead h2{font-size:18px}}
+@media print{header,.toggle,.srcs,#back{display:none!important}.fcard{display:none}.grid{display:none}.fiche{display:block!important}}
+</style>
+<style id="pv-skin">
+
+/* ===== PV-SKIN : finitions + bascule clair/sombre (ne pas supprimer) ===== */
+html{scroll-behavior:smooth}
+body{transition:background .25s ease,color .25s ease}
+::selection{background:rgba(13,91,140,.18)}
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-thumb{background:#c3cfe0;border-radius:8px;border:2px solid transparent;background-clip:content-box}
+::-webkit-scrollbar-thumb:hover{background:#9fb2cc;border:2px solid transparent;background-clip:content-box}
+::-webkit-scrollbar-track{background:transparent}
+.themebtn{position:absolute;top:14px;right:16px;z-index:60;width:42px;height:42px;border-radius:50%;border:1px solid rgba(255,255,255,.45);background:rgba(255,255,255,.14);color:#fff;font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(6px);transition:transform .18s,background .18s}
+.themebtn:hover{background:rgba(255,255,255,.3);transform:scale(1.07)}
+.themebtn:active{transform:scale(.93)}
+@media print{.themebtn{display:none}}
+
+/* — Finitions mode clair — */
+.fcard{border-radius:14px}
+.fcard:hover{box-shadow:0 6px 20px rgba(15,23,42,.13)}
+.fhead,.sec{border-radius:14px}
+.searchbox input{border-radius:10px}
+header{box-shadow:0 1px 4px rgba(15,23,42,.06),0 4px 16px rgba(15,23,42,.05)}
+
+/* — Mode sombre — */
+html.dark{
+  --ink:#e7eefb;--mut:#95a5c2;--line:#22334f;--bg:#0a1120;--acc:#53c1f5;--pro:#53c1f5;--pat:#2dd4bf;
+  --n1:#3ddc97;--n2:#6aa9fa;--n3:#fbbf24;--n4:#b39dfa;--n5:#93a6c4;
+}
+html.dark ::selection{background:rgba(83,193,245,.28)}
+html.dark ::-webkit-scrollbar-thumb{background:#2a3c5e;border:2px solid transparent;background-clip:content-box}
+html.dark input::placeholder{color:#5b6b8a}
+html.dark .themebtn{background:#eef3fa;color:#0f172a;border-color:#cbd5e1}
+html.dark .themebtn:hover{background:#dbe6f5}
+html.dark header{background:#0d1830;border-bottom-color:#1b2942;box-shadow:none}
+html.dark header h1{color:var(--ink)}
+html.dark header h1 span{color:var(--acc)}
+html.dark #back{background:#16233c;color:var(--ink);border-color:var(--line)}
+html.dark #back:hover{border-color:var(--acc);color:var(--acc)}
+html.dark .searchbox input{background:#101a30;color:var(--ink);border-color:var(--line)}
+html.dark .searchbox input:focus{border-color:var(--acc)}
+html.dark #count{color:var(--mut)}
+html.dark #count b{color:var(--ink)}
+html.dark .fcard{background:#101a30;border-color:#22334f}
+html.dark .fcard h3{color:var(--ink)}
+html.dark .fcard .res{color:#cbd7ea}
+html.dark .tag{color:#0a1120}
+html.dark .fhead{background:#101a30;border-color:#22334f}
+html.dark .fhead h2{color:var(--ink)}
+html.dark .fhead .noms{color:var(--mut)}
+html.dark .toggle{border-color:var(--line)}
+html.dark .toggle button{background:#0d1830;color:var(--mut)}
+html.dark .sec{background:#101a30;border-color:#22334f}
+html.dark .sec p{color:#dbe5f5}
+html.dark .big-idea{background:rgba(15,118,110,.12)}
+html.dark .fiche.vue-pro .big-idea{background:rgba(13,91,140,.16)}
+html.dark .moabox{background:#0d1830;border-color:#2b3f63;color:#cbd7ea}
+html.dark .moabox b{color:var(--pro)}
+html.dark .srcs a{color:var(--acc)}
+html.dark footer{color:var(--mut)}
+html.dark .empty{color:var(--mut)}
+html.dark a:focus-visible,html.dark button:focus-visible{outline-color:var(--acc)}
+
+</style>
+</head>
+<body>
+<header>
+  <button id="back" onclick="showList()">← Liste</button>
+  <button id="themeBtn" class="themebtn" aria-label="Basculer le mode sombre"></button>
+  <h1>💊 Pharma<span>Veille</span> — Fiches Médicaments</h1>
+  <div class="searchbox"><input id="q" type="search" placeholder="Rechercher un médicament, une classe, un mécanisme…" aria-label="Recherche"></div>
+  <div id="count"></div>
+</header>
+<div class="wrap">
+  <div class="grid" id="grid"></div>
+  <div class="fiche" id="fiche"></div>
+  <div class="empty" id="empty" style="display:none">Aucune fiche ne correspond à cette recherche.</div>
+</div>
+<footer>PharmaVeille — fiches médicaments à double lecture : <b>🩺 fiche pro</b> (mécanisme d'action, pharmacocinétique, interactions, surveillance) et <b>👤 fiche grand public</b> (explications simples, points de vigilance) — bascule en un clic, inspirée des MSD Manuals. Contenu informatif, jamais un substitut au RCP ni à l'avis du professionnel de santé · mise à jour du 11/11/2026 · s'ouvre hors ligne dans tout navigateur.</footer>
+<script>
+const FICHES = [
+ {
+  "dci": "Metformine",
+  "noms": "Glucophage et génériques",
+  "classe": "Biguanide — antidiabétique oral",
+  "famille": "classique",
+  "annee": "1957",
+  "resume": "Le traitement de fond du diabète de type 2 : freine le sucre fabriqué par le foie, sans hypoglycémie.",
+  "patient": {
+   "sert": "Dans le diabète de type 2, le sang contient trop de sucre, en grande partie parce que le foie en fabrique trop la nuit. La metformine freine cette production et aide les muscles à capter le sucre du sang. Seule, elle ne fait pas d'hypoglycémie (malaise) : elle ne pousse pas le pancréas à produire plus d'insuline. Elle ne fait pas maigrir, mais ne fait pas grossir.",
+   "prendre": "1 à 3 prises par jour, au milieu ou juste après le repas (cela limite les troubles digestifs). Goût métallique ou nausées au début : cela s'améliore souvent en 1 à 2 semaines. Si un scanner avec produit de contraste ou une hospitalisation est prévu, signalez-le : on vous demandera parfois de l'arrêter 48 heures.",
+   "ei": "Courants au début : goût métallique, nausées, diarrhées. Rare mais grave : acidose lactique (fatigue intense, douleurs musculaires, respiration rapide) → consultation immédiate. Au long cours : une carence en vitamine B12 est possible (votre médecin la surveille).",
+   "vigilance": "Évitez l'alcool en quantité importante. Signalez toujours que vous le prenez avant tout nouveau médicament, y compris en automédication.",
+   "consulter": "Vomissements ou diarrhées importants (risque de déshydratation), fatigue intense, avant une chirurgie ou un examen avec produit de contraste."
+  },
+  "pro": {
+   "moa": "<b>Biguanide</b>, pilier du DT2, sans action sur l'insulinosécrétion. Trois mécanismes : (1) <b>inhibition de la néoglucogenèse hépatique</b> — blocage du complexe I de la chaîne respiratoire mitochondriale et activation de l'<b>AMP-kinase</b>, ce qui limite l'ATP disponible pour la synthèse du glucose ; (2) amélioration de la <b>captation musculaire du glucose</b> (translocation de GLUT4, insulinodépendance conservée) ; (3) diminution de l'absorption intestinale. Conséquence pharmacologique clé : <b>aucune stimulation insulinotrope</b> → pas d'hypoglycémie en monothérapie, poids neutre, effet lipidique favorable via AMPK (β-oxydation).",
+   "pk": "Biodisponibilité 50-60 % (absorption saturable) ; <b>non métabolisé</b>, élimination rénale par sécrétion tubulaire (transporteur OCT2) → adaptation stricte à l'eGFR : contre-indiqué < 30 mL/min, prudence 30-45. Demi-vie plasmatique ~6 h, mais l'effet antihyperglycémiant persiste grâce à l'action intracellulaire (mitochondrie/AMPK). Carence en B12 par malabsorption iléale au long cours.",
+   "place": "Première intention dans le DT2, quel que soit le poids ; maintenue en association avec GLP-1/SGLT2 selon le profil cardio-rénal.",
+   "ei": "Digestifs dose-dépendants (20-30 %) → titration lente + prise au milieu du repas ; acidose lactique rarissime (facteurs : IR, hypoxie, sepsis, alcool) ; baisse de la B12 ; pas d'hypoglycémie en monothérapie.",
+   "interactions": "Produits de contraste iodés : suspension 48 h puis reprise si eGFR stable ; alcool (acidose) ; inhibiteurs d'OCT2 (augmentation de l'exposition) ; pas de métabolisme hépatique → peu d'interactions métaboliques.",
+   "surveillance": "eGFR au moins annuelle ; B12 si traitement prolongé, âgé ou anémie ; HbA1c à 3 mois. Conseil comptoir : réassurance sur les nausées initiales, rappel de l'arrêt 48 h avant contraste."
+  },
+  "src": [
+   [
+    "MSD Manuals pro — Médicaments du diabète",
+    "https://www.msdmanuals.com/fr/professional/troubles-endocriniens-et-m%C3%A9taboliques/diab%C3%A8te-sucr%C3%A9-et-hypoglyc%C3%A9mie/m%C3%A9dicaments-pour-le-traitement-du-diab%C3%A8te-sucr%C3%A9"
+   ],
+   [
+    "MSD Manuals grand public — Traitement médicamenteux du diabète",
+    "https://www.msdmanuals.com/fr/accueil/troubles-hormonaux-et-m%C3%A9taboliques/diab%C3%A8te-sucr%C3%A9-et-faible-taux-de-sucre-dans-le-sang-hypoglyc%C3%A9mie/traitement-m%C3%A9dicamenteux-du-diab%C3%A8te"
+   ],
+   [
+    "ameli — metformine en points clés",
+    "https://www.ameli.fr/medecin/sante-prevention/pathologies/diabete-type-2/memo-metformine"
+   ]
+  ]
+ },
+ {
+  "dci": "Atorvastatine",
+  "noms": "Tahor et génériques",
+  "classe": "Statine — hypolipémiant",
+  "famille": "classique",
+  "annee": "1997",
+  "resume": "Baisse le « mauvais cholestérol » (LDL) de 40 à 60 % en bloquant l'enzyme qui le fabrique dans le foie.",
+  "patient": {
+   "sert": "Le cholestérol-LDL se dépose petit à petit dans les artères et rétrécit les tuyaux qui nourrissent le cœur et le cerveau. L'atorvastatine bloque, dans le foie, l'enzyme qui fabrique le cholestérol. Le foie, à court de cholestérol, va alors le récupérer dans le sang : le LDL baisse nettement. C'est un traitement de fond pour des années : c'est l'accumulation d'années de protection qui évite infarctus et AVC.",
+   "prendre": "Un comprimé par jour, à heure fixe — avec cette molécule l'heure importe peu (action longue). Ne jamais arrêter seul : la protection s'efface en quelques semaines.",
+   "ei": "Douleurs musculaires : elles existent réellement chez 1 à 5 % des patients, mais sont plus souvent craintes que réelles — parlez-en au pharmacien avant d'arrêter (changer de statine ou de dose règle souvent le problème). Plus rares : maux de tête, troubles digestifs. Une petite élévation du sucre du sang et des transaminases est possible (surveillée en prise de sang).",
+   "vigilance": "Limitez le pamplemousse (un grand verre de jus quotidien augmente l'effet). Signalez tout nouvel antibiotique (clarithromycine, érythromycine). Grossesse : à déclarer.",
+   "consulter": "Douleurs musculaires diffuses inexpliquées, urines foncées (brun foncé), fatigue intense."
+  },
+  "pro": {
+   "moa": "<b>Inhibiteur compétitif de la HMG-CoA réductase</b>, enzyme limitante qui transforme le HMG-CoA en mévalonate, étape clé de la <b>synthèse du cholestérol hépatique</b>. La chute du cholestérol intracellulaire active le facteur de transcription <b>SREBP2</b> → surexpression du <b>récepteur des LDL (LDL-R)</b> à la surface des hépatocytes → épuration plasmatique du LDL-C (de −37 % à 10 mg à −55 % à 80 mg environ). <b>Effets pléiotropes</b> indépendants du LDL : stabilisation de la plaque athéromateuse, effet anti-inflammatoire (CRP ↓), amélioration de la fonction endothéliale — qui participent au bénéfice clinique précoce.",
+   "pk": "Très longue durée d'inhibition (~20-30 h) → <b>prise indifférente matin ou soir</b> (atout sur la simvastatine) ; statine lipophile, métabolisme <b>CYP3A4</b> → interactions : clarithromycine, itraconazole, ciclosporine, gemfibrozil (risque myopathique), pamplemousse en excès.",
+   "place": "Référence en prévention CV primaire à haut risque et secondaire ; objectif de LDL individualisé selon le risque, atorvastatine 10-80 mg pour les fortes réductions.",
+   "ei": "Myalgies réelles 1-5 % (effet nocebo documenté dans les essais croisés en aveugle) ; élévation des CK et rhabdomyolyse rarissime ; transaminases < 1 % cliniquement pertinentes ; léger excès de diabète incident ; pas d'effet cognitif établi.",
+   "interactions": "Voir CYP3A4 + fibrates (gemfibrozil surtout), colchicine à forte dose, jus de pamplemousse ; potentialisation modérée des AVK.",
+   "surveillance": "Bilan lipidique + transaminases à 4-12 semaines puis annuel ; CK seulement si symptômes. Conseil comptoir : réattribution des myalgies au nocebo quand plausible, observance = tout l'enjeu."
+  },
+  "src": [
+   [
+    "MSD Manuals pro — Dyslipidémie",
+    "https://www.msdmanuals.com/fr/professional/troubles-endocriniens-et-m%C3%A9taboliques/dyslipid%C3%A9mies/dyslipid%C3%A9mie"
+   ],
+   [
+    "MSD Manuals grand public — Dyslipidémie",
+    "https://www.msdmanuals.com/fr/accueil/troubles-hormonaux-et-m%C3%A9taboliques/troubles-du-cholest%C3%A9rol/dyslipid%C3%A9mie"
+   ]
+  ]
+ },
+ {
+  "dci": "Apixaban",
+  "noms": "Eliquis et génériques",
+  "classe": "Anticoagulant oral direct — anti-Xa",
+  "famille": "classique",
+  "annee": "2011",
+  "resume": "Anticoagulant moderne : bloque précisément le facteur Xa, sans prises de sang régulières (contrairement aux AVK).",
+  "patient": {
+   "sert": "Votre sang a tendance à former des caillots (fibrillation auriculaire, phlébite, embolie pulmonaire). L'apixaban bloque un maillon précis de la cascade de coagulation, le facteur X : le sang reste fluide au bon niveau — assez pour ne pas boucher, pas trop pour ne pas saigner. Contrairement aux anciens anticoagulants (AVK), aucune prise de sang régulière n'est nécessaire pour ajuster la dose.",
+   "prendre": "Un comprimé matin et soir, à peu près toutes les 12 heures. La régularité est LE point clé : un comprimé oublié peut suffire à former un caillot. Portez toujours votre carte d'anticoagulé.",
+   "ei": "Saignements : le plus souvent bénins (gingival, nez, bleus) ; il faut en parler s'ils se répètent. Saignement qui ne s'arrête pas, selles noires, sang dans les urines, grosse fatigue inexpliquée : consultation rapide.",
+   "vigilance": "Automédication : ibuprofène, diclofénac et aspirine augmentent le risque de saignement ; le millepertuis (plante) diminue l'effet anticoagulant. Signalez l'anticoagulant avant tout soin dentaire ou chirurgie, même mineure.",
+   "consulter": "Chute avec choc à la tête (même sans plaie), tout saignement inhabituel ou abondant, fièvre avec diarrhée (déshydratation = surdose)."
+  },
+  "pro": {
+   "moa": "<b>Anticoagulant oral direct (AOD) anti-Xa</b> : inhibition <b>directe, réversible, sans antithrombine</b> du facteur Xa actif — maillon convergent des voies intrinsèque et extrinsèque (prothrombine → thrombine). Le blocage porte sur la <b>thrombinogénèse</b> (la fabrication de thrombine) et non sur la thrombine déjà formée → l'hémostase primaire (plaquettes) est conservée, d'où moins de saignements que les AVK à efficacité égale. Action immédiate (2-3 h), pas de rebond thrombotique à l'arrêt, pas d'effet sur les facteurs vitamine K-dépendants.",
+   "pk": "Biodisponibilité ~50 %, pic 3-4 h ; <b>demi-vie 12 h</b> (d'où le biseau) ; élimination mixte ~27 % rénale + métabolisme <b>CYP3A4</b> et transporteur <b>P-gp</b> → double voie d'interaction. Réduction de dose (2,5 mg BID) si 2 critères sur 3 : âge ≥ 80 ans, poids ≤ 60 kg, créatinine élevée.",
+   "place": "Référence dans la FA non valvulaire (ARISTOTLE : supérieurité vs warfarine sur AVC + saignements majeurs + mortalité) et la MTEV ; <b>pas d'indication dans les valves mécaniques</b> ni le rétrécissement mitral modéré à sévère.",
+   "ei": "Saignements (principale classe d'effets), anémie, nausées ; pas d'hépatotoxicité notable (atout vs ximélagatran historique).",
+   "interactions": "Inhibiteurs puissants combinés CYP3A4/P-gp (kétoconazole, itraconazole, ritonavir) → contre-indication ou réduction ; <b>inducteurs puissants</b> (rifampicine, carbamazépine, phénytoïne, millepertuis) → perte d'efficacité, à éviter ; AINS/antiagrégants : risque multiplicatif ; aucune interaction alimentaire (pas de vitamine K).",
+   "surveillance": "<b>Pas de monitoring biologique de routine</b> (atout majeur vs AVK) ; NFS/créatinine au moins annuelle ; anti-Xa calibré si urgence ; antidote : <b>andexanet alfa</b> pour les hémorragies graves, concentrés de facteurs (PCC) en alternative. Conseil comptoir : carte anticoagulant, observance biseau, triage de l'automédication AINS."
+  },
+  "src": [
+   [
+    "Vidal — apixaban (substance)",
+    "https://www.vidal.fr/medicaments/substances/apixaban-23409.html"
+   ]
+  ]
+ },
+ {
+  "dci": "Pantoprazole",
+  "noms": "Inipomp et génériques",
+  "classe": "Inhibiteur de pompe à protons",
+  "famille": "classique",
+  "annee": "1994",
+  "resume": "Éteint durablement les « pompes à acide » de l'estomac : la référence du reflux et de l'œsophagite.",
+  "patient": {
+   "sert": "L'estomac fabrique de l'acide grâce à de véritables « pompes » situées dans ses cellules. En cas de reflux (remontées acides) ou de gastrite, ce médicament éteint ces pompes de façon durable : l'acidité baisse fortement et l'œsophage ou l'estomac peut cicatriser. Il ne supprime pas tout l'acide : il en reste assez pour digérer.",
+   "prendre": "Un comprimé le matin, 30 minutes AVANT le petit-déjeuner — c'est la condition pour qu'il atteigne les pompes au bon moment. Les cures durent en général 4 à 8 semaines (parfois plus, sur avis). À l'arrêt, réduisez plutôt progressivement : une acidité de rebond peut sinon revenir quelques semaines.",
+   "ei": "Courants : maux de tête, diarrhée, ballonnements. Après plusieurs années : une baisse du magnésium ou de la vitamine B12 est possible, et le risque de fracture est légèrement accru — d'où l'intérêt de réévaluer chaque année la nécessité de le poursuivre.",
+   "vigilance": "Il peut diminuer l'absorption d'autres médicaments (fer, calcium, certains antifongiques) : espacez les prises. Signalez-le avant toute automédication.",
+   "consulter": "Perte de poids, difficulté à avaler, vomissements avec du sang, selles noires : à signaler sans attendre (on élimine une cause plus grave avant de continuer)."
+  },
+  "pro": {
+   "moa": "<b>Inhibiteur de pompe à protons (IPP)</b> benzimidazole : <b>profarmaceutique</b> inactif à pH neutre, absorbé dans l'intestin puis <b>activé en sulfénamide</b> dans le canal acide des cellules pariétales → <b>liaison covalente irréversible</b> à la H+/K+-ATPase (pompe à protons). Subtilité pharmacologique : seules les pompes <b>activées par le repas</b> sont inhibées — d'où la prise 30-60 min avant le petit-déjeuner ; l'effet maximal s'installe sur plusieurs jours (les pompes se resynthétisent en ~48 h), contrairement à la demi-vie plasmatique d'une heure seulement.",
+   "pk": "Biodisponibilité ~77 % (peu affectée par les aliments), pic 2-3 h ; demi-vie plasmatique courte (~1 h) mais <b>effet antisécréatoire prolongé</b> (pompe inactivée) ; métabolisme CYP2C19 — <b>moindre que l'oméprazole</b> → pas d'interaction documentée avec le clopidogrel (choix privilégié sous biAntiagrégant).",
+   "place": "RGO/œsophagite, ulcère gastroduodénal, éradication de H. pylori (en association), prévention sous AINS chez le sujet à risque, hypersecrétion (Zollinger-Ellison).",
+   "ei": "Céphalées, diarrhée ; au long cours : hypomagnésémie, B12 ↓, infections entériques (C. difficile), pneumonies, risque fracturaire léger lié à la durée ; <b>rebond acide</b> à l'arrêt brutal (hypergastrinémie réactive).",
+   "interactions": "Médicaments d'absorption pH-dépendante : sels de fer, carbonate de calcium, kétoconazole/itraconazole, atazanavir (contre-indication) ; méthotrexate (légère élévation) ; espacer de 2-4 h calcium/fer.",
+   "surveillance": "<b>Réévaluer l'indication au moins annuellement</b> (déprescription : beaucoup de traitements prolongés sans indication restante) ; magnésémie/B12 si > 1 an avec facteurs de risque. Conseil comptoir : horaire avant repas, arrêt progressif, ne pas tripler les doses un jour de reflux (inefficace)."
+  },
+  "src": [
+   [
+    "Vidal — pantoprazole (substance)",
+    "https://www.vidal.fr/medicaments/substances/pantoprazole-8160.html"
+   ]
+  ]
+ },
+ {
+  "dci": "Lévothyroxine",
+  "noms": "Levothyrox et génériques",
+  "classe": "Hormone thyroïdienne de synthèse (T4)",
+  "famille": "classique",
+  "annee": "1958",
+  "resume": "Remplace l'hormone thyroïdienne manquante : un comprimé à jeun chaque matin, en général pour la vie.",
+  "patient": {
+   "sert": "La thyroïde, une petite glande du cou, règle la vitesse du « moteur » du corps (énergie, chaleur, rythme intestinal, cœur). Quand elle ne produit plus assez d'hormone, ce comprimé apporte un remplacement identique à l'hormone naturelle. Les effets se mesurent sur des semaines : soyez patient après chaque changement de dose.",
+   "prendre": "À jeun le matin, avec un peu d'eau, 30 minutes avant le petit-déjeuner (ou le soir, 2 h après, à condition d'être régulier). Ne prenez pas de calcium, de fer ni d'anti-acide au même moment : écartez-les d'au moins 4 heures. C'est un traitement quotidien, sans interruption, à heure régulière.",
+   "ei": "À la bonne dose : excellente tolérance. Si la dose est trop forte : cœur qui s'accélère, insomnie, transpiration, perte de poids, tremblements — signes à signaler pour réajuster la dose.",
+   "vigilance": "Une grossesse, la pilule ou de nouveaux médicaments peuvent changer vos besoins : prévenez votre médecin. Évitez de changer de marque de comprimé sans en parler.",
+   "consulter": "Palpitations, douleur thoracique, agitation importante, sueurs abondantes."
+  },
+  "pro": {
+   "moa": "<b>Lévothyroxine = T4 synthétique</b> (isomère lévogyre), prohormone convertie en <b>T3</b> (ligand actif) par les désiodases périphériques (D1/D2) — la T3 se lie aux récepteurs nucléaires <b>TRα/TRβ</b> → régulation transcriptionnelle des gènes du métabolisme basal, de la lipolyse, de la synthèse protéique et de la croissance. Boucle de rétrocontrôle : la T4 freine la sécrétion hypophysaire de TSH (cible d'adaptation). Remplacement physiologique ≈ 1,6 µg/kg/j.",
+   "pk": "Absorption jéjunale 70-80 %, <b>maximale à jeun</b> ; demi-vie ~7 jours → état d'équilibre en 4-6 semaines, une prise unique quotidienne, adaptation sur <b>TSH à 6-8 semaines</b>. Liaison protéique > 99 %. Interférences d'absorption : calcium, fer, IPP, cholestyramine, café/expresso (jusqu'à −30 %).",
+   "place": "Hypothyroïdie franche ; hypothyroïdie subclinique symptomatique ou TSH > 10 ; freination de la TSH dans les cancers thyroïdiens différenciés (doses supraphysiologiques).",
+   "ei": "Thyrotoxicose iatrogène si surdosage : palpitations, insomnie, amaigrissement ; au long cours : fibrillation auriculaire et perte osseuse ; aucune toxicité intrinsèque à dose correcte.",
+   "interactions": "Absorption (espacer 4 h : calcium, fer, aluminium, sucralfate, cholestyramine) ; médicaments ↑ besoins : rifampicine, phénobarbital, carbamazépine, œstrogènes (↑ TBG) ; surveiller après tout changement de coprescription.",
+   "surveillance": "TSH (± T4L) 6-8 semaines après chaque changement de dose, puis annuelle à dose stable ; majoration systématique en début de grossesse (+20-30 % dès les premières semaines)."
+  },
+  "src": [
+   [
+    "Vidal — lévothyroxine (substance)",
+    "https://www.vidal.fr/medicaments/substances/levothyroxine-14697.html"
+   ]
+  ]
+ },
+ {
+  "dci": "Tirzépatide",
+  "noms": "Mounjaro (DT2), Zepbound (obésité)",
+  "classe": "Co-agoniste GIP/GLP-1 — incrétine",
+  "famille": "nouveau",
+  "annee": "2022",
+  "resume": "Une injection par semaine : mime deux hormones de la satiété (GLP-1 + GIP), jusqu'à −20 % de poids.",
+  "patient": {
+   "sert": "Ce médicament imite deux hormones naturelles de la satiété, le GLP-1 et le GIP, que l'intestin libère après les repas. Vous vous sentez rassasié plus vite, vous mangez moins, et le sucre du sang est mieux contrôlé. Ce n'est pas un « coupe-faim » chimique : il restaure des signaux naturels qui ne jouent plus leur rôle.",
+   "prendre": "Une injection sous la peau par semaine (même jour, abdomen, cuisse ou bras). Le dosage monte par paliers de 4 semaines pour limiter les nausées. Mangez lentement et arrêtez-vous dès la satiété : c'est la meilleure façon d'éviter les nausées.",
+   "ei": "Très fréquents au début : nausées (surtout aux changements de palier), parfois vomissements, diarrhée, constipation. Plus rarement : inflammation du pancréas (douleur abdominale intense → urgence), problème de vésicule biliaire (calculs, lié à l'amaigrissement rapide).",
+   "vigilance": "Femme en âge de procréer : contraception recommandée (données de grossesse insuffisantes). Antécédent personnel ou familial de cancer médullaire de la thyroïde ou de NEM2 (rare) : contre-indication — signalez-le.",
+   "consulter": "Douleur abdominale haute avec vomissements, jaunisse."
+  },
+  "pro": {
+   "moa": "<b>Co-agoniste bi-hormonal GIP/GLP-1</b> : peptide de 39 acides aminés bâti sur la séquence du <b>GIP</b>, modifié pour activer aussi le <b>récepteur du GLP-1</b>, avec une chaîne d'acide gras C20 assurant l'absorption lente (demi-vie ~5 jours, injection hebdomadaire). Effets GLP-1R : sécrétion d'insuline <b>glucose-dépendante</b>, frein du glucagon en hyperglycémie, ralentissement de la vidange gastrique, satiété hypothalamique (voie POMC/CART). Effets GIPR : potentialisation de l'insulinosécrétion, amélioration du stockage lipidique du tissu adipeux, et <b>atténuation des nausées</b> propres au GLP-1 — la synergie explique la supériorité sur le sémaglutide (SURMOUNT-5). Poids : −15 à −21 % à 72 semaines (SURMOUNT-1) ; bénéfice cardio-rénal dans l'ICFEp de l'obèse (SUMMIT : −38 % décès CV/aggravation IC).",
+   "pk": "SC hebdomadaire, concentrations maximales 8-72 h, demi-vie ~5 jours → équilibre en ~4 semaines (d'où les paliers de titration) ; dégradation protéolytique (aucun CYP) ; exposition inchangée jusqu'à IR modérée.",
+   "place": "DT2 (HbA1c ↓ jusqu'à ~2 points) et obésité (AMM dédiée) ; extensions : ICFEp de l'obèse (SUMMIT), apnée du sommeil de l'obèse (SURMOUNT-OSA).",
+   "ei": "Digestifs dose-dépendants (nausées ~20-25 %, vomissements, diarrhée) ; pancréatite rare ; lithiase vésiculaire (amaigrissement rapide) ; tachycardie modeste ; <b>signal thyroïdien des cellules C chez le rongeur</b> → contre-indication carcinome médullaire/NEM2.",
+   "interactions": "Ralentissement de la vidange gastrique → absorption des oraux modifiée (contraception orale : perte d'efficacité en cas de vomissement < 4 h, prévoir une méthode barrière) ; avec insuline/sulfamides : réduire les doses (hypoglycémie) ; suspension conseillée en cas de jeûne prolongé/péri-opératoire.",
+   "surveillance": "Poids et tolérance digestive à chaque palier ; eGFR si IR ; ne pas escalader trop vite la dose ; rappel contraception et signes pancréatiques."
+  },
+  "src": [
+   [
+    "NEJM — SUMMIT (ICFEp)",
+    "https://www.nejm.org/doi/10.1056/NEJMoa2410027"
+   ],
+   [
+    "ACC — SUMMIT (AHA 2024)",
+    "https://www.acc.org/latest-in-cardiology/articles/2024/11/13/21/17/sat-959am-summit-aha-2024"
+   ]
+  ]
+ },
+ {
+  "dci": "Orforglipron",
+  "noms": "(en cours d'autorisation — Eli Lilly)",
+  "classe": "Agoniste GLP-1 oral non peptidique",
+  "famille": "nouveau",
+  "annee": "phase 3",
+  "resume": "Le premier GLP-1 en comprimé : la satiété sans injection, −11,2 % de poids en phase 3 (ATTAIN-1).",
+  "patient": {
+   "sert": "De la même famille que les injectables « GLP-1 » (type Ozempic ou Wegovy), mais sous forme de comprimé quotidien. Il active le même récepteur de la satiété : manger moins, sucre mieux régulé. Il n'est pas encore en pharmacie : les essais de grande ampleur (phase 3) sont concluants et les autorisations sont en préparation.",
+   "prendre": "Pas encore disponible. Il est prévu en un comprimé par jour, sans injection, sans chaîne du froid — c'est son principal atout face aux injectables.",
+   "ei": "Attendus de classe : surtout des nausées au début, avec une dose qui monte par paliers ; diarrhée, constipation possible.",
+   "vigilance": "Mêmes précautions que la famille GLP-1 : contraception, antécédents de cancer médullaire de la thyroïde ou NEM2 à déclarer.",
+   "consulter": "Douleurs abdominales hautes, vomissements importants."
+  },
+  "pro": {
+   "moa": "<b>Première petite molécule non peptidique agoniste du GLP-1R</b> administrée par voie orale : se lie à la poche orthostérique du récepteur et recrute le même couplage Gs/AMPc que les peptides incrétines — sécrétion d'insuline glucose-dépendante, frein du glucagon, satiété centrale, vidange gastrique ralentie. L'enjeu pharmacotechnologique : un agoniste <b>de synthèse chimique</b> ( production à coût réduit, aucune chaîne du froid) qui résiste à la dégradation digestive. ATTAIN-1 (phase 3) : perte de poids moyenne jusqu'à <b>−11,2 % à 72 semaines</b>, un peu moindre que les injectables de la classe, mais par voie orale.",
+   "pk": "Prise orale quotidienne, sans contrainte alimentaire rapportée dans le programme ATTAIN ; titration par paliers pour la tolérance digestive ; caractéristiques complètes à la publication du RCP.",
+   "place": "Obésité (ATTAIN-1) et obésité + DT2 (ATTAIN-2, Lancet 2025) ; dossier d'autorisation en cours — enjeu d'accessibilité mondiale (coût, logistique).",
+   "ei": "De classe : nausées, vomissements, diarrhée, dose-dépendants et transitoires ; signal thyroïdien des cellules C (contre-indication NEM2/carcinome médullaire attendue de classe).",
+   "interactions": "Peu de données publiées à ce stade ; par prudence de classe : attention aux médicaments dont l'absorption dépend de la vidange gastrique (contraception orale en cas de vomissements).",
+   "surveillance": "Programme ATTAIN : tolérance digestive pendant la titration ; à venir : RCP complet, surveillance hépatique selon les données finales."
+  },
+  "src": [
+   [
+    "NEJM — ATTAIN-1 (PubMed)",
+    "https://pubmed.ncbi.nlm.nih.gov/40960239/"
+   ],
+   [
+    "Eli Lilly — communiqué ATTAIN-1",
+    "https://lilly.gcs-web.com/news-releases/news-release-details/lillys-oral-glp-1-orforglipron-demonstrated-meaningful-weight"
+   ]
+  ]
+ },
+ {
+  "dci": "Vorasidenib",
+  "noms": "Voranigo (États-Unis)",
+  "classe": "Inhibiteur IDH1/IDH2 muté — oncologie",
+  "famille": "nouveau",
+  "annee": "2024",
+  "resume": "Première thérapie ciblée des gliomes de grade 2 : bloque le métabolite qui fige les cellules tumorales (INDIGO, NEJM).",
+  "patient": {
+   "sert": "Votre tumeur cérébrale lente porte une mutation appelée IDH. Cette mutation fabrique une substance (le « 2-HG ») qui bloque la maturation des cellules de la tumeur : elles restent bloquées en mode « jeune » et se multiplient. Ce comprimé empêche la fabrication de cette substance : les cellules tumorales cessent de se multiplier et tendent à redevenir plus normales. C'est un traitement de fond qui met la tumeur en sommeil — il ne la détruit pas.",
+   "prendre": "Un comprimé deux fois par jour, à jeun (1 heure avant ou 2 heures après un repas). Avalez le comprimé entier, ne l'ouvrez ni ne l'écrasez.",
+   "ei": "Fatigue, nausées ; élévations des transaminases (foie) et modifications de la créatinine : des prises de sang régulières sont prévues, surtout au début.",
+   "vigilance": "Grossesse : contraception efficace nécessaire (pour vous et/ou votre partenaire, selon les cas). Le médicament passe dans les fluides corporels : lavage des mains après manipulation.",
+   "consulter": "Jaunisse, urines foncées, douleur sous les côtes à droite, fatigue inexpliquée."
+  },
+  "pro": {
+   "moa": "<b>Inhibiteur oral des isocitrate déshydrogénases 1 et 2 mutées (IDH1/IDH2)</b>, conçu pour <b>franchir la barrière hémato-encéphalique</b>. La mutation IDH néo-produit l'acide <b>2-hydroxyglutarique (2-HG)</b>, oncométabolite qui inhibe les dioxygénases α-cétoglutarate-dépendantes (TET, déméthylases d'histones) → <b>blocage épigénétique de la différenciation</b> : les cellules restent indifférenciées et prolifératives. L'inhibition du 2-HG lève ce verrou : effet <b>cytostatique de re-différenciation</b>, sans cytotoxicité directe — d'où une tolérabilité différente des chimiothérapies. INDIGO (phase 3, NEJM) : survie sans progression et délai avant radio-chimiothérapie significativement allongés dans le gliome de grade 2 IDH-muté.",
+   "pk": "Prise bêta-quotidienne à jeun (l'alimentation modifie l'exposition) ; métabolisme hépatique → surveillance des transaminases ; franchit la BHE (cible : compartiment tumoral cérébral).",
+   "place": "Gliome IDH-muté de grade 2 (après résection, à la progression ou en attente d'un traitement plus lourd) — première thérapie ciblée dans cette indication depuis des décennies (AMM FDA août 2024).",
+   "ei": "Élévations des transaminases (surveillance programmée), élévation de la créatinine, fatigue, céphalées, convulsions (fréquence de la population).",
+   "interactions": "Données d'interactions encore limitées : prudence avec les hépatotoxiques associés ; à jeun (repas = modification de l'exposition).",
+   "surveillance": "Bilan hépatique avant traitement puis régulièrement selon protocole ; créatinine ; NFS ; IRM de suivi programmée ; contraception."
+  },
+  "src": [
+   [
+    "Dana-Farber — AMM FDA",
+    "https://www.dana-farber.org/newsroom/news-releases/2024/fda-approves-new-therapy-for-glioma-patients-for-first-time-in-decades"
+   ],
+   [
+    "Drugs.com — historique d'approbation (Voranigo)",
+    "https://www.drugs.com/history/voranigo.html"
+   ]
+  ]
+ },
+ {
+  "dci": "Ensifentrine",
+  "noms": "Ohtuvayre (États-Unis)",
+  "classe": "Inhibiteur PDE3/PDE4 inhalé — BPCO",
+  "famille": "nouveau",
+  "annee": "2024",
+  "resume": "Premier inhalé de la BPCO à la fois bronchodilatateur ET anti-inflammatoire, sans corticoïde (nébulisé 2×/jour).",
+  "patient": {
+   "sert": "Dans la BPCO, les bronches sont à la fois resserrées ET enflammées. Les traitements habituels ouvrent les bronches ou calment l'inflammation par de la cortisone inhalée. Ce médicament fait les deux à la fois, par une voie différente : il augmente une substance naturelle des bronches (l'« AMPc ») qui détend le muscle et calme les cellules inflammatoires.",
+   "prendre": "En nébulisation (aérosole), matin et soir, avec un nébuliseur standard : une ampoule par séance. Il s'AJOUTE à votre traitement de fond de la BPCO — il ne le remplace pas.",
+   "ei": "Toux, gêne dans la gorge après la nébulisation (se rincer la bouche), diarrhée, rhinite ; généralement bien toléré.",
+   "vigilance": "Ce n'est pas un traitement de secours : gardez toujours votre bronchodilatateur de secours pour les crises.",
+   "consulter": "Essoufflement qui s'aggrave, crachats qui jaunissent ou verdissent, fièvre."
+  },
+  "pro": {
+   "moa": "<b>Inhibiteur hybride PDE3/PDE4</b> de petite molécule : le blocage des phosphodiestérases <b>augmente l'AMPc intracellulaire</b> — dans le muscle lisse bronchique (PDE3) → <b>relaxation</b> ; dans les cellules inflammatoires, éosinophiles et neutrophiles (PDE4) → <b>baisse des médiateurs inflammatoires</b>. D'où une molécule unique qui combine bronchodilatation ET anti-inflammatoire, distincte des β2-mimétiques (autre voie de l'AMPc) et des corticoïdes — première classe à réunir les deux dans la BPCO (AMM FDA juin 2024). Nébulisée 3 mg ×2/jour, avec début d'action rapide ; les essais ENHANCE montrent une amélioration du VEMS et une <b>réduction des exacerbations</b>.",
+   "pk": "Voie nébulisée 2×/jour ; action locale avec faible passage systémique ; début d'action rapide (bronchodilatation mesurable dès la première prise).",
+   "place": "Traitement d'entretien ADDITIONNEL de la BPCO symptomatique — s'ajoute aux LABA/LAMA/CSI, sans les remplacer ; pas d'indication dans l'asthme à ce jour.",
+   "ei": "Toux, rhinite, diarrhée ; pas d'immunosuppression systémique (atout vs corticoïdes) ; pas de signal de tachycardie significatif dans le programme ENHANCE.",
+   "interactions": "Peu d'interactions documentées à ce jour (voie inhalée, exposition systémique faible) ; vigilance sur les posologies cumulatives d'autres bronchodilatateurs.",
+   "surveillance": "Réponse symptomatique et fréquence des exacerbations ; vérification de la technique de nébulisation et de l'observance (2 séances/jour)."
+  },
+  "src": [
+   [
+    "Verona Pharma — AMM FDA (Ohtuvayre)",
+    "https://www.veronapharma.com/news/verona-pharma-announces-us-fda-approval-of-ohtuvayre-ensifentrine/"
+   ],
+   [
+    "FDA — Drug Trials Snapshot (Ohtuvayre)",
+    "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-ohtuvayre"
+   ]
+  ]
+ },
+ {
+  "dci": "Suzetrigine",
+  "noms": "Journavx (États-Unis)",
+  "classe": "Inhibiteur sélectif NaV1.8 — antalgique non opioïde",
+  "famille": "nouveau",
+  "annee": "2025",
+  "resume": "Premier antalgique d'une nouvelle famille non opioïde : coupe le signal de douleur dans le nerf lui-même (FDA, 01/2025).",
+  "patient": {
+   "sert": "Pour une douleur aiguë modérée à forte (après une opération, un traumatisme…), ce médicament agit sur les nerfs de la douleur eux-mêmes : il bloque des « canaux » — sortes de portes électriques — qui laissent passer le message douloureux vers le cerveau. Le message part moins bien : la douleur baisse, sans morphine, sans euphorie et sans risque de dépendance.",
+   "prendre": "Comprimé selon la prescription, pour des douleurs aiguës : la durée étudiée va jusqu'à 14 jours. Suivez précisément la posologie et ne doublez pas les prises.",
+   "ei": "Démangeaisons (prurit), maux de tête ; effets généralement légers dans les essais. C'est un médicament récent : signalez tout effet inhabituel.",
+   "vigilance": "Il ne fait ni dormir, ni planer : pas d'accoutumance attendue. Il ne remplace pas vos autres traitements sans avis.",
+   "consulter": "Éruption cutanée importante, jaunisse, urines foncées."
+  },
+  "pro": {
+   "moa": "<b>Inhibiteur sélectif du canal sodique voltage-dépendant NaV1.8</b>, exprimé préférentiellement par les <b>nocicepteurs périphériques</b> (fibres Aδ et C), où il porte l'essentiel du courant sodique du potentiel d'action. Le bloc (usage-dépendant) empêche la transmission du message douloureux <b>à sa source, dans le nerf</b> — sans action centrale et sans recours aux récepteurs µ : <b>pas de dépression respiratoire, pas de dépendance</b>. Sécurité du ciblage : NaV1.8 est peu exprimé dans le cœur (contrairement à NaV1.5) et le SNC ; cible génétiquement validée (SCN10A). Première AMM d'un inhibiteur de canal sodique sélectif dans la douleur (FDA, 30/01/2025) : une alternative structurellement nouvelle aux opioïdes faibles.",
+   "pk": "Prise orale ; efficacité démontrée dans le programme de phase 3 sur plusieurs modèles de douleur aiguë (postopératoire, abdominale) ; durée d'étude ≤ 14 jours.",
+   "place": "Douleur aiguë modérée à sévère de l'adulte ; pas d'indication dans la douleur chronique à ce jour ; l'enjeu santé publique : réduire l'exposition aux opioïdes postopératoires.",
+   "ei": "Prurit, céphalées, paresthésies ; surveillance hépatique lors du programme ; pas de signal de tolérance/dépendance à ce jour.",
+   "interactions": "Médicament récent : données d'interactions en cours de caractérisation — évaluer chaque coprescription, notamment hépatotoxiques.",
+   "surveillance": "Réévaluation de la douleur à 14 jours (limite d'étude) ; signalement de tout effet cutané ou hépatique ; triage contre les double-antalgiques."
+  },
+  "src": [
+   [
+    "PubMed — essais de phase 3",
+    "https://pubmed.ncbi.nlm.nih.gov/40117446/"
+   ],
+   [
+    "NeurologyLive — AMM FDA (Journavx)",
+    "https://www.neurologylive.com/view/fda-approves-vertex-pharmaceuticals-suzetrigine-acute-pain-management"
+   ]
+  ]
+ }
+];
+var S = { q:"", vue:"patient", fiche:null };
+function esc(s){ return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;"); }
+function norm(s){ return s.toLowerCase(); }
+function cardHTML(f,i){
+  return "<div class='fcard' onclick='openFiche("+i+")'>"
+  +"<div class='top'><span class='tag "+(f.famille==="nouveau"?"new":"old")+"'>"+(f.famille==="nouveau"?"Récent "+f.annee:"Classique")+"</span>"
+  +"<span class='tag cl'>"+esc(f.classe)+"</span></div>"
+  +"<h3>"+esc(f.dci)+"</h3>"
+  +(f.noms?"<div class='cl'>"+esc(f.noms)+"</div>":"")
+  +"<div class='res'>"+esc(f.resume)+"</div></div>";
+}
+function apply(){
+  var list = FICHES.map(function(f,i){return {f:f,i:i};}).filter(function(x){
+    if(!S.q) return true;
+    var hay = norm(x.f.dci+" "+(x.f.noms||"")+" "+x.f.classe+" "+x.f.resume+" "+x.f.pro.moa);
+    return hay.indexOf(S.q)>=0;
+  });
+  document.getElementById("count").innerHTML = "<b>"+list.length+"</b> fiche"+(list.length>1?"s":"")+" · "+FICHES.length+" au total";
+  document.getElementById("grid").innerHTML = list.map(function(x){return cardHTML(x.f,x.i);}).join("");
+  document.getElementById("empty").style.display = list.length?"none":"block";
+}
+function sec(title,icon,body){ return "<div class='sec'><h3>"+icon+" "+title+"</h3>"+body+"</div>"; }
+function p(t){ return "<p>"+esc(t)+"</p>"; }
+function openFiche(i){
+  S.fiche = i;
+  var f = FICHES[i];
+  var P = f.patient, Pr = f.pro;
+  var html = "<div class='fhead'><h2>"+esc(f.dci)+"</h2>"
+    +"<div class='noms'>"+(f.noms?esc(f.noms)+" · ":"")+esc(f.classe)+"</div>"
+    +"<div class='toggle'>"
+    +"<button class='g"+(S.vue==="patient"?" on":"")+"' id='bt-pat' onclick='setVue(\"patient\")'>👤 Fiche grand public</button>"
+    +"<button class='p"+(S.vue==="pro"?" on":"")+"' id='bt-pro' onclick='setVue(\"pro\")'>🩺 Fiche pro</button>"
+    +"</div><span class='hint'>Un clic pour basculer — même fiche, deux niveaux de lecture.</span></div>"
+  // fiche grand public
+  +"<div class='sec pat-only'><h3>🎯 À quoi sert ce médicament ?</h3><div class='big-idea'>"+esc(P.sert)+"</div></div>"
+  +sec("📋 Comment le prendre","📋",p(P.prendre))
+  +sec("⚠️ Effets indésirables courants","⚠️",p(P.ei))
+  +sec("👁️ Points de vigilance","👁️",p(P.vigilance))
+  +sec("🚨 Quand consulter","🚨",p(P.consulter))
+  // fiche pro
+  +"<div class='sec pro-only'><h3>🧬 Mécanisme d'action</h3><div class='moabox'>"+Pr.moa+"</div></div>"
+  +sec("⚗️ Pharmacocinétique","⚗️",p(Pr.pk))
+  +sec("🎯 Indications & place dans la stratégie","🎯",p(Pr.place))
+  +sec("⚠️ Effets indésirables & tolérance","⚠️",p(Pr.ei))
+  +sec("🔀 Interactions","🔀",p(Pr.interactions))
+  +sec("🔍 Surveillance & conseil officinal","🔍",p(Pr.surveillance))
+  // sources communes
+  +"<div class='srcs'>🔗 Sources : "+(f.src||[]).map(function(s){return "<a href='"+s[1]+"' target='_blank' rel='noopener'>"+esc(s[0])+"</a>";}).join(" · ")+"</div>";
+  document.getElementById("fiche").innerHTML = html;
+  setVue(S.vue);
+  document.getElementById("grid").style.display = "none";
+  document.getElementById("empty").style.display = "none";
+  document.getElementById("fiche").style.display = "block";
+  document.getElementById("back").style.display = "inline-block";
+  window.scrollTo(0,0);
+  location.hash = f.dci.toLowerCase().replace(/[^a-z0-9]/g,"");
+}
+function setVue(v){
+  S.vue = v;
+  var el = document.getElementById("fiche");
+  el.classList.remove("vue-pro","vue-patient");
+  el.classList.add(v==="pro"?"vue-pro":"vue-patient");
+  var bp = document.getElementById("bt-pat"), bo = document.getElementById("bt-pro");
+  if(bp) bp.className = "g"+(v==="patient"?" on":"");
+  if(bo) bo.className = "p"+(v==="pro"?" on":"");
+}
+function showList(){
+  S.fiche = null;
+  document.getElementById("fiche").style.display = "none";
+  document.getElementById("back").style.display = "none";
+  document.getElementById("grid").style.display = "grid";
+  location.hash = "";
+  apply();
+}
+document.getElementById("q").addEventListener("input", function(){ S.q=this.value.trim().toLowerCase(); if(S.fiche===null) apply(); });
+apply();
+// ouverture directe par hash
+var h = location.hash.replace("#","");
+if(h){ var idx = FICHES.findIndex(function(f){ return f.dci.toLowerCase().replace(/[^a-z0-9]/g,"")===h; }); if(idx>=0) openFiche(idx); }
+</script>
+</body>
+</html>
