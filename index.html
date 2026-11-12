@@ -137,7 +137,7 @@
     .searchrow .printbtn,.searchrow .resetbtn{flex:1 1 40%}
   }
   @media print{
-    .toolbar,.legend,.printbtn,.tabs,#searchtab,.presets{display:none !important}
+    .toolbar,.legend,.printbtn,.tabs,.presets{display:none !important}
     body{background:#fff; padding:0}
     header{background:#fff; color:#000; border-bottom:2px solid #000}
     .card{box-shadow:none; page-break-inside:avoid}
@@ -409,7 +409,6 @@ html.dark #classestab .cfoot{color:var(--muted);border-top-color:var(--line)}
     </div>
     <nav class="tabs">
       <button class="tab on" id="btn-revues" onclick="showTab('revues')">📚 Mes revues</button>
-      <button class="tab" id="btn-search" onclick="showTab('search')">🔎 Recherche &amp; conflits d’intérêts</button>
       <button class="tab" id="btn-classes" onclick="showTab('classes')">💊 Classes de médicaments</button>
       <button class="tab" id="btn-recos" onclick="showTab('recos')">📋 Recommandations</button>
     </nav>
@@ -494,33 +493,9 @@ html.dark #classestab .cfoot{color:var(--muted);border-top-color:var(--line)}
   <div id="list"></div>
 </main>
 
-<section id="searchtab" class="panel" style="display:none">
-  <div class="box">
-    <h2>🔎 Recherche bibliographique en direct</h2>
-    <p>Interrogez PubMed en direct (plus de 37 millions de références) depuis ce fichier. Pour chaque résultat, l’onglet « ⚖ Analyser les conflits d’intérêts » va chercher la déclaration de conflits d’intérêts et de financement dans le texte intégral libre (Europe PMC). Nécessite une connexion internet — si vous êtes dans l’aperçu intégré, utilisez le fichier PharmaVeille.html téléchargé dans votre navigateur.</p>
-    <div class="searchrow">
-      <input id="pq" type="search" placeholder="Requête PubMed (ex : orforglipron AND obesity, « vitamin D » AND fracture…)">
-      <button class="printbtn" onclick="pubmedSearch()">Rechercher sur PubMed</button>
-    </div>
-    <div class="engines">
-      <span class="lbl">Même requête, autres moteurs :</span>
-      <a onclick="openEngine('https://pubmed.ncbi.nlm.nih.gov/?term=')">PubMed ↗</a>
-      <a onclick="openEngine('https://europepmc.org/search?query=')">Europe PMC ↗</a>
-      <a onclick="openEngine('https://scholar.google.com/scholar?q=')">Google Scholar ↗</a>
-      <a onclick="openEngine('https://www.cochranelibrary.com/search?q=')">Cochrane Library ↗</a>
-      <a onclick="openEngine('https://clinicaltrials.gov/search?term=')">ClinicalTrials.gov ↗</a>
-      <a onclick="openEngine('https://hal.science/search/?q=')">HAL ↗</a>
-      <a onclick="openEngine('https://www.tripdatabase.com/search?criteria=')">TRIP (médecine factuelle) ↗</a>
-      <a onclick="openEngine('https://openalex.org/works?q=')">OpenAlex ↗</a>
-    </div>
-    <div id="presults" style="margin-top:14px"></div>
-    <div id="coibox"></div>
-  </div>
-</section>
-
 <footer>
   <p><b>Comment lire ces revues ?</b> Chaque revue indique sa force d’étude : plus le niveau est bas (1), plus la preuve est solide. Une méta-analyse d’essais randomisés (N1) pèse plus qu’un essai isolé ; une étude observationnelle (N4) suggère sans démontrer. Le badge ⚖ indique le niveau de conflits d’intérêts : « Industrie » signifie un essai sponsorisé par le laboratoire qui commercialise le produit — un résultat positif dans ces conditions doit être interprété avec plus de recul (critères de substitution, choix des comparateurs, diffusion par communiqué). Les messages « À dire au patient » sont des repères de communication officinale, pas des recommandations officielles.</p>
-  <p><b>Outils bibliographiques :</b> l’onglet « Recherche &amp; conflits d’intérêts » interroge PubMed en direct (NCBI E-utilities) et extrait les déclarations de conflits d’intérêts et de financement des articles en accès libre via Europe PMC ; la même requête s’ouvre aussi dans Google Scholar, Cochrane, ClinicalTrials.gov, HAL, TRIP ou OpenAlex. Ces fonctions nécessitent une connexion internet et fonctionnent dans le fichier téléchargé.</p>
+  
   <p><b>Mise à jour de la base :</b> demandez à votre assistant IA « mets à jour PharmaVeille sur [domaine ou substance] » : il cherche les dernières publications sourcées et régénère le fichier. Chaque source est cliquable pour vérification.</p>
   <p>Veille constituée le 11/11/2026 à partir de publications primaires et de sources institutionnelles. Document d’information professionnelle — ne remplace ni le RCP, ni les recommandations HAS/ANSM en vigueur.</p>
 </footer>
@@ -544,7 +519,6 @@ html.dark #classestab .cfoot{color:var(--muted);border-top-color:var(--line)}
   <div id="rgrid"></div>
   <p class="cfoot">📋 Recommandations &amp; guidelines — sociétés savantes et agences (HAS, ESC, GINA, GOLD, ADA, EASL, EULAR, ESMO, KDIGO, NICE, EuroGuiDerm/EDF, CNGOF, AFU, SFORL). Documents sources accessibles en un clic — toujours se référer au texte intégral en vigueur.</p>
 </section>
-
 
 <script>
 const NIV = {1:"N1 · Méta-analyse", 2:"N2 · Phase 3", 3:"N3 · Phase 2 / petit essai", 4:"N4 · Vie réelle", 5:"N5 · Revue / alerte"};
@@ -575,7 +549,7 @@ const REVUES = [
 {"dom":"Oncologie","type":"Médicament","n":2,"dt":"2026-06","titre":"Ivonescimab : premier médicament chinois en présentation plénière à l’ASCO (HARMONi-6)","subst":"Ivonescimab — anticorps bi-spécifique PD-1 × VEGF","res":"HARMONi-6, essai présenté en plénière à l’ASCO 2026 dans le cancer bronchique non à petites cellules épidermoïde : l’ivonescimab, anticorps bi-spécifique anti-PD-1/VEGF développé en Chine, se positionne face aux standards d’immunothérapie — signe de l’émergence de la Chine comme force d’innovation en oncologie mondiale.","off":"Le paysage de l’immunothérapie s’internationalise : de nouvelles molécules bi-fonctionnelles arrivent dans les pipelines.","src":[["PSI-CRO (ASCO 2026)","https://psi-cro.com/asco-2026-personalized-therapy-immunotherapy/"],["OncoDaily","https://oncodaily.com/oncolibrary/immunotherapy-oncology"]],"coi":"Industrie","fin":"Développé par Akeso (Chine), sponsor de l’essai HARMONi-6."},
 {"dom":"Infectiologie & Vaccins","type":"Vaccin","n":1,"dt":"2026-05","titre":"Vaccins RSV des seniors : 58–83 % d’efficacité réelle contre l’hospitalisation","subst":"Vaccins RSVpreF (Abrysvo) et RSVpreF3 (Arexvy)","res":"Méta-analyse de données post-AMM (Clinical Infectious Diseases, mai 2026) : les vaccins RSV préviennent 58 à 83 % des hospitalisations et passages aux urgences liés au virus respiratoire syncytial chez les personnes âgées, selon les saisons et critères de jugement — les données de vie réelle confirment les essais.","off":"Un vaccin anti-VRS pour seniors existe et son efficacité est confirmée en vie réelle : à proposer à l’automne selon les recommandations en vigueur (âge, comorbidités).","src":[["Clin Infect Dis 2026","https://academic.oup.com/cid/article/82/5/e1104/8489594"],["CIDRAP","https://www.cidrap.umn.edu/respiratory-syncytial-virus-rsv/rsv-vaccines-estimated-be-58-83-protective-older-adults"],["PubMed","https://pubmed.ncbi.nlm.nih.gov/41705791/"]],"coi":"Indépendant","fin":"Méta-analyse de données post-AMM issues de registres et dossiers médicaux électroniques ; pas de financement industriel identifié."},
 {"dom":"Nutrition & Compléments","type":"Complément alimentaire","n":1,"dt":"2026-05","titre":"Vitamine D et calcium : la grande méta-analyse qui met fin au dogme « anti-fracture »","subst":"Vitamine D · calcium — prévention des fractures et chutes","res":"Revue systématique et méta-analyse (BMJ, 2026, ~154 000 participants) : la supplémentation en calcium, en vitamine D ou leur association n’apporte pas de protection cliniquement pertinente contre les fractures ni les chutes chez l’adulte — dans la lignée des positions de l’USPSTF, défavorables à la supplémentation systématique en population générale.","off":"La vitamine D « pour les os » en prévention générale ne sert à rien : réserver la supplémentation aux carences documentées (dosage 25-OH-D3), à l’ostéoporose traitée et aux populations spécifiques.","src":[["BMJ 2026","https://www.bmj.com/content/393/bmj-2025-088050"],["Medical Daily (analyse)","https://www.medicaldaily.com/calcium-vitamin-d-supplements-fractures-bmj-meta-analysis-153000-people-2026-475677"]],"coi":"Indépendant","fin":"Méta-analyse menée dans un cadre institutionnel (agence fédérale américaine, contexte USPSTF) ; sans financement industriel."},
-{"dom":"Nutrition & Compléments","type":"Complément alimentaire","n":1,"dt":"2026-02","titre":"Créatine et cerveau du sujet âgé : des données sérieuses s’accumulent","subst":"Créatine monohydrate — cognition et performance physique du senior","res":"Revue systématique (Nutrition Reviews, fév. 2026) sur créatine et cognition du vieillissement : les essais les mieux conduits montrent des bénéfices surtout en mémoire et attention, en condition de stress cognitif ou de privation de sommeil. Les revues 2025-2026 sur la sphère musculaire du senior restent hétérogènes (effets renforcés par l’entraînement en résistance). L’EFSA n’a pas validé d’allégation cognition (2024) ; sécurité bonne aux doses usuelles (3–5 g/j).","off":"La créatine n’est ni dopante ni réservée aux sportifs : chez le senior, c’est probablement le complément « muscle + cerveau » le mieux documenté — effets attendus modestes, à présenter sans excès.","src":[["Nutrition Reviews 2026","https://academic.oup.com/nutritionreviews/article/84/2/333/8253584"],["Frontiers in Nutrition","https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2025.1687719/full"],["Commentaire EFSA","https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2026.1716285/full"]],"coi":"À vérifier","fin":"Revue académique ; financement non précisé dans les sources consultées — utilisez le bouton « Analyser COI » pour lire la déclaration originale."},
+{"dom":"Nutrition & Compléments","type":"Complément alimentaire","n":1,"dt":"2026-02","titre":"Créatine et cerveau du sujet âgé : des données sérieuses s’accumulent","subst":"Créatine monohydrate — cognition et performance physique du senior","res":"Revue systématique (Nutrition Reviews, fév. 2026) sur créatine et cognition du vieillissement : les essais les mieux conduits montrent des bénéfices surtout en mémoire et attention, en condition de stress cognitif ou de privation de sommeil. Les revues 2025-2026 sur la sphère musculaire du senior restent hétérogènes (effets renforcés par l’entraînement en résistance). L’EFSA n’a pas validé d’allégation cognition (2024) ; sécurité bonne aux doses usuelles (3–5 g/j).","off":"La créatine n’est ni dopante ni réservée aux sportifs : chez le senior, c’est probablement le complément « muscle + cerveau » le mieux documenté — effets attendus modestes, à présenter sans excès.","src":[["Nutrition Reviews 2026","https://academic.oup.com/nutritionreviews/article/84/2/333/8253584"],["Frontiers in Nutrition","https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2025.1687719/full"],["Commentaire EFSA","https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2026.1716285/full"]],"coi":"À vérifier","fin":"Revue académique ; financement non précisé dans les sources consultées ."},
 {"dom":"Nutrition & Compléments","type":"Complément alimentaire","n":1,"dt":"2025-10","titre":"Oméga-3 et cœur : effet global modeste, l’EPA pur à forte dose garde la faveur","subst":"Oméga-3 (EPA / DHA) — prévention cardiovasculaire","res":"Méta-analyses 2025-2026 : la supplémentation en oméga-3 réduit de façon limitée et débattue les événements cardiovasculaires en population générale ; les signaux favorables se concentrent sur les formulations hautement purifiées en EPA à forte dose, en complément des statines en prévention secondaire. Une méta-analyse suggère un avantage du EPA seul sur la mortalité cardiovasculaire face aux mélanges EPA/DHA.","off":"Pas de « gélule anti-infarctus » pour tous : l’oméga-3 n’a de justification que dans des cadres précis (hypertriglycéridémie, prévention secondaire sur avis médical).","src":[["Méta-analyse 2025","https://onlinelibrary.wiley.com/doi/10.1002/ctd2.70094"],["EPA vs EPA/DHA (mortalité CV)","https://www.sciencedirect.com/science/article/pii/S2772963X25005745"],["Lipides en cardiopathie ischémique","https://www.sciencedirect.com/science/article/abs/pii/S0939475326002279"]],"coi":"Mixte","fin":"Méta-analyses académiques englobant des essais primaires sponsorisés par l’industrie (ex. REDUCE-IT financé par Amarin, fabricant de l’EPA pur)."},
 {"dom":"Psychiatrie","type":"Complément alimentaire","n":1,"dt":"2026-01","titre":"Oméga-3 à dominante EPA : adjuvant réel (mais modeste) de la dépression","subst":"EPA ≥ 60 % — 1 à 2 g/jour","res":"Les méta-analyses d’essais randomisés (2025-2026) confirment un effet antidépresseur additif des oméga-3 : taille d’effet autour de −0,4 à −0,56 (SMD), spécifique aux formules contenant ≥ 60 % d’EPA à 1–2 g/jour, particulièrement utile en cas d’inflammation, de faibles taux d’oméga-3 ou de dépression résistante. Pas de preuve solide pour la DHA seule. La « psychiatrie nutritionnelle » devient une discipline reconnue.","off":"En complément du traitement antidépresseur — jamais en remplacement : 1 à 2 g d’EPA par jour a un niveau de preuve honorable.","src":[["Frontiers in Nutrition 2026","https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2026.1748196/full"],["Revue narrative (MDPI)","https://www.mdpi.com/2813-7086/3/1/2"]],"coi":"À vérifier","fin":"Méta-analyses académiques dont certaines incluent des essais financés par des producteurs d’oméga-3 — à vérifier article par article."},
 {"dom":"Nutrition & Compléments","type":"Complément alimentaire","n":1,"dt":"2025-12","titre":"Coenzyme Q10 et douleurs musculaires sous statines : la question reste ouverte","subst":"CoQ10 (ubiquinone) — myalgies sous statines","res":"Méta-analyse (Journal of Nutritional Science) aux résultats mitigés sur les myopathies sous statines ; une étude observationnelle de 2025 rapporte une amélioration des symptômes musculaires avec 50 mg matin et soir chez des utilisateurs au long cours ; une synthèse récente suggère un bénéfice possible. Bilan : option d’appoint plausible, pas de preuve solide — penser d’abord aux causes classiques (interactions, hypothyroïdie, effort physique inhabituel).","off":"Le CoQ10 peut être tenté si myalgies sous statine, mais mieux vaut d’abord réévaluer avec le médecin (posologie, interactions, cause) : l’effet est inconstant.","src":[["Méta-analyse (Cambridge)","https://www.cambridge.org/core/journals/journal-of-nutritional-science/article/effects-of-coenzyme-q10-supplementation-on-myopathy-in-statintreated-patients-a-systematic-review-and-metaanalysis/21158F64C8D162585D71D5616B075E05"],["PubMed 2025 (observationnel)","https://pubmed.ncbi.nlm.nih.gov/41122613/"],["Examine (synthèse)","https://examine.com/research-feed/study/0mXOq1/"]],"coi":"Mixte","fin":"Méta-analyse hétérogène : plusieurs essais primaires impliquent des fabricants de compléments ; l’étude observationnelle citée est académique."},
@@ -862,7 +836,7 @@ function card(r, i){
     + "<div class='subst'>💊 "+r.subst+"</div>"
     + "<p class='res'>"+r.res+"</p>"
     + "<div class='off'><b>🗣️ À dire au patient :</b> "+r.off+"</div>"
-    + "<div class='coib'><b>⚖ Financement / conflits d’intérêts :</b> "+r.fin+" <button class='coibtn' onclick='analyzeCOI("+i+")'>🔎 Vérifier la déclaration originale</button></div>"
+    + "<div class='coib'><b>⚖ Financement / conflits d’intérêts :</b> "+r.fin+"</div>"
     + "<div class='src'><span class='lbl'>Sources :</span>"
     + r.src.map(s=>"<a href='"+s[1]+"' target='_blank' rel='noopener'>"+s[0]+"</a>").join("")
     + "<a class='pm' href='"+pm+"' target='_blank' rel='noopener'>PubMed ↗</a>"
@@ -945,148 +919,18 @@ document.getElementById("fcoi").addEventListener("change", e=>{ state.coi = e.ta
 document.getElementById("fannee").addEventListener("change", e=>{ state.annee = e.target.value; apply(); });
 
 function showTab(t){
-  const rev = (t==="revues"), se = (t==="search"), cl = (t==="classes"), rc = (t==="recos");
+  const rev = (t==="revues"), cl = (t==="classes"), rc = (t==="recos");
   document.getElementById("toolrev").style.display = rev ? "" : "none";
   document.getElementById("legendrev").style.display = rev ? "" : "none";
   document.getElementById("mainrev").style.display = rev ? "" : "none";
-  document.getElementById("searchtab").style.display = se ? "" : "none";
   document.getElementById("classestab").style.display = cl ? "" : "none";
   document.getElementById("recostab").style.display = rc ? "" : "none";
   document.getElementById("btn-revues").className = "tab" + (rev ? " on" : "");
-  document.getElementById("btn-search").className = "tab" + (se ? " on" : "");
   document.getElementById("btn-classes").className = "tab" + (cl ? " on" : "");
   document.getElementById("btn-recos").className = "tab" + (rc ? " on" : "");
-  if(se) document.getElementById("pq").focus();
 }
 
 function esc(s){ return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;"); }
-async function jfetch(url){
-  const r = await fetch(url);
-  if(!r.ok) throw new Error("HTTP "+r.status);
-  return r.json();
-}
-function neterr(e){
-  return "<div class='coierr'>⚠ Connexion impossible ("+esc(e.message)+"). La recherche en direct nécessite une connexion internet — dans l’aperçu intégré, les requêtes externes peuvent être bloquées : utilisez le fichier PharmaVeille.html téléchargé, ouvert dans votre navigateur.</div>";
-}
-function openEngine(base){
-  const q = document.getElementById("pq").value.trim();
-  if(!q){ alert("Saisissez d’abord une requête."); return; }
-  window.open(base + encodeURIComponent(q), "_blank", "noopener");
-}
-
-async function pubmedSearch(){
-  const q = document.getElementById("pq").value.trim();
-  if(!q){ alert("Saisissez une requête."); return; }
-  const box = document.getElementById("presults");
-  box.innerHTML = "<div class='loading'>⏳ Recherche PubMed en cours…</div>";
-  try{
-    const s = await jfetch("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&retmode=json&retmax=12&sort=relevance&term="+encodeURIComponent(q));
-    const ids = s.esearchresult.idlist;
-    if(!ids.length){ box.innerHTML = "<div class='empty'>Aucun résultat PubMed pour cette requête.</div>"; return; }
-    const d = await jfetch("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&retmode=json&id="+ids.join(","));
-    box.innerHTML = "<div class='pmeta'>"+ids.length+" résultats PubMed les plus pertinents :</div>" + ids.map(id=>{
-      const a = d.result[id];
-      if(!a) return "";
-      const au = (a.authors||[]).slice(0,3).map(x=>x.name).join(", ") + ((a.authors||[]).length>3?" et al.":"");
-      return "<div class='pres'>"
-        + "<div class='pt'>"+esc(a.title)+"</div>"
-        + "<div class='pmeta'>"+esc(au)+" · "+esc(a.source)+" · "+esc(a.pubdate)+" · PMID "+id
-        + " — <a href='https://pubmed.ncbi.nlm.nih.gov/"+id+"/' target='_blank' rel='noopener'>PubMed</a>"
-        + " · <a href='https://europepmc.org/article/MED/"+id+"' target='_blank' rel='noopener'>Europe PMC</a></div>"
-        + "<button class='coibtn' onclick='coiPMID(\""+id+"\")'>⚖ Analyser les conflits d’intérêts</button>"
-        + "</div>";
-    }).join("");
-  }catch(e){ box.innerHTML = neterr(e); }
-}
-
-function extractCOI(xml, res){
-  const doc = new DOMParser().parseFromString(xml, "text/xml");
-  const found = [];
-  const seen = new Set();
-  function push(t, txt){
-    const key = String(txt).slice(0,60);
-    if(txt.length>40 && txt.length<8000 && !seen.has(key)){ seen.add(key); found.push({t:t, txt:txt.slice(0,1800)}); }
-  }
-  doc.querySelectorAll("sec, notes, ack").forEach(el=>{
-    const t = (el.querySelector("title")||{}).textContent || "";
-    if(/conflict|competing|disclos|interest|funding|acknowledg|financial/i.test(t)){
-      push(t, el.textContent.replace(/\s+/g," ").trim());
-    }
-  });
-  const funds = [];
-  doc.querySelectorAll("funding-statement").forEach(e=>{
-    const t = e.textContent.replace(/\s+/g," ").trim();
-    if(t) funds.push(t);
-  });
-  if(!found.length && !funds.length){
-    const plain = xml.replace(/<[^>]+>/g," ").replace(/\s+/g," ").trim();
-    const sentences = plain.split(/(?<=[.!?])\s+/);
-    const hits = sentences.filter(s=>/conflict|competing|disclos|fund(ed|ing)|financial interest/i.test(s)).slice(0,6);
-    if(hits.length) push("Extraits liés aux conflits d’intérêts (recherche textuelle)", hits.join(" "));
-  }
-  if(!found.length && !funds.length){
-    return "<div class='coierr'>Aucune section « conflits d’intérêts » ou « financement » identifiée dans le texte intégral ("+esc(res.pmcid)+"). Vérifiez l’article original chez l’éditeur.</div>";
-  }
-  let html = "<div class='coiok'><div class='pt'>⚖ Déclarations extraites du texte intégral</div>"
-    + "<div class='pmeta'>"+esc(res.title)+"</div>";
-  if(found.length) html += found.map(f=>"<div class='coisec'><b>"+esc(f.t)+"</b><br>"+esc(f.txt)+"</div>").join("");
-  if(funds.length) html += "<div class='coisec'><b>Déclaration de financement</b><br>"+esc(funds.join(" | "))+"</div>";
-  html += "<div class='src'><span class='lbl'>Source :</span><a href='https://europepmc.org/article/"+esc(res.pmcid)+"' target='_blank' rel='noopener'>Europe PMC "+esc(res.pmcid)+" (texte intégral libre)</a></div></div>";
-  return html;
-}
-
-async function coiPMID(pmid){
-  const out = document.getElementById("coibox");
-  out.innerHTML = "<div class='loading'>⏳ Recherche de la déclaration de conflits d’intérêts (Europe PMC)…</div>";
-  try{
-    const s = await jfetch("https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:"+pmid+"%20AND%20SRC:MED&format=json&resultType=core");
-    const res = (s.resultList.result||[])[0];
-    if(!res){
-      out.innerHTML = "<div class='coierr'>Article introuvable sur Europe PMC — consultez la section « Conflict of interest » sur <a href='https://pubmed.ncbi.nlm.nih.gov/"+pmid+"/' target='_blank' rel='noopener'>la page PubMed</a>.</div>";
-      return;
-    }
-    if(!res.pmcid || res.inEPMC!=="Y"){
-      const link = res.doi ? "https://doi.org/"+res.doi : "https://europepmc.org/article/MED/"+pmid;
-      out.innerHTML = "<div class='coierr'>Texte intégral libre indisponible pour cet article (accès payant) : la déclaration de conflits d’intérêts figure dans l’article chez l’éditeur — <a href='"+link+"' target='_blank' rel='noopener'>ouvrir l’article</a>.</div>";
-      return;
-    }
-    const r = await fetch("https://www.ebi.ac.uk/europepmc/webservices/rest/"+res.pmcid+"/fullTextXML");
-    if(!r.ok) throw new Error("HTTP "+r.status);
-    out.innerHTML = extractCOI(await r.text(), res);
-  }catch(e){ out.innerHTML = neterr(e); }
-}
-
-async function analyzeCOI(i){
-  showTab('search');
-  const r = REVUES[i];
-  const base = r.subst.split("—")[0].split("(")[0].trim();
-  document.getElementById("pq").value = base;
-  let pmid = null;
-  for(const s of r.src){
-    const m = String(s[1]||"").match(/pubmed\.ncbi\.nlm\.nih\.gov\/(\d+)/);
-    if(m){ pmid = m[1]; break; }
-  }
-  if(pmid){ await coiPMID(pmid); return; }
-  document.getElementById("coibox").innerHTML = "<div class='loading'>⏳ Recherche de l’article principal…</div>";
-  try{
-    const s = await jfetch("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&retmode=json&retmax=5&sort=relevance&term="+encodeURIComponent(base+" AND (randomized[pt] OR meta-analysis[pt] OR trial[pt])"));
-    const ids = s.esearchresult.idlist;
-    if(!ids.length){
-      document.getElementById("coibox").innerHTML = "<div class='coierr'>Aucun article trouvé pour « "+esc(base)+" » — affinez la requête puis relancez l’analyse depuis un résultat PubMed.</div>";
-      return;
-    }
-    const d = await jfetch("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&retmode=json&id="+ids.join(","));
-    const words = r.titre.toLowerCase().split(/\W+/).filter(w=>w.length>4);
-    let best = ids[0], score = -1;
-    ids.forEach(id=>{
-      const t = (d.result[id]&&d.result[id].title||"").toLowerCase();
-      const sc = words.reduce((acc,w)=> acc + (t.includes(w)?1:0), 0);
-      if(sc>score){ score=sc; best=id; }
-    });
-    await coiPMID(best);
-  }catch(e){ document.getElementById("coibox").innerHTML = neterr(e); }
-}
-
 apply();
 /* ==== MODULE CLASSES DE MÉDICAMENTS (onglet 3) ==== */
 const CLASSES = [
