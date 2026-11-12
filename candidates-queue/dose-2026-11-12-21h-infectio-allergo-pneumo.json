@@ -1,0 +1,196 @@
+{
+ "revues": [
+  {
+   "id": "inf-tebipenem-2026",
+   "ty": "Médicament",
+   "dom": "Infectiologie & Vaccins",
+   "n": 2,
+   "dt": "2026-06",
+   "des": "Tébipéném pivoxil (Utebzi) : premier carbapénème ORAL approuvé — FDA, 17 juin 2026, infections urinaires compliquées/pyélonéphrite de l'adulte",
+   "tag": "tébipéném pivoxil",
+   "res": "La FDA a approuvé le 17 juin 2026 la tébipéném pivoxil (Utebzi, GSK/Spero), premier et unique carbapénème oral, pour les infections urinaires compliquées (cUTI) incluant la pyélonéphrite, chez l'adulte ayant des options orales limitées ou inexistantes (page FDA vue). Efficacité évaluée dans l'essai pivotal randomisé en double aveugle PIVOT-PO (phase 3, oral tébipéném HBr 600 mg toutes les 6 h vs imipénème-cilastatine IV) ; disponibilité US annoncée fin 2026. ATTENTION : pas d'approbation européenne/française vue dans les sources — ne rien affirmer pour la France.",
+   "src": [
+    [
+     "FDA — approval du premier carbapénème oral",
+     "https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-first-oral-carbapenem-therapy-complicated-urinary-tract-infections"
+    ],
+    [
+     "Urology Times — FDA approves tebipenem pivoxil",
+     "https://www.urologytimes.com/view/fda-approves-tebipenem-pivoxil-for-complicated-urinary-tract-infections"
+    ],
+    [
+     "GSK — résultats de phase III PIVOT-PO",
+     "https://www.gsk.com/en-gb/media/press-releases/positive-pivot-po-phase-iii-data-show-tebipenem-hbr-s-potential-as-the-first-oral-carbapenem-antibiotic-for-patients-with-complicated-urinary-tract-infections-cutis/"
+    ],
+    [
+     "Contagion Live — design PIVOT-PO",
+     "https://www.contagionlive.com/view/oral-carbapenem-tebipenem-hbr-demonstrates-non-inferiority-to-iv-therapy-in-phase-iii-pivot-po-trial"
+    ]
+   ]
+  },
+  {
+   "id": "inf-omadacycline-optic2-2025",
+   "ty": "Médicament",
+   "dom": "Infectiologie & Vaccins",
+   "n": 2,
+   "dt": "2025-12",
+   "des": "Omadacycline vs moxifloxacine dans la PAC nécessitant une hospitalisation (OPTIC-2, essai de phase 3b de non-infériorité)",
+   "tag": "omadacycline",
+   "res": "OPTIC-2 : essai de phase 3b randomisé, en double aveugle, multicentrique, de non-infériorité, comparant l'omadacycline IV (100 mg q12h ×2 doses puis 100 mg/j, relais oral possible après ≥2 jours) à la moxifloxacine IV 400 mg/j chez des patients avec PAC classes PSI III-IV (eClinicalMedicine, publié en décembre 2025 selon le communiqué Paratek daté du 16/04/2026). Sponsor Paratek, financement partiel de fonds fédéraux US (HHS). Chiffres d'efficacité non lus dans les extraits — design décrit sans invention.",
+   "src": [
+    [
+     "PubMed — OPTIC-2 (PMID 41340860)",
+     "https://pubmed.ncbi.nlm.nih.gov/41340860/"
+    ],
+    [
+     "Paratek/GlobeNewswire (16/04/2026, « published in December 2025 »)",
+     "https://www.globenewswire.com/news-release/2026/04/16/3275224/0/en/paratek-pharmaceuticals-to-present-new-data-on-nuzyra-omadacycline-at-escmid-global-2026.html"
+    ],
+    [
+     "eClinicalMedicine — article OPTIC-2",
+     "https://www.thelancet.com/journals/eclinm/article/PIIS2589-5370(25)00590-5/fulltext"
+    ]
+   ]
+  },
+  {
+   "id": "pne-mv130-2026",
+   "ty": "Vaccin",
+   "dom": "Pneumologie",
+   "n": 2,
+   "dt": "2026-07",
+   "des": "MV130, vaccin sublinguel à immunité entraînée : réduction des exacerbations de BPCO — essai randomisé de phase 3 (ERJ)",
+   "tag": "MV130",
+   "res": "Essai randomisé de phase 3 publié en ligne dans l'ERJ le 16/07/2026 (page ERS vue) : MV130, vaccin muqueux sublingual polyvalent à base de bactéries entières inactivées (Inmunotek), réduit les exacerbations modérées et sévères de BPCO — conclusion de l'abstract (« MV130 reduces moderate and severe COPD exacerbations, suggesting its potential role as an adjunct preventive therapy »). Rationnel : les infections respiratoires sont le premier déclencheur des exacerbations. Chiffres détaillés non extraits — pas d'invention.",
+   "src": [
+    [
+     "ERJ — MV130 phase 3 (early, 16/07/2026)",
+     "https://publications.ersnet.org/content/erj/early/2026/07/16/1399300300027-2026"
+    ],
+    [
+     "PubMed — PMID 42492956",
+     "https://pubmed.ncbi.nlm.nih.gov/42492956/"
+    ],
+    [
+     "HCPLive — MV130 reduces COPD exacerbations",
+     "https://www.hcplive.com/view/mv130-mucosal-vaccine-reduces-copd-exacerbations-phase-3-trial"
+    ]
+   ]
+  },
+  {
+   "id": "inf-crispatus-m247-2026",
+   "ty": "Complément",
+   "dom": "Infectiologie & Vaccins",
+   "n": 3,
+   "dt": "2026-11",
+   "des": "Lactobacillus crispatus M247 oral en complément de prophylaxie des cystites récidivantes de la femme — essai pilote randomisé",
+   "tag": "Lactobacillus crispatus M247",
+   "res": "Essai pilote randomisé, ouvert, prospectif (Fondazione Policlinico Gemelli, Rome ; Frontiers in Nutrition, publié le 12/11/2026 — date lue sur la page) : 84 femmes randomisées, toutes analysées, supplément oral L. crispatus M247 + E. faecium L3 + B. lactis BB-12 en complément d'une prophylaxie raccourcie, objectif réduire l'exposition antibiotique des cystites récidivantes. Essai pilote ouvert de faible effectif — preuve PRÉLIMINAIRE, à ne pas survendre ; nouveau usage probiotiques (base : probiotiques = diarrhée sous antibiotique uniquement).",
+   "src": [
+    [
+     "Frontiers in Nutrition — essai pilote randomisé",
+     "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2026.1969675/full"
+    ],
+    [
+     "Bioengineer — communiqué sur l'essai",
+     "https://bioengineer.org/oral-probiotic-regimen-reduces-recurrent-cystitis-in-randomized-clinical-pilot-trial/"
+    ]
+   ]
+  },
+  {
+   "id": "all-ait-umbrella-2025",
+   "ty": "Médicament",
+   "dom": "Allergologie",
+   "n": 1,
+   "dt": "2025-09",
+   "des": "Immunothérapie allergénique dans la rhinite allergique de l'enfant et de l'adulte — revue parapluie des méta-analyses",
+   "tag": "immunothérapie allergénique (AIT)",
+   "res": "Revue parapluie (Frontiers in Immunology, 2025 Sep 25:16:1658826 — date lue dans le snippet PubMed) évaluant l'efficacité des différentes immunothérapies allergéniques (sublinguales/sous-cutanées) pour la rhinite allergique chez l'enfant et l'adulte. Angle nouveau vs les 2 entrées SLIT déjà en base (NMA gouttes/index de réactivité ; synthèse SLIT essais+vie réelle) : vue transversale toutes voies/âges. Chiffres non lus dans les extraits — pas d'invention.",
+   "src": [
+    [
+     "PubMed — PMID 41080605 (2025 Sep 25)",
+     "https://pubmed.ncbi.nlm.nih.gov/41080605/"
+    ]
+   ]
+  }
+ ],
+ "recos": [
+  {
+   "spe": "Pneumologie",
+   "org": "GINA",
+   "dt": "2026-05",
+   "titre": "GINA 2026 — Global Strategy for Asthma Management and Prevention (mise à jour publiée le 5 mai 2026)",
+   "res": "Mise à jour 2026 de la stratégie GINA : nouveaux flowcharts pour aider les soignants de premiers recours à gérer les exacerbations d'asthme, et conseils actualisés sur les biothérapies (Pulmonology Advisor, « released May 5 »). Résumé exécutif « 2026 GINA Strategy Report: Executive Summary and Key Changes » publié dans l'AJRCCM puis dans 5 autres revues respiratoires (pages GINA vues). Renfort de l'entrée GINA 2025 déjà en base (mise à jour distincte).",
+   "src": [
+    [
+     "GINA — 2026 Strategy Report",
+     "https://ginasthma.org/2026-gina-strategy-report/"
+    ],
+    [
+     "AJRCCM — Executive Summary",
+     "https://academic.oup.com/ajrccm/advance-article/doi/10.1093/ajrccm/aamag542/8885525"
+    ],
+    [
+     "Pulmonology Advisor — GINA 2026 Update (released May 5)",
+     "https://www.pulmonologyadvisor.com/features/asthma-gina-2026-update/"
+    ]
+   ]
+  },
+  {
+   "spe": "Infectiologie",
+   "org": "SPILF / SPLF",
+   "dt": "2025",
+   "titre": "Pneumonies communautaires — recommandations SPILF/SPLF 2025 (versions française et anglaise)",
+   "geo": "fr",
+   "res": "Recommandations françaises conjointes SPILF/SPLF 2025 sur les pneumonies communautaires, listées sur la page « Recommandations » d'infectiologie.com avec versions française et anglaise (page vue). Complémentaire de la fiche HAS « PAC ambulatoire » (maj mai 2025) déjà en base — ici périmètre SPILF/SPLF. Mois de publication non lisible sur la page : dt = 2025 (année lue).",
+   "src": [
+    [
+     "infectiologie.com — page Recommandations SPILF",
+     "https://www.infectiologie.com/site/fr/recommandations.html"
+    ]
+   ]
+  },
+  {
+   "spe": "Infectiologie",
+   "org": "IDSA",
+   "dt": "2025",
+   "titre": "IDSA 2025 — prise en charge des infections urinaires compliquées (cUTI) : sélection de l'antibiothérapie, durées et moment du relais IV→oral",
+   "res": "Série de guidelines IDSA 2025 (Clinical Infectious Diseases, vol. 82 Suppl. 3, plus articles en avance) sur les cUTI : sélection de l'antibiothérapie (CID 82 Suppl 3:i36), durée du traitement (PMID 41419448) et moment de la transition IV→oral (CID 82 Suppl 3:i68) — toutes les URLs vues. Directives internationales ; utile pour cadrer les messages de bon usage au comptoir sur les durées courtes.",
+   "src": [
+    [
+     "Clinical Infectious Diseases — Selection of Antibiotic Therapy",
+     "https://academic.oup.com/cid/article/82/Supplement_3/i36/8384446"
+    ],
+    [
+     "PubMed — Duration of Antibiotics (PMID 41419448)",
+     "https://pubmed.ncbi.nlm.nih.gov/41419448/"
+    ],
+    [
+     "Clinical Infectious Diseases — Timing of IV to Oral Transition",
+     "https://academic.oup.com/cid/article/82/Supplement_3/i68/8384096"
+    ]
+   ]
+  },
+  {
+   "spe": "Infectiologie",
+   "org": "HAS-SPILF-GPIP",
+   "dt": "2024",
+   "titre": "Infections urinaires de la femme : cystite (simple, à risque de complication ou récidivante), pyélonéphrite aiguë et colonisation/cystite de la femme enceinte — fiches HAS-SPILF-GPIP 2024",
+   "geo": "fr",
+   "res": "Recommandations françaises HAS-SPILF-GPIP 2024 listées sur le portail GILAR (page vue) : cystite aiguë simple/à risque/récidivante, pyélonéphrite aiguë de la femme, cystite de la femme enceinte. Socle scientifique des protocoles offici(na)ux de délivrance de l'antibiothérapie sans ordonnance (arrêté publié au JO du 17 juin 2024 — flyer OMEDIT IdF vu).",
+   "src": [
+    [
+     "GILAR — recommandations infectiologie en ville",
+     "https://gilar.org/fr/recommandations.html"
+    ],
+    [
+     "recospilf.infectiologie.com — pyélonéphrite aiguë",
+     "https://recospilf.infectiologie.com/pathologie/urinaires/pyelonephrite-aigue/"
+    ],
+    [
+     "OMEDIT IdF — prise en charge officine de la cystite (JO 17/06/2024)",
+     "https://www.omedit-idf.fr/thematiques/officine/officine-prise-en-charge-dune-cystite-simple-aigue-chez-la-femme/"
+    ]
+   ]
+  }
+ ]
+}
