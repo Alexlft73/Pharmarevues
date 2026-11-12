@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PharmaVeille — Trouver une revue</title>
+<style>
+:root{--ink:#0f172a;--mut:#64748b;--line:#e2e8f0;--bg:#f8fafc;--acc:#0d5b8c;
+--n1:#047857;--n2:#2563eb;--n3:#d97706;--n4:#7c3aed;--n5:#64748b;
+--med:#0d5b8c;--comp:#c2410c;--vac:#0f766e;--ale:#b91c1c;--off:#334155;--eco:#9d174d;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;color:var(--ink);background:var(--bg);line-height:1.45}
+header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line);padding:10px 16px;display:flex;gap:14px;align-items:center;flex-wrap:wrap;box-shadow:0 1px 4px rgba(15,23,42,.06)}
+header h1{font-size:17px;white-space:nowrap}
+header h1 span{color:var(--acc)}
+.searchbox{flex:1;min-width:220px;display:flex}
+.searchbox input{flex:1;border:1.5px solid var(--line);border-right:none;border-radius:8px 0 0 8px;padding:9px 12px;font-size:15px}
+.searchbox input:focus{outline:none;border-color:var(--acc)}
+.searchbox button{border:1.5px solid var(--acc);background:var(--acc);color:#fff;border-radius:0 8px 8px 0;padding:9px 16px;font-size:15px;cursor:pointer}
+#count{font-size:13px;color:var(--mut);white-space:nowrap}
+#count b{color:var(--ink);font-size:15px}
+select#tri{border:1.5px solid var(--line);border-radius:8px;padding:8px 10px;font-size:14px;background:#fff;cursor:pointer}
+.layout{display:grid;grid-template-columns:270px 1fr;gap:20px;max-width:1280px;margin:0 auto;padding:18px 16px}
+aside{min-width:0}
+.facet{background:#fff;border:1px solid var(--line);border-radius:12px;margin-bottom:12px;overflow:hidden}
+.facet>button{width:100%;display:flex;justify-content:space-between;align-items:center;background:none;border:none;font-size:14px;font-weight:600;padding:11px 14px;cursor:pointer;color:var(--ink)}
+.facet>button .arr{transition:transform .15s;color:var(--mut);font-size:11px}
+.facet.closed .arr{transform:rotate(-90deg)}
+.fbody{padding:2px 14px 12px;border-top:1px solid var(--line)}
+.facet.closed .fbody{display:none}
+.fopt{display:flex;align-items:center;gap:8px;padding:5px 2px;cursor:pointer;border-radius:6px;font-size:13.5px}
+.fopt:hover{background:var(--bg)}
+.fopt input{accent-color:var(--acc);width:15px;height:15px;cursor:pointer}
+.fopt .lb{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.fopt .ct{color:var(--mut);font-size:12px;background:var(--bg);border-radius:10px;padding:1px 8px;min-width:26px;text-align:center}
+.fopt.on .lb{font-weight:600}
+.nbadge{display:inline-block;width:22px;text-align:center;color:#fff;font-size:11px;font-weight:700;border-radius:5px;padding:1px 0}
+.activebar{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;align-items:center}
+.activebar .chip{display:inline-flex;align-items:center;gap:6px;background:var(--acc);color:#fff;border-radius:16px;padding:4px 10px;font-size:12.5px}
+.activebar .chip button{background:none;border:none;color:#fff;cursor:pointer;font-size:14px;line-height:1;padding:0}
+.activebar .clear{background:none;border:1px solid var(--line);border-radius:16px;padding:4px 12px;font-size:12.5px;cursor:pointer;color:var(--mut)}
+.activebar .clear:hover{border-color:#b91c1c;color:#b91c1c}
+main{min-width:0}
+.results{display:flex;flex-direction:column;gap:12px}
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;transition:box-shadow .15s}
+.card:hover{box-shadow:0 3px 12px rgba(15,23,42,.10)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px;align-items:center}
+.nb{color:#fff;font-size:11px;font-weight:700;border-radius:5px;padding:2px 6px}
+.tb{color:#fff;font-size:11px;font-weight:600;border-radius:5px;padding:2px 7px}
+.yr{color:var(--acc);font-size:11.5px;font-weight:700;border:1px solid var(--acc);border-radius:5px;padding:1px 6px}
+.dom{color:var(--mut);font-size:11.5px}
+.card h3{font-size:15.5px;margin-bottom:6px;line-height:1.35}
+.card .res{font-size:13.5px;color:#334155;margin-bottom:8px}
+.card details{margin-bottom:8px}
+.card details summary{cursor:pointer;font-size:13px;font-weight:600;color:#0f766e}
+.card details p{font-size:13px;color:#334155;background:#f0fdfa;border-left:3px solid #0f766e;padding:7px 10px;margin-top:5px;border-radius:0 6px 6px 0}
+.srcline{font-size:12px;color:var(--mut);border-top:1px dashed var(--line);padding-top:7px;display:flex;flex-wrap:wrap;gap:4px 12px;align-items:center}
+.srcline a{color:var(--acc);text-decoration:none;font-weight:600}
+.srcline a:hover{text-decoration:underline}
+.empty{background:#fff;border:1.5px dashed var(--line);border-radius:12px;padding:44px 20px;text-align:center;color:var(--mut)}
+.empty b{color:var(--ink);font-size:16px}
+footer{max-width:1280px;margin:0 auto;padding:10px 16px 28px;color:var(--mut);font-size:12px}
+@media(max-width:860px){.layout{grid-template-columns:1fr}aside{order:0}
+aside .facetgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}}
+aside .facetgrid{display:block}
+@media(max-width:860px){aside .facetgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;align-items:start}}
+@media(max-width:560px){aside .facetgrid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+  <h1>📘 Pharma<span>Veille</span></h1>
+  <div class="searchbox">
+    <input id="q" type="search" placeholder="Rechercher un mot-clé, une substance, une pathologie…" aria-label="Recherche">
+    <button onclick="document.getElementById('q').value='';S.q='';apply()">✕</button>
+  </div>
+  <select id="tri" aria-label="Tri">
+    <option value="annee">Tri : année → pertinence</option>
+    <option value="force">Tri : pertinence (force d'étude)</option>
+    <option value="recent">Tri : plus récent</option>
+  </select>
+  <div id="count"></div>
+</header>
+<div class="layout">
+<aside>
+  <div class="facetgrid" id="facets"></div>
+</aside>
+<main>
+  <div class="activebar" id="activebar" style="display:none"></div>
+  <div class="results" id="results"></div>
+</main>
+</div>
+<footer>PharmaVeille — moteur de recherche par facettes · niveaux de preuve N1 (méta-analyse) à N5 (revue/alerte) · sources vérifiées cliquables · mise à jour du 11/11/2026 · s'ouvre hors ligne dans tout navigateur.</footer>
+<script>
+const REVUES = __DATA__;
+const NIV = {1:"N1 · Méta-analyse", 2:"N2 · Phase 3", 3:"N3 · Phase 2 / petit essai", 4:"N4 · Vie réelle", 5:"N5 · Revue / alerte"};
+const NC = {1:"#047857",2:"#2563eb",3:"#d97706",4:"#7c3aed",5:"#64748b"};
+const TCOL = {"Médicament":"#0d5b8c","Vaccin":"#0f766e","Complément alimentaire":"#c2410c","Alerte":"#b91c1c","Officine":"#334155","Économie":"#9d174d","Alimentation":"#4d7c0f"};
+const CCOI = {"Industrie":"#b45309","Mixte":"#7c3aed","Indépendant":"#047857","À vérifier":"#64748b"};
+const CCOIBG = {"Industrie":"#fef3c7","Mixte":"#ede9fe","Indépendant":"#d1fae5","À vérifier":"#f1f5f9"};
+const FACETS = [
+  {id:"year", label:"📅 Année"},
+  {id:"dom", label:"🩺 Discipline"},
+  {id:"type", label:"🏷️ Type de revue"},
+  {id:"n", label:"💪 Force d'étude"},
+  {id:"coi", label:"⚖️ Conflits d'intérêts"}
+];
+var S = { q:"", tri:"annee", sel:{year:new Set(), dom:new Set(), type:new Set(), n:new Set(), coi:new Set()} };
+function fval(r, f){ return f==="n" ? String(r.n) : f==="year" ? r.dt.slice(0,4) : r[f]; }
+function matches(r, skip){
+  if(S.q){ var hay=(r.titre+" "+r.dom+" "+r.type+" "+(r.subst||"")+" "+r.res).toLowerCase(); if(hay.indexOf(S.q)<0) return false; }
+  for(var f in S.sel){
+    if(f===skip || !S.sel[f].size) continue;
+    if(!S.sel[f].has(fval(r,f))) return false;
+  }
+  return true;
+}
+function valOrder(f){
+  if(f==="year"){ var ys=[...new Set(REVUES.map(r=>r.dt.slice(0,4)))].sort(); return ys.reverse(); }
+  if(f==="n") return ["1","2","3","4","5"];
+  if(f==="type") return Object.keys(TCOL);
+  if(f==="coi") return Object.keys(CCOI);
+  var d={}; REVUES.forEach(function(r){ d[r.dom]=(d[r.dom]||0)+1; });
+  return Object.keys(d).sort(function(a,b){ return d[b]-d[a] || a.localeCompare(b,"fr"); });
+}
+function vlabel(f,v){
+  if(f==="n") return NIV[Number(v)];
+  if(f==="year") return v;
+  return v;
+}
+function esc(s){ return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;"); }
+function buildFacets(){
+  var host = document.getElementById("facets");
+  host.innerHTML = "";
+  FACETS.forEach(function(F){
+    var box = document.createElement("div"); box.className="facet";
+    var bt = document.createElement("button");
+    bt.innerHTML = "<span>"+F.label+"</span><span class='arr'>▼</span>";
+    bt.onclick = function(){ box.classList.toggle("closed"); };
+    box.appendChild(bt);
+    var body = document.createElement("div"); body.className="fbody";
+    box.appendChild(body); host.appendChild(box);
+    F._body = body;
+  });
+}
+function refreshFacetCounts(){
+  FACETS.forEach(function(F){
+    var body = F._body; if(!body) return;
+    body.innerHTML = "";
+    valOrder(F.id).forEach(function(v){
+      var c = REVUES.filter(function(r){ return matches(r, F.id) && fval(r,F.id)===v; }).length;
+      var lab = document.createElement("label");
+      lab.className = "fopt" + (S.sel[F.id].has(v) ? " on" : "");
+      var cb = document.createElement("input"); cb.type="checkbox"; cb.checked = S.sel[F.id].has(v); cb.disabled = (c===0 && !S.sel[F.id].has(v));
+      cb.onchange = function(){
+        if(this.checked) S.sel[F.id].add(v); else S.sel[F.id].delete(v);
+        apply();
+      };
+      var lb = document.createElement("span"); lb.className="lb"; lb.textContent = vlabel(F.id, v);
+      var ct = document.createElement("span"); ct.className="ct"; ct.textContent = c;
+      lab.appendChild(cb); lab.appendChild(lb); lab.appendChild(ct);
+      if(c>0 || S.sel[F.id].has(v)) body.appendChild(lab);
+    });
+    if(!body.children.length) body.innerHTML = "<div style='font-size:12px;color:var(--mut);padding:4px 2px'>Aucune option dans ce filtre</div>";
+  });
+}
+function cardHTML(r){
+  var srcs = (r.src||[]).map(function(s){ return "<a href='"+s[1]+"' target='_blank' rel='noopener'>"+esc(s[0])+"</a>"; }).join(" · ");
+  var off = r.off ? "<details><summary>💬 À dire au patient</summary><p>"+esc(r.off)+"</p></details>" : "";
+  return "<article class='card'><div class='tags'>"
+    +"<span class='nb' style='background:"+NC[r.n]+"'>N"+r.n+"</span>"
+    +"<span class='tb' style='background:"+TCOL[r.type]+"'>"+esc(r.type)+"</span>"
+    +"<span class='tb' style='background:"+CCOIBG[r.coi]+";color:"+CCOI[r.coi]+"'>"+esc(r.coi)+"</span>"
+    +"<span class='yr'>"+r.dt.slice(0,4)+"</span>"
+    +"<span class='dom'>"+esc(r.dom)+"</span></div>"
+    +"<h3>"+esc(r.titre)+"</h3>"
+    +"<p class='res'>"+esc(r.res)+"</p>"
+    + off
+    +"<div class='srcline'><span>🔗 "+srcs+"</span></div>"
+    +"</article>";
+}
+function sortList(list){
+  list.sort(function(a,b){
+    if(S.tri==="recent") return b.dt.localeCompare(a.dt);
+    if(S.tri==="annee") return b.dt.slice(0,4).localeCompare(a.dt.slice(0,4)) || a.n-b.n;
+    return a.n-b.n || b.dt.localeCompare(a.dt);
+  });
+  return list;
+}
+function refreshActive(){
+  var bar = document.getElementById("activebar");
+  var chips = [];
+  for(var f in S.sel){ S.sel[f].forEach(function(v){ chips.push({f:f, v:v}); }); }
+  if(!chips.length){ bar.style.display="none"; return; }
+  bar.style.display="flex";
+  bar.innerHTML = "";
+  chips.forEach(function(c){
+    var ch = document.createElement("span"); ch.className="chip";
+    var t = document.createElement("span"); t.textContent = vlabel(c.f, c.v);
+    var x = document.createElement("button"); x.textContent="×"; x.title="Retirer ce filtre";
+    x.onclick = function(){ S.sel[c.f].delete(c.v); apply(); };
+    ch.appendChild(t); ch.appendChild(x); bar.appendChild(ch);
+  });
+  var cl = document.createElement("button"); cl.className="clear"; cl.textContent="Tout effacer ("+chips.length+")";
+  cl.onclick = function(){ for(var f in S.sel) S.sel[f].clear(); apply(); };
+  bar.appendChild(cl);
+}
+function apply(){
+  var list = sortList(REVUES.filter(function(r){ return matches(r); }));
+  document.getElementById("count").innerHTML = "<b>"+list.length+"</b> / "+REVUES.length+" revues";
+  var res = document.getElementById("results");
+  res.innerHTML = list.length ? list.map(cardHTML).join("")
+    : "<div class='empty'><b>Aucune revue ne correspond</b><br><br>Desserrez un filtre, ou effacez tout : <button class='clear' style='border:1px solid var(--line);border-radius:16px;padding:4px 12px;cursor:pointer' onclick='for(var f in S.sel)S.sel[f].clear();apply()'>Tout effacer</button></div>";
+  refreshFacetCounts();
+  refreshActive();
+}
+document.getElementById("q").addEventListener("input", function(){ S.q=this.value.trim().toLowerCase(); apply(); });
+document.getElementById("tri").addEventListener("change", function(){ S.tri=this.value; apply(); });
+buildFacets();
+apply();
+</script>
+</body>
+</html>
