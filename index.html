@@ -202,6 +202,42 @@
 
 #classestab .cfoot{margin-top:20px;font-size:.8rem;color:#64748b;text-align:center;border-top:1px solid #e2e8f0;padding-top:12px}
 @media (max-width:640px){#classestab .sh-top h2{font-size:1.02rem}#classestab #cgrid{grid-template-columns:1fr}#classestab .sheet{padding:14px 12px 18px}}
+/* — Module recommandations (scopé) — */
+#recostab .cbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:10px 0 10px}
+#recostab .cbar input[type=search]{flex:1;min-width:220px;padding:9px 12px;border:1.5px solid #e2e8f0;border-radius:10px;font-size:.9rem}
+#recostab #rchips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+#recostab .chip{border:1.5px solid #e2e8f0;background:#fff;border-radius:999px;padding:5px 12px;font-size:.84rem;cursor:pointer;color:#334155;transition:all .18s}
+#recostab .chip:hover{border-color:#0284c7;color:#0284c7}
+#recostab .chip.on{background:#0f766e;border-color:#0f766e;color:#fff}
+#recostab .chip .c{margin-left:6px;font-size:.73rem;opacity:.75}
+#recostab #rgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:14px}
+#recostab .rcard{background:#fff;border:1px solid #e2e8f0;border-left:5px solid #0f766e;border-radius:12px;padding:15px 16px;display:flex;flex-direction:column;gap:8px;box-shadow:0 1px 4px rgba(20,40,80,.05);transition:box-shadow .18s,transform .18s}
+#recostab .rcard:hover{box-shadow:0 4px 16px rgba(20,40,80,.10);transform:translateY(-1px)}
+#recostab .rmeta{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+#recostab .rbadge{background:#0f766e;color:#fff;font-size:.72rem;font-weight:700;padding:3px 9px;border-radius:6px;letter-spacing:.3px}
+#recostab .rspe{font-size:.75rem;color:#64748b}
+#recostab .rdt{margin-left:auto;font-size:.75rem;font-weight:700;color:#0284c7}
+#recostab .rcard h3{font-size:.98rem;margin:0;color:#0f172a}
+#recostab .rcard p{font-size:.85rem;color:#334155;margin:0;line-height:1.5}
+#recostab .rlinks{margin-top:auto;padding-top:8px;border-top:1px dashed #e2e8f0;display:flex;flex-wrap:wrap;gap:10px}
+#recostab .rlinks a{color:#0f766e;font-weight:600;font-size:.82rem;text-decoration:underline;text-underline-offset:2px}
+#recostab .empty{grid-column:1/-1;text-align:center;color:#64748b;padding:30px 0}
+#recostab .cfoot{margin-top:20px;font-size:.8rem;color:#64748b;text-align:center;border-top:1px solid #e2e8f0;padding-top:12px}
+@media (max-width:640px){#recostab #rgrid{grid-template-columns:1fr}}
+html.dark #recostab .cbar input[type=search]{background:var(--card);color:var(--ink);border-color:var(--line)}
+html.dark #recostab #rcount{color:var(--muted)}
+html.dark #recostab .chip{background:var(--card);color:#cbd7ea;border-color:var(--line)}
+html.dark #recostab .chip:hover{border-color:#38bdf8;color:#7dd3fc}
+html.dark #recostab .chip.on{background:#0f766e;border-color:#0f766e;color:#fff}
+html.dark #recostab .rcard{background:var(--card);border-color:var(--line)}
+html.dark #recostab .rcard h3{color:var(--ink)}
+html.dark #recostab .rcard p{color:var(--muted)}
+html.dark #recostab .rspe,html.dark #recostab .empty{color:var(--muted)}
+html.dark #recostab .rdt{color:#7dd3fc}
+html.dark #recostab .rlinks{border-top-color:var(--line)}
+html.dark #recostab .rlinks a{color:#38bdf8}
+html.dark #recostab .cfoot{color:var(--muted);border-top-color:var(--line)}
+
 </style>
 <style id="pv-skin">
 
@@ -375,6 +411,7 @@ html.dark #classestab .cfoot{color:var(--muted);border-top-color:var(--line)}
       <button class="tab on" id="btn-revues" onclick="showTab('revues')">📚 Mes revues</button>
       <button class="tab" id="btn-search" onclick="showTab('search')">🔎 Recherche &amp; conflits d’intérêts</button>
       <button class="tab" id="btn-classes" onclick="showTab('classes')">💊 Classes de médicaments</button>
+      <button class="tab" id="btn-recos" onclick="showTab('recos')">📋 Recommandations</button>
     </nav>
   </div>
 </header>
@@ -498,6 +535,16 @@ html.dark #classestab .cfoot{color:var(--muted);border-top-color:var(--line)}
   <div id="csheetzone"></div>
   <p class="cfoot">💊 Classes de médicaments — fiche pro / version patient : informations générales par classe. Toujours confronter au RCP du produit délivré, à la posologie du patient et au contexte clinique.</p>
 </section>
+<section id="recostab" class="panel" style="display:none">
+  <div class="cbar">
+    <input id="rq" type="search" placeholder="Rechercher une recommandation, une spécialité ou un organisme (HAS, ESC, GINA, GOLD, NICE…)">
+    <span id="rcount"></span>
+  </div>
+  <div id="rchips"></div>
+  <div id="rgrid"></div>
+  <p class="cfoot">📋 Recommandations &amp; guidelines — sociétés savantes et agences (HAS, ESC, GINA, GOLD, ADA, EASL, EULAR, ESMO, KDIGO, NICE, EuroGuiDerm/EDF, CNGOF, AFU, SFORL). Documents sources accessibles en un clic — toujours se référer au texte intégral en vigueur.</p>
+</section>
+
 
 <script>
 const NIV = {1:"N1 · Méta-analyse", 2:"N2 · Phase 3", 3:"N3 · Phase 2 / petit essai", 4:"N4 · Vie réelle", 5:"N5 · Revue / alerte"};
@@ -898,15 +945,17 @@ document.getElementById("fcoi").addEventListener("change", e=>{ state.coi = e.ta
 document.getElementById("fannee").addEventListener("change", e=>{ state.annee = e.target.value; apply(); });
 
 function showTab(t){
-  const rev = (t==="revues"), se = (t==="search"), cl = (t==="classes");
+  const rev = (t==="revues"), se = (t==="search"), cl = (t==="classes"), rc = (t==="recos");
   document.getElementById("toolrev").style.display = rev ? "" : "none";
   document.getElementById("legendrev").style.display = rev ? "" : "none";
   document.getElementById("mainrev").style.display = rev ? "" : "none";
   document.getElementById("searchtab").style.display = se ? "" : "none";
   document.getElementById("classestab").style.display = cl ? "" : "none";
+  document.getElementById("recostab").style.display = rc ? "" : "none";
   document.getElementById("btn-revues").className = "tab" + (rev ? " on" : "");
   document.getElementById("btn-search").className = "tab" + (se ? " on" : "");
   document.getElementById("btn-classes").className = "tab" + (cl ? " on" : "");
+  document.getElementById("btn-recos").className = "tab" + (rc ? " on" : "");
   if(se) document.getElementById("pq").focus();
 }
 
@@ -1384,6 +1433,69 @@ crenderChips();
 cgo();
 
 /* ==== FIN MODULE CLASSES ==== */
+
+/* ==== MODULE RECO ==== */
+const RECO = [
+{"spe":"Cardiologie","org":"ESC","dt":"2026","titre":"Insuffisance cardiaque — recommandations cliniques ESC 2026","res":"Nouvelle édition de la ligne de conduite de la Société européenne de cardiologie sur le diagnostic, l'évaluation et le traitement de l'insuffisance cardiaque : thérapies médicamenteuses de fond, dispositifs, suivi et réadaptation.","src":[["ESC — guideline insuffisance cardiaque","https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/heart-failure/"]]},
+{"spe":"Cardiologie","org":"ESC","dt":"2024","titre":"Pression artérielle élevée et hypertension — ESC 2024","res":"Recommandations ESC 2024 sur l'hypertension artérielle de l'adulte : seuils de diagnostic, mesure au cabinet, à domicile et en ambulatoire, évaluation du risque cardiovasculaire et choix du traitement médicamenteux selon le profil du patient.","src":[["ESC — guideline hypertension","https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/elevated-blood-pressure-and-hypertension/"]]},
+{"spe":"Pneumologie","org":"GINA","dt":"2025-11","titre":"Asthme — stratégie GINA 2025 (mise à jour de novembre 2025)","res":"Mise à jour annuelle du rapport GINA (Global Initiative for Asthma) : traitement de secours et traitement de fond par paliers, gestion de l'asthme sévère et place des biotechniques.","src":[["GINA 2025 Update (PDF)","https://ginasthma.org/wp-content/uploads/2025/11/GINA-2025-Update-25_11_08-WMS.pdf"]]},
+{"spe":"Pneumologie","org":"GOLD","dt":"2026","titre":"BPCO — rapport GOLD 2026 (v1.3)","res":"Édition 2026 du rapport GOLD sur la maladie pulmonaire obstructive chronique : évaluation initiale du patient, traitement inhalé de fond, prévention des exacerbations et réhabilitation.","src":[["GOLD Report 2026 (PDF)","https://goldcopd.org/wp-content/uploads/2026/01/GOLD-REPORT-2026-v1.3-8Dec2025_WMV2.pdf"]]},
+{"spe":"Diabète & Endocrinologie","org":"ADA","dt":"2026","titre":"Diabète — Standards of Care 2026 de l'ADA","res":"Recommandations annuelles de l'American Diabetes Association (Diabetes Care 2026, suppl. 1) : diagnostic et classification, objectifs glycémiques, place des iSGLT2 et GLP-1 selon le risque cardiovasculaire et rénal, technologies d'aide à la gestion et dépistage des complications.","src":[["ADA — Standards of Care 2026","https://diabetesjournals.org/care/article/49/Supplement_1/S27/163926/2-Diagnosis-and-Classification-of-Diabetes"],["PubMed","https://pubmed.ncbi.nlm.nih.gov/41358893/"]]},
+{"spe":"Gastro-entérologie & Hépatologie","org":"EASL-EASD-EASO","dt":"2024-09","titre":"Stéatose hépatique métabolique (MASLD) — recommandations EASL-EASD-EASO 2024","res":"Recommandations cliniques conjointes sur la maladie du foie associée à la dysfonction métabolique (MASLD) : dépistage des populations à risque, évaluation de la fibrose par outils non invasifs, prise en charge par mode de vie et traitements.","src":[["EASL — CPG MASLD","https://easl.eu/publication/easl-easd-easo-clinical-practice-guidelines-managment-of-metabolic-dysfunction-associated-steatotic-liver-disease/"],["PubMed","https://pubmed.ncbi.nlm.nih.gov/38851997/"]]},
+{"spe":"Rhumatologie","org":"EULAR","dt":"2026-06","titre":"Polyarthrite rhumatoïde — recommandations EULAR 2026","res":"Mise à jour des recommandations EULAR sur la prise en charge de la polyarthrite rhumatoïde (Annals of the Rheumatic Diseases) : traitements de fond synthétiques et biothérapies, stratégie treat-to-target et sécurité.","src":[["EULAR — PR 2026 (PDF)","https://ard.eular.org/article/S0003-4967(26)00075-0/pdf"],["PubMed","https://pubmed.ncbi.nlm.nih.gov/41826212/"]]},
+{"spe":"Oncologie","org":"ESMO","dt":"2025","titre":"Cancer du poumon oncogène-addictionné — recommandations ESMO, mise à jour 2025","res":"Mise à jour des recommandations de pratique clinique ESMO pour le cancer bronchique non à petites cellules porteur d'altérations oncogéniques (EGFR, ALK…) : séquence des thérapies ciblées et place de l'immunothérapie (Annals of Oncology).","src":[["ESMO — CPG cancer du poumon 2025","https://www.annalsofoncology.org/article/S0923-7534(25)00813-0/fulltext"]]},
+{"spe":"Infectiologie","org":"HAS","dt":"2025-05","titre":"Pneumonie aiguë communautaire de l'adulte en ambulatoire — antibiothérapie (HAS, maj mai 2025)","res":"Fiche de recommandation actualisée le 13 mai 2025 : choix des antibiotiques et durées de traitement de la pneumonie aiguë communautaire de l'adulte prise en charge en ville.","src":[["HAS — antibiothérapie PAC adulte","https://www.has-sante.fr/jcms/p_3575597/fr/choix-et-durees-d-antibiotherapies-pneumonie-aigue-communautaire-de-l-adulte-en-ambulatoire"]]},
+{"spe":"Infectiologie","org":"HAS","dt":"2025","titre":"Sepsis du nouveau-né, de l'enfant et de l'adulte — parcours de soins intégré (HAS 2025)","res":"Recommandations HAS sur l'organisation de la prise en charge du sepsis à tous les âges : repérage et orientation précoces, antibiothérapie rapide et coordination du parcours de soins.","src":[["HAS — sepsis, parcours de soins intégré","https://www.has-sante.fr/jcms/p_3589100/fr/prise-en-charge-du-sepsis-du-nouveau-n-de-l-enfant-et-de-l-adulte-recommandations-pour-un-parcours-de-soins-integre-recommandations"]]},
+{"spe":"Néphrologie","org":"KDIGO","dt":"2024-03","titre":"Maladie rénale chronique — KDIGO 2024 : évaluation et prise en charge","res":"Référence KDIGO 2024 sur la maladie rénale chronique : évaluation du DFG et de l'albuminurie, stratification du risque, mesures de mode de vie, iSGLT2, inhibiteurs du SRAA et critères de suivi néphrologique.","src":[["KDIGO — CKD 2024","https://kdigo.org/guidelines/ckd-evaluation-and-management/"]]},
+{"spe":"Nutrition & Obésité","org":"NICE","dt":"2026-01","titre":"Obésité — NICE NG246 : identification, évaluation et prise en charge (version amendée janvier 2026)","res":"Recommandations NICE sur l'obésité : dépistage et classification, interventions sur le mode de vie, traitements médicamenteux et chirurgie bariatrique. Version amendée en janvier 2026.","src":[["NICE — NG246 obésité","https://www.nice.org.uk/guidance/ng246"]]},
+{"spe":"Dermatologie","org":"EuroGuiDerm / EDF","dt":"2025-02","titre":"Psoriasis — recommandations EuroGuiDerm/EDF sur les traitements systémiques (février 2025)","res":"Recommandations européennes sur les traitements systémiques du psoriasis de l'adulte : place des biothérapies et des inhibiteurs de JAK, critères d'échec des traitements antérieurs, sécurité et suivi.","src":[["EuroGuiDerm/EDF (PDF)","https://www.guidelines.edf.one/uploads/attachments/cm9h6g6wp9exorwjr9msyrqbc-0-euroguiderm-pso-gl-feb-2025.pdf"]]},
+{"spe":"Gynécologie","org":"CNGOF","dt":"2025","titre":"Cancer du col de l'utérus — RPC CNGOF 2025","res":"Recommandations pour la pratique clinique du Collège national des gynécologues et obstétriciens français (édition 2025) : dépistage, diagnostic et prise en charge du cancer du col de l'utérus.","src":[["CNGOF — RPC 2025","https://cngof.fr/rpc/"]]},
+{"spe":"Urologie","org":"AFU","dt":"2026","titre":"Cancer de la prostate — recommandations du comité de cancérologie de l'AFU, actualisation 2024-2026","res":"Actualisation 2024-2026 des recommandations françaises de l'Association française d'urologie : diagnostic du cancer de la prostate et modalités de prise en charge.","src":[["AFU — recommandations 2024-2026","https://www.urofrance.org/recommandation/recommandations-francaises-du-comite-de-cancerologie-de-lafu-actualisation-2024-2026-cancer-de-la-prostate-diagnostic-et-prise-en-charge/"]]},
+{"spe":"Neurodéveloppement & pédopsychiatrie","org":"HAS","dt":"2026-01","titre":"Trouble du spectre de l'autisme — interventions et parcours de vie du nourrisson, de l'enfant et de l'adolescent (HAS, janvier 2026)","res":"Recommandation adoptée par le collège de la HAS le 8 janvier 2026 : interventions développementales et comportementales précoces et organisation du parcours de vie jusqu'à l'adolescence.","src":[["HAS — TSA, interventions et parcours","https://www.has-sante.fr/jcms/p_3448980/fr/trouble-du-spectre-de-l-autisme-interventions-et-parcours-de-vie-du-nourrisson-de-l-enfant-et-de-l-adolescent"],["Recommandation HAS (PDF)","https://has-sante.fr/upload/docs/application/pdf/2026-02/reco463_recommandation_tsa_mel.pdf"]]},
+{"spe":"ORL","org":"SFORL","dt":"2025-08","titre":"Otites séromuqueuses de l'enfant — RPC SFORL 2025 (actualisation)","res":"Actualisation 2025 de la recommandation de pratique clinique de la Société française d'ORL et de chirurgie de la face sur la prise en charge des otites séromuqueuses de l'enfant.","src":[["SFORL — RPC OSM 2025 (PDF)","https://www.sforl.org/wp-content/uploads/2025/09/2025-RECO-OSM_version-finale_2025_08_29.pdf"]]},
+{"spe":"Douleur & soins palliatifs","org":"HAS","dt":"2022-03","titre":"Bon usage des médicaments opioïdes : antalgie, prévention du trouble de l'usage et des surdoses (HAS)","res":"Recommandation HAS sur la prescription des opioïdes : évaluation et suivi de la douleur, titration et rotation, repérage du trouble de l'usage, prévention des surdoses et information du patient.","src":[["HAS — bon usage des opioïdes","https://www.has-sante.fr/jcms/p_3215131/fr/bon-usage-des-medicaments-opioides-antalgie-prevention-et-prise-en-charge-du-trouble-de-l-usage-et-des-surdoses"],["HAS — recommandation (PDF)","https://has-sante.fr/upload/docs/application/pdf/2022-03/reco_opioides.pdf"]]}
+];
+
+let rstate = { q:"", spe:"" };
+const rgridEl = document.getElementById("rgrid");
+function rhay(r){ return (r.spe+" "+r.org+" "+r.titre+" "+r.res).toLowerCase(); }
+function rrenderChips(){
+  const spes = [...new Set(RECO.map(r=>r.spe))].sort((a,b)=>a.localeCompare(b,"fr"));
+  const chipsEl = document.getElementById("rchips");
+  chipsEl.innerHTML = "";
+  const all = document.createElement("button");
+  all.className = "chip" + (rstate.spe==="" ? " on" : "");
+  all.innerHTML = "Toutes spécialités<span class='c'>"+RECO.length+"</span>";
+  all.onclick = ()=>{ rstate.spe=""; rgo(); };
+  chipsEl.appendChild(all);
+  spes.forEach(s=>{
+    const n = RECO.filter(r=>r.spe===s).length;
+    const b = document.createElement("button");
+    b.className = "chip" + (rstate.spe===s ? " on" : "");
+    b.innerHTML = s+"<span class='c'>"+n+"</span>";
+    b.onclick = ()=>{ rstate.spe = rstate.spe===s ? "" : s; rgo(); };
+    chipsEl.appendChild(b);
+  });
+}
+function rgo(){
+  const list = RECO.filter(r => (!rstate.spe || r.spe===rstate.spe) && (!rstate.q || rhay(r).includes(rstate.q)))
+    .sort((a,b)=> (b.dt||"").localeCompare(a.dt||""));
+  document.getElementById("rcount").textContent = list.length + " recommandation" + (list.length>1?"s":"") + " affichée" + (list.length>1?"s":"") + " — base : " + RECO.length;
+  rgridEl.innerHTML = list.length ? "" : "<div class='empty'>🔎 Aucune recommandation ne correspond — essayez un autre mot-clé.</div>";
+  list.forEach(r=>{
+    const d = document.createElement("div");
+    d.className = "rcard";
+    d.innerHTML = "<div class='rmeta'><span class='rbadge'>"+esc(r.org)+"</span><span class='rspe'>"+esc(r.spe)+"</span><span class='rdt'>"+esc(r.dt)+"</span></div>" +
+      "<h3>"+esc(r.titre)+"</h3><p>"+esc(r.res)+"</p>" +
+      "<div class='rlinks'>"+r.src.map(s=>"<a href='"+s[1]+"' target='_blank' rel='noopener'>"+esc(s[0])+" ↗</a>").join("")+"</div>";
+    rgridEl.appendChild(d);
+  });
+}
+document.getElementById("rq").addEventListener("input", e=>{ rstate.q = e.target.value.trim().toLowerCase(); rgo(); });
+rrenderChips();
+rgo();
+/* ==== FIN MODULE RECO ==== */
+
 </script>
 </body>
 </html>
