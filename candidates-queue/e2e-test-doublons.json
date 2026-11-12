@@ -1,6 +1,0 @@
-{"revues":[
- {"id":"test-doublon-1","ty":"Médicament","dom":"Dermatologie & peau","n":1,"dt":"2026-07","des":"Topiques de la rosacée modérée à sévère : revue systématique et méta-analyse en réseau (JAMA Dermatology)","tag":"rosacée","res":"Test E2E : entrée déjà en base — doit être écartée par l'injecteur automatique.","src":[["Test","https://example.org"]]}
-],
-"recos":[
- {"spe":"Ophtalmologie","org":"American Academy of Ophthalmology (AAO)","dt":"2025","titre":"Primary Open-Angle Glaucoma — Preferred Practice Pattern 2025","res":"Test E2E : déjà en base — doit être écartée.","src":[["Test","https://example.org"]]}
-]}
