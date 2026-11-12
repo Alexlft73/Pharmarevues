@@ -241,6 +241,32 @@ html.dark #recostab .rdt{color:#7dd3fc}
 html.dark #recostab .rlinks{border-top-color:var(--line)}
 html.dark #recostab .rlinks a{color:#38bdf8}
 html.dark #recostab .cfoot{color:var(--muted);border-top-color:var(--line)}
+/* ==== CSS DOSSIERS RECO (#rfolders, rgrouph, rdiff) ==== */
+#recostab #rfolders{display:flex;gap:8px;flex-wrap:wrap;margin:2px 0 12px}
+#recostab .rfld{border:1.5px solid #e2e8f0;background:#fff;border-radius:10px;padding:8px 14px;font-size:.86rem;font-weight:700;color:#334155;cursor:pointer;transition:all .18s;display:inline-flex;align-items:center;gap:7px}
+#recostab .rfld:hover{border-color:#0284c7;color:#0284c7}
+#recostab .rfld.on{background:linear-gradient(135deg,#0f766e,#0284c7);border-color:transparent;color:#fff;box-shadow:0 2px 8px rgba(2,132,199,.25)}
+#recostab .rfld .c{background:rgba(15,118,110,.12);color:#0f766e;font-size:.72rem;padding:1px 8px;border-radius:999px}
+#recostab .rfld.on .c{background:rgba(255,255,255,.22);color:#fff}
+#recostab .rgrouph{grid-column:1/-1;font-size:.95rem;font-weight:700;color:#0f172a;margin:16px 0 -2px;padding-bottom:5px;border-bottom:2px solid rgba(15,118,110,.15);display:flex;align-items:center;gap:8px}
+#recostab .rgrouph:first-child{margin-top:2px}
+#recostab .rgrouph .c{font-size:.72rem;color:#0f766e;background:rgba(15,118,110,.1);padding:1px 8px;border-radius:999px}
+#recostab .rdiffcard{border-left-color:#6366f1}
+#recostab .rdiffmain{background:#eef2ff;border:1px solid #e0e7ff;border-left:4px solid #6366f1;border-radius:8px;padding:10px 12px;font-size:.86rem;color:#3730a3;line-height:1.5}
+#recostab .rdiffmain b{color:#4338ca}
+#recostab .rresdim{font-size:.82rem;color:#64748b}
+#recostab .rgeo{margin-left:auto;font-size:.72rem;font-weight:700;color:#4338ca;background:#eef2ff;border-radius:6px;padding:2px 8px}
+html.dark #recostab .rfld{background:var(--card);color:#cbd7ea;border-color:var(--line)}
+html.dark #recostab .rfld:hover{border-color:#38bdf8;color:#7dd3fc}
+html.dark #recostab .rfld.on{background:linear-gradient(135deg,#0f766e,#0284c7);color:#fff;border-color:transparent}
+html.dark #recostab .rfld .c{background:rgba(56,189,248,.15);color:#7dd3fc}
+html.dark #recostab .rfld.on .c{background:rgba(255,255,255,.22);color:#fff}
+html.dark #recostab .rgrouph{color:var(--ink);border-bottom-color:rgba(56,189,248,.25)}
+html.dark #recostab .rgrouph .c{color:#7dd3fc;background:rgba(56,189,248,.12)}
+html.dark #recostab .rdiffmain{background:rgba(99,102,241,.12);border-color:rgba(99,102,241,.32);color:#c7d2fe}
+html.dark #recostab .rdiffmain b{color:#a5b4fc}
+html.dark #recostab .rresdim{color:var(--muted)}
+html.dark #recostab .rgeo{color:#a5b4fc;background:rgba(99,102,241,.15)}
 /* ==== CSS MODULE PÉDIATRIE (#pedtab) ==== */
 #pedtab .pbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:12px 0}
 #pedtab .pbar label{font-weight:700;font-size:.92rem;color:#0f172a}
@@ -548,6 +574,11 @@ html.dark #classestab .cfoot{color:var(--muted);border-top-color:var(--line)}
   <div class="cbar">
     <input id="rq" type="search" placeholder="Rechercher une recommandation, une spécialité ou un organisme (HAS, ESC, GINA, GOLD, NICE…)">
     <span id="rcount"></span>
+  </div>
+  <div id="rfolders">
+    <button class="rfld on" id="rfld-fr" onclick="rsetFolder('fr')">🇫🇷 Recommandations françaises <span class="c" id="rfldc-fr">9</span></button>
+    <button class="rfld" id="rfld-int" onclick="rsetFolder('int')">🌐 Recommandations internationales <span class="c" id="rfldc-int">22</span></button>
+    <button class="rfld" id="rfld-diff" onclick="rsetFolder('diff')">⚖️ Différences notoires <span class="c" id="rfldc-diff">5</span></button>
   </div>
   <div id="rchips"></div>
   <div id="rgrid"></div>
@@ -1336,45 +1367,46 @@ const RECO = [
 {"spe":"Gastro-entérologie & Hépatologie","org":"EASL-EASD-EASO","dt":"2024-09","titre":"Stéatose hépatique métabolique (MASLD) — recommandations EASL-EASD-EASO 2024","res":"Recommandations cliniques conjointes sur la maladie du foie associée à la dysfonction métabolique (MASLD) : dépistage des populations à risque, évaluation de la fibrose par outils non invasifs, prise en charge par mode de vie et traitements.","src":[["EASL — CPG MASLD","https://easl.eu/publication/easl-easd-easo-clinical-practice-guidelines-managment-of-metabolic-dysfunction-associated-steatotic-liver-disease/"],["PubMed","https://pubmed.ncbi.nlm.nih.gov/38851997/"]]},
 {"spe":"Rhumatologie","org":"EULAR","dt":"2026-06","titre":"Polyarthrite rhumatoïde — recommandations EULAR 2026","res":"Mise à jour des recommandations EULAR sur la prise en charge de la polyarthrite rhumatoïde (Annals of the Rheumatic Diseases) : traitements de fond synthétiques et biothérapies, stratégie treat-to-target et sécurité.","src":[["EULAR — PR 2026 (PDF)","https://ard.eular.org/article/S0003-4967(26)00075-0/pdf"],["PubMed","https://pubmed.ncbi.nlm.nih.gov/41826212/"]]},
 {"spe":"Oncologie","org":"ESMO","dt":"2025","titre":"Cancer du poumon oncogène-addictionné — recommandations ESMO, mise à jour 2025","res":"Mise à jour des recommandations de pratique clinique ESMO pour le cancer bronchique non à petites cellules porteur d'altérations oncogéniques (EGFR, ALK…) : séquence des thérapies ciblées et place de l'immunothérapie (Annals of Oncology).","src":[["ESMO — CPG cancer du poumon 2025","https://www.annalsofoncology.org/article/S0923-7534(25)00813-0/fulltext"]]},
-{"spe":"Infectiologie","org":"HAS","dt":"2025-05","titre":"Pneumonie aiguë communautaire de l'adulte en ambulatoire — antibiothérapie (HAS, maj mai 2025)","res":"Fiche de recommandation actualisée le 13 mai 2025 : choix des antibiotiques et durées de traitement de la pneumonie aiguë communautaire de l'adulte prise en charge en ville.","src":[["HAS — antibiothérapie PAC adulte","https://www.has-sante.fr/jcms/p_3575597/fr/choix-et-durees-d-antibiotherapies-pneumonie-aigue-communautaire-de-l-adulte-en-ambulatoire"]]},
-{"spe":"Infectiologie","org":"HAS","dt":"2025","titre":"Sepsis du nouveau-né, de l'enfant et de l'adulte — parcours de soins intégré (HAS 2025)","res":"Recommandations HAS sur l'organisation de la prise en charge du sepsis à tous les âges : repérage et orientation précoces, antibiothérapie rapide et coordination du parcours de soins.","src":[["HAS — sepsis, parcours de soins intégré","https://www.has-sante.fr/jcms/p_3589100/fr/prise-en-charge-du-sepsis-du-nouveau-n-de-l-enfant-et-de-l-adulte-recommandations-pour-un-parcours-de-soins-integre-recommandations"]]},
+{"geo":"fr","spe":"Infectiologie","org":"HAS","dt":"2025-05","titre":"Pneumonie aiguë communautaire de l'adulte en ambulatoire — antibiothérapie (HAS, maj mai 2025)","res":"Fiche de recommandation actualisée le 13 mai 2025 : choix des antibiotiques et durées de traitement de la pneumonie aiguë communautaire de l'adulte prise en charge en ville.","src":[["HAS — antibiothérapie PAC adulte","https://www.has-sante.fr/jcms/p_3575597/fr/choix-et-durees-d-antibiotherapies-pneumonie-aigue-communautaire-de-l-adulte-en-ambulatoire"]]},
+{"geo":"fr","spe":"Infectiologie","org":"HAS","dt":"2025","titre":"Sepsis du nouveau-né, de l'enfant et de l'adulte — parcours de soins intégré (HAS 2025)","res":"Recommandations HAS sur l'organisation de la prise en charge du sepsis à tous les âges : repérage et orientation précoces, antibiothérapie rapide et coordination du parcours de soins.","src":[["HAS — sepsis, parcours de soins intégré","https://www.has-sante.fr/jcms/p_3589100/fr/prise-en-charge-du-sepsis-du-nouveau-n-de-l-enfant-et-de-l-adulte-recommandations-pour-un-parcours-de-soins-integre-recommandations"]]},
 {"spe":"Néphrologie","org":"KDIGO","dt":"2024-03","titre":"Maladie rénale chronique — KDIGO 2024 : évaluation et prise en charge","res":"Référence KDIGO 2024 sur la maladie rénale chronique : évaluation du DFG et de l'albuminurie, stratification du risque, mesures de mode de vie, iSGLT2, inhibiteurs du SRAA et critères de suivi néphrologique.","src":[["KDIGO — CKD 2024","https://kdigo.org/guidelines/ckd-evaluation-and-management/"]]},
 {"spe":"Nutrition & Obésité","org":"NICE","dt":"2026-01","titre":"Obésité — NICE NG246 : identification, évaluation et prise en charge (version amendée janvier 2026)","res":"Recommandations NICE sur l'obésité : dépistage et classification, interventions sur le mode de vie, traitements médicamenteux et chirurgie bariatrique. Version amendée en janvier 2026.","src":[["NICE — NG246 obésité","https://www.nice.org.uk/guidance/ng246"]]},
 {"spe":"Dermatologie","org":"EuroGuiDerm / EDF","dt":"2025-02","titre":"Psoriasis — recommandations EuroGuiDerm/EDF sur les traitements systémiques (février 2025)","res":"Recommandations européennes sur les traitements systémiques du psoriasis de l'adulte : place des biothérapies et des inhibiteurs de JAK, critères d'échec des traitements antérieurs, sécurité et suivi.","src":[["EuroGuiDerm/EDF (PDF)","https://www.guidelines.edf.one/uploads/attachments/cm9h6g6wp9exorwjr9msyrqbc-0-euroguiderm-pso-gl-feb-2025.pdf"]]},
-{"spe":"Gynécologie","org":"CNGOF","dt":"2025","titre":"Cancer du col de l'utérus — RPC CNGOF 2025","res":"Recommandations pour la pratique clinique du Collège national des gynécologues et obstétriciens français (édition 2025) : dépistage, diagnostic et prise en charge du cancer du col de l'utérus.","src":[["CNGOF — RPC 2025","https://cngof.fr/rpc/"]]},
-{"spe":"Urologie","org":"AFU","dt":"2026","titre":"Cancer de la prostate — recommandations du comité de cancérologie de l'AFU, actualisation 2024-2026","res":"Actualisation 2024-2026 des recommandations françaises de l'Association française d'urologie : diagnostic du cancer de la prostate et modalités de prise en charge.","src":[["AFU — recommandations 2024-2026","https://www.urofrance.org/recommandation/recommandations-francaises-du-comite-de-cancerologie-de-lafu-actualisation-2024-2026-cancer-de-la-prostate-diagnostic-et-prise-en-charge/"]]},
-{"spe":"Neurodéveloppement & pédopsychiatrie","org":"HAS","dt":"2026-01","titre":"Trouble du spectre de l'autisme — interventions et parcours de vie du nourrisson, de l'enfant et de l'adolescent (HAS, janvier 2026)","res":"Recommandation adoptée par le collège de la HAS le 8 janvier 2026 : interventions développementales et comportementales précoces et organisation du parcours de vie jusqu'à l'adolescence.","src":[["HAS — TSA, interventions et parcours","https://www.has-sante.fr/jcms/p_3448980/fr/trouble-du-spectre-de-l-autisme-interventions-et-parcours-de-vie-du-nourrisson-de-l-enfant-et-de-l-adolescent"],["Recommandation HAS (PDF)","https://has-sante.fr/upload/docs/application/pdf/2026-02/reco463_recommandation_tsa_mel.pdf"]]},
-{"spe":"ORL","org":"SFORL","dt":"2025-08","titre":"Otites séromuqueuses de l'enfant — RPC SFORL 2025 (actualisation)","res":"Actualisation 2025 de la recommandation de pratique clinique de la Société française d'ORL et de chirurgie de la face sur la prise en charge des otites séromuqueuses de l'enfant.","src":[["SFORL — RPC OSM 2025 (PDF)","https://www.sforl.org/wp-content/uploads/2025/09/2025-RECO-OSM_version-finale_2025_08_29.pdf"]]},
-{"spe":"Douleur & soins palliatifs","org":"HAS","dt":"2022-03","titre":"Bon usage des médicaments opioïdes : antalgie, prévention du trouble de l'usage et des surdoses (HAS)","res":"Recommandation HAS sur la prescription des opioïdes : évaluation et suivi de la douleur, titration et rotation, repérage du trouble de l'usage, prévention des surdoses et information du patient.","int":"La France compte parmi les pays les plus restrictifs : depuis l'arrêté du 12 juillet 2017, la codéine n'y est plus vendue sans ordonnance — une règle plus stricte que dans nombre de pays européens ou anglo-saxons où des médicaments à base de codéine restent en accès libre.","src":[["HAS — bon usage des opioïdes","https://www.has-sante.fr/jcms/p_3215131/fr/bon-usage-des-medicaments-opioides-antalgie-prevention-et-prise-en-charge-du-trouble-de-l-usage-et-des-surdoses"],["HAS — recommandation (PDF)","https://has-sante.fr/upload/docs/application/pdf/2022-03/reco_opioides.pdf"]]},
+{"geo":"fr","spe":"Gynécologie","org":"CNGOF","dt":"2025","titre":"Cancer du col de l'utérus — RPC CNGOF 2025","res":"Recommandations pour la pratique clinique du Collège national des gynécologues et obstétriciens français (édition 2025) : dépistage, diagnostic et prise en charge du cancer du col de l'utérus.","src":[["CNGOF — RPC 2025","https://cngof.fr/rpc/"]]},
+{"geo":"fr","spe":"Urologie","org":"AFU","dt":"2026","titre":"Cancer de la prostate — recommandations du comité de cancérologie de l'AFU, actualisation 2024-2026","res":"Actualisation 2024-2026 des recommandations françaises de l'Association française d'urologie : diagnostic du cancer de la prostate et modalités de prise en charge.","src":[["AFU — recommandations 2024-2026","https://www.urofrance.org/recommandation/recommandations-francaises-du-comite-de-cancerologie-de-lafu-actualisation-2024-2026-cancer-de-la-prostate-diagnostic-et-prise-en-charge/"]]},
+{"geo":"fr","spe":"Neurodéveloppement & pédopsychiatrie","org":"HAS","dt":"2026-01","titre":"Trouble du spectre de l'autisme — interventions et parcours de vie du nourrisson, de l'enfant et de l'adolescent (HAS, janvier 2026)","res":"Recommandation adoptée par le collège de la HAS le 8 janvier 2026 : interventions développementales et comportementales précoces et organisation du parcours de vie jusqu'à l'adolescence.","src":[["HAS — TSA, interventions et parcours","https://www.has-sante.fr/jcms/p_3448980/fr/trouble-du-spectre-de-l-autisme-interventions-et-parcours-de-vie-du-nourrisson-de-l-enfant-et-de-l-adolescent"],["Recommandation HAS (PDF)","https://has-sante.fr/upload/docs/application/pdf/2026-02/reco463_recommandation_tsa_mel.pdf"]]},
+{"geo":"fr","spe":"ORL","org":"SFORL","dt":"2025-08","titre":"Otites séromuqueuses de l'enfant — RPC SFORL 2025 (actualisation)","res":"Actualisation 2025 de la recommandation de pratique clinique de la Société française d'ORL et de chirurgie de la face sur la prise en charge des otites séromuqueuses de l'enfant.","src":[["SFORL — RPC OSM 2025 (PDF)","https://www.sforl.org/wp-content/uploads/2025/09/2025-RECO-OSM_version-finale_2025_08_29.pdf"]]},
+{"geo":"fr","spe":"Douleur & soins palliatifs","org":"HAS","dt":"2022-03","titre":"Bon usage des médicaments opioïdes : antalgie, prévention du trouble de l'usage et des surdoses (HAS)","res":"Recommandation HAS sur la prescription des opioïdes : évaluation et suivi de la douleur, titration et rotation, repérage du trouble de l'usage, prévention des surdoses et information du patient.","int":"La France compte parmi les pays les plus restrictifs : depuis l'arrêté du 12 juillet 2017, la codéine n'y est plus vendue sans ordonnance — une règle plus stricte que dans nombre de pays européens ou anglo-saxons où des médicaments à base de codéine restent en accès libre.","src":[["HAS — bon usage des opioïdes","https://www.has-sante.fr/jcms/p_3215131/fr/bon-usage-des-medicaments-opioides-antalgie-prevention-et-prise-en-charge-du-trouble-de-l-usage-et-des-surdoses"],["HAS — recommandation (PDF)","https://has-sante.fr/upload/docs/application/pdf/2022-03/reco_opioides.pdf"]]},
 {"spe":"Neurologie & AVC","org":"ESO","dt":"2025","titre":"AVC ischémique aigu et hémorragie intracérébrale — gestion de la pression artérielle (ESO, mise à jour 2025)","res":"Mise à jour 2025 de la recommandation de la European Stroke Organisation sur la gestion de la pression artérielle dans l'AVC ischémique aigu et l'hémorragie intracérébrale : seuils tensionnels, gestion pendant et après thrombectomie ou thrombolyse (European Stroke Journal).","src":[["ESO — BP management 2025 update","https://academic.oup.com/esj/article/11/5/aakag004/8671384"]]},
 {"spe":"Cardiologie","org":"ESC / EACTS","dt":"2024-09","titre":"Fibrillation auriculaire — recommandations ESC/EACTS 2024","res":"Ligne de conduite 2024 sur la fibrillation auriculaire : stratégie AF-CARE (comorbidités et facteurs de risque), décision d'anticoagulation selon le profil thrombo-embolique et hémorragique, contrôle de la fréquence et du rythme (European Heart Journal).","src":[["ESC/EACTS — FA 2024 (EHJ)","https://academic.oup.com/eurheartj/article/45/36/3314/7738779"],["PubMed","https://pubmed.ncbi.nlm.nih.gov/39210723/"]]},
 {"spe":"Cardiologie","org":"ESC / EAS","dt":"2025","titre":"Dyslipidémies — mise à jour ciblée 2025 des recommandations ESC/EAS","res":"Mise à jour ciblée 2025 des recommandations ESC/EAS sur les dyslipidémies : objectifs de LDL-cholestérol selon le niveau de risque, intensification des statines et associations, évaluation du risque résiduel (European Heart Journal).","int":"L'Europe fixe des objectifs chiffrés de LDL-cholestérol à atteindre (treat-to-target), quand les recommandations américaines ACC/AHA privilégient l'intensité de statine selon le risque, sans objectif LDL numérique — une « divergence transatlantique » documentée sur les mêmes données.","src":[["ESC/EAS — dyslipidémies 2025 (EHJ)","https://academic.oup.com/eurheartj/article/46/42/4359/8234482"]]},
 {"spe":"Psychiatrie","org":"NICE","dt":"2022-06","titre":"Dépression de l'adulte : traitement et prise en charge — NICE NG222","res":"Recommandation NICE sur la dépression de l'adulte : évaluation, menu d'options de première ligne (psychothérapie, médicament ou les deux, à choisir avec le patient), sévérité « moins sévère / plus sévère », suivi et prévention des rechutes. Publiée en juin 2022, amendée à plusieurs reprises ; surveillance exceptionnelle de janvier 2026 concluant à la poursuite de la version en vigueur.","src":[["NICE — NG222 dépression","https://www.nice.org.uk/guidance/ng222"]]},
 {"spe":"Oncologie","org":"ESMO","dt":"2024","titre":"Cancer du sein à un stade précoce — recommandation ESMO 2024","res":"Recommandation ESMO sur le cancer du sein précoce : diagnostic, traitements locorégionaux et systémiques (endocrinothérapie, chimiothérapie, thérapies ciblées selon le sous-type) et suivi (Annals of Oncology, 2024).","src":[["ESMO — guideline cancer du sein précoce","https://www.esmo.org/guidelines/esmo-clinical-practice-guideline-early-breast-cancer"]]},
-{"spe":"Vaccination","org":"Ministère de la Santé / HAS","dt":"2026","titre":"Calendrier des vaccinations et recommandations vaccinales 2026","res":"Édition 2026 du calendrier vaccinal français (avis du collège de la HAS du 26 février 2026) : vaccinations applicables par âge et situation, évolutions sur le rattrapage HPV et méningocoques, vaccination des femmes enceintes et recommandations propres aux situations à risque accru.","int":"La vaccination contre la varicelle est recommandée pour tous les nourrissons dans plus de 20 pays européens (Allemagne…) et une cinquantaine de pays dans le monde ; en France elle reste ciblée, la HAS évaluant fin 2025 l'opportunité d'une recommandation universelle.","src":[["HAS — avis collège 26/02/2026","https://www.has-sante.fr/jcms/p_3883262/fr/avis-n2026-0016/ac/sespev-du-26-fevrier-2026-du-college-de-la-haute-autorite-de-sante-relatif-a-l-actualisation-du-calendrier-des-vaccinations-pour-l-annee-2026"],["Calendrier vaccinal 2026 (PDF)","https://sante.gouv.fr/IMG/pdf/2026_07_calendrier_vaccinal-2026_a4_93p_v11.pdf"]]},
+{"geo":"fr","spe":"Vaccination","org":"Ministère de la Santé / HAS","dt":"2026","titre":"Calendrier des vaccinations et recommandations vaccinales 2026","res":"Édition 2026 du calendrier vaccinal français (avis du collège de la HAS du 26 février 2026) : vaccinations applicables par âge et situation, évolutions sur le rattrapage HPV et méningocoques, vaccination des femmes enceintes et recommandations propres aux situations à risque accru.","int":"La vaccination contre la varicelle est recommandée pour tous les nourrissons dans plus de 20 pays européens (Allemagne…) et une cinquantaine de pays dans le monde ; en France elle reste ciblée, la HAS évaluant fin 2025 l'opportunité d'une recommandation universelle.","src":[["HAS — avis collège 26/02/2026","https://www.has-sante.fr/jcms/p_3883262/fr/avis-n2026-0016/ac/sespev-du-26-fevrier-2026-du-college-de-la-haute-autorite-de-sante-relatif-a-l-actualisation-du-calendrier-des-vaccinations-pour-l-annee-2026"],["Calendrier vaccinal 2026 (PDF)","https://sante.gouv.fr/IMG/pdf/2026_07_calendrier_vaccinal-2026_a4_93p_v11.pdf"]]},
 {"spe":"Infectiologie","org":"EACS","dt":"2025","titre":"VIH-1/VIH-2, PrEP et comorbidités — recommandations EACS, version 13.0 (révision 2025)","res":"Révision majeure 2025 (21ᵉ révision) des recommandations de la European AIDS Clinical Society : schémas de première ligne du VIH-1, nouveau chapitre VIH-2, PrEP, et comorbidités revues en profondeur — santé cardiovasculaire et métabolique (dont statines chez les personnes vivant avec le VIH), rein, foie, santé mentale (HIV Medicine, publié en 2026).","src":[["EACS v13.0 — HIV Medicine","https://onlinelibrary.wiley.com/doi/full/10.1111/hiv.70120"]]},
 {"spe":"Néphrologie","org":"KDIGO","dt":"2025","titre":"Néphropathie à IgA (IgAN) et vascularite à IgA — directive KDIGO 2025","res":"Première directive KDIGO dédiée à la néphropathie à IgA et à la vascularite à IgA : diagnostic, contrôle tensionnel, traitements de fond optimisés et place des nouvelles thérapies (Kidney International, 2025).","src":[["KDIGO — IgAN/IgAV 2025","https://www.kidney-international.org/article/S0085-2538(25)00279-0/fulltext"],["KDIGO — annonce","https://kdigo.org/kdigo-announces-publication-of-igan-v-guideline/"]]},
 {"spe":"Allergologie","org":"ARIA / EAACI","dt":"2025","titre":"Rhinite allergique — révision 2024-2025 des recommandations ARIA-EAACI (traitements intranasaux)","res":"Révision 2024-2025 des recommandations ARIA (Allergic Rhinitis and Its Impact on Asthma) avec l'EAACI — Partie I sur les traitements intranasaux : choix et stratégies d'utilisation des corticoïdes et antihistaminiques nasaux ; une Partie II couvre les traitements oraux et oculaires (Allergy).","src":[["ARIA-EAACI 2024-2025 Révision Partie I","https://onlinelibrary.wiley.com/doi/10.1111/all.70131"]]},
 {"spe":"Rhumatologie","org":"NOGG (UK)","dt":"2024","titre":"Ostéoporose — directive clinique 2024 du National Osteoporosis Guideline Group","res":"Directive 2024 (Royaume-Uni, endossée par l'International Osteoporosis Foundation et l'ESCEO) sur la prévention et le traitement de l'ostéoporose chez la femme ménopausée et l'homme de 50 ans et plus : évaluation du risque de fracture, seuils de traitement, place des bisphosphonates, dénosumab et thérapies anaboliques (Archives of Osteoporosis).","src":[["NOGG 2024 — PubMed","https://pubmed.ncbi.nlm.nih.gov/40921943/"],["NOGG 2024 — Archives of Osteoporosis","https://link.springer.com/article/10.1007/s11657-025-01588-3"]]},
 {"spe":"Rhumatologie","org":"EULAR","dt":"2025","titre":"Activité physique dans les rhumatismes inflammatoires et l'arthrose — EULAR, mise à jour 2025","res":"Mise à jour 2025 des recommandations EULAR sur l'activité physique dans les rhumatismes inflammatoires et l'arthrose : promotion de l'activité physique et réduction de la sédentarité, incluant les interventions par technologies et stratégies éducationnelles/comportementales (Annals of the Rheumatic Diseases).","src":[["EULAR — activité physique 2025","https://ard.eular.org/article/S0003-4967(26)00150-0/fulltext"]]},
 {"spe":"Pédiatrie","org":"ISPAD","dt":"2024","titre":"Diabète de l'enfant et de l'adolescent — recommandations de consensus ISPAD 2024","res":"Série de recommandations de consensus 2024 de l'International Society for Pediatric and Adolescent Diabetes (Hormone Research in Paediatrics) : prise en charge du diabète de type 1 et de type 2 chez l'enfant et l'adolescent, dépistage et stratégies de préservation de la fonction des cellules bêta, insulinothérapie et technologies.","src":[["ISPAD 2024 — série (Karger)","https://karger.com/hrp/article/97/6/529/917924/ISPAD-Clinical-Practice-Consensus-Guidelines-2024"]]},
-{"spe":"Anesthésie & périopératoire","org":"GIHP / SFAR","dt":"2026-04","titre":"Gestion des anticoagulants pour une procédure invasive programmée — RFE GIHP-SFAR (avril 2026)","res":"Recommandations formalisées d'experts (version du 20 avril 2026) sur la gestion des anticoagulants autour d'une procédure invasive programmée : poursuite ou interruption des anticoagulants oraux et héparines selon le risque thrombotique et hémorragique, relais éventuels et thromboprophylaxie périopératoire.","src":[["RFE GIHP-SFAR 2026 (PDF)","https://sfar.org/wp-content/uploads/2026/04/RFE-20.4.2026-deifinitif-et-validei.pdf"],["Synthèse SFCD","https://www.sfchirurgiedigestive.fr/recommandations/gestion-des-anticoagulants-pour-une-procedure-invasive-programmee-rfe-gihp-sfar-2026/"]]}
+{"geo":"fr","spe":"Anesthésie & périopératoire","org":"GIHP / SFAR","dt":"2026-04","titre":"Gestion des anticoagulants pour une procédure invasive programmée — RFE GIHP-SFAR (avril 2026)","res":"Recommandations formalisées d'experts (version du 20 avril 2026) sur la gestion des anticoagulants autour d'une procédure invasive programmée : poursuite ou interruption des anticoagulants oraux et héparines selon le risque thrombotique et hémorragique, relais éventuels et thromboprophylaxie périopératoire.","src":[["RFE GIHP-SFAR 2026 (PDF)","https://sfar.org/wp-content/uploads/2026/04/RFE-20.4.2026-deifinitif-et-validei.pdf"],["Synthèse SFCD","https://www.sfchirurgiedigestive.fr/recommandations/gestion-des-anticoagulants-pour-une-procedure-invasive-programmee-rfe-gihp-sfar-2026/"]]}
 ];
 
-let rstate = { q:"", spe:"" };
+let rstate = { q:"", spe:"", folder:"fr" };
 const rgridEl = document.getElementById("rgrid");
 function rhay(r){ return (r.spe+" "+r.org+" "+r.titre+" "+r.res).toLowerCase(); }
 function rrenderChips(){
-  const spes = [...new Set(RECO.map(r=>r.spe))].sort((a,b)=>a.localeCompare(b,"fr"));
+  const BASE = rbase();
+  const spes = [...new Set(BASE.map(r=>r.spe))].sort((a,b)=>a.localeCompare(b,"fr"));
   const chipsEl = document.getElementById("rchips");
   chipsEl.innerHTML = "";
   const all = document.createElement("button");
   all.className = "chip" + (rstate.spe==="" ? " on" : "");
-  all.innerHTML = "Toutes spécialités<span class='c'>"+RECO.length+"</span>";
+  all.innerHTML = "Toutes spécialités<span class='c'>"+BASE.length+"</span>";
   all.onclick = ()=>{ rstate.spe=""; rgo(); };
   chipsEl.appendChild(all);
   spes.forEach(s=>{
-    const n = RECO.filter(r=>r.spe===s).length;
+    const n = BASE.filter(r=>r.spe===s).length;
     const b = document.createElement("button");
     b.className = "chip" + (rstate.spe===s ? " on" : "");
     b.innerHTML = s+"<span class='c'>"+n+"</span>";
@@ -1382,24 +1414,58 @@ function rrenderChips(){
     chipsEl.appendChild(b);
   });
 }
+function rgeo(r){ return r.geo==="fr"; }
+function rbase(){
+  if (rstate.folder==="fr") return RECO.filter(rgeo);
+  if (rstate.folder==="int") return RECO.filter(r=>!rgeo(r));
+  return RECO.filter(r=>r.int);
+}
+function rsetFolder(f){
+  rstate.folder = f;
+  ["fr","int","diff"].forEach(k=>{ document.getElementById("rfld-"+k).className = "rfld" + (rstate.folder===k ? " on" : ""); });
+  rrenderChips();
+  rgo();
+}
+function rinitFolders(){
+  document.getElementById("rfldc-fr").textContent = RECO.filter(rgeo).length;
+  document.getElementById("rfldc-int").textContent = RECO.filter(r=>!rgeo(r)).length;
+  document.getElementById("rfldc-diff").textContent = RECO.filter(r=>r.int).length;
+}
 function rgo(){
-  const list = RECO.filter(r => (!rstate.spe || r.spe===rstate.spe) && (!rstate.q || rhay(r).includes(rstate.q)))
-    .sort((a,b)=> (b.dt||"").localeCompare(a.dt||""));
-  document.getElementById("rcount").textContent = list.length + " recommandation" + (list.length>1?"s":"") + " affichée" + (list.length>1?"s":"") + " — base : " + RECO.length;
-  rgridEl.innerHTML = list.length ? "" : "<div class='empty'>🔎 Aucune recommandation ne correspond — essayez un autre mot-clé.</div>";
+  const BASE = rbase();
+  const list = BASE.filter(r => (!rstate.spe || r.spe===rstate.spe) && (!rstate.q || rhay(r).includes(rstate.q)));
+  if (rstate.folder==="diff") { list.sort((a,b)=> (b.dt||"").localeCompare(a.dt||"")); }
+  else { list.sort((a,b)=> (a.spe||"").localeCompare(b.spe||"","fr") || (b.dt||"").localeCompare(a.dt||"")); }
+  const FN = { fr:"🇫🇷 Recommandations françaises", int:"🌐 Recommandations internationales", diff:"⚖️ Différences notoires" };
+  document.getElementById("rcount").textContent = list.length + " recommandation" + (list.length>1?"s":"") + " affichée" + (list.length>1?"s":"") + " — dossier " + FN[rstate.folder] + " (" + BASE.length + ") — base : " + RECO.length;
+  rgridEl.innerHTML = list.length ? "" : "<div class='empty'>🔎 Aucune recommandation ne correspond — changez de dossier ou essayez un autre mot-clé.</div>";
+  let curSpe = null;
   list.forEach(r=>{
+    if (rstate.folder!=="diff" && r.spe!==curSpe) {
+      curSpe = r.spe;
+      const h = document.createElement("div");
+      h.className = "rgrouph";
+      h.innerHTML = esc(curSpe) + "<span class='c'>" + BASE.filter(x=>x.spe===curSpe).length + "</span>";
+      rgridEl.appendChild(h);
+    }
     const d = document.createElement("div");
-    d.className = "rcard";
-    d.innerHTML = "<div class='rmeta'><span class='rbadge'>"+esc(r.org)+"</span><span class='rspe'>"+esc(r.spe)+"</span><span class='rdt'>"+esc(r.dt)+"</span></div>" +
-      "<h3>"+esc(r.titre)+"</h3><p>"+esc(r.res)+"</p>" +
-      (r.int ? "<div class='rint'>🌍 <b>Ailleurs dans le monde :</b> "+esc(r.int)+"</div>" : "") +
-      "<div class='rlinks'>"+r.src.map(s=>"<a href='"+s[1]+"' target='_blank' rel='noopener'>"+esc(s[0])+" ↗</a>").join("")+"</div>";
+    const meta = "<div class='rmeta'><span class='rbadge'>"+esc(r.org)+"</span><span class='rspe'>"+esc(r.spe)+"</span><span class='rdt'>"+esc(r.dt)+"</span>" + (rstate.folder==="diff" ? "<span class='rgeo'>"+(rgeo(r)?"🇫🇷 France":"🌐 International")+"</span>" : "") + "</div>";
+    const links = "<div class='rlinks'>"+r.src.map(s=>"<a href='"+s[1]+"' target='_blank' rel='noopener'>"+esc(s[0])+" ↗</a>").join("")+"</div>";
+    d.className = "rcard" + (rstate.folder==="diff" ? " rdiffcard" : "");
+    if (rstate.folder==="diff") {
+      d.innerHTML = meta + "<h3>"+esc(r.titre)+"</h3>" +
+        "<div class='rdiffmain'>🌍 <b>Différence notoire :</b> "+esc(r.int)+"</div>" +
+        "<p class='rresdim'>"+esc(r.res)+"</p>" + links;
+    } else {
+      d.innerHTML = meta + "<h3>"+esc(r.titre)+"</h3><p>"+esc(r.res)+"</p>" +
+        (r.int ? "<div class='rint'>🌍 <b>Ailleurs dans le monde :</b> "+esc(r.int)+"</div>" : "") + links;
+    }
     rgridEl.appendChild(d);
   });
 }
 document.getElementById("rq").addEventListener("input", e=>{ rstate.q = e.target.value.trim().toLowerCase(); rgo(); });
-rrenderChips();
-rgo();
+rinitFolders();
+rsetFolder("fr");
 /* ==== FIN MODULE RECO ==== */
 
 /* ==== MODULE PÉDIATRIE mg/kg (onglet 4) ==== */
