@@ -1,7 +1,8 @@
 # Injection automatique
 
-- Aucune nouvelle entrée : 2 doublon(s) écarté(s).
+- REVUES: +8 → 259
+- RECO: +3 → 42
+- NEW: 11
 
 ## Écartés
-- DOUBLON: Topiques de la rosacée modérée à sévère : revue systématique et méta-a
-- DOUBLON: Primary Open-Angle Glaucoma — Preferred Practice Pattern 2025
+- aucun
