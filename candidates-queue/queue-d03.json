@@ -1,0 +1,393 @@
+{
+ "revues": [
+  {
+   "id": "meta-evoke-semaglutide-alzheimer-2026",
+   "ty": "Médicament",
+   "dom": "Neurologie",
+   "n": 2,
+   "dt": "2026-03",
+   "des": "Sémaglutide oral et maladie d'Alzheimer : échec des essais de phase 3 EVOKE et EVOKE+ — pas de ralentissement du déclin cognitif (Lancet / AD-PD, mars 2026)",
+   "tag": "sémaglutide · maladie d'Alzheimer (piste GLP-1)",
+   "res": "Les essais jumeaux EVOKE et EVOKE+ (Novo Nordisk) — sémaglutide oral jusqu'à 14 mg/j vs placebo dans la maladie d'Alzheimer amyloïde-confirmée au stade précoce (55-85 ans, troubles cognitifs légers ou démence légère) — n'ont pas atteint leurs critères principaux : pas de ralentissement significatif du déclin cognitif et fonctionnel (topline relayée par Alzheimer Europe, page vue ; présentation au congrès AD/PD 2026 le 19 mars — Clinical Trials Arena, page vue). Publication primaire dans The Lancet (2026, page article vue : « Efficacy and safety of oral semaglutide 14 mg (flexible dose) in early-stage symptomatic Alzheimer's disease (evoke and evoke+): two phase 3, randomised, placebo-controlled trials » ; résumé en langage simple vu sur PMC). Sécurité cohérente avec le profil connu du sémaglutide (nausées, perte d'appétit — point de vigilance chez le sujet âgé dénutrissable). DISTINCT de l'entrée exénatide-Parkinson déjà en base (autre molécule, autre indication neurodégénérative). En officine : recadrer les attentes « Ozempic pour la mémoire » — la piste GLP-1/Alzheimer, suggérée par des données observationnelles, n'est pas validée par ces deux essais de phase 3 ; pas de changement pour les patients DT2 traités, l'échec est spécifique à l'indication Alzheimer.",
+   "src": [
+    [
+     "The Lancet — EVOKE et EVOKE+ (publication primaire, 2026)",
+     "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)00459-9/fulltext"
+    ],
+    [
+     "Clinical Trials Arena — AD/PD 2026, présentation du 19/03/2026",
+     "https://www.clinicaltrialsarena.com/analyst-comment/ad-pd-2026-novo-nordisk-semaglutide-early-alzheimers/"
+    ],
+    [
+     "Alzheimer Europe — topline results EVOKE/EVOKE+",
+     "https://www.alzheimer-europe.org/news/novo-nordisk-announces-topline-results-evoke-and-evoke-trials-semaglutide-early-ad?language_content_entity=en"
+    ],
+    [
+     "PMC — plain language summary des essais evoke(+)",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC13390525/"
+    ]
+   ]
+  },
+  {
+   "id": "meta-levothyrox-ancienne-formule-2028",
+   "ty": "Officine",
+   "dom": "Diabète & Endocrinologie",
+   "n": 5,
+   "dt": "2025-10",
+   "des": "Lévothyrox : l'ancienne formule (Euthyrox) restera disponible en France jusqu'à fin 2028 pour accompagner les patients — ANSM (01/10/2025)",
+   "tag": "lévothyroxine · Euthyrox",
+   "res": "L'ANSM a annoncé le 1er octobre 2025 la prolongation de la mise à disposition de l'ancienne formule du Levothyrox (Euthyrox) jusqu'à fin 2028 (20 Minutes et France 24 du 01/10/2025, pages vues ; dossier thématique ANSM vu : « Cette prolongation des approvisionnements permet de poursuivre l'accompagnement des patients toujours traités par Euthyrox vers un autre médicament à base de lévothyroxine »). L'agence encourage les médecins à contacter leurs patients encore sous Euthyrox pour analyser la situation et organiser progressivement le changement de traitement (page ANSM vue). Contexte lu sur le communiqué ANSM : l'agence a été mise en examen pour tromperie aggravée le 5 décembre 2024 dans la procédure pénale liée au changement de formule. En officine : repérer les ordonnances Euthyrox restantes à la délivrance — ne pas substituer d'office, expliquer que la transition est encadrée et progressive (les équivalents à base de lévothyroxine sont nombreux : L-Thyrox, génériques), et inviter à signaler tout changement clinique (poids, palpitations, fatigue) après un changement de spécialité.",
+   "src": [
+    [
+     "ANSM — Communiqué Levothyrox (mise en examen, dossier)",
+     "https://ansm.sante.fr/actualites/communique-levothyrox"
+    ],
+    [
+     "ANSM — Dossier thématique : médicaments à base de lévothyroxine disponibles en France",
+     "https://ansm.sante.fr/dossiers-thematiques/les-medicaments-a-base-de-levothyroxine-disponibles-en-france"
+    ],
+    [
+     "20 Minutes — l'ancienne formule disponible jusqu'en 2028 (01/10/2025)",
+     "https://www.20minutes.fr/sante/4176433-20251001-levothyrox-soulagement-patients-ancienne-formule-medicament-restera-disponible-france-jusqu-2028"
+    ],
+    [
+     "France 24 — Levothyrox : ancienne formule jusqu'à fin 2028",
+     "https://www.france24.com/fr/info-en-continu/20251001-levothyrox-l-ancienne-formule-disponible-en-france-jusqu-%C3%A0-fin-2028"
+    ]
+   ]
+  },
+  {
+   "id": "meta-teplizumab-teizeild-dt1-2026",
+   "ty": "Médicament",
+   "dom": "Diabète & Endocrinologie",
+   "n": 5,
+   "dt": "2026-04",
+   "des": "Teizeild (téplizumab) : premier traitement pour retarder l'apparition du diabète de type 1 (stade 2 → stade 3) — approbation européenne (12/01/2026), accès précoce HAS (04/2026)",
+   "tag": "téplizumab (Teizeild) · diabète de type 1 stade 2",
+   "res": "La Commission européenne a approuvé Teizeild (téplizumab, Sanofi) le 12 janvier 2026 pour retarder l'apparition du DT1 de stade 3 chez les adultes et enfants ≥ 8 ans atteints d'un DT1 de stade 2 (communiqué Sanofi du 12/01/2026, lu : rapport de risque pour le diagnostic de DT1 de 0,41 [IC à 95 % : 0,22-0,78 ; p = 0,006] vs placebo) ; l'EMA avait rendu un avis positif le 14 novembre 2025 (page EMA vue, news actualisée le 20/11/2025 pour la liste des effets indésirables fréquents). En France, la HAS a octroyé une autorisation d'accès précoce (AP577) : avis de la CT du 16 avril 2026, mis en ligne le 22/04/2026 (page HAS vue ; indication lue : DT1 de stade 2 confirmé par au moins deux auto-anticorps anti-îlots pancréatiques + tolérance au glucose altérée définie par deux HGPO anormales confirmées). Déclaration de commercialisation au 15/06/2026 (fiche BNM vue). Premier traitement modificateur de l'histoire naturelle du DT1. En officine : l'initiation est hospitalière (cycle de perfusions sur 14 jours consécutifs) — les questions viendront des familles : dépistage des apparentés du 1er degré (auto-anticorps), compréhension des stades du DT1 (stade 2 = présymptomatique), effets indésirables attendus (éruption cutanée, lymphopénie — liste EMA révisée 11/2025).",
+   "src": [
+    [
+     "Sanofi — communiqué : Teizeild approuvé dans l'UE (12/01/2026)",
+     "https://www.sanofi.com/fr/media-room/communiques-de-presse/2026/2026-01-12-06-00-00-3216525"
+    ],
+    [
+     "HAS — TEIZEILD : décision d'accès précoce (AP577, CT du 16/04/2026)",
+     "https://www.has-sante.fr/jcms/p_3957005/fr/teizeild-teplizumab-diabete-de-type-1-adulte-/-adolescent-/-enfant-8-ans"
+    ],
+    [
+     "EMA — First-in-class treatment to delay onset of type 1 diabetes",
+     "https://www.ema.europa.eu/en/news/first-class-treatment-delay-onset-type-1-diabetes"
+    ],
+    [
+     "EMA — Teizeild (EPAR)",
+     "https://www.ema.europa.eu/en/medicines/human/EPAR/teizeild"
+    ]
+   ]
+  },
+  {
+   "id": "meta-ozempic-fin-restrictions-2025",
+   "ty": "Officine",
+   "dom": "Soins primaires & Officine",
+   "n": 5,
+   "dt": "2025-06",
+   "des": "Ozempic et Victoza : fin des restrictions d'approvisionnement — les initiations reprennent pour tous les patients DT2 depuis le 5 juin 2025 (ANSM)",
+   "tag": "sémaglutide (Ozempic) · liraglutide (Victoza) · pénurie",
+   "res": "Après plus d'un an de tensions majeures, l'ANSM a annoncé la remise à disposition normale d'Ozempic en France depuis début mai 2025, puis la fin des restrictions (La Tribune, page vue) : depuis le 5 juin 2025, Ozempic 0,25 mg (sémaglutide) et Victoza (liraglutide) sont de nouveau disponibles sans restriction et les médecins peuvent reprendre ou initier le traitement chez l'ensemble des patients DT2 conformément aux AMM (Pharma365 et Santé-sur-le-net, pages vues : « Depuis le 5 juin 2025… »). La page ANSM « Diabète de type 2 et tensions d'approvisionnement en aGLP-1 » (vue) documente la levée progressive des mesures et le cadrage des recommandations. La Tribune note que « les dérives persistent » malgré le retour à la normale (usages esthétiques, canaux parallèles). En officine : ne plus différer systématiquement les initiations, mais rester vigilant — vérifier l'indication DT2 sur l'ordonnance (l'usage esthétique est hors AMM), refuser les ordonnances douteuses ou anciennes réutilisées, et signaler tout soupçon de contrefaçon ou d'achat en ligne.",
+   "src": [
+    [
+     "ANSM — DT2 et tensions d'approvisionnement en aGLP-1 : perspectives et recommandations",
+     "https://ansm.sante.fr/actualites/diabete-de-type-2-et-tensions-dapprovisionnement-en-aglp-1-perspectives-devolution-de-la-situation-et-des-recommandations"
+    ],
+    [
+     "Pharma365 — Ozempic et Victoza : fin des restrictions, initiations pour tous (05/06/2025)",
+     "https://www.pharma365.fr/je-m-informe/cote-medicament/ozempic-et-victoza-fin-des-restrictions-les-initiations-reprennent-pour-tous-les-patients/"
+    ],
+    [
+     "Santé-sur-le-net — reprise des traitements Ozempic et Victoza (05/06/2025)",
+     "https://www.sante-sur-le-net.com/traitements-ozempic-victoza-patients-diabetiques/"
+    ],
+    [
+     "La Tribune — approvisionnement de l'Ozempic : retour à la normale, dérives persistantes",
+     "https://www.latribune.fr/entreprises-finance/industrie/chimie-pharmacie/approvisionnement-de-l-ozempic-retour-a-la-normale-mais-les-derives-persistent-1024602.html"
+    ]
+   ]
+  },
+  {
+   "id": "meta-obesite-wegovy-mounjaro-remboursement-2026",
+   "ty": "Économie",
+   "dom": "Économie de la Santé",
+   "n": 5,
+   "dt": "2026-06",
+   "des": "Obésité : Wegovy et Mounjaro remboursés par l'Assurance maladie depuis le 15 juin 2026 dans un cadre contrôlé — arrêtés JO du 28/05/2026, avis HAS (mai 2026)",
+   "tag": "tirzépatide (Mounjaro) · sémaglutide (Wegovy) · remboursement obésité",
+   "res": "Deux médicaments contre l'obésité sont remboursés par l'Assurance maladie depuis le 15 juin 2026 (Service-Public, page vue : publié le 01/06/2026, mis à jour le 15/06/2026) — la mesure vient d'être confirmée par plusieurs arrêtés parus au Journal officiel le 28 mai 2026 et répond aux recommandations de la HAS alors qu'en 2025, 17,4 % des adultes étaient en situation d'obésité (page vue). Le Vidal précise les conditions de prise en charge de Wegovy (sémaglutide) et Mounjaro (tirzépatide) à partir du 15/06/2026, sous conditions (actualité vue, avec la règle de l'IMC initial mesuré à l'initiation du traitement) ; pour Mounjaro, l'avis CT de la HAS du 06/05/2026 (page vue) est favorable au remboursement uniquement dans le DT2 insuffisamment contrôlé (bithérapie/trithérapie selon l'AMM) ; un formulaire d'accompagnement à la prescription existe pour le tirzépatide dans le DT2 (document ameli vu). Rappel du cadre (Service-Public, page vue) : les aGLP-1 ne doivent pas être prescrits à des fins esthétiques chez des personnes ne présentant pas les critères. En officine : délivrance encadrée — vérifier les éléments de l'ordonnance et le cadre d'indication, expliquer le suivi obligatoire (arrêt si réponse insuffisante), et cadrer les demandes hors cadre : le remboursement est strictement conditionné, l'usage esthétique reste hors AMM et hors prise en charge.",
+   "src": [
+    [
+     "Service-Public — Deux médicaments contre l'obésité remboursés depuis le 15 juin 2026",
+     "https://www.service-public.gouv.fr/particuliers/actualites/A18932"
+    ],
+    [
+     "Vidal — Prise en charge de Wegovy et Mounjaro à partir du 15 juin 2026, sous conditions",
+     "https://www.vidal.fr/actualites/37850-obesite-prise-en-charge-de-wegovy-et-mounjaro-a-partir-du-15-juin-2026-sous-conditions.html"
+    ],
+    [
+     "HAS — MOUNJARO : avis CT du 06/05/2026 (primo-inscription DT2)",
+     "https://www.has-sante.fr/jcms/p_4072399/fr/mounjaro-06052026-avis-ct21681"
+    ],
+    [
+     "Ameli — formulaire d'accompagnement à la prescription tirzépatide (DT2)",
+     "https://www.ameli.fr/sites/default/files/Documents/formulaire-mounjaro-indication-diab%C3%A8te.pdf"
+    ]
+   ]
+  },
+  {
+   "id": "meta-wegovy-comprime-france-2026",
+   "ty": "Officine",
+   "dom": "Obésité & Métabolisme",
+   "n": 5,
+   "dt": "2026-11",
+   "des": "Wegovy en comprimé : commercialisé en France depuis le 2 novembre 2026 (169 €/mois, sur ordonnance, non remboursé) — la forme orale arrive en pharmacie",
+   "tag": "sémaglutide orale (Wegovy comprimé) · obésité",
+   "res": "Novo Nordisk a annoncé le 29 octobre 2026 que le Wegovy en comprimé sera vendu en pharmacie en France à partir du lundi 2 novembre 2026, sur ordonnance, à 169 € par mois (La Nouvelle Tribune, page vue) ; Santé Matin confirme l'arrivée en pharmacies françaises le 02/11/2026 et précise que la nouvelle présentation évite l'injection hebdomadaire mais impose une prise à jeun (page vue) ; Le Moniteur des Pharmacies titre « une option de plus dans l'obésité, mais sans remboursement » (page vue, qui rappelle que la forme orale « Wegovy pill » a déjà été approuvée aux États-Unis en 2025). Jusqu'ici, le Wegovy (sémaglutide, obésité) n'était disponible qu'en stylo injectable hebdomadaire ; le comprimé reprend le principe de la sémaglutide orale du DT2 (Rybelsus). En officine : anticiper les questions de délivrance — prise à jeun le matin avec un gobelet d'eau et délai avant la première ingestion alimentaire (règle identique à Rybelsus, à rappeler : 30 minutes), pas de remboursement (prix libre — vérifier chaque prescription et son cadre de prise en charge), observance quotidienne à évaluer vs injection hebdomadaire, effets digestifs transitoires (nausées) et ne pas confondre avec Rybelsus (indication DT2).",
+   "src": [
+    [
+     "La Nouvelle Tribune — Wegovy en comprimé dès le 2 novembre, à 169 €/mois (29/10/2026)",
+     "https://lanouvelletribune.info/2026/10/novo-nordisk-commercialise-le-wegovy-en-comprime-en-france-des-le-2-novembre-a-169-e-par-mois/"
+    ],
+    [
+     "Santé Matin — Wegovy en comprimé arrive en France le 2 novembre 2026",
+     "https://www.santematin.fr/wegovy-comprime-france-2-novembre-2026-prise-patients"
+    ],
+    [
+     "Le Moniteur des Pharmacies — Wegovy en comprimé : une option de plus, mais sans remboursement",
+     "https://www.lemoniteurdespharmacies.fr/therapeutique/medicaments/fiches-medicaments/wegovy-en-comprime-une-option-de-plus-dans-lobesite-mais-sans-remboursement"
+    ]
+   ]
+  },
+  {
+   "id": "meta-reset-remission-dt2-jeunes-2026",
+   "ty": "Alimentation",
+   "dom": "Diabète & Endocrinologie",
+   "n": 3,
+   "dt": "2026-10",
+   "des": "RESET for Remission : 54 % de rémission du DT2 diagnostiqué avant 45 ans en 6 mois par régime hypocalorique + exercice encadré (vs 4 % sous soins usuels) — essai anglo-canadien, EASD / The Lancet Regional Health",
+   "tag": "rémission DT2 · régime hypocalorique · exercice supervisé",
+   "res": "Essai randomisé international mené par McGill (Pr Kaberi Dasgupta) et Leicester : chez des adultes de moins de 45 ans atteints d'un DT2 précoce (population à haut risque de complications à vie), un programme combinant 12 semaines de régime hypocalorique (~800-900 kcal/jour) puis un exercice physique structuré et supervisé (3 séances/semaine, relais lus) a induit une rémission du diabèse chez 54 % des participants à 6 mois, contre 4 % sous soins usuels (chiffres lus : ScienceDaily du 30/10/2026 « 54 % of participants under age 45… compared with just 4 % » ; MUHC, page vue ; présenté au congrès annuel de l'EASD et publié dans The Lancet Regional Health Americas, pages vues). C'est la première fois que la combinaison régime hypocalorique + exercice structuré est testée spécifiquement dans le DT2 à début jeune. En officine : message aux patients jeunes DT2 — la rémission est un objectif réel et rapide (6 mois) avec un programme intensif encadré, pas une simple « perte de poids » au comptoir ; rôle du pharmacien : repérer les candidats (DT2 récent, < 45 ans, motivé), orienter vers les programmes structurés (diététicien, sport santé sur prescription), et alerter sur les hypoglycémies si antidiabétiques en cours (les doses doivent être réajustées par le médecin pendant le programme).",
+   "src": [
+    [
+     "ScienceDaily — 54 % achieve remission in just 6 months (30/10/2026)",
+     "https://www.sciencedaily.com/releases/2026/10/261029072129.htm"
+    ],
+    [
+     "The Lancet Regional Health Americas — Low energy diet plus supervised exercise vs usual care (RESET for Remission)",
+     "https://www.thelancet.com/journals/lanam/article/PIIS2667-193X(26)00294-2/fulltext"
+    ],
+    [
+     "MUHC — Half of young adults with type 2 diabetes reach remission",
+     "https://muhc.ca/news-and-patient-stories/news/half-young-adults-type-2-diabetes-reach-remission-through-diet-and"
+    ]
+   ]
+  },
+  {
+   "id": "meta-remission-dt2-metaanalyse-2025",
+   "ty": "Alimentation",
+   "dom": "Diabète & Endocrinologie",
+   "n": 1,
+   "dt": "2025-12",
+   "des": "Rémission du DT2 sans chirurgie : la méta-analyse de référence des essais randomisés — Diabetes Care (déc. 2025)",
+   "tag": "rémission diabète de type 2 · interventions non chirurgicales",
+   "res": "Revue systématique et méta-analyse des essais randomisés non chirurgicaux sur la rémission du DT2 (recherche MEDLINE/Embase jusqu'à avril 2025, page Diabetes Care vue : « Type 2 Diabetes Remission: A Systematic Review and Meta-analysis of Nonsurgical Randomized Controlled Trials », Diabetes Care 2025;48(12):2181) : l'analyse évalue l'effet des interventions non chirurgicales sur la rémission et caractérise les composantes clés des programmes efficaces. Complément bibliographique de l'essai RESET (même jour) : ici la vue d'ensemble de toutes les approches testées en essais randomisés, là le résultat d'un programme précis. En officine : argument de cadrage pour le conseil — la rémission passe par des programmes intensifs encadrés (repérage précoce, soutien diététique, activité physique), pas par un médicament ni un complément ; utile pour prioriser les messages (perte de poids précoce après le diagnostic = fenêtre d'opportunité).",
+   "src": [
+    [
+     "Diabetes Care — Type 2 Diabetes Remission: A Systematic Review and Meta-analysis (2025;48(12):2181)",
+     "https://diabetesjournals.org/care/article/48/12/2181/163414/Type-2-Diabetes-Remission-A-Systematic-Review-and"
+    ]
+   ]
+  },
+  {
+   "id": "meta-metformine-b12-tcn2-2026",
+   "ty": "Médicament",
+   "dom": "Diabète & Endocrinologie",
+   "n": 4,
+   "dt": "2026-01",
+   "des": "Carence en vitamine B12 sous metformine : un facteur de risque génétique identifié (variant du gène TCN2) — Diabetologia, cohortes DPP (janv. 2026)",
+   "tag": "metformine · vitamine B12 · TCN2 (transcobalamine II)",
+   "res": "Étude de pharmacogénétique publiée dans Diabetologia (Baldwin et al., « Identification of a genetic risk factor for metformin-induced vitamin B12 deficiency », citation vue : Diabetologia 2026 Jan 15;69(4):953-965 ; texte PMC vu) menée sur les cohortes du Diabetes Prevention Program : comparaison de 487 individus avec carence en B12 induite par la metformine et 6 686 individus tolérants à la metformine — un variant du gène TCN2 (transcobalamine II, la protéine de transport de la B12 dans le sang) est identifié comme facteur de risque génétique de carence. Mécanisme connu (revues vues) : la metformine perturbe la liaison entre la B12 ingérée et le facteur intrinsèque de Castle, indispensable à son absorption ; prévalence de la carence estimée entre 5 et 30 % selon les populations (JIM, page vue). DISTINCT de l'entrée « dépistage B12 questionné » déjà en base : ici le déterminant génétique, pas la stratégie de dépistage. En officine : renforcer la vigilance B12 chez les patients sous metformine au long cours (doses élevées, sujet âgé, régime végétarien) — symptômes frustes (paresthésies des pieds, fatigue, troubles cognitifs légers) à ne pas mettre sur le seul compte du diabète ou de l'âge ; un dosage de B12 est simple à suggérer au médecin en cas de neuropathie ou d'anémie inexpliquée.",
+   "src": [
+    [
+     "Diabetologia — Identification of a genetic risk factor for metformin-induced vitamin B12 deficiency (2026;69(4):953-965)",
+     "https://link.springer.com/article/10.1007/s00125-025-06655-5"
+    ],
+    [
+     "PMC — texte intégral (Diabetologia 2026)",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC12957035/"
+    ]
+   ]
+  },
+  {
+   "id": "meta-survodutide-synchronize-masld-2026",
+   "ty": "Médicament",
+   "dom": "Obésité & Métabolisme",
+   "n": 2,
+   "dt": "2026-06",
+   "des": "Survodutide (double agoniste glucagon/GLP-1) : phase 3 SYNCHRONIZE-MASLD positive dans le foie gras — stéatose hépatique et poids réduits vs placebo, publié dans Nature Medicine (08/06/2026)",
+   "tag": "survodutide · MASLD/MASH · agoniste double glucagon/GLP-1",
+   "res": "Dans SYNCHRONIZE-MASLD (essai de phase 3 randomisé, en double aveugle vs placebo, adultes obèses avec stéatose hépatique associée à un dysfonctionnement métabolique), le survodutide (Boehringer Ingelheim) en injection sous-cutanée hebdomadaire a réduit la teneur en graisse hépatique et le poids vs placebo (Nature Medicine, article vu : « weekly subcutaneous injections of survodutide, a glucagon receptor/GLP-1R dual agonist, lowered liver fat content and body weight compared to placebo », résultats présentés au congrès de l'ADA) — publication mise en ligne le 8 juin 2026 (Clinical Trial Vanguard, page vue). Le laboratoire précise (page vue) : les deux critères principaux sont atteints, avec une normalisation de la graisse hépatique atteinte par 6 participants sur 10 au plus fort dosage selon les résultats détaillés présentés ; le survodutide bénéficie d'une désignation FDA Breakthrough Therapy dans le MASH non cirrhotique avec fibrose modérée à avancée. Effets indésirables les plus fréquents : diarrhée et nausées ; pas encore de preuve sur cirrhose, transplantation ou mortalité (revue vue). DISTINCT du resmétírom (déjà en base + entrée du jour : autre mécanisme, approuvé) et des agonistes GLP-1 seuls déjà en base. En officine : pas encore disponible — canal d'information des patients « foie gras » : la vague thérapeutique MASH arrive (resmétírom en accès précoce en France, survodutide en phase 3), mais le socle reste la perte de poids ; prudence sur les achats en ligne de « GLP-1 pour le foie » (produits non évalués, contrefaçons).",
+   "src": [
+    [
+     "Nature Medicine — Survodutide in adults with obesity and MASLD: SYNCHRONIZE-MASLD (2026)",
+     "https://www.nature.com/articles/s41591-026-04479-3"
+    ],
+    [
+     "Clinical Trial Vanguard — SYNCHRONIZE-MASLD publié le 8 juin 2026",
+     "https://www.clinicaltrialvanguard.com/opinion/reading-the-synchronize-masld-phase-3-trial-publication-closely/"
+    ],
+    [
+     "Boehringer Ingelheim — données détaillées de phase 3 et désignation FDA Breakthrough Therapy",
+     "https://www.boehringer-ingelheim.com/human-health/crm-health/metabolic-health/survodutide-phase-3-fat-loss-obesity-dual-agonist-data"
+    ]
+   ]
+  },
+  {
+   "id": "meta-resmetirom-aap-france-2026",
+   "ty": "Officine",
+   "dom": "Obésité & Métabolisme",
+   "n": 5,
+   "dt": "2026-02",
+   "des": "Resmétírom (Rezdiffra) : autorisation d'accès précoce en France le 12/02/2026 dans le MASH avec fibrose F2-F3 — et entrée dans les premières recommandations européennes (J Hepatol, 28/09/2026)",
+   "tag": "resmétírom (Rezdiffra) · MASH · stéatohépatite métabolique",
+   "res": "En France, le resmétírom (Rezdiffra) a obtenu une autorisation d'accès précoce le 12 février 2026 (ameli, page vue) : agoniste du récepteur THR-β hépatique, il agit sur le métabolisme lipidique hépatique, ralentit la progression de la fibrose et est prescrit en association aux mesures hygiéno-diététiques dans la stéatohépatite associée à un dysfonctionnement métabolique (MASH) avec fibrose F2-F3. Le Vidal (actualité vue) documente ensuite son entrée dans les premières recommandations européennes de prise en charge du MASH, publiées le 28 septembre 2026 dans le Journal of Hepatology — jusqu'ici, la prise en charge reposait essentiellement sur les mesures hygiéno-diététiques. DISTINCT de l'entrée « resmetirom FDA / premier médicament du foie gras » déjà en base : ici l'accès français et le passage dans les recommandations européennes. En officine : premier médicament du MASH accessible en France (l'accès précoce implique un circuit hospitalier pour l'initiation) — au comptoir : cadrer les attentes des patients « foie gras » (le traitement s'ajoute à la perte de poids, pas à sa place ; la stéatose simple sans fibrose significative n'en relève pas), vérifier les interactions à la délivrance et l'observance du suivi hépatique biologique prescrit.",
+   "src": [
+    [
+     "Ameli — Traitement de la stéatose hépatique (MASLD) et MASH : resmétírom en accès précoce le 12/02/2026",
+     "https://www.ameli.fr/assure/sante/themes/steatose-hepatique/traitement"
+    ],
+    [
+     "Vidal — MASH : le resmétírom en accès précoce en France entre dans les recommandations européennes (J Hepatol, 28/09/2026)",
+     "https://www.vidal.fr/actualites/38404-mash-le-resmetirom-en-acces-precoce-en-france-entre-dans-les-recommandations-europeennes.html"
+    ]
+   ]
+  },
+  {
+   "id": "meta-thermoablation-nodules-thyroide-2026",
+   "ty": "Officine",
+   "dom": "Diabète & Endocrinologie",
+   "n": 5,
+   "dt": "2026-05",
+   "des": "Nodules thyroïdiens bénins : la thermoablation par radiofréquence s'organise en France — recommandations sur les indications/contre-indications et sur la prévention des complications (2026)",
+   "tag": "nodule thyroïdien · thermoablation · radiofréquence",
+   "res": "Deux jeux de recommandations français lus : (1) « Indications et contre-indications de la thermoablation des nodules thyroïdiens bénins » (ScienceDirect 2026, page vue : le bilan préthérapeutique repose sur l'échographie, la cytoponction, la biologie thyroïdienne et l'information du patient ; concertation pluridisciplinaire souhaitée pour les cas atypiques ; visés : nodules bénins symptomatiques ou en croissance ; contexte lu : prévalence des nodules jusqu'à 60 % de la population, bénignité de plus de 95 %) ; (2) « Recommandations sur la prévention et la prise en charge des complications des thermoablations » — Journal d'imagerie diagnostique et interventionnelle, disponible en ligne le 20 mai 2026 (EM-Consulte, page vue ; la thermoablation repose sur la radiofréquence ou d'autres sources d'énergie). Exemple de filière : le CHU de Nantes a lancé la sienne fin avril 2025, 35 patients traités (Infodujour, page vue) ; le principe (Cochin AP-HP, page vue) : réduire le volume du nodule (50-80 %) sans cicatrice au cou et en préservant la thyroïde. En officine : alternative mini-invasive à la chirurgie de plus en plus proposée pour les nodules bénins sélectionnés — questions attendues des patients : « vais-je être opéré(e) ? » → expliquer que la thermoablation est une option validée pour nodules bénins (pas pour cancer), sous conditions ; après la procédure : douleur cervicale transitoire possible, surveillance échographique programmée, poursuivre la lévothyroxine si elle est prescrite.",
+   "src": [
+    [
+     "ScienceDirect — Indications et contre-indications de la thermoablation des nodules thyroïdiens bénins (2026)",
+     "https://www.sciencedirect.com/science/article/pii/S2543343126000618"
+    ],
+    [
+     "EM-Consulte — Recommandations sur la prévention et la prise en charge des complications des thermoablations (J Imagerie Diagn Interv, 20/05/2026)",
+     "https://www.em-consulte.com/article/1811395/recommandations-sur-la-prevention-et-la-prise-en-c"
+    ],
+    [
+     "Infodujour — CHU de Nantes : filière thermoablation lancée fin avril 2025, 35 patients",
+     "https://infodujour.fr/sante/87531-nodules-thyroidiens-au-chu-de-nantes-une-technique-innovante-pour-eviter-certaines-operations"
+    ],
+    [
+     "Cochin AP-HP — thermoablation des nodules thyroïdiens bénins par radiofréquence",
+     "https://www.radiologie-cochin.fr/nodules-thyroidiens.html"
+    ]
+   ]
+  },
+  {
+   "id": "meta-goutte-treat-to-target-cardio-2025",
+   "ty": "Médicament",
+   "dom": "Rhumatologie",
+   "n": 4,
+   "dt": "2025-06",
+   "des": "Goutte : traiter l'acide urique « aux objectifs » (treat-to-target, < 360 µmol/L) réduit les événements cardiovasculaires majeurs vs stratégie « fire-and-forget » — cohortes CPRD/VEGA, congrès EULAR 2025",
+   "tag": "goutte · acide urique · allopurinol · événements cardiovasculaires (MACE)",
+   "res": "Données présentées au congrès EULAR 2025 (Barcelone — dateline Medscape « BARCELONA ») : l'atteinte d'un acide urique < 360 µmol/L dans les 12 mois suivant la première prescription d'un traitement hypouricémiant (« treat-to-target ») est associée à une réduction du risque d'événements cardiovasculaires majeurs (MACE) à 5 ans par rapport à une stratégie « fire-and-forget » (abstract OP0005 vu : « To evaluate the effect of achieving SU <360 µmol/l within 12 months of first prescription of urate-lowering therapy (ULT) on the 5-year risk of MACE » ; cohortes : 109 504 Britanniques CPRD et 7 014 Suédois VEGA, chiffres lus sur Frequency Medicale : survie sans MACE 89,4 % dans le groupe treat-to-target). Medscape (page vue) qualifie la réduction de « modeste mais significative » ; les auteurs soulignent l'intérêt de cibles d'acide urique bien définies et d'une prévention cardiovasculaire intégrée. En officine : les patients goutteux négligent souvent le traitement de fond hors crise — message : l'hypouricémiant (allopurinol, fébuxostat) ne sert pas qu'à éviter les crises, il protège aussi le cœur ; vérifier l'observance au long cours (pas d'arrêt pendant une crise), rappeler la cible (< 360 µmol/L, parfois < 300) sur les ordonnances de suivi, et la couverture anti-crises à l'instauration (colchicine si prescrite).",
+   "src": [
+    [
+     "Annals of the Rheumatic Diseases (abstract OP0005) — Cardiovascular outcomes of treat-to-target vs fire-and-forget urate-lowering therapy",
+     "https://www.sciencedirect.com/science/article/abs/pii/S0003496725010611"
+    ],
+    [
+     "Frequency Medicale — Goutte : traiter l'hyperuricémie aux objectifs réduit le risque cardiovasculaire (EULAR 2025, CPRD/VEGA)",
+     "https://www.frequencemedicale.com/onco_autres/actualites/13727-Goutte-traiter-l-hyperuricemie-aux-objectifs-reduit-le-risque-cardiovasculaire"
+    ],
+    [
+     "Medscape — Meeting Target Serum Urate Level Cuts Cardiovascular Risk in Gout (EULAR, Barcelone)",
+     "https://www.medscape.com/viewarticle/meeting-target-serum-urate-level-cuts-cardiovascular-risk-2025a1000h0c"
+    ]
+   ]
+  },
+  {
+   "id": "meta-tirzepatide-dt1-phase2-2026",
+   "ty": "Médicament",
+   "dom": "Diabète & Endocrinologie",
+   "n": 3,
+   "dt": "2026-01",
+   "des": "Tirzépatide dans le diabète de type 1 : premier essai randomisé (phase 2, 12 semaines) — perte de poids et réduction des doses d'insuline — Diabetes Care (janv. 2026)",
+   "tag": "tirzépatide · diabète de type 1 (usage hors AMM)",
+   "res": "Premier essai randomisé contrôlé du tirzépatide dans le DT1 : essai de phase 2 randomisé, en double aveugle vs placebo, de 12 semaines chez des adultes atteints de DT1 avec obésité, présenté au 61e congrès de l'EASD (Vienne, 15-19 septembre 2025 — mention « Prior Presentation » lue sur la page Diabetes Care) et publié dans Diabetes Care (2026;49(1):161, citation vue : « Tirzepatide in Adults With Type 1 Diabetes: A Phase 2 Randomized Placebo-Controlled Clinical Trial », doi 10.2337/dc25-2379). Résultats lus (ReachMD, page vue) : perte de poids moyenne dans le groupe tirzépatide en adjonction à l'insuline, sans événement indésirable significatif rapporté dans le suivi ; l'amélioration du poids et de la composition corporelle et la réduction des doses d'insuline sont rapportées (Univadis EASD, vu en recherche). Le tirzépatide n'est pas approuvé dans le DT1 (aucun essai pivot d'AMM n'a inclus de patients en déficit insulinique absolu). En officine : attention aux demandes de prescriptions hors AMM dans le DT1 — un essai de phase 2 de 12 semaines ne valide pas un usage en routine ; points de vigilance si un patient DT1 l'utilise malgré tout (suivi médical indispensable) : risque d'acidocétose (les GLP-1 peuvent la masquer en réduisant l'insuline, particulièrement en cas d'omission des injections), hypoglycémies si les doses d'insuline ne sont pas réajustées par le médecin.",
+   "src": [
+    [
+     "Diabetes Care — Tirzepatide in Adults With Type 1 Diabetes: A Phase 2 Randomized Placebo-Controlled Clinical Trial (2026;49(1):161)",
+     "https://diabetesjournals.org/care/article/49/1/161/163859/Tirzepatide-in-Adults-With-Type-1-Diabetes-A-Phase"
+    ],
+    [
+     "ReachMD — Tirzepatide in Type 1 Diabetes: Phase 2 Trial Readout",
+     "https://reachmd.com/news/tirzepatide-in-type-1-diabetes-phase-2-trial-readout/2486814/"
+    ],
+    [
+     "Diabetes Care — doi 10.2337/dc25-2379",
+     "https://doi.org/10.2337/dc25-2379"
+    ]
+   ]
+  }
+ ],
+ "recos": [
+  {
+   "spe": "Endocrinologie & grossesse",
+   "org": "SFE & groupe d'experts français (Ann Endocrinol)",
+   "dt": "2026-07",
+   "geo": "fr",
+   "titre": "Prévention de la carence iodée pendant la grossesse et l'allaitement en France : premières recommandations françaises (Caron et al., Annales d'Endocrinologie)",
+   "res": "Premières recommandations françaises sur la prévention de la carence en iode pendant la grossesse et l'allaitement : « Recommendations for prevention of iodine deficiency during pregnancy and breastfeeding in France », travail réalisé par un groupe d'experts français en endocrinologie, nutrition et gynécologie-obstétrique (Info-Allaitement, page vue ; relais Univadis « Carence en iode : recommandations françaises pendant la grossesse et l'allaitement », 13/07/2026, page vue), publié dans les Annales d'Endocrinologie (citation PubMed vue : 2026 Jul;87(4):102580, doi 10.1016/j.ando.2026.102580, Epub 29/05/2026 — Caron, Stoupa, Mégier, Morio, Moulin, Coutant, Teissier-Clément, Luton ; version publiée aussi dans les Archives de Pédiatrie 2026;33(7):105600, page ScienceDirect vue). Points lus : la carence iodée retentit sur la fonction thyroïdienne maternelle (formes subcliniques jusqu'à l'hypothyroïdie avérée), le volume thyroïdien, les nodules et le fœtus ; à l'inverse un apport > 600 µg/jour est signalé comme excessif (Univadis, page vue) ; la consigne d'expert relayée en octobre 2026 : « Il faut supplémenter toutes les femmes enceintes et allaitantes en iode » (Univadis, 13/10/2026, vu). DISTINCTE de l'entrée « iode végans/algues » déjà en base (statut nutritionnel des régimes végétariens) : ici la prévention périnatale. En officine : message simple — la couverture iodée des femmes enceintes et allaitantes est insuffisante en France : proposer/valider une supplémentation iodée adaptée (posologies détaillées dans la reco) dès le projet de grossesse et pendant l'allaitement ; prudence avec les compléments multivitaminés qui contiennent déjà de l'iode (additionner les apports, ne jamais dépasser les doses recommandées) et avec les produits riches en algues.",
+   "src": [
+    [
+     "PubMed — Caron et al., Ann Endocrinol 2026 Jul;87(4):102580 (Epub 29/05/2026)",
+     "https://pubmed.ncbi.nlm.nih.gov/42217751/"
+    ],
+    [
+     "ScienceDirect — version Archives de Pédiatrie 2026;33(7):105600",
+     "https://www.sciencedirect.com/science/article/pii/S0003426626001010"
+    ],
+    [
+     "Info-Allaitement — Prévention de la carence iodée pendant la grossesse et l'allaitement en France",
+     "https://info-allaitement.org/ressources-en-ligne/prevention-de-la-carence-iodee-pendant-la-grossesse-et-lallaitement-en-france/"
+    ]
+   ]
+  },
+  {
+   "spe": "Obésité",
+   "org": "OMS",
+   "dt": "2025-12",
+   "titre": "Analogues du GLP-1 dans le traitement de l'obésité : premières lignes directrices mondiales de l'OMS (01/12/2025)",
+   "res": "L'OMS a publié le 1er décembre 2025 ses premières lignes directrices mondiales sur l'utilisation des médicaments GLP-1 dans le traitement de l'obésité (page OMS vue) : à la demande des États membres, face à une obésité qui touche plus d'un milliard de personnes dans le monde, l'OMS recommande les aGLP-1 comme traitement de longue durée de l'obésité chez l'adulte (Le Quotidien du Médecin, page vue). Point clé lu : dans les conditions actuelles, « moins de 10 % des personnes qui en ont besoin » devraient bénéficier d'un traitement par aGLP-1 (relais Univadis, 05/01/2026, vu) — l'OMS insiste sur la place centrale des interventions de base (alimentation, activité physique), le suivi au long cours et l'accès équitable ; le questions-réponses OMS (page vue) détaille la classe, son cadre d'usage et les populations concernées. En officine : recadrer les demandes « GLP-1 pour tous » : l'OMS positionne ces traitements comme une option encadrée pour des populations sélectionnées, pas un traitement de l'apparence ; en France, la prise en charge depuis le 15/06/2026 est strictement conditionnée (voir l'entrée du jour) — cohérence entre le cadrage mondial et le cadre français.",
+   "src": [
+    [
+     "OMS — Lignes directrices mondiales sur l'utilisation des analogues du GLP-1 (01/12/2025)",
+     "https://www.who.int/fr/news/item/01-12-2025-who-issues-global-guideline-on-the-use-of-glp-1-medicines-in-treating-obesity"
+    ],
+    [
+     "OMS — Questions-réponses : utilisation des analogues du GLP-1 dans le traitement de l'obésité",
+     "https://www.who.int/fr/news-room/questions-and-answers/item/obesity-glp-1-therapies"
+    ],
+    [
+     "Le Quotidien du Médecin — L'OMS recommande les aGLP-1 pour traiter l'obésité au long cours",
+     "https://www.lequotidiendumedecin.fr/actu-medicale/sante-publique/loms-recommande-les-aglp-1-pour-traiter-lobesite-au-long-cours"
+    ]
+   ]
+  }
+ ]
+}
