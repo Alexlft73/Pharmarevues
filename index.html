@@ -446,6 +446,91 @@ html.dark #classestab .notlink{color:var(--muted)}
 html.dark #classestab .cfoot{color:var(--muted);border-top-color:var(--line)}
 
 /* — Impression : toujours clair — */
+/* ==== MODULE ALGORITHMES (onglet 5) ==== */
+#algostab .abar{display:flex;gap:10px;align-items:center;margin:14px 0 2px;flex-wrap:wrap}
+#algostab .abar input{flex:1;min-width:230px;padding:10px 14px;border-radius:12px;border:1px solid #d7dce5;background:#fff;color:inherit;font-size:.9rem;outline:none}
+#algostab .abar input:focus{border-color:#6366f1;box-shadow:0 0 0 3px rgba(99,102,241,.15)}
+#algostab #acount{font-size:.8rem;opacity:.75;white-space:nowrap}
+#agrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(275px,1fr));gap:16px;margin:16px 0 10px}
+.acard{position:relative;overflow:hidden;border-radius:16px;padding:16px 18px 14px;cursor:pointer;background:linear-gradient(160deg,#ffffff,#f5f3ff 75%);border:1px solid #e4e1f5;box-shadow:0 1px 3px rgba(15,23,42,.06);transition:transform .18s ease,box-shadow .18s ease}
+.acard:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(99,102,241,.18)}
+.acard::before{content:"";position:absolute;top:0;bottom:0;left:0;width:5px;background:linear-gradient(180deg,#6366f1,#a855f7)}
+.acard .aic{font-size:1.8rem;line-height:1}
+.acard .ameta{margin-top:8px}
+.acard .asp{display:inline-block;font-size:.67rem;font-weight:700;letter-spacing:.03em;text-transform:uppercase;color:#4f46e5;background:#eef2ff;border-radius:999px;padding:2px 9px}
+.acard .aorg{display:inline-block;font-size:.67rem;color:#475569;background:#f1f5f9;border-radius:999px;padding:2px 9px;margin-left:5px}
+.acard h4{margin:9px 0 5px;font-size:1.02rem;line-height:1.3;color:#1e293b}
+.acard .ago{font-size:.78rem;color:#64748b}
+.acard .aop{margin-top:12px;display:inline-flex;align-items:center;gap:6px;font-size:.8rem;font-weight:700;color:#4f46e5}
+.acard .aop span{transition:transform .15s}
+.acard:hover .aop span{transform:translateX(4px)}
+#asheet{display:none}
+#asheet.on{display:block}
+.aback{display:inline-flex;align-items:center;gap:7px;margin:14px 0 4px;padding:8px 15px;border-radius:999px;border:1.5px solid #6366f1;background:#eef2ff;color:#4f46e5;font-weight:700;font-size:.82rem;cursor:pointer;transition:background .15s,color .15s}
+.aback:hover{background:#6366f1;color:#fff}
+.ahead{border-radius:18px;padding:20px 22px 17px;background:linear-gradient(135deg,#4f46e5,#7c3aed 55%,#a855f7);color:#fff;box-shadow:0 10px 26px rgba(99,102,241,.28);margin:12px 0 6px}
+.ahead h3{margin:0;font-size:1.3rem;line-height:1.25}
+.ahead .asub{opacity:.9;font-size:.87rem;margin-top:5px}
+.ahead .abadges{margin-top:11px}
+.ahead .abadges span{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.32);border-radius:999px;padding:3px 11px;font-size:.73rem;margin:2px 6px 0 0}
+.aflow{max-width:780px;margin:6px auto 0;display:flex;flex-direction:column;align-items:stretch}
+.astep{position:relative;border-radius:14px;padding:13px 15px 13px 52px;font-size:.93rem;line-height:1.5;box-shadow:0 1px 2px rgba(15,23,42,.05)}
+.astep .ai{position:absolute;left:13px;top:14px;width:27px;height:27px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:.95rem;background:#e2e8f0}
+.astart{background:linear-gradient(135deg,#eef2ff,#e0e7ff);border:1.5px solid #c7d2fe}
+.ado{background:#ffffff;border:1.5px solid #dbe3ee}
+.ado .ai{background:#ccfbf1}
+.aq{background:linear-gradient(135deg,#fffbeb,#fef3c7);border:1.5px solid #f59e0b;color:#78350f}
+.aq .ai{background:#fde68a}
+.awarn{background:#fff7ed;border:1.5px solid #fb923c;color:#7c2d12}
+.awarn .ai{background:#fed7aa}
+.aok{background:linear-gradient(135deg,#ecfdf5,#d1fae5);border:1.5px solid #34d399;color:#065f46}
+.aok .ai{background:#a7f3d0}
+.astop{background:#fff1f2;border:1.5px solid #fb7185;color:#9f1239}
+.astop .ai{background:#fecdd3}
+.anote{background:#f8fafc;border:1.5px dashed #cbd5e1;color:#475569;font-size:.86rem}
+.anote .ai{background:#e2e8f0}
+.aarr{display:flex;align-items:center;justify-content:center;height:32px;position:relative}
+.aarr::before{content:"";position:absolute;top:0;bottom:8px;left:50%;width:2px;margin-left:-1px;background:#818cf8}
+.aarr::after{content:"";position:absolute;bottom:1px;left:50%;width:0;height:0;margin-left:-7px;border-left:7px solid transparent;border-right:7px solid transparent;border-top:8px solid #6366f1}
+.alab{position:absolute;left:calc(50% + 13px);top:50%;transform:translateY(-50%);background:#eef2ff;color:#4f46e5;border:1px solid #c7d2fe;border-radius:999px;padding:2px 10px;font-size:.72rem;font-weight:700;white-space:nowrap}
+.abrs{display:flex;flex-wrap:wrap;gap:12px;margin:10px 0 8px;padding-left:34px}
+.abr{flex:1 1 260px;max-width:100%;border-radius:0 14px 14px 14px;background:#fff5f6;border:1.5px dashed #fda4af;padding:12px 13px}
+.abr .abrhead{display:inline-block;font-size:.72rem;font-weight:800;color:#be123c;background:#ffe4e6;border-radius:999px;padding:2px 11px;margin-bottom:9px}
+.abr .astep{box-shadow:none;padding:10px 12px 10px 46px}
+.abr .aarr{height:26px}
+.abr .astep .ai{width:24px;height:24px;font-size:.85rem}
+.asrc{max-width:780px;margin:16px auto 4px;font-size:.84rem}
+.asrc b{display:block;margin-bottom:6px;color:#0f766e}
+.asrc ul{margin:0;padding-left:20px}
+.asrc li{margin:3px 0}
+.asrc a{color:#0f766e;text-decoration:underline;text-underline-offset:2px}
+html.dark #algostab .abar input{background:#151b28;border-color:#2c3547;color:#e2e8f0}
+html.dark .acard{background:linear-gradient(160deg,#1b2231,#221d38 75%);border-color:#303a52}
+html.dark .acard h4{color:#e2e8f0}
+html.dark .acard .asp{background:#312e81;color:#c7d2fe}
+html.dark .acard .aorg{background:#263046;color:#94a3b8}
+html.dark .acard .aop{color:#a5b4fc}
+html.dark .aback{background:#26214a;color:#c7d2fe;border-color:#4f46e5}
+html.dark .astart{background:linear-gradient(135deg,#312e81,#3730a3);border-color:#6366f1;color:#e0e7ff}
+html.dark .ado{background:#1b2231;border-color:#31405c;color:#dbe4f0}
+html.dark .ado .ai{background:#134e4a}
+html.dark .aq{background:linear-gradient(135deg,#453411,#574309);border-color:#b45309;color:#fde68a}
+html.dark .aq .ai{background:#78350f}
+html.dark .awarn{background:#431407;border-color:#c2410c;color:#ffedd5}
+html.dark .awarn .ai{background:#7c2d12}
+html.dark .aok{background:#052e1b;border-color:#047857;color:#d1fae5}
+html.dark .aok .ai{background:#065f46}
+html.dark .astop{background:#4c0519;border-color:#e11d48;color:#ffe4e6}
+html.dark .astop .ai{background:#9f1239}
+html.dark .anote{background:#141a26;border-color:#3a475c;color:#94a3b8}
+html.dark .anote .ai{background:#263046}
+html.dark .aarr::before{background:#6366f1}
+html.dark .alab{background:#312e81;color:#c7d2fe;border-color:#4f46e5}
+html.dark .abr{background:#2a0f1a;border-color:#9f1239}
+html.dark .abr .astep{background:#1f1118;color:#ffe4e6}
+html.dark .asrc b,html.dark .asrc a{color:#5eead4}
+html.dark .ahead{background:linear-gradient(135deg,#4338ca,#6d28d9 55%,#9333ea)}
+@media print{#algostab .abar,#algostab .aback{display:none!important}.aflow,.asrc{max-width:100%}.ahead{box-shadow:none}}
 @media print{
   header{background:#fff !important;color:#000 !important;border-bottom:2px solid #000}
   header::before{display:none}
@@ -470,6 +555,7 @@ html.dark #classestab .cfoot{color:var(--muted);border-top-color:var(--line)}
       <button class="tab on" id="btn-revues" onclick="showTab('revues')">📚 Mes revues</button>
       <button class="tab" id="btn-classes" onclick="showTab('classes')">💊 Classes de médicaments</button>
       <button class="tab" id="btn-recos" onclick="showTab('recos')">📋 Recommandations</button>
+      <button class="tab" id="btn-algos" onclick="showTab('algos')">🧭 Algorithmes</button>
       <button class="tab" id="btn-pedi" onclick="showTab('pedi')">🧸 Pédiatrie mg/kg</button>
     </nav>
   </div>
@@ -585,6 +671,18 @@ html.dark #classestab .cfoot{color:var(--muted);border-top-color:var(--line)}
   <p class="cfoot">📋 Recommandations &amp; guidelines — sociétés savantes et agences (HAS, ESC, GINA, GOLD, ADA, EASL, EULAR, ESMO, KDIGO, NICE, EuroGuiDerm/EDF, CNGOF, AFU, SFORL). Documents sources accessibles en un clic — toujours se référer au texte intégral en vigueur.</p>
 </section>
 
+<section id="algostab" class="panel" style="display:none">
+  <div class="abar">
+    <input id="aq" type="search" placeholder="Rechercher un algorithme, une spécialité, un organisme (angine, FA, HAS…)">
+    <span id="acount"></span>
+  </div>
+  <div id="agrid"></div>
+  <div id="asheet">
+    <button class="aback" onclick="aback()">← Retour aux algorithmes</button>
+    <div id="asheetin"></div>
+  </div>
+  <p class="cfoot">🧭 Algorithmes décisionnels schématisés — construits à partir des recommandations en base (fiches HAS ouvertes et vérifiées, guidelines ESC). Aide à la <b>vérification d'ordonnance et à l'orientation</b> : le diagnostic et la prescription relèvent du médecin ; toujours confronter au RCP de la spécialité délivrée et à la recommandation source (liens dans chaque algorithme).</p>
+</section>
 <section id="pedtab" class="panel" style="display:none">
   <div class="pbar">
     <label for="pds">⚖️ Poids de l'enfant</label>
@@ -995,17 +1093,19 @@ document.getElementById("fcoi").addEventListener("change", e=>{ state.coi = e.ta
 document.getElementById("fannee").addEventListener("change", e=>{ state.annee = e.target.value; apply(); });
 
 function showTab(t){
-  const rev = (t==="revues"), cl = (t==="classes"), rc = (t==="recos"), pd = (t==="pedi");
+  const rev = (t==="revues"), cl = (t==="classes"), rc = (t==="recos"), pd = (t==="pedi"), ag = (t==="algos");
   document.getElementById("toolrev").style.display = rev ? "" : "none";
   document.getElementById("legendrev").style.display = rev ? "" : "none";
   document.getElementById("mainrev").style.display = rev ? "" : "none";
   document.getElementById("classestab").style.display = cl ? "" : "none";
   document.getElementById("recostab").style.display = rc ? "" : "none";
   document.getElementById("pedtab").style.display = pd ? "" : "none";
+  document.getElementById("algostab").style.display = ag ? "" : "none";
   document.getElementById("btn-revues").className = "tab" + (rev ? " on" : "");
   document.getElementById("btn-classes").className = "tab" + (cl ? " on" : "");
   document.getElementById("btn-recos").className = "tab" + (rc ? " on" : "");
   document.getElementById("btn-pedi").className = "tab" + (pd ? " on" : "");
+  document.getElementById("btn-algos").className = "tab" + (ag ? " on" : "");
   if (pd) { try { document.getElementById("pds").focus(); } catch(e){} }
 }
 
@@ -1554,6 +1654,118 @@ function pdgo(){
 document.getElementById("pds").addEventListener("input", pdgo);
 pdgo();
 /* ==== FIN MODULE PÉDIATRIE ==== */
+
+/* ==== MODULE ALGORITHMES (onglet 5) ==== */
+const ALGOS = [
+{"id":"angine","sp":"ORL / Infectiologie","ic":"🔴","t":"Angine de l'enfant","org":"HAS","dt":"maj 13/05/2025","sub":"Antibiothérapie : quand, quoi, combien de temps ?","src":[["HAS — Choix et durées d'antibiothérapies : angine aiguë de l'enfant","https://www.has-sante.fr/jcms/p_3529229/fr/choix-et-durees-d-antibiotherapies-angine-aigue-de-l-enfant"]],
+"s":[
+{"ty":"start","txt":"Enfant avec <b>angine aiguë</b> (douleur de gorge, odynophagie)"},
+{"ty":"q","txt":"Âge de l'enfant ?","ylab":"3 ans et plus","brs":[{"lab":"Moins de 3 ans","s":[{"ty":"stop","txt":"Pas de TDR, pas d'antibiotique : à cet âge l'angine est quasi toujours virale"}]}]},
+{"ty":"do","txt":"Réaliser un <b>TDR</b> (test de diagnostic rapide) streptococcique"},
+{"ty":"q","txt":"TDR positif ?","ylab":"Oui","brs":[{"lab":"Négatif","s":[{"ty":"stop","txt":"Pas d'antibiotique — traitement symptomatique seul"}]}]},
+{"ty":"ok","txt":"<b>Amoxicilline</b> : 50 mg/kg/j en 2 prises/j (max 2 g/j) pendant <b>6 jours</b>"},
+{"ty":"note","txt":"Allergie documentée aux pénicillines (sans CI aux céphalosporines) : <b>cefpodoxime proxétil</b> 8 mg/kg/j en 2 prises (max 200 mg/j), 5 jours. Contre-indication aux bêta-lactamines : <b>clarithromycine</b> 15 mg/kg/j (max 500 mg/j), 5 jours."},
+{"ty":"note","txt":"Enfant de 10 ans et plus : délivrance possible à l'officine <b>sans ordonnance</b> si l'angine bactérienne à streptocoque A est confirmée par un TROD"},
+{"ty":"do","txt":"Douleur / fièvre : <b>paracétamol en 1re intention</b> ; AINS uniquement si la douleur persiste (jamais pour la fièvre seule)"},
+{"ty":"warn","txt":"Pas d'AINS en cas de <b>varicelle en cours</b> ou d'infection ORL bactérienne sévère ou compliquée (risque d'infection invasive à streptocoque A)"}
+]},
+{"id":"oma","sp":"ORL / Pédiatrie","ic":"👂","t":"Otite moyenne aiguë de l'enfant","org":"HAS","dt":"maj 14/05/2025","sub":"Antibiothérapie d'emblée, différée, ou pas d'antibiotique ?","src":[["HAS — Choix et durées d'antibiothérapies : otite moyenne aiguë purulente de l'enfant","https://www.has-sante.fr/jcms/c_2722749/fr/choix-et-durees-d-antibiotherapies-otite-moyenne-aigue-purulente-de-l-enfant"]],
+"s":[
+{"ty":"start","txt":"Enfant avec douleur de l'oreille / suspicion d'otite"},
+{"ty":"q","txt":"Aspect du tympan ?","ylab":"OMA purulente","brs":[{"lab":"Congestive ou séro-muqueuse","s":[{"ty":"stop","txt":"Pas d'antibiotique"}]}]},
+{"ty":"q","txt":"Âge ?","ylab":"3 mois et plus","brs":[{"lab":"Moins de 3 mois","s":[{"ty":"warn","txt":"Avis spécialisé"}]}]},
+{"ty":"q","txt":"Enfant de 3 mois à < 2 ans ?","ylab":"Oui","brs":[{"lab":"Plus de 2 ans","s":[
+  {"ty":"q","txt":"Symptômes importants ? (fièvre ≥ 38,5 °C, douleur marquée, otorrhée, otite récidivante)","ylab":"Oui","brs":[{"lab":"Symptômes modérés","s":[{"ty":"stop","txt":"Pas d'antibiotique en 1re intention — réévaluation à 48-72 h ; antibiothérapie seulement si aggravation"}]}]},
+  {"ty":"ok","txt":"<b>Amoxicilline</b> : 80 mg/kg/j en 2 prises (max 3 g/j) pendant <b>5 jours</b>"}
+]}]},
+{"ty":"ok","txt":"<b>Amoxicilline</b> : 80 mg/kg/j en 2 prises/j (max 3 g/j) pendant <b>10 jours</b>"},
+{"ty":"note","txt":"Syndrome otite-conjonctivite : <b>amoxicilline-acide clavulanique</b> 80 mg/kg/j (max 3 g/j) — 10 j (moins de 2 ans) ou 5 j (plus de 2 ans). Allergie aux pénicillines : cefpodoxime proxétil 8 mg/kg/j (max 400 mg/j). CI aux bêta-lactamines : sulfaméthoxazole + triméthoprime."},
+{"ty":"do","txt":"Douleur / fièvre : paracétamol 1re intention (60 mg/kg/j en 4 prises, max 80 mg/kg/j, 72 h max). Si douleur persistante : <b>ibuprofène</b> dès 3 mois — 24 h max (3-6 mois), 72 h max (plus de 6 mois)"},
+{"ty":"warn","txt":"Pas d'AINS si varicelle en cours ou infection ORL bactérienne sévère ou compliquée ; corticoïdes : efficacité non démontrée"}
+]},
+{"id":"pac","sp":"Infectiologie / Pneumologie","ic":"🫁","t":"Pneumonie communautaire de l'adulte (ville)","org":"HAS","dt":"maj 13/05/2025","sub":"Antibiothérapie probabiliste, durées courtes, critères d'hospitalisation","src":[["HAS — Choix et durées d'antibiothérapies : PAC de l'adulte en ambulatoire","https://www.has-sante.fr/jcms/p_3575597/fr/choix-et-durees-d-antibiotherapies-pneumonie-aigue-communautaire-de-l-adulte-en-ambulatoire"]],
+"s":[
+{"ty":"start","txt":"Adulte avec pneumonie aiguë communautaire pris en charge en ville"},
+{"ty":"q","txt":"Signes de gravité ? (température < 36 °C ou > 40 °C, hypotension, FR ≥ 30/min, confusion, comorbidités, isolement social)","ylab":"Non","brs":[{"lab":"Oui","s":[{"ty":"stop","txt":"Discuter une prise en charge <b>hospitalière</b>"}]}]},
+{"ty":"do","txt":"Imagerie thoracique souhaitée < 24 h — <b>sans retarder</b> l'antibiothérapie (pas d'examens microbiologiques requis en ville)"},
+{"ty":"q","txt":"Comorbidités, antibiotiques dans le mois précédent ou hospitalisation dans les 6 mois ?","ylab":"Non","brs":[{"lab":"Oui","s":[{"ty":"do","txt":"<b>Amoxicilline/acide clavulanate</b> 1 g/125 mg × 3/j — allergie pénicilline : ceftriaxone 1 g/j IM/IV/SC ou cefotaxime 1 g × 3/j"}]}]},
+{"ty":"ok","txt":"<b>Amoxicilline 1 g × 3/j</b> en 1re intention (allergie documentée ou rupture : pristinamycine 1 g × 3/j)"},
+{"ty":"note","txt":"Suspicion d'atypiques ou échec à 72 h : clarithromycine 500 mg × 2/j, spiramycine 3 MUI × 3/j ou azithromycine 500 mg/j puis 250 mg/j (impact supérieur sur la résistance). Dernier recours : lévofloxacine 500 mg/j (effets indésirables parfois graves, invalidants)"},
+{"ty":"ok","txt":"Durée : <b>7 jours maximum</b> — arrêt possible à 5 jours, voire 3 jours, si stabilité clinique vérifiée par le médecin (apyrexie, PAS ≥ 90 mmHg, FC ≤ 100/min, FR ≤ 24/min, SpO2 ≥ 90 %)"},
+{"ty":"warn","txt":"Pas d'amélioration à 72 h : modifier l'antibiothérapie (pénicillines → macrolides) ; aggravation : discuter l'hospitalisation. Vérifier vaccination anti-pneumococcique et grippale."}
+]},
+{"id":"fa","sp":"Cardiologie","ic":"💓","t":"Fibrillation auriculaire — anticoagulation","org":"ESC / EACTS","dt":"2024","sub":"Décider de l'anticoagulation orale : score CHA₂DS₂-VA","src":[["ESC/EACTS 2024 — Atrial fibrillation (European Heart Journal)","https://academic.oup.com/eurheartj/article/45/36/3314/7738779"],["Recommandations ESC/EACTS 2024 (PDF intégral)","https://www.uninsubria.it/sites/default/files/2024-09/Guidelines%20AF%202024published.pdf"]],
+"s":[
+{"ty":"start","txt":"FA confirmée (ECG relu par un médecin)"},
+{"ty":"do","txt":"Calculer le score <b>CHA₂DS₂-VA</b> (ESC 2024 — le point « sexe féminin » est retiré du score) : IC (1) · HTA (1) · âge ≥ 75 ans (2) · diabète (1) · AVC/AIT/thrombo-embolie (2) · artériopathie (1) · âge 65-74 ans (1). Maximum 8."},
+{"ty":"q","txt":"Score CHA₂DS₂-VA ?","ylab":"≥ 2","brs":[
+  {"lab":"= 1","s":[{"ty":"do","txt":"Anticoagulation <b>à considérer</b> selon le profil thrombo-embolique et hémorragique et les préférences du patient"}]},
+  {"lab":"= 0","s":[{"ty":"stop","txt":"Pas d'anticoagulation"}]}]},
+{"ty":"ok","txt":"Anticoagulation orale <b>recommandée</b> : <b>AOD en 1re intention</b> ; AVK si valvulopathie significative (prothèse mécanique, rétrécissement aortique modéré à sévère)"},
+{"ty":"do","txt":"Évaluer le risque hémorragique et le corriger : contrôle de la PA, arrêt du tabac, limitation de l'alcool, prudence avec AINS/antiagrégants associés"},
+{"ty":"warn","txt":"Rappels officinaux : observance stricte (l'oubli d'un AOD supprime rapidement la protection), jamais d'arrêt sans avis médical (même pour un soin), surveillance de la fonction rénale"}
+]},
+{"id":"hta","sp":"Cardiologie","ic":"🩺","t":"Hypertension artérielle — diagnostic et cible","org":"ESC","dt":"2024","sub":"Confirmer l'HTA, traiter, viser la bonne cible","src":[["ESC 2024 — Elevated blood pressure and hypertension (page guideline)","https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/elevated-blood-pressure-and-hypertension/"],["Eur Heart J 2024 (texte intégral)","https://academic.oup.com/eurheartj/article/45/38/3912/7741010"]],
+"s":[
+{"ty":"start","txt":"Adulte — dépistage opportuniste : PA à chaque consultation ; annuel si ≥ 40 ans, tous les 3 ans si moins de 40 ans"},
+{"ty":"q","txt":"PA au cabinet ≥ 140/90 mmHg ? (ou PA élevée 130-139/80-89)","ylab":"Oui","brs":[{"lab":"Non","s":[{"ty":"stop","txt":"PA normale — poursuivre le dépistage au rythme recommandé"}]}]},
+{"ty":"do","txt":"<b>Confirmer</b> hors du cabinet : HBPM (3 jours, 2 mesures matin et soir) ou MAPA sur 24 h — ou au minimum 1 mesure répétée au cabinet"},
+{"ty":"ok","txt":"HTA <b>confirmée</b> : PA au cabinet ≥ 140/90 mmHg et/ou moyennes HBPM/MAPA au-dessus des seuils"},
+{"ty":"do","txt":"Bilan : risque CV global, atteinte des organes cibles, causes secondaires, biologie (ionogramme, créatinine, glycémie, lipides)"},
+{"ty":"do","txt":"Mesures de mode de vie pour tous : sel < 5 g/j, activité physique régulière, perte de poids si surpoids, limitation de l'alcool, arrêt du tabac"},
+{"ty":"ok","txt":"Traitement médicamenteux : la comorbidité définit la classe clé ; sinon combinaison à faibles doses d'emblée. <b>Cible : PA systolique 120-129 mmHg si tolérée</b> (réévaluation à 3 mois)"},
+{"ty":"note","txt":"🌍 Écart notoire : l'AHA/ACC américain abaisse le seuil à ≥ 130/80 mmHg — voir l'encart de la fiche RECO « ESC HTA 2024 » de l'onglet Recommandations"}
+]}
+];
+var AICO = {start:"🩺", do:"➤", q:"❓", warn:"⚠️", ok:"✅", stop:"⛔", note:"💡"};
+var ACL = {start:"astart", do:"ado", q:"aq", warn:"awarn", ok:"aok", stop:"astop", note:"anote"};
+function aflow(steps){
+  var h = "";
+  for (var i = 0; i < steps.length; i++) {
+    var st = steps[i];
+    h += '<div class="astep ' + (ACL[st.ty] || "ado") + '"><span class="ai">' + (AICO[st.ty] || "") + '</span><div class="atxt">' + st.txt + '</div></div>';
+    if (st.brs && st.brs.length) {
+      h += '<div class="abrs">' + st.brs.map(function(b){ return '<div class="abr"><span class="abrhead">' + esc(b.lab) + '</span>' + aflow(b.s) + '</div>'; }).join("") + '</div>';
+    }
+    if (i < steps.length - 1) {
+      h += '<div class="aarr">' + (st.ylab ? '<span class="alab">' + esc(st.ylab) + ' ↓</span>' : "") + '</div>';
+    }
+  }
+  return h;
+}
+function arender(){
+  document.getElementById("agrid").innerHTML = ALGOS.map(function(a){
+    return '<div class="acard" onclick="aopen(\'' + a.id + '\')"><div class="aic">' + a.ic + '</div><div class="ameta"><span class="asp">' + esc(a.sp) + '</span><span class="aorg">' + esc(a.org) + ' · ' + esc(a.dt) + '</span></div><h4>' + esc(a.t) + '</h4><div class="ago">' + esc(a.sub) + '</div><div class="aop">Voir l\'algorithme <span>→</span></div></div>';
+  }).join("");
+  document.getElementById("acount").textContent = ALGOS.length + " algorithmes";
+}
+function aopen(id){
+  var a = ALGOS.find(function(x){ return x.id === id; });
+  if (!a) return;
+  document.getElementById("agrid").style.display = "none";
+  var sh = document.getElementById("asheet");
+  sh.classList.add("on");
+  document.getElementById("asheetin").innerHTML =
+    '<div class="ahead"><h3>' + a.ic + ' ' + a.t + '</h3><div class="asub">' + esc(a.sub) + '</div><div class="abadges"><span>' + esc(a.sp) + '</span><span>' + esc(a.org) + '</span><span>' + esc(a.dt) + '</span></div></div>' +
+    '<div class="aflow">' + aflow(a.s) + '</div>' +
+    '<div class="asrc"><b>📚 Sources</b><ul>' + a.src.map(function(s){ return '<li><a href="' + s[1] + '" target="_blank" rel="noopener">' + esc(s[0]) + '</a></li>'; }).join("") + '</ul></div>';
+  try { document.getElementById("algostab").scrollIntoView({behavior:"smooth"}); } catch(e) {}
+}
+function aback(){
+  document.getElementById("asheet").classList.remove("on");
+  document.getElementById("agrid").style.display = "";
+}
+function ahay(){
+  var q = (document.getElementById("aq").value || "").toLowerCase();
+  var cards = document.querySelectorAll("#agrid .acard");
+  for (var i = 0; i < cards.length; i++) {
+    cards[i].style.display = (q === "" || cards[i].textContent.toLowerCase().indexOf(q) > -1) ? "" : "none";
+  }
+}
+document.getElementById("aq").addEventListener("input", ahay);
+arender();
+/* ==== FIN MODULE ALGORITHMES ==== */
+
 
 </script>
 </body>
