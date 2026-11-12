@@ -473,37 +473,26 @@ html.dark #classestab .cfoot{color:var(--muted);border-top-color:var(--line)}
 .ahead .asub{opacity:.9;font-size:.87rem;margin-top:5px}
 .ahead .abadges{margin-top:11px}
 .ahead .abadges span{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.32);border-radius:999px;padding:3px 11px;font-size:.73rem;margin:2px 6px 0 0}
-.aflow{max-width:780px;margin:6px auto 0;display:flex;flex-direction:column;align-items:stretch}
-.astep{position:relative;border-radius:14px;padding:13px 15px 13px 52px;font-size:.93rem;line-height:1.5;box-shadow:0 1px 2px rgba(15,23,42,.05)}
-.astep .ai{position:absolute;left:13px;top:14px;width:27px;height:27px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:.95rem;background:#e2e8f0}
-.astart{background:linear-gradient(135deg,#eef2ff,#e0e7ff);border:1.5px solid #c7d2fe}
-.ado{background:#ffffff;border:1.5px solid #dbe3ee}
-.ado .ai{background:#ccfbf1}
-.aq{background:linear-gradient(135deg,#fffbeb,#fef3c7);border:1.5px solid #f59e0b;color:#78350f}
-.aq .ai{background:#fde68a}
-.awarn{background:#fff7ed;border:1.5px solid #fb923c;color:#7c2d12}
-.awarn .ai{background:#fed7aa}
-.aok{background:linear-gradient(135deg,#ecfdf5,#d1fae5);border:1.5px solid #34d399;color:#065f46}
-.aok .ai{background:#a7f3d0}
-.astop{background:#fff1f2;border:1.5px solid #fb7185;color:#9f1239}
-.astop .ai{background:#fecdd3}
-.anote{background:#f8fafc;border:1.5px dashed #cbd5e1;color:#475569;font-size:.86rem}
-.anote .ai{background:#e2e8f0}
-.aarr{display:flex;align-items:center;justify-content:center;height:32px;position:relative}
-.aarr::before{content:"";position:absolute;top:0;bottom:8px;left:50%;width:2px;margin-left:-1px;background:#818cf8}
-.aarr::after{content:"";position:absolute;bottom:1px;left:50%;width:0;height:0;margin-left:-7px;border-left:7px solid transparent;border-right:7px solid transparent;border-top:8px solid #6366f1}
-.alab{position:absolute;left:calc(50% + 13px);top:50%;transform:translateY(-50%);background:#eef2ff;color:#4f46e5;border:1px solid #c7d2fe;border-radius:999px;padding:2px 10px;font-size:.72rem;font-weight:700;white-space:nowrap}
-.abrs{display:flex;flex-wrap:wrap;gap:12px;margin:10px 0 8px;padding-left:34px}
-.abr{flex:1 1 260px;max-width:100%;border-radius:0 14px 14px 14px;background:#fff5f6;border:1.5px dashed #fda4af;padding:12px 13px}
-.abr .abrhead{display:inline-block;font-size:.72rem;font-weight:800;color:#be123c;background:#ffe4e6;border-radius:999px;padding:2px 11px;margin-bottom:9px}
-.abr .astep{box-shadow:none;padding:10px 12px 10px 46px}
-.abr .aarr{height:26px}
-.abr .astep .ai{width:24px;height:24px;font-size:.85rem}
-.asrc{max-width:780px;margin:16px auto 4px;font-size:.84rem}
-.asrc b{display:block;margin-bottom:6px;color:#0f766e}
-.asrc ul{margin:0;padding-left:20px}
-.asrc li{margin:3px 0}
-.asrc a{color:#0f766e;text-decoration:underline;text-underline-offset:2px}
+/* — flowchart SVG — */
+.aflow{max-width:920px;margin:14px auto 0;overflow-x:auto;padding:10px 4px 4px}
+.al-svg{display:block;width:100%;min-width:560px;height:auto}
+.al-svg .al-nd{display:flex;align-items:center;gap:7px;font:12.5px/1.42 -apple-system,'Segoe UI',system-ui,sans-serif;color:#1e293b;height:100%;box-sizing:border-box;overflow:hidden}
+.al-svg .al-dq{justify-content:center;text-align:center}
+.al-svg .al-dst{justify-content:center;text-align:center;color:#fff;font-weight:700}
+.al-svg .al-ni{flex:0 0 auto;font-size:12px}
+.al-svg .al-nstart{fill:#4f46e5;stroke:#3730a3;stroke-width:1.5}
+.al-svg .al-ndo{fill:#ffffff;stroke:#3b82f6;stroke-width:1.6}
+.al-svg .al-nq{fill:#fef9c3;stroke:#ca8a04;stroke-width:1.6}
+.al-svg .al-nwarn{fill:#ffedd5;stroke:#ea580c;stroke-width:1.6}
+.al-svg .al-nok{fill:#ecfdf5;stroke:#10b981;stroke-width:1.6}
+.al-svg .al-nstop{fill:#fee2e2;stroke:#ef4444;stroke-width:1.6}
+.al-svg .al-nnote{fill:#f8fafc;stroke:#94a3b8;stroke-width:1.3;stroke-dasharray:5 4}
+.al-svg .al-brbox{fill:#fbfaff;stroke:#a78bfa;stroke-width:1.3;stroke-dasharray:7 5}
+.al-svg .al-brpill{fill:#7c3aed}
+.al-svg .al-brtxt{font:700 10.5px sans-serif;fill:#fff}
+.al-svg .al-ar{stroke:#64748b;stroke-width:1.8;fill:none}
+.al-svg .al-ah{fill:#64748b}
+.al-svg .al-lab{font:700 11.5px sans-serif;fill:#4f46e5}
 html.dark #algostab .abar input{background:#151b28;border-color:#2c3547;color:#e2e8f0}
 html.dark .acard{background:linear-gradient(160deg,#1b2231,#221d38 75%);border-color:#303a52}
 html.dark .acard h4{color:#e2e8f0}
@@ -511,26 +500,27 @@ html.dark .acard .asp{background:#312e81;color:#c7d2fe}
 html.dark .acard .aorg{background:#263046;color:#94a3b8}
 html.dark .acard .aop{color:#a5b4fc}
 html.dark .aback{background:#26214a;color:#c7d2fe;border-color:#4f46e5}
-html.dark .astart{background:linear-gradient(135deg,#312e81,#3730a3);border-color:#6366f1;color:#e0e7ff}
-html.dark .ado{background:#1b2231;border-color:#31405c;color:#dbe4f0}
-html.dark .ado .ai{background:#134e4a}
-html.dark .aq{background:linear-gradient(135deg,#453411,#574309);border-color:#b45309;color:#fde68a}
-html.dark .aq .ai{background:#78350f}
-html.dark .awarn{background:#431407;border-color:#c2410c;color:#ffedd5}
-html.dark .awarn .ai{background:#7c2d12}
-html.dark .aok{background:#052e1b;border-color:#047857;color:#d1fae5}
-html.dark .aok .ai{background:#065f46}
-html.dark .astop{background:#4c0519;border-color:#e11d48;color:#ffe4e6}
-html.dark .astop .ai{background:#9f1239}
-html.dark .anote{background:#141a26;border-color:#3a475c;color:#94a3b8}
-html.dark .anote .ai{background:#263046}
-html.dark .aarr::before{background:#6366f1}
-html.dark .alab{background:#312e81;color:#c7d2fe;border-color:#4f46e5}
-html.dark .abr{background:#2a0f1a;border-color:#9f1239}
-html.dark .abr .astep{background:#1f1118;color:#ffe4e6}
-html.dark .asrc b,html.dark .asrc a{color:#5eead4}
+html.dark .al-svg .al-nd{color:#e2e8f0}
+html.dark .al-svg .al-dst{color:#fff}
+html.dark .al-svg .al-nstart{fill:#4338ca;stroke:#6366f1}
+html.dark .al-svg .al-ndo{fill:#1e293b;stroke:#60a5fa}
+html.dark .al-svg .al-nq{fill:#422006;stroke:#eab308}
+html.dark .al-svg .al-nwarn{fill:#431407;stroke:#fb923c}
+html.dark .al-svg .al-nok{fill:#052e1b;stroke:#34d399}
+html.dark .al-svg .al-nstop{fill:#450a0a;stroke:#f87171}
+html.dark .al-svg .al-nnote{fill:#141a26;stroke:#475569}
+html.dark .al-svg .al-brbox{fill:#171226;stroke:#7c3aed}
+html.dark .al-svg .al-ar{stroke:#94a3b8}
+html.dark .al-svg .al-ah{fill:#94a3b8}
+html.dark .al-svg .al-lab{fill:#a5b4fc}
 html.dark .ahead{background:linear-gradient(135deg,#4338ca,#6d28d9 55%,#9333ea)}
-@media print{#algostab .abar,#algostab .aback{display:none!important}.aflow,.asrc{max-width:100%}.ahead{box-shadow:none}}
+.asrc{max-width:780px;margin:16px auto 4px;font-size:.84rem}
+.asrc b{display:block;margin-bottom:6px;color:#0f766e}
+.asrc ul{margin:0;padding-left:20px}
+.asrc li{margin:3px 0}
+.asrc a{color:#0f766e;text-decoration:underline;text-underline-offset:2px}
+html.dark .asrc b,html.dark .asrc a{color:#5eead4}
+@media print{#algostab .abar,#algostab .aback{display:none!important}.aflow{max-width:100%;overflow:visible}.al-svg{min-width:0}.ahead{box-shadow:none}}
 @media print{
   header{background:#fff !important;color:#000 !important;border-bottom:2px solid #000}
   header::before{display:none}
@@ -1718,21 +1708,77 @@ const ALGOS = [
 ]}
 ];
 var AICO = {start:"🩺", do:"➤", q:"❓", warn:"⚠️", ok:"✅", stop:"⛔", note:"💡"};
-var ACL = {start:"astart", do:"ado", q:"aq", warn:"awarn", ok:"aok", stop:"astop", note:"anote"};
-function aflow(steps){
-  var h = "";
-  for (var i = 0; i < steps.length; i++) {
+var ACL = {start:"al-nstart", do:"al-ndo", q:"al-nq", warn:"al-nwarn", ok:"al-nok", stop:"al-nstop", note:"al-nnote"};
+var AL = {box:250, dia:230, gap:40, hgap:44, line:18};
+function alText(t){ return String(t || "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim(); }
+function alLines(txt, cpl){ return Math.max(1, Math.ceil(alText(txt).length / cpl)); }
+function alNodeH(st){
+  if (st.ty === "q") return Math.max(88, alLines(st.txt, 16) * AL.line + 64);
+  if (st.ty === "start") return alLines(st.txt, 30) * AL.line + 30;
+  if (st.ty === "note") return alLines(st.txt, 32) * AL.line + 22;
+  return alLines(st.txt, 28) * AL.line + 26;
+}
+function alNode(st, cx, top, h){
+  if (st.ty === "q") {
+    var d = AL.dia / 2;
+    return '<polygon class="al-nq" points="' + cx + ',' + top + ' ' + (cx + d) + ',' + (top + h / 2) + ' ' + cx + ',' + (top + h) + ' ' + (cx - d) + ',' + (top + h / 2) + '"/>' +
+      '<foreignObject x="' + (cx - 71) + '" y="' + (top + 16) + '" width="142" height="' + (h - 32) + '"><div xmlns="http://www.w3.org/1999/xhtml" class="al-nd al-dq">' + st.txt + '</div></foreignObject>';
+  }
+  var w = AL.box, rx = (st.ty === "start") ? Math.round(h / 2) : 14;
+  return '<rect class="' + (ACL[st.ty] || "al-ndo") + '" x="' + (cx - w / 2) + '" y="' + top + '" width="' + w + '" height="' + h + '" rx="' + rx + '"/>' +
+    '<foreignObject x="' + (cx - w / 2 + 12) + '" y="' + (top + 8) + '" width="' + (w - 24) + '" height="' + (h - 16) + '"><div xmlns="http://www.w3.org/1999/xhtml" class="al-nd' + (st.ty === "start" ? " al-dst" : "") + '">' + (st.ty !== "note" && st.ty !== "start" ? '<span class="al-ni">' + (AICO[st.ty] || "") + '</span>' : "") + '<span class="al-tx">' + st.txt + '</span></div></foreignObject>';
+}
+function alBuild(steps, xLeft, yTop){
+  var cx = xLeft + AL.box / 2;
+  var y = yTop, frag = [], maxW = AL.box, maxBottom = yTop, i, k;
+  for (i = 0; i < steps.length; i++) {
     var st = steps[i];
-    h += '<div class="astep ' + (ACL[st.ty] || "ado") + '"><span class="ai">' + (AICO[st.ty] || "") + '</span><div class="atxt">' + st.txt + '</div></div>';
+    var h = alNodeH(st);
+    frag.push(alNode(st, cx, y, h));
+    var bottom = y + h;
+    var nextTop = bottom + AL.gap;
+    if (bottom > maxBottom) maxBottom = bottom;
     if (st.brs && st.brs.length) {
-      h += '<div class="abrs">' + st.brs.map(function(b){ return '<div class="abr"><span class="abrhead">' + esc(b.lab) + '</span>' + aflow(b.s) + '</div>'; }).join("") + '</div>';
+      var bx = xLeft + AL.box + AL.hgap;
+      var rightX = cx + (st.ty === "q" ? AL.dia / 2 : AL.box / 2);
+      var cyN = y + h / 2;
+      var blocks = [], curY = y + 6, bw = 0;
+      for (k = 0; k < st.brs.length; k++) {
+        var bb = alBuild(st.brs[k].s, bx + 14, curY + 30);
+        if (bb.w > bw) bw = bb.w;
+        blocks.push({ b: st.brs[k], bb: bb, y: curY });
+        curY = curY + bb.h + 30 + 12;
+      }
+      bw = bw + 28;
+      for (k = 0; k < blocks.length; k++) {
+        var blk = blocks[k];
+        frag.push('<rect class="al-brbox" x="' + bx + '" y="' + blk.y + '" width="' + bw + '" height="' + (blk.bb.h + 30) + '" rx="14"/>');
+        var lab = esc(blk.b.lab), lw = Math.max(36, Math.round(alText(lab).length * 6.4) + 22);
+        frag.push('<rect class="al-brpill" x="' + (bx + 12) + '" y="' + (blk.y - 9) + '" width="' + lw + '" height="19" rx="9.5"/>');
+        frag.push('<text class="al-brtxt" x="' + (bx + 12 + lw / 2) + '" y="' + (blk.y + 5) + '" text-anchor="middle">' + lab + '</text>');
+        frag.push(blk.bb.svg);
+        var mx = bx + 14 + AL.box / 2;
+        frag.push('<path class="al-ar" d="M ' + rightX + ' ' + cyN + ' H ' + mx + ' V ' + (blk.y + 30) + '" marker-end="url(#alhead)"/>');
+        if (blk.y + blk.bb.h + 30 > maxBottom) maxBottom = blk.y + blk.bb.h + 30;
+      }
+      var lastB = blocks[blocks.length - 1];
+      if (nextTop < lastB.y + lastB.bb.h + 30 + 14) nextTop = lastB.y + lastB.bb.h + 30 + 14;
+      if (AL.box + AL.hgap + bw > maxW) maxW = AL.box + AL.hgap + bw;
     }
     if (i < steps.length - 1) {
-      h += '<div class="aarr">' + (st.ylab ? '<span class="alab">' + esc(st.ylab) + ' ↓</span>' : "") + '</div>';
+      frag.push('<path class="al-ar" d="M ' + cx + ' ' + bottom + ' V ' + (nextTop - 7) + '" marker-end="url(#alhead)"/>');
+      if (st.ylab) frag.push('<text class="al-lab" x="' + (cx + 11) + '" y="' + ((bottom + nextTop) / 2 + 4) + '">' + esc(st.ylab) + '</text>');
+      if (nextTop > maxBottom) maxBottom = nextTop;
     }
+    y = nextTop;
   }
-  return h;
+  return { w: maxW, h: maxBottom - yTop + 4, svg: frag.join("") };
 }
+function aflow(steps){
+  var r = alBuild(steps, 2, 2);
+  return '<svg class="al-svg" viewBox="0 0 ' + (r.w + 4) + ' ' + (r.h + 4) + '" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMin meet"><defs><marker id="alhead" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="al-ah"/></marker></defs>' + r.svg + '</svg>';
+}
+
 function arender(){
   document.getElementById("agrid").innerHTML = ALGOS.map(function(a){
     return '<div class="acard" onclick="aopen(\'' + a.id + '\')"><div class="aic">' + a.ic + '</div><div class="ameta"><span class="asp">' + esc(a.sp) + '</span><span class="aorg">' + esc(a.org) + ' · ' + esc(a.dt) + '</span></div><h4>' + esc(a.t) + '</h4><div class="ago">' + esc(a.sub) + '</div><div class="aop">Voir l\'algorithme <span>→</span></div></div>';
