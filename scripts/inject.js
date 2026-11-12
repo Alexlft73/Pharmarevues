@@ -15,7 +15,7 @@ let html = fs.readFileSync(IDX, 'utf8');
 // ---------- 1. File de candidates ----------
 const queueDir = path.join(ROOT, 'candidates-queue');
 const files = fs.existsSync(queueDir) ? fs.readdirSync(queueDir).filter(f => f.endsWith('.json')).sort() : [];
-if (!files.length) { console.log('File vide — rien à faire.'); process.exit(0); }
+if (!files.length) { fs.writeFileSync(path.join(ROOT, 'INJECTION_LOG.md'), '# Injection automatique\n\n- File vide — aucune entrée traitée.\n'); console.log('File vide — rien à faire.'); process.exit(0); }
 const TY = { 'Médicament': 'Médicament', 'Complément': 'Complément alimentaire', 'Officine': 'Officine', 'Alimentation': 'Alimentation', 'Vaccin': 'Vaccin', 'Alerte': 'Alerte', 'Économie': 'Économie' };
 function toCanvas(c) {
   if (c.titre && c.type) return c; // déjà au schéma canvas
@@ -44,7 +44,8 @@ dup.concat(dupR).forEach(c => skipped.push('DOUBLON: ' + (c.titre || c.des || '?
 newRevues.forEach(c => ['dom','type','n','dt','titre','subst','res','src'].forEach(k => { if (c[k] === undefined) fail('Champ manquant "' + k + '" dans: ' + c.titre); }));
 newRecos.forEach(c => ['spe','org','dt','titre','res','src'].forEach(k => { if (c[k] === undefined) fail('Champ manquant "' + k + '" (RECO): ' + c.titre); }));
 if (!newRevues.length && !newRecos.length) {
-  console.log('Aucune nouvelle entrée (tout en doublon). File à vider manuellement.');
+  fs.writeFileSync(path.join(ROOT, 'INJECTION_LOG.md'), '# Injection automatique\n\n- Aucune nouvelle entrée : ' + skipped.length + ' doublon(s) écarté(s).\n\n## Écartés\n' + skipped.map(x => '- ' + x).join('\n') + '\n');
+  console.log('Aucune nouvelle entrée (tout en doublon).');
   skipped.forEach(s => console.log('  ' + s)); process.exit(0);
 }
 
