@@ -20,14 +20,17 @@ jobs:
         run: |
           git config user.name "vibe-veille[bot]"
           git config user.email "actions@users.noreply.github.com"
-          git add index.html guide-filtres.html depliant-filtres.html INJECTION_LOG.md
-          git diff --cached --quiet && echo "Rien à committer" && exit 0
-          git commit -m "Injection auto: $(grep -o 'REVUES: +[0-9]* → [0-9]*' INJECTION_LOG.md | head -1) — file candidates traitée"
-          git push
+          git add index.html guide-filtres.html depliant-filtres.html INJECTION_LOG.md 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "Rien à publier (aucune nouvelle entrée ou doublons seuls)."
+          else
+            git commit -m "Injection auto: $(grep -o 'REVUES: +[0-9]* → [0-9]*' INJECTION_LOG.md | head -1 || echo 'aucune nouvelle entrée')"
+            git push
+          fi
       - name: Vider la file après succès
         run: |
-          ls candidates-queue/*.json >/dev/null 2>&1 || exit 0
+          ls candidates-queue/*.json >/dev/null 2>&1 || { echo "File déjà vide."; exit 0; }
           git rm -q candidates-queue/*.json
-          git diff --cached --quiet && exit 0
+          if git diff --cached --quiet; then echo "File déjà vidée."; exit 0; fi
           git commit -m "Vidage de la file candidates (traitée)"
           git push
