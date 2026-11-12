@@ -1,0 +1,33 @@
+name: Injection automatique PharmaVeille
+on:
+  push:
+    paths: ['candidates-queue/**']
+  workflow_dispatch:
+  schedule:
+    - cron: '30 3 * * *'   # ~04h30 Paris (UTC+1 en hiver)
+permissions:
+  contents: write
+jobs:
+  inject:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - name: Injection + validation
+        run: node scripts/inject.js
+      - name: Commit et push
+        run: |
+          git config user.name "vibe-veille[bot]"
+          git config user.email "actions@users.noreply.github.com"
+          git add index.html guide-filtres.html depliant-filtres.html INJECTION_LOG.md
+          git diff --cached --quiet && echo "Rien à committer" && exit 0
+          git commit -m "Injection auto: $(grep -o 'REVUES: +[0-9]* → [0-9]*' INJECTION_LOG.md | head -1) — file candidates traitée"
+          git push
+      - name: Vider la file après succès
+        run: |
+          ls candidates-queue/*.json >/dev/null 2>&1 || exit 0
+          git rm -q candidates-queue/*.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Vidage de la file candidates (traitée)"
+          git push
