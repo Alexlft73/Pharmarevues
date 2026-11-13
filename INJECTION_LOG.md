@@ -1,7 +1,7 @@
 # Injection automatique
 
-- REVUES: +9 → 519
-- RECO: +0 → 122
+- REVUES: +8 → 527
+- RECO: +1 → 123
 - NEW: 9
 
 ## Écartés
