@@ -1,0 +1,179 @@
+{
+ "revues": [
+  {
+   "id": "pvi-sham-af",
+   "ty": "Médicament",
+   "dom": "Cardiologie",
+   "n": 2,
+   "dt": "2026-09",
+   "des": "Ablation par cathéter de la FA vs procédure sham : l'essai PVI-SHAM-AF (The Lancet)",
+   "tag": "ablation FA (sham)",
+   "res": "Premier essai sham-contrôlé de l'ablation pulmonaire : chez les patients avec FA symptomatique (paroxystique ou persistante, randomisation 2:1), l'ablation réduit les récidives de FA mais n'améliore PAS la qualité de vie liée à la FA vs procédure factice (sédation, accès veineux, cardioversion) (PVI-SHAM-AF, Lancet 2026 Sep 12;408(10559):999-1009, epub 30/08/2026, PMID 42669307 ; présenté en Hot Line ESC 2026). Nuance majeure vs AVANT GUARD (PFA en 1re intention, déjà en base) : l'effet sur le rythme est réel, l'effet ressenti moins évident — l'expectation participe au symptôme. En officine : un patient ablateur qui « ne se sent pas mieux » n'a pas forcément eu un échec technique.",
+   "src": [
+    [
+     "The Lancet (PIIS0140-6736(26)01558-8)",
+     "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)01558-8/fulltext"
+    ],
+    [
+     "PubMed 42669307 (2026 Sep 12;408(10559):999-1009)",
+     "https://pubmed.ncbi.nlm.nih.gov/42669307/"
+    ],
+    [
+     "ESC — communiqué (Hot Line ESC 2026)",
+     "https://www.escardio.org/news/press/press-releases/catheter-ablation-does-not-improve-quality-of-life-related-to-atrial-fibrillation/"
+    ]
+   ]
+  },
+  {
+   "id": "baxdrostat-baxhtn",
+   "ty": "Médicament",
+   "dom": "Cardiologie",
+   "n": 2,
+   "dt": "2025-10",
+   "des": "Baxdrostat (inhibiteur sélectif de l'aldostérone-synthase) dans l'HTA non contrôlée et résistante : phase 3 BaxHTN (NEJM)",
+   "tag": "baxdrostat",
+   "res": "Chez les patients avec HTA non contrôlée ou résistante, l'ajout de baxdrostat au traitement de fond abaisse significativement la PA systolique assise vs placebo à 12 semaines (BaxHTN, phase 3, NEJM 393(14):1363-1374, publié le 9 octobre 2025, doi 10.1056/NEJMoa2507109, présenté à l'ESC 2025, financement AstraZeneca ; approuvé par la FDA en 2026 selon le consensus ACC 2026 sur l'HTA résistante). 1re entrée de la base sur l'HTA résistante pharmacologique — après la dénervation rénale déjà couverte. En officine : pour le patient « à 3 antihypertenseurs et ça ne descend pas », une 4e classe ciblée arrive ; l'observance et le sel restent les 1ers réflexes avant d'incriminer le traitement.",
+   "src": [
+    [
+     "NEJM (doi 10.1056/NEJMoa2507109)",
+     "https://www.nejm.org/doi/10.1056/NEJMoa2507109"
+    ],
+    [
+     "Ovid — NEJM 393(14):p 1363-1374, October 9, 2025",
+     "https://www.ovid.com/journals/nejm/fulltext/10.1056/nejmoa2507109~efficacy-and-safety-of-baxdrostat-in-uncontrolled-and"
+    ],
+    [
+     "AstraZeneca — communiqué BaxHTN (ESC 2025)",
+     "https://www.astrazeneca-us.com/media/press-releases/2025/Baxdrostat-demonstrated-statistically-significant-and-clinically-meaningful-reduction-in-systolic-blood-pressure-in-patients-with-hard-to-control-hypertension-in-the-BaxHTN-Phase-III-trial.html"
+    ]
+   ]
+  },
+  {
+   "id": "ischemia-extend",
+   "ty": "Médicament",
+   "dom": "Cardiologie",
+   "n": 2,
+   "dt": "2026-11",
+   "des": "ISCHEMIA-EXTEND : la stratégie invasive d'emblée ne sauve toujours pas dans la coronaropathie stable, à 10 ans (JAMA)",
+   "tag": "coronaropathie stable (suivi long terme)",
+   "res": "Suivi de survie à long terme (~10 ans) de l'essai pivot ISCHEMIA : chez les patients avec coronaropathie stable et test d'effort anormal, la stratégie invasive d'emblée (angioplastie/pontage) n'apporte AUCUN avantage de survie vs prise en charge médicale d'abord — mortalité toutes causes du même ordre (JAMA, publié le 7 novembre 2026, Hochman et al., doi 10.1001/jama.2026.20375 ; communiqués NYU Langone/PRNewswire du 7/11/2026). Prolonge l'entrée ISCHEMIA déjà en base : la conclusion tient sur la durée. En officine : rassurer le patient coronarien stable sous trithérapie — le médicament bien pris vaut le geste programmé.",
+   "src": [
+    [
+     "JAMA (doi 10.1001/jama.2026.20375, 7 nov. 2026)",
+     "https://www.emjreviews.com/cardiology/news/coronary-artery-disease-does-surgery-improve-survival/"
+    ],
+    [
+     "PRNewswire (7 novembre 2026)",
+     "https://www.prnewswire.com/news-releases/routine-invasive-procedures-for-stable-heart-disease-offer-no-long-term-survival-advantage-over-drug-therapy-302931095.html"
+    ],
+    [
+     "Medical Xpress (nov. 2026)",
+     "https://medicalxpress.com/news/2026-11-routine-invasive-procedures-stable-heart.html"
+    ]
+   ]
+  },
+  {
+   "id": "enlicitide-pcsk9-oral",
+   "ty": "Médicament",
+   "dom": "Cardiologie",
+   "n": 2,
+   "dt": "2026-02",
+   "des": "Enlicitide : premier inhibiteur oral de PCSK9 — essai contrôlé vs placebo (NEJM)",
+   "tag": "enlicitide (PCSK9 oral)",
+   "res": "L'enlicitide décanoate, peptide macrocyclique ORAL anti-PCSK9 (2 909 adultes avec CV avérée ou à risque, LDL ≥ 55 mg/dL, 59 sites/17 pays, suivi jusqu'à 52 semaines), abaisse significativement le LDL vs placebo, avec baisse aussi du non-HDL, de l'apoB et du Lp(a) à 24 semaines et effet maintenu à 52 semaines (essai multinational de phase 3, NEJM, doi 10.1056/NEJMoa2511002, PMID 41879224 ; couvertures février 2026 — gpcardio 05/02/2026 ; dernière visite avril 2025). Distinct d'inclisiran (ARNi injectable, ORION-10/11 déjà en base) : ici la voie ORALE, l'obstacle historique des PCSK9. En officine : si AMM un jour — un comprimé changera l'acceptabilité du « cholestérol génétique ».",
+   "src": [
+    [
+     "NEJM (doi 10.1056/NEJMoa2511002)",
+     "https://www.nejm.org/doi/abs/10.1056/NEJMoa2511002"
+    ],
+    [
+     "PubMed 41879224",
+     "https://pubmed.ncbi.nlm.nih.gov/41879224/"
+    ],
+    [
+     "gpcardio (5 février 2026)",
+     "https://gpcardio.org/en/2026-02-05_a-placebo-controlled-trial-of-the-oral-pcsk9-inhibitor-enlicitide/"
+    ]
+   ]
+  },
+  {
+   "id": "tavi-first-pci",
+   "ty": "Médicament",
+   "dom": "Cardiologie",
+   "n": 2,
+   "dt": "2026-08",
+   "des": "TAVI d'abord ou PCI d'abord dans le rétrécissement aortique serré avec coronaropathie : essai randomisé (NEJM, ESC 2026)",
+   "tag": "TAVI vs PCI (séquencement)",
+   "res": "Essai international ouvert de non-infériorité (48 centres, présenté Hot Line ESC 2026 le 30/08/2026, publié simultanément dans le NEJM, doi 10.1056/NEJMoa2606924, PMID 42670987) : chez les patients avec rétrécissement aortique serré et coronaropathie concomitante, la stratégie TAVI PUIS PCI est non-inférieure à la stratégie PCI PUIS TAVI sur le critère principal à 1 an ; événements indésirables sérieux du même ordre (264 vs 273 patients). En officine : le débat de séquencement est spécialisé — le patient concerné repart avec du double antiagrégant transitoire : éducation à la durée et aux saignements.",
+   "src": [
+    [
+     "NEJM (doi 10.1056/NEJMoa2606924)",
+     "https://www.nejm.org/doi/10.1056/NEJMoa2606924"
+    ],
+    [
+     "PubMed 42670987",
+     "https://pubmed.ncbi.nlm.nih.gov/42670987/"
+    ],
+    [
+     "ESC — communiqué (30 août 2026)",
+     "https://www.escardio.org/news/press/press-releases/a-tavi-first-strategy-was-noninferior-to-a-pci-first-strategy-in-patients-with-severe-aortic-stenosis-and-concomitant-coronary-artery-disease/"
+    ]
+   ]
+  },
+  {
+   "id": "progress-tavi-as-moderate",
+   "ty": "Médicament",
+   "dom": "Cardiologie",
+   "n": 2,
+   "dt": "2026-11",
+   "des": "TAVI dans le rétrécissement aortique MODÉRÉ avec facteurs de risque : essai PROGRESS (TCT 2026, résultats à 2 ans)",
+   "tag": "TAVI (RA modéré)",
+   "res": "Présenté à TCT 2026 (3 novembre 2026) : chez les patients avec rétrécissement aortique MODÉRÉ et facteurs de risque, le TAVI précoce améliore les critères de jugement à 2 ans vs surveillance clinique — où 57,4 % des patients ont fini par nécessiter un remplacement valvulaire pendant le suivi (essai randomisé PROGRESS ; couvertures SOLACI 03/11/2026 et Cardiovascular News TCT 2026). Résultats présentés en congrès, publication primaire en attente — chiffres cités uniquement si lus. En officine : la surveillance du souffle « pas encore serré » devient active — le pharmacien voit les ETT répétées sur l'ordonnance.",
+   "src": [
+    [
+     "SOLACI — PROGRESS à TCT 2026 (3 nov. 2026)",
+     "https://solaci.org/en/2026/11/03/tct-2026-progress-trial-tavi-vs-clinical-surveillance-in-patients-with-moderate-aortic-stenosis-and-risk-factors/"
+    ],
+    [
+     "Cardiovascular News — PROGRESS (TCT 2026)",
+     "https://cardiovascularnews.com/tct-2026-progress-trial-shows-benefit-for-tavi-in-moderate-as/"
+    ]
+   ]
+  },
+  {
+   "id": "mavacamten-meta-heart",
+   "ty": "Médicament",
+   "dom": "Cardiologie",
+   "n": 1,
+   "dt": "2026-06",
+   "des": "Mavacamten dans la cardiomyopathie hypertrophique obstructive vs non obstructive : méta-analyse des ECR (Heart)",
+   "tag": "mavacamten (méta)",
+   "res": "Méta-analyse des ECR randomisés du mavacamten (inhibiteur sélectif de la myosine cardiaque) : bénéfice démontré sur la capacité d'exercice, la qualité de vie et le gradient LVOT dans la CMH OBSTRUCTIVE ; le signal est bien moindre dans la forme non obstructive (Heart, heartjnl-2025-327651, mis en ligne 07/06/2026, PMID 42259617). Complète l'entrée ODYSSEY-HCM (mavacamten inefficace dans la nHCM) déjà en base : ici la vue d'ensemble des deux phénotypes. En officine : sous mavacamten, surveiller l'intolérance d'effort vertiges et ne jamais arrêter d'un coup sans avis (gradient de sortie).",
+   "src": [
+    [
+     "Heart — heartjnl-2025-327651 (mis en ligne 07/06/2026)",
+     "https://heart.bmj.com/content/early/2026/06/07/heartjnl-2025-327651"
+    ],
+    [
+     "PubMed 42259617",
+     "https://pubmed.ncbi.nlm.nih.gov/42259617/"
+    ]
+   ]
+  }
+ ],
+ "recos": [
+  {
+   "spe": "Cardiologie",
+   "org": "American College of Cardiology (ACC)",
+   "dt": "2026-08",
+   "titre": "2026 ACC Expert Consensus Decision Pathway — Optimizing Blood Pressure Care in Patients With Resistant Hypertension",
+   "res": "Chemin de décision expert de l'ACC sur l'HTA résistante (JACC, 2026, doi 10.1016/j.jacc.2026.08.028) : confirmer la pseudo-résistance (automesure/mapa, observance, sodium), optimiser le traitement de fond incluant l'antagoniste minéralocorticoïde, et positionner les nouveautés — le baxdrostat (inhibiteur sélectif de l'aldostérone-synthase, approuvé par la FDA en 2026) et la dénervation rénale. Complémentaire de la dose : la brique « HTA résistante » arrive dans la base (BaxHTN). À l'officine : le réflexe no 1 devant une « HTA résistante » reste l'automesure correcte et le dépistage de l'observance avant tout changement de molécule.",
+   "src": [
+    [
+     "JACC — 2026 ACC ECDP Resistant Hypertension (doi 10.1016/j.jacc.2026.08.028)",
+     "https://www.jacc.org/doi/10.1016/j.jacc.2026.08.028"
+    ]
+   ]
+  }
+ ]
+}
