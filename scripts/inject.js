@@ -56,12 +56,14 @@ const lines = newRevues.map(c => JSON.stringify(c)).join(',\n');
 html = html.replace(a1, ',\n' + lines + a1);
 // corrige une éventuelle double virgule héritée de la ligne précédant l'ancre
 html = html.replace(/\},,(?=\n)/g, '},');
+html = html.replace(/\},\s*,\s*(?=\n)/g, '},\n');
 
 // ---------- 4. Injection RECO ----------
 const i0 = html.indexOf('const RECO = [');
 const i1 = html.indexOf('\n];', i0);
 if (i0 < 0 || i1 < 0) fail('ancre RECO introuvable');
-html = html.slice(0, i1) + ',\n' + newRecos.map(c => JSON.stringify(c)).join(',\n') + html.slice(i1);
+// corrige une virgule orpheline en fin de littéral (bug du 13/11/2026 : élision => comptage incohérent)
+html = html.slice(0, i1).replace(/,\s*$/, '') + (newRecos.length ? ',\n' + newRecos.map(c => JSON.stringify(c)).join(',\n') : '') + html.slice(i1);
 
 // ---------- 5. Pastilles NEW ----------
 function addFrais(setName, arr) {
