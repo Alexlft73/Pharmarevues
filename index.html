@@ -204,7 +204,8 @@
 @media (max-width:640px){#classestab .sh-top h2{font-size:1.02rem}#classestab #cgrid{grid-template-columns:1fr}#classestab .sheet{padding:14px 12px 18px}}
 /* — Module recommandations (scopé) — */
 #recostab .cbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:10px 0 10px}
-#recostab .cbar input[type=search]{flex:1;min-width:220px;padding:9px 12px;border:1.5px solid #e2e8f0;border-radius:10px;font-size:.9rem}
+#recostab .cbar select{flex:1 1 100%;padding:9px 12px;border:1.5px solid #e2e8f0;border-radius:10px;font-size:.9rem}
+#recostab .cbar input[type=search]{flex:1 1 100%;min-width:0;padding:9px 12px;border:1.5px solid #e2e8f0;border-radius:10px;font-size:.9rem}
 #recostab #rchips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
 #recostab .chip{border:1.5px solid #e2e8f0;background:#fff;border-radius:999px;padding:5px 12px;font-size:.84rem;cursor:pointer;color:#334155;transition:all .18s}
 #recostab .chip:hover{border-color:#0284c7;color:#0284c7}
@@ -633,7 +634,7 @@ html.dark .asrc b,html.dark .asrc a{color:#5eead4}
     <button class="rfld" id="rfld-int" onclick="rsetFolder('int')">🌐 Recommandations internationales <span class="c" id="rfldc-int">22</span></button>
     <button class="rfld" id="rfld-diff" onclick="rsetFolder('diff')">⚖️ Différences notoires <span class="c" id="rfldc-diff">5</span></button>
   </div>
-  <div id="rchips"></div>
+  <select id="rspe"></select>
   <div id="rgrid"></div>
   <p class="cfoot">📋 Recommandations &amp; guidelines — sociétés savantes et agences (HAS, ESC, GINA, GOLD, ADA, EASL, EULAR, ESMO, KDIGO, NICE, EuroGuiDerm/EDF, CNGOF, AFU, SFORL). Documents sources accessibles en un clic — toujours se référer au texte intégral en vigueur.</p>
 </section>
@@ -1519,21 +1520,20 @@ function rhay(r){ return (r.spe+" "+r.org+" "+r.titre+" "+r.res).toLowerCase(); 
 function rrenderChips(){
   const BASE = rbase();
   const spes = [...new Set(BASE.map(r=>r.spe))].sort((a,b)=>a.localeCompare(b,"fr"));
-  const chipsEl = document.getElementById("rchips");
-  chipsEl.innerHTML = "";
-  const all = document.createElement("button");
-  all.className = "chip" + (rstate.spe==="" ? " on" : "");
-  all.innerHTML = "Toutes spécialités<span class='c'>"+BASE.length+"</span>";
-  all.onclick = ()=>{ rstate.spe=""; rgo(); };
-  chipsEl.appendChild(all);
+  const sel = document.getElementById("rspe");
+  sel.innerHTML = "";
+  const all = document.createElement("option");
+  all.value = "";
+  all.textContent = "Spécialité : toutes (" + BASE.length + ")";
+  sel.appendChild(all);
   spes.forEach(s=>{
     const n = BASE.filter(r=>r.spe===s).length;
-    const b = document.createElement("button");
-    b.className = "chip" + (rstate.spe===s ? " on" : "");
-    b.innerHTML = s+"<span class='c'>"+n+"</span>";
-    b.onclick = ()=>{ rstate.spe = rstate.spe===s ? "" : s; rgo(); };
-    chipsEl.appendChild(b);
+    const o = document.createElement("option");
+    o.value = s;
+    o.textContent = s + " (" + n + ")";
+    sel.appendChild(o);
   });
+  sel.value = rstate.spe;
 }
 function rgeo(r){ return r.geo==="fr"; }
 function rbase(){
@@ -1585,6 +1585,7 @@ function rgo(){
   });
 }
 document.getElementById("rq").addEventListener("input", e=>{ rstate.q = e.target.value.trim().toLowerCase(); rgo(); });
+document.getElementById("rspe").addEventListener("change", e=>{ rstate.spe = e.target.value; rgo(); });
 rinitFolders();
 rsetFolder("fr");
 /* ==== FIN MODULE RECO ==== */
