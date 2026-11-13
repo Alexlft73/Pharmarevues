@@ -27,7 +27,7 @@
   .toolbar{position:sticky; top:0; z-index:50; background:#fff; border-bottom:1px solid var(--line); box-shadow:0 2px 10px rgba(20,40,80,.06)}
   .twrap{max-width:1060px; margin:0 auto; padding:12px 20px}
   .searchrow{display:flex; gap:10px; flex-wrap:wrap}
-  .searchrow input[type=search]{flex:1; min-width:220px; padding:10px 14px; border:1.5px solid var(--line); border-radius:10px; font-size:1rem; outline:none}
+  .searchrow input[type=search]{flex:1 1 100%; min-width:0; padding:10px 14px; border:1.5px solid var(--line); border-radius:10px; font-size:1rem; outline:none}
   .searchrow input[type=search]:focus{border-color:var(--accent)}
   select{padding:9px 10px; border:1.5px solid var(--line); border-radius:10px; background:#fff; font-size:.92rem; color:var(--ink); outline:none; cursor:pointer}
   .chips{display:flex; gap:7px; overflow-x:auto; padding:11px 0 2px; scrollbar-width:thin}
@@ -133,7 +133,7 @@
   .empty a{cursor:pointer; color:var(--accent); font-weight:700}
   @media (max-width:640px){
     header h1{font-size:1.25rem}
-    .searchrow select{flex:1 1 45%}
+    .searchrow select{flex:1 1 30%}
     .searchrow .printbtn,.searchrow .resetbtn{flex:1 1 40%}
   }
   @media print{
@@ -560,16 +560,6 @@ html.dark .asrc b,html.dark .asrc a{color:#5eead4}
     <div class="searchrow">
       <input id="q" type="search" placeholder="Rechercher : substance, pathologie, mot-clé… (ex : GLP-1, vitamine D, psilocybine)">
       <select id="fdom"></select>
-      <select id="ftype">
-        <option value="">Type : tout</option>
-        <option>Médicament</option>
-        <option>Complément alimentaire</option>
-        <option>Alimentation</option>
-        <option>Vaccin</option>
-        <option>Alerte</option>
-        <option>Officine</option>
-        <option>Économie</option>
-      </select>
       <select id="fniv">
         <option value="">Force : toutes</option>
         <option value="1">Niveau 1 — Méta-analyse / revue systématique</option>
@@ -578,11 +568,6 @@ html.dark .asrc b,html.dark .asrc a{color:#5eead4}
         <option value="4">Niveau 4 — Observationnel / vie réelle</option>
         <option value="5">Niveau 5 — Revue / alerte / préliminaire</option>
       </select>
-      <select id="tri">
-        <option value="force">Tri : force d’étude</option>
-        <option value="annee">Tri : année → pertinence</option>
-        <option value="date">Tri : plus récent</option>
-      </select>
       <select id="fcoi">
         <option value="">Conflits d’intérêts : tous</option>
         <option>Indépendant</option>
@@ -590,20 +575,8 @@ html.dark .asrc b,html.dark .asrc a{color:#5eead4}
         <option>Industrie</option>
         <option>À vérifier</option>
       </select>
-      <select id="fannee">
-        <option value="">Année : toutes</option>
-      </select>
       <button class="printbtn" onclick="window.print()">🖨️ Imprimer</button>
       <button class="resetbtn" onclick="resetFilters()">✕ Effacer</button>
-    </div>
-    <div class="presets">
-      <span class="plbl">Accès rapide :</span>
-      <button class="preset" onclick="preset('comp')">🧪 Rayon compléments</button>
-      <button class="preset" onclick="preset('sport')">💪 Sport</button>
-      <button class="preset" onclick="preset('senior')">👵 Senior</button>
-      <button class="preset" onclick="preset('vgn')">🌱 Végan</button>
-      <button class="preset" onclick="preset('alim')">🥗 Alimentation</button>
-      <button class="preset" onclick="preset('new')">🆕 2026</button>
     </div>
   </div>
 </div>
@@ -1166,8 +1139,6 @@ const MONTHS = { "01":"janv.", "02":"févr.", "03":"mars", "04":"avr.", "05":"ma
 function fmtDate(dt){ const [y,m] = dt.split("-"); return (MONTHS[m]||m) + " " + y; }
 
 const DOMS = [...new Set(REVUES.map(r=>r.dom))];
-const YEARS = [...new Set(REVUES.map(r=>r.dt.slice(0,4)))].sort().reverse();
-YEARS.forEach(y=>{ const o=document.createElement("option"); o.value=y; o.textContent="Année : "+y; document.getElementById("fannee").appendChild(o); });
 let state = { q:"", dom:"", type:"", niv:"", coi:"", annee:"", tri:"force" };
 
 function counts(){ const c = {}; REVUES.forEach(r=>c[r.dom]=(c[r.dom]||0)+1); return c; }
@@ -1189,34 +1160,16 @@ function populateDomSel(){
 }
 
 
-const PRESETS = [
-  { id:"comp",   set:{ type:"Complément alimentaire" } },
-  { id:"sport",  set:{ q:"sport" } },
-  { id:"senior", set:{ q:"senior" } },
-  { id:"vgn",    set:{ q:"vég" } },
-  { id:"alim",   set:{ type:"Alimentation" } },
-  { id:"new",    set:{ annee:"2026" } }
-];
 function syncInputs(){
   document.getElementById("q").value = state.q;
   document.getElementById("fdom").value = state.dom;
-  document.getElementById("ftype").value = state.type;
   document.getElementById("fniv").value = state.niv;
-  document.getElementById("tri").value = state.tri;
   document.getElementById("fcoi").value = state.coi;
-  document.getElementById("fannee").value = state.annee;
 }
 function resetFilters(){
   state = { q:"", dom:"", type:"", niv:"", coi:"", annee:"", tri:"force" };
   syncInputs(); apply();
 }
-function preset(id){
-  const p = PRESETS.find(x=>x.id===id); if(!p) return;
-  resetFilters();
-  Object.keys(p.set).forEach(k=> state[k]=p.set[k]);
-  syncInputs(); apply();
-}
-
 function matches(r){
   if(state.dom && r.dom!==state.dom) return false;
   if(state.type && r.type!==state.type) return false;
@@ -1326,11 +1279,8 @@ function apply(){
 
 document.getElementById("q").addEventListener("input", e=>{ state.q = e.target.value.trim(); apply(); });
 document.getElementById("fdom").addEventListener("change", e=>{ state.dom = e.target.value; apply(); });
-document.getElementById("ftype").addEventListener("change", e=>{ state.type = e.target.value; apply(); });
 document.getElementById("fniv").addEventListener("change", e=>{ state.niv = e.target.value; apply(); });
-document.getElementById("tri").addEventListener("change", e=>{ state.tri = e.target.value; apply(); });
 document.getElementById("fcoi").addEventListener("change", e=>{ state.coi = e.target.value; apply(); });
-document.getElementById("fannee").addEventListener("change", e=>{ state.annee = e.target.value; apply(); });
 
 function showTab(t){
   const rev = (t==="revues"), cl = (t==="classes"), rc = (t==="recos"), pd = (t==="pedi"), ag = (t==="algos");
