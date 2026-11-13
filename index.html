@@ -559,6 +559,7 @@ html.dark .asrc b,html.dark .asrc a{color:#5eead4}
   <div class="twrap">
     <div class="searchrow">
       <input id="q" type="search" placeholder="Rechercher : substance, pathologie, mot-clé… (ex : GLP-1, vitamine D, psilocybine)">
+      <select id="fdom"></select>
       <select id="ftype">
         <option value="">Type : tout</option>
         <option>Médicament</option>
@@ -604,7 +605,6 @@ html.dark .asrc b,html.dark .asrc a{color:#5eead4}
       <button class="preset" onclick="preset('alim')">🥗 Alimentation</button>
       <button class="preset" onclick="preset('new')">🆕 2026</button>
     </div>
-    <div class="chips" id="chips"></div>
   </div>
 </div>
 
@@ -1170,24 +1170,24 @@ const YEARS = [...new Set(REVUES.map(r=>r.dt.slice(0,4)))].sort().reverse();
 YEARS.forEach(y=>{ const o=document.createElement("option"); o.value=y; o.textContent="Année : "+y; document.getElementById("fannee").appendChild(o); });
 let state = { q:"", dom:"", type:"", niv:"", coi:"", annee:"", tri:"force" };
 
-const chipsEl = document.getElementById("chips");
 function counts(){ const c = {}; REVUES.forEach(r=>c[r.dom]=(c[r.dom]||0)+1); return c; }
-function renderChips(){
+function populateDomSel(){
+  const sel = document.getElementById("fdom");
   const c = counts();
-  chipsEl.innerHTML = "";
-  const all = document.createElement("button");
-  all.className = "chip" + (state.dom==="" ? " on" : "");
-  all.innerHTML = "Toutes disciplines<span class='c'>" + REVUES.length + "</span>";
-  all.onclick = ()=>{ state.dom=""; apply(); };
-  chipsEl.appendChild(all);
-  DOMS.forEach(d=>{
-    const b = document.createElement("button");
-    b.className = "chip" + (state.dom===d ? " on" : "");
-    b.innerHTML = d + "<span class='c'>" + (c[d]||0) + "</span>";
-    b.onclick = ()=>{ state.dom = (state.dom===d ? "" : d); apply(); };
-    chipsEl.appendChild(b);
+  sel.innerHTML = "";
+  const all = document.createElement("option");
+  all.value = "";
+  all.textContent = "Discipline : toutes (" + REVUES.length + ")";
+  sel.appendChild(all);
+  [...DOMS].sort((a,b)=>a.localeCompare(b,"fr")).forEach(d=>{
+    const o = document.createElement("option");
+    o.value = d;
+    o.textContent = d + " (" + (c[d]||0) + ")";
+    sel.appendChild(o);
   });
+  sel.value = state.dom;
 }
+
 
 const PRESETS = [
   { id:"comp",   set:{ type:"Complément alimentaire" } },
@@ -1199,6 +1199,7 @@ const PRESETS = [
 ];
 function syncInputs(){
   document.getElementById("q").value = state.q;
+  document.getElementById("fdom").value = state.dom;
   document.getElementById("ftype").value = state.type;
   document.getElementById("fniv").value = state.niv;
   document.getElementById("tri").value = state.tri;
@@ -1320,10 +1321,11 @@ function apply(){
   }
   else { html = list.map(card).join(""); }
   document.getElementById("list").innerHTML = html;
-  renderChips();
+  populateDomSel();
 }
 
 document.getElementById("q").addEventListener("input", e=>{ state.q = e.target.value.trim(); apply(); });
+document.getElementById("fdom").addEventListener("change", e=>{ state.dom = e.target.value; apply(); });
 document.getElementById("ftype").addEventListener("change", e=>{ state.type = e.target.value; apply(); });
 document.getElementById("fniv").addEventListener("change", e=>{ state.niv = e.target.value; apply(); });
 document.getElementById("tri").addEventListener("change", e=>{ state.tri = e.target.value; apply(); });
