@@ -1,8 +1,148 @@
 # Injection automatique
 
-- REVUES: +16 → 466
-- RECO: +0 → 106
-- NEW: 16
+- REVUES: +44 → 510
+- RECO: +16 → 122
+- NEW: 60
 
 ## Écartés
-- aucun
+- DOUBLON: Dupilumab (Dupixent) dans la rhinosinusite fongique allergique (AFRS) 
+- DOUBLON: Allergies au chat et au bouleau : anticorps bloquant l'allergène (REGN
+- DOUBLON: Montélukast : risque de troubles mentaux vs efficacité — méta-analyse 
+- DOUBLON: Probiotiques, prébiotiques et synbiotiques pour la prévention et le tr
+- DOUBLON: Apnée du sommeil : oxygénothérapie supplémentaire combinée à l'orthèse
+- DOUBLON: Apnée du sommeil modérée à sévère : stimulation du nerf hypoglosse pro
+- DOUBLON: Naltrexone orale vs injectable à libération prolongée chez le patient 
+- DOUBLON: Varénicline dans le trouble de l'usage du cannabis : essai randomisé c
+- DOUBLON: Pharmacothérapies du trouble de l'usage du cannabis : revue Cochrane a
+- DOUBLON: Bandes de test du fentanyl et comportements de réduction du risque d'o
+- DOUBLON: Arrêt du tabac assisté par WhatsApp et délivré par les pharmaciens pou
+- DOUBLON: Baromètre de Santé publique France, édition 2024 : tabac, alcool, somm
+- DOUBLON: Méthadone : l'ANSM rappelle le bon usage (surdoses en hausse 2021-2025
+- DOUBLON: Tianeptine (« gas station heroin ») : la FDA met en garde contre tout 
+- DOUBLON: Extrait plein spectre de Cannabis sativa (VER-01/DKJ127) dans la lomba
+- DOUBLON: L'efficacité analgésique des opioïdes diminue avec la durée de traitem
+- DOUBLON: Ceinture lombaire non rigide dans la lombalgie commune non spécifique 
+- DOUBLON: RESET-RA : stimulation du nerf vague implantable dans la polyarthrite 
+- DOUBLON: COMPARE : thérapie CAR-T anti-CD19 (mivocabtagène autoleucel) dans la 
+- DOUBLON: Firsekibart (anti-IL-1β) en prophylaxie des crises de goutte à l'insta
+- DOUBLON: Efficacité et sécurité comparées des différents AINS dans l'arthrose :
+- DOUBLON: Bépirovirsen : guérison fonctionnelle de l'hépatite B chez ~1 patient 
+- DOUBLON: FUZION : le guselkumab (IL-23) réussit la première phase 3 dans la mal
+- DOUBLON: Tulisokibart (anti-TL1A) : premier signal de phase 3 positif dans la r
+- DOUBLON: AFFIRM : l'induction sous-cutanée du risankizumab efficace dans la mal
+- DOUBLON: TRIUMpH : le tégorprazan (P-CAB) supérieur au lansoprazole dans le mai
+- DOUBLON: Bulévirtide : dix ans de données vie réelle dans l'hépatite delta chro
+- DOUBLON: CROSSING : le tézépélumab (anti-TSLP) positif en phase 3 dans l'œsopha
+- DOUBLON: TrIuMPH : la première thérapie « microbiome full-spectrum » orale posi
+- DOUBLON: Premier essai chez l'homme d'une thérapie ARNi (Regeneron) dans la sté
+- DOUBLON: Dapagliflozin + tolvaptan dans la polykystose rénale (ADPKD) : essai c
+- DOUBLON: Manger dans une fenêtre de temps (time-restricted eating) dans la poly
+- DOUBLON: MARKISIO : aucun biomarqueur rénal ne prédit de façon fiable le besoin
+- DOUBLON: Bicarbonate de sodium dans l'acidose métabolique de l'insuffisance rén
+- DOUBLON: Dénervation rénale dans l'HTA du patient insuffisant rénal : méta-anal
+- DOUBLON: Citrate au long cours chez les lithiasiques à haut risque : sûr métabo
+- DOUBLON: Tradipitant (antagoniste NK1) efficace dans le mal des transports : RC
+- DOUBLON: Vaccin contre la dengue (Qdenga/TAK-003) chez le voyageur : mêmes preu
+- DOUBLON: STREAM (NEJM) : arrêter les statines chez l'adulte de 70 ans et plus s
+- DOUBLON: Méta-analyse (Lancet Child & Adolescent Health) : efficacité et sécuri
+- DOUBLON: MEDREV (BMC Geriatrics) : le pharmacien clinicien réduit fortement les
+- DOUBLON: Charge anticholinergique et symptômes psycho-comportementaux du patien
+- DOUBLON: Compléments nutritionnels oraux prêts à l'emploi chez les seniors dénu
+- DOUBLON: Oxyurose de l'enfant : albendazole vs mebendazole vs pyrantel — essai 
+- DOUBLON: Sulfonylurées + amiodarone : initiation de l'amiodarone associée à un 
+- DOUBLON: CONCRET-MENOPA : créatine orale 8 semaines et cognition des femmes pér
+- DOUBLON: Oméga-3 et récupération sportive : méta-analyse de 41 ECR (FASEB Journ
+- DOUBLON: Carences martiales des athlètes de haut niveau : revue systématique — 
+- DOUBLON: Vitamine D seule et blessures musculo-squelettiques de surmenage : ECR
+- DOUBLON: Probiotiques et sport : méta-analyse d'essais cliniques — composition 
+- DOUBLON: Boissons énergétiques et santé cardiovasculaire des jeunes : revue cri
+- DOUBLON: Caféine et performance en contre-la-montre : méta-analyse en réseau — 
+- DOUBLON: Collagène 10 g/j pendant 16 semaines : raideur musculo-tendineuse et f
+- DOUBLON: Taurine en dose unique pré-exercice : revue méta-analytique — petit ef
+- DOUBLON: SARMs vendus en ligne : vague de lettres d'avertissement de la FDA (12
+- DOUBLON: Bilan de médication structuré à l'officine dans la polymédication : es
+- DOUBLON: Télésanté pharmaceutique (telepharmacy) dans les maladies chroniques :
+- DOUBLON: Interventions de pharmaciens sur l'observance dans les maladies chroni
+- DOUBLON: Biosimilaires de l'adalimumab : plus d'un patient sur sept revient au 
+- DOUBLON: Rapport IGAS-IGF sur la chaîne de distribution pharmaceutique : les bi
+- DOUBLON: Téléconsultation en France : la 6e étude annuelle Medaviz (publiée le 
+- DOUBLON: FLUNITY-HD : le vaccin grippe à haute dose protège mieux que la dose s
+- DOUBLON: Essai pragmatique danois (>330 000 seniors, 3 saisons) : vaccin grippe
+- DOUBLON: Efficacité vaccinale grippe 2025-2026 en Europe : neuf études pendant 
+- DOUBLON: Estimations intérimaires d'efficacité du vaccin grippe 2025-2026 aux É
+- DOUBLON: Zona : efficacité du vaccin recombinant adjuvanté (Shingrix) maintenue
+- DOUBLON: Vaccin méningocoque B 4CMenB : revue systématique et méta-analyse des 
+- DOUBLON: Australie-Méridionale : 5 ans après le programme 4CMenB financé, prote
+- DOUBLON: Myocardite après vaccins ARNm COVID-19 : le mécanisme immunitaire éluc
+- DOUBLON: Interventions en pharmacie et couverture vaccinale des populations vul
+- DOUBLON: Campagne grippe 2026-2027 : 65 % des vaccinations antigrippales de la 
+- DOUBLON: Rétinopathie diabétique sous sémaglutide : l'étude réseau OHDSI rassur
+- DOUBLON: DMLA atrophique (atrophie géographique) : résultats à 2 ans de GATHER2
+- DOUBLON: NAION (« AVC du nerf optique ») : l'essai phase 2/3 du QPI-1007 (ARNs 
+- DOUBLON: Après une NAION, le risque d'AVC reste durablement élevé — cohorte mul
+- DOUBLON: DMLA néovasculaire résistante : switch vers le faricimab (Vabysmo) en 
+- DOUBLON: Sinusite chronique avec polypes (CRSwNP) réfractaire : méta-analyse de
+- DOUBLON: Vertige positionnel paroxystique bénin (VPPB) : la bétahistine contre 
+- DOUBLON: Capteur de glucose continu (CGM) dans le diabète de type 2 NON insulin
+- DOUBLON: Orforglipron (GLP-1 oral, petite molécule) vs sémaglutide oral dans le
+- DOUBLON: Pompe sans tuyau en boucle fermée automatique vs injections multiples 
+- DOUBLON: Boucle fermée TOTALE (sans annonce de repas) : faisabilité et sécurité
+- DOUBLON: MASH (stéato-hépatite) : rémission histologique sous tirzépatide assoc
+- DOUBLON: Syndrome de Cushing SURRENALIEN : données vie réelle internationales d
+- DOUBLON: Orbitopathie de Basedow (maladie oculaire thyroïdienne) : méta-analyse
+- DOUBLON: Lévothyroxine liquide/gélule molle vs comprimé après thyroïdectomie to
+- DOUBLON: OPTION : fermeture de l'appendice auriculaire gauche vs anticoagulatio
+- DOUBLON: ARREST-AF : prise en charge agressive des facteurs de risque après abl
+- DOUBLON: EQUAL : dépistage de la FA par montre connectée (Apple Watch) chez le 
+- DOUBLON: ASPREE suivi prolongé : l'aspirine en prévention primaire chez le suje
+- DOUBLON: Polypill et prévention CV primaire et secondaire : méta-analyse des co
+- DOUBLON: iSGLT2 et insuffisance cardiaque : méta-analyse complète sur mortalité
+- DOUBLON: Services de soins hypertensifs délivrés par les pharmaciens : revue sy
+- DOUBLON: AOD chez les très âgés et patients à haut risque hémorragique avec FA,
+- DOUBLON: Milvexian (anti-XIa oral, BMS/J&J) : arrêt du programme LIBREXIA-ACS —
+- DOUBLON: Clozapine après un seul antipsychotique échoué dans la psychose de pre
+- DOUBLON: Clozapine et neutropénie : quand survient le risque ? Cohorte national
+- DOUBLON: Antipsychotiques injectables à action prolongée (LAIs) vs oraux après 
+- DOUBLON: Buprenorphine injectable 7 jours initiée aux urgences vs sublinguale :
+- DOUBLON: Buprenorphine mensuelle LP 100 mg vs 300 mg dans le trouble de l'usage
+- DOUBLON: Lithium et suicidalité (idées, comportements, suicide) : méta-analyse 
+- DOUBLON: Jeu pathologique : méta-analyse en réseau des traitements pharmacologi
+- DOUBLON: Co-usage cannabis + tabac et transition vers la psychose chez les jeun
+- DOUBLON: Sécurité cardiovasculaire comparée des médicaments du TDAH : méta-anal
+- DOUBLON: Traitement de maintenance du trouble bipolaire : méta-analyse en résea
+- DOUBLON: Clinical Practice Guideline : Adult Sinusitis Update (Payne, Otolaryng
+- DOUBLON: Choix et durées d'antibiothérapies : angine aiguë de l'adulte et de l'
+- DOUBLON: TFOS DEWS III : rapport du Dry Eye Workshop III — Management and Thera
+- DOUBLON: Usage des substances psychoactives : prévention en milieu professionne
+- DOUBLON: Accompagner dès le premier recours pour diminuer le risque alcool des 
+- DOUBLON: Premières lignes directrices de l'OMS sur la prise en charge non chiru
+- DOUBLON: Parcours de santé d'une personne présentant une douleur chronique — gu
+- DOUBLON: Diagnostic and Treatment of Chronic Complex Regional Pain Syndrome (CR
+- DOUBLON: British Society of Gastroenterology guidelines on inflammatory bowel d
+- DOUBLON: The 2026 British Society of Gastroenterology guidelines on the diagnos
+- DOUBLON: EASL Clinical Practice Guidelines on the management of hepatitis B vir
+- DOUBLON: ESPEN guideline on clinical nutrition in surgery – Update 2025
+- DOUBLON: Recommandations sanitaires aux voyageurs — édition 2026
+- DOUBLON: CDC Yellow Book 2026 — Health Information for International Travel (ré
+- DOUBLON: KDIGO 2026 AKI/AKD — projet de recommandation (draft) en révision publ
+- DOUBLON: Guide de prescription d'antibiotiques en pédiatrie (GPIP 2024, version
+- DOUBLON: Choisir avec soin en gériatrie — campagne 2024 : les 5 situations sur 
+- DOUBLON: Avis n°2025.0075 du collège de la HAS (18 décembre 2025) : sous-popula
+- DOUBLON: ESPEN practical short micronutrient guideline : apports minimaux en vi
+- DOUBLON: Consensus document of the Spanish Nutrition Society (SEÑ) on Nutrition
+- DOUBLON: Prescription des antibiotiques en pratique bucco-dentaire — recommanda
+- DOUBLON: Plan hivernal 2025-2026 : point sur l'approvisionnement en médicaments
+- DOUBLON: Vaccination contre les papillomavirus (HPV) : élargissement de la coho
+- DOUBLON: Recommended Immunization Schedule for Adults Aged 19 Years or Older — 
+- DOUBLON: RSV vaccination des adultes : dose unique recommandée pour tous les 75
+- DOUBLON: Diabetic Retinopathy — Preferred Practice Pattern (AAO, 2025)
+- DOUBLON: Age-Related Macular Degeneration — Preferred Practice Pattern (AAO, 20
+- DOUBLON: Parcours de soins du patient adulte vivant avec un diabète de type 2 —
+- DOUBLON: 2025 ATA Management Guidelines for Adult Patients with Differentiated 
+- DOUBLON: Evaluation and Management of Thyroid Nodules — joint consensus stateme
+- DOUBLON: Recommandations ESC 2024 sur la prise en charge des maladies artériell
+- DOUBLON: Recommandations ESC 2024 sur la prise en charge des syndromes coronari
+- DOUBLON: Prise en charge médicamenteuse de l'insuffisance cardiaque — note de c
+- DOUBLON: Gambling-related harms: identification, assessment and management — NI
+- DOUBLON: Psychosis and Schizophrenia in Adults: Prevention and Management — mis
+- DOUBLON: Trouble du neurodéveloppement/TDAH : diagnostic et interventions théra
