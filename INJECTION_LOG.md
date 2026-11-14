@@ -1,3 +1,8 @@
 # Injection automatique
 
-- File vide — aucune entrée traitée.
+- REVUES: +8 → 572
+- RECO: +0 → 123
+- NEW: 8
+
+## Écartés
+- aucun
