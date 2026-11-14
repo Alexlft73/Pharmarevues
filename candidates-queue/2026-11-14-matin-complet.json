@@ -1,0 +1,2445 @@
+{
+ "revues": [
+  {
+   "id": "oph-24h-01",
+   "ty": "Médicament",
+   "dom": "Ophtalmologie",
+   "n": 3,
+   "dt": "2025-12",
+   "des": "DMLA — forme polypoïdale (PCV) : l'aflibercept 8 mg à intervalles espacés non inférieur au 2 mg toutes les 8 semaines (analyse post hoc de PULSAR, JAMA Ophthalmology)",
+   "tag": "aflibercept 8 mg · polypoidal choroidal vasculopathy · PULSAR · anti-VEGF",
+   "res": "Analyse post hoc de l'essai de phase 3 PULSAR publiée en ligne le 18 décembre 2025 (date lue : « JAMA Ophthalmol. Published online December 18, 2025 », Ophthalmology Advisor, vu en résultats) : dans la vasculopathie chororoïdienne polypoïdale, sous-type de DMLA néovasculaire, l'aflibercept 8 mg (après 3 doses mensuelles puis toutes les 12 ou 16 semaines) montre des gains visuels et des résultats anatomiques comparables à l'aflibercept 2 mg toutes les 8 semaines, avec la potentialité d'espacer les injections. Le mois des résultats complets 96 semaines de PULSAR (Ophthalmology, DOI 10.1016/j.ophtha.2025.08.022) n'a pas pu être vérifié (édition bloquée) — seuls les chiffres de l'analyse PCV lus dans les extraits sont cités. En officine : pour les patients sous aflibercept 8 mg (Eylea HD), espacer les injections ne veut pas dire arrêter le suivi — importance de l'observance des rendez-vous d'injection et du contrôle autonome de la vision (test à l'œil non traité), et rappel que la malvoyance unilatérale passe souvent inaperçue.",
+   "src": [
+    [
+     "JAMA Ophthalmology — Aflibercept 8 mg in Polypoidal Choroidal Vasculopathy: Post Hoc Analysis of PULSAR (PMC)",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC12921519/"
+    ],
+    [
+     "Ophthalmology Advisor — Aflibercept 8 mg Noninferior to 2 mg Dose in PCV Treatment (Published online December 18, 2025)",
+     "https://www.ophthalmologyadvisor.com/news/high-dose-aflibercept-improves-structure-function-in-polypoidal-choroidal-vasculopathy/"
+    ],
+    [
+     "Ophthalmology — Intravitreal Aflibercept 8 mg in Neovascular AMD: 96-Week Results from PULSAR (DOI 10.1016/j.ophtha.2025.08.022)",
+     "https://www.aaojournal.org/article/S0161-6420(25)00532-9/fulltext"
+    ]
+   ]
+  },
+  {
+   "id": "oph-24h-02",
+   "ty": "Médicament",
+   "dom": "Ophtalmologie",
+   "n": 2,
+   "dt": "2026-03",
+   "des": "Glaucome : le nétarsudil 0,02 % (inhibiteur de ROCK) ajouté au latanoprost fait baisser davantage la pression intraoculaire (J-ROCKET-2, phase 3 japonaise)",
+   "tag": "nétarsudil · ROCK inhibitor · latanoprost · glaucome primitif à angle ouvert",
+   "res": "Essai de phase 3 randomisé, multicentrique, en double aveugle (jRCT2031210122), publié le 31 mars 2026 (date lue sur la page Springer ouverte : « Published: 31 March 2026 », Advances in Therapy 43:2568-2579) : chez des patients japonais avec glaucome primitif à angle ouvert ou hypertonie oculaire, le nétarsudil 0,02 % en association au latanoprost 0,005 % a montré une supériorité sur la baisse de pression intraoculaire vs placebo + latanoprost, avec un profil de tolérance évaluable. Le nétarsudil agit sur le réseau trabéculaire (voie d'écouissement principale), diminue la production d'humeur aqueuse et la pression veineuse épisclérale (page Santen vue). Première entrée « nétarsudil » de la base (grep vérifié ; latanoprost et latanoprostène bunod déjà en base = substances distinctes). En officine : signaler au patient les effets locaux fréquents des collyres ROCK (hyperhémie conjonctivale, hyperpigmentation) pour éviter l'arrêt intempestif, et rappeler la technique d'instillation + occlusion nasale 1 minute pour limiter le passage systémique.",
+   "src": [
+    [
+     "Springer (open access) — J-ROCKET-2 : netarsudil + latanoprost, Advances in Therapy, 31 mars 2026",
+     "https://link.springer.com/article/10.1007/s12325-026-03566-8"
+    ],
+    [
+     "Santen — demande d'approbation STN1013900 (nétarsudil) au Japon, 30 juillet 2025",
+     "https://www.santen.com/en/news/2025/2025_1/20250730"
+    ]
+   ]
+  },
+  {
+   "id": "oph-24h-03",
+   "ty": "Médicament",
+   "dom": "Ophtalmologie",
+   "n": 4,
+   "dt": "2025-07",
+   "des": "Rétinopathie diabétique sous tirzépatide : aggravation précoce observée en vie réelle chez les patients déjà atteints, mais moins de nouvelles rétinopathies (cohorte Diabetologia)",
+   "tag": "tirzépatide · rétinopathie diabétique · aggravation précoce (EWDR) · GLP-1/GIP",
+   "res": "Étude de cohorte réelle publiée en Diabetologia (epub du 10 juillet 2025, date lue : « Diabetologia 10 Jul [Epub ahead of print] », DiabetesontheNet ; pagination finale 68:2069-2076 lue sur la version Oxford) : chez les patients DT2 avec rétinopathie établie à l'initiation, le tirzépatide est associé à plus de rétinopathie proliférante (OR 2,15, p<0,01, lu sur springermedicine), tandis que chez les patients sans atteinte oculaire à la baseline, il est associé à MOINS de nouvelles rétinopathies (OR 0,73, p<0,001) ; pas d'association avec la progression des NPDR légères (OR 1,29 [0,89-1,88], lu dans le PDF Springer). Un commentaire éditorial (Fadini, Diabetologia 2025;68(12):2921) nuance : « pas de preuve que le tirzépatide aggrave la rétinopathie ». Doublonnage vérifié : la base contient l'étude réseau OHDSI sur le SÉMAGLUTIDE — la présente entrée porte le tirzépatide (substance et signal distincts). En officine : pour tout patient DT2 sous GLP-1/GIP avec rétinopathie connue, ne jamais minimiser un flou visuel ou des « corps flottants » — orienter vite vers l'ophtalmologiste ; le contrôle rapide de la glycée peut transitoirement aggraver la rétinopathie, d'où le suivi ophtalmologique régulier.",
+   "src": [
+    [
+     "Diabetologia (Springer) — Early worsening of diabetic retinopathy with tirzepatide: a real-world cohort study",
+     "https://link.springer.com/article/10.1007/s00125-025-06466-8"
+    ],
+    [
+     "DiabetesontheNet — citation « Diabetologia 10 Jul [Epub ahead of print] » et résumé",
+     "https://diabetesonthenet.com/diabetes-primary-care/distilled-tirzepatide-retinopathy/"
+    ],
+    [
+     "Springer Medicine — chiffres OR (2,15 proliférative ; 0,73 nouvelle rétinopathie)",
+     "https://www.springermedicine.com/tirzepatide/diabetic-retinopathy/no-evidence-that-tirzepatide-can-worsen-diabetic-retinopathy/51539904"
+    ],
+    [
+     "Diabetologia — commentaire Fadini « No evidence that tirzepatide can worsen diabetic retinopathy », 2025;68(12):2921",
+     "https://link.springer.com/article/10.1007/s00125-025-06564-7"
+    ]
+   ]
+  },
+  {
+   "id": "oph-24h-04",
+   "ty": "Médicament",
+   "dom": "Ophtalmologie",
+   "n": 2,
+   "dt": "2026-05",
+   "des": "Sécheresse oculaire : l'acoltremon 0,003 % (agoniste TRPM8, TRYPTYR) validé par les deux essais pivots de phase 3 COMET-2 et COMET-3 — FDA approval mai 2025",
+   "tag": "acoltremon · AR-15512 · TRPM8 · sécheresse oculaire · COMET-2/COMET-3",
+   "res": "Résultats des deux essais pivots de phase 3 COMET-2 et COMET-3 publiés dans Ophthalmology 2026 May;133(5) (citation lue sur ClinicalTrials.gov : « Ophthalmology. 2026 May;133(5) », PMID 41038456) : l'acoltremon 0,003 % (ex AR-15512), premier agoniste du récepteur TRPM8 (stimule les nerfs cornéens pour augmenter la production lacrymale naturelle), augmente significativement la production de larmes dès le jour 14 et jusqu'à 90 jours — ≥ 10 mm de gain au Schirmer au jour 14 chez 42,6 % (COMET-2) et 53,2 % (COMET-3) des patients vs 8,2 % et 14,4 % sous véhicule (P<0,0001, chiffres lus sur Ophthalmology 360), avec amélioration des symptômes et de la surface oculaire et aucun événement oculaire grave (HCPLive, vu). La FDA a approuvé TRYPTYR (acoltremon) le 28 mai 2025 (date lue : « May 28, 2025 », drugs.com/Business Wire) ; collyre unidose. Doublonnage vérifié : base = oméga-3 sécheresse (méta + RCT rTG), rebamipide, larmes artificielles unidose — acoltremon absent. En officine : une nouvelle option aux États-Unis (pas encore en France) — le conseil reste larmes artificielles SANS conservateur en 1re intention, et pour les patients les plus sévères sous ciclosporine, une piste d'avenir à évoquer avec l'ophtalmologiste.",
+   "src": [
+    [
+     "PubMed — Acoltremon 0.003% : résultats COMET-2 et COMET-3 (Ophthalmology 2026 May;133(5))",
+     "https://pubmed.ncbi.nlm.nih.gov/41038456/"
+    ],
+    [
+     "Ophthalmology 360 — chiffres Schirmer jour 14 (42,6 % / 53,2 % vs véhicule)",
+     "https://ophthalmology360.com/dry-eye/acoltremon-demonstrates-strong-efficacy-in-phase-3-trials-for-dry-eye-disease/"
+    ],
+    [
+     "drugs.com — FDA approval Tryptyr, 28 mai 2025",
+     "https://www.drugs.com/newdrugs/fda-approves-tryptyr-acoltremon-ophthalmic-solution-dry-eye-6537.html"
+    ],
+    [
+     "Alcon — communiqué FDA approval TRYPTYR",
+     "https://www.alcon.com/media-release/alcon-announces-fda-approval-tryptyr-acoltremon-ophthalmic-solution-0003-treatment/"
+    ]
+   ]
+  },
+  {
+   "id": "bucco-24h-01",
+   "ty": "Médicament",
+   "dom": "ORL & stomatologie",
+   "n": 5,
+   "dt": "2025-09",
+   "des": "Flu et prévention carieuse : mise au point complète — mécanismes topiques, efficacité clinique et enjeux de santé publique (revue, Healthcare)",
+   "tag": "fluor · dentifrice fluoré · prévention caries · reminéralisation",
+   "res": "Revue narrative publiée le 8 septembre 2025 (date lue sur la page MDPI ouverte : « 8 September 2025 », Healthcare 2025, 13(17):2246, DOI 10.3390/healthcare13172246) : synthèse des mécanismes du fluor — reminéralisation de l'émail, inhibition de la déminéralisation et activité antibactérienne — avec une action essentiellement TOPIQUE (post-éruptive) à l'interface dent-biofilm-salive, corroborée par une autre revue 2025 (« predominantly post-eruptive, topical mode of action where fluoride inhibits demineralization and accelerates remineralization », Dent J, vu en résultats). Les controverses sur l'excès (fluorose) et la supplémentation systémique sont discutées. Première entrée « fluor » de la base (grep vérifié ; la ligne fluoropyrimidines déjà en base = chimiothérapie, sans rapport). En officine : face aux dentifrices « sans fluor » en rayon, rappeler que l'efficacité anti-caries du fluor topique est scientifiquement reconnue et que la dose fait le poison — dentifrice fluoré adapté à l'âge (faible dose chez le jeune enfant, recracher sans rincer), en complément du brossage 2×/jour et non en remplacement.",
+   "src": [
+    [
+     "MDPI Healthcare — Fluoride in Dental Caries Prevention and Treatment (8 septembre 2025, 13(17):2246)",
+     "https://www.mdpi.com/2227-9032/13/17/2246"
+    ],
+    [
+     "Dent J (MDPI) — The Cariostatic Mechanisms of Fluoride: An Updated Review",
+     "https://doi.org/10.3390/dj14070390"
+    ]
+   ]
+  },
+  {
+   "id": "bucco-24h-02",
+   "ty": "Officine",
+   "dom": "ORL & stomatologie",
+   "n": 4,
+   "dt": "2025-06",
+   "des": "Maladies parodontales des Français : le 1er baromètre Haleon-UFSBD (Ipsos, 2 000 Français + 250 dentistes) révèle 2/3 de symptômes et une prévention délaissée",
+   "tag": "maladies parodontales · baromètre Haleon-UFSBD · prévention bucco-dentaire · France",
+   "res": "Premier baromètre de la santé bucco-dentaire Haleon × UFSBD, réalisé avec Ipsos auprès de 2 000 Français et 250 chirurgiens-dentistes, publié le 30 juin 2025 (date lue : « Publié le 30 Juin 2025 », Dentalespace) : 2 Français sur 3 ressentent régulièrement des symptômes associés aux maladies parodontales (saignements gingivaux notamment, page Ipsos vue) ; près de 3 sur 4 (73 %) présentent un profil à risque (page Ipsos, vue en résultats) ; un tiers des Français ne consulte pas son dentiste chaque année (chiffre lu sur la page CGOS reprenant le baromètre) ; 97 % des dentistes estiment que la prévention permettrait des économies significatives (Hygiène-Précision d'après le communiqué Haleon-UFSBD 2025, vu). Doublonnage vérifié : la base ne contient aucune entrée parodontale France (grep « parodont* » : chlorhexidine bains de bouche seulement). En officine : le saignement des gencives au brossage n'est PAS normal — c'est le signal d'alerte à donner systématiquement ; relayer les gestes UFSBD (brossage 2×/jour, fil dentaire/ brossette, détartrage annuel) et cibler les patients à risque (diabète, tabac, grossesse) pour un conseil de consultation rapide, car les maladies parodontales sont liées aux maladies chroniques.",
+   "src": [
+    [
+     "Dentalespace — Baromètre Haleon x UFSBD, publié le 30 juin 2025",
+     "https://www.dentalespace.com/praticien/communiques/barometre-de-la-sante-bucco-dentaire-haleon-x-ufsbd/"
+    ],
+    [
+     "Ipsos — 2 Français sur 3 ressentent des symptômes de maladies parodontales (73 % à risque)",
+     "https://www.ipsos.com/fr-fr/sante-bucco-dentaire-2-francais-sur-3-ressentent-regulierement-des-symptomes-associes-aux-maladies"
+    ],
+    [
+     "Le Fil Dentaire — maladies parodontales, grandes oubliées de la prévention (communiqué Haleon-UFSBD/Ipsos)",
+     "https://www.lefildentaire.com/actualites/maladies-parodontales-grandes-oubliees-de-prevention-bucco-dentaire/"
+    ]
+   ]
+  },
+  {
+   "id": "bucco-24h-03",
+   "ty": "Officine",
+   "dom": "ORL & stomatologie",
+   "n": 1,
+   "dt": "2026-03",
+   "des": "Implants dentaires : le tabac reste un facteur de risque d'échec — mais pas une contre-indication absolue (revue systématique, Clinical Oral Implants Research)",
+   "tag": "tabac · produits sans fumée · implants dentaires · survie implantaire",
+   "res": "Revue systématique publiée dans Clinical Oral Implants Research 2026 Mar;37(3):262-286, epub 3 mars 2026 (citation lue sur PubMed : « 2026 Mar;37(3):262-286. doi: 10.1111/clr.70108. Epub 2026 Mar 3 », PMID 41776304) : le tabagisme conventionnel réduit la survie des implants dentaires, avec des odds d'échec diminués d'environ 60 % chez les non-fumeurs (odds ratio 0,40 au niveau implant et 0,43 au niveau patient, lus sur la reprise amandafamilydental du 2026 review in COIR) ; les auteurs concluent que le tabagisme n'est PAS une contre-indication absolue à l'implantologie ; pour les produits sans fumée (vapotage notamment), les preuves sont jugées insuffisantes (extrait lu : « insufficient evidence to draw conclusions » sur la reprise dentistryatmaricopa). Première entrée « implants dentaires » de la base (grep vérifié). En officine : proposition d'aide au sevrage tabagique à faire systématiquement AVANT une chirurgie implantaire (le pharmacien est l'acteur clé du sevrage), et surveillance de l'hygiène péri-implantaire des patients déjà implantés (brossage + fil dentaire/ brossette) — une péri-implantite peut coûter l'implant.",
+   "src": [
+    [
+     "PubMed — Tobacco Smoking and Smoke-Free Products as Risk Factors for Dental Implants (COIR 2026 Mar;37(3):262-286)",
+     "https://pubmed.ncbi.nlm.nih.gov/41776304/"
+    ],
+    [
+     "Wiley — Tobacco Smoking and Smoke‐Free Products as Risk Factors for Dental Implants: A Systematic Review (Elena et al., 2026)",
+     "https://onlinelibrary.wiley.com/doi/10.1111/clr.70108"
+    ],
+    [
+     "Amandafamilydental — reprise chiffrée du COIR 2026 (OR 0,40 / 0,43)",
+     "https://amandafamilydental.com/dental-implants-and-smoking/"
+    ]
+   ]
+  },
+  {
+   "id": "uro-push-hydration-2026",
+   "ty": "Médicament",
+   "dom": "Urologie & santé masculine",
+   "n": 2,
+   "dt": "2026-03",
+   "des": "PUSH : un grand essai randomisé nuance la prévention de la lithiase par l'hydratation — le programme comportemental augmente le volume urinaire mais pas assez pour réduire les récidives (Lancet)",
+   "tag": "lithiase rénale · hydratation · prévention récidive · PUSH",
+   "res": "Essai randomisé multicentrique américain (6 centres académiques, patients ≥ 12 ans avec antécédent de lithiase et volume urinaire 24 h bas, randomisation 1:1) : un programme comportemental multicomposant (smart bottle, rappels, coaching, incitations financières) pour augmenter l'apport hydrique augmente modérément le volume urinaire, mais ne réduit PAS la récidive de lithiase symptomatique vs soins usuels — les stratégies actuelles d'hydratation « surveillance seule » peuvent être insuffisantes pour nombre de patients malgré une amélioration mesurable du volume urinaire (Lancet, Epub lu « 2026 Mar 21 » ; essai négatif, résultats lus via Lancet abstract, Renal and Urology News, CHOP et ScienceDaily). Premier grand essai d'adhérence hydrique dans la lithiase — complète la RECO EAU lithiase 2025 et l'entrée citrate déjà en base (aucun essai d'hydratation en base, grep vérifié). En officine : le conseil « buvez beaucoup » reste le socle, mais ce grand essai montre ses limites : viser une urine claire ~2 L/j est nécessaire mais pas suffisant chez les récidivants — réduire le sel et les protéines animales, faire le point sur les habitudes, et orienter vers le médecin pour une évaluation métabolique (24 h urinaires) en cas de récidive.",
+   "src": [
+    [
+     "Lancet — PUSH trial abstract",
+     "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(25)02637-6/abstract"
+    ],
+    [
+     "UroToday — citation « Lancet. 2026 Mar 21 [Epub] »",
+     "https://www.urotoday.com/recent-abstracts/endourology-urolithiasis/stone-disease/167702-prevention-of-urinary-stones-with-hydration-a-randomised-clinical-trial-of-an-adherence-intervention.html"
+    ],
+    [
+     "Renal and Urology News — essai négatif",
+     "https://www.renalandurologynews.com/news/fluid-intake-kidney-stones-trial-reduce-risk-treatment/"
+    ],
+    [
+     "Children's Hospital of Philadelphia — communiqué",
+     "https://www.chop.edu/news/behavioral-hydration-program-landmark-kidney-stone-prevention-trial-increased-urine-output"
+    ]
+   ]
+  },
+  {
+   "id": "uro-courage-vibegron-2026",
+   "ty": "Médicament",
+   "dom": "Urologie & santé masculine",
+   "n": 2,
+   "dt": "2026-02",
+   "des": "COURAGE : le vibégron (bêta-3 agoniste) améliore les symptômes de vessie hyperactive des hommes traités pour HBP — phase 3 (Neurourology and Urodynamics)",
+   "tag": "vibégron · vessie hyperactive · HBP · bêta-3 agoniste · COURAGE",
+   "res": "Publication de la partie « fonction vésicale et sécurité » de l'essai de phase 3 COURAGE (NCT03902080) : chez les hommes avec symptômes de vessie hyperactive sous traitement pharmacologique de l'HBP, le vibégron (agoniste bêta-3 adrénergique) améliore l'efficacité vs placebo et est bien toléré ; PubMed lu : « 2026 Feb;45(2):299-304 », PMC lu : « Issue date 2026 Feb » (n = 553 dans la population de sécurité, différences vs placebo lues dans l'extrait PubMed). Rendu concret par l'approbation FDA du vibégron pour les symptômes d'OAB chez les hommes sous traitement de l'HBP (Urology Times vu). Distinct des entrées en base : anticholinergiques/démence (2025-12) et dutastéride+tadalafil (2026-02) — ici une alternative non anticholinergique aux symptômes de stockage de l'HBP, cible des questions « j'y vais souvent la nuit ». En officine : chez l'homme sous alpha-bloquant/5-ARI qui garde des urgenturies, il existe une piste médicamenteuse non anticholinergique (bêta-3) à discuter avec le médecin — surtout chez le senior où l'on évite la charge anticholinergique ; pas d'automédication.",
+   "src": [
+    [
+     "PubMed 41363221 — « 2026 Feb;45(2):299-304 »",
+     "https://pubmed.ncbi.nlm.nih.gov/41363221/"
+    ],
+    [
+     "Wiley — Neurourology and Urodynamics (Rovner 2026)",
+     "https://onlinelibrary.wiley.com/doi/10.1002/nau.70199"
+    ],
+    [
+     "PMC12893031 — « Issue date 2026 Feb »",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC12893031/"
+    ],
+    [
+     "Urology Times — FDA approuve le vibégron pour l'OAB sous traitement HBP",
+     "https://www.urologytimes.com/view/fda-approves-vibegron-for-oab-symptoms-in-pharmacologically-treated-bph"
+    ]
+   ]
+  },
+  {
+   "id": "uro-proteus-apalutamide-2026",
+   "ty": "Médicament",
+   "dom": "Oncologie",
+   "n": 2,
+   "dt": "2026-06",
+   "des": "PROTEUS : l'apalutamide périopératoire améliore le pronostic du cancer de la prostate localisé à haut risque — première thérapie systémique périopératoire positive (phase 3, NEJM/ASCO 2026)",
+   "tag": "apalutamide · cancer de la prostate localisé à haut risque · PROTEUS · périopératoire",
+   "res": "Essai de phase 3 randomisé en double aveugle (PROTEUS, financé par Johnson & Johnson, lu dans le NEJM) : dans le cancer de la prostate localisé ou localement avancé à haut risque traité par prostatectomie radicale, l'apalutamide + hormonothérapie en périopératoire (avant ET après la chirurgie) donne de meilleurs résultats oncologiques que le placebo + hormonothérapie — plus de réponses pathologiques majeures et réduction du risque de métastase ou de décès (résultats lus via abstract PubMed/NEJM et communiqué Mass General Brigham) ; effets indésirables plus fréquents dans le groupe apalutamide (lu). Présenté LBA1 en plénière à l'ASCO 2026 (29 mai–2 juin 2026) et publié dans le NEJM (juin 2026, lu via medicalxpress). Écartée à la dose 22h du 12/11 faute de référence vérifiée — RETENUE ce jour, référence et financement maintenant vus. Distinct d'EMBARK (récidive biologique, en base) et TALAPRO-2 (mCRPC, en base) : ici la fenêtre périopératoire. En officine : hommes sous apalutamide en ville — prise continue à heure fixe, surveillance tension, interactions (CYP), effets de l'androgénoprivation (fatigue, os) ; un essai d'ici 2026 qui a déjà validé la combinaison talazoparib+enzalutamide dans le mCRPC — rappeler l'observance marathon des anticancéreux oraux.",
+   "src": [
+    [
+     "NEJM — Perioperative Apalutamide in High-Risk Localized Prostate Cancer",
+     "https://www.nejm.org/doi/full/10.1056/NEJMoa2603878"
+    ],
+    [
+     "PubMed 42223077 — abstract lu",
+     "https://pubmed.ncbi.nlm.nih.gov/42223077/"
+    ],
+    [
+     "Mass General Brigham — communiqué",
+     "https://www.massgeneralbrigham.org/en/about/newsroom/press-releases/perioperative-apalutamide-high-risk-prostate-cancer"
+    ],
+    [
+     "medicalxpress — juin 2026",
+     "https://medicalxpress.com/news/2026-06-perioperative-apalutamide-high-localized-locally.html"
+    ],
+    [
+     "The ASCO Post — LBA1, plénière ASCO 2026",
+     "https://ascopost.com/issues/june-25-2026/proteus-trial-suggests-perioperative-apalutamide-may-improve-outcomes-in-high-risk-localized-prostate-cancer/"
+    ]
+   ]
+  },
+  {
+   "id": "uro-talapro3-topline-2026",
+   "ty": "Médicament",
+   "dom": "Oncologie",
+   "n": 2,
+   "dt": "2026-06",
+   "des": "TALAPRO-3 (topline ASCO 2026) : talazoparib + enzalutamide réduit de 52 % le risque de progression ou de décès dans le cancer de la prostate métastatique hormono-sensible avec altérations HRR",
+   "tag": "talazoparib + enzalutamide · mCSPC · altérations HRR · TALAPRO-3",
+   "res": "Topline de l'essai de phase 3 TALAPRO-3 (LBA5007, ASCO 2026, 29 mai–2 juin, lu via UroToday/Urology Times/OncLive/Targeted Oncology) : chez les hommes avec cancer de la prostate métastatique castration-sensible (mCSPC) porteurs d'altérations des gènes de réparation par recombinaison homologue (ATM, BRCA1/2, CHEK2, PALB2… lisibles dans les critères UROONCO), le talazoparib ajouté à l'enzalutamide réduit de 52 % le risque de progression radiographique ou de décès vs enzalutamide seul (chiffre lu chez OncLive/Targeted Oncology, article daté May 31, 2026). Publication primaire pas encore vue — entrée topline honnête, design et population décrits sans invention. Prolonge la chaîne TALAPRO-2 (mCRPC, en base) vers la maladie hormono-sensible ; confirme l'intérêt du test moléculaire précoce (« early molecular testing is critically important », lu dans Targeted Oncology). En officine : anticancéreux oraux en association — surveillance hématologique (PARP : cytopénies), nausées, observance ; rappeler que ce type de prescription découle d'un test génétique tumoral, d'où l'importance de la traçabilité.",
+   "src": [
+    [
+     "UroToday — ASCO 2026, LBA5007 TALAPRO-3",
+     "https://www.urotoday.com/conference-highlights/asco-2026/asco-2026-prostate-cancer/169464-asco-2026-talapro-3-talazoparib-enzalutamide-compared-with-placebo-enzalutamide-for-the-treatment-of-patients-with-mcspc-harboring-hrr-gene-alterations.html"
+    ],
+    [
+     "Urology Times — rPFS significativement prolongé",
+     "https://www.urologytimes.com/view/talapro-3-talazoparib-plus-enzalutamide-improves-rpfs-hrr-gene-altered-mcspc"
+    ],
+    [
+     "OncLive — réduction de 52 % du risque",
+     "https://www.onclive.com/view/talapro-3-talazoparib-enzalutamide-rpfs-hrr-altered-mcspc"
+    ],
+    [
+     "Targeted Oncology — article daté May 31, 2026",
+     "https://www.targetedonc.com/view/talazoparib-plus-enzalutamide-cuts-progression-risk-by-52-in-hrr-altered-mcspc"
+    ]
+   ]
+  },
+  {
+   "id": "uro-electroacupuncture-prostatectomie-2025",
+   "ty": "Médicament",
+   "dom": "Urologie & santé masculine",
+   "n": 3,
+   "dt": "2025-09",
+   "des": "Électroacupuncture et incontinence précoce après prostatectomie radicale : ECR contre procédure factice (JAMA Network Open)",
+   "tag": "électroacupuncture · incontinence post-prostatectomie · réhabilitation",
+   "res": "ECR monocentrique prospectif randomisé simple aveugle (Nanjing Drum Tower Hospital, inclusion juillet 2021–novembre 2024, lu via UroToday) publié en ligne le 30 septembre 2025 dans JAMA Network Open (doi 10.1001/jamanetworkopen.2025.34491 lu, date lue via medicalxpress « published online Sept. 30 ») : 6 semaines d'électroacupuncture (points Ciliao/Zhongliao/Xialiao, 3 séances/semaine) vs stimulation factice rigoureusement en aveugle chez des hommes avec incontinence urinaire précoce après prostatectomie : accélération significative du retour de la continence, taux de récupération de la continence quasi doublés au fil du suivi (lus via Renal and Urology News / HealthCMi). Ouvre une piste non médicamenteuse réhabilitative pour une séquelle fréquente du cancer de prostate opéré. En officine : pour l'homme opéré du cancer de la prostate qui « fuit » : rééducation périnéale précoce = première étape (déjà message base) ; l'électroacupuncture est une option en cours d'évaluation — ni complément ni dispositif à vendre, orientation vers l'urologue/rééducateur.",
+   "src": [
+    [
+     "JAMA Network Open — article 2839485",
+     "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2839485"
+    ],
+    [
+     "medicalxpress — publié en ligne le 30 sept. 2025",
+     "https://medicalxpress.com/news/2025-10-electroacupuncture-postprostatectomy-urinary-continence-recovery.html"
+    ],
+    [
+     "Renal and Urology News — doi 10.1001/jamanetworkopen.2025.34491",
+     "https://www.renalandurologynews.com/news/electroacupuncture-urinary-continence-radical-prostatectomy-treatment-risk/"
+    ],
+    [
+     "UroToday — design et dates d'inclusion",
+     "https://urotoday.com/index.php?acm=_14686&catid=1697&id=163557%3Aelectroacupuncture-in-patients-with-early-urinary-incontinence-after-radical-prostatectomy-a-randomized-clinical-trial&option=com_content&view=article"
+    ]
+   ]
+  },
+  {
+   "id": "uro-tamsulosine-deprescription-2026",
+   "ty": "Officine",
+   "dom": "Urologie & santé masculine",
+   "n": 3,
+   "dt": "2026-07",
+   "des": "Tamsulosine au long cours : 1 homme sur 3 n'en tire plus de bénéfice — les essais N-of-1 testent la déprescription individuelle (JAMA Network Open)",
+   "tag": "tamsulosine · déprescription · LUTS/HBP · N-of-1",
+   "res": "Essai randomisé proof-of-concept de type N-of-1 en cross-over multiple (UCSF, NCT05415748, 31 hommes de 55-80 ans sous tamsulosine ≥ 12 mois, blocs alternés de 2 semaines tamsulosine 0,4/0,8 mg vs placebo, washout 1 semaine) : environ un tiers des hommes n'a pas de bénéfice symptomatique persistant (variations individuelles d'AUASI de −10,9 à +2,1 points lues via Urology Times), 13,3 % d'intolérance au run-in placebo (certains se dégradent vite à l'arrêt), 92,3 % avec ≥ 1 jour d'effet indésirable — le rapport bénéfice/risque doit être réévalué périodiquement chez le senior. JAMA Network Open 2026;9(7):e2621639 (référence complète lue via Urology Times, article du 09/07/2026 ; PMID 42406401 vu). Premier essai de déprescription dédié aux alpha-bloquants urinaires — cohérent avec le panier déprescription seniors de la base (IPP, BZD, opioïdes) mais aucune entrée LUTS. En officine : lors du bilan de médication d'un senior sous tamsulosine depuis des années, demander « voyez-vous encore une différence ? » ; ne jamais arrêter seul — proposer au médecin un essai d'arrêt encadré, certains patients s'aggravent vite.",
+   "src": [
+    [
+     "JAMA Network Open — article 2851139",
+     "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2851139"
+    ],
+    [
+     "Urology Times — 9 juillet 2026, référence « 2026;9(7):e2621639 »",
+     "https://www.urologytimes.com/view/study-suggests-tamsulosin-deprescribing-may-be-beneficial-for-select-men-with-bph"
+    ],
+    [
+     "PubMed 42406401",
+     "https://pubmed.ncbi.nlm.nih.gov/42406401/"
+    ],
+    [
+     "Renal and Urology News — « one-third no benefit »",
+     "https://www.renalandurologynews.com/news/lower-urinary-tract-symptoms-luts-tamsulosin-some-men-trial-treatment-risk/"
+    ]
+   ]
+  },
+  {
+   "id": "uro-vybrique-sildenafil-film-2025",
+   "ty": "Médicament",
+   "dom": "Autorisations & Sécurité",
+   "n": 5,
+   "dt": "2025-12",
+   "des": "Premier film oral de sildénafil (VYBRIQUE) approuvé par la FDA dans la dysfonction érectile (16 décembre 2025)",
+   "tag": "sildénafil film oral · dysfonction érectile · FDA · VYBRIQUE",
+   "res": "Le 16 décembre 2025 (date lue sur Drugs.com « gained FDA approval on December 16, 2025 » ; notice FDA « Revised December 2025 » vue via epocrates), la FDA a approuvé VYBRIQUE, premier film oral de sildénafil pour la dysfonction érectile de l'homme adulte (IBSA USA) : film à poser sur la langue ~1 h avant l'activité sexuelle, dose max 25-100 mg une fois par jour (lu sur Drugs.com) ; annonce commerciale BusinessWire du 5 février 2026 vue ; commercialisation US attendue mars 2026 (lu via Urology Times). Même molécule, même classe que les comprimés — l'intérêt est la forme (discretion, sans eau). En officine : en France, pas d'équivalent film disponible à ce jour — le message utile au comptoir reste celui des IPDE5 : pas d'automédication parallèle (nitrés = contre-indication absolue), prise 1 h avant, effets attendus uniquement avec stimulation, avertissement « achats internet de sildénafil = contrefaçons » ; reformulation ≠ nouveau mécanisme.",
+   "src": [
+    [
+     "Drugs.com — « FDA approval on December 16, 2025 »",
+     "https://www.drugs.com/vybrique.html"
+    ],
+    [
+     "epocrates — notice FDA « Revised December 2025 »",
+     "https://www.epocrates.com/online/article/vybrique-oral-film-okd-for-erectile-dysfunction"
+    ],
+    [
+     "BusinessWire (IBSA USA) — 5 février 2026",
+     "https://www.businesswire.com/news/home/20260205186522/en/IBSA-USA-Announces-FDA-Approval-of-VYBRIQUE-the-First-and-Only-Oral-Film-to-Treat-Men-with-Erectile-Dysfunction"
+    ],
+    [
+     "Urology Times — commercialisation US mars 2026",
+     "https://www.urologytimes.com/view/fda-approves-sildenafil-oral-film-for-men-with-erectile-dysfunction"
+    ]
+   ]
+  },
+  {
+   "id": "uro-provee-stent-hbp-2025",
+   "ty": "Alerte",
+   "dom": "Autorisations & Sécurité",
+   "n": 5,
+   "dt": "2025-12",
+   "des": "ProVee : la FDA approuve un stent urétral prostatique pour l'HBP (9 décembre 2025) — une option non chirurgicale pour les hommes fragiles",
+   "tag": "ProVee · stent urétral prostatique · HBP · FDA · dispositif",
+   "res": "Le 9 décembre 2025 (date lue : « On December 9, 2025, the FDA approved the ProVee System », ProVerum), la FDA a approuvé le ProVee Urethral Expander System, stent/dilatateur urétral prostatique pour l'HBP : l'essai de phase 3 avait atteint tous ses critères d'efficacité et de sécurité (présenté à l'AUA 2025, lu via Urology Times) ; en janvier 2026, Butterfly Medical a annoncé l'achèvement du suivi 12 mois de son propre essai pivot international pour l'HBP (lu via MENAFN). À l'ère où les traitements médicamenteux restent le socle (AFU-CTMH 2025 en base), ces dispositifs visent les patients intolérants/inéligibles à la chirurgie. En officine : information à garder en tête pour les hommes fragiles sous HBP symptomatique mal contrôlée — des alternatives non chirurgicales émergent ; toujours en pose hospitalière, aucun produit vendu en officine ; poursuivre l'observance des traitements en cours et ne pas banaliser les rétentions aiguës (orientation urgente).",
+   "src": [
+    [
+     "Urology Times — approbation FDA du 9 décembre 2025",
+     "https://www.urologytimes.com/view/fda-approves-provee-system-for-benign-prostatic-hyperplasia"
+    ],
+    [
+     "Urology Times — phase 3 positive (AUA 2025)",
+     "https://www.urologytimes.com/view/investigational-provee-system-impresses-in-phase-3-trial-in-bph"
+    ],
+    [
+     "MENAFN — Butterfly Medical, suivi 12 mois achevé (janvier 2026)",
+     "https://menafn.com/1111855622/Benign-Prostatic-Hyperplasia-Pipeline-2026-Latest-FDA-Approvals-Clinical-Trials-And-Emerging-Therapies-Assessment-By-Delveinsight"
+    ]
+   ]
+  },
+  {
+   "id": "geri-02h-01",
+   "ty": "Officine",
+   "dom": "Seniors & polymédication",
+   "n": 2,
+   "dt": "2025-09",
+   "des": "FAMILY : un programme de prévention des chutes intégré aux soins primaires réduit les chutes des seniors (essai randomisé en grappes, JAMA)",
+   "tag": "chutes | prévention | soins primaires | FAMILY | essai en grappes",
+   "res": "Essai randomisé en grappes, 12 mois, 128 villages ruraux chinois, adultes ≥ 60 ans à risque de chutes : le programme intégré aux soins primaires réduit les chutes auto-rapportées vs soins usuels (29,7 % des participants du programme ont présenté ≥ 1 chute vs davantage dans le groupe contrôle, chiffre de chute lu dans la reprise McKnight's). Dates vérifiées : citation PubMed « 2025 Sep 23;334(12):1068-1076. doi: 10.1001/jama.2025.12724 » (PMID 40853561) et fiche JAMA vues. Distinct de l'entrée base « Pharmacien chutes BMC Geri 2024-07 » (grep vérifié). En officine : le pilier démontré de la prévention des chutes reste l'exercice/programme structuré — relayer les ateliers équilibre et vérifier les médicaments à risque de chute (FRIDs) sur l'ordonnance du chuteur.",
+   "src": [
+    [
+     "PubMed — FAMILY cluster randomized trial (2025 Sep 23;334(12):1068-1076)",
+     "https://pubmed.ncbi.nlm.nih.gov/40853561/"
+    ],
+    [
+     "JAMA — article FAMILY",
+     "https://doi.org/10.1001/jama.2025.12724"
+    ],
+    [
+     "McKnight's — reprise chiffrée de l'essai",
+     "https://www.mcknights.com/news/study-fall-prevention-program-significantly-reduces-falls-among-older-adults/"
+    ]
+   ]
+  },
+  {
+   "id": "geri-02h-02",
+   "ty": "Médicament",
+   "dom": "Neurologie",
+   "n": 2,
+   "dt": "2025-07",
+   "des": "US POINTER : un programme de vie structuré (exercice, alimentation, social, stimulation cognitive) protège la cognition des seniors à risque (JAMA)",
+   "tag": "démence | prévention | mode de vie | US POINTER | cognition",
+   "res": "Essai randomisé américain (présenté à l'AAIC 2025, publié dans JAMA le 28/07/2025 — date lue sur la page résultats de l'Alzheimer's Association) comparant 2 ans d'intervention multidomaine STRUCTURÉE vs autos guidée chez des seniors à risque de déclin cognitif : le bras structuré améliore la cognition globale et protège du déclin lié à l'âge jusqu'à 2 ans (résultats lus dans les reprises UC Davis/Alzheimer's Association). Première entrée US POINTER dans la base (grep vérifié) ; complète la Lancet Commission 2020 déjà en base. En officine : message concret au comptoir — bouger, manger méditerranéen, rester social et stimulé est une « ordonnance cerveau » qui marche, y compris sans médicament.",
+   "src": [
+    [
+     "Alzheimer's Association — résultats US POINTER (JAMA, 28/07/2025)",
+     "https://www.alz.org/us-pointer/study-results"
+    ],
+    [
+     "JAMA — US POINTER randomized clinical trial",
+     "https://jamanetwork.com/journals/jama/fullarticle/2837046"
+    ],
+    [
+     "UC Davis Health — reprise (juillet 2025)",
+     "https://health.ucdavis.edu/news/headlines/us-pointer-study-shows-lifestyle-program-improves-cognition-in-older-adults/2025/07"
+    ]
+   ]
+  },
+  {
+   "id": "geri-02h-03",
+   "ty": "Médicament",
+   "dom": "Seniors & polymédication",
+   "n": 3,
+   "dt": "2025-03",
+   "des": "BIO101 (20-hydroxyécdysone) dans la sarcopénie : résultats de la phase 2b SARA-INT (Journal of Cachexia, Sarcopenia and Muscle)",
+   "tag": "sarcopénie | BIO101 | 20-hydroxyécdysone | SARA-INT | phase 2b",
+   "res": "Essai de phase 2b randomisé en double aveugle (SARA-INT) chez des seniors sarcopéniques à risque de handicap de mobilité : BIO101, activateur du récepteur musculaire, évalué sur la vitesse de marche et la performance physique ; pas de traitement pharmacologique autorisé à ce jour dans la sarcopénie (lu sur la page SCWD) ; dans le sous-groupe SPPB chaise ≤ 2, différence vs placebo sur la vitesse de marche de 0,090 m/s (350 mg) lue dans l'extrait ResearchGate. Date vérifiée : communiqué Biophytis du 17/03/2025 annonçant la publication dans JCSM (doi 10.1002/jcsm.13750, fiche Wiley vue « 2025 »). Complète les entrées protéines/leucine sarcopénie déjà en base (grep vérifié). En officine : pour l'instant rien à délivrer — la prise en charge de la sarcopénie reste exercice + protéines ; les médicaments en développement (BIO101) ne sont pas des compléments alimentaires, ne pas laisser vendre la « 20E » en boutique sport.",
+   "src": [
+    [
+     "Wiley — BIO101 SARA-INT phase 2b (JCSM)",
+     "https://onlinelibrary.wiley.com/doi/10.1002/jcsm.13750"
+    ],
+    [
+     "SCWD — résumé de SARA-INT",
+     "https://society-scwd.org/bio101-in-sarcopenic-seniors-at-risk-of-mobility-disability-results-of-a-double-blind-randomised-interventional-phase-2b-trial/"
+    ],
+    [
+     "Nasdaq/Biophytis — communiqué de publication du 17/03/2025",
+     "https://www.nasdaq.com/press-release/biophytis-revolutionizes-sarcopenia-2025-03-17"
+    ]
+   ]
+  },
+  {
+   "id": "geri-02h-04",
+   "ty": "Officine",
+   "dom": "Seniors & polymédication",
+   "n": 2,
+   "dt": "2025-10",
+   "des": "IMPPP : la collaboration médecin–pharmacien + informatique NE réduit PAS les prescriptions potentiellement inappropriées (essai randomisé en grappes, Lancet Healthy Longevity)",
+   "tag": "polymédication | revue de médication | médecin–pharmacien | IMPPP | essai en grappes",
+   "res": "Essai randomisé en grappes pragmatique en soins primaires britanniques (IMPPP, Lancet Healthy Longevity 2025;6(10):100774 — volume/numéro/article lus sur les fiches Edimburgh/Bristol) : une intervention complexe associant collaboration généraliste–pharmacien, outils informatiques et engagement des cliniciens n'a PAS réduit les prescriptions potentiellement inappropriées chez les patients polymédiqués — un résultat « à contrecourant » des politiques d'investissement en pharmacie clinique (extrait lu : « did not reduce potentially inappropriate prescribing »). Aucune occurrence IMPPP en base (grep vérifié). En officine : résultat négatif important et honnête — un bilan de médication ne vaut que s'il aboutit à des décisions partagées ; le pharmacien doit viser des recommandations concrètes et suivies, pas un simple signalement.",
+   "src": [
+    [
+     "The Lancet Healthy Longevity — IMPPP cluster-randomised trial",
+     "https://www.thelancet.com/journals/lanhl/article/PIIS2666-7568(25)00093-5/fulltext"
+    ],
+    [
+     "University of Edinburgh — citation complète (6(10), article 100774)",
+     "https://www.research.ed.ac.uk/en/publications/optimising-polypharmacy-management-in-primary-care-through-genera/"
+    ],
+    [
+     "University of Bristol — fiche publication",
+     "https://research-information.bris.ac.uk/en/publications/optimising-polypharmacy-management-in-primary-care-through-genera/"
+    ]
+   ]
+  },
+  {
+   "id": "geri-02h-05",
+   "ty": "Médicament",
+   "dom": "Seniors & polymédication",
+   "n": 2,
+   "dt": "2026-03",
+   "des": "Déprescription par dôme informatique : l'essai JAMA Lauffenburger (aides EHR comportementales vs soins usuels)",
+   "tag": "déprescription | dossier médical électronique | EHR | nudges | JAMA",
+   "res": "Essai randomisé (JAMA 2026;335(12):1060-1069, doi 10.1001/jama.2025.26967 — citation complète lue sur JAMA Network et Ovid « March 24/31, 2026 » ; PMC12856743 : « Published Online: January 29, 2026 », « Issue date 2026 Mar 24 ») évaluant 2 interventions EHR conçues par sciences comportementales pour augmenter la déprescription de médicaments potentiellement inappropriés chez le sujet âgé vs soins usuels. La base compte plusieurs déprescriptions (BMC Geri, opioïdes/BZD, IPP, statines STREAM) mais aucun essai EHR/nudge (grep vérifié). En officine : l'automatisation seule ne suffira pas — l'entretien pharmaceutique humain reste le levier déprescription le plus proche du patient.",
+   "src": [
+    [
+     "JAMA — Electronic Health Record Intervention and Deprescribing (2026;335(12):1060-1069)",
+     "https://jamanetwork.com/journals/jama/fullarticle/2844545"
+    ],
+    [
+     "PMC — même article (Published Online: January 29, 2026)",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC12856743"
+    ],
+    [
+     "Ovid — citation JAMA 335(12):p 1060-1069, March 24/31, 2026",
+     "https://www.ovid.com/journals/jama/pdf/10.1001/jama.2025.26967~electronic-health-record-intervention-and-deprescribing-for"
+    ]
+   ]
+  },
+  {
+   "id": "geri-02h-06",
+   "ty": "Médicament",
+   "dom": "Seniors & polymédication",
+   "n": 2,
+   "dt": "2025-08",
+   "des": "Déprescrire insuline/sulfamides du senior diabétique : l'academic detailing + activation du patient avant la consultation marche (essai randomisé, JAMA Internal Medicine)",
+   "tag": "diabète du sujet âgé | déprescription | insuline | sulfamides | hypoglycémie",
+   "res": "Essai randomisé (JAMA Intern Med 2025 Aug 1;185(8):926-935, doi 10.1001/jamainternmed.2025.2015 — citation complète lue sur PubMed PMID 40549370 ; « Published online June 23, 2025 » lu sur Cardiology Advisor) chez des patients diabétiques de 75 ans et plus, HbA1c ≤ 8,0 %, traités par insuline et/ou sulfamides : le detailing académique des médecins + une activation du patient avant la visite augmentent significativement la déprescription, sans dégradation du contrôle glycémique ni hyperglycémie (résultats lus dans les reprises AJMC/Cardiology Advisor). Usage NOUVEAU vs déprescriptions déjà en base : ici le diabète/hypoglycémie iatrogène (grep vérifié). En officine : repérer l'ordonnance du senior diabétique « trop bien équilibré » sous sulfamide/insuline (HbA1c ≤ 8 %, épisodes de sueurs/tremblements) — moments propices à la discussion de simplification avec le médecin traitant.",
+   "src": [
+    [
+     "PubMed — Diabetes Deprescribing in Older Adults (2025 Aug 1;185(8):926-935)",
+     "https://pubmed.ncbi.nlm.nih.gov/40549370/"
+    ],
+    [
+     "JAMA Internal Medicine — article",
+     "https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2835615"
+    ],
+    [
+     "AJMC — reprise chiffrée",
+     "https://www.ajmc.com/view/previsit-tools-boost-diabetes-deprescribing-in-older-adults-study-finds"
+    ]
+   ]
+  },
+  {
+   "id": "geri-02h-07",
+   "ty": "Alimentation",
+   "dom": "Seniors & polymédication",
+   "n": 1,
+   "dt": "2025-02",
+   "des": "CNO et paramètres anthropométriques/fonctionnels du senior à domicile : la méta-analyse manquante (BMC Nutrition, 13/02/2025)",
+   "tag": "compléments nutritionnels oraux | CNO | dénutrition | senior | méta-analyse",
+   "res": "Revue systématique et méta-analyse d'ECR (BMC Nutrition, « Published: 13 February 2025 », Volume 11, article 42 — page Springer ouverte) sur les effets des compléments nutritionnels oraux sur les paramètres anthropométriques et fonctionnels des seniors vivant à domicile. Distincte de l'ECR Nutrients 17(15):2474 du 29/07/2025 déjà en base (apports nutritionnels) — ici l'axe est anthropométrie/fonction (grep vérifié). En officine : argument pour le conseil CNO chez le senior qui maigrit : au-delà des apports, viser le maintien du poids et de la fonction ; enrichissement + fractionnement en première intention, CNO si insuffisant.",
+   "src": [
+    [
+     "Springer — BMC Nutrition (Published: 13 February 2025, 11:42)",
+     "https://link.springer.com/article/10.1186/s40795-025-01010-8"
+    ]
+   ]
+  },
+  {
+   "id": "geri-02h-08",
+   "ty": "Médicament",
+   "dom": "Seniors & polymédication",
+   "n": 4,
+   "dt": "2025-12",
+   "des": "Seniors chuteurs aux urgences : jusqu'à 60 % d'antiplaquettaires et 29 % d'AOD jugés potentiellement inappropriés (JAMA-adjacent, Journal of the American Geriatrics Society)",
+   "tag": "iatrogénie | chute | antiplaquettaire | anticoagulant | AOD | aspirine",
+   "res": "Étude observationnelle (Journal of the American Geriatrics Society, doi 10.1111/jgs.70127 ; PMC12758105 : « Issue date 2025 Dec ») chez des seniors se présentant aux urgences pour une chute : forte prévalence d'usage probablement inapproprié d'antithrombotiques — aspirine 60 % (59/98), inhibiteurs P2Y12 53 %, warfarine 30 %, AOD 29 % (21/72 ; chiffres lus dans l'extrait PubMed 41014071) ; toutes classes confondues ≥ 30 % d'usages possiblement inappropriés, l'ED étant une opportunité de réévaluation. Aucune entrée « antithrombotiques chez le chuteur » en base (grep vérifié). En officine : chez le senior chuteur sous aspirine au long cours en prévention primaire, la question de l'arrêt mérite d'être posée au médecin — l'aspirine « préventive » n'est pas anodine quand on tombe.",
+   "src": [
+    [
+     "PubMed — Appropriateness of Antiplatelets and Anticoagulants Among Older Adults Experiencing Falls",
+     "https://pubmed.ncbi.nlm.nih.gov/41014071/"
+    ],
+    [
+     "PMC12758105 — Issue date 2025 Dec",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC12758105/"
+    ],
+    [
+     "Wiley — JAGS doi 10.1111/jgs.70127",
+     "https://agsjournals.onlinelibrary.wiley.com/doi/10.1111/jgs.70127"
+    ]
+   ]
+  },
+  {
+   "id": "geri-02h-09",
+   "ty": "Vaccin",
+   "dom": "Infectiologie & Vaccins",
+   "n": 4,
+   "dt": "2025-08",
+   "des": "Vaccin contre le zona (Shingrix) : efficacité réelle confirmée chez les 50 ans et plus atteints de maladies auto-immunes (Journal of Infectious Diseases)",
+   "tag": "zona | Shingrix | RZV | maladies auto-immunes | efficacité réelle",
+   "res": "Analyse d'efficacité réelle (Journal of Infectious Diseases, « 2025 Aug 11:jiaf395 » lu sur PubMed PMID 40795879 ; fiche Oxford vue) chez des adultes ≥ 50 ans atteints de maladies auto-immunes sélectionnées : le RZV prévient le zona dans cette population, de manière cohérente avec les études antérieures (conclusion lue). NOUVEAU usage vs ZOE-LTFU déjà en base (durée de protection) : ici la population immunisée-malade, question récurrente du comptoir chez le senior sous biothérapie/immunosuppresseurs. En officine : réponse patient sous traitement immuno-modulateur — la vaccination zona reste efficace et recommandée ; vérifier le schéma à 2 doses dans le carnet.",
+   "src": [
+    [
+     "PubMed — RZV effectiveness in autoimmune diseases (2025 Aug 11:jiaf395)",
+     "https://pubmed.ncbi.nlm.nih.gov/40795879/"
+    ],
+    [
+     "Oxford Academic — JID advance article jiaf395",
+     "https://academic.oup.com/jid/advance-article/doi/10.1093/infdis/jiaf395/8230148"
+    ]
+   ]
+  },
+  {
+   "id": "infectio-anakinra-cystite-recidivante-2026",
+   "ty": "Médicament",
+   "dom": "Infectiologie & Vaccins",
+   "n": 3,
+   "dt": "2026-02",
+   "des": "Anakinra vs nitrofurantoïne dans les cystites aiguës récidivantes : premier essai d'immunomodulation (anti-IL-1) contre l'antibiotique — phase 2 randomisée ouverte, non inférieure en apparence (Nature Microbiology)",
+   "tag": "anakinra · cystite récidivante · immunomodulation anti-IL-1",
+   "res": "Une approche entièrement nouvelle des infections urinaires récidivantes : au lieu de tuer la bactérie, cibler la réponse inflammatoire de la maladie. L'essai randomisé ouvert de phase 2, publié dans Nature Microbiology le 12 février 2026 (communiqué de l'industriel vu, article vu dans les résultats : « Targeted innate immune inhibition therapy compared with antibiotics for recurrent acute cystitis: a randomized, open-label phase 2 trial »), a comparé l'anakinra (antagoniste du récepteur de l'IL-1) à la nitrofurantoïne dans les cystites aiguës récidivantes ; la couverture spécialisée (titre vu) indique une non-infériorité apparente contre l'antibiotique, avec évaluation de l'efficacité aiguë ET de la sécurité à long terme. Voie anti-inflammatoire sans antibiotique = piste contre l'antibiorésistance, encore expérimentale. En officine : pas de changement de pratique — la nitrofurantoïne reste un traitement de référence des cystites ; informer les patientes qui posent des questions sur les alternatives « sans antibiotique » (canneberge, D-mannose, probiotiques) que l'immunomodulation est une piste de recherche prometteuse mais non disponible.",
+   "src": [
+    [
+     "Hamlet BioPharma — communiqué du 12 février 2026 (publication Nature Microbiology)",
+     "https://hamletbiopharma.com/press-release-lund-february-12th-2026-nature-microbiology-publishes-the-paper-targeted-innate-immune-inhibition-therapy-compared-with-antibiotics-for-recurrent/"
+    ],
+    [
+     "Nature Microbiology — article vu dans les résultats de recherche",
+     "https://www.nature.com/articles/s41564-026-02262-1"
+    ],
+    [
+     "Renal and Urology News — couverture de l'essai (titre vu)",
+     "https://www.renalandurologynews.com/news/anakinra-nitrofurantoin-acute-recurrent-cystitis-noninferior-treatment/"
+    ]
+   ]
+  },
+  {
+   "id": "infectio-glucocorticoides-pac-kenya-2025",
+   "ty": "Médicament",
+   "dom": "Infectiologie & Vaccins",
+   "n": 2,
+   "dt": "2025-12",
+   "des": "PAC sévère : l'essai pragmatique NEJM (Kenya, 18 hôpitaux publics, ~2 180 adultes) montre que les glucocorticoïdes en traitement adjuvant réduisent le risque de décès dans les contextes à faibles ressources (NEJM, 4 déc. 2025)",
+   "tag": "glucocorticoïdes · pneumonie aiguë communautaire · essai pragmatique",
+   "res": "Essai pragmatique randomisé ouvert conduit dans 18 hôpitaux publics au Kenya (extrait vu : ~2 180 adultes atteints de PAC inclus entre l'admission et l'initiation du traitement), publié dans le NEJM (date du numéro : 4 décembre 2025, vu sur la page PMC de l'article). Les glucocorticoïdes adjuvants peuvent réduire la mortalité des PAC sévères ; cette publication (dont l'interprétation clinique est aussi portée par une revue de contexte déjà présente dans la base) teste l'essentiel : le bénéfice tient aussi dans les contextes à faibles ressources avec moyens diagnostiques limités (résultat rapporté par la couverture médicale vue : réduction du risque de décès). En officine : sujet hospitalier — mais utile pour répondre aux patients sous corticoïdes traités pour une pneumonie, et rappeler que la cortisone ne soigne pas une pneumonie en ville : le traitement reste l'antibiotique, la vaccination (pneumocoque, grippe) la meilleure prévention.",
+   "src": [
+    [
+     "NEJM — A Pragmatic Trial of Glucocorticoids for Community-Acquired Pneumonia",
+     "https://www.nejm.org/doi/full/10.1056/NEJMoa2507100"
+    ],
+    [
+     "PMC — version auteur (issue date 2025 Dec 4, vue)",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC12659994/"
+    ],
+    [
+     "PubMed — 41159889",
+     "https://pubmed.ncbi.nlm.nih.gov/41159889/"
+    ]
+   ]
+  },
+  {
+   "id": "infectio-covid-vaccins-2025-2026-efficacite-2026",
+   "ty": "Vaccin",
+   "dom": "Infectiologie & Vaccins",
+   "n": 4,
+   "dt": "2026-06",
+   "des": "Efficacité intérimaire des vaccins COVID-19 2025-2026 (formulations mises à jour) : une protection supplémentaire au-delà de l'immunité préexistante contre les formes médicalement prises en charge (JAMA Network Open, juin 2026)",
+   "tag": "vaccin COVID-19 2025-2026 · efficacité vaccinale · test-negative design",
+   "res": "Étude cas-témoins à test négatif (design vu) dans le JAMA Network Open (2026;9(6):e2625152, citation vue) estimant l'efficacité intérimaire des vaccins COVID-19 2025-2026 chez les adultes immunocompétents ≥ 18 ans aux États-Unis, sur les passages aux urgences/consultations urgentes et les hospitalisations associées au COVID-19. Conclusion lue : la vaccination 2025-2026 est associée à une protection supplémentaire au-delà de l'immunité existante contre le COVID-19 médicalement pris en charge, y compris les passages aux urgences. En officine : argument solide et daté pour répondre aux patients qui demandent si la nouvelle campagne vaut la coupe — le vaccin mis à jour protège au-delà des infections et vaccinations passées, surtout chez le sujet âgé ou à risque.",
+   "src": [
+    [
+     "JAMA Network Open — Interim Estimated Effectiveness of 2025-2026 COVID-19 Vaccines in Adults Using a Test-Negative Design",
+     "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2850668"
+    ],
+    [
+     "PubMed — 42334917 (citation 2026;9(6):e2625152 vue)",
+     "https://pubmed.ncbi.nlm.nih.gov/42334917/"
+    ]
+   ]
+  },
+  {
+   "id": "infectio-conso-antibiotiques-ville-2024-hausse-2025",
+   "ty": "Alerte",
+   "dom": "Infectiologie & Vaccins",
+   "n": 5,
+   "dt": "2025-11",
+   "des": "La consommation d'antibiotiques en ville repart à la hausse en 2024 : la France reste 2e pays européen consommateur — Santé publique France communique les données 2014-2024 (18 novembre 2025)",
+   "tag": "consommation antibiotiques ville · France · hausse 2024",
+   "res": "À l'occasion de la semaine mondiale de sensibilisation aux antimicrobiens (18-24 novembre) et de la Journée européenne d'information sur les antibiotiques, Santé publique France publie (communiqué du 18 novembre 2025, page et PDF vus) ses données de surveillance de la consommation d'antibiotiques en secteur de ville 2014-2024 : après la baisse de 2023, les prescriptions et la consommation repartent à la hausse en 2024, et la France se classe 2e parmi les pays européens pour la consommation d'antibiotiques — d'où l'appel à poursuivre la sensibilisation des prescripteurs et des patients. En officine : acteur de première ligne du message « les antibiotiques ne sont pas automatiques » — rappeler les bonnes cibles (angine, cystite, pneumonie prouvées) et la non-utilité sur les viroses ; chaque boîte délivrée non justifiée entretient la résistance.",
+   "src": [
+    [
+     "Santé publique France — communiqué de presse du 18 novembre 2025 (page vue)",
+     "https://www.santepubliquefrance.fr/en/press/antibiotic-prescriptions-and-consumption-outpatient-sector-are-rise-2024"
+    ],
+    [
+     "Santé publique France — PDF du communiqué",
+     "https://www.santepubliquefrance.fr/sites/default/files/rdd/document/cp_Consommation_ATB_en_ville_2024.pdf"
+    ],
+    [
+     "Vidal — Consommation d'antibiotiques en France : une hausse significative en 2024",
+     "https://www.vidal.fr/actualites/37110-consommation-d-antibiotiques-en-france-une-hausse-significative-en-2024.html"
+    ]
+   ]
+  },
+  {
+   "id": "infectio-primo-resistance-ville-ehpad-2026",
+   "ty": "Alerte",
+   "dom": "Infectiologie & Vaccins",
+   "n": 5,
+   "dt": "2026-03",
+   "des": "Résistance bactérienne en soins de ville et en EHPAD (mission PRIMO, résultats 2024) : la fosfomycine et la nitrofurantoïne conservent une bonne efficacité sur les entérobactéries urinaires — mais les carbapénémases, encore faibles, augmentent régulièrement (Santé publique France, mars 2026)",
+   "tag": "antibiorésistance · soins de ville · EHPAD · PRIMO · E. coli",
+   "res": "Le rapport de surveillance de Santé publique France (PDF vu, « DATE DE PUBLICATION : MARS 2026 », données 2024) décrit la résistance bactérienne aux antibiotiques en soins de ville et en EHPAD (mission PRIMO) : points lus dans l'extrait — la fosfomycine comme la nitrofurantoïne conservaient une bonne efficacité sur les souches urinaires, et le portage de carbapénémases (résistance de dernier recours) restait faible en 2024 mais son augmentation régulière est à surveiller. Complément utile aux données de consommation 2024 (entrée précédente). En officine : deux antibiotiques « anciens » restent des piliers du conseil et de la délivrance des cystites simples — la fosfomycine dose unique et la nitrofurantoïne gardent leur place face aux résistances ; toujours vérifier l'antibiogramme en cas d'échec ou de récidive.",
+   "src": [
+    [
+     "Santé publique France — rapport PRIMO résultats 2024 (PDF daté mars 2026, vu)",
+     "https://www.santepubliquefrance.fr/sites/default/files/cadic_files/documents/spf00006552.pdf"
+    ],
+    [
+     "Antibioclic / REPIA-PRIMO — liste des rapports de surveillance (page vue)",
+     "https://antibioresistance.fr/en-region/rapports-surveillance-ratb"
+    ]
+   ]
+  },
+  {
+   "id": "infectio-mycoplasma-macrolides-resistance-2025",
+   "ty": "Médicament",
+   "dom": "Infectiologie & Vaccins",
+   "n": 4,
+   "dt": "2025-12",
+   "des": "Mycoplasma pneumoniae résistant aux macrolides chez l'enfant (Ohio, USA) : l'émergence documentée d'une résistance qui complique le traitement des pneumonies « atypiques » (Emerging Infectious Diseases, décembre 2025)",
+   "tag": "Mycoplasma pneumoniae · résistance aux macrolides · pneumonie atypique",
+   "res": "Article de surveillance publié dans Emerging Infectious Diseases (CDC) — Volume 31, Number 12, décembre 2025 (citation vue) : « Macrolide-Resistant Mycoplasma pneumoniae in Children, Ohio, USA ». Contexte lu dans les résultats voisins : la prévalence mondiale de la résistance aux macrolides de M. pneumoniae tournerait autour de 28 % avec de fortes variations géographiques, et les macrolides restent le traitement de première ligne — la résistance devient un enjeu de santé publique et de choix thérapeutique. En officine : les macrolides (azithromycine, clarithromycine) ne sont pas des traitements de première intention des pneumonies ; message d'hygiène et de bon usage — pas d'antibiotique pour une toux virale, et si un macrolide est prescrit pour une pneumonie atypique de l'enfant, l'échec sous traitement doit faire reconsulter (résistance possible) plutôt qu'allonger ou répéter le traitement.",
+   "src": [
+    [
+     "Emerging Infectious Diseases (CDC) — Macrolide-Resistant Mycoplasma pneumoniae in Children, Ohio, USA (Vol 31, No 12, décembre 2025)",
+     "https://wwwnc.cdc.gov/eid/article/31/12/25-1008_article"
+    ],
+    [
+     "CDC — Surveillance et tendances M. pneumoniae (page vue : prévalence ~28 %)",
+     "https://www.cdc.gov/mycoplasma/php/surveillance/index.html"
+    ]
+   ]
+  },
+  {
+   "id": "infectio-interactions-antibacteriens-recents-2026",
+   "ty": "Médicament",
+   "dom": "Infectiologie & Vaccins",
+   "n": 5,
+   "dt": "2026-04",
+   "des": "Interactions médicamenteuses des antibactériens récemment approuvés : une revue utile avant de délivrer les nouvelles molécules anti-Gram-négatif chez le patient polymédiqué (European Journal of Drug Metabolism and Pharmacokinetics, 13 avril 2026)",
+   "tag": "interactions médicamenteuses · antibactériens récents · polymédication",
+   "res": "Mini-revue (citation vue : Eur J Drug Metab Pharmacokinet. 2026 Apr 13;51(3):229–237) sur les interactions médicamenteuses (DDI) des antibactériens récemment approuvés : les DDI posent un problème important chez les patients âgés et polymorbides sous pharmacothérapie complexe, et l'ajout d'une antibiothérapie peut interférer (extrait lu). Pertinent alors que de nouveaux antibiotiques oraux arrivent (tébipéném pivoxil, pivmécillinam, sulopenem oral — cités dans la même veine par le guidance IDSA 2026). En officine : réflexe dédié — chaque nouvelle ordonnance d'antibiotique chez le polymédiqué passe par l'analyse d'interactions (induction/inhibition CYP, Warfarine/AVK, statines, antiarythmiques) avant la délivrance ; les nouvelles molécules ne dispensent pas du contrôle, au contraire.",
+   "src": [
+    [
+     "PubMed — Drug-Drug Interactions in Recently Approved Antibacterials: A Mini Review (41975132, citation 2026 Apr 13;51(3):229-237 vue)",
+     "https://pubmed.ncbi.nlm.nih.gov/41975132/"
+    ],
+    [
+     "PMC — texte intégral",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC13221413/"
+    ]
+   ]
+  },
+  {
+   "id": "infectio-grippe-vaccination-grossesse-umbrella-2025",
+   "ty": "Vaccin",
+   "dom": "Infectiologie & Vaccins",
+   "n": 1,
+   "dt": "2025-12",
+   "des": "Vaccination antigrippale pendant la grossesse : revue parapluie — protège la mère et le nourrisson des infections grippales confirmées sans augmenter les issues néonatales indésirables (Iranian Journal of Public Health, décembre 2025)",
+   "tag": "vaccin grippe · grossesse · nourrisson · revue parapluie",
+   "res": "Revue parapluie (citation vue : Iran J Public Health. 2025 Dec;54(12):2634–2646) évaluant les effets protecteurs de la vaccination antigrippale pendant la grossesse sur les mères et leurs nourrissons. Conclusion lue dans l'extrait : la vaccination pendant la grossesse réduit efficacement les infections grippales confirmées (LCI) chez les mères et les nourrissons sans augmenter les issues néonatales indésirables ; son impact sur les syndromes grippaux (ILI) reste non concluant. En officine : la vaccination antigrippale est recommandée à toutes les femmes enceintes ; cette synthèse fournit l'argument clé pour rassurer — le bénéfice est double (mère + bébé dans les 6 premiers mois, avant que l'enfant puisse être vacciné), et la sécurité néonatale est documentée.",
+   "src": [
+    [
+     "PubMed — Evaluating the Protective Effects of Influenza Vaccination in Pregnant Women and Their Infants: An Umbrella Review (42548923, citation 2025 Dec;54(12):2634-2646 vue)",
+     "https://pubmed.ncbi.nlm.nih.gov/42548923/"
+    ],
+    [
+     "PMC — texte intégral",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC13429959/"
+    ]
+   ]
+  },
+  {
+   "id": "douleur-tramadol-ebm-2025",
+   "ty": "Médicament",
+   "dom": "Douleur & Migraine",
+   "n": 1,
+   "dt": "2025-10",
+   "des": "Tramadol vs placebo dans la douleur chronique : pas d'efficacité significative, préjudices potentiels (revue systématique avec méta-analyse et analyse séquentielle du test, BMJ Evidence-Based Medicine)",
+   "tag": "tramadol · opioïde faible · douleur chronique",
+   "res": "Revue systématique d'essais randomisés comparant le tramadol au placebo dans la douleur chronique de l'adulte, avec méta-analyse et analyse séquentielle du test (publiée en ligne 26/09/2025, parue dans BMJ EBM début octobre 2025, relais Medscape du 13/10/2025). Conclusion des auteurs relayée : le tramadol n'est pas significativement efficace sur la douleur chronique pour laquelle il est largement prescrit, avec un risque accru d'effets indésirables sérieux dont maladie cardiaque ; les préjudices potentiels l'emportent probablement sur les bénéfices et l'usage devrait être minimisé. Complète l'entrée déjà en base sur la diminution d'efficacité des opioïdes au long cours (BJGP 2026-05). En officine : le tramadol a l'image d'un « opioïde faible et sûr » — cette méta-analyse la dément ; lors d'un renouvellement au long cours, rappeler l'absence de bénéfice démontré sur la douleur chronique et les risques (dépendance, effets indésirables cardiaques et digestifs) ; ordonnance sécurisée obligatoire depuis mars 2025.",
+   "src": [
+    [
+     "BMJ Evidence-Based Medicine (PDF)",
+     "https://ebm.bmj.com/content/ebmed/early/2025/09/26/bmjebm-2025-114101.full.pdf"
+    ],
+    [
+     "Medscape (13/10/2025)",
+     "https://www.medscape.com/viewarticle/time-reconsider-tramadol-chronic-pain-2025a1000ria"
+    ],
+    [
+     "BMJ Group (communiqué)",
+     "https://bmjgroup.com/widely-prescribed-opioid-painkiller-tramadol-not-that-effective-for-easing-chronic-pain/"
+    ]
+   ]
+  },
+  {
+   "id": "douleur-crisugabalin-aan-2026",
+   "ty": "Médicament",
+   "dom": "Douleur & Migraine",
+   "n": 3,
+   "dt": "2026-05",
+   "des": "Crisugabalin (HSK16149, gabapentinoïde de 3e génération) : phase 3 positive dans la douleur neuropathique centrale (résultats présentés à l'AAN 2026, n>400)",
+   "tag": "crisugabalin · HSK16149 · canal calcique α2δ-1 · douleur neuropathique centrale",
+   "res": "Essai de phase 3 multicentrique, randomisé, en double aveugle vs placebo (plus de 400 patients) du crisugabalin, nouveau ligand α2δ-1 de 3e génération (modulateur des canaux calciques, analogue GABA), déjà approuvé en Chine pour la douleur neuropathique périphérique : efficacité « hautement significative » à 12 semaines sur l'intensité douloureuse moyenne quotidienne dans la douleur neuropathique centrale modérée à sévère, sans nécessité de titration (données présentées en session late-breaking à l'AAN 2026, Chicago, 5 mars 2026 ; relais Medscape du 04/05/2026 et MIMS). Pas encore de publication primaire revue par les pairs au moment de la veille, pas d'AMM européenne. En officine : molécule à suivre pour la douleur neuropathique (une des cibles de l'année IASP 2026) ; rien à délivrer aujourd'hui en France, mais bon à connaître face aux patients épuisés par prégabaline/gabapentine.",
+   "src": [
+    [
+     "Medscape (04/05/2026)",
+     "https://www.medscape.com/viewarticle/novel-med-effective-neuropathic-pain-phase-3-trial-2026a1000e5m"
+    ],
+    [
+     "AAN 2026 — résumé de la session late-breaking",
+     "https://www.aan.com/msa/Public/Events/AbstractDetails/65032"
+    ],
+    [
+     "MIMS Philippines",
+     "https://www.mims.com/philippines/news-updates/topic/investigational-calcium-channel-modulator-alleviates-central-neuropathic-pain"
+    ]
+   ]
+  },
+  {
+   "id": "douleur-qutenza-rise-2026",
+   "ty": "Médicament",
+   "dom": "Douleur & Migraine",
+   "n": 3,
+   "dt": "2026-10",
+   "des": "Qutenza (patch capsaïcine 8 %) : phase 3 RISE positive dans la douleur neuropathique post-chirurgicale (n=409, données IASP 2026, Bangkok)",
+   "tag": "Qutenza · capsaïcine 8 % topique · douleur neuropathique post-opératoire",
+   "res": "Essai de phase 3 RISE (NCT04967664, n=409) du patch de capsaïcine 8 % vs contrôle (capsaïcine à faible dose) dans la douleur neuropathique post-chirurgicale : réduction de l'intensité douloureuse moyenne sur les semaines 2-12 statistiquement supérieure au contrôle (un des critères principaux), mais à la semaine 12 seule la différence numérique favorise Qutenza (non significative) ; dans la phase d'extension avec jusqu'à 4 réapplications, la supériorité est maintenue sur les semaines 2-42 ; pas de nouveau signal de sécurité. Données présentées le 28/10/2026 en late-breaking au Congrès mondial IASP 2026 (Bangkok) ; Qutenza est déjà AMM en Europe pour la douleur neuropathique périphérique de l'adulte. En officine : patch appliqué en clinique (pas délivré en officine) mais le patient demandera des explications — brûlure transitoire lors de la pose, réapplications possibles ; option topique sans système, utile chez le patient polymédiqué.",
+   "src": [
+    [
+     "Grünenthal (communiqué du 28/10/2026)",
+     "https://www.grunenthal.com/press-room/press-releases/2026/gruenenthal-presents-qutenza-phase-iii-rise-trial-data-at-iasp-2026"
+    ],
+    [
+     "PR Newswire",
+     "https://www.prnewswire.com/news-releases/grunenthal-presents-phase-iii-results-for-qutenza-in-post-surgical-neuropathic-pain-at-iasp-2026-world-congress-on-pain-302921015.html"
+    ],
+    [
+     "Clinical Trial Vanguard",
+     "https://www.clinicaltrialvanguard.com/news/qutenza-meets-primary-pain-endpoint-in-post-surgical-neuropathy-trial/"
+    ]
+   ]
+  },
+  {
+   "id": "douleur-buprenorphine-patch-lombalgie-2026",
+   "ty": "Médicament",
+   "dom": "Douleur & Migraine",
+   "n": 2,
+   "dt": "2026-06",
+   "des": "Buprénorphine transdermale dans la lombalgie chronique : bénéfice analgésique limité, la méta-analyse ne soutient pas l'usage systématique (Pain Practice)",
+   "tag": "buprénorphine transdermale · patch · lombalgie chronique",
+   "res": "Méta-analyse d'essais randomisés (recherche PubMed/Scopus/Embase/CENTRAL jusqu'à juin 2025, Pain Practice 2026;26(5):e70155, PMID 42080826) comparant la buprénorphine transdermale au placebo dans la lombalgie chronique de l'adulte : l'effet antalgique est limité (bénéfice faible sur l'intensité douloureuse), léger gain possible sur la qualité du sommeil, mais potentiel d'effets indésirables augmenté ; les auteurs concluent que les preuves actuelles ne soutiennent pas l'usage systématique de la buprénorphine transdermale dans la lombalgie chronique. Nuance utile : la buprénorphine reste l'opioïde le plus sûr sur le plan respiratoire (données déjà en base sur les formes LP dans le trouble de l'usage). En officine : pour un patient sous patch « pour le dos », pas de surprise si le médecin propose un arrêt ; vérifier la rotation à la constipation, la surveillance de la sédation et l'absence de découpe du patch.",
+   "src": [
+    [
+     "Pain Practice (Wiley)",
+     "https://onlinelibrary.wiley.com/doi/10.1111/papr.70155"
+    ],
+    [
+     "PubMed (PMID 42080826)",
+     "https://pubmed.ncbi.nlm.nih.gov/42080826/"
+    ],
+    [
+     "Ovid — Pain Practice 26(5), June 2026",
+     "https://www.ovid.com/journals/painp/fulltext/10.1111/papr.70155~evaluation-of-the-efficacy-of-transdermal-buprenorphine-in"
+    ]
+   ]
+  },
+  {
+   "id": "migraine-dysport-beond-2026",
+   "ty": "Médicament",
+   "dom": "Douleur & Migraine",
+   "n": 3,
+   "dt": "2026-07",
+   "des": "Dysport (abobotulinumtoxinA) : premières phases 3 positives en PRÉVENTION de la migraine épisodique ET chronique (programme BEOND, topline Ipsen du 09/07/2026)",
+   "tag": "abobotulinumtoxinA · Dysport · toxine botulique · migraine épisodique et chronique",
+   "res": "Résultats topline des deux essais de phase 3 E-BEOND (migraine épisodique) et C-BEOND (migraine chronique) du programme BEOND : Dysport (abobotulinumtoxinA) atteint le critère principal (réduction du nombre de jours de migraine par mois vs placebo) dans les DEUX essais — une première pour une toxine botulique en migraine épisodique (définie ici comme ≤ 14 jours de céphalées/mois dont ≥ 6 jours de migraine) ; tolérance cohérente avec le profil connu, pas de signal nouveau (communiqué Ipsen du 9 juillet 2026, repris par l'AFP le même jour). Aucun chiffre détaillé publié à ce stade (topline), pas d'AMM migraine. En officine : pour l'instant seule la toxine onabotulinumtoxinA (Botox) a l'AMM migraine chronique ; ces résultats pourraient élargir l'offre préventive — patients sous CGRP ou toxine, pas de changement immédiat.",
+   "src": [
+    [
+     "Ipsen (communiqué du 09/07/2026)",
+     "https://www.ipsen.com/press-release/dysport-is-the-first-botulinum-toxin-to-achieve-positive-topline-phase-iii-results-in-both-episodic-and-chronic-migraine-3324543/"
+    ],
+    [
+     "AFP (09/07/2026)",
+     "news-afp-20260709-9315181a"
+    ],
+    [
+     "NeurologyLive",
+     "https://www.neurologylive.com/view/abobotulinumtoxina-meets-primary-end-points-phase-3-program-both-episodic-chronic-migraine"
+    ]
+   ]
+  },
+  {
+   "id": "lombalgie-pacback-jama-2026",
+   "ty": "Médicament",
+   "dom": "Douleur & Migraine",
+   "n": 2,
+   "dt": "2026-02",
+   "des": "PACBACK (JAMA) : la manipulation vertébrale + auto-prise en charge biopsychosociale guidée réduisent le handicap de la lombalgie aiguë vs soins guidés par les recommandations",
+   "tag": "lombalgie aiguë · manipulation vertébrale · auto-prise en charge biopsychosociale · PACBACK",
+   "res": "Essai randomisé factoriel 2×2 financé par le NIH (3 centres universitaires US, recrutement nov 2018–mai 2023, suivi final juin 2024), publié dans JAMA le 10/02/2026 (2026;335(6):497-510, PMID 41460638) :chez l'adulte avec lombalgie aiguë ou subaiguë, la combinaison manipulation vertébrale + auto-prise en charge biopsychosociale soutenue par un clinicien réduit le handicap (disabilité) à 6 mois vs soins médicaux guidés par les recommandations ; l'effet est décrit comme modeste. Un des plus grands essais non pharmacologiques de la lombalgie aiguë. En officine : argument solide pour orienter vers kiné/ostéopathie encadrée et réassurance active plutôt que vers l'empilement d'antalgiques dans la lombalgie aiguë ; les AINS courts restent l'antalgique de choix si besoin.",
+   "src": [
+    [
+     "JAMA",
+     "https://jamanetwork.com/journals/jama/fullarticle/2843255"
+    ],
+    [
+     "PubMed (PMID 41460638) — 2026 Feb 10;335(6):497-510",
+     "https://pubmed.ncbi.nlm.nih.gov/41460638/"
+    ],
+    [
+     "Clinical Pain Advisor",
+     "https://www.clinicalpainadvisor.com/news/clinician-supported-self-management-reduces-disability-in-acute-low-back-pain/"
+    ]
+   ]
+  },
+  {
+   "id": "lombalgie-paracetamol-celecoxib-2025",
+   "ty": "Médicament",
+   "dom": "Douleur & Migraine",
+   "n": 3,
+   "dt": "2025-12",
+   "des": "Lombalgie chronique : le paracétamol non inférieur au célécoxib dans un essai national japonais en ouvert (Scientific Reports, 09/12/2025)",
+   "tag": "paracétamol · célécoxib · AINS · lombalgie chronique",
+   "res": "Essai randomisé ouvert de non-infériorité, multicentrique national japonais, comparant quatre traitements pharmacologiques représentatifs de la lombalgie chronique — paracétamol, célécoxib, loxoprène et association tramadol+paracétamol (Scientific Reports, DOI 10.1038/s41598-025-31094-y, publié le 09/12/2025 selon l'ORCID de l'auteur, PMID 41366055) : le paracétamol fournit des effets analgésiques comparables au célécoxib dans la lombalgie chronique (non-infériorité), un résultat notable alors que les recommandations sont contradictoires faute de preuves de qualité. Nuance : essai ouvert (pas d'aveugle), population japonaise. Complète l'entrée base « paracétamol décevant dans la lombalgie » (revue BMJ+OPAL 2024-06) : ici un essai comparatif direct favorable au paracétamol. En officine : le paracétamol reste une option de 1re intention bien tolérée (max 3 g/j en automédication), alternative utile chez le patient à risque digestif ou rénal sous AINS.",
+   "src": [
+    [
+     "Scientific Reports",
+     "https://www.nature.com/articles/s41598-025-31094-y"
+    ],
+    [
+     "PubMed (PMID 41366055)",
+     "https://pubmed.ncbi.nlm.nih.gov/41366055/"
+    ],
+    [
+     "ORCID K. Hayashi — date de publication 2025-12-09",
+     "https://orcid.org/0000-0002-3999-137X"
+    ]
+   ]
+  },
+  {
+   "id": "opioides-buprenorphine-switch-jamaim-2025",
+   "ty": "Médicament",
+   "dom": "Douleur & Migraine",
+   "n": 2,
+   "dt": "2025-04",
+   "des": "Proposer le switch vers la buprénorphine aux patients sous opioïdes forts au long cours à forte dose : pas d'amélioration de la douleur ni de réduction des doses (RCT JAMA Internal Medicine)",
+   "tag": "buprénorphine · opioïdes forts · déprescription · douleur chronique non cancéreuse",
+   "res": "Essai randomisé de 12 mois (option de passage à la buprénorphine proposée vs soins usuels) chez des patients sous opiothérapie de type agoniste plein au long cours à forte dose (JAMA Internal Medicine, avril 2025;185(4):372-381, DOI 10.1001/jamainternmed.2024.8361, essai mené à Yale) : proposer le switch vers la buprénorphine n'a pas amélioré la douleur ni réduit significativement la dose d'opioïdes ; les résultats étaient similaires entre groupes. Message nuancé : la buprénorphine reste l'opioïde le plus sûr (marge respiratoire), mais ce stratagème d'optimisation ne suffit pas seul — la réduction d'opioïdes doit s'accompagner d'un accompagnement (données déjà en base sur le pharmacien consultant). En officine : lors d'un renouvellement d'opioïdes forts au long cours, pas de Message « il faut passer au patch buprénorphine » ; en revanche, repérer les signes d'hyperalgésie, constipation non traitée, sédation et orienter vers une consultation de réévaluation.",
+   "src": [
+    [
+     "JAMA Internal Medicine",
+     "https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2830018"
+    ],
+    [
+     "Ovid — JAMA Intern Med 185(4):372-381, April 2025",
+     "https://www.ovid.com/journals/jaim/abstract/10.1001/jamainternmed.2024.8361~buprenorphine-pain-and-opioid-use-in-patients-taking"
+    ],
+    [
+     "Yale School of Medicine",
+     "https://medicine.yale.edu/publication-details/buprenorphine-vs-opioids-no-added-pain-relief-or-opioid-dose-reduction/"
+    ]
+   ]
+  },
+  {
+   "id": "douleur-pregabaline-duloxetine-fdn-2026",
+   "ty": "Médicament",
+   "dom": "Douleur & Migraine",
+   "n": 2,
+   "dt": "2026-03",
+   "des": "Prégabaline + duloxétine dans la neuropathie diabétique douloureuse : preuves de faible certitude en faveur de l'association vs monothérapie (méta-analyse Frontiers in Endocrinology)",
+   "tag": "prégabaline + duloxétine · neuropathie diabétique douloureuse · association",
+   "res": "Revue systématique et méta-analyse d'essais randomisés (recherche jusqu'au 1er novembre 2025, Frontiers in Endocrinology, publié le 11 mars 2026, DOI 10.3389/fendo.2026.1750441) : des preuves de FAIBLE certitude suggèrent que l'association prégabaline + duloxétine améliore les scores de douleur à court terme vs monothérapie dans la neuropathie diabétique douloureuse ; les résultats de sécurité restent incertains (peu d'essais, imprécision). En officine : si le médecin associe les deux, prévenir le patient des effets additifs (sédation, vertiges, œdèmes pour la prégabaline, nausées pour la duloxétine) et déconseiller l'alcool ; ne pas présenter l'association comme une évidence — la certitude des preuves est faible.",
+   "src": [
+    [
+     "Frontiers in Endocrinology (11/03/2026)",
+     "https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2026.1750441/full"
+    ],
+    [
+     "PubMed",
+     "https://pubmed.ncbi.nlm.nih.gov/41890179/"
+    ]
+   ]
+  },
+  {
+   "id": "obesite-maridebart-phase2-nejm-2025",
+   "ty": "Médicament",
+   "dom": "Obésité & Métabolisme",
+   "n": 2,
+   "dt": "2025-09",
+   "des": "Maridebart cafraglutide (MariTide, Amgen) : la phase 2 confirme une injection mensuelle (GLP-1 agoniste + GIP antagoniste) — jusqu'à ~20 % de perte de poids (NEJM)",
+   "tag": "maridebart cafraglutide · MariTide · peptide-anticorps GLP-1/GIP · obésité et DT2",
+   "res": "Essai de phase 2 randomisé, en double aveugle (NEJM, numéro du 4 septembre 2025, PMID 40549887 ; données présentées à l'ADA 2025) : le maridebart cafraglutide, conjugué peptide-anticorps de longue demi-vie (~21 jours) combinant agonisme GLP-1 et antagonisme du récepteur GIP, administré UNE FOIS PAR MOIS, entraîne une perte de poids dose-dépendante jusqu'à 19,9 % chez l'obèse sans diabète (52 semaines) et ~17 % chez l'obèse avec diabète de type 2, vs ~0,6-0,7 % sous placebo — d'où son passage en phase 3. GI principaux effets indésirables (nausées, sans plateau clair à 1 an selon les relais). Complète le paysage déjà en base (tirzépatide, sémaglutide, orforglipron, cagriSema, retatrutide, survodutide) : ici un candidat MENSUEL, argument observance. En officine : rien à délivrer aujourd'hui (pas d'AMM), mais le « une injection par mois » répond à l'objection n°1 des patients sous GLP-1 hebdomadaires ; ne pas survendre, la phase 3 est en cours.",
+   "src": [
+    [
+     "NEJM — Once-Monthly Maridebart Cafraglutide for the Treatment of Obesity — A Phase 2 Trial",
+     "https://www.nejm.org/doi/10.1056/NEJMoa2504214"
+    ],
+    [
+     "PubMed (PMID 40549887)",
+     "https://pubmed.ncbi.nlm.nih.gov/40549887/"
+    ],
+    [
+     "AJMC",
+     "https://www.ajmc.com/view/weight-loss-drug-maridebart-cafraglutide-shows-efficacy-in-phase-2-trial"
+    ],
+    [
+     "HCPLive (ADA 2025)",
+     "https://www.hcplive.com/view/once-monthly-obesity-drug-maritide-achieves-weight-loss-up-to-16-at-1-year"
+    ]
+   ]
+  },
+  {
+   "id": "obesite-bimagrumab-believe-natmed-2026",
+   "ty": "Médicament",
+   "dom": "Obésité & Métabolisme",
+   "n": 2,
+   "dt": "2026-03",
+   "des": "Bimagrumab + sémaglutide (BELIEVE, phase 2) : perte de poids supérieure avec PRÉSERVATION de la masse maigre — la réponse au problème « GLP-1 et muscle » (Nature Medicine)",
+   "tag": "bimagrumab · semaglutide · récepteur de l'activine de type II · masse maigre · obésité",
+   "res": "Essai randomisé de phase 2 en double aveugle, 507 adultes obèses (IMC ≥ 30, ou ≥ 27 avec complication, sans diabète), 9 groupes, 48 semaines de traitement (Nature Medicine, publication début mars 2026 — relais du 05/03/2026) : le bimagrumab (anticorps anti-récepteur de l'activine de type II) ajouté au sémaglutide entraîne une réduction pondérale jusqu'à 17,8 kg vs jusqu'à 14,2 kg sous sémaglutide seul, avec réduction accrue de la masse grasse viscérale et PRÉSERVATION de la masse maigre (vs perte de masse maigre bien connue sous GLP-1 seuls — entrée « GLP-1 et muscle » déjà en base). Perspective « qualité de la perte de poids » pertinente pour l'obésité sarcopénique. En officine : molécule investigational (Novartis) ; pour les patients inquiets de « perdre du muscle » sous Wegovy/Mounjaro, message honnête : les protéines et la musculation restent la seule stratégie disponible aujourd'hui, mais des combinaisons préservant le muscle arrivent (phase 3 à confirmer).",
+   "src": [
+    [
+     "Nature Medicine — Bimagrumab plus semaglutide… randomized phase 2 trial",
+     "https://www.nature.com/articles/s41591-026-04204-0"
+    ],
+    [
+     "Weill Cornell (résumé structuré de l'essai)",
+     "https://vivo.weill.cornell.edu/display/pubid41772149"
+    ],
+    [
+     "Medical Xpress (05/03/2026)",
+     "https://medicalxpress.com/news/2026-03-trial-glp-combo-therapy-fat.html"
+    ],
+    [
+     "Pennington Biomedical Research Center",
+     "https://www.pbrc.edu/news/media/2026/semaglutide_and_bimagrumab.aspx"
+    ]
+   ]
+  },
+  {
+   "id": "obesite-survodutide-synchronize1-nejm-2026",
+   "ty": "Médicament",
+   "dom": "Obésité & Métabolisme",
+   "n": 2,
+   "dt": "2026-06",
+   "des": "Survodutide : la phase 3 SYNCHRONIZE-1 confirme le double agoniste glucagon/GLP-1 dans l'obésité SANS diabète — jusqu'à ~16,6 % de poids à 76 semaines (NEJM)",
+   "tag": "survodutide · BI 456906 · SYNCHRONIZE-1 · double agoniste glucagon/GLP-1 · obésité sans DT2",
+   "res": "Essai de phase 3 randomisé (n=725 adultes obèses ou en surpoids avec complication, SANS diabète, 1:1:1, 76 semaines), publié en ligne le 7 juin 2026 dans le NEJM (DOI 10.1056/NEJMoa2600751, PMID 42253238) pour coïncider avec l'ADA 2026 : le survodutide (Boehringer Ingelheim, sous licence Zealand) à raison d'une injection hebdomadaire réduit le poids jusqu'à ~16,6 % selon l'estimand efficacité (analyse secondaire de sous-étude : jusqu'à −34 % de graisse viscérale, part de perte de masse maigre ≤ 11,3 % de la variation de masse totale à la plus forte dose). Le programme SYNCHRONIZE-2 (obésité + DT2, NEJM, DOI 10.1056/NEJMoa2607219, PMID 42820639) confirme dans la même période. Distinct de l'entrée déjà en base « SYNCHRONIZE-MASLD » (population foie gras, Nature Medicine) : ici la population est l'obésité sans diabète — indication pivot. En officine : candidat hebdomadaire de la vague post-GLP-1 (effet glucagon = dépense énergétique + graisse viscérale) ; les GI dominent comme pour les autres agonistes, pas d'AMM à ce jour.",
+   "src": [
+    [
+     "PubMed (PMID 42253238) — 2026 Jun 7, NEJM",
+     "https://pubmed.ncbi.nlm.nih.gov/42253238/"
+    ],
+    [
+     "Boehringer Ingelheim — communiqué SYNCHRONIZE-1 (28/04/2026)",
+     "https://www.boehringer-ingelheim.com/us/human-health/metabolic-diseases/results-phase-iii-synchronize-1-obesity-trial"
+    ],
+    [
+     "Boehringer Ingelheim — SYNCHRONIZE-2 (NEJM, DOI 10.1056/NEJMoa2607219)",
+     "https://www.boehringer-ingelheim.com/us/human-health/crm-health/metabolic-health/survodutide-synchronize-2-phase-3-obesity-type-2-diabetes-results"
+    ],
+    [
+     "Compound Chronicle — SYNCHRONIZE-1 dans le NEJM",
+     "https://compoundchronicle.com/survodutide-obesity-phase3-nejm/"
+    ]
+   ]
+  },
+  {
+   "id": "obesite-amycretin-lancet-2025",
+   "ty": "Médicament",
+   "dom": "Obésité & Métabolisme",
+   "n": 3,
+   "dt": "2025-06",
+   "des": "Amycretin (Novo Nordisk) : l'agoniste unimoléculaire GLP-1 + amyline franchit le cap des −24 % en phase 1b/2a sous-cutanée (Lancet) — la phase 3 démarre",
+   "tag": "amycretin · GLP-1 + amyline · obésité · phase 1b/2a",
+   "res": "Essai randomisé de phase 1b/2a (125 adultes de 18-55 ans en surpoids/obésité, IMC 25-34,9, jusqu'à 36 semaines) publié dans The Lancet le 20 juin 2025 (communiqué Novo Nordisk du même jour ; ACC journal scan du 02/07/2025) : l'amycretin, agoniste unimoléculaire des récepteurs GLP-1 et amyline, administré une fois par semaine en sous-cutané, entraîne une perte de poids estimée jusqu'à −24,3 % (60 mg, semaine 36) vs −1,1 % sous placebo (p<0,0001), sans plateau observé à 36 semaines ; profil de tolérance digestif comparable aux agonistes GLP-1/amyline (nausées surtout). Novo Nordisk a engagé le développement de phase 3 sur la base de ces résultats. NOTE DE VEILLE : cette molécule avait été écartée à la dose du 13/11 15h « faute de mois vérifiable » — le mois est désormais vérifié (20/06/2025, publication + communiqué datés), l'entrée est donc recalerverée. En officine : pas d'AMM (suivi phase 3) ; c'est la piste « amyline » la plus avancée côté Novo, à citer aux patients qui demandent « ce qui vient après Wegovy » sans promettre de délai.",
+   "src": [
+    [
+     "The Lancet — Amycretin… phase 1b/2a randomised controlled study",
+     "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(25)01185-7/abstract"
+    ],
+    [
+     "Novo Nordisk (PR Newswire, 20/06/2025)",
+     "https://www.prnewswire.com/news-releases/novo-nordisk-advances-early-stage-obesity-medication-amycretin-to-phase-3-clinical-development-based-on-early-phase-clinical-trial-results-in-people-with-obesity-or-excess-weight-published-in-the-lancet-302487500.html"
+    ],
+    [
+     "ACC — journal scan (02/07/2025)",
+     "https://www.acc.org/latest-in-cardiology/journal-scans/2025/07/02/14/43/oral-subcutaneous-amycretin"
+    ]
+   ]
+  },
+  {
+   "id": "obesite-retatrutide-triumph1-topline-2026",
+   "ty": "Médicament",
+   "dom": "Obésité & Métabolisme",
+   "n": 3,
+   "dt": "2026-05",
+   "des": "Retatrutide TRIUMPH-1 (topline, 21/05/2026) : le triple agoniste atteint ~28,3 % de perte de poids à 80 semaines dans l'obésité sans diabète — du niveau chirurgie bariatrique",
+   "tag": "retatrutide · TRIUMPH-1 · triple agoniste GIP/GLP-1/glucagon · obésité sans DT2",
+   "res": "Résultats topline de TRIUMPH-1 (communiqué Eli Lilly du 21 mai 2026) : chez 2 339 adultes avec obésité (ou surpoids + ≥ 1 comorbidité) SANS diabète, le retatrutide (triple agoniste GIP/GLP-1/glucagon) réduit le poids de ~19 % (4 mg), ~24 % (8 mg) et ~28,3 % (12 mg) à 80 semaines vs placebo, tous critères principaux atteints (relais Quartz : −70,3 lb en moyenne à la dose max, près d'1 patient sur 2 à ≥ 30 %). ATTENTION : topline seulement, pas de publication primaire revue par les pairs au 14/11/2026. Distinct des essais retatrutide déjà en base (TRIUMPH-2 obésité+DT2, TRANSCEND-T2D-1, TRIUMPH-4 gonarthrose). En officine : le palier « −30 % pharmacologique » se rapproche ; pour le patient candidat légitime à une chirurgie mais réticent, c'est une piste à évoquer avec le médecin — sans rien promettre tant que la publication n'est pas là.",
+   "src": [
+    [
+     "Eli Lilly — communiqué TRIUMPH-1 (21/05/2026)",
+     "https://investor.lilly.com/news-releases/news-release-details/lillys-triple-agonist-retatrutide-delivered-powerful-weight-loss"
+    ],
+    [
+     "PR Newswire (21/05/2026)",
+     "https://www.prnewswire.com/news-releases/lillys-triple-agonist-retatrutide-delivered-powerful-weight-loss-in-pivotal-phase-3-obesity-trial-302778859.html"
+    ],
+    [
+     "Quartz (21/05/2026)",
+     "https://qz.com/eli-lilly-retatrutide-phase-3-obesity-trial-results-052126"
+    ],
+    [
+     "The Pharmaceutical Journal",
+     "https://pharmaceutical-journal.com/article/news/phase-iii-retatrutide-study-demonstrates-30-weight-loss"
+    ]
+   ]
+  },
+  {
+   "id": "nutrition-fibres-umbrella-clinnutr-2025",
+   "ty": "Alimentation",
+   "dom": "Nutrition & Compléments",
+   "n": 1,
+   "dt": "2025-07",
+   "des": "Fibres alimentaires : l'umbrella review de 17 millions d'individus (33 méta-analyses, 38 issues) — preuve « convaincante » pour mortalité CV, diabète, cancer colorectal (Clinical Nutrition)",
+   "tag": "fibres alimentaires · umbrella review · mortalité cardiovasculaire · prévention",
+   "res": "Umbrella review de méta-analyses (Veronese et al., Clinical Nutrition vol. 51, 325-333, publiée le 7 juillet 2025, DOI 10.1016/j.clnu.2025.06.021, PMID 40651334) : 33 méta-analyses couvrant 38 issues de santé et 17 155 277 individus ; 29/33 (76 %) méta-analyses trouvent une association inverse significative entre consommation accrue de fibres et risque de maladie ; preuve de classe I (« convincing ») pour la mortalité cardiovasculaire (entre autres), et « highly suggestive » pour diverticulose, plusieurs cancers et mortalité toutes causes (relais healthcert). Confirme en un seul document le message officinal « mangez plus de fibres » (légumineuses, céréales complètes, fruits/légumes) ; distinct des entrées fibres déjà en base (psyllium du SII, rifaximine vs FODMAP). En officine : argument chiffré et simple pour le comptoir — la plupart des adultes consomment moins de la moitié des apports recommandés ; avancer par paliers pour limiter les ballonnements, associser hydratation.",
+   "src": [
+    [
+     "Clinical Nutrition — abstract (S0261-5614(25)00175-X)",
+     "https://www.clinicalnutritionjournal.com/article/S0261-5614(25)00175-X/abstract"
+    ],
+    [
+     "Scilit — 7 July 2025, Vol. 51, 325-333, DOI 10.1016/j.clnu.2025.06.021",
+     "https://www.scilit.com/publications/0a059edf90fad11e8c8e9f5d43aff448"
+    ],
+    [
+     "PubMed (PMID 40651334)",
+     "https://pubmed.ncbi.nlm.nih.gov/40651334/"
+    ],
+    [
+     "Calorie Control Council (relais)",
+     "https://caloriecontrol.org/the-impact-of-dietary-fiber-consumption-on-human-health-an-umbrella-review-of-evidence-from-17155277-individuals/"
+    ]
+   ]
+  },
+  {
+   "id": "nutrition-erythritol-aric-jaccadv-2025",
+   "ty": "Alimentation",
+   "dom": "Nutrition & Compléments",
+   "n": 2,
+   "dt": "2025-02",
+   "des": "Érythritol et érythronate plasmatiques associés aux événements cardiovasculaires du senior : la grande cohorte ARIC à l'appui (JACC: Advances)",
+   "tag": "érythritol · édulcorant · érythronate · ARIC · événements cardiovasculaires",
+   "res": "Étude de cohorte ARIC (Abushamat et al., JACC: Advances, vol. 4, publié le 20 février 2025) : chez les adultes plus âgés, les concentrations circulantes d'érythritol (polyol édulcorant MAIS aussi métabolite endogène produit par la voie pentose phosphate) et de son métabolite aval, l'érythronate, sont associées aux facteurs de risque cardiovasculaire et aux événements (maladie coronarienne, AVC) — l'association suit un gradient, indépendamment du diabète. Les auteurs concluent que le rôle de l'érythronate et de ses voies métaboliques en maladie CV reste à élucider. Nuance clé pour le comptoir : cette cohorte mesure l'érythritol CIRCULANT (largement endogène), ce n'est pas un essai sur la consommation d'érythritol alimentaire — deux MR 2025 (publiées 2025, PMID 41137360/41141604) triangulent néanmoins un risque accru de CHD/AVC. Distinct de l'entrée base « aspartame et glycémie ». En officine : ne pas transformer l'étude en « l'érythritol tue » ; en revanche, chez le patient cardiovasculaire, privilégier la réduction globale du goût sucré plutôt que l'empilement d'édulcorants est un conseil prudent et honnête.",
+   "src": [
+    [
+     "JACC: Advances — Erythritol, Erythronate, and Cardiovascular Outcomes in Older Adults in the ARIC Study",
+     "https://www.sciencedirect.com/science/article/pii/S2772963X25000225"
+    ],
+    [
+     "R Discovery — published 2025-02-20, JACC: Advances vol. 4",
+     "https://discovery.researcher.life/article/erythritol-erythronate-and-cardiovascular-outcomes-in-older-adults-in-the-aric-study/2fe0c6ec67cd300aa4e2b8e45e0ba5a5"
+    ],
+    [
+     "PubMed (MR, PMID 41137360)",
+     "https://pubmed.ncbi.nlm.nih.gov/41137360/"
+    ]
+   ]
+  },
+  {
+   "id": "nutrition-sucralose-insuline-espen-2025",
+   "ty": "Alimentation",
+   "dom": "Nutrition & Compléments",
+   "n": 3,
+   "dt": "2025-12",
+   "des": "Sucralose 30 jours chez le volontaire sain : −20,3 % de sensibilité à l'insuline et modification du microbiote (ECR triple aveugle, Clinical Nutrition ESPEN)",
+   "tag": "sucralose · édulcorant · sensibilité à l'insuline · microbiote · ECR",
+   "res": "Essai randomisé contre placebo, triple aveugle (Romo-Romo et al., Clinical Nutrition ESPEN, vol. 69 (2025) 733-744, décembre 2025) : 30 jours de sucralose (90 mg × 3/jour) chez des adultes sains non consommateurs d'édulcorants entraînent une baisse significative de la sensibilité à l'insuline (−20,3 %), avec augmentation des aires sous la courbe glucose/insuline/GLP-1 au test de tolérance, augmentation des marqueurs inflammatoires fécaux (protéines Curli) et baisse du butyrate — un profil microbiote-inflammation cohérent avec les travaux du même groupe. Nuance : petit essai d'adultes sains, dose 270 mg/j, effet aigu non démontré (l'entrée base « aspartame et glycémie » reste valable pour l'aigu). En officine : le « sucre des light » n'est pas neutre chez le patient prédiabétique/métabolique ; conseil raisonnable = eau/pauvre en édulcorants d'abord, pas de démonisation des consommateurs occasionnels.",
+   "src": [
+    [
+     "Clinical Nutrition ESPEN — abstract S2405-4577(25)02915-8",
+     "https://www.clinicalnutritionespen.com/article/S2405-4577(25)02915-8/abstract"
+    ],
+    [
+     "ScienceDirect — S2405457725029158",
+     "https://www.sciencedirect.com/science/article/abs/pii/S2405457725029158"
+    ],
+    [
+     "PDF (Clinical Nutrition ESPEN 69 (2025) 733-744, via ResearchGate)",
+     "https://www.researchgate.net/publication/395202226_Sucralose_consumption_modifies_glucose_homeostasis_gut_microbiota_Curli_protein_and_related_metabolites_in_healthy_individuals_a_randomized_placebo-controlled_triple-blind_trial"
+    ]
+   ]
+  },
+  {
+   "id": "nutrition-mediterranee-inflammation-nutrev-2026",
+   "ty": "Alimentation",
+   "dom": "Nutrition & Compléments",
+   "n": 1,
+   "dt": "2026-09",
+   "des": "Régime méditerranéen et biomarqueurs inflammatoires : la méta-analyse d'ECR confirme la réduction de CRP et IL-6 (Nutrition Reviews, fascicule 84(9))",
+   "tag": "régime méditerranéen · inflammation · CRP · IL-6 · méta-analyse d'ECR",
+   "res": "Revue systématique et méta-analyse d'essais randomisés (Nutrition Reviews, vol. 84, n° 9, p. 1776-1790, DOI 10.1093/nutrit/nuaf213, PMID 41211687 ; recherche jusqu'à juillet 2024) : le régime méditerranéen réduit significativement les biomarqueurs d'inflammation et de stress oxydatif chez l'adulte (CRP, IL-6 ; amélioration de l'adiponectine) — résultat cohérent avec l'umbrella review anti-inflammatoire des dietary patterns de la même revue (84(6), juin 2026, Reyneke et al., PMID 40657695, qui classe le modèle méditerranéen en tête). NOUVEAU par rapport à l'entrée base « méditerranéen du senior » (2024-11, mortalité cardiaque) : ici l'angle est mécanistique/inflammation, utile pour le patient métabolique et les pathologies inflammatoires chroniques. En officine : message simple — l'effet du « régime crétois » se voit aussi sur les marqueurs de l'inflammation, pas seulement sur le poids et le cœur ; huile d'olive, légumes, légumineuses, poisson, céréales complètes, fruits à coque.",
+   "src": [
+    [
+     "Nutrition Reviews — 84(9):1776 (Oxford Academic)",
+     "https://academic.oup.com/nutritionreviews/article-abstract/84/9/1776/8317880"
+    ],
+    [
+     "PubMed (PMID 41211687)",
+     "https://pubmed.ncbi.nlm.nih.gov/41211687/"
+    ],
+    [
+     "Nutrition Reviews — umbrella review dietary patterns anti-inflammatoires (84(6), juin 2026, PMID 40657695)",
+     "https://academic.oup.com/nutritionreviews/article/84/6/1167/8199185"
+    ]
+   ]
+  },
+  {
+   "id": "nutrition-cochrane-ons-seniors-2026",
+   "ty": "Alimentation",
+   "dom": "Seniors & polymédication",
+   "n": 1,
+   "dt": "2026-03",
+   "des": "Cochrane : interventions nutritionnelles orales chez le senior hospitalisé à risque — les CNO réduiraient mortalité et événements graves à 1 mois (méta-analyse en réseau de données individuelles)",
+   "tag": "compléments nutritionnels oraux · CNO · senior hospitalisé · dénutrition · Cochrane · IPD network meta",
+   "res": "Revue Cochrane (Kiesswetter et al., Cochrane Database of Systematic Reviews 2026, Issue 3, Art. CD015468, DOI 10.1002/14651858.CD015468.pub2, publiée le 26 mars 2026) : méta-analyse en réseau de données individuelles comparant les interventions nutritionnelles orales (CNO, conseils diététiques, enrichissement, soins nutritionnels individualisés) chez les seniors hospitalisés à risque nutritionnel. Messages clés lus dans le résumé Cochrane : vs soins hospitaliers standards, les aliments et boissons spécialisés (CNO) RÉDUIRAIENT les chances de décès et d'événement grave à 1 mois ; pour les activités quotidiennes, la qualité de vie, la durée de séjour et le poids, les preuves sont très incertaines ou montrent peu de différence (poids : +0,9 kg possibles avec CNO, certitude très faible). Complète l'entrée base « CNO seniors à domicile » (Nutrients 2025-07) avec le setting hospitalier et le critère dur « mortalité ». En officine : au retour d'hospitalisation d'un senior amaigri, vérifier que les CNO prescrits (souvent non remboursés au libellé) sont bien repris : fraîcheur du stock, goût/asthélysie, observance goutte à goutte, et alerter le prescripteur si le patient n'en veut pas — le message « ça marche surtout à l'hôpital vite et fort, moins sûr à domicile » reste honnête.",
+   "src": [
+    [
+     "Cochrane Library — CD015468.pub2, 2026 Issue 3",
+     "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD015468.pub2/full"
+    ],
+    [
+     "Cochrane — résumé en langage clair (Published 26 March 2026)",
+     "https://www.cochrane.org/evidence/CD015468_what-are-benefits-and-risks-different-types-nutritional-support-older-hospitalised-people-who-are"
+    ]
+   ]
+  },
+  {
+   "id": "dora-insomnie-nma-2025",
+   "ty": "Médicament",
+   "dom": "Psychiatrie",
+   "n": 2,
+   "dt": "2025-06",
+   "des": "Daridorexant vs lemborexant vs suvoréxant : méta-analyse en réseau comparant les 3 antagonistes du récepteur de l'orexine dans l'insomnie de l'adulte (Translational Psychiatry)",
+   "tag": "daridorexant · lemborexant · suvoréxant · antagonistes orexine (DORA)",
+   "res": "Méta-analyse en réseau de 8 essais randomisés (5198 adultes, âge moyen 56,3 ans, 67,8 % de femmes) comparant daridorexant 25/50 mg, lemborexant 5/10 mg et suvoréxant 20/40 mg : les auteurs concluent à l'absence de preuve de tolérance pharmacologique, de symptômes de sevrage ou d'insomnie de rebond à l'arrêt brutal des DORA, et à une architecture du sommeil préservée (PubMed 40555730, Transl Psychiatry 2025 Jun 24;15(1):211). Distinct de l'entrée daridorexant-nycturie déjà en base (population/question différentes). En officine : face au patient inquiet de « devenir dépendant » des nouveaux hypnotiques, cette méta-analyse rassure — pas de sevrage ni de rebond documentés — sans pour autant banaliser la durée de prescription ; rappeler les règles d'hygiène du sommeil qui restent la base.",
+   "src": [
+    [
+     "Translational Psychiatry (2025 Jun 24;15(1):211)",
+     "https://www.nature.com/articles/s41398-025-03439-8"
+    ],
+    [
+     "PubMed 40555730",
+     "https://pubmed.ncbi.nlm.nih.gov/40555730/"
+    ]
+   ]
+  },
+  {
+   "id": "dora-seniors-meta-2026",
+   "ty": "Médicament",
+   "dom": "Seniors & polymédication",
+   "n": 2,
+   "dt": "2026-08",
+   "des": "Insomnie chronique du sujet âgé : les antagonistes du récepteur de l'orexine efficaces et plutôt sûrs — première méta-analyse dédiée aux ≥ 65 ans (SLEEP)",
+   "tag": "antagonistes orexine (DORA) · insomnie du sujet âgé",
+   "res": "Première revue systématique et méta-analyse évaluant spécifiquement efficacité et sécurité des DORA chez le sujet âgé : malgré des preuves limitées, les DORA apparaissent efficaces et globalement sûrs, avec une augmentation du temps de sommeil total subjectif ; daridorexant montre un profil de sécurité favorable alors que lemborexant et suvoréxant sont associés à des taux plus élevés d'effets indésirables conduisant à l'arrêt (SLEEP, vol 49, issue 8, août 2026, zsag135 ; PubMed 42143581). En officine : chez le senior insomniaque, l'alternative aux benzodiazépines et Z-drugs (chutes, confusion) se précise ; vérifier néanmoins les interactions (inhibiteurs CYP3A4) et revoir régulièrement la poursuite du traitement.",
+   "src": [
+    [
+     "SLEEP (2026 Aug;49(8):zsag135)",
+     "https://academic.oup.com/sleep/article/49/8/zsag135/8679956"
+    ],
+    [
+     "PubMed 42143581",
+     "https://pubmed.ncbi.nlm.nih.gov/42143581/"
+    ]
+   ]
+  },
+  {
+   "id": "sjsr-pregabaline-negatif-2025",
+   "ty": "Médicament",
+   "dom": "Neurologie",
+   "n": 3,
+   "dt": "2025-07",
+   "des": "Prégabaline dans le syndrome des jambes sans repos : essai randomisé coréen négatif — rappel à l'ordre du placebo (Journal of Clinical Neurology)",
+   "tag": "prégabaline · syndrome des jambes sans repos (SJSR)",
+   "res": "Essai randomisé multicentrique en double aveugle vs placebo (n=78, IRLS ≥ 15, 12 semaines) : la prégabaline N'A PAS démontré d'effet vs placebo dans le SJSR de l'adulte coréen — les auteurs invoquent dose trop faible, effectif insuffisant et surtout une réponse placebo substantielle (J Clin Neurol 2025 Jul;21(4):325-331, publié en ligne le 23/06/2025, NCT04161027). Première entrée SJSR de la base. En officine : le SJSR est un symptôme subjectif où le placebo « marche » beaucoup — ne pas survendre un traitement, vérifier la ferritine avec le médecin avant tout renforcement, et rester vigilant sur l'augmentation à long terme des doses sous agonistes dopaminergiques.",
+   "src": [
+    [
+     "Journal of Clinical Neurology (2025 Jul;21(4):325-331)",
+     "https://thejcn.com/DOIx.php?id=10.3988%2Fjcn.2025.0092"
+    ],
+    [
+     "PubMed 40635537",
+     "https://pubmed.ncbi.nlm.nih.gov/40635537/"
+    ]
+   ]
+  },
+  {
+   "id": "tdah-adulte-dose-effet-nma-2026",
+   "ty": "Médicament",
+   "dom": "Psychiatrie",
+   "n": 2,
+   "dt": "2026-06",
+   "des": "TDAH de l'adulte : la méta-analyse en réseau dose-effet identifie les « zones optimales » de dosage des 5 médicaments de référence (The Lancet Psychiatry)",
+   "tag": "méthylphénidate · lisdexamfétamine · atomoxétine · TDAH adulte · dose-effet",
+   "res": "Revue systématique de 164 études et méta-analyse en réseau dose-effet des 5 médicaments les plus utilisés du TDAH (Lancet Psychiatry, publié en ligne le 14 mai 2026, numéro de juin 2026 ; 2026 Jun;13(6):485-495, PubMed 42134365) : les auteurs identifient des doses optimales au-delà desquelles le bénéfice supplémentaire est faible alors que les préjudices augmentent, et mettent en garde à la fois contre l'inertie thérapeutique (sous-dosage) et l'escalade de dose au-delà des limites d'AMM. Complément de l'entrée sécurité CV des médicaments du TDAH déjà en base (question différente). En officine : lors des tensions de 2025-2026 sur le méthylphénidate, le conseil d'observance reste central ; ne jamais encourager le patient à majorer seul ses doses — le gain s'épuise, les effets indésirables (insomnie, appétit, tension) non.",
+   "src": [
+    [
+     "The Lancet Psychiatry (2026 Jun;13(6):485-495)",
+     "https://www.thelancet.com/journals/lanpsy/article/PIIS2215-0366(26)00091-X/fulltext"
+    ],
+    [
+     "Communiqué University of Southampton (14/05/2026)",
+     "https://www.southampton.ac.uk/news/2026/05/new-study-reveals-best-dosage-for-adhd-medications.page"
+    ],
+    [
+     "PubMed 42134365",
+     "https://pubmed.ncbi.nlm.nih.gov/42134365/"
+    ]
+   ]
+  },
+  {
+   "id": "depression-resistante-pramipexole-2025",
+   "ty": "Médicament",
+   "dom": "Psychiatrie",
+   "n": 2,
+   "dt": "2025-08",
+   "des": "Dépression unipolaire résistante : le pramipexole en augmentation devient une option validée par essai randomisé britannique PAX-D (The Lancet Psychiatry)",
+   "tag": "pramipexole · dépression résistante · stratégie d'augmentation dopaminergique",
+   "res": "Essai randomisé britannique en double aveugle vs placebo (PAX-D, The Lancet Psychiatry 2025;12(8)) : le pramipexole en ajout de l'antidépresseur améliore les symptômes dépressifs à 12 semaines dans la dépression unipolaire résistante, avec davantage d'arrêts pour effets indésirables — les auteurs suggèrent que les agents dopaminergiques sont une option cliniquement utile si la tolérance est gérée (Browning et al., PAX-D study group). À côté des entrées psilocybine et esketamine (dépression résistante) déjà en base, mécanisme et voie différents. En officine : nausées, vertiges et somnolence dominent les premières semaines — prévoir la prise au coucher si le médecin l'indique ; ATTENTION aux comportements impulsifs (jeu, achats) documentés sous agonistes dopaminergiques, à signaler au patient et à son entourage.",
+   "src": [
+    [
+     "The Lancet Psychiatry (2025;12(8))",
+     "https://www.thelancet.com/journals/lanpsy/article/PIIS2215-0366(25)00194-4/fulltext"
+    ],
+    [
+     "King's College London (publication record)",
+     "https://kclpure.kcl.ac.uk/portal/en/publications/pramipexole-augmentation-for-the-acute-phase-of-treatment-resista/"
+    ],
+    [
+     "Brown University Psychopharmacology Update (2025)",
+     "https://onlinelibrary.wiley.com/doi/abs/10.1002/pu.31355"
+    ]
+   ]
+  },
+  {
+   "id": "tag-tcc-troisieme-vague-nma-2025",
+   "ty": "Médicament",
+   "dom": "Psychiatrie",
+   "n": 2,
+   "dt": "2025-05",
+   "des": "Trouble anxieux généralisé : les TCC de « troisième vague » (métacognitive, basée sur l'acceptation) réduisent les symptômes — méta-analyse bayésienne en réseau (Journal of Psychiatric Research)",
+   "tag": "TCC troisième vague · trouble anxieux généralisé (TAG)",
+   "res": "Revue systématique et méta-analyse bayésienne en réseau des TCC de troisième vague dans le TAG de l'adulte : les thérapies métacognitives et basées sur l'acceptation réduisent la sévérité de l'anxiété ; l'accompagnement par un clinicien majore la taille d'effet (Journal of Psychiatric Research 2025;187:134-143, doi 10.1016/j.jpsychires.2025.05.010, PubMed 40367584). Complément de l'entrée Cochrane « antidépresseurs vs placebo dans le TAG » déjà en base (volet psychothérapique, non couvert). En officine : pour le patient anxieux réticent aux anxiolytiques (benzodiazépines = prescription courte, risque de dépendance), les TCC guidées — y compris de nouvelles approches — ont des preuves solides ; le pharmacien peut orienter vers un accompagnement structuré plutôt que vers la chronicisation des anxiolytiques.",
+   "src": [
+    [
+     "Journal of Psychiatric Research (2025;187:134-143)",
+     "https://www.sciencedirect.com/science/article/abs/pii/S0022395625003012"
+    ],
+    [
+     "PubMed 40367584",
+     "https://pubmed.ncbi.nlm.nih.gov/40367584/"
+    ]
+   ]
+  },
+  {
+   "id": "gross-paracetamol-umbrella-2025",
+   "ty": "Médicament",
+   "dom": "Gynécologie",
+   "n": 1,
+   "dt": "2025-11",
+   "des": "Paracétamol pendant la grossesse et risque d'autisme/TDAH chez l'enfant : umbrella review des revues systématiques — les preuves existantes ne montrent PAS de lien clair (BMJ 2025;391:e088141, publiée le 10 novembre 2025)",
+   "tag": "paracétamol · grossesse · autisme · TDAH · neurodéveloppement",
+   "res": "Umbrella review (Sheikh et al., BMJ 2025;391:e088141, « Published 10 November 2025 » lu sur la page BMJ ; PROSPERO CRD420251154052 vu sur la page de l'université de Birmingham) évaluant qualité, biais et validité des preuves reliant la prise maternelle de paracétamol pendant la grossesse au risque d'autisme et de TDAH chez l'enfant. Conclusion lue sur la page université de Birmingham : « Existing evidence does not clearly link maternal paracetamol use during pregnancy with autism or ADHD in offspring » — les biais de confusion (indication, sévérité) affaiblissent les associations rapportées par les études antérieures (dont la cohorte danoise JAMA 2024;331:1205-1214, citée). L'ACOG a publié en septembre 2025 un practice advisory sur cette même question (cf. section RECO). En officine : message rassurant et fondé — le paracétamol reste l'antalgique/antipyrétique de référence pendant la grossesse à dose efficace la plus courte ; éviter l'automédication prolongée et l'ibuprofène (AINS) à partir du 6e mois, mais ne pas laisser une femme enceinte souffrir par peur infondée de l'autisme/TDAH.",
+   "src": [
+    [
+     "BMJ — umbrella review paracetamol pregnancy (bmj-2025-088141, publiée 10/11/2025)",
+     "https://www.bmj.com/content/391/bmj-2025-088141"
+    ],
+    [
+     "Université de Birmingham — conclusion et enregistrement PROSPERO",
+     "https://research.birmingham.ac.uk/en/publications/maternal-paracetamol-acetaminophen-use-during-pregnancy-and-risk-/"
+    ],
+    [
+     "Science Media Centre — réactions d'experts",
+     "https://www.sciencemediacentre.org/3xpert-reaction-to-umbrella-review-of-systematic-reviews-of-paracetamol-use-in-pregnancy-and-risk-of-autism-and-adhd/"
+    ]
+   ]
+  },
+  {
+   "id": "gross-metformine-dg-meta-2026",
+   "ty": "Médicament",
+   "dom": "Gynécologie",
+   "n": 1,
+   "dt": "2026-02",
+   "des": "Metformine dans le diabète gestationnel : sécurité maternelle, néonatale et à long terme — revue systématique et méta-analyse (Brinkmann et al., Diabetic Medicine 2026;43(2):e70173)",
+   "tag": "metformine · diabète gestationnel · sécurité · méta-analyse",
+   "res": "Revue systématique et méta-analyse (citation PubMed vue : « 2026 Feb;43(2):e70173. doi: 10.1111/dme.70173 », PMID 41354637) évaluant sécurité et efficacité de la metformine dans le diabète gestationnel (GDM) sur les issues maternelles, néonatales et à long terme. Conclusion lue dans l'extrait PubMed : « Metformin appears safe and effective in GDM management, but more data are needed on long-term outcomes ». Contexte lu (PMC12857878) : les mesures hygiéno-diététiques restent de première intention, l'insuline la référence pharmacologique ; la metformine est une alternative largement utilisée. Nouveau thème en base : la base ne contient la metformine que pour B12-TCN2 et le SOPK, jamais dans le DG. En officine : délivrance courante du DG — expliquer que la metformine passe en partie le placenta mais les données consolidées sont rassurantes à court/moyen terme, que l'observance et l'autosurveillance glycémique restent le cœur du traitement, et surveiller les troubles digestifs initiaux (prise pendant/après le repas).",
+   "src": [
+    [
+     "PubMed — Diabet Med 2026 Feb;43(2):e70173 (PMID 41354637)",
+     "https://pubmed.ncbi.nlm.nih.gov/41354637/"
+    ],
+    [
+     "Wiley — Diabetic Medicine, Brinkmann et al. 2026",
+     "https://onlinelibrary.wiley.com/doi/10.1111/dme.70173"
+    ],
+    [
+     "PMC — texte intégral",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC12857878/"
+    ]
+   ]
+  },
+  {
+   "id": "allait-antidepressors-comportements-2026",
+   "ty": "Médicament",
+   "dom": "Gynécologie",
+   "n": 2,
+   "dt": "2026-08",
+   "des": "Antidépresseurs et comportements d'allaitement : revue systématique (Desaunay, Blouet et al., Journal of Perinatology, publié en ligne le 17 août 2026)",
+   "tag": "antidépresseurs · allaitement · initiation · durée · revue systématique",
+   "res": "Revue systématique (Journal of Perinatology, s41372-026-02867-8 ; « 2026 Aug 17. doi: 10.1038/s41372-026-02867-8 » lu sur PubMed, PMID 42608444) évaluant si l'exposition aux antidépresseurs pendant la grossesse ou le post-partum est associée à des changements des comportements d'allaitement (objectif lu : initiation/statut à la sortie, contextes prématuré/NICU, durée, exclusivité). Le verdict précis par molécule doit être lu dans l'article avant tout chiffre cité — design et question documentés sans invention. Premier thème « antidépresseurs × allaitement » en base (les antidépresseurs existent pour TAG, dépression, arrêt, EPA-adjunct — jamais côté allaitement). En officine : les mères sous antidépresseur demandent souvent « puis-je allaiter ? » — la réponse générale de la littérature est que la plupart des antidépresseurs sont compatibles (sertraline, paroxétine en référence), le CRAT/le prescripteur confirmant au cas par cas ; cette revue alimente le conseil sans stigmatiser le traitement d'une dépression du post-partum, dont l'arrêt brutal est le vrai risque.",
+   "src": [
+    [
+     "PubMed — J Perinatol 2026 Aug 17 (PMID 42608444)",
+     "https://pubmed.ncbi.nlm.nih.gov/42608444/"
+    ],
+    [
+     "Nature — Journal of Perinatology, article complet",
+     "https://www.nature.com/articles/s41372-026-02867-8"
+    ],
+    [
+     "Bioengineer — synthèse de la revue (Desaunay, Blouet et al.)",
+     "https://bioengineer.org/systematic-review-examines-how-antidepressants-influence-breastfeeding-behaviors/"
+    ]
+   ]
+  },
+  {
+   "id": "allait-psychotropes-postpartum-danemark-2026",
+   "ty": "Médicament",
+   "dom": "Gynécologie",
+   "n": 3,
+   "dt": "2026-09",
+   "des": "Traitements psychotropes du post-partum et allaitement : étude nationale danoise par clustering (Hviid et al., Pharmacoepidemiology and Drug Safety 2026;35(9):e70470)",
+   "tag": "psychotropes · post-partum · allaitement · étude nationale · Danemark",
+   "res": "Étude de clustering nationale danoise (citation PMC vue : « Pharmacoepidemiol Drug Saf. 2026 Aug 30;35(9):e70470 », received 15/07/2026, issue date 2026 Sep ; PMC13526646 ; Wiley 10.1002/pds.70470) décrivant les patterns de traitement psychotrope chez les femmes du post-partum et leur relation avec l'allaitement. Design nationwide lu dans l'extrait : registres danois, clustering des profils de traitement ; les conclusions détaillées par classe (antidépresseurs, antipsychotiques, benzodiazépines) doivent être lues dans le texte avant tout chiffre cité. Usage distinct de la revue J Perinatol du jour (comportements d'allaitement) : ici la cartographie réelle des prescriptions psychotropes du post-partum. En officine : rappel utile que de nombreuses mères allaitantes prennent un psychotrope — le réflexe professionnel est de vérifier la compatibilité par classe via le CRAT plutôt que d'inviter à l'arrêt ; tout sevrage brutal d'un psychotrope est délétère pour la dyade.",
+   "src": [
+    [
+     "PMC — PDS 2026 Sep;35(9):e70470 (Hviid et al., Danemark)",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC13526646/"
+    ],
+    [
+     "Wiley — Pharmacoepidemiology and Drug Safety, 10.1002/pds.70470",
+     "https://onlinelibrary.wiley.com/doi/10.1002/pds.70470"
+    ]
+   ]
+  },
+  {
+   "id": "allait-medicaments-poursuite-2026",
+   "ty": "Officine",
+   "dom": "Gynécologie",
+   "n": 2,
+   "dt": "2026-04",
+   "des": "Initiation et poursuite de l'allaitement chez les femmes sous médicaments : revue systématique et méta-analyse (BMJ Open 2026;16(4):e107274)",
+   "tag": "allaitement · médicaments · initiation · poursuite · méta-analyse",
+   "res": "Revue systématique et méta-analyse (BMJ Open, volume 16 n° 4, 2026, e107274 — citation vue : « BMJ Open 16, no. 4 (2026): e107274, https://doi.org/10.1136/bmj ») sur l'initiation et la poursuite de l'allaitement chez les femmes prenant des médicaments. Objectif lu dans l'extrait : l'incertitude sur la sécurité des médicaments peut entraîner un arrêt précoce ou l'évitement de l'allaitement. Travail complémentaire d'une revue narrative de l'International Breastfeeding Journal (Pilgrim et al., 2025, 20:59, vue) documentant l'arrêt de l'allaitement « lié au médicament » et une couverture presse (EurekAlert, université de Bath) dénonçant les conseils erronés de sevrage ; la méta BMJ Open est retenue comme source primaire (mois non isolé pour la revue narrative 2025 → mentionnée en contexte seulement). En officine : entrée à message clé pour le comptoir — beaucoup d'arrêts d'allaitement sont dus à des conseils de prudence excessifs ; ne jamais dire « arrêtez d'allaiter » de sa propre initiative, référer vers le CRAT/prescripteur, car la majorité des médicaments courants sont compatibles et le sevrage inutile est un dommage réel.",
+   "src": [
+    [
+     "BMJ Open — 2026;16(4):e107274 (méta-analyse)",
+     "https://bmjopen.bmj.com/content/16/4/e107274"
+    ],
+    [
+     "International Breastfeeding Journal — Pilgrim et al. 2025, 20:59 (revue narrative, contexte)",
+     "https://link.springer.com/article/10.1186/s13006-025-00756-y"
+    ],
+    [
+     "EurekAlert — Misinformation in maternal health: flawed drug advice is discouraging breastfeeding (université de Bath)",
+     "https://www.eurekalert.org/news-releases/1094389"
+    ]
+   ]
+  },
+  {
+   "id": "gross-omega3-meta-2026",
+   "ty": "Complément",
+   "dom": "Gynécologie",
+   "n": 1,
+   "dt": "2026-03",
+   "des": "Supplémentation maternelle en oméga-3 et issues de grossesse : anthropométrie du nourrisson et outcomes — revue systématique et méta-analyse (Health Science Reports, mars 2026)",
+   "tag": "oméga-3 · DHA · grossesse · prématurité · poids de naissance",
+   "res": "Revue systématique et méta-analyse (Saei Ghare Naz et al., Health Science Reports ; dates PMC12949826 vues : « Accepted 2026 Feb 21 ; Collection date 2026 Mar » ; PMID 41773213) évaluant l'effet de la supplémentation maternelle en oméga-3 sur les mesures anthropométriques du nourrisson et les issues de grossesse. Conclusion lue dans l'extrait PubMed : « Omega-3 supplementation during pregnancy modestly improves maternal weight gain and infant birth size while reducing the risk of preterm birth, supporting its inclusion in maternal nutrition programs ». NOUVEAU usage d'une substance bien représentée en base (oméga-3 : CV, EPA-dépression, seniors DO-HEALTH) — ici la grossesse, jamais couverte. En officine : pour une femme enceinte ou en projet, les oméga-3 (DHA) des compléments « grossesse » ont un argument raisonnable sur le risque de prématurité et la croissance fœtale — en rappelant que le poisson 2×/semaine reste la base et que les doses se raisonnenent (éviter les extraits de foie de poisson riches en vitamine A).",
+   "src": [
+    [
+     "PubMed — Health Sci Rep, PMID 41773213 (conclusion lue)",
+     "https://pubmed.ncbi.nlm.nih.gov/41773213/"
+    ],
+    [
+     "PMC — texte intégral (accepted 21/02/2026, collection mars 2026)",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC12949826/"
+    ],
+    [
+     "Wiley — Health Science Reports, 10.1002/hsr2.71941",
+     "https://onlinelibrary.wiley.com/doi/full/10.1002/hsr2.71941"
+    ]
+   ]
+  },
+  {
+   "id": "pedi-vitamine-d-preterm-rcp-2025",
+   "ty": "Complément",
+   "dom": "Pédiatrie officinale",
+   "n": 3,
+   "dt": "2025-12",
+   "des": "Vitamine D précoce chez les grands prématurés allaités au lait maternel : essai randomisé en aveugle (Salas et al., Journal of Pediatrics 2025;287:114754)",
+   "tag": "vitamine D · prématurité · lait maternel · essai randomisé",
+   "res": "Essai randomisé en aveugle (citation PubMed vue : « 2025 Dec:287:114754. doi: 10.1016/j.jpeds.2025.114754. Epub 2025 Jul 24 », PMID 40714046 ; ClinicalTrials.gov NCT05615311 vue) évaluant l'effet d'une supplémentation précoce en vitamine D sur les outcomes respiratoires à court terme chez les nourrissons nés à 28 semaines de gestation ou moins et nourris au lait maternel ; design lu : randomisation vers la dose la plus haute vs la plus basse recommandée pendant les 14 premiers jours de vie. Les résultats chiffrés n'étaient pas lisibles dans les extraits (rubrique letters/journal visible sur la page J Pediatr) — design et question documentés sans invention. En officine : rappel du cadre — les prématurés ont des besoins en vitamine D différents du nourrisson à terme (les doses du carnet de santé ne s'appliquent pas tels quels) ; le conseil doit toujours s'appuyer sur la prescription néonatale, jamais sur l'automédication du comptoir.",
+   "src": [
+    [
+     "PubMed — J Pediatr 2025 Dec;287:114754 (PMID 40714046)",
+     "https://pubmed.ncbi.nlm.nih.gov/40714046/"
+    ],
+    [
+     "The Journal of Pediatrics — résumé de l'article",
+     "https://www.jpeds.com/article/S0022-3476(25)00295-1/abstract"
+    ],
+    [
+     "ClinicalTrials.gov — NCT05615311 (design de l'essai)",
+     "https://clinicaltrials.gov/study/NCT05615311"
+    ]
+   ]
+  },
+  {
+   "id": "pedi-vitamine-d-preterm-800-2025",
+   "ty": "Complément",
+   "dom": "Pédiatrie officinale",
+   "n": 3,
+   "dt": "2025-05",
+   "des": "Statut en vitamine D du nouveau-né prématuré : 800 vs 400 UI/jour — essai randomisé (Nutrients, publié le 30 mai 2025)",
+   "tag": "vitamine D · nouveau-né prématuré · 800 UI · 400 UI",
+   "res": "Essai randomisé (page MDPI ouverte, dates lues : « Received: 1 May 2025 / Revised: 28 May 2025 / Accepted: 28 May 2025 / Published: 30 May 2025 ») comparant 800 vs 400 UI/jour de vitamine D pour améliorer le statut vitaminé des nouveau-nés prématurés, population particulièrement exposée à l'hypovitaminose D (préambule lu : « Preterm newborns are particularly susceptible to hypovitaminosis D »). Le verdict chiffré entre les deux doses doit être lu dans l'article (page ouverte) avant toute citation numérique. Complément de l'essai J Pediatr du jour (autre critère de jugement : statut vitaminé vs outcomes respiratoires) — deux angles distincts de la même question vitamine D/prématurité. En officine : le débat des doses chez le prématuré appartient au prescripteur néonatal ; l'entrée sert de repère pour répondre honnêtement aux parents (« les doses sont plus élevées qu'à terme, c'est normal, suivez la prescription ») et pour ne pas recommander de complément par soi-même.",
+   "src": [
+    [
+     "MDPI Nutrients — Improving Vitamin D Status in Preterm Newborns: 800 vs 400 IU/Day (Published: 30 May 2025)",
+     "https://www.mdpi.com/2072-6643/17/11/1888"
+    ]
+   ]
+  },
+  {
+   "id": "palu-effort-tafenoquine",
+   "ty": "Médicament",
+   "dom": "Santé du voyageur",
+   "n": 2,
+   "dt": "2026-06",
+   "des": "Paludisme à P. vivax : l'essai EFFORT (Lancet Infect Dis) valide la primaquine haute dose 7 jours et la tafénoquine dose unique comme guérison radicale",
+   "tag": "tafénoquine · primaquine haute dose — guérison radicale Plasmodium vivax",
+   "res": "Essai randomisé multicentrique ouvert (Cambodge, Éthiopie, Indonésie, Pakistan) chez patients G6PD normaux : primaquine 7 mg/kg sur 7 jours et tafénoquine 300 mg en dose unique, non supervisés, tous deux bien tolérés et associés à un risque de récidive de P. vivax plus bas que la primaquine faible dose 14 jours (citation : Lancet Infect Dis. 2026 Jun;26(6):614–626 ; bras comparateur standard 14 jours). En officine : pour un voyageur revenu de zone d'endémie avec un P. vivax traité, le traitement radical (anti-rechute) existe en schéma court — insister sur l'observance complète du cycle et sur le dosage G6PD préalable, jamais d'automédication antipaludéenne.",
+   "src": [
+    [
+     "The Lancet Infectious Diseases (EFFORT)",
+     "https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(25)00729-7/fulltext"
+    ],
+    [
+     "PMC (citation datée)",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC13215974/"
+    ],
+    [
+     "Malaria Journal — restitution EFFORT (Pakistan)",
+     "https://malariajournal.biomedcentral.com/articles/10.1186/s12936-025-05636-8"
+    ]
+   ]
+  },
+  {
+   "id": "mal-aigu-acetazolamide-LP",
+   "ty": "Médicament",
+   "dom": "Santé du voyageur",
+   "n": 2,
+   "dt": "2026-02",
+   "des": "Mal aigu des montagnes : l'acétazolamide à libération prolongée réduit l'incidence de moitié (phase III, High Alt Med Biol)",
+   "tag": "acétazolamide LP — prévention du mal aigu des montagnes (MAM)",
+   "res": "Essai randomisé double-aveugle contre placebo (phase III, registre chinois CTR20231401, Tibet) : sur 284 évaluables, incidence du MAM 36,9 % vs 55,9 % sous placebo (p=0,0013) ; MAM modéré/sévère (score Lake Louise > 5) 9,9 % vs 24,5 % (p=0,0012) ; SpO2 constamment plus élevée (p<0,0001). Citation : High Alt Med Biol, epub 24/02/2026 (PMID 40955751). En officine : pour un trekker ou un skieur d'altitude consultant avant un séjour > 2500 m, la prévention médicamenteuse a un socle solide — mais remonter progressivement et l'hydratation restent la base ; acétazolamide sur ordonnance uniquement, et paresthésies/bourdonnements d'oreilles à annoncer comme effets fréquents et bénins.",
+   "src": [
+    [
+     "High Altitude Medicine & Biology (Liebert)",
+     "https://www.liebertpub.com/doi/10.1177/15578682251375409"
+    ],
+    [
+     "PubMed 40955751 (citation datée)",
+     "https://pubmed.ncbi.nlm.nih.gov/40955751/"
+    ]
+   ]
+  },
+  {
+   "id": "frelon-vv-wsting",
+   "ty": "Médicament",
+   "dom": "Allergologie",
+   "n": 3,
+   "dt": "2025-06",
+   "des": "Frelon asiatique (Vespa velutina) : la première immunothérapie venimeuse dédiée montre sécurité et efficacité (étude W-STING)",
+   "tag": "immunothérapie venimeuse — Vespa velutina nigrithorax (frelon asiatique)",
+   "res": "Analyse intermédiaire de l'étude W-STING : première immunothérapie venimeuse spécifique de l'allergie au frelon asiatique Vespa velutina nigrithorax — sécurité et efficacité documentées (J Investig Allergol Clin Immunol 2025;35(3):225-227, epub 13/02/2025, PMID 39946174). Le frelon asiatique continue son expansion en France. En officine : après une réaction généralisée (urticaire généralisé, œdème, malaise) suite à une piqûre de frelon, adresser en allergologie pour tryptase et bilan — la désensibilisation est désormais possible aussi contre le venin du frelon asiatique, et expliquer l'intérêt d'une trousse d'urgence (adrénaline IM) en attendant.",
+   "src": [
+    [
+     "PubMed 39946174 (W-STING, citation datée)",
+     "https://pubmed.ncbi.nlm.nih.gov/39946174/"
+    ]
+   ]
+  },
+  {
+   "id": "abeille-vit-7sem",
+   "ty": "Médicament",
+   "dom": "Allergologie",
+   "n": 3,
+   "dt": "2025-03",
+   "des": "Allergie au venin d'abeille : un protocole court d'immunothérapie en 7 semaines s'avère sûr et efficace",
+   "tag": "immunothérapie venineuse abeille — protocole ultrarapide 7 semaines (hydroxyde d'aluminium)",
+   "res": "Essai clinique autrichien (76 patients de 18 à 70 ans avec réaction systémique aux piqûres d'abeille) : protocole d'immunothérapie en 7 semaines avec venin adsorbé sur hydroxyde d'aluminium — tolérance et efficacité satisfaisantes (Allergy 2025;80(12):3424-3426, epub 15/03/2025, PMID 40087913). En officine : la désensibilisation au venin reste le seul traitement modificateur de l'allergie aux hyménoptères ; des schémas raccourcis facilitent l'engagement — rappeler que le patient désensibilisé doit continuer à porter sa trousse d'urgence pendant la montée de dose.",
+   "src": [
+    [
+     "PubMed 40087913 (citation datée)",
+     "https://pubmed.ncbi.nlm.nih.gov/40087913/"
+    ],
+    [
+     "Allergy (Wiley) — article",
+     "https://onlinelibrary.wiley.com/doi/10.1111/all.16528"
+    ]
+   ]
+  },
+  {
+   "id": "outmatch-omalizumab-oit",
+   "ty": "Médicament",
+   "dom": "Allergologie",
+   "n": 2,
+   "dt": "2025-03",
+   "des": "Allergies alimentaires multiples : l'omalizumab (Xolair) seul bat l'immunothérapie orale multi-allergènes (phases 2-3 OUtMATCH)",
+   "tag": "omalizumab — allergies alimentaires multiples IgE-dépendantes (arachide + au moins 2 aliments)",
+   "res": "Nouvelles données des stades 2 et 3 de l'essai OUtMATCH (phase III, sponsorisé NIH, NCT03881696) : chez les patients allergiques à l'arachide et à au moins deux autres aliments, l'omalizumab en monothérapie s'est montré plus efficace que l'immunothérapie orale multi-allergènes facilitée par omalizumab, avec nettement moins d'effets indésirables et d'arrêts pour événements (communiqués NIH/Roche du 02/03/2025 ; article JACI « Treatment of Multi-Food Allergy with Omalizumab Compared to Omalizumab-Facilitated Multi-Allergen OIT »). L'omalizumab est déjà autorisé dans l'allaitement alimentaire IgE-dépendante. En officine : pour les familles d'enfants multi-allergiques, l'injection omalizumab tous les 15-30 jours est une vraie option pour réduire le risque de réaction en cas d'ingestion accidentelle — cela ne remplace jamais l'éviction stricte ni la trousse d'adrénaline, et les réactions peuvent persister.",
+   "src": [
+    [
+     "NIH News-in-Heal (02/03/2025)",
+     "https://www.nih.gov/news-events/news-releases/omalizumab-treats-multi-food-allergy-better-oral-immunotherapy"
+    ],
+    [
+     "Roche communiqué (02/03/2025)",
+     "https://www.roche.com/media/releases/med-cor-2025-03-02"
+    ],
+    [
+     "JACI — article OUtMATCH",
+     "https://www.jacionline.org/article/S0091-6749(24)02309-1/fulltext"
+    ]
+   ]
+  },
+  {
+   "id": "arprise-pharmacien-rhinite",
+   "ty": "Officine",
+   "dom": "Allergologie",
+   "n": 3,
+   "dt": "2025-07",
+   "des": "Éducation par le pharmacien dans la rhinite allergique de l'adulte : l'essai randomisé AR-PRISE confirme un bénéfice vs soins usuels",
+   "tag": "éducation pharmaceutique — rhinite allergique (essai AR-PRISE, JAMA Netw Open)",
+   "res": "Essai randomisé (AR-PRISE) dans une institution de santé publique : une intervention d'éducation dirigée par pharmacien versus soins standard dans la rhinite allergique de l'adulte — les patients éduqués par le pharmacien s'améliorent davantage (JAMA Netw Open 2025;8(7):e2517160, 16/07/2025, DOI 10.1001/jamanetworkopen.2025.17160, PMID 40668584 ; la rhinite allergique touche 10-30 % des adultes). En officine : réserver 5 minutes pour la technique (mouchez-vous avant, tête penchée, pulvérisation vers la paroi externe), l'observance quotidienne du corticoïde nasal pendant toute la saison et la différence antihistaminique 1ʳᵉ vs 2ᵉ génération — c'est exactement l'intervention validée par cet essai.",
+   "src": [
+    [
+     "PubMed 40668584 (AR-PRISE)",
+     "https://pubmed.ncbi.nlm.nih.gov/40668584/"
+    ],
+    [
+     "PMC 12268493 (citation datée)",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC12268493/"
+    ]
+   ]
+  },
+  {
+   "id": "nudge-vaccin-officine",
+   "ty": "Officine",
+   "dom": "Santé publique",
+   "n": 4,
+   "dt": "2025-11",
+   "des": "Vaccination en pharmacie : un « nudge » intégré au logiciel délivrant un message d'alerte augmente l'achèvement des séries vaccinales (étude nationale US)",
+   "tag": "nudge numérique — rappel vaccinal automatisé en officine (zona/Herpes zoster)",
+   "res": "Étude nationale US (finales) : avant le « nudge » d'aide à la décision clinique, l'achèvement de la série vaccinale contre le zona était de 71,9 % ; l'insertion d'un rappel automatisé dans le flux de travail a amélioré la complétude, et les pharmaciens jugent ce type d'outils favorablement malgré les contraintes de charge de travail (J Am Pharm Assoc, en ligne 01/11/2025, PMID 41339191). En officine : croiser le dossier patient et le registre vaccinal pour déclencher un rappel au comptoir suffit à faire bouger les couvertures — une piste simple pour les campagnes grippe/VRS/pneumocoque en France.",
+   "src": [
+    [
+     "PubMed 41339191 (citation datée)",
+     "https://pubmed.ncbi.nlm.nih.gov/41339191/"
+    ],
+    [
+     "ScienceDirect — JAPhA",
+     "https://www.sciencedirect.com/science/article/abs/pii/S1551741125005030"
+    ],
+    [
+     "ResearchGate (en ligne le 01/11/2025)",
+     "https://www.researchgate.net/publication/398064523_A_Community_Pharmacy_Vaccination_Nudge_Intervention_Final_Results_of_a_Nationwide_Study"
+    ]
+   ]
+  },
+  {
+   "id": "varenicline-echantillons",
+   "ty": "Officine",
+   "dom": "Santé publique",
+   "n": 2,
+   "dt": "2026-05",
+   "des": "Sevrage tabagique : offrir des échantillons de varénicline avec conseil minimal augmente l'arrêt (ECR, JAMA Netw Open)",
+   "tag": "échantillons de varénicline — initiation du sevrage tabagique",
+   "res": "Essai randomisé (février 2021–avril 2025) : la remise d'échantillons de varénicline avec accompagnement minimal augmente les taux d'arrêt du tabac, avec des résultats au moins aussi bons, et potentiellement supérieurs, à ceux du TSN (JAMA Netw Open, collection mai 2026, PMID 42101840 ; comparaisons statistiques varénicline vs TSN et varénicline vs contrôle). En officine : lever la barrière du « premier conditionnement » en orientant vers le médecin pour un essaimage de varénicline est une intervention courte validée — rappeler la prise 1 semaine avant la date d'arrêt et la naïvée des nausées.",
+   "src": [
+    [
+     "PubMed 42101840 (citation datée)",
+     "https://pubmed.ncbi.nlm.nih.gov/42101840"
+    ],
+    [
+     "PMC 13156786 (received 2025 Nov 26, collection 2026 May)",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC13156786/"
+    ],
+    [
+     "JAMA Network Open",
+     "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2848777"
+    ]
+   ]
+  },
+  {
+   "id": "chart-chaleur-pilote",
+   "ty": "Officine",
+   "dom": "Santé publique",
+   "n": 4,
+   "dt": "2025-11",
+   "des": "Vagues de chaleur : une plateforme d'aide à la décision (CHaRT) testée en essai randomisé pilote auprès de 30 services de santé locaux US",
+   "tag": "CHaRT — plateforme de réduction du risque chaleur pour les agences de santé locales",
+   "res": "Essai randomisé pilote (30 services de santé locaux US, NCT06971978) : la plateforme en ligne CHaRT, qui relie évaluation localisée du risque chaleur-santé et recommandations d'interventions basées sur les preuves, a été testée pour préparer les vagues de chaleur extrêmes — barrières et facilitateurs d'implémentation documentés (Implementation Science Communications 2025;6(1):136, 27/11/2025, PMID 41310808). En officine : la saison chaude se prépare à l'officine aussi — recenser les patients à risque (diurétiques, anticholinergiques, IEC), anticiper les consignes d'hydratation et de rangement des médicaments avant l'été.",
+   "src": [
+    [
+     "PubMed 41310808 (citation datée)",
+     "https://pubmed.ncbi.nlm.nih.gov/41310808/"
+    ],
+    [
+     "Implementation Science Communications (Springer)",
+     "https://link.springer.com/article/10.1186/s43058-025-00829-3"
+    ],
+    [
+     "ClinicalTrials.gov NCT06971978",
+     "https://clinicaltrials.gov/study/NCT06971978"
+    ]
+   ]
+  },
+  {
+   "id": "breztri-kalos-logos",
+   "ty": "Médicament",
+   "dom": "Pneumologie",
+   "n": 2,
+   "dt": "2026-02",
+   "des": "Asthme non contrôlé sous CSI/LABA : la triple thérapie en inhalateur unique (Breztri) améliore la fonction pulmonaire et réduit les exacerbations (essais jumeaux KALOS et LOGOS)",
+   "tag": "budésonide/glycopyrronium/formotérol — triple thérapie inhalée de l'asthme non contrôlé",
+   "res": "Essais jumeaux de phase 3 randomisés double-aveugle (Lancet Respir Med 2026;14(4):350-362, epub 12/02/2026, PMID 41692019) : la triple association fixe BGF (320/28,8/9,6 µg) améliore la fonction pulmonaire et réduit le taux d'exacerbations sévères chez l'asthme insuffisamment contrôlé malgré CSI/LABA à dose moyenne ou forte, quel que soit l'historique d'exacerbation. Suivi d'une autorisation FDA dans l'asthme dès 12 ans (communiqué AstraZeneca 2026). En officine : vérifier la rinse buccale après chaque prise (candidose), ne pas confondre l'inhalateur asthme avec celui de BPCO si le patient en a deux, et bien expliquer que le formotérol ne remplace pas un bronchodilatateur de secours.",
+   "src": [
+    [
+     "The Lancet Respiratory Medicine (KALOS et LOGOS)",
+     "https://www.thelancet.com/journals/lanres/article/PIIS2213-2600(25)00457-6/abstract"
+    ],
+    [
+     "PubMed 41692019 (citation datée)",
+     "https://pubmed.ncbi.nlm.nih.gov/41692019"
+    ],
+    [
+     "AstraZeneca — publication et autorisation FDA",
+     "https://www.astrazeneca.com/media-centre/press-releases/2026/positive-and-clinically-meaningful-results-from-the-phase-iii-kalos-and-logos-trials-for-breztri.html"
+    ]
+   ]
+  }
+ ],
+ "recos": [
+  {
+   "spe": "Ophtalmologie",
+   "org": "Société française du glaucome (SFG) & Club francophone des spécialistes de la rétine (CFSR)",
+   "dt": "2026-08",
+   "titre": "Prise en charge du glaucome chez le patient fort myope : recommandations SFG/CFSR (Journal Français d'Ophtalmologie)",
+   "res": "Recommandations consensuelles d'experts français (SFG + CFSR) publiées dans le Journal Français d'Ophtalmologie, disponibles en ligne depuis le 12 août 2026 (date lue sur EM-Consulte : « Disponible en ligne depuis le Wednesday 12 August 2026 » ; PubMed PMID 42648031, ScienceDirect S0181551226001841) : la forte myopie, facteur de risque indépendant de glaucome, complique diagnostic et suivi (papilles basculées, atrophie péri-papillaire, fiabilité limitée de l'OCT et du champ visuel, extraits lus sur ScienceDirect et LinkedIn du Pr Soler) ; en cas de PIO élevée et d'incertitude diagnostique liée aux altérations chorio-rétiniennes étendues, le traitement hypotonisant peut être initié pour prévenir le risque de dommage glaucomateux s'ajoutant à celui déjà lié à la myopie (proposition lue sur ScienceDirect). Doublonnage vérifié : la base RECO contient l'AAO POAG PPP 2025 et l'AAO hydroxychloroquine via REVUES — aucune reco française SFG. Encart officinal : dépister/ne pas banaliser chez le fort myope jeune (≠ glaucome du senior) ; discuter avec l'ophtalmologiste du choix des collyres et de l'observance ; évoquer le lien myopie-glaucome lors des délivrances de lentilles/verres à fort correction.",
+   "src": [
+    [
+     "EM-Consulte — Management of glaucoma in high myopia : guidelines SFG/CFSR (en ligne 12 août 2026)",
+     "https://www.em-consulte.com/article/1834230/management-of-glaucoma-in-high-myopia-guidelines-f"
+    ],
+    [
+     "PubMed — Management of glaucoma in high myopia: Guidelines from the French Glaucoma Society (SFG) and the CFSR",
+     "https://pubmed.ncbi.nlm.nih.gov/42648031/"
+    ],
+    [
+     "ScienceDirect — J Fr Ophtalmol, texte intégral des recommandations",
+     "https://www.sciencedirect.com/science/article/pii/S0181551226001841"
+    ]
+   ],
+   "geo": "fr"
+  },
+  {
+   "spe": "ORL & stomatologie (implantologie)",
+   "org": "American Academy of Periodontology (AAP) & Academy of Osseointegration (AO)",
+   "dt": "2025-06",
+   "titre": "Consensus AAP/AO sur la prévention et la prise en charge des maladies et conditions péri-implantaires (Journal of Periodontology)",
+   "res": "Rapport de consensus publié dans le Journal of Periodontology 2025 juin ; 96(6):519-541 (volume/issue/pages lus : « Volume 96, Issue 6 pp. 519-541 », « 06.2025 » sur la fiche Loma Linda) : synthèse des revues systématiques AAP/AO sur l'évaluation du risque et la prise en charge des maladies péri-implantaires. Points lus : (1) pour la mucosite péri-implantaire, le débridement péri-implantaire en MONOTHÉRAPIE améliore les paramètres cliniques (PD, BoP) et les traitements adjuvants n'apportent pas de bénéfice cliniquement significatif (PubMed 40476896, vu) ; (2) le consensus structure l'évaluation des facteurs de risque systémiques, comportementaux et site-par-site (perio.org, vu) et le choix entre approches non chirurgicales vs chirurgicales de la péri-implantite (Ovid, vu). Doublonnage vérifié : la reco « HAS antibiotiques bucco-dentaire 2026-07 » en base = antibiotiques, celle-ci = pathologie péri-implantaire. Encart officinal : patients porteurs d'implants = patients à suivi de maintenance (débridement professionnel) et à hygiène interdentinaire quotidienne ; la mucosite péri-implantaire (inflammation SANS perte osseuse) est réversible si traitée tôt — message de prévention au comptoir ; le tabac majore le risque d'échec (cf. revue bucco-24h-03).",
+   "src": [
+    [
+     "Wiley — AO/AAP consensus on prevention and management of peri-implant diseases and conditions: Summary report (J Periodontol 2025;96(6):519-541)",
+     "https://aap.onlinelibrary.wiley.com/doi/full/10.1002/JPER.25-0270"
+    ],
+    [
+     "Loma Linda University Experts — fiche citation « Vol. 96, No. 6, 06.2025 »",
+     "https://experts.llu.edu/en/publications/aoaap-consensus-on-prevention-and-management-of-peri-implant-dise/"
+    ],
+    [
+     "PubMed — Treatment of Peri-implant Mucositis: An AAP/AO Systematic Review and Meta-analysis",
+     "https://pubmed.ncbi.nlm.nih.gov/40476896/"
+    ],
+    [
+     "AAP (perio.org) — page officielle du consensus",
+     "https://www.perio.org/research-science/academy-of-osseointegration-and-american-academy-of-periodontology-consensus-on-prevention-and-management-of-peri-implant-diseases-and-conditions/"
+    ]
+   ]
+  },
+  {
+   "spe": "ORL & stomatologie (parodontologie)",
+   "org": "British Society of Periodontology (BSP) — adolopment des lignes directrices EFP S3",
+   "dt": "2026-09",
+   "titre": "Traitement de la parodontite de stade IV : adolopment britannique des recommandations EFP (British Dental Journal)",
+   "res": "Article d'adolopment britannique (« GRADE ADOLOPMENT ») des lignes directrices EFP de niveau S3 pour le traitement de la parodontite de stade IV (parodontite sévère avec dents compromises), publié dans le British Dental Journal en septembre 2026 (date lue sur le sommaire Paperity : « Sep 2026 | Devan S. Raindi, Moritz Kebschull, Iain Chapple » ; nature.com/articles/s41415-026-9887-0) : la conservation dentaire (« tooth retention ») reste la stratégie de 1re intention chaque fois que possible dans la prise en charge globale du stade IV (extrait lu : « Tooth retention remains the first-line treatment strategy wherever feasible ») ; l'adolopment adapte pour le système de santé britannique la reco source EFP S3 (2022) qui structure le traitement en 3 étapes — étape 1 : engager le patient dans le contrôle de plaque et les facteurs de risque ; étapes 2-3 : débridement mécanique puis, si besoin, thérapie chirurgicale et réhabilitation (description des 3 étapes lue sur periodiabetes.org, page EFP, vue). Doublonnage vérifié : aucune reco EFP/BSP parodontite en base. Encart officinal : au comptoir, une parodontite sévère = plaies multi-rénovations et dents mobiles — le message est que l'EXTRACTION n'est pas automatique et que l'arrêt du tabac + le contrôle de plaque conditionnent la réussite ; orienter vers le dentiste sans attendre la douleur.",
+   "src": [
+    [
+     "Nature (Br Dent J) — Treating Stage IV periodontitis: the UK adolopment of the EFP Stage IV guidelines",
+     "https://www.nature.com/articles/s41415-026-9887-0"
+    ],
+    [
+     "Paperity — sommaire BDJ « Sep 2026 | Raindi, Kebschull, Chapple »",
+     "https://paperity.org/journal/192255/british-dental-journal"
+    ],
+    [
+     "Periodiabetes Hub — EFP S3 guideline : les 3 étapes du traitement de la parodontite",
+     "https://www.periodiabetes.org/guidance/efp-guideline-treatment-of-periodontitis/"
+    ],
+    [
+     "ScienceDirect — UK implementation of the EFP S3 guideline, stage IV (Kebschull et al.)",
+     "https://www.sciencedirect.com/science/article/pii/S030057122500291X"
+    ]
+   ]
+  },
+  {
+   "spe": "Urologie",
+   "org": "European Association of Urology (EAU) — Salonia et al.",
+   "dt": "2025-05",
+   "titre": "Recommandations EAU 2025 sur la santé sexuelle et reproductive masculine : hypogonadisme, dysfonction érectile, éjaculation précoce et maladie de La Peyronie (mise à jour 2025)",
+   "res": "Mise à jour 2025 des lignes directrices EAU sur la santé sexuelle et reproductive (SRH) masculine : synthèse pratique du diagnostic, du traitement et du suivi de l'hypogonadisme tardif (LOH), de la dysfonction érectile, de l'éjaculation précose et de la maladie de La Peyronie, avec accent sur le bilan clinique (European Urology, publié le 1er mai 2025 — date lue via ResearchGate « On May 1, 2025 » ; pages European Urology/ScienceDirect vues en extraits). Points lus via Guideline Central : discuter avec les patients traités pour un cancer de la prostate le risque de changements sexuels AUTRES que la dysfonction érectile (baisse du désir, troubles de l'orgasme, anéjaculation, syndrome de La Peyronie, retentissement sur la taille du pénis) ; débuter les traitements pro-érectiles au plus tôt après prostatectomie/chirurgie pelvienne. Complète la base : aucune RECO dédiée à la santé sexuelle masculine (la RECO EAU lithiase 2025 et l'AFU prostate/AFU-CTMH HBP couvrent d'autres pans). En officine : dépistage simple des troubles érectiles (ils précèdent souvent une atteinte vasculaire — question cardio à réévaluer), arrêt des facteurs aggravants (tabac), disponibilité des IPDE5, et surtout : chez l'homme traité pour un cancer de la prostate, anticiper le dialogue — les répercussions sexuelles ne se limitent pas à l'érection.",
+   "src": [
+    [
+     "European Urology — EAU SRH 2025 Update",
+     "https://www.europeanurology.com/article/S0302-2838(25)00211-8/fulltext"
+    ],
+    [
+     "ScienceDirect — S0302283825002118",
+     "https://www.sciencedirect.com/science/article/abs/pii/S0302283825002118"
+    ],
+    [
+     "ResearchGate — « On May 1, 2025 »",
+     "https://www.researchgate.net/publication/391573930_European_Association_of_Urology_Guidelines_on_Male_Sexual_and_Reproductive_Health_2025_Update_on_Male_Hypogonadism_Erectile_Dysfunction_Premature_Ejaculation_and_Peyronie's_Disease"
+    ],
+    [
+     "Guideline Central — extraits de recommandations",
+     "https://www.guidelinecentral.com/insights/may-2026-erectiledysfunction-guideline-realtime/"
+    ]
+   ]
+  },
+  {
+   "spe": "Urologie",
+   "org": "American Urological Association (AUA)",
+   "dt": "2026-05",
+   "titre": "Prise en charge des symptômes du bas appareil urinaire liés à l'HBP — guideline AUA 2026 (en 3 parties : évaluation, traitement médical, traitement procédural)",
+   "res": "Nouvelle version 2026 du guideline AUA sur les LUTS/HBP, publiée en 3 parties dans le Journal of Urology (vol 216, n° 2, août 2026 — pp. 152-160 pour le traitement médical ; Epub lu : « Epub 2026 May 7 » pour la partie procédurale, PMID 42095468) : partie I évaluation/presentation initiale, partie II traitement médicamenteux (alpha-bloquants, 5-ARI, leur association, IPDE5, phytothérapie), partie III traitements procéduraux/chirurgicaux ; les recommandations couvrent l'évaluation initiale et la prise en charge de première ligne des patients se présentant avec des LUTS/BPH (lu via UroToday). Complément direct des recommandations françaises AFU-CTMH 2025 (en base) — deux référentiels convergents pour le même conseil officinal (délais d'action des 5-ARI, hypotension des alpha-bloquants, place de l'association). En officine : c'est la base scientifique de ce qu'on explique au comptoir : tamsulosine agit en jours (mais réévaluer le bénéfice à long terme, cf. essai N-of-1 JAMA Netw Open 2026) ; dutastéride en mois ; jamais d'arrêt brutal sans avis médical ; bilan PSA/ Toucher rectal = médecin.",
+   "src": [
+    [
+     "Journal of Urology (auajournals) — Part II, Medical Management (doi 10.1097/JU.0000000000005098)",
+     "https://www.auajournals.org/doi/abs/10.1097/JU.0000000000005098"
+    ],
+    [
+     "PubMed 42095468 — Part III « Epub 2026 May 7 »",
+     "https://pubmed.ncbi.nlm.nih.gov/42095468/"
+    ],
+    [
+     "Ovid — « Journal of Urology 216(2):p 161-170, August 2026 »",
+     "https://www.ovid.com/jnls/auajuro/abstract/10.1097/ju.0000000000005099~management-of-lower-urinary-tract-symptoms-attributed-to?redirectionsource=fulltextview"
+    ],
+    [
+     "UroToday — Part I, présentation et évaluation",
+     "https://www.urotoday.com/recent-abstracts/men-s-health/bph-benign-prostatic-enlargement/168789-management-of-lower-urinary-tract-symptoms-attributed-to-benign-prostatic-hyperplasia-aua-guideline-2026-part-i-presentation-and-evaluation.html"
+    ]
+   ]
+  },
+  {
+   "spe": "Endocrinologie",
+   "org": "Endocrine Society",
+   "dt": "2026-07",
+   "titre": "Déclaration de l'Endocrine Society sur la testostérone : diagnostic rigoureux avant tout traitement — symptômes seuls jamais suffisants, deux dosages matinaux à jeun, perte de poids en première ligne si IMC > 27 (16 juillet 2026)",
+   "res": "Déclaration de la Endocrine Society (press release Washington DC, 16 juillet 2026 — page ouverte et lue) rappelant les exigences diagnostiques avant traitement substitutif par testostérone : les symptômes (énergie basse, libido, humeur) ne sont JAMAIS diagnostiques seuls ; pas de dépistage de population chez les hommes asymptomatiques ; rechercher d'abord les causes réversibles (obésité, corticoïdes, opioïdes) ; diagnostic = symptômes + testostérones totale et libre basses, confirmées sur ≥ 2 prélèvements matinaux à jeun (seuil clinique usuel ≈ 300 ng/dL, lu), avec trousses standardisées (programme CDC HoST — les dosages non standardisés donnent des résultats variables) ; si hypogonadisme lié au surpoids/obésité (IMC > 27) sans autre cause : la perte de poids est le traitement de première intention ; sur la sécurité : TRAVERSE (5 200+ hommes) n'a pas montré d'excès d'infarctus/AVC mais ~50 % d'augmentation relative d'embolie pulmonaire et plus de fractures ; sécurité à long terme (dont prostate) non établie — évaluation prostatique avant/initiation et surveillance pendant le traitement. Contrepoint utile face à la demande « boosters testo » au comptoir (tribulus déjà en base, non-efficace). En officine : face au client demandant un « booster de testostérone » : les symptômes vagues ne suffisent pas, un vrai bilan médical (2 dosages matinaux) est requis ; perte de poids d'abord si surpoids ; aucun complément ne remplace un diagnostic ; TRAVERSE rassure sur le cœur mais pas sur tout.",
+   "src": [
+    [
+     "Endocrine Society — Statement on Testosterone Replacement Therapy (16 juillet 2026, page ouverte)",
+     "https://www.endocrine.org/news-and-advocacy/news-room/2026/statement-on-testosterone-replacement-therapy"
+    ],
+    [
+     "touchENDOCRINOLOGY — « Published July 16, 2026 »",
+     "https://touchendocrinology.com/insight/new-endocrine-society-statement-reinforces-diagnostic-standards-for-testosterone-therapy/"
+    ]
+   ],
+   "algo": [
+    "Étape 1 : symptômes évocateurs (énergie basse, libido ↓, humeur) — jamais diagnostiques seuls, fréquents et non spécifiques chez l'homme vieillissant",
+    "Étape 2 : rechercher les causes réversibles avant tout dosage : obésité, corticoïdes, opioïdes",
+    "Étape 3 : pas de dépistage de la testostéronémie chez les hommes asymptomatiques",
+    "Étape 4 : confirmer le diagnostic par ≥ 2 testostérones totales et libres basses, dosées le matin à jeun (seuil clinique usuel ≈ 300 ng/dL)",
+    "Étape 5 : exiger une trosse standardisée (certifiée CDC HoST) — les dosages non standardisés entraînent sur- et sous-diagnostic",
+    "Étape 6 : si IMC > 27 sans autre cause identifiée : perte de poids = première intention avant la testostérone",
+    "Étape 7 : si traitement : peser bénéfices/risques (TRAVERSE : pas d'excès d'IDM/AVC mais ~+50 % d'embolie pulmonaire et fractures accrues), évaluation prostatique avant, surveillance pendant"
+   ]
+  },
+  {
+   "spe": "Gériatrie",
+   "org": "HAS (Haute Autorité de santé)",
+   "dt": "2024-03",
+   "titre": "Personnes âgées à risque de chute : prescription d'activité physique — synthèse HAS (validée le 28 mars 2024)",
+   "res": "Synthèse HAS sur la prescription d'activité physique chez les personnes âgées à risque de chute (validation lue : « synthèse validée le 28 mars 2024 », PDF sur has-sante.fr daté 2024-04 ; reprise pratiquesensante vue) : complète le guide HAS de consultation et de prescription d'activité physique chez l'adulte et le référentiel prescription AP ; cadre le « durcissement HAS 2024 » de l'évaluation du risque de chute. Première RECO HAS « chutes » de la base (grep vérifié : aucune RECO chute ; les entrées chutes sont des REVUES). En officine : relais officinal direct des atelels équilibre prescrits — vérifier la LSI/ordonnance d'AP, encourager l'adhérence (au moins aussi importante qu'un médicament), et croiser avec la revue des FRIDs.",
+   "src": [
+    [
+     "HAS — synthèse PDF (2024-04)",
+     "https://www.has-sante.fr/upload/docs/application/pdf/2024-04/synthese_aps_personnes_agees_a_risque_de_chute.pdf"
+    ],
+    [
+     "pratiquesensante — reprise HAS 2024",
+     "https://www.pratiquesensante.com/blog/avis-8/personnes-agees-a-risque-de-chute-prescription-d-activite-physique-has-2024-3601"
+    ]
+   ],
+   "geo": "fr"
+  },
+  {
+   "spe": "Gériatrie / Vaccination",
+   "org": "HAS (Haute Autorité de santé)",
+   "dt": "2025-04",
+   "titre": "Vaccination contre la grippe saisonnière des personnes de 65 ans et plus : place des vaccins Efluelda (haute dose) et Fluad (adjuvanté MF59) — recommandation vaccinale",
+   "res": "Recommandation vaccinale HAS ouverte et lue (page : « Date de validation : 10 avril 2025 », « Mis en ligne le 09 mai 2025 ») : face aux revendications d'une place préférentielle des vaccins haute dose (Efluelda, Sanofi) et adjuvanté MF59 (Fluad, Seqirus) chez les 65 ans et plus du fait de l'immunosénescence, la HAS évalue l'efficacité vaccinale relative — points lus dans la page : hétérogénéité des estimations d'efficacité relative selon le critère (décès, hospitalisations, infections), absence d'estimation sur les seuls décès liés à la grippe, SMR important et remboursement 65 % déjà accordés. Aucune RECO grippe 65+/Efluelda-Fluad en base (grep vérifié ; les entrées FLUNITY-HD et essai danois sont des REVUES d'efficacité). En officine : la campagne 2025-2026 propose ces vaccins « renforcés » aux 65 ans et plus (sante-respiratoire.com, page vue) — le retrait à l'officine reste l'occasion du message « vaccin renforcé pour les 65+ », quel que soit le vaccin disponible dans le circuit.",
+   "src": [
+    [
+     "HAS — recommandation vaccinale (validation 10/04/2025, en ligne 09/05/2025)",
+     "https://www.has-sante.fr/jcms/p_3604446/fr/vaccination-contre-la-grippe-saisonniere-des-personnes-de-65-ans-et-plus-place-des-vaccins-efluelda-et-fluad"
+    ],
+    [
+     "Association Santé Respiratoire France — campagne 2025-2026 et vaccins renforcés",
+     "https://sante-respiratoire.com/grippe-2025-2026-protegez-vous/"
+    ]
+   ],
+   "geo": "fr"
+  },
+  {
+   "spe": "Neurologie / Gériatrie",
+   "org": "Fédération des Centres Mémoire (collégial, avec SFGG et sociétés partenaires)",
+   "dt": "2025-03",
+   "titre": "Nouvelles recommandations françaises 2025 pour le diagnostic de la maladie d'Alzheimer (Fédération des Centres Mémoire)",
+   "res": "Guide français actualisé publié le mardi 25 mars 2025 (page ouverte de la Fédération des Centres Mémoire ; reprise SFGG « Recommandations pour le diagnostic de la maladie d'Alzheimer (mars 2025) » vue) : parcours diagnostique balisé du repérage à l'annonce, avec indications actualisées des biomarqueurs. Aucune RECO diagnostique Alzheimer 2024-2026 en base (grep vérifié ; la base a les anti-amyloïdes et la Lancet Commission). En officine : repérer les plaintes cognitives au comptoir (oublis répétés, erreurs de prise) et encourager l'adressage précoce en consultation Mémoire — un diagnostic précoce ouvre l'accès aux anticorps anti-amyloïdes et aux interventions non médicamenteuses.",
+   "algo": [
+    "Étape 1 : repérage précoce des premiers signes en soins primaires, y compris les formes non amnésiques (outils recommandés, outils numériques).",
+    "Étape 2 : adressage/organisation des consultations Mémoire (rôles des CMP, CMT, CMRR et parcours de coordination).",
+    "Étape 3 : confirmation diagnostique par biomarqueurs selon indications actualisées : LCS, marqueurs plasmatiques, TEP amyloïde.",
+    "Étape 4 : annonce diagnostique et post-annonce accompagnés, adaptés au stade et au souhait du patient."
+   ],
+   "src": [
+    [
+     "Fédération des Centres Mémoire — nouvelles recommandations 2025 (25 mars 2025)",
+     "https://www.centres-memoire.fr/nouvelles-recommandations-2025-pour-le-diagnostic-de-la-maladie-dalzheimer-a-lire-absolument/"
+    ],
+    [
+     "SFGG — recommandations maladie d'Alzheimer (mars 2025)",
+     "https://sfgg.org/recommandations/maladie-alzheimer/"
+    ]
+   ],
+   "geo": "fr"
+  },
+  {
+   "spe": "Infectiologie",
+   "org": "IDSA (Infectious Diseases Society of America)",
+   "dt": "2026-07",
+   "titre": "IDSA 2026 Guidance on the Treatment of Antimicrobial-Resistant Gram-Negative Infections",
+   "res": "Mise à jour 2026 (publiée le 30 juillet 2026, date lue sur la page officielle de l'IDSA) du guidance sur le traitement des infections à Gram-négatif résistants : points lus sur la page — définitions harmonisées des infections urinaires simples/compliquées avec le guideline IDSA 2025 des cUTI ; critère révisé de présomption de BLSE pour E. coli/K. pneumoniae/K. oxytoca (CMI ceftriaxone ≥ 4 µg/mL) ; ajout des agents récemment approuvés par la FDA (gépotidacine, pivmécillinam, sulopenem oral, fosfomycine IV) et des tableaux de posologies + breakpoints CLSI 2026. Publication associée dans Clinical Infectious Diseases (DOI vu : 10.1093/cid/ciag481). Utile en officine française comme référence internationale sur les nouvelles molécules et le raisonnement anti-BLSE, à confronter aux fiches HAS-SPILF déjà en base.",
+   "src": [
+    [
+     "IDSA — 2026 AMR Guidance (page officielle, Published July 30, 2026, vue)",
+     "https://www.idsociety.org/practice-guideline/amr-guidance/"
+    ],
+    [
+     "Clinical Infectious Diseases — Infectious Diseases Society of America 2026 Guidance on the Treatment of Antimicrobial-Resistant Gram-Negative Infections",
+     "https://academic.oup.com/cid/advance-article/doi/10.1093/cid/ciag481/8756906"
+    ]
+   ]
+  },
+  {
+   "spe": "Pneumologie",
+   "org": "NICE (National Institute for Health and Care Excellence)",
+   "dt": "2025-09",
+   "titre": "Pneumonia: diagnosis and management — NICE NG250 (publié le 2 septembre 2025)",
+   "res": "Recommandation NICE NG250 couvrant le diagnostic, l'évaluation et le traitement des pneumonies communautaires et hospitalières (y compris pneumonie bactérienne secondaire à la COVID-19), du nourrisson à l'adulte (extraits lus : portée du guideline ; PDF officiel daté « Published: 2 September 2025 » ; méthodes « FINAL (September 2025) » vues). Référence internationale de synchronisation avec les recommandations françaises (HAS PAC mai 2025, SPILF/SPLF pneumonies 2025 — déjà en base), notamment sur les durées d'antibiothérapie et les critères d'hospitalisation à domicile / virtual wards (mentions lues).",
+   "src": [
+    [
+     "NICE — NG250 Pneumonia: diagnosis and management",
+     "https://www.nice.org.uk/guidance/ng250"
+    ],
+    [
+     "NICE — PDF officiel NG250 (Published: 2 September 2025, vu)",
+     "https://www.nice.org.uk/guidance/ng250/resources/pneumonia-diagnosis-and-management-pdf-66144010347205"
+    ],
+    [
+     "NCBI — NG250 Methods, FINAL September 2025",
+     "https://www.ncbi.nlm.nih.gov/books/NBK619360/bin/NG250-Methods-20250902.pdf"
+    ]
+   ]
+  },
+  {
+   "spe": "Infectiologie",
+   "org": "SPILF / CNGOF",
+   "dt": "2025-10",
+   "titre": "Prévention et prise en charge de la syphilis chez la femme enceinte et en périnatalité — recommandation SPILF/CNGOF (Infectious Diseases Now, disponible en ligne le 6 octobre 2025)",
+   "res": "Recommandation française (PDF vu sur infectiologie.com : « 2025-syphilis-femme-enceinte-reco-spilf.pdf », Infectious Diseases Now 55 (2025) 105162, « Available online 6 October 2025 », DOI 10.1016/j.idnow.2025.105162 lu) sur la prévention et la prise en charge de la syphilis chez la femme enceinte et en périnatalité. Éléments justificatifs lus : persistance d'une circulation élevée de la syphilis en France et recrudescence mondiale de la syphilis chez la femme enceinte, gravité pour l'enfant (syphilis congénitale). Premier point de repère SPILF/CNGOF absent de la base sur ce thème, en cohérence avec l'alerte ECDC sur le gonocoque et la méta syphilis déjà en base. Utile en officine : dépistage prénatal, suivi sérologique et message de prévention IST.",
+   "geo": "fr",
+   "src": [
+    [
+     "SPILF — PDF de la recommandation (2025, Infectious Diseases Now)",
+     "https://www.infectiologie.com/UserFiles/File/spilf/recos/2025-syphilis-femme-enceinte-reco-spilf.pdf"
+    ],
+    [
+     "ScienceDirect — Infectious Diseases Now 55 (2025) 105162",
+     "https://www.sciencedirect.com/science/article/abs/pii/S2772743225006816"
+    ],
+    [
+     "CNR IST — Guidelines Syphilis in pregnant & perinatal women (page vue)",
+     "https://www.cnr-ist.fr/ressources/editeur/Guidelines%20Syphilis%20in%20pregnant%20&%20perinatal%20women.pdf"
+    ]
+   ]
+  },
+  {
+   "spe": "Douleur & soins palliatifs",
+   "org": "HAS",
+   "dt": "2025-07",
+   "titre": "Fibromyalgie de l'adulte : conduite diagnostique et stratégie thérapeutique — recommandation de bonne pratique (validée le 19 juin 2025, en ligne le 10 juillet 2025)",
+   "geo": "fr",
+   "res": "Première RBP française sur la fibromyalgie, demandée par les associations de patients et pilotée par la HAS (président du groupe de travail : Pr Didier Bouhassira). Messages clés lus dans le document : la fibromyalgie (prévalence ~1,5-2 % en population générale, ~3 fois plus fréquente chez la femme) est classée dans les douleurs chroniques généralisées (CIM-11) et relève d'une hypersensibilité centrale ; le diagnostic est clinique, sans biomarqueur ; l'annonce du diagnostic légitime la plainte et facilite la coconstruction du projet de soins ; la stratégie thérapeutique est graduée : 1re ligne activité physique personnalisée + apprentissage de l'autogestion + maintien dans l'emploi ; 2e ligne certains antidépresseurs et antiépileptiques débutés à faible dose pour les douleurs continues, antalgiques usuels seulement ponctuels, opioïdes prudents et exceptionnels au long cours ; à chaque prescription/renouvellement évaluer tolérance, efficacité ressentie et mésusage ; pas d'intérêt démontré des régimes de restriction ni des compléments alimentaires hors carences avérées ; toutes les recommandations reposent sur un accord professionnel (AE), la littérature ne permettant pas de gradation. En officine : document attendu par les patients fibromyalgiques — bon usage des antalgiques (jamais au long cours), signaux d'alerte psychiques (idéation suicidaire à repérer), absence d'intérêt des compléments (fréquemment demandés).",
+   "src": [
+    [
+     "HAS — page de la recommandation",
+     "https://www.has-sante.fr/jcms/p_3634512/fr/fibromyalgie-de-l-adulte-conduite-diagnostique-et-strategie-therapeutique"
+    ],
+    [
+     "HAS — document intégral (PDF, juin 2025)",
+     "https://www.has-sante.fr/upload/docs/application/pdf/2025-07/fibromyalgie_de_ladulte_conduite_diagnostique_et_strategie_therapeutique_-_recommandations.pdf"
+    ]
+   ],
+   "algo": [
+    "Étape 1 : reconnaître en soins primaires la plainte de douleur chronique diffuse (> 3 mois) et créer les conditions d'une évaluation",
+    "Étape 2 : évaluer les douleurs et leur retentissement (sommeil, fatigue, transit, cognition, humeur)",
+    "Étape 3 : évoquer cliniquement la fibromyalgie — diagnostic clinique, aucun biomarqueur, poursuivre la démarche pour écarter les autres causes de douleur",
+    "Étape 4 : confirmer le diagnostic, évaluer le retentissement sur la qualité de vie et annoncer (annonce qui légitime la plainte)",
+    "Étape 5 : 1re ligne — activité physique personnalisée + stratégies personnalisées d'autogestion + maintien dans l'emploi",
+    "Étape 6 : 2e ligne — antidépresseurs/antiépileptiques à faible dose de départ pour les douleurs continues ; antalgiques usuels ponctuels, jamais au long cours",
+    "Étape 7 : opioïdes réservés aux douleurs incidentes, prudents et ponctuels, exceptionnels au long cours",
+    "Étape 8 : à chaque prescription/renouvellement — évaluer tolérance et efficacité ressentie, identifier mésusage ; tout au long du suivi, repérer et traiter les troubles de l'humeur"
+   ]
+  },
+  {
+   "spe": "Douleur & soins palliatifs",
+   "org": "OMS (Organisation mondiale de la Santé)",
+   "dt": "2025-09",
+   "titre": "OMS — Ligne directrice sur les politiques nationales équilibrées pour les médicaments sous contrôle : concilier accès médical et sécurité (édition complète publiée le 19 septembre 2025)",
+   "res": "Premier cadre mondial complet pour garantir l'accès aux médicaments sous contrôle à des fins médicales et scientifiques tout en minimisant mésusage et diversion (édition complète publiée le 19/09/2025, après une communication rapide à l'Assemblée mondiale de la santé du 26/05/2025). Points lus : jusqu'à 98 % des patients des pays à bas revenu n'ont pas accès à un antalgie adéquate (morphine absente pour les cancers avancés et le VIH/sida) tandis qu'ailleurs une régulation insuffisante a nourri des épidémies d'opioïdes ; la ligne directrice couvre 7 domaines : élaboration des politiques, prix et financement, sélection des médicaments, procurement et chaîne d'approvisionnement, régulation, prescription et délivrance, et formation des professionnels de santé. Pertinence officine française : cadre policy-level, utile comme référence internationale du double impératif « accès + sécurité » qui fonde les règles françaises (ordonnance sécurisée, plan de gestion des stupéfiants).",
+   "src": [
+    [
+     "OMS — publication de la ligne directrice complète (19/09/2025)",
+     "https://www.who.int/news/item/19-09-2025-who-publishes-full-guideline-report-to-help-countries-ensure-safe--equitable-access-to-controlled-medicines"
+    ],
+    [
+     "OMS — communication rapide (26/05/2025)",
+     "https://www.who.int/news/item/26-05-2025-who-unveils-new-guideline-to-improve-global-access-to-controlled-medicines"
+    ]
+   ]
+  },
+  {
+   "spe": "Neurologie & AVC",
+   "org": "American Headache Society (AHS)",
+   "dt": "2026-01",
+   "titre": "Mise à jour 2025 du traitement aigu de la migraine de l'adulte aux urgences — évaluation AHS des pharmacothérapies parentérales (Headache 2026;66(1):53-76, epub 01/12/2025)",
+   "res": "Mise à jour de la guideline AHS 2016 sur les traitements parentéraux de la crise de migraine aux urgences (Headache: The Journal of Head and Face Pain, 2026 Jan;66(1):53-76, DOI 10.1111/head.70016, epub le 01/12/2025). Conclusion lue dans le résumé PubMed : après revue des preuves et processus de consensus, la prochlorpérazine IV et le bloc nerveux occipital (GONB) doivent être proposés à tout adulte éligible se présentant aux urgences pour une crise de migraine ; la guideline vise à réduire la variabilité des pratiques (~1/4 des 3,5 millions de visites annuelles pour céphalée aux urgences US concernent la migraine). Panneau « international » : sans équivalent français actualisé sur ce setting spécifique (la SFEMC 2025 déjà en base couvre la voie du CGRP, pas la parentérale aux urgences). En officine : utile pour informer les patients « migraineux aux urgences » — il existe des traitements non opioïdes efficaces (neuroleptiques IV, bloc occipital) ; l'objectif reste d'éviter l'escalade aux opioïdes.",
+   "src": [
+    [
+     "PubMed (PMID 41321235) — 2026 Jan;66(1):53-76",
+     "https://pubmed.ncbi.nlm.nih.gov/41321235/"
+    ],
+    [
+     "Headache (Wiley) — DOI 10.1111/head.70016",
+     "https://headachejournal.onlinelibrary.wiley.com/doi/10.1111/head.70016"
+    ],
+    [
+     "American Headache Society",
+     "https://americanheadachesociety.org/research/library/2025-er-migraine-guidelines-provide-clear-direction-for-clinicians"
+    ]
+   ]
+  },
+  {
+   "spe": "Nutrition & Obésité",
+   "org": "HAS",
+   "dt": "2024-02",
+   "titre": "Obésité de l'adulte : prise en charge de 2e et 3e niveaux — Partie II : prise en charge pré et post chirurgie bariatrique (recommandation de bonne pratique, publiée le 8 février 2024)",
+   "geo": "fr",
+   "res": "Recommandation HAS publiée le 8 février 2024 (reco369, PDF et argumentaire datés 2024-02-08), qui actualise la partie chirurgicale du parcours obésité adulte (l'ancienne version datait de 2009 ; la partie médicale 2022 et les guides de suivi/restauration restent en vigueur). Points lus : éligibilité discutée à partir d'un IMC ≥ 40 kg/m², ou entre 35 et 40 kg/m² lorsqu'au moins une maladie associée sévère peut être améliorée par la chirurgie ; entre 30 et 35 kg/m², la chirurgie peut aussi être proposée aux patients avec diabète de type 2 dont les objectifs glycémiques individualisés ne sont pas atteints malgré une prise en charge médicale diabétologique (sur accord avec le diabétologue) ; démarche de décision partagée formalisée (document usager « DÉCIDER ensemble d'une chirurgie bariatrique », mis en ligne le 25/09/2024) ; si une arthroplastie est indiquée, un délai d'au moins 6 mois entre la chirurgie bariatrique et l'arthroplastie est préconisé, après réévaluation nutritionnelle spécialisée. Absente de la base (le base-index RECO ne contient que l'avis HAS Wegovy/Mounjaro 2025-12 et NICE NG246). En officine : les patients opérés arrivent en pharmacie avec des protocoles de supplémentation à vie (vitamines, fer, calcium, B12 selon le type d'intervention) — vérifier l'observance de CES compléments comme un médicament, dépister les carences rapportées (fatigue, cheveux, paresthésies), et se méfier des interactions (fer/calcium séparés, lévothyroxine à distance).",
+   "src": [
+    [
+     "HAS — page de la recommandation (p_3497674)",
+     "https://www.has-sante.fr/jcms/p_3497674/fr/obesite-de-l-adulte-prise-en-charge-de-2e-et-3e-niveaux-partie-ii-prise-en-charge-pre-et-post-chirurgie-bariatrique-recommandations"
+    ],
+    [
+     "HAS — PDF reco369 (2024-02-08)",
+     "https://www.has-sante.fr/upload/docs/application/pdf/2024-02/reco369_recommandations_obesite_2e_3e_niveaux_ii_cd_2024_02_08_preparation_mel.pdf"
+    ],
+    [
+     "HAS — document usager « DÉCIDER ensemble » (mis en ligne 25/09/2024)",
+     "https://www.has-sante.fr/jcms/c_849636/fr/chirurgie-de-l-obesite-ce-qu-il-faut-savoir-avant-de-vous-decider"
+    ],
+    [
+     "CSO Occitanie Ouest — recensement des reco (28/02/2024)",
+     "https://obesite.utoulouse.fr/recommandations-has-obesite"
+    ]
+   ],
+   "algo": [
+    "Étape 1 : confirmer que l'obésité relève d'une prise en charge de 2e/3e niveau après échec de la prise en charge médicale de premier niveau",
+    "Étape 2 : discuter la chirurgie bariatrique si IMC ≥ 40 kg/m²",
+    "Étape 3 : discuter la chirurgie si IMC 35-40 kg/m² avec au moins une maladie associée sévère améliorable par la chirurgie",
+    "Étape 4 : entre 30 et 35 kg/m², chirurgie réservée au DT2 avec objectifs glycémiques individualisés non atteints malgré la prise en charge médicale, sur accord avec le diabétologue",
+    "Étape 5 : engager la décision partagée avec le patient (information loyale, démarche « DÉCIDER ensemble »)",
+    "Étape 6 : réaliser le bilan préopératoire pluridisciplinaire incluant l'évaluation nutritionnelle spécialisée",
+    "Étape 7 : si une arthroplastie est indiquée, respecter un délai d'au moins 6 mois après la chirurgie bariatrique, après réévaluation nutritionnelle",
+    "Étape 8 : assurer le suivi post-opératoire : surveillance nutritionnelle renforcée et supplémentation adaptée au type d'intervention"
+   ]
+  },
+  {
+   "spe": "Nutrition & Obésité",
+   "org": "GCC-CSO / réseau FORCE (F-CRIN)",
+   "dt": "2025-11",
+   "titre": "Prise de position nationale sur les traitements médicamenteux de l'obésité (TMO) et leur accompagnement en pratique — premier référentiel des centres spécialisés obésité (publié le 25 novembre 2025)",
+   "geo": "fr",
+   "res": "Prise de position nationale pilotée par le Groupe de Concertation et de Coordination des Centres Spécialisés de l'Obésité (GCC-CSO) et le réseau FORCE (French Obesity Research Centre of Excellence, F-CRIN), publiée le 25 novembre 2025 : référentiel de bonnes pratiques destiné à sécuriser le parcours de soin lors de la prescription des traitements médicamenteux de l'obésité (TMO) chez l'adulte — clarifier les indications, encadrer l'utilisation des nouveaux médicaments (GLP-1 et apparentés), rappeler que le médicament est un adjuvant d'une prise en charge globale (nutrition, activité physique, accompagnement comportemental) et non un traitement isolé, avec des infographies de bon usage diffusées aux professionnels (relais Le Quotidien du Médecin du 25/11/2025, Cardio-online, Caloris, Obésité-France). À ce jour, l'AFERO n'a pas publié de recommandation datée 2024-2026 identifiable dans les recherches — cette prise de position GCC-CSO/FORCE est le document français de référence sur les TMO. Précieux complément à l'OMS GLP-1 (12/2025) et à l'avis HAS Wegovy/Mounjaro (12/2025) déjà en base. En officine : le cadre officiel du bon usage des TMO en France : sélection des patients, pas de « rechute » traitée seule par la dose, arrêt/entretien réfléchis, accompagnement diétético-comportemental systématique — exactement le discours que le pharmacien doit tenir face aux demandes de GLP-1 « pour maigrir vite ».",
+   "src": [
+    [
+     "Le Quotidien du Médecin (25/11/2025)",
+     "https://www.lequotidiendumedecin.fr/actu-medicale/societes-savantes/les-experts-de-lobesite-en-france-se-positionnent-sur-les-nouveaux-traitements-medicamenteux"
+    ],
+    [
+     "Cardio-online — paroles d'experts (nov. 2025)",
+     "https://www.cardio-online.fr/ressources-scientifiques/paroles-d-experts-en-cardiologie/2026/prise-de-position-sur-les-traitements-medicamenteux-de-l-obesite-du-groupe-de-concertation-et-coordination-des-centres-specialises"
+    ],
+    [
+     "F-CRIN — communiqué FORCE/GCC-CSO",
+     "https://www.fcrin.org/en/media/press/obesity-adults-force-and-gcc-cso-publish-1st-reference-position-paper-support-drug"
+    ],
+    [
+     "Caloris — prise de position nationale TMO",
+     "https://www.caloris.fr/prise-de-position-nationale-sur-les-traitements-medicamenteux-de-lobesite-et-leur-accompagnement-en-pratique/"
+    ]
+   ]
+  },
+  {
+   "spe": "Nutrition & Obésité",
+   "org": "Obesity Canada (Wharton et al., CMAJ)",
+   "dt": "2025-08",
+   "titre": "Pharmacotherapy for obesity management in adults : 2025 clinical practice guideline update — la pharmacothérapie de l'obésité adulte actualisée par Obesity Canada (CMAJ 2025;197(27):E797-E809, 11 août 2025 ; version française E1043)",
+   "res": "Mise à jour du guide canadien sur la pharmacothérapie de l'obésité adulte (CMAJ, 11 août 2025, DOI 10.1503/cmaj.250502, PMID 40789597 ; revue systématique janvier 2022-juillet 2024 complétée jusqu'à mai 2025) : 6 nouvelles recommandations et 7 révisées depuis la mise à jour 2022 — messages lus : la pharmacothérapie fait partie intégrante de la prise en charge globale (avec thérapie comportementale et chirurgie), elle doit être guidée par les complications liées à l'adiposité et non par le seul poids, et les médicaments non approuvés/compounded sont recommandés CONTRE. Panneau international : différence France/Canada lue et vérifiée — au Canada, la pharmacothérapie est recommandée largement dans la prise en charge de l'obésité avec complications ; en France, depuis le 15/06/2026, seuls Wegovy et Mounjaro sont remboursés dans un cadre strict (avis HAS mai 2026, arrêtés JO du 28/05/2026 — déjà en base), et le marché s'articule autour de règles françaises d'initiation/suivi (prise de position GCC-CSO/FORCE retenue ci-dessus). Version française publiée par le CMAJ (197(32):E1043). En officine : pour les patients qui citent « le Canada/les USA », expliquer que le cadre français (remboursement restreint, prescription spécialisée, adjuvant d'une prise en charge globale) rejoint pourtant l'esprit du guide canadien : le médicament se prescrit avec un plan, pas à la place du plan.",
+   "src": [
+    [
+     "CMAJ — 2025;197(27):E797-E809 (11 août 2025)",
+     "https://www.cmaj.ca/content/197/27/E797"
+    ],
+    [
+     "CMAJ — table des matières du numéro (August 11, 2025, 197(27))",
+     "https://www.cmaj.ca/content/197/27"
+    ],
+    [
+     "PubMed (PMID 40789597)",
+     "https://pubmed.ncbi.nlm.nih.gov/40789597/"
+    ],
+    [
+     "CMAJ — version française (197(32):E1043)",
+     "https://www.cmaj.ca/content/197/32/E1043"
+    ],
+    [
+     "La Revue du Praticien DPC — cadre français de remboursement (IMC ≥ 40, conditions)",
+     "https://larevuedupraticien-dpc.fr/agonistes-glp1-obesite-medecin/"
+    ]
+   ],
+   "int": "🇨🇦 Canada : pharmacothérapie recommandée comme composante intégrale de la prise en charge de l'obésité adulte, guidée par les complications (guide Obesity Canada 2025). 🇫🇷 France : cadre plus restrictif — remboursement de Wegovy/Mounjaro depuis le 15/06/2026 dans des conditions strictes (IMC ≥ 40 etc., avis HAS), prescription encadrée par la prise de position GCC-CSO/FORCE (25/11/2025). Différence vérifiée via les deux sources citées."
+  },
+  {
+   "spe": "Neurologie · troubles du sommeil (SJSR et mouvements périodiques)",
+   "org": "AASM — American Academy of Sleep Medicine",
+   "dt": "2025-01",
+   "titre": "Traitement du syndrome des jambes sans repos et du trouble des mouvements périodiques des jambes : recommandation de pratique clinique (JCSM 2025;21(1):137-152)",
+   "res": "Recommandation AASM : chez l'adulte avec SJSR, l'AASM RECOMMANDE (fort) la gabapentine, la gabapentine enacarbil ou la prégabaline — les agonistes dopaminergiques ne sont plus en tête ; elle recommande CONTRE la cabergoline (fort) et suggère contre l'acide valproïque (conditionnel) ; chez l'enfant avec SJSR, elle suggère le sulfate ferreux si le statut martial le permet (conditionnel). Le virage alpha-2-delta/gabapentinoïdes est une vraie rupture pour l'officine : moins d'augmentation à long terme que sous agonistes dopaminergiques. Encart int : en France, les recommandations SFRMS 2018 positionnaient encore pramipexole/ropinirole/rotigotine en AMM SJSR — l'AASM 2025 justifie de rouvrir le dossier traitement avec le prescripteur (source vue : analyse « Dernières recommandations AASM dans le SJSR », ScienceDirect).",
+   "src": [
+    [
+     "PubMed 39324694 (JCSM 2025;21(1):137-152)",
+     "https://pubmed.ncbi.nlm.nih.gov/39324694/"
+    ],
+    [
+     "JCSM (doi 10.5664/jcsm.11390)",
+     "https://jcsm.aasm.org/doi/10.5664/jcsm.11390"
+    ],
+    [
+     "PMC11701286",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC11701286/"
+    ],
+    [
+     "Analyse « Dernières recommandations AASM dans le SJSR » (ScienceDirect)",
+     "https://www.sciencedirect.com/science/article/abs/pii/S1769449326000129"
+    ]
+   ],
+   "algo": [
+    "Étape 1 : confirmer le diagnostic de SJSR et évaluer la sévérité (échelle IRLS).",
+    "Étape 2 : vérifier le statut en fer avant tout traitement (déclaration de bonne pratique de l'AASM sur les paramètres du fer).",
+    "Étape 3 : adulte — gabapentine, gabapentine enacarbil ou prégabaline en première intention (recommandation forte, 13 ECR).",
+    "Étape 4 : réserver les agonistes dopaminergiques (pramipexole, ropinirole) aux cas où la réduction rapide des symptômes des jambes prime.",
+    "Étape 5 : ne pas utiliser la cabergoline (recommandation forte contre, certitude modérée).",
+    "Étape 6 : éviter l'acide valproïque (recommandation conditionnelle contre).",
+    "Étape 7 : chez l'enfant, proposer le sulfate ferreux si le statut martial le permet (conditionnel, très faible certitude)."
+   ]
+  },
+  {
+   "spe": "Psychiatrie · insomnie chronique",
+   "org": "AASM — American Academy of Sleep Medicine",
+   "dt": "2026-04",
+   "titre": "Traitement combiné (TCC-I + traitement pharmacologique) de l'insomnie chronique de l'adulte : recommandation de pratique clinique",
+   "res": "Nouvelle recommandation AASM sur le traitement COMBINÉ de l'insomnie chronique de l'adulte, défini comme TCC-I (thérapie cognitivo-comportementale de l'insomnie) initiée en même temps qu'un traitement pharmacologique (JCSM, publié le 13 avril 2026, PMID 41975142 ; communiqué AASM avril 2026). Premier cadre officiel pour répondre à la question très officinale « programme en ligne ET médicament en même temps ? » — jusque-là les guidelines traitaient les deux lignes séparément.",
+   "src": [
+    [
+     "JCSM (PMID 41975142, 13/04/2026)",
+     "https://read.qxmd.com/read/41975142/combination-treatment-for-chronic-insomnia-disorder-in-adults-an-american-academy-of-sleep-medicine-clinical-practice-guideline"
+    ],
+    [
+     "PMC13076838",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC13076838/"
+    ],
+    [
+     "Communiqué AASM (avril 2026)",
+     "https://aasm.org/combination-treatment-chronic-insomnia-guideline/"
+    ],
+    [
+     "News-Medical (21/04/2026)",
+     "https://www.news-medical.net/news/20260421/New-guideline-recommends-combined-therapies-for-chronic-insomnia-treatment.aspx"
+    ]
+   ]
+  },
+  {
+   "spe": "Neurologie · syndrome des jambes sans repos",
+   "org": "RLS Foundation (Scientific and Medical Advisory Board)",
+   "dt": "2026-05",
+   "titre": "Algorithme actualisé de prise en charge du syndrome des jambes sans repos (Mayo Clinic Proceedings, mai 2026)",
+   "res": "Le conseil scientifique et médical de la RLS Foundation publie un algorithme pratique actualisé (remplaçant la version 2021) dans Mayo Clinic Proceedings en mai 2026 : prise en charge en soins primaires, gabapentine et prégabaline disponibles en générique (gabapentine enacarbil non disponible aux US), ajustement des doses selon la fonction rénale. Pratique pour le pharmacien de ville : c'est l'outil de discussion avec les prescripteurs qui restent sur les anciens réflexes dopaminergiques.",
+   "src": [
+    [
+     "Mayo Clinic Proceedings (S0025-6196(26)18546-2)",
+     "https://www.mayoclinicproceedings.org/article/S0025-6196(26)18546-2/fulltext"
+    ],
+    [
+     "Sleep Review (mai 2026)",
+     "https://sleepreviewmag.com/sleep-disorders/movement-disorders/restless-legs-syndrome/rls-foundation-treatment-algorithm/"
+    ],
+    [
+     "Guideline Central (résumé)",
+     "https://www.guidelinecentral.com/guideline/5221910/"
+    ]
+   ]
+  },
+  {
+   "spe": "Psychiatrie · insomnie",
+   "org": "NICE — National Institute for Health and Care Excellence",
+   "dt": "2023-10",
+   "titre": "Daridorexant (QUVIVIQ) pour le traitement de l'insomnie chronique de l'adulte — évaluation de technologie TA922",
+   "res": "Recommandation NICE TA922 (publiée le 18 octobre 2023) : le daridorexant est recommandé comme option de traitement de l'insomnie chronique chez l'adulte — première recommandation NICE spécifique d'un traitement pharmacologique pour l'insomnie de longue durée. En France, Quviviq dispose d'une AMM mais n'est pas remboursé à ce jour (modalités à vérifier au cas par cas, non vérifiées dans cette dose). Distinct de la revue daridorexant-nycturie et de la méta-analyse DORA déjà retenues (recommandation d'agence, pas un essai).",
+   "src": [
+    [
+     "NICE TA922 (18/10/2023)",
+     "https://www.nice.org.uk/guidance/ta922"
+    ],
+    [
+     "The Pharmaceutical Journal",
+     "https://pharmaceutical-journal.com/article/news/nice-recommends-drug-treatment-for-long-term-insomnia"
+    ]
+   ]
+  },
+  {
+   "spe": "Gynécologie / Grossesse",
+   "org": "HAS",
+   "dt": "2026-08",
+   "geo": "fr",
+   "titre": "Dépistage du cytomégalovirus au 1er trimestre de la grossesse : prise en charge et suivi — recommandation de bonne pratique HAS (validée le 23 juillet 2026, mise en ligne le 4 août 2026)",
+   "res": "Recommandation de bonne pratique de la HAS (page officielle lue : « Date de validation : 23 juillet 2026 », « Recommandation de bonne pratique - Mis en ligne le 04 août 2026 », décision n° 2026.0141/DC/SBP), faisant suite à l'avis favorable HAS de juin 2025 sur le dépistage du CMV chez les femmes enceintes séronégatives ou de statut inconnu. Contenu lu (rubrique « L'essentiel » de la page HAS, intégralité vue) : information de toutes les femmes dès le projet de grossesse sur le CMV et les mesures d'hygiène (une première infection ne protégeant pas d'une réinfection) ; sérologie le plus tôt possible dès le projet puis au 1er trimestre UNIQUEMENT chez les séronégatives/statut inconnu ; répétition toutes les 4 semaines avec dernière sérologie entre 13+0 et 14+0 SA si négative ; pas de dépistage chez les femmes déjà infectées ni après 14 SA (risque de séquelles quasi nul au-delà du 1er trimestre) ; en cas de primo-infection confirmée : consultation dédiée rapide, information, discussion du traitement antiviral précoce par valaciclovir, orientation vers équipe experte (CPDPN/centre référent) ; amniocentèse proposée à partir de 18 SA. Le CMV est la première cause de handicap congénital d'origine infectieuse en France (prévalence néonatale ~0,4 %, lus). Première RECO CMV/grossesse en base. En officine : thème majeur de conseil 2026 — les pharmaciens sont cités parmi les professionnels cibles ; relayer les mesures d'hygiène (lavage des mains après changes/garde d'enfants, pas de partage de couverts) dès le projet de grossesse, expliquer le nouveau parcours de dépistage aux femmes enceintes, et ne pas substituer un avis médical en cas de sérologie positive.",
+   "algo": [
+    "Étape 1 : informer toutes les femmes dès le projet de grossesse sur le CMV et les mesures d'hygiène, quel que soit leur statut sérologique (une primo-infection ne protège pas d'une réinfection)",
+    "Étape 2 : réaliser une sérologie CMV le plus tôt possible dès le projet de grossesse puis au 1er trimestre, uniquement chez les femmes séronégatives ou de statut inconnu",
+    "Étape 3 : si sérologie négative, répéter toutes les 4 semaines, avec une dernière sérologie entre 13+0 et 14+0 SA",
+    "Étape 4 : ne pas dépister les femmes déjà infectées antérieurement ni après 14 SA (risque de séquelles quasi nul au-delà du 1er trimestre)",
+    "Étape 5 : en cas de primo-infection confirmée en période périconceptionnelle ou au 1er trimestre, organiser rapidement une consultation dédiée : information, évaluation des besoins, discussion du valaciclovir précoce, orientation vers un CPDPN ou centre référent",
+    "Étape 6 : informer sur l'amniocentèse, proposée à partir de 18 SA pour évaluer le risque d'infection congénitale et adapter la prise en charge"
+   ],
+   "src": [
+    [
+     "HAS — Dépistage du cytomégalovirus au 1er trimestre de la grossesse (validée 23/07/2026, en ligne 04/08/2026, « L'essentiel » lu)",
+     "https://www.has-sante.fr/jcms/p_3748990/fr/depistage-du-cytomegalovirus-au-1er-trimestre-de-la-grossesse-prise-en-charge-et-suivi"
+    ],
+    [
+     "MonRFS — synthèse de la reco HAS du 04/08/2026",
+     "https://monrfs.com/article-isa-cmv-depistage-grossesse-has-2026"
+    ],
+    [
+     "Réseau périnat 92 — CMV et grossesse : la HAS publie ses nouvelles recommandations (adoptée 23/07/2026)",
+     "https://reseau-perinat92.org/cmv-et-grossesse-la-has-publie-ses-nouvelles-recommandations/"
+    ]
+   ]
+  },
+  {
+   "spe": "Gynécologie / Grossesse",
+   "org": "American College of Obstetricians and Gynecologists (ACOG)",
+   "dt": "2025-09",
+   "titre": "ACOG Practice Advisory — Acetaminophen Use in Pregnancy and Neurodevelopmental Outcomes (septembre 2025)",
+   "res": "Practice advisory de l'ACOG publié en septembre 2025 (page vue en résultats de recherche : URL datée /2025/09/, référence interne « Retrieved September 23, 2025 » lue sur la page) sur l'utilisation du paracétamol pendant la grossesse et les outcomes neurodéveloppementaux de l'enfant. La page (vue en extraits) passe en revue la littérature existante, incluant l'étude de cohorte nationale danoise publiée dans JAMA 2024;331:1205-1214 (citation vue sur la page ACOG) sur l'usage d'acétaminophen pendant la grossesse et le risque d'autisme, TDAH et handicap intellectuel. À lire comme le pendant institutionnel américain de l'umbrella review BMJ du 10/11/2025 (candidate REVUES du jour) ; la conclusion détaillée de l'advisory doit être lue sur la page avant injection. En officine : le paracétamol reste l'antalgique de première intention de la grossesse ; ce type d'advisory sert à répondre avec assurance aux patientes inquiètes des « infos » reçues sur les réseaux.",
+   "src": [
+    [
+     "ACOG — Practice Advisory : Acetaminophen Use in Pregnancy and Neurodevelopmental Outcomes (septembre 2025)",
+     "https://www.acog.org/clinical/clinical-guidance/practice-advisory/articles/2025/09/acetaminophen-use-in-pregnancy-and-neurodevelopmental-outcomes"
+    ]
+   ]
+  },
+  {
+   "spe": "Gynécologie / Grossesse et allaitement",
+   "org": "ACOG",
+   "dt": "2025-09",
+   "titre": "Nouvelles recommandations ACOG sur la consommation de cannabis pendant la grossesse et l'allaitement (Practice Advisory, septembre 2025)",
+   "res": "Practice advisory publié par l'ACOG en septembre 2025 (communiqué de presse officiel vu : « ACOG Releases New Recommendations on Cannabis Use in Pregnancy and Lactation », URL datée /2025/09/ ; page protégée à l'ouverture, contenu décrit depuis le communiqué et les extraits de recherche). Points lus dans le communiqué : les ob-gyns sont encouragés à motiver le changement de comportement en discutant de la consommation de cannabis, des risques individualisés, des valeurs et priorités de la patiente et des obstacles au sevrage ; le communiqué reconnaît que davantage de stratégies thérapeutiques fondées sur les preuves sont nécessaires. Contexte : question de plus en plus fréquente au comptoir avec la banalisation du cannabis et du CBD. En officine : message simple — pas de consommation de cannabis pendant la grossesse ni l'allaitement (contamination du lait), orienter vers le prescripteur/sages-femmes pour un accompagnement du sevrage plutôt qu'un simple « c'est pas bien » ; attention au CBD présenté comme « naturel » (cf. alerte ANSM interactions déjà en base).",
+   "src": [
+    [
+     "ACOG — communiqué : ACOG Releases New Recommendations on Cannabis Use in Pregnancy and Lactation (09/2025)",
+     "https://www.acog.org/news/news-releases/2025/09/acog-releases-new-recommendations-cannabis-use-pregnancy-lactation"
+    ]
+   ]
+  },
+  {
+   "spe": "Gynécologie / Nutrition maternelle et infantile",
+   "org": "NICE (National Institute for Health and Care Excellence)",
+   "dt": "2025-01",
+   "titre": "Maternal and child nutrition: nutrition and weight management in pregnancy, and nutrition in children up to 5 years — NICE NG247 (publié le 15 janvier 2025)",
+   "res": "Guideline NICE NG247 (page officielle vue : « Published: 15 January 2025 », référence NG247) couvrant la nutrition et la gestion du poids pendant la grossesse (quiconque peut devenir enceinte, planifie une grossesse ou est enceinte) et la nutrition des enfants jusqu'à 5 ans — soit exactement les deux volets « carences maternelles » et « pédiatrie officinale » de la dose. Point lu dans le toolkit d'implémentation : la présence au premier rendez-vous prénatal (« booking ») avant 10 semaines de grossesse permet l'identification précoce des risques. Synthèse BMJ (bmj.r954, vue en résultats) et Medscape associées ; une synthèse Cochrane « suppléments d'acide folique » est déjà en base pour la partie micronutriments. En officine : repère international utile pour le conseil nutritionnel de la femme enceinte (fer, folates, iode, vitamine D — cf. RECO SFE iode 2026-07 déjà en base pour la France) et pour l'alimentation du jeune enfant ; ne remplace pas les références françaises (HAS/ANSES) mais documente les pratiques.",
+   "src": [
+    [
+     "NICE — NG247 Maternal and child nutrition (Published: 15 January 2025)",
+     "https://www.nice.org.uk/guidance/ng247"
+    ],
+    [
+     "NICE — toolkit d'implémentation NG247 (booking avant 10 semaines, vu)",
+     "https://www.nice.org.uk/guidance/ng247/resources/implementation-support-toolkit-15242806765/chapter/Attendance-at-and-content-of-routine-antenatal-appointments"
+    ],
+    [
+     "Medscape — Maternal and Child Nutrition: NICE 2025 Guideline Summary",
+     "https://reference.medscape.com/cc2/p10/maternal-and-child-nutrition-nutrition-and-weight-management-2025a100006y"
+    ]
+   ]
+  },
+  {
+   "spe": "Allergologie",
+   "org": "ARIA / EAACI",
+   "dt": "2026-03",
+   "titre": "Rhinite allergique — ARIA-EAACI 2024-2025, Partie II : traitements oraux et oculaires",
+   "res": "Deuxième volet de la révision ARIA-EAACI 2024-2025 : 8 questions sur les traitements oraux (antihistaminiques oraux, corticoïdes oraux) et 3 questions sur les traitements oculaires de la rhinite allergique, recommandations élaborées selon GRADE (Allergy, epub 24/03/2026, PMID 41877472). La Partie I (traitements intranasaux) est déjà en base. Encart non applicable. Utile pour calibrer les conseils au comptoir sur les antihistaminiques oraux et les collyres antiallergiques, y compris la primauté des corticoïdes intranasaux déjà documentée.",
+   "src": [
+    [
+     "PubMed 41877472 (citation datée)",
+     "https://pubmed.ncbi.nlm.nih.gov/41877472/"
+    ],
+    [
+     "Allergy (Wiley) — Partie II",
+     "https://onlinelibrary.wiley.com/doi/10.1111/all.70305"
+    ]
+   ]
+  },
+  {
+   "spe": "Allergologie",
+   "org": "GA2LEN (projet)",
+   "dt": "2025-08",
+   "titre": "Anaphylaxie : définition, vue d'ensemble et outil d'aide clinique — consensus 2024 (projet GA²LEN)",
+   "res": "Consensus international (projet GA2LEN) publié dans JACI (août 2025 ; 156(2):417e1-417e6, DOI 10.1016/j.jaci.2025.01.021) : définition actualisée de l'anaphylaxie et outil d'aide à la reconnaissance et à la prise en charge, pour harmoniser critères (NIAID/FAAN 2006 vs WAO 2020) et standardiser les aboutissants de recherche. Encart non applicable. Pour l'officine : socle pour former l'équipe à la reconnaissance immédiate (atteinte cutanée + respiratoire/circulatoire après exposition) et à l'appel du 15 sans délai.",
+   "src": [
+    [
+     "JACI — article",
+     "https://www.jacionline.org/article/S0091-6749(25)00072-7/fulltext"
+    ],
+    [
+     "Ovid — citation JACI août 2025",
+     "https://www.ovid.com/journals/jaci/fulltext/10.1016/j.jaci.2025.01.021~anaphylaxis-definition-overview-and-clinical-support-tool"
+    ]
+   ]
+  },
+  {
+   "spe": "Santé publique",
+   "org": "HAS",
+   "dt": "2026-07",
+   "titre": "Obligation vaccinale contre la grippe : la HAS se prononce (recommandée pour les 65 ans et plus en collectivité, obligatoire pour les professionnels de santé)",
+   "res": "Saisie par les ministres, la HAS a évalué l'obligation vaccinale antigrippale annuelle dans deux populations. Conclusion du communiqué du 20/07/2026 : pour les 65 ans et plus vivant en collectivité, la vaccination doit rester recommandée sans devenir obligatoire ; la HAS recommande en revanche une obligation vaccinale pour l'ensemble des professionnels de santé et des professionnels en contact avec des personnes à risque dans les établissements de santé et médico-sociaux, avec un déploiement prioritaire en Ehpad et USLD. Position française distincte d'une obligation générale : encart non nécessaire (pas de contraste France/international vérifié ici).",
+   "algo": [
+    "Étape 1 : 65 ans et plus vivant en collectivité → vaccination recommandée, mais sans obligation vaccinale.",
+    "Étape 2 : professionnels de santé → obligation vaccinale annuelle recommandée par la HAS.",
+    "Étape 3 : autres professionnels en contact avec des personnes à risque en établissement de santé ou médico-social → également concernés par l'obligation.",
+    "Étape 4 : déploiement prioritaire en Ehpad et unités de soins de longue durée (USLD)."
+   ],
+   "geo": "fr",
+   "src": [
+    [
+     "HAS — communiqué du 20/07/2026 (page vue)",
+     "https://www.has-sante.fr/jcms/p_4214093/fr/la-has-se-prononce-sur-l-obligation-vaccinale-contre-la-grippe"
+    ],
+    [
+     "HAS — avis Grippe saisonnière : évaluation de l'obligation vaccinale",
+     "https://www.has-sante.fr/jcms/p_3701698/fr/grippe-saisonniere-evaluation-de-la-pertinence-d-une-obligation-vaccinale"
+    ]
+   ]
+  },
+  {
+   "spe": "Santé du voyageur",
+   "org": "OMS",
+   "dt": "2025-08",
+   "titre": "Recommandations OMS pour le paludisme — édition consolidée du 13 août 2025",
+   "res": "Édition consolidée datée du 13/08/2025 des lignes directrices OMS sur le paludisme : recommandations graduées selon force et certitude des preuves, accompagnées de considérations d'implémentation, à l'appui des programmes nationaux — y compris prévention (ex. pulvérisation intradomiciliaire recommandée 2025 pour les zones de transmission) et traitements. Base utile derrière les conseils de chimioprophylaxie du voyageur ; Encart non applicable.",
+   "src": [
+    [
+     "OMS — Guidelines for malaria, 13 août 2025 (IRIS)",
+     "https://iris.who.int/items/62e89e1d-c8f7-4965-940c-8789af5a1b19"
+    ],
+    [
+     "OMS — page Guidelines for malaria",
+     "https://www.who.int/publications/i/item/guidelines-for-malaria"
+    ]
+   ]
+  }
+ ]
+}
