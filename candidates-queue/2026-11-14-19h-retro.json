@@ -1,0 +1,237 @@
+{
+ "revues": [
+  {
+   "id": "retro19h-caravaggio-apixaban-cat-2020",
+   "ty": "Médicament",
+   "dom": "Oncologie",
+   "n": 2,
+   "dt": "2020-04",
+   "des": "Thrombose veineuse associée au cancer : Caravaggio, l'essai pivot qui a fait entrer l'apixaban (AOD) dans le traitement de la TEV du patient cancéreux — non-infériorité vs daltéparine (Agnelli et al., NEJM)",
+   "tag": "apixaban · cancer-associated thrombosis · Caravaggio · daltéparine · HBPM · TEV · anticoagulation",
+   "res": "Essai randomisé ouvert de non-infériorité (n=1 155, TEV associée au cancer, critère principal récidive TEV à 6 mois) : l'apixaban oral 2,5 mg ×2/j non inférieur à la daltéparine SC (récidive 5,6 % vs 7,9 %), SANS excès de saignement majeur (3,0 % vs 4,4 %) — conclusions lues dans les extraits NEJM/PubMed (« Oral apixaban was noninferior to subcutaneous dalteparin... without an increased risk of major bleeding »). Date vérifiée : « N Engl J Med. 2020 Apr 23;382(17):1599-1607 » lue dans l'extrait PubMed 32805168. Fondatrice : avec SELECT-D/DUMMY, elle fonde la place des AOD (apixaban en tête) dans la TEV du cancéreux — cadre confirmé en 2026 par la recommandation CHEST 2021 (« apixaban... in cancer-associated thrombosis ») et la nuance GI : rivaroxaban/édoxaban augmentent le saignement digestif en cancer digestif luminal, pas l'apixaban (remarque CHEST vue). En officine : patient cancéreux sous apixaban pour TEV — pas d'INR à surveiller mais rappeler la prise bid (observance critique), prévenir des interactions (azolés, rifampicine) et ne jamais basculer seul vers une HBPM ; en cancer digestif actif, c'est le choix d'apixaban qui a été fait précisément pour le profil hémorragique.",
+   "src": [
+    [
+     "NEJM — Apixaban for the Treatment of Venous Thromboembolism Associated with Cancer (Caravaggio)",
+     "https://www.nejm.org/doi/full/10.1056/NEJMoa1915103"
+    ],
+    [
+     "PubMed 32223112 — essai Caravaggio (extrait vu)",
+     "https://pubmed.ncbi.nlm.nih.gov/32223112/"
+    ],
+    [
+     "PubMed 32805168 — citation datée « N Engl J Med. 2020 Apr 23;382(17):1599-1607 » (date vue)",
+     "https://pubmed.ncbi.nlm.nih.gov/32805168/"
+    ],
+    [
+     "CHEST 2021 — Antithrombotic Therapy for VTE Disease (nuance GI vue)",
+     "https://journal.chestnet.org/article/S0012-3692(21)01506-3/fulltext"
+    ]
+   ]
+  },
+  {
+   "id": "retro19h-homepe-ambulatoire-2021",
+   "ty": "Médicament",
+   "dom": "Cardiologie",
+   "n": 2,
+   "dt": "2021-09",
+   "des": "Embolie pulmonaire à l'ambulatoire : HOME-PE, l'essai randomisé du triage à domicile — Hestia ou sPESI, ~37 % des patients rentrent à la maison sans excès d'événements (Roy et al., European Heart Journal)",
+   "tag": "embolie pulmonaire · traitement ambulatoire · Hestia · sPESI · HOME-PE · triage · anticoagulation",
+   "res": "Essai randomisé multinational (France, Belgique, Pays-Bas, Suisse ; n=1 412 EP aiguës aux urgences) comparant deux règles de triage pour le traitement à domicile (Hestia vs sPESI) : le critère principal combiné (récidive TEV, hémorragie majeure, décès à 30 j) est SIMILAIRE entre les deux règles (~2-3 %), sans différence — conclusion lue dans les extraits EHJ/PubMed ; environ un tiers des EP sont ainsi traitées à domicile. Dates vues : « European Heart Journal, Volume 42, Issue 33, 1 September 2021, Pages 3146–3157 » (Oxford) et « 2021 Aug 31;42(33):3146-3157 » (PubMed 34363386) — dt retenu 2021-09 (numéro). Fondatrice : fonde en 2026 le traitement ambulatoire de l'EP de bas risque, en cohérence avec les recommandations ESC 2019 qui le recommandent déjà, et avec les essais récents d'anticoagulation à domicile ; cohortes 2023+ (Washout etc.) confirment la sécurité. En officine : une EP « rentrée à la maison » sous AOD n'est pas une petite chose finie — c'est un patient anticoagulé à valider : AOD commencé en relais correctement, éducation saignement (gingival, hématomes, selles noires = appel), pas d'AINS ni de millepertuis, et signes d'alerte à connaître (dyspnée brutale, syncope, malaise) ; le pharmacien est souvent le seul professionnel vu dans les 15 premiers jours.",
+   "src": [
+    [
+     "European Heart Journal — HOME-PE randomized trial (Volume 42, Issue 33, 1 September 2021, pages vues)",
+     "https://academic.oup.com/eurheartj/article/42/33/3146/6345003"
+    ],
+    [
+     "PubMed 34363386 — « 2021 Aug 31;42(33):3146-3157 » (citation datée vue)",
+     "https://pubmed.ncbi.nlm.nih.gov/34363386/"
+    ],
+    [
+     "PMC — HOME-PE texte complet (vu en recherche)",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC8408662/"
+    ]
+   ]
+  },
+  {
+   "id": "retro19h-andexanet-final-annexa4-2023",
+   "ty": "Médicament",
+   "dom": "Cardiologie",
+   "n": 3,
+   "dt": "2023-03",
+   "des": "Réversibilité des anti-Xa oraux : rapport final d'ANNEXA-4 — l'andexanet alfa (Ondexxya) inverse rapidement l'activité anti-Xa dans les hémorragies majeures (Milling, Middeldorp et al., Circulation)",
+   "tag": "andexanet alfa · Ondexxya · ANNEXA-4 · antidote · anti-Xa · apixaban · rivaroxaban · hémorragie majeure",
+   "res": "Rapport final de l'étude de cohorte prospective monocentrée phase 3b/4 ANNEXA-4 (n=472, hémorragies majeures sous inhibiteurs du facteur Xa, ~2/3 hémorragies intracrâniennes) : l'andexanet alfa (bolus + perfusion) réduit rapidement l'activité anti-Xa (critère co-principal atteint) avec 82-86 % d'efficacité hémostatique excellente/bonne à 12 h selon la dose/agent (chiffres lus dans l'abstract Circulation et le scan ACC) ; taux de thromboses (~10 %) et mortalité documentés au long cours. Date vérifiée : « Circulation. 2023 Mar 28;147(13):1026-1038 » (citation datée vue via le portail Amsterdam UMC ; scan ACC du 03/04/2023 vu). Fondatrice : c'est LE rapport de référence de l'antidote des AOD anti-Xa (AMM européenne Ondexxya 2022, restriction aux hémorragies menaçant la vie) — message intact en 2026 : l'andexanet n'est pas un « antidote d'officine », c'est un usage hospitalier encadré ; la maîtrise officinale reste la prévention (observance, interactions, saignement occulte). En officine : savoir que l'andexanet existe évite le mythe « pas d'antidote aux AOD » à l'échange avec le patient — MAIS réversibilité ≠ innocuité : après andexanet l'anticoagulation doit être reprise (risque thrombotique), jamais d'automédication interprétant une hémorragie comme « un antidote à demander » ; toute hémorragie majeure = 15/urgences, pas un conseil de comptoir.",
+   "src": [
+    [
+     "Circulation — Final Study Report of Andexanet Alfa (abstract + chiffres vus)",
+     "https://www.ahajournals.org/doi/10.1161/CIRCULATIONAHA.121.057844"
+    ],
+    [
+     "Amsterdam UMC — citation datée « Circulation. 2023 Mar 28;147(13):1026-1038 » (date vue)",
+     "https://researchinformation.amsterdamumc.org/en/publications/final-study-report-of-andexanet-alfa-for-major-bleeding-with-fact"
+    ],
+    [
+     "ACC Journal Scan — Final Study Report of Andexanet (03/04/2023, vu)",
+     "https://www.acc.org/Latest-in-Cardiology/Journal-Scans/2023/04/03/17/46/final-study-report-of-andexanet"
+    ]
+   ]
+  },
+  {
+   "id": "retro19h-doac-vka-seniors-2020",
+   "ty": "Médicament",
+   "dom": "Cardiologie",
+   "n": 2,
+   "dt": "2020-05",
+   "des": "AOD vs AVK chez le sujet âgé traité pour thrombose veineuse : la méta-analyse fondatrice — moins de récidives et de décès TEV, saignement comparable (Chaudhary et al., Journal of the American Geriatrics Society)",
+   "tag": "AOD · AVK · sujet âgé · thrombose veineuse · méta-analyse · saignement",
+   "res": "Revue systématique et méta-analyse de 6 ECR pivots (incluant Hokusai-VTE, RE-COVER, EINSTEIN, AMPLIFY) chez les ≥ 75 ans traités pour TEV aiguë : les AOD réduisent les récidives TEV et décès liés à la TEV vs AVK (2 événements de moins sur 100 traités, chiffre vu dans la synthèse McMaster CLOT+), avec un profil de saignement comparable (hétérogénéité modérée sur la sécurité) — conclusion PubMed : « In older adults with VTE, DOACs appear to improve rates of recurrent VTE and VTE-related deaths compared with VKAs with similar bleeding outcomes ». Dates vues : EuropePMC « 2020-05-22 » (epub ; J Am Geriatr Soc 2020;68(6), fiche Wiley « 2020 » vue). Fondatrice : fonde le choix AOD-premier chez le senior avec TEV — confirmée (pas démentie) en 2026 par la cohorte coréenne EP Europace (base 2025-10, AOD chez les très âgés/à haut risque hémorragique, souvent privés d'anticoagulation à tort) ; la base ne couvrait pas cette méta fondatrice. En officine : face à un senior « qui a toujours pris de la fluindione », un switch AVK→AOD n'est pas une perte d'efficacité mais un GAIN (sauf prothèse mécanique, SAPL ou rétrécissement mitral) ; par contre ne jamais vendre l'AOD comme « sans risque » : surveillance de la fonction rénale (clairance dose-dépendante) et de l'anémie silencieuse.",
+   "src": [
+    [
+     "Wiley — Chaudhary et al., J Am Geriatr Soc 2020 (fiche « 2020 » vue)",
+     "https://agsjournals.onlinelibrary.wiley.com/doi/10.1111/jgs.16549"
+    ],
+    [
+     "PubMed 32441334 — conclusion de la méta-analyse (extrait vu)",
+     "https://pubmed.ncbi.nlm.nih.gov/32441334/"
+    ],
+    [
+     "EuropePMC — « 2020-05-22 » (date vue)",
+     "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:32441334&format=json"
+    ],
+    [
+     "McMaster CLOT+ — synthèse 6 ECR ≥ 75 ans (vue)",
+     "https://plus.mcmaster.ca/ClotPlus/Articles/EvidenceSummary/111"
+    ]
+   ]
+  },
+  {
+   "id": "retro19h-adaura-adjuvant-2020",
+   "ty": "Médicament",
+   "dom": "Oncologie",
+   "n": 2,
+   "dt": "2020-10",
+   "des": "CBNPC opéré EGFR-muté : ADAURA, l'essai pivot de l'osimertinib adjuvant — 3 ans de comprimés qui divisent la progression (Wu, Tsuboi et al., NEJM)",
+   "tag": "osimertinib · Tagrisso · EGFR · adjuvant · CBNPC opéré · ADAURA · anticancéreux oral",
+   "res": "Essai randomisé de phase 3 (n=682, stades IB-IIIA EGFR+ réséqués, osimertinib 80 mg/j ×3 ans vs placebo) : survie sans maladie NETTEMENT allongée (réduction ~80 % du risque de récidive ou décès à 2 ans, HR lu dans les relais ; 89 % vs 73 % SSD à 2 ans dans l'extrait NEJM), y compris au SNC. Date vérifiée : « N Engl J Med. 2020 Oct 29;383(18):1711-1723 » lue dans deux extraits de citation indépendants (NGDC Chine) ; PubMed 32955177 vu. Fondatrice : a fondé le standard mondial de l'osimertinib adjuvant 3 ans (FDA/EMA), confirmée en 2023 par la survie globale positive (NEJM 2023, PMID 37272535 vu) — distincte de LAURA (stade III inopérable, base 2024-08) : ici c'est le comprimé ADJUVANT de l'officine. En officine : un « patient guéri » sous Tagrisso 3 ans = marathon d'observance : pas de rattrapage d'une dose oubliée, interactions CYP3A4 (azolés, rifampicine, millepertuis INTERDIT), effets typiques à dépister (diarrhée, xérose, paronychie, pneumopathie : toux/dyspnée = appel immédiat), et QT à connaître si coprescription ; la fin des 3 ans se prépare AVEC l'oncologue, jamais en auto-arrêt.",
+   "src": [
+    [
+     "NEJM — Osimertinib in Resected EGFR-Mutated NSCLC (ADAURA, full text vu)",
+     "https://www.nejm.org/doi/full/10.1056/NEJMoa2027071"
+    ],
+    [
+     "Citation datée « N Engl J Med. 2020 Oct 29;383(18):1711-1723 » (NGDC, vue ×2)",
+     "https://ngdc.cncb.ac.cn/openlb/publication/OLB-PM-40224989"
+    ],
+    [
+     "PubMed 32955177 (extrait vu)",
+     "https://pubmed.ncbi.nlm.nih.gov/32955177/"
+    ],
+    [
+     "PubMed 37272535 — survie globale ADAURA 2023 (extrait vu)",
+     "https://pubmed.ncbi.nlm.nih.gov/37272535/"
+    ]
+   ]
+  },
+  {
+   "id": "retro19h-ici-colite-meta-2021",
+   "ty": "Médicament",
+   "dom": "Oncologie",
+   "n": 2,
+   "dt": "2021-10",
+   "des": "Diarrhée et colite sous inhibiteurs de point de contrôle immunitaire : incidence et devenir — la méta-analyse de référence (Krombach et al., Journal of Immunotherapy)",
+   "tag": "immunothérapie · checkpoint · colite immune · diarrhée · irAE · méta-analyse · melphalan",
+   "res": "Revue systématique et méta-analyse des études observationnelles (incidences calculées par classe) : la diarrhée et la colite immunes touchent une fraction substantielle des patients traités par anti-PD-1/PD-L1/CTLA-4, plus fréquentes sous ipilimumab et sous combinaisons (conclusions lues dans l'abstract PubMed 34380976 ; incidence globale « all ICI » de l'ordre de 13 % diarrhée / ~2 % colite selon les sous-groupes de l'abstract). Date vérifiée : « Journal of Immunotherapy 44(8):p 325-334, October 2021 » (extrait Ovid vu). Fondatrice : cadre toujours en vigueur en 2026 — la colite immune reste l'irAE gastro-intestinale majeure ; complémentaire (pas doublon) de l'entrée base irAE 2026-09 (prise en charge globale fondée sur les preuves) et de la méta cirAE 2025-11 (pronostic cutané) : ici l'incidence ciblée diarrhée/colite. En officine : patient sous pembrolizumab/nivolumab/ipilimumab qui annonce « encore la tourista » — IRREVERSIBLE erreur de conseiller lopéramide seul et attendre : une diarrhée qui persiste >2-3 jours ou s'accompagne de sang/fièvre/crampes = APPEL DE L'ONCOLOGUE le jour même (colite immune sous corticoïdes ± infliximab) ; réhydratation orale acceptable en attendant, jamais d'antibio antidiarrhéique d'automédication.",
+   "src": [
+    [
+     "Ovid — J Immunother 44(8):325-334, « October 2021 » (date + pages vues)",
+     "https://www.ovid.com/jnls/immunotherapy-journal/abstract/10.1097/cji.0000000000000383~immune-checkpoint-inhibitorassociated-diarrhea-and-colitis-a?redirectionsource=fulltextview"
+    ],
+    [
+     "PubMed 34380976 — abstract (extrait vu)",
+     "https://pubmed.ncbi.nlm.nih.gov/34380976/"
+    ]
+   ]
+  },
+  {
+   "id": "retro19h-ici-thyroide-2021",
+   "ty": "Médicament",
+   "dom": "Oncologie",
+   "n": 2,
+   "dt": "2021-06",
+   "des": "Dysthyroïdies induites par les inhibiteurs de point de contrôle : la revue de référence officinale — thyroïdite, hypo et hyperthyroïdie, l'irAE endocrinien le plus fréquent (Zhan et al., Frontiers in Endocrinology)",
+   "tag": "immunothérapie · checkpoint · thyroïdite · dysthyroïdie · irAE endocrinien · TSH · lévothyroxine",
+   "res": "Revue systématique (Front Endocrinol 2021;12:649863) sur les dysfonctions thyroïdiennes sous ICI : parmi les irAE endocriniens, l'atteinte thyroïdienne est la plus fréquente (thyroïdite indolore souvent biphasique : hyperthyroïdie transitoire puis hypothyroïdie définitive nécessitant une substitution à vie) — cadres et messages lus dans les extraits Frontiers (« clinicians should identify and regulate thyroid IRAEs » ; présentation, prise en charge, pathogenèse). Date vérifiée : « Front. Endocrinol., 10 June 2021 » (page article) + PMC8224170 « 2021 Jun 10;12:649863 » (citation EuropePMC/PMC vue). Fondatrice : toujours le socle du conseil thyroïde-immunothérapie en 2026 — les méta-analyses plus récentes (Front Oncol 2025, PubMed 40772024 vu en recherche) affinent l'incidence sans changer le message. En officine : patient sous ICI + lévothyroxine démarrée « à cause du cancer » — expliquer que l'hypothyroïdie sous ICI est FRÉQUENTE, souvent définitive, bénigne et facile à traiter : prise de la lévothyroxine à jeun à heure fixe, contrôle TSH régulier, et pas d'arrêt « parce que le cancer est fini » ; une palpitation/amaigrissement en début de traitement = thyroïdite en phase hyper (transitoire) : signaler, ne pas paniquer.",
+   "src": [
+    [
+     "Frontiers — ICI-Related Thyroid Dysfunction (page « Front. Endocrinol., 10 June 2021 » vue)",
+     "https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2021.649863/full"
+    ],
+    [
+     "PMC8224170 — « 2021 Jun 10;12:649863 » (citation datée vue)",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC8224170/"
+    ]
+   ]
+  },
+  {
+   "id": "retro19h-ici-age-frontiers-2021",
+   "ty": "Médicament",
+   "dom": "Oncologie",
+   "n": 2,
+   "dt": "2021-11",
+   "des": "Immunothérapie et sujet âgé : âge et efficacité/toxicité des inhibiteurs de checkpoint — la revue qui a rassuré sur l'usage chez le senior (Wong, Nebhan, Johnson, Frontiers in Immunology)",
+   "tag": "immunothérapie · checkpoint · sujet âgé · senior · gériatrie · efficacité · toxicité",
+   "res": "Revue (Front Immunol 2021;12:786046) de la littérature ECR + vie réelle sur l'effet de l'âge sous ICI : globalement, l'efficacité et la toxicité des ICI chez les patients âgés sélectionnés sont comparables à celles des plus jeunes — les toxicités de grade élevé ne sont pas nettement majorées par l'âge seul, MAIS les données très âgées (>80) et fragiles restent maigres (messages lus dans l'abstract et le corps de la revue Frontiers). Date vérifiée : « Front. Immunol., 16 November 2021 » (page article ouverte et vue). Fondatrice : cadre toujours en vigueur en 2026 — fondement du principe « l'âge seul ne justifie pas de priver un senior d'immunothérapie » (cohérent avec les recommandations SIOG et les données vie réelle ultérieures). Complémentaire (pas doublon) de l'entrée base irAE 2026-09 (prise en charge des toxicités) : ici le message âge/spécifique. En officine : ne pas entendre « 82 ans, immunothérapie ? c'est trop » — au contraire, vérifier les ponts usuels du senior sous ICI : vaccination (pas de vivants !), polymédication (interactions rares mais à documenter), signes digestifs ou pulmonaires, et impliquer l'aidant dans la surveillance des irAE.",
+   "src": [
+    [
+     "Frontiers — Impact of Patient Age on Clinical Efficacy and Toxicity of Checkpoint Inhibitor Therapy (« Front. Immunol., 16 November 2021 » vue)",
+     "https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2021.786046/full"
+    ]
+   ]
+  },
+  {
+   "id": "retro19h-gingembre-cinv-2022",
+   "ty": "Complément",
+   "dom": "Oncologie",
+   "n": 3,
+   "dt": "2022-11",
+   "des": "Gingembre en adjuvant des nausées-vomissements de chimiothérapie : revue systématique des ECR — un appoint réel mais modeste, jamais un remplaçant des antiémétiques (Choi et al., Nutrients)",
+   "tag": "gingembre · CINV · nausées chimiothérapie · complément · soins de support · Zingiber officinale",
+   "res": "Revue systématique des ECT (Medline/Embase/WoS ; méta-analyses par sous-groupes) sur le gingembre en adjuvant du CINV : tendance à une légère réduction de l'incidence des nausées aiguës (résultat non significatif pour la plupart des comparaisons — « a tendency to slightly lower the incidence of acute nausea » lu dans le PDF Nutrients), sans signal de sécurité notable ; conclusion des auteurs : appoint possible, preuves hétérogènes. Date vérifiée : MDPI « 23 November 2022 », « Nutrients 2022, 14(23), 4982 » (page article ouverte). Fondatrice : c'est LA référence citée en 2026 pour répondre au patient cancéreux qui « a entendu dire que le gingembre ça marche » — cohérente avec la hiérarchie antiémétique (olanzapine, base 2025-09) : le gingembre est un appoint, pas un traitement. En officine : ne pas interdire le gingembre (sécurité acceptable, doses alimentaires), mais LE CADRER : 1re ligne = protocole antiémétique de l'oncologie (setrons ± autres) pris COMME prescrit, le gingembre (thé, gélules standardisées) éventuellement en plus ; prévenir des troubles digestifs hautes à forte dose et de l'interaction théorique AVK/antiagrégants (le patient sous chimio est souvent thrombosé/anticoagulé — voir Caravaggio ci-dessus).",
+   "src": [
+    [
+     "MDPI — Nutrients 2022, 14(23), 4982 (« 23 November 2022 » vue)",
+     "https://www.mdpi.com/2072-6643/14/23/4982"
+    ],
+    [
+     "PMC9739555 — texte complet (vu en recherche)",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC9739555/"
+    ]
+   ]
+  },
+  {
+   "id": "retro19h-gcsf-delphi-2022",
+   "ty": "Médicament",
+   "dom": "Oncologie",
+   "n": 2,
+   "dt": "2022-11",
+   "des": "Neutropénie fébrile : consensus Delphi sur les soins de support et le bon usage des G-CSF — hygiène, éducation et prophylaxie adaptée (Adamo et al., Supportive Care in Cancer)",
+   "tag": "neutropénie fébrile · G-CSF · pegfilgrastim · filgrastim · prophylaxie · soins de support · chimiothérapie",
+   "res": "Consensus Delphi (2 tours, 36 oncologues médicaux ; initiative « supportive care for febrile neutropenia prevention ») : la prophylaxie par G-CSF en pratique n'est pas conforme aux recommandations (sur- et sous-usage) ; le consensus valide une approche par risque de régime (> 20 % = prophylaxie primaire systématique) et élargit le regard aux soins de support non médicamenteux : hygiène buccale et corporelle, évitement des sources infectieuses, éducation du patient à la fièvre (messages lus dans les extraits PubMed/PMC « 36 medical oncologists reviewed... », mots-clés Consensus/FN/G-CSF/supportive therapy). Date vérifiée : EuropePMC « 2022-11-05 » pour PMC9715510 (Support Care Cancer, fiche Springer vue). Fondatrice : le cadre « fièvre pendant la chimio = urgence » et le rôle préventif éducatif restent LE message officinal 2026 — complémentaire (pas doublon) de l'entrée base « modèles prédictifs neutropénie fébrile fragiles » 2025-06 (qui dit que les modèles ne sont pas fiables : ici, la pratique et l'éducation). En officine : à la délivrance d'une chimio myélotoxique + pegfilgrastim/filgrastim : le patient doit savoir que FIÈVRE ≥ 38,3 °C (ou ≥ 38 °C pendant 1 h) PENDANT la période à risque = URGENCE, pas de paracétamol « pour voir » ni d'attente — appel immédiat de l'oncologue/15 ; conseiller thermomètre, éviter foules et contacts infectés, hygiène bucco-dentaire douce ; G-CSF = pas un « booster » d'immunité mais un timing précis (pegfilgrastim = le lendemain de la chimio, pas le jour même).",
+   "src": [
+    [
+     "PMC9715510 — Delphi consensus (extrait vu)",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC9715510/"
+    ],
+    [
+     "EuropePMC — « 2022-11-05 » (date vue)",
+     "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PMCID:PMC9715510&format=json"
+    ],
+    [
+     "Springer — fiche Support Care Cancer s00520-022-07430-7 (vue)",
+     "https://link.springer.com/article/10.1007/s00520-022-07430-7"
+    ]
+   ]
+  }
+ ],
+ "recos": []
+}
