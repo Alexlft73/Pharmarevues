@@ -1,0 +1,170 @@
+{
+ "revues": [
+  {
+   "id": "orl-cerumen-otc-rct",
+   "ty": "Officine",
+   "dom": "ORL & stomatologie",
+   "n": 3,
+   "dt": "2025-11",
+   "des": "Cure-oreilles en vente libre : premier essai randomisé sur les dispositifs OTC de retrait du cérumen",
+   "tag": "cérumen | bouchon d'oreille | dispositifs OTC | hygiène de l'oreille",
+   "res": "Essai randomisé (Laryngoscope Investigative Otolaryngology, epub 18/11/2025) comparant l'efficacité de dispositifs en vente libre d'auto-retrait du cérumen : l'industrie de l'« hygiène de l'oreille » pèse 2 milliards de dollars, mais peu de données existaient ; l'étude compare bougies, crochets, sprays et spirales vendus sans ordonnance. Le bouchon de cérumen reste une des consultations officinales les plus fréquentes. En officine : les cotons-tiges poussent le cérumen vers le fond et sont à déconseiller formellement ; privilégier les gouttes céruménolytiques (solutions huileuses ou eau oxygénée dosée) et orienter vers le médecin/infirmier pour lavage si obstruction ou audition réduite ; aucun objet pointu dans le conduit.",
+   "src": [
+    [
+     "Wiley LIO",
+     "https://onlinelibrary.wiley.com/doi/full/10.1002/lio2.70313"
+    ],
+    [
+     "PMC12624756",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC12624756/"
+    ]
+   ],
+   "coi": "À vérifier",
+   "fin": "Universitaire (Minnesota)"
+  },
+  {
+   "id": "orl-ciprofloxacine-oam-rct",
+   "ty": "Médicament",
+   "dom": "ORL & stomatologie",
+   "n": 3,
+   "dt": "2026-10",
+   "des": "Otite moyenne aiguë à tympan intact : les gouttes de ciprofloxacine en appoint ne suffisent pas (RCT, LIO 23/10/2026)",
+   "tag": "ciprofloxacine topique | otite moyenne aiguë | tympan non perforé",
+   "res": "Essai randomisé contrôlé (Laryngoscope Investigative Otolaryngology, 23/10/2026) chez des enfants avec otite moyenne aiguë et tympan intact : l'appoint de gouttes auriculaires de ciprofloxacine n'améliore pas les résultats par rapport au traitement habituel — le tympan intact empêche la pénétration du topique dans l'oreille moyenne. En officine : face à une demande de « gouttes pour otite », expliquer que sans perforation connue les gouttes antibiotiques locales n'ont pas d'intérêt documenté ; antalgique oral (paracétamol/ibuprofène selon âge) et réévaluation à 48-72 h ; gouttes réservées aux situations avec otorrhée sur tympan perforé ou tube de ventilation, sur prescription.",
+   "src": [
+    [
+     "Wiley LIO",
+     "https://onlinelibrary.wiley.com/doi/10.1002/lio2.70612"
+    ]
+   ],
+   "coi": "À vérifier",
+   "fin": "Universitaire ; petit essai monocentrique, résultats à confirmer"
+  },
+  {
+   "id": "pneumo-brensocatib-bronchiectasies",
+   "ty": "Médicament",
+   "dom": "Pneumologie",
+   "n": 3,
+   "dt": "2025-08",
+   "des": "Bronchiectasies non kystiques : le brensocatib (Brinsupri) devient le premier traitement de fond autorisé (FDA, 12/08/2025)",
+   "tag": "brensocatib (Brinsupri) — inhibiteur DPP-1 oral, bronchiectasies",
+   "res": "Le 12 août 2025, la FDA approuve le brensocatib (Insmed), inhibiteur oral quotidien de la dipeptidyl peptidase 1, comme premier traitement de fond des bronchiectasies non-kystiques chez les patients de 12 ans et plus (essais ASPEN : allongement du délai avant exacerbation). Autorisation américaine seulement — pas d'AMM européenne à ce jour. En officine : pour un patient sous brensocatib, prévenir les signes à surveiller (troubles du goût possibles), vérifier les interactions et surtout ne pas arrêter les autres traitements (antibiothérapies cycliques, techniques de drainage) — c'est un add-on, pas un remplaçant.",
+   "src": [
+    [
+     "Insmed PR (12/08/2025)",
+     "https://investor.insmed.com/2025-08-12-FDA-Approves-BRINSUPRI-TM-brensocatib-as-the-First-and-Only-Treatment-for-Non-Cystic-Fibrosis-Bronchiectasis,-a-Serious,-Chronic-Lung-Disease"
+    ],
+    [
+     "FDA approval package (217673)",
+     "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2025/217673Orig1s000Approv.pdf"
+    ]
+   ],
+   "coi": "Industrie",
+   "fin": "Communiqué industriel (Insmed) ; essais sponsorisés"
+  },
+  {
+   "id": "pneumo-nerandomilast-jascayd-fda",
+   "ty": "Médicament",
+   "dom": "Pneumologie",
+   "n": 3,
+   "dt": "2025-10",
+   "des": "Fibrose pulmonaire idiopathique : la FDA approuve le nérandomilast (Jascayd), premier traitement nouveau en plus d'une décennie (7-9/10/2025)",
+   "tag": "nérandomilast (Jascayd) — inhibiteur PDE4B oral, FPI",
+   "res": "Début octobre 2025, la FDA approuve le nérandomilast (Boehringer Ingelheim), inhibiteur oral de la PDE4B, pour la fibrose pulmonaire idiopathique — premier nouveau traitement depuis plus de dix ans (avec le nintédanib/pirfénidone). Dans FIBRONEER-IPF (phase 3, NEJM), le nérandomilast ralentit le déclin du VCV à 52 semaines vs placebo ; essai jumeau positif dans la fibrose pulmonaire progressive (FIBRONEER-ILD). Autorisation américaine, européenne à venir. En officine : patient FPI sous nérandomilast — observance orale quotidienne, prévenir diarrhées/nausées possibles ; ne jamais substituer les traitements antifibrosants existants sans ordonnance ; vaccination antigrippale et antipneumococcique encore plus cruciales chez ces patients fragiles.",
+   "src": [
+    [
+     "FDA (7/10/2025)",
+     "https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-drug-treat-idiopathic-pulmonary-fibrosis"
+    ],
+    [
+     "Drugs.com (9/10/2025)",
+     "https://www.drugs.com/newdrugs/fda-approves-jascayd-nerandomilast-idiopathic-pulmonary-fibrosis-6634.html"
+    ],
+    [
+     "NEJM FIBRONEER-IPF",
+     "https://www.nejm.org/doi/full/10.1056/NEJMoa2414108"
+    ]
+   ],
+   "coi": "Industrie",
+   "fin": "FDA + communiqués ; essais sponsorisés Boehringer Ingelheim"
+  },
+  {
+   "id": "pneumo-sarcoidose-review",
+   "ty": "Médicament",
+   "dom": "Pneumologie",
+   "n": 4,
+   "dt": "2026-07",
+   "des": "Sarcoidose : panorama des essais cliniques en cours — la cortico-dépendance enfin dans la ligne de mire (revue Pulmonary Therapy, 08/07/2026)",
+   "tag": "sarcoidose pulmonaire | essais cliniques | corticoïdes",
+   "res": "Revue ouverte (Pulmonary Therapy, publié 08/07/2026) sur le paysage des essais cliniques de la sarcoïdose : jusqu'ici aucun traitement validé au-delà des corticoïdes ; pipelines en cours — efzofitimod (anti-ARPG, essai global en préparation avec la FDA), brepocitinib oral (cutané), OATD-01 (phase 2 pulmonaire actif). Pour le pharmacien : la sarcoïdose reste traitée par corticoïdes au long cours avec leurs effets indésirables (diabète, ostéoporose) — tout espoir d'épargne cortisonique est bienvenu mais aucune molécule n'est approuvée en 2026. En officine : patient sarcoidosique sous prednisone — rappeler l'adhésion au calcium/vitamine D prescrits, la glycémie à surveiller, et ne jamais arrêter brutalement la corticothérapie.",
+   "src": [
+    [
+     "Springer Pulmonary Therapy",
+     "https://link.springer.com/article/10.1007/s41030-026-00372-z"
+    ]
+   ],
+   "coi": "À vérifier",
+   "fin": "Revue académique en accès ouvert"
+  },
+  {
+   "id": "pneumo-mucoviscidose-yir2025",
+   "ty": "Médicament",
+   "dom": "Pneumologie",
+   "n": 4,
+   "dt": "2026-03",
+   "des": "Mucoviscidose, l'année 2025 en revue : modulateurs CFTR longue durée, survie et pipeline (J Cyst Fibros, 04/03/2026)",
+   "tag": "mucoviscidose | modulateurs CFTR | survie",
+   "res": "Revue annuelle « Cystic fibrosis year in review 2025 » (Journal of Cystic Fibrosis, 04/03/2026) : données de survie à long terme sous modulateurs CFTR (elexacaftor-tezacaftor-ivacaftor), nouveaux essais des trithérapies de nouvelle génération (vanzacaftor-tezacaftor-deutivacaftor, essais SKYLINE) et questions d'accès mondial. En officine : patient mucoviscidosique sous modulateur CFTR — traiter la délivrance comme un marathon (observance > 95 %, prise avec de la graisse alimentaire), coordonner avec les pansements digestifs (enzymes pancréatiques avant les repas) et l'antibioprophylaxie inhalée ; ne jamais substituer sans accord du centre CF.",
+   "src": [
+    [
+     "J Cyst Fibros (ScienceDirect)",
+     "https://www.cysticfibrosisjournal.com/article/S1569-1993(26)00040-8/fulltext"
+    ]
+   ],
+   "coi": "À vérifier",
+   "fin": "Revue académique annuelle"
+  },
+  {
+   "id": "infectio-baloxavir-centerstone",
+   "ty": "Médicament",
+   "dom": "Infectiologie & Vaccins",
+   "n": 2,
+   "dt": "2025-04",
+   "des": "Grippe : une dose unique de baloxavir réduit la transmission familiale de 32 % (CENTERSTONE, NEJM, avril 2025)",
+   "tag": "baloxavir marboxil (Xofluza) — antiviral grippe, transmission",
+   "res": "Essai international CENTERSTONE (NEJM, communiqué du 25/04/2025) : traiter le cas index grippé par une dose unique de baloxavir réduit de ~32 % la transmission de l'influenza au sein des foyers par rapport au placebo — premier antiviral à montrer un effet sur la propagation communautaire, complémentaire à la vaccination. Le baloxavir n'est pas disponible en France en ville (indication hospitalière limitée). En officine : argument pédagogique — « traiter tôt le premier cas d'une famille protège les autres » ; en France, l'oseltamivir en ville reste réservé aux cas graves ou à risque, sur prescription ; la vaccination reste la première protection du foyer.",
+   "src": [
+    [
+     "NEJM",
+     "https://www.nejm.org/doi/full/10.1056/NEJMoa2413156"
+    ],
+    [
+     "ScienceDaily (25/04/2025)",
+     "https://www.sciencedaily.com/releases/2025/04/250425113801.htm"
+    ]
+   ],
+   "coi": "Mixte",
+   "fin": "Essai sponsorisé (Shionogi/Roche), publié NEJM ; effet transmission observé, à confirmer en pratique"
+  }
+ ],
+ "recos": [
+  {
+   "spe": "Pneumologie",
+   "org": "HAS (Haute Autorité de Santé)",
+   "dt": "2025-03",
+   "geo": "fr",
+   "titre": "Tuberculose pulmonaire : structurer le dépistage et le repérage précoce dans les populations à risque",
+   "res": "Recommandation de bonne pratique HAS (mise en ligne le 24 mars 2025, PDF argumentaire mars 2025) : dépistage ciblé des populations à risque (détenus, migrants, personnes sans domicile fixe, usagers de drogues, proches de cas) par intradermoréaction à la tuberculine ou test de libération de l'interféron gamma (IGRA), avec des programmes structurés en deux types (dépistage systématique des populations les plus à risque, repérage précoce en soins primaires). En officine : connaître les facteurs de risque pour orienter — toux persistante > 3 semaines chez un patient né ou revenant de zone d'endémie ou en situation de précarité = « consultez, c'est un test simple » ; les medicaments antituberculeux exigent une observance parfaite (bithérapie quadrithérapie initiale, jamais d'arrêt spontané).",
+   "src": [
+    [
+     "HAS communiqué (24/03/2025)",
+     "https://www.has-sante.fr/jcms/p_3598771/fr/tuberculose-pulmonaire-structurer-le-depistage-et-le-reperage-precoce-dans-les-populations-a-risque"
+    ],
+    [
+     "HAS argumentaire PDF (mars 2025)",
+     "https://www.has-sante.fr/upload/docs/application/pdf/2025-03/dc_eco_sp_172_reco_sante_publique_tuberculose_cd_20250313_vunum_vurdvf.pdf"
+    ]
+   ]
+  }
+ ]
+}
