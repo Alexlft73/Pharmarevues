@@ -1,0 +1,26 @@
+{
+ "revues": [
+  {
+   "ty": "Médicament",
+   "dom": "Allergologie",
+   "n": 2,
+   "dt": "2026-09",
+   "des": "Régime maternel riche en œufs et arachides pendant grossesse/allaitement : PAS de réduction de l'allergie chez le nourrisson (NEJM)",
+   "tag": "allergie alimentaire, prévention, régime maternel, œuf, arachide, NEJM 2026",
+   "res": "Essai randomisé de phase 3 publié dans le New England Journal of Medicine le 17 septembre 2026 (doi:10.1056/NEJMoa2605659, Palmer et al., consortium australien) : chez des nourrissons à risque (antécédents familiaux), un régime maternel riche en œufs et arachide pendant la grossesse et la lactation ne réduit PAS le risque d'allergie alimentaire à 1 an. Inverse le vieux conseil d'éviction : l'éviction n'est pas plus utile que la surconsommation.",
+   "src": [
+    [
+     "NEJM (doi)",
+     "https://www.nejm.org/doi/full/10.1056/NEJMoa2605659"
+    ],
+    [
+     "Université de Melbourne (fiche)",
+     "https://findanexpert.unimelb.edu.au/scholarlywork/2359271-trial-of-a-maternal-diet-rich-in-eggs-and-peanuts-to-reduce-infant-allergy."
+    ]
+   ],
+   "off": "Enceinte avec des allergies dans la famille : ni éviter ni sur-consommer œufs et arachides ne change le risque pour bébé ; mangez normalement, sans crainte.",
+   "coi": "À vérifier (essai soutenu par le NHMRC australien)",
+   "fin": "NHMRC (Medical Research Future Fund, Australie) selon la déclaration des auteurs."
+  }
+ ]
+}
