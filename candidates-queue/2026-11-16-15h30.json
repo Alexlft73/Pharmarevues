@@ -1,0 +1,102 @@
+{
+ "revues": [
+  {
+   "id": "oit-prescolaire-multi-securite-2026",
+   "ty": "Médicament",
+   "dom": "Allergologie",
+   "n": 4,
+   "dt": "2026-02",
+   "des": "Immunothérapie orale multi-allergènes chez le pré-scolaire : une approche novel OIT est sûre (Frontiers in Allergy, 02/02/2026)",
+   "tag": "immunothérapie orale · OIT · allergies alimentaires multiples · pré-scolaire · sécurité",
+   "res": "Étude (Front Allergy 2026;7:1724759, publié 02/02/2026) : OIT hospitalière personnalisée (jusqu'à 4 allergènes par enfant, doses escaladées toutes les 2-4 semaines) chez des pré-scolaires avec allergies alimentaires uniques ou multiples — profil de sécurité favorable, réactions surtout locales, personnel formé. Usage DISTINCT de l'entrée OUtMATCH (omalizumab vs OIT, base) et de l'entrée AIT sécurité (2026-08) : ici la faisabilité de l'OIT multi-allergènes dès le plus jeune âge, en milieu hospitalier. En officine : rappeler aux parents que ces protocoles restent hospitaliers — jamais d'introduction alimentaire « désensibilisante » maison ; le pharmacien vérifie les trousses d'adrénaline et les régimes d'éviction.",
+   "src": [
+    [
+     "Frontiers in Allergy",
+     "https://www.frontiersin.org/journals/allergy/articles/10.3389/falgy.2026.1724759/full"
+    ]
+   ],
+   "coi": "À vérifier",
+   "fin": "À vérifier"
+  },
+  {
+   "id": "csu-therapies-ciblees-precision-2026",
+   "ty": "Médicament",
+   "dom": "Allergologie",
+   "n": 5,
+   "dt": "2026-09",
+   "des": "Urticaire chronique spontanée à l'ère des thérapies ciblées : des mécanismes à la médecine de précision (revue, collection 2026 Sep)",
+   "tag": "urticaire chronique · CSU · omalizumab · remibrutinib · dupilumab · médecine de précision",
+   "res": "Revue (PMC13610289, reçu 09/07/2026, accepté 14/09/2026) : synthèse des mécanismes (auto-anticorps anti-IgE/anti-FcεRI, voie Bruton kinase, IL-4/13) et de l'arrivée des thérapies ciblées — omalizumab, remibrutinib (BTKi oral), dupilumab — avec la perspective d'une sélection par biomarqueurs plutôt qu'un algorithme linéaire. Usage DISTINCT des entrées CSU en base (traitements systémiques JACI-IP 2026-02, méta-analyse réseau 2025-11, remibrutinib 52 semaines) : ici la carte mécanistique et le positionnement. En officine : l'urticaire réfractaire aux antihistaminiques doubles n'est plus une impasse — orienter vers le dermato/allergo pour les biothérapies plutôt que de cumuler les antihistaminiques.",
+   "src": [
+    [
+     "PMC",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC13610289"
+    ]
+   ],
+   "coi": "À vérifier",
+   "fin": "À vérifier"
+  },
+  {
+   "id": "consensus-adrénaline-communautaire-2026",
+   "ty": "Alerte",
+   "dom": "Allergologie",
+   "n": 5,
+   "dt": "2026-02",
+   "des": "Quand injecter l'adrénaline et appeler les secours en réaction allergique communautaire : consensus international (JACI, 2026 Feb;157(2):429-441)",
+   "tag": "anaphylaxie · adrénaline · EMS · consensus · communauté · trousse",
+   "res": "Consensus international (J Allergy Clin Immunol 2026 Feb;157(2):429-441, epub 2025) : seuils pratiques d'administration d'adrénaline et d'activation des services d'urgence en contexte communautaire (domicile, restaurant, école) — l'incertitude sur les seuils contribue à la sous-utilisation ET à la surutilisation ; le message est l'administration précoce plutôt qu'attentiste. Usage DISTINCT de l'entrée « Community Anaphylaxis » (2026-01, vue d'ensemble comparative) et des entrées anaphylaxie en base. En officine : matière première pour l'éducation à la trousse d'adrénaline — injecter dès les signes systémiques, puis appeler le 15, ne jamais attendre l'aggravation.",
+   "src": [
+    [
+     "JACI",
+     "https://www.jacionline.org/article/S0091-6749(25)01180-7/abstract"
+    ],
+    [
+     "Mount Sinai (notice)",
+     "https://scholars.mssm.edu/en/publications/epinephrine-and-emergency-medical-services-activation-recommendat/"
+    ]
+   ],
+   "coi": "À vérifier",
+   "fin": "À vérifier"
+  },
+  {
+   "id": "ait-rhinite-meta-2026",
+   "ty": "Médicament",
+   "dom": "Allergologie",
+   "n": 1,
+   "dt": "2026-03",
+   "des": "Efficacité de l'immunothérapie allergénique dans la rhinite allergique : méta-analyse (Frontiers in Medicine, 24/03/2026)",
+   "tag": "immunothérapie allergénique · AIT · rhinite allergique · méta-analyse · SCIT · SLIT",
+   "res": "Méta-analyse (Front Med 2026 Mar 24;13:1759079, PubMed 41952900) : efficacité des immunothérapies sous-cutanées et sublinguales dans la rhinite allergique, symptomatique et médicamenteuse. Usage DISTINCT de la revue parapluie AIT (base), du comprimé SQ-HDM asthme (base) et de la méta antihistaminiques+corticoïdes nasaux (base) : ici une synthèse quantitative dédiée à la rhinite. En officine : argument pour ne pas banaliser la rhinite persistante — la désensibilisation, c'est 3-5 ans d'observance, et le pharmacien qui renouvelle les comprimés sublinguaux est le mieux placé pour vérifier l'adhésion.",
+   "src": [
+    [
+     "Frontiers in Medicine",
+     "https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2026.1759079/full"
+    ],
+    [
+     "PubMed",
+     "https://pubmed.ncbi.nlm.nih.gov/41952900/"
+    ]
+   ],
+   "coi": "À vérifier",
+   "fin": "À vérifier"
+  },
+  {
+   "id": "vit-cohorte-vie-reelle-2026",
+   "ty": "Médicament",
+   "dom": "Allergologie",
+   "n": 4,
+   "dt": "2026-10",
+   "des": "Immunothérapie veninière en pratique clinique : cohorte rétrospective vie réelle (Toxins, 15/10/2026)",
+   "tag": "immunothérapie veninière · VIT · hyménoptères · vie réelle · anaphylaxie · prémédication",
+   "res": "Cohorte rétrospective vie réelle (Toxins 2026;18(10):447, publié 15/10/2026) : déroulement de la VIT en pratique — réactions pendant la phase d'escalade, place de la prémédication et de l'omalizumab chez les patients à réactions antérieures, poursuite de la maintenance. Usage DISTINCT de l'entrée « 5 ans de VIT » (2026-04) et des protocoles courts (base) : ici la vraie vie d'un service. En officine : le patient sous VIT a toujours sa trousse d'adrénaline ; rappeler les délais de renouvellement des extraits et que piqûre survenue = consultation, pas d'arrêt improvisé.",
+   "src": [
+    [
+     "MDPI — Toxins",
+     "https://doi.org/10.3390/toxins18100447"
+    ]
+   ],
+   "coi": "À vérifier",
+   "fin": "À vérifier"
+  }
+ ]
+}
