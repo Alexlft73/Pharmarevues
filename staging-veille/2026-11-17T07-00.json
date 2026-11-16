@@ -1,0 +1,26 @@
+{
+ "revues": [
+  {
+   "ty": "Économie",
+   "dom": "Économie de la Santé",
+   "n": 5,
+   "dt": "2026-07",
+   "des": "Génériques : accord sur 24 M€ d'économies en 2027, très en deçà des 43,9 M€ initialement visés par le CEPS",
+   "tag": "génériques, CEPS, prix, économies, USPO, Assurance maladie",
+   "res": "Selon Vidal (juillet 2026) et l'AFP : après négociation, la vague de baisses de prix du CEPS sur 12 groupes de génériques ne rapportera que 24 M€ d'économies à la Sécu en 2027 (contre 43,9 M€ initialement engagés), baisses effectives au 1er janvier 2027 ; l'USPO s'est félicitée de l'issue des discussions. À mettre en regard de l'entrée biosimilaires adalimumab 2026-07 déjà en base.",
+   "src": [
+    [
+     "Vidal",
+     "https://www.vidal.fr/actualites/38149-medicaments-generiques-24-millions-d-euros-d-economies-pour-la-secu-en-2027"
+    ],
+    [
+     "20 Minutes",
+     "https://www.20minutes.fr/sante/4236772-20260728-medicaments-generiques-secu-fera-24-millions-euros-economies-2027"
+    ]
+   ],
+   "off": "Les prix de nombreux génériques baisseront au 1er janvier 2027 : aucune conséquence sur le ticket patient pour les remboursés, la baisse porte sur le remboursement.",
+   "coi": "Non applicable (accord conventionnel)",
+   "fin": "Non applicable (accord prix-médicaments CEPS)."
+  }
+ ]
+}
