@@ -225,6 +225,8 @@ html.dark #recostab .rgeo{color:#a5b4fc;background:rgba(99,102,241,.15)}
 #pedtab .pscroll{overflow-x:auto;border:1px solid #e2e8f0;border-radius:12px;background:#fff}
 #pedtab .pquick{display:inline-flex;gap:6px;flex-wrap:wrap}
 #pedtab .pwbtn{border:1.5px solid #0f766e;background:#f0fdfa;color:#0f766e;font-weight:700;font-size:.85rem;border-radius:999px;padding:5px 12px;cursor:pointer;transition:background .15s}
+.pdok{font:700 13px/1 -apple-system,"Segoe UI",sans-serif;color:#059669;margin-left:10px;white-space:nowrap}
+.pdc{margin-left:6px;background:#7c3aed;color:#fff;border-color:#7c3aed}
 #pedtab .pwbtn:hover{background:#0f766e;color:#fff}
 #pedtab .pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(285px,1fr));gap:14px;margin:14px 0 4px}
 #pedtab .pcard{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:14px 15px 12px;box-shadow:0 1px 4px rgba(15,23,42,.06);display:flex;flex-direction:column;gap:8px}
@@ -575,7 +577,9 @@ html.dark .asrc b,html.dark .asrc a{color:#5eead4}
 <section id="pedtab" class="panel" style="display:none">
   <div class="pbar">
     <label for="pds">⚖️ Poids de l'enfant</label>
-    <input id="pds" type="text" inputmode="decimal" placeholder="ex. 12,5" value="12">
+    <input id="pds" type="text" inputmode="decimal" placeholder="ex. 12,5" value="12" oninput="pdgo()" onchange="pdgo()" onkeyup="pdgo()" onblur="pdgo()" autocomplete="off" autocorrect="off" autocapitalize="off">
+    <button type="button" class="pwbtn pdc" onclick="pdgo()">Calculer</button>
+    <span id="pdok" class="pdok">✓ 12 kg</span>
     <span class="punit">kg</span>
     <span class="pquick">
       <button type="button" class="pwbtn" onclick="pdset(6)">6</button><button type="button" class="pwbtn" onclick="pdset(10)">10</button><button type="button" class="pwbtn" onclick="pdset(15)">15</button><button type="button" class="pwbtn" onclick="pdset(20)">20</button><button type="button" class="pwbtn" onclick="pdset(30)">30</button><button type="button" class="pwbtn" onclick="pdset(40)">40</button>
@@ -1083,9 +1087,14 @@ function pdfmt(x){
 function pdset(kg){ document.getElementById("pds").value = String(kg); pdgo(); }
 function pdgo(){
   const grid = document.getElementById("pdgrid");
-  const raw = document.getElementById("pds").value || "";
-  const w = parseFloat(raw.replace(",", "."));
+  const raw0 = (document.getElementById("pds").value || "").replace(/[\s\u00A0\u202F\u2009]/g, "");
+  let t = raw0.replace(/[^0-9.,]/g, "");
+  if (t.includes(",") && t.includes(".")) t = t.replace(/,/g, "");
+  else if (t.includes(",")) { const i = t.lastIndexOf(","); t = t.slice(0, i).replace(/,/g, "") + "." + t.slice(i + 1); }
+  const w = parseFloat(t);
   const ok = isFinite(w) && w > 0 && w < 200;
+  const badge = document.getElementById("pdok");
+  if (badge) badge.textContent = ok ? "✓ " + pdfmt(w).replace(".", ",") + " kg" : "saisie invalide";
   let h = "<div class='pgrid'>";
   PEDI.forEach(function(e){
     let calc = "<span class='pdim'>saisir un poids ci-dessus</span>";
