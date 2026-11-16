@@ -1,0 +1,35 @@
+name: Rotation nocturne PharmaVeille
+on:
+  schedule:
+    - cron: '1,16,31,46 * * * *'   # :02/:17/:32/:47 Paris (UTC+1) — couvre les créneaux XXh00/15/30/45
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: write
+jobs:
+  rotate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Pousser la salve due dans la file d'injection
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+          DUE=$(TZ='Europe/Paris' date +%Y-%m-%dT%H-%M)
+          echo "Heure Paris : $DUE"
+          mkdir -p candidates-queue
+          PICK=""
+          for f in $(ls staging-veille/*.json 2>/dev/null | sort); do
+            SLOT=$(basename "$f" .json)
+            if [[ "$SLOT" \< "$DUE" || "$SLOT" == "$DUE" ]]; then PICK="$f"; break; fi
+          done
+          if [ -z "$PICK" ]; then echo "Aucune salve due — staging vide ou pas encore l'heure."; exit 0; fi
+          echo "Salve due : $PICK"
+          git mv "$PICK" "candidates-queue/$(basename "$PICK")"
+          git config user.name "vibe-veille[bot]"
+          git config user.email "actions@users.noreply.github.com"
+          git commit -m "file candidates: rotation nocturne $(basename "$PICK")"
+          git push
+          gh workflow run inject.yml --ref main
+          echo "Injection déclenchée pour $(basename "$PICK")"
