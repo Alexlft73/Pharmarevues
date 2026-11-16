@@ -1,0 +1,26 @@
+{
+ "revues": [
+  {
+   "ty": "Médicament",
+   "dom": "Gastro-entérologie & Hépatologie",
+   "n": 4,
+   "dt": "2026-10",
+   "des": "MICI : des profils d'anticorps circulent jusqu'à 10 ans avant le diagnostic (étude présentée à l'UEGW 2026)",
+   "tag": "MICI, anticorps, diagnostic précoce, Crohn, rectocolite, UEGW 2026",
+   "res": "Une étude présentée au congrès européen de gastro-entérologie UEGW 2026 (17-20 octobre 2026, Barcelone) montre que le système immunitaire produit des signatures d'anticorps spécifiques jusqu'à 10 ans avant le diagnostic de maladie de Crohn ou de rectocolite hémorragique : une perspective de détection précoce par simple prise de sang. Résultats de congrès, publication peer review à venir.",
+   "src": [
+    [
+     "Destination Santé",
+     "https://destinationsante.com/mici-le-systeme-immunitaire-donne-lalerte-10-ans-avant-le-diagnostic.html"
+    ],
+    [
+     "PourquoiDocteur",
+     "https://www.pourquoidocteur.fr/Articles/Question-d-actu/56248-MICI-signs-apparaitre-ans-diagnostic"
+    ]
+   ],
+   "off": "Anomalies inflammatoires inexpliquées depuis des années ? Elles précèdent parfois une MICI ; le suivi régulier de la CRP a du sens.",
+   "coi": "Non applicable (données de congrès, publication en attente)",
+   "fin": "Financement non lisible dans les sources consultées."
+  }
+ ]
+}
