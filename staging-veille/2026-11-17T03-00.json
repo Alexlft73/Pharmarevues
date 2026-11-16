@@ -1,0 +1,41 @@
+{
+ "revues": [
+  {
+   "ty": "Médicament",
+   "dom": "Gastro-entérologie & Hépatologie",
+   "n": 5,
+   "dt": "2026-10",
+   "des": "MASH : premières recommandations européennes EASL-EASD-EASO sur le resmetirom et le sémaglutide comme traitements ciblés",
+   "tag": "MASH, MASLD, resmetirom, sémaglutide, EASL, stéatohépatite",
+   "res": "Guidance conjointe EASL-EASD-EASO publiée dans Journal of Hepatology (octobre 2026, S0168-8278(26)02877-1, annoncée le 12/10/2026) : recommandations d'usage du resmetirom (80/100 mg oral) et du sémaglutide 2,4 mg SC comme traitements ciblés du MASH avec fibrose significative ; dans la cirrhose MASH, les deux produits paraissent sûrs mais ne doivent PAS être utilisés comme traitement ciblé du MASH faute de données hépatiques. Complète la reco MASLD 2024 et l'entrée accès précoce Rezdiffra déjà en base.",
+   "src": [
+    [
+     "Journal of Hepatology",
+     "https://www.journal-of-hepatology.eu/article/S0168-8278(26)02877-1/fulltext"
+    ],
+    [
+     "ScienceDirect",
+     "https://www.sciencedirect.com/science/article/pii/S0168827826028771"
+    ]
+   ],
+   "off": "Stéatose du foie avec fibrose : deux médicaments existent désormais en Europe (resmetirom, sémaglutide), mais jamais en cas de cirrhose avancée sans avis spécialisé ; la perte de poids reste la base.",
+   "coi": "À vérifier (guideline de sociétés savantes)",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "recos": [
+    {
+     "spe": "Gastro-entérologie & Hépatologie",
+     "org": "EASL-EASD-EASO",
+     "dt": "2026-10",
+     "titre": "Guidance EASL-EASD-EASO : resmetirom et sémaglutide comme traitements ciblés du MASH (J Hepatol, oct. 2026)",
+     "res": "Recommandations d'usage du resmetirom 80/100 mg et du sémaglutide 2,4 mg dans le MASH avec fibrose significative ; à éviter comme traitement ciblé du MASH en cas de cirrhose.",
+     "src": [
+      [
+       "Journal of Hepatology",
+       "https://www.journal-of-hepatology.eu/article/S0168-8278(26)02877-1/fulltext"
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}
