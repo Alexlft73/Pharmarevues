@@ -1,0 +1,26 @@
+{
+ "revues": [
+  {
+   "ty": "Alerte",
+   "dom": "Ophtalmologie",
+   "n": 5,
+   "dt": "2026-07",
+   "des": "DMLA sèche avancée : l'implant rétinien PRIMA obtient le marquage CE (22 juillet 2026), restauration partielle de la vision centrale",
+   "tag": "PRIMA, implant rétinien, DMLA atrophique, atrophie géographique, marquage CE",
+   "res": "Science Corporation a annoncé le 22 juillet 2026 le marquage CE du PRIMA, puce de 2 mm implantée sous la rétine pour la DMLA sèche (atrophie géographique) avancée : l'étude clinique (résultats publiés dans le NEJM) montre une restauration partielle de la vision centrale chez une majorité de patients, la majorité des implantés retrouvant des capacités de lecture. Première implantation commerciale attendue en Allemagne dès septembre 2026 ; désignations FDA Breakthrough/HUD aux États-Unis. Aucun traitement médicamenteux n'existe pour cette forme.",
+   "src": [
+    [
+     "CapMad",
+     "https://www.capmad.com/article/le-chip-prima-de-science-corporation-obtient-le-feu-vert-de-lue-pour-restaurer-la-vision"
+    ],
+    [
+     "PourquoiDocteur",
+     "https://www.pourquoidocteur.fr/Articles/Question-d-actu/55642-DMLA-implant-restaurer-vue-autorise-Europe"
+    ]
+   ],
+   "off": "DMLA sèche avancée : une puce rétinienne est désormais autorisée en Europe. À ce stade, seuls certains centres la proposent ; la surveillance régulière de l'autre œil reste indispensable.",
+   "coi": "Non applicable (autorisation de dispositif)",
+   "fin": "Science Corporation (développeur du dispositif)."
+  }
+ ]
+}
