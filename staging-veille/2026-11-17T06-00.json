@@ -1,0 +1,22 @@
+{
+ "revues": [
+  {
+   "ty": "Alerte",
+   "dom": "Allergologie",
+   "n": 4,
+   "dt": "2026-11",
+   "des": "Anaphylaxie : 54 % des patients se sont déjà retrouvés SANS leur stylo d'adrénaline quand il fallait (enquêtes EAACI 2026)",
+   "tag": "anaphylaxie, adrénaline, auto-injecteur, observance, EURneffy, EAACI",
+   "res": "Deux enquêtes multicentriques présentées par l'EAACI (novembre 2026, congrès d'Utrecht) : 54 % des adultes à risque d'anaphylaxie déclarent avoir déjà été sans leur auto-injecteur d'adrénaline au moment d'une réaction, et près de 40 % ne le portent pas régulièrement (n=1 238) ; côté soignants, la formation au traitement d'urgence reste insuffisante. Les données soutiennent le rôle d'alternatives comme EURneffy (adrénaline nasale), seule option sans aiguille approuvée.",
+   "src": [
+    [
+     "Communiqué EAACI (GlobeNewswire)",
+     "https://www.globenewswire.com/en/search/organization/European%2520Academy%2520of%2520Allergy%2520and%2520Clinical%2520Immunology%2520%2528EAACI%2529"
+    ]
+   ],
+   "off": "Le stylo qui vous sauve ne sert à rien dans un tiroir : sortez-le avec vous, comme les clés ; vérifiez sa date de péremption à chaque renouvellement.",
+   "coi": "Non applicable (enquêtes de terrain)",
+   "fin": "Enquêtes soutenues par ARS Pharmaceuticals (EURneffy) selon le communiqué."
+  }
+ ]
+}
