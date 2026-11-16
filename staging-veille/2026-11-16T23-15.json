@@ -1,0 +1,26 @@
+{
+ "revues": [
+  {
+   "ty": "Médicament",
+   "dom": "Dermatologie & peau",
+   "n": 1,
+   "dt": "2026-11",
+   "des": "Dermatite atopique : le ruxolitinib crème 1,5 % a l'efficacité la plus rapide et constante des topiques non stéroïdiens (méta-analyse en réseau)",
+   "tag": "ruxolitinib, crisaborole, tapinarof, roflumilast, dermatite atopique, topique non stéroïdien",
+   "res": "Méta-analyse en réseau publiée dans Dermatology and Therapy (novembre 2026) comparant les topiques non stéroïdiens récents de la dermatite atopique (recherche MEDLINE/Embase/PubMed/Web of Science jusqu'à juillet 2026) : le ruxolitinib 1,5 % ressort comme le traitement le plus constamment efficace sur la rapidité et le niveau de réponse clinique, devant crisaborole, tapinarof et roflumilast. Distinct de l'entrée vitiligo (ruxolitinib, TRuE-V) déjà en base : ici la dermatite atopique.",
+   "src": [
+    [
+     "Dermatology and Therapy (Springer)",
+     "https://link.springer.com/article/10.1007/s13555-026-01968-8"
+    ],
+    [
+     "Analyse Bioengineer",
+     "https://bioengineer.org/ruxolitinib-shows-strongest-early-efficacy-in-atopic-dermatitis-network-meta-analysis/"
+    ]
+   ],
+   "off": "Face à l'eczéma, les crèmes non stéroïdiennes ne se valent pas : à évoquer avec le médecin si une crème anti-inflammatoire de fond est nécessaire, surtout pour le visage et en usage prolongé.",
+   "coi": "À vérifier (méta-analyse impliquant des auteurs affiliés à Incyte selon les sources)",
+   "fin": "Financement non lisible dans les sources consultées."
+  }
+ ]
+}
