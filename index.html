@@ -1261,7 +1261,7 @@ function alBuild(steps, xLeft, yTop){
         frag.push('<text class="al-brtxt" x="' + (bx + 12 + lw / 2) + '" y="' + (blk.y + 5) + '" text-anchor="middle">' + lab + '</text>');
         frag.push(blk.bb.svg);
         var mx = bx + 14 + AL.box / 2;
-        frag.push('<path class="al-ar" d="M ' + rightX + ' ' + cyN + ' H ' + mx + ' V ' + (blk.y + 30) + '" marker-end="url(#alhead)"/>');
+        frag.push('<path class="al-ar" d="M ' + rightX + ' ' + cyN + ' H ' + (bx - 26) + ' V ' + blk.y + ' H ' + (bx + 3) + '" marker-end="url(#alhead)"/>');
         if (blk.y + blk.bb.h + 30 > maxBottom) maxBottom = blk.y + blk.bb.h + 30;
       }
       var lastB = blocks[blocks.length - 1];
