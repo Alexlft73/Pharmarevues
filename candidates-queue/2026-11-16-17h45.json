@@ -1,0 +1,84 @@
+{
+ "revues": [
+  {
+   "id": "polyhf-hfref-2026",
+   "ty": "Médicament",
+   "dom": "Cardiologie",
+   "n": 2,
+   "dt": "2026-07",
+   "des": "POLY-HF : une « polypill » à 3 molécules du cœur  contre l'insuffisance cardiaque à FE réduite (Nature Medicine, 02/07/2026)",
+   "tag": "polypill · insuffisance cardiaque · HFrEF · quadrithérapie · observance · Nature Medicine",
+   "res": "Essai randomisé (UT Southwestern, POLY-HF ; Nat Med 2026;32:2933-2940, annoncé le 02/07/2026) : une polypill combinant les classes recommandées de l'ICrFE en une prise quotidienne s'avère nettement plus efficace que les comprimés séparés usuels sur l'atteinte de la thérapie optimale (GDMT) — l'observance par la simplicité galénique. Usage DISTINCT de la méta polypills prévention CV primaire/secondaire (base) : ici l'insuffisance cardiaque, où l'écart entre GDMT prescrite et GDMT réellement prise est maximal. En officine : le levier observance dans l'IC est énorme (4 classes, 2+ prises/j) — une forme combinée divise les prises et les oublis ; en attendant une polypill commercialisée, la préparation de pilulier et l'éducation restent nos outils.",
+   "src": [
+    [
+     "Nature Medicine",
+     "https://www.nature.com/articles/s41591-026-04504-5"
+    ],
+    [
+     "UTSW Newsroom (02/07/2026)",
+     "https://www.utsouthwestern.edu/newsroom/articles/year-2026/july-polypill-utsw-led-trial.html"
+    ]
+   ],
+   "coi": "À vérifier",
+   "fin": "À vérifier"
+  },
+  {
+   "id": "frid-prevalence-communaute-2026",
+   "ty": "Officine",
+   "dom": "Seniors & polymédication",
+   "n": 4,
+   "dt": "2026-10",
+   "des": "Médicaments qui font tomber (FRID) chez les seniors vivant à domicile : prévalence documentée (Age and Ageing, 23/10/2026)",
+   "tag": "FRID · chutes · seniors · domicile · prévalence · polymédication",
+   "res": "Étude de prévalence (Age Ageing 2026 Oct 23;55(10):afag303, DOI 10.1093/ageing/afag303 ; école de pharmacie RCSI Dublin) : cartographie de l'usage des fall-risk-increasing drugs (benzodiazépines, anticholinergiques, hypotenseurs, hypoglycémiants...) chez les seniors communautaires — une proportion majeure en consomme au moins un, souvent plusieurs. Usage DISTINCT de l'entrée « seniors chuteurs aux urgences : antiplaquettaires/AOD inappropriés » (base) : ici la population à domicile, côté dépistage au comptoir. En officine : le réflexe FRID — chaque renouvellement d'un senior = scan mental des sédatifs, anticholinergiques et interactions hypotensives ; proposer l'entretien de bilan et oser dire au patient pourquoi on relit sa liste « pour éviter les chutes ».",
+   "src": [
+    [
+     "PMC",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC13693591"
+    ]
+   ],
+   "coi": "À vérifier",
+   "fin": "À vérifier"
+  },
+  {
+   "id": "frid-chutes-cohorte-2026",
+   "ty": "Officine",
+   "dom": "Seniors & polymédication",
+   "n": 4,
+   "dt": "2026-08",
+   "des": "FRID et chutes réelles chez le senior à domicile : cohorte danoise, lien dose-à-dose (European Geriatric Medicine, epub 12/08/2026)",
+   "tag": "FRID · chutes · cohorte · Danemark · domicile · dose-dépendance",
+   "res": "Cohorte prospective danoise (Eur Geriatr Med, DOI 10.1007/s41999-026-01568-x, epub 12/08/2026 ; Mortensen, Gade et al.) : association entre exposition aux FRID et chutes ultérieures documentées chez les seniors communautaires — l'excès de risque suit l'exposition (nombre de FRID, doses), l'analyse tient compte des chutes antérieures ; argument pour réduire, pas seulement constater. Usage DISTINCT de l'étude de prévalence RCSI (2026-10, même vague) : ici le lien prospectif FRID→chute, là la photo transversale. En officine : la déprescription d'un FRID se fait à l'échelon d'une consultation — mais l'identification au comptoir d'un senior qui chute déjà avec 2 FRID à bord = alerte prescripteur prioritaire.",
+   "src": [
+    [
+     "PubMed",
+     "https://pubmed.ncbi.nlm.nih.gov/42584792/"
+    ]
+   ],
+   "coi": "À vérifier",
+   "fin": "À vérifier"
+  },
+  {
+   "id": "telmisartan-amlodipine-faible-dose-2026",
+   "ty": "Médicament",
+   "dom": "Cardiologie",
+   "n": 2,
+   "dt": "2026-05",
+   "des": "Télmisartan/amlodipine à faible dose en comprimé unique dans l'HTA essentielle légère : essai de phase 3 (J Clin Hypertens, mai 2026)",
+   "tag": "HTA · télmisartan · amlodipine · faible dose · combinaison fixe · phase 3",
+   "res": "Essai randomisé double-aveugle de phase 3 (J Clin Hypertens 2026 May;28(5):e70279, DOI 10.1111/jch.70279 ; Ahn et al.) : la combinaison fixe à FAIBLES doses (ex. 20/2,5 mg) de télmisartan/amlodipine en une prise contrôle l'HTA légère mieux que chaque composante seule, avec la tolérance attendue (moins d'œdèmes qu'amlodipine 5-10 mg). Usage DISTINCT des entrées HTA en base (ESC 2024, baxdrostat, aprocitentan HTA résistante) : ici la preuve que la double thérapie à petites doses d'emblée — la logique ESC « low-dose combos » — fonctionne dès l'HTA légère. En officine : au comptoir, expliquer pourquoi « deux médicaments faibles » valent mieux qu'« un fort » pour l'HTA légère (efficacité additive, effets dose-dépendants divisés) ; et vérifier la prise unique le matin.",
+   "src": [
+    [
+     "PubMed",
+     "https://pubmed.ncbi.nlm.nih.gov/42130156/"
+    ],
+    [
+     "PMC",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC13172608/"
+    ]
+   ],
+   "coi": "À vérifier",
+   "fin": "À vérifier"
+  }
+ ]
+}
