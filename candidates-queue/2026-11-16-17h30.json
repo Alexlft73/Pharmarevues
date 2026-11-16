@@ -1,0 +1,88 @@
+{
+ "revues": [
+  {
+   "id": "safiglipron-vs-dapagliflozin-2026",
+   "ty": "Médicament",
+   "dom": "Diabète & Endocrinologie",
+   "n": 2,
+   "dt": "2026-10",
+   "des": "Safiglipron (GLP-1 oral, petite molécule) vs dapagliflozine dans le DT2 : non-infériorité sur l'HbA1c à toutes les doses testées (Nature Medicine, 05/10/2026)",
+   "tag": "safiglipron · GLP-1 oral · petite molécule · dapagliflozine · DT2 · tête-à-tête",
+   "res": "Essai randomisé de phase 3 face-à-face (Nat Med 2026;32, article 05/10/2026, DOI 10.1038/s41591-026-04713-y) : le safiglipron, agoniste oral du récepteur GLP-1 (petite molécule), administré sans contrainte de jeûne ni alimentaire, est non-inférieur à la dapagliflozine sur la baisse d'HbA1c à toutes les doses, supérieur à 90 mg, avec perte de poids supplémentaire ; bien toléré (effets GI dose-dépendants attendus). Usage DISTINCT de l'entrée orforglipron vs sémaglutide oral (ACHIEVE-3, base) : ici le 2e GLP-1 oral face à un iSGLT2, et l'angle « sans contraintes de prise ». En officine : les comprimés GLP-1 arrivent — pas de froid, pas de reconstitution, mais un médicament à part entière (GI, pancréatite, rétinopathie diabétique à connaître) ; le rappel observance demeurera le nerf de la guerre.",
+   "src": [
+    [
+     "Nature Medicine",
+     "https://www.nature.com/articles/s41591-026-04713-y"
+    ]
+   ],
+   "coi": "À vérifier",
+   "fin": "À vérifier"
+  },
+  {
+   "id": "arret-levothyroxine-60ans-2026",
+   "ty": "Médicament",
+   "dom": "Diabète & Endocrinologie",
+   "n": 4,
+   "dt": "2026-04",
+   "des": "Peut-on arrêter la lévothyroxine après 60 ans ? Étude prospective JAMA : 25,7 % des patients âgés l'arrêtent en maintenant une fonction thyroïdienne adéquate à 1 an",
+   "tag": "lévothyroxine · hypothyroïdie · sujet âgé · déprescription · overtreatment · JAMA",
+   "res": "Étude prospective monocentrique ouverte (JAMA, publié en ligne le 06/04/2026, DOI 10.1001/jama.2026.2864 ; Ravensberg et al., LUMC Leiden ; PMID 41941226) : chez l'adulte de 60 ans et plus, tentative d'arrêt de L-T4 — un quart des patients (25,7 %) maintiennent une fonction adéquate à 1 an ; critères de succès liés aux doses faibles initiales et à la durée ; l'overtreatment chez le senior expose aux risques cardiaques et fracturaires. Usage DISTINCT de l'enquête CONTROL Surveillance II (base, façon de prendre) et des entrées formules galéniques : ici la déprescription réfléchie de l'hypothyroïdie présumée/surnaturée. En officine : un senior sous 25-50 µg/j avec une TSH basse-normale = signal à remonter au prescripteur, jamais d'arrêt officinal direct ; l'arrêt se fait sous contrôle biologique (TSH à 6-8 semaines).",
+   "src": [
+    [
+     "JAMA",
+     "https://jamanetwork.com/journals/jama/fullarticle/2847282"
+    ],
+    [
+     "PubMed",
+     "https://pubmed.ncbi.nlm.nih.gov/41941226/"
+    ]
+   ],
+   "coi": "À vérifier",
+   "fin": "À vérifier"
+  },
+  {
+   "id": "calcium-vitd-osteoporose-socle-2026",
+   "ty": "Complément",
+   "dom": "Nutrition & Compléments",
+   "n": 5,
+   "dt": "2026-07",
+   "des": "Calcium et vitamine D quotidiens comme pilier fondamental de l'ostéoporose, en association aux antirésorbeurs : revue (Nutrients, collection 2026 Jul)",
+   "tag": "calcium · vitamine D · ostéoporose · antirésorbeurs · bisphosphonates · adhérence",
+   "res": "Revue (Nutrients 2026, 18(14):2292, DOI 10.3390/nu18142292 ; PMC13415038, reçu 08/06/2026, accepté 07/07/2026) : rôle du couple calcium-vitamine D comme socle de tout traitement anti-ostéoporotique (bisphosphonates, dénosumab, romosozumab) — apports nutritionnels à évaluer d'abord, supplémenter l'écart, vitamine D pour corriger l'insuffissance avant l'initiation. Usage DISTINCT de la méta « anti-fracture » (2026-05, base) qui a fait tomber le dogme de la supplémentation en population générale SANS antirésorbeur : ici, en complément d'un traitement indiqué, le socle reste d'actualité. En officine : deux messages à ne pas confondre — pas de calcium+D « préventif » aveugle chez le sujet sain, MAIS pas d'ostéoporose traitée sans vérifier les apports ; l'observance des bisphosphonates (prise à jeun, 30 min debout) reste le levier n°1.",
+   "src": [
+    [
+     "MDPI — Nutrients",
+     "https://doi.org/10.3390/nu18142292"
+    ],
+    [
+     "PMC",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC13415038/"
+    ]
+   ],
+   "coi": "À vérifier",
+   "fin": "À vérifier"
+  },
+  {
+   "id": "probiotiques-umbrella-efficacite-securite-2026",
+   "ty": "Complément",
+   "dom": "Nutrition & Compléments",
+   "n": 1,
+   "dt": "2026-06",
+   "des": "Efficacité et sécurité des probiotiques, prébiotiques et synbiotiques : umbrella review (Nutrition Reviews, 15/06/2026)",
+   "tag": "probiotiques · prébiotiques · synbiotiques · umbrella review · efficacité · sécurité",
+   "res": "Umbrella review (Nutrition Reviews 2026, nuaf303, publié en ligne le 15/06/2026 ; PMID 42289829) : synthèse des méta-analyses sur les probiotiques/prébiotiques/synbiotiques — bénéfices concentrés sur des indications ciblées (digestives, métaboliques) et souches-dépendantes, sécurité globalement favorable chez l'immunocompétent mais vigilance chez l'immunodéprimé ; la qualité méthodologique des méta-analyses reste variable. Usage DISTINCT des entrées probiotiques-SII, antibiotiques-DA, sport, otites (base) : ici la vue transversale de TOUS les fibres probiotiques, y compris la sécurité. En officine : réponse aux cures probiotiques « au hasard » — la souche fait le produit (référence LPC, BB-12, etc.), pas le mot « probiotique » ; éviter chez le patient immunodéprimé/sous chimio sans avis.",
+   "src": [
+    [
+     "Oxford — Nutrition Reviews",
+     "https://doi.org/10.1093/nutrit/nuaf303"
+    ],
+    [
+     "PubMed",
+     "https://pubmed.ncbi.nlm.nih.gov/42289829/"
+    ]
+   ],
+   "coi": "À vérifier",
+   "fin": "À vérifier"
+  }
+ ]
+}
