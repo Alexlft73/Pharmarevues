@@ -164,6 +164,10 @@
 #recostab .rcard:hover{box-shadow:0 4px 16px rgba(20,40,80,.10);transform:translateY(-1px)}
 #recostab .rmeta{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
 #recostab .rbadge{background:#0f766e;color:#fff;font-size:.72rem;font-weight:700;padding:3px 9px;border-radius:6px;letter-spacing:.3px}
+#recostab .rbadge.roff{background:#b45309}
+html.dark #recostab .rbadge.roff{background:#d97706}
+#recostab #roffhint{margin:0 0 10px;font-size:.8rem;color:#64748b}
+html.dark #recostab #roffhint{color:var(--muted)}
 #recostab .rspe{font-size:.75rem;color:#64748b}
 #recostab .rdt{margin-left:auto;font-size:.75rem;font-weight:700;color:#0284c7}
 #recostab .rcard h3{font-size:.98rem;margin:0;color:#0f172a}
@@ -553,10 +557,12 @@ html.dark .asrc b,html.dark .asrc a{color:#5eead4}
     <span id="rcount"></span>
   </div>
   <div id="rfolders">
-    <button class="rfld on" id="rfld-fr" onclick="rsetFolder('fr')">🇫🇷 Recommandations françaises <span class="c" id="rfldc-fr">9</span></button>
+    <button class="rfld on" id="rfld-off" onclick="rsetFolder('off')">🏪 Pour l'officine <span class="c" id="rfldc-off">0</span></button>
+    <button class="rfld" id="rfld-fr" onclick="rsetFolder('fr')">🇫🇷 Recommandations françaises <span class="c" id="rfldc-fr">9</span></button>
     <button class="rfld" id="rfld-int" onclick="rsetFolder('int')">🌐 Recommandations internationales <span class="c" id="rfldc-int">22</span></button>
     <button class="rfld" id="rfld-diff" onclick="rsetFolder('diff')">⚖️ Différences notoires <span class="c" id="rfldc-diff">5</span></button>
   </div>
+  <p id="roffhint">🏪 Sélection automatique : les recommandations comportant des conseils directement applicables au comptoir (« En officine : … ») — les françaises apparaissent en premier.</p>
   <select id="rspe"></select>
   <div id="rgrid"></div>
   <p class="cfoot">📋 Recommandations &amp; guidelines — sociétés savantes et agences (HAS, ESC, GINA, GOLD, ADA, EASL, EULAR, ESMO, KDIGO, NICE, EuroGuiDerm/EDF, CNGOF, AFU, SFORL). Documents sources accessibles en un clic — toujours se référer au texte intégral en vigueur.</p>
@@ -942,7 +948,7 @@ const RECO = [
 {"spe":"Rhumatologie","org":"SFR / SOFMER","dt":"2026-06","titre":"Arthrose de la main — recommandations françaises SFR-SOFMER pour la prise en charge","res":"Recommandations des Sociétés françaises de rhumatologie (SFR) et de médecine physique et de réadaptation (SOFMER) pour la prise en charge des personnes vivant avec une arthrose de la main : éducation, orthèses, exercices, place des traitements locaux et systémiques (Joint Bone Spine / Revue du Rhumatisme, en ligne le 10/06/2026).","src":[["Joint Bone Spine (ScienceDirect)","https://www.sciencedirect.com/science/article/pii/S1297319X25001629"],["Revue du Rhumatisme (em-consulte)","https://www.em-consulte.com/article/1840503/recommandations-des-societes-francaises-de-rhumato"]]}
 ];
 
-let rstate = { q:"", spe:"", folder:"fr" };
+let rstate = { q:"", spe:"", folder:"off" };
 const rgridEl = document.getElementById("rgrid");
 function rhay(r){ return (r.spe+" "+r.org+" "+r.titre+" "+r.res).toLowerCase(); }
 function rrenderChips(){
@@ -964,18 +970,22 @@ function rrenderChips(){
   sel.value = rstate.spe;
 }
 function rgeo(r){ return r.geo==="fr"; }
+function roff(r){ return /en officine/i.test(r.res||""); }
 function rbase(){
+  if (rstate.folder==="off") return RECO.filter(roff);
   if (rstate.folder==="fr") return RECO.filter(rgeo);
   if (rstate.folder==="int") return RECO.filter(r=>!rgeo(r));
   return RECO.filter(r=>r.int);
 }
 function rsetFolder(f){
   rstate.folder = f;
-  ["fr","int","diff"].forEach(k=>{ document.getElementById("rfld-"+k).className = "rfld" + (rstate.folder===k ? " on" : ""); });
+  ["off","fr","int","diff"].forEach(k=>{ document.getElementById("rfld-"+k).className = "rfld" + (rstate.folder===k ? " on" : ""); });
+  document.getElementById("roffhint").style.display = rstate.folder==="off" ? "block" : "none";
   rrenderChips();
   rgo();
 }
 function rinitFolders(){
+  document.getElementById("rfldc-off").textContent = RECO.filter(roff).length;
   document.getElementById("rfldc-fr").textContent = RECO.filter(rgeo).length;
   document.getElementById("rfldc-int").textContent = RECO.filter(r=>!rgeo(r)).length;
   document.getElementById("rfldc-diff").textContent = RECO.filter(r=>r.int).length;
@@ -983,9 +993,10 @@ function rinitFolders(){
 function rgo(){
   const BASE = rbase();
   const list = BASE.filter(r => (!rstate.spe || r.spe===rstate.spe) && (!rstate.q || rhay(r).includes(rstate.q)));
-  if (rstate.folder==="diff") { list.sort((a,b)=> (b.dt||"").localeCompare(a.dt||"")); }
+  if (rstate.folder==="off") { list.sort((a,b)=> ((rgeo(b)?1:0)-(rgeo(a)?1:0)) || (a.spe||"").localeCompare(b.spe||"","fr") || (b.dt||"").localeCompare(a.dt||"")); }
+  else if (rstate.folder==="diff") { list.sort((a,b)=> (b.dt||"").localeCompare(a.dt||"")); }
   else { list.sort((a,b)=> (a.spe||"").localeCompare(b.spe||"","fr") || (b.dt||"").localeCompare(a.dt||"")); }
-  const FN = { fr:"🇫🇷 Recommandations françaises", int:"🌐 Recommandations internationales", diff:"⚖️ Différences notoires" };
+  const FN = { off:"🏪 Pour l'officine (conseils au comptoir)", fr:"🇫🇷 Recommandations françaises", int:"🌐 Recommandations internationales", diff:"⚖️ Différences notoires" };
   document.getElementById("rcount").textContent = list.length + " recommandation" + (list.length>1?"s":"") + " affichée" + (list.length>1?"s":"") + " — dossier " + FN[rstate.folder] + " (" + BASE.length + ") — base : " + RECO.length;
   rgridEl.innerHTML = list.length ? "" : "<div class='empty'>🔎 Aucune recommandation ne correspond — changez de dossier ou essayez un autre mot-clé.</div>";
   let curSpe = null;
@@ -998,7 +1009,7 @@ function rgo(){
       rgridEl.appendChild(h);
     }
     const d = document.createElement("div");
-    const meta = "<div class='rmeta'><span class='rbadge'>"+esc(r.org)+"</span><span class='rspe'>"+esc(r.spe)+"</span><span class='rdt'>"+esc(r.dt)+"</span>" + (FRAISRECO.has(r.titre) ? "<span class='rbadge rnew'>NEW</span>" : "") + (rstate.folder==="diff" ? "<span class='rgeo'>"+(rgeo(r)?"🇫🇷 France":"🌐 International")+"</span>" : "") + "</div>";
+    const meta = "<div class='rmeta'><span class='rbadge'>"+esc(r.org)+"</span><span class='rspe'>"+esc(r.spe)+"</span><span class='rdt'>"+esc(r.dt)+"</span>" + (FRAISRECO.has(r.titre) ? "<span class='rbadge rnew'>NEW</span>" : "") + (roff(r) && rstate.folder!=="off" ? "<span class='rbadge roff'>🏪 officine</span>" : "") + (rstate.folder==="diff" ? "<span class='rgeo'>"+(rgeo(r)?"🇫🇷 France":"🌐 International")+"</span>" : "") + "</div>";
     const links = "<div class='rlinks'>"+r.src.map(s=>"<a href='"+s[1]+"' target='_blank' rel='noopener'>"+esc(s[0])+" ↗</a>").join("")+"</div>";
     d.className = "rcard" + (rstate.folder==="diff" ? " rdiffcard" : "");
     if (rstate.folder==="diff") {
@@ -1015,7 +1026,7 @@ function rgo(){
 document.getElementById("rq").addEventListener("input", e=>{ rstate.q = e.target.value.trim().toLowerCase(); rgo(); });
 document.getElementById("rspe").addEventListener("change", e=>{ rstate.spe = e.target.value; rgo(); });
 rinitFolders();
-rsetFolder("fr");
+rsetFolder("off");
 /* ==== FIN MODULE RECO ==== */
 
 /* ==== MODULE PÉDIATRIE mg/kg (onglet 4) ==== */
