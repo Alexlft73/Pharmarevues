@@ -1,6 +1,8 @@
 # Injection automatique
 
-- Aucune nouvelle entrée : 0 doublon(s) écarté(s).
+- REVUES: +14 → 764
+- RECO: +0 → 156
+- NEW: 14
 
 ## Écartés
-
+- aucun
