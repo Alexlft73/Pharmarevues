@@ -1,0 +1,48 @@
+{
+ "revues": [
+  {
+   "ty": "Médicament",
+   "dom": "Gynécologie & Ménopause",
+   "n": 5,
+   "dt": "2026-10",
+   "des": "Réévaluation de la sécurité du traitement hormonal de la ménopause : chez la femme saine débutant avant 60 ans, la balance bénéfice-risque reste favorable",
+   "tag": "THM · ménopause · sécurité · bénéfice-risque · revue JCEM",
+   "res": "Revue de réévaluation (Journal of Clinical Endocrinology & Metabolism, 23/10/2026, DOI 10.1210/clinem/dgag404, Lindén Hirschberg) : pour les femmes en ménopause naturelle à âge normal débutant un THM avant 60 ans ou dans les 10 ans, les données modernes soutiennent un profil de sécurité favorable, les craintes héritées de la WHI étant à relativiser selon la fenêtre thérapeutique. Usage DISTINCT : base = levée black box FDA (2026-06), démence (2025-12), IMS (2025-12) — ici sécurité générale.",
+   "src": [
+    [
+     "JCEM (DOI dgag404)",
+     "https://doi.org/10.1210/clinem/dgag404"
+    ],
+    [
+     "Karolinska Institutet (communiqué)",
+     "https://ki.se/en/research/popular-science-and-dialogue/spotlight-on/spotlight-on-womens-health/unwarranted-fears-should-not-be-an-obstacle-to-treatment"
+    ]
+   ],
+   "coi": "À vérifier",
+   "fin": "Soutien du Swedish Research Council (2024-02970).",
+   "off": "La peur du traitement hormonal est souvent héritée d anciennes études : pour une ménopause récente, la balance est plutôt favorable, à discuter au cas par cas."
+  },
+  {
+   "ty": "Médicament",
+   "dom": "Gynécologie & Ménopause",
+   "n": 5,
+   "dt": "2026-05",
+   "des": "THM chez les survivantes du cancer du sein : revue des données disponibles et cadres d utilisation",
+   "tag": "THM · cancer du sein · survivantes · revue · Maturitas",
+   "res": "Revue (Maturitas, mai 2026 ; vol 208, article 108929) sur le traitement hormonal de la ménopause chez les survivantes de cancer du sein : synthèse des données observationnelles et des cadres d utilisation encadrés (patients sélectionnées, après information). Usage DISTINCT : base = EPI-PHARE THM France (2026-06), THM-démence (2025-12) — ici population oncologique.",
+   "src": [
+    [
+     "Maturitas vol 208 (ScienceDirect)",
+     "https://www.sciencedirect.com/science/article/abs/pii/S0378512226001064"
+    ],
+    [
+     "PubMed 41921281",
+     "https://pubmed.ncbi.nlm.nih.gov/41921281/"
+    ]
+   ],
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "off": "Après un cancer du sein, toute hormonothérapie se discute exclusivement avec votre oncologue : jamais en automédication ni parapharmacie."
+  }
+ ]
+}
