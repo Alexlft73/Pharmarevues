@@ -1,0 +1,22 @@
+{
+ "revues": [
+  {
+   "ty": "Médicament",
+   "dom": "Allergologie",
+   "n": 5,
+   "dt": "2026-03",
+   "des": "Anaphylaxie : la vue d'ensemble WAO 2026 fait le point sur diagnostic, traitement et besoins non couverts",
+   "tag": "anaphylaxie, adrénaline, auto-injecteur, WAO, revue 2026",
+   "res": "Revue narrative de référence de V. Cardona pour le White Book on Allergy 2026 de la World Allergy Organization (World Allergy Organ J 2026;19(3):101338, mars 2026) : synthèse de la dernière décennie sur le diagnostic, la prise en charge de l'anaphylaxie et les besoins persistants (retard d'injection d'adrénaline, sous-utilisation des auto-injecteurs). Distincte du consensus GA²LEN 2025 déjà en base : ici la vue d'ensemble WAO.",
+   "src": [
+    [
+     "World Allergy Organization Journal",
+     "https://www.sciencedirect.com/science/article/pii/S1939455126001717"
+    ]
+   ],
+   "off": "Votre stylo d'adrénaline se porte SUR vous, pas dans un sac laissé à la maison : l'anaphylaxie tue par injection trop tardive.",
+   "coi": "À vérifier (revue WAO)",
+   "fin": "Financement non lisible dans les sources consultées."
+  }
+ ]
+}
