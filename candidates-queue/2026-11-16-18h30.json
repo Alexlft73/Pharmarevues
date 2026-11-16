@@ -1,0 +1,70 @@
+{
+ "revues": [
+  {
+   "id": "psilocybine-sevrage-tabac-2026",
+   "ty": "Médicament",
+   "dom": "SNC & psychiatrie",
+   "n": 3,
+   "dt": "2026-03",
+   "des": "Psilocybine ou patch nicotinique pour arrêter de fumer : essai randomisé pilote, une dose de psilocybine + TCC supérieure au patch (JAMA Network Open, 10/03/2026)",
+   "tag": "psilocybine · sevrage tabagique · patch nicotinique · TCC · essai pilote",
+   "res": "Essai randomisé pilote (JAMA Netw Open 2026 Mar 10;9(3):e260972, DOI 10.1001/jamanetworkopen.2026.0972 ; Johnson et Naudé, Johns Hopkins) : une seule dose de psilocybine encadrée + TCC manualisée augmente l'abstinence prolongée vs patch nicotinique + TCC — petite taille, population motivée, cadre expérimental strict. Usage DISTINCT de l'entrée psilocybine COMP360 de la base (dépression résistante) : ici le sevrage tabac, une indication encore hors AMM partout. En officine : RIEN à délivrer au comptoir — la psilocybine reste interdite en France ; l'intérêt est de savoir que la recherche addictologie s'ouvre aux psychédéliques ; nos outils restent TSN, varénicline (échantillons documentés en base), cytisine selon disponibilité et conseil.",
+   "src": [
+    [
+     "JAMA Network Open",
+     "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2846155"
+    ],
+    [
+     "PubMed",
+     "https://pubmed.ncbi.nlm.nih.gov/41805956/"
+    ]
+   ],
+   "coi": "À vérifier",
+   "fin": "Financement académique (essai pilote, Johns Hopkins) — à vérifier dans le texte"
+  },
+  {
+   "id": "antidepressants-long-terme-nma-2026",
+   "ty": "Médicament",
+   "dom": "SNC & psychiatrie",
+   "n": 1,
+   "dt": "2026-11",
+   "des": "Quel antidépresseur « rend bien ET garde bien » ? La plus grande méta-analyse en réseau du traitement au long cours : l'escitalopram en tête (Lancet Psychiatry, annoncé le 11/11/2026)",
+   "tag": "antidépresseurs · long terme · rémission maintenue · escitalopram · network meta-analysis · 115 essais",
+   "res": "Revue systématique et méta-analyse en réseau (Lancet Psychiatry, DOI PIIS2215-0366(26)00326-3, annoncé par le Radboudumc le 11/11/2026 ; 115 essais, 3 décennies) : comparaison des antidépresseurs sur la réponse MAINTENUE à long terme dans le trouble dépressif majeur — parmi les ISRS, l'escitalopram ressort comme le plus efficace et acceptable au long cours (la fluoxétine moins), de quoi informer la décision partagée initiale et le relais. Usage DISTINCT de la Cochrane arrêt des antidépresseurs (base) et de la méta TAG (base) : ici le choix comparatif du maintien, pas le sevrage ni l'anxiété. En officine : ne pas changer un équilibre qui marche ; mais à l'initiation ou à la rechute sous traitement, la question « quel ISRS tient le mieux sur des années » a maintenant une réponse hiérarchique à citer (avec le médecin) — et l'observance compte plus que la molécule.",
+   "src": [
+    [
+     "The Lancet Psychiatry",
+     "https://www.thelancet.com/journals/lanpsy/article/PIIS2215-0366(26)00326-3/abstract"
+    ],
+    [
+     "Radboudumc (communiqué du 11/11/2026)",
+     "https://www.radboudumc.nl/en/news-items/2026/study-identifies-antidepressants-that-get-patients-well-and-keep-them-well"
+    ]
+   ],
+   "coi": "À vérifier",
+   "fin": "À vérifier"
+  },
+  {
+   "id": "cgrp-migraine-chronique-sr-2026",
+   "ty": "Médicament",
+   "dom": "SNC & psychiatrie",
+   "n": 5,
+   "dt": "2026-06",
+   "des": "Anticorps monoclonaux anti-CGRP dans la migraine chronique : revue systématique de l'efficacité et de la sécurité (Neurological Sciences, 09/06/2026)",
+   "tag": "CGRP · migraine chronique · érénumab · galcanézumab · fremanézumab · épтинézumab · revue",
+   "res": "Revue systématique (Neurol Sci 2026 Jun 9;47(7):559, DOI 10.1007/s10072-026-09153-7, PubMed 42262668) : les anti-CGRP (érénumab, galcanézumab, fremanézumab, épтинézumab) réduisent significativement les jours de migraine dans la migraine CHRONIQUE (≥ 15 jours/mois), tolérance bonne (constipation, réactions au point d'injection pour l'érénumab). Usage DISTINCT de la reco EHF 2022 de la base (recommandation, prévention migraine en général) : ici la synthèse quantitative dédiée à la forme chronique. En officine : patients sous anti-CGRP injectables mensuels — vérifier la chaîne du froid selon la spécialité, l'auto-injection apprise, la constipation à signaler ; l'arrêt d'un anti-CGRP se discute avec le prescripteur, pas au comptoir.",
+   "src": [
+    [
+     "Springer — Neurological Sciences",
+     "https://link.springer.com/article/10.1007/s10072-026-09153-7"
+    ],
+    [
+     "PubMed",
+     "https://pubmed.ncbi.nlm.nih.gov/42262668/"
+    ]
+   ],
+   "coi": "À vérifier",
+   "fin": "À vérifier"
+  }
+ ]
+}
