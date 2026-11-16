@@ -1,161 +1,281 @@
 {
-  "revues": [
-    {
-      "id": "statines-chrono-jla-2026",
-      "ty": "Médicament",
-      "dom": "Chronopharmacologie",
-      "n": 1,
-      "dt": "2026-08",
-      "des": "Statines le soir : enfin une revue de synthèse — le soir ne profite qu'aux statines à demi-vie courte (Journal of Lipid and Atherosclerosis, août 2026)",
-      "tag": "statines · chronothérapie · soir · simvastatine · atorvastatine · rosuvastatine · LDL-C",
-      "res": "Revue factuelle (J Lipid Atheroscler, publiée en ligne le 21/08/2026, DOI 10.12997/jla.2027.16.e6 ; criblage de 411 articles, 11 études retenues : 6 essais randomisés + 5 méta-analyses, période 2010-2025, qualité évaluée par SORT) : la prise du SOIR réduit davantage le LDL-C pour les statines à demi-vie COURTE (simvastatine, pravastatine, fluvastatine, lovastatine — cohérent avec le pic nocturne de la synthèse hépatique du cholestérol), mais SANS aucune différence pour les statines à demi-vie longue (atorvastatine, rosuvastatine) ; signal isolé : bénéfice du soir à faible dose de pitavastatine dans une méta-analyse de basse qualité. En officine : la réponse moderne au mythe « les statines se prennent le soir » : vrai pour la simvastatine, indifférent pour atorvastatine/rosuvastatine — l'heure importe peu, la prise RÉGULIÈRE compte ; ne pas faire changer d'horaire un patient équilibré (la seule exception : simvastatine, à préférer le soir si possible).",
-      "src": [["JLA — Journal of Lipid and Atherosclerosis (texte intégral)", "https://e-jla.org/DOIx.php?id=10.12997%2Fjla.2027.16.e6"], ["DOI", "https://doi.org/10.12997/jla.2027.16.e6"]],
-      "coi": "À vérifier",
-      "fin": "À vérifier"
-    },
-    {
-      "id": "asthme-hyperractivite-horloge-2026",
-      "ty": "Médicament",
-      "dom": "Chronopharmacologie",
-      "n": 5,
-      "dt": "2026-11",
-      "des": "Asthme : l'hyperréactivité bronchique suit-elle l'horloge ? Variations temporelles, mécanismes circadiens et implications (revue, Clinical and Translational Allergy, nov. 2026)",
-      "tag": "asthme · hyperréactivité bronchique · rythme circadien · symptômes nocturnes · provocation bronchique",
-      "res": "Revue narrative (Clinical and Translational Allergy, 01/11/2026, DOI 10.1002/clt2.70221) : la physiologie des voies aériennes de l'asthmatique varie fortement au cours des 24 h (aggravation nocturne et au petit matin) ; la revue distingue la simple variation par l'heure horloge de la régulation circadienne ENDOGÈNE, à partir des études de provocation bronchique, et passe en revue les mécanismes neuroendocriniens et autonomiques reliant l'horloge à l'hyperréactivité bronchique, avec leurs implications translationnelles (caler les traitements sur le rythme nocturne de la maladie). En officine : le socle du conseil « traitements du soir chez l'asthmatique symptomatique la nuit » (théophylline LP, corticoïde inhalé du soir) : la nuit de l'asthme est une donnée physiologique, pas une coïncidence — renforcer l'observance de la prise du soir chez l'asthmatique nocturne est un conseil chrono fondé.",
-      "src": [["Wiley — Clinical and Translational Allergy", "https://onlinelibrary.wiley.com/doi/10.1002/clt2.70221"], ["PMC (texte intégral)", "https://pmc.ncbi.nlm.nih.gov/articles/PMC13744419/"]],
-      "coi": "À vérifier",
-      "fin": "À vérifier"
-    },
-    {
-      "id": "cesarienne-apres-midi-douleur-2025",
-      "ty": "Médicament",
-      "dom": "Chronopharmacologie",
-      "n": 4,
-      "dt": "2025-07",
-      "des": "Douleur postopératoire : les césariennes de l'après-midi font plus mal que celles du matin (cohortes rétrospective et prospective, Annals of Medicine, juil. 2025)",
-      "tag": "césarienne · douleur postopératoire · après-midi · variation diurne · antalgiques · IL-6",
-      "res": "Étude par cohortes, rétrospective (104 matin vs 104 après-midi) puis prospective (55 vs 55 ; Annals of Medicine, 05/07/2025, DOI 10.1080/07853890.2025.2528453) : césariennes réalisées entre 12h et 18h vs 6h-12h — les besoins en antalgiques dans les 24 h sont significativement plus élevés dans le groupe après-midi (AUC de la NRS et consommation d'antalgiques supérieures), avec une tolérance à la douleur de pression plus basse, des bêta-endorphines sériques plus élevées et une IL-6 postopératoire plus haute (aucun changement de ce type dans le groupe du matin). Conclusion : la césarienne de l'après-midi prédit une douleur postopératoire plus sévère. En officine : pas de levier d'horaire à choisir, mais un éclairage utile pour la patiente qui sort de césarienne : une douleur plus marquée après une césarienne de l'après-midi n'est pas un « échec » de l'analgésie — et le conseil de relais reste : paracétamol + AINS à horaires FIXES (principe d'horaires fixes, pas à la demande).",
-      "src": [["Taylor & Francis — Annals of Medicine", "https://www.tandfonline.com/doi/full/10.1080/07853890.2025.2528453"], ["PMC (texte intégral)", "https://pmc.ncbi.nlm.nih.gov/articles/PMC12231327/"]],
-      "coi": "À vérifier",
-      "fin": "ChiCTR2000039720"
-    },
-    {
-      "id": "appendicectomie-opioides-horaire-2025",
-      "ty": "Médicament",
-      "dom": "Chronopharmacologie",
-      "n": 4,
-      "dt": "2025-01",
-      "des": "Chez l'enfant, l'heure de l'appendicectomie ne change pas les besoins d'opioides — mais le rythme jour/nuit, lui, est bien réel (Acta Anaesthesiologica Scandinavica, janv. 2025)",
-      "tag": "pédiatrie · appendicectomie · opioides · morphine · heure d'intervention · rythme jour/nuit",
-      "res": "Cohorte rétrospective (241 appendicectomies laparoscopiques de jour vs 241 de nuit, appendicite compliquée ; Acta Anaesthesiologica Scandinavica, 01/01/2025, DOI 10.1111/aas.14551) : l'heure de l'intervention (jour vs nuit) n'a PAS d'impact sur les besoins postopératoires totaux en équivalent-morphine (différences minimes) ; en revanche, TOUS les enfants, quelle que soit l'heure de la chirurgie, nécessitent davantage de morphiniques pendant les heures DIURNES que nocturnes — la chirurgie de nuit ne décale pas le rythme circadien des besoins. En officine : exemple équilibré de la littérature chrono-pédiatrique : le rythme jour/nuit des besoins antalgiques est physiologique (plus le jour), et l'heure de l'acte ne se choisit pas pour des raisons antalgiques ; au retour à domicile, répartir les antalgiques de l'enfant à horaires FIXES, sans sur-doser la nuit « au cas où ».",
-      "src": [["Wiley — Acta Anaesthesiologica Scandinavica", "https://onlinelibrary.wiley.com/doi/10.1111/aas.14551"], ["DOI", "https://doi.org/10.1111/aas.14551"]],
-      "coi": "À vérifier",
-      "fin": "À vérifier"
-    },
-    {
-      "id": "sufentanil-matin-coelioscopie-2026",
-      "ty": "Médicament",
-      "dom": "Chronopharmacologie",
-      "n": 4,
-      "dt": "2026-06",
-      "des": "Chirurgie du matin = plus de sufentanil peropératoire : variation diurne des besoins en opioides (cohorte prospective, Journal of Pain Research, juin 2026)",
-      "tag": "sufentanil · cholécystectomie · anesthésie · heure de chirurgie · cortisol · ACTH",
-      "res": "Cohorte prospective (45 cholécystectomies laparoscopiques sous sévoflurane, guidage BIS + index pléthysmographique chirurgical ; Journal of Pain Research, 16/06/2026, DOI 10.2147/jpr.s614007) : groupe matin (8h-12h, n=24) vs après-midi (14h-18h, n=21) — le groupe MATIN nécessite des doses totales de sufentanil plus élevées (47,5 vs 36,1 µg, p=0,002 ; 0,52 vs 0,39 µg/kg/h, p<0,001), avec cortisol et ACTH plus élevés à tous les temps (p<0,001), à profondeur de sédation et analgésie équivalentes ; interprétation : influence possible du moment de la journée sur les besoins peropératoires via la variation neuroendocrinienne circadienne. En officine : fiche de veille pour suivre l'émergence de la chrono-anesthésie (avec les fiches césarienne et appendicectomie de la rubrique) ; côté patient, l'heure de programmation d'une cholécystectomie reste organisationnelle, pas un choix médical.",
-      "src": [["Dove Press — Journal of Pain Research (DOI)", "https://doi.org/10.2147/jpr.s614007"], ["PMC (texte intégral)", "https://pmc.ncbi.nlm.nih.gov/articles/PMC13283372/"]],
-      "coi": "À vérifier",
-      "fin": "À vérifier"
-    },
-    {
-      "id": "rein-oeil-horloge-2025",
-      "ty": "Médicament",
-      "dom": "Chronopharmacologie",
-      "n": 5,
-      "dt": "2025-05",
-      "des": "Horloge circadienne, rein et œil : la chrono-médecine s'étend à la néphrologie et à l'ophtalmologie (revue, Frontiers in Physiology, mai 2025)",
-      "tag": "horloge circadienne · maladie rénale chronique · glaucome · rétinopathie · fibrose · chronothérapie",
-      "res": "Revue (Frontiers in Physiology, 27/05/2025, DOI 10.3389/fphys.2025.1583502) : les rythmes circadiens régulent filtration, homéostasie hydrosodée et pression artérielle ; leur dérégulation contribue à la maladie rénale chronique et aux pathologies oculaires (glaucome, œil sec, rétinopathie diabétique) par des voies communes — stress oxydatif, inflammation, fibrose ; les stratégies de réalignement circadien (chronothérapie médicamenteuse, luminothérapie, alimentation restreinte dans le temps) montrent des promesses pour ralentir la progression de ces maladies. En officine : l'« heure » compte aussi pour les organes à rythme : sodium, tension et filtration oscillent sur 24 h — chez le patient MRC ou cardiorénal décompensé, limiter les apports hydrosodés du soir relève du même champ que le timing des médicaments.",
-      "src": [["Frontiers in Physiology", "https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2025.1583502/full"], ["PMC (texte intégral)", "https://pmc.ncbi.nlm.nih.gov/articles/PMC12149222/"]],
-      "coi": "À vérifier",
-      "fin": "À vérifier"
-    },
-    {
-      "id": "rein-matrice-glucocorticoides-2026",
-      "ty": "Médicament",
-      "dom": "Chronopharmacologie",
-      "n": 5,
-      "dt": "2026-01",
-      "des": "La matrice rénale se remodele selon l'horloge : rythme circadien, glucocorticoïdes et fibrose glomérulaire (revue, Nephron, janv. 2026)",
-      "tag": "rein · matrice extracellulaire · horloge circadienne · glucocorticoïdes · fibrose · glomérule",
-      "res": "Revue (Nephron, 29/01/2026, DOI 10.1159/000550773) : la matrice extracellulaire rénale, longtemps considérée comme un squelette statique, subit un remodelage continu rythmé par les horloges moléculaires des cellules rénales ; les horloges glomérulaires coordonnent le timing du renouvellement matriciel pour préserver l'intégrité structurelle, la filtration et la réparation ; les glucocorticoïdes sont des synchronisateurs majeurs de ce système, et la rupture de ces rythmes favorise l'accumulation matricielle maladaptive et la fibrose. En officine : volet fondamental de la chronopharmacologie rénale : caler les prises de corticoïdes sur le pic matinal du cortisol n'est pas cosmétique — c'est le langage chronobiologique des cellules rénales (le corticoïde oral reste une prise du MATIN).",
-      "src": [["Karger — Nephron (DOI)", "https://doi.org/10.1159/000550773"], ["PMC (texte intégral)", "https://pmc.ncbi.nlm.nih.gov/articles/PMC12975147/"]],
-      "coi": "À vérifier",
-      "fin": "À vérifier"
-    },
-    {
-      "id": "prostate-radio-chrono-2025",
-      "ty": "Médicament",
-      "dom": "Chronopharmacologie",
-      "n": 4,
-      "dt": "2025-07",
-      "des": "Cancer de la prostate : l'heure de la radiothérapie influence-t-elle le contrôle biochimique ? Premières réponses (cohorte, Cancers, juil. 2025)",
-      "tag": "cancer de la prostate · radiothérapie · heure de séance · chrono-radiothérapie · contrôle biochimique",
-      "res": "Étude rétrospective (336 hommes, radiothérapie externe curative 2010-2019, suivi médian 55 mois ; Cancers, 23/07/2025, DOI 10.3390/cancers17152441) : sur l'ensemble de la cohorte, l'heure de traitement n'est pas associée au contrôle biochimique ni aux métastases ; dans le sous-groupe des patients blancs, les heures PRÉCOCES sont associées à un meilleur contrôle biochimique à 5 ans (89 % vs 67 %, p=0,014) et à moins de métastases (93 % vs 72 %, p=0,027), avec des tendances à moindre toxicité génito-urinaire pour les séances matinales ; pas de signal équivalent chez les patients noirs — un effet possiblement modulé par l'ethnie, à confirmer par des essais prospectifs. En officine : la chrono-radiothérapie progresse (3 fiches dans la rubrique) ; pour les patients sous radiothérapie, poser la question de l'heure des séances à l'équipe d'oncologie devient légitime.",
-      "src": [["MDPI — Cancers", "https://www.mdpi.com/2072-6694/17/15/2441"], ["PMC (texte intégral)", "https://pmc.ncbi.nlm.nih.gov/articles/PMC12346491/"]],
-      "coi": "À vérifier",
-      "fin": "À vérifier"
-    },
-    {
-      "id": "oesophagite-radio-soir-2025",
-      "ty": "Médicament",
-      "dom": "Chronopharmacologie",
-      "n": 4,
-      "dt": "2025-01",
-      "des": "Radiothérapie de l'œsophage après 19 h : plus d'œsophagites radiques de grade 2 ou plus (Radiation Oncology, janv. 2025)",
-      "tag": "œsophage · radiothérapie · œsophagite radique · soir · cycle cellulaire · muqueuse",
-      "res": "Étude rétrospective (488 patients éligibles, 369 irradiés le jour vs 119 le soir, carcinome épidermoïde sous chimioradiothérapie concomitante ; Radiation Oncology, 08/01/2025, DOI 10.1186/s13014-024-02575-7) : l'irradiation du SOIR (après 19 h) est associée à plus d'œsophagites radiques de grade 2 ou plus à dose élevée (OR 1,675 [1,062-2,643] si dose PGTV 59,34 Gy ou plus, pas de différence à dose plus basse) — raisonnement fondé sur le cycle cellulaire de la muqueuse (pics G2/M l'après-midi et la nuit) ; aucune différence de survie selon l'heure. En officine : pour le patient en radio-chimiothérapie œsophagienne, la prise en charge de l'œsophagite radique reste LE point de conseil officinal (anesthésiques locaux oraux, pansements digestifs, alimentation fractionnée) ; l'heure de la séance relève de l'oncologue, mais le lien cycle cellulaire/toxicité devient visible en pratique.",
-      "src": [["BMC — Radiation Oncology", "https://link.springer.com/article/10.1186/s13014-024-02575-7"], ["PMC (texte intégral)", "https://pmc.ncbi.nlm.nih.gov/articles/PMC11708085/"]],
-      "coi": "À vérifier",
-      "fin": "À vérifier"
-    },
-    {
-      "id": "radio-chrono-sr-2025",
-      "ty": "Médicament",
-      "dom": "Chronopharmacologie",
-      "n": 1,
-      "dt": "2025-07",
-      "des": "Chrono-radiothérapie : revue systématique de 19 études (14 rétrospectives, 5 essais randomisés) — des signaux, pas encore de règle (Chronobiology International, juil. 2025)",
-      "tag": "chrono-radiothérapie · revue systématique · toxicité · tissus prolifératifs · heure de séance",
-      "res": "Revue systématique (Chronobiology International, 28/07/2025, DOI 10.1080/07420528.2025.2538581 ; littérature 2008-2024) : 19 études sur le lien entre heure de radiothérapie et résultats (14 rétrospectives dont 9 avec survie/contrôle tumoral, 5 essais randomisés prospectifs sur la toxicité matin vs soir) — résultats rétrospectifs NON concordants ; les essais prospectifs suggèrent que la chrono-RT peut réduire les effets indésirables dans les tissus hautement prolifératifs et améliorer certains résultats cliniques ; les auteurs appellent à des essais bien conçus pour valider l'hypothèse et homogénéiser les résultats. En officine : l'état de l'art honnête de la chrono-radiothérapie : signaux encourageants, littérature hétérogène, aucune règle d'horaire établie — exactement le cadrage à donner aux patients qui posent la question.",
-      "src": [["Taylor & Francis — Chronobiology International (DOI)", "https://doi.org/10.1080/07420528.2025.2538581"], ["Taylor & Francis (article complet)", "https://www.tandfonline.com/doi/full/10.1080/07420528.2025.2538581"]],
-      "coi": "À vérifier",
-      "fin": "À vérifier"
-    },
-    {
-      "id": "hygia-chronotherapie-contestee-2021",
-      "ty": "Alerte",
-      "dom": "Chronopharmacologie",
-      "n": 5,
-      "dt": "2021-07",
-      "des": "Pourquoi « l'HTA au coucher » a vacillé : données sources du projet Hygia non vérifiées, et appel explicite à les ignorer (Hypertension + Journal of Hypertension, 2020-2021)",
-      "tag": "Hygia · chronothérapie HTA · prise au coucher · intégrité des données · Hermida · TIME",
-      "res": "Deux textes clés du débat : (1) une perspective dans Hypertension (07/07/2021, DOI 10.1161/HYPERTENSIONAHA.121.17356) documentant l'absence de vérification possible des données sources du projet HYGIA — l'essai chronothérapeutique espagnol qui prétendait réduire de ~45 % le risque cardiovasculaire en déplaçant TOUTES les prises d'antihypertenseurs au coucher ; (2) une lettre dans le Journal of Hypertension (17/08/2020, DOI 10.1097/hjh.0000000000002479) titrée sans ambiguïté : « Les antihypertenseurs ne doivent pas être systématiquement pris au coucher : il faut ignorer les données du projet HYGIA ». Depuis, l'essai randomisé britannique TIME (2022, >21 000 patients, en base) et la méta-analyse de janvier 2026 (en base) ont confirmé l'absence de bénéfice cardiovasculaire. En officine : la réponse historique complète au patient « j'ai entendu dire qu'il fallait tout prendre le soir » : la mode venait de Hygia (données invérifiables, résultats invraisemblables), contredite ensuite par TIME — le conseil reste « une heure régulière que vous tenez ».",
-      "src": [["Hypertension — perspective (PMC)", "https://pmc.ncbi.nlm.nih.gov/articles/PMC8260337/"], ["Journal of Hypertension — lettre (DOI)", "https://doi.org/10.1097/hjh.0000000000002479"]],
-      "coi": "À vérifier",
-      "fin": "À vérifier"
-    },
-    {
-      "id": "chrononutrition-mrc-2025",
-      "ty": "Alimentation",
-      "dom": "Chronopharmacologie",
-      "n": 5,
-      "dt": "2025-01",
-      "des": "Chrononutrition et maladie rénale chronique : le moment des repas comme levier thérapeutique ? (revue, Nutrients, janv. 2025)",
-      "tag": "chrononutrition · maladie rénale chronique · rythme circadien · repas · apports protéiques · fenêtre alimentaire",
-      "res": "Revue (Nutrients, 22/01/2025, DOI 10.3390/nu17030389) : les patients en maladie rénale chronique cumulent les désalignements circadiens (facteurs rénaux, métaboliques, liés aux traitements et au mode de vie) qui pèsent sur l'état nutritionnel et les résultats cliniques ; la chrononutrition — distribution temporelle des apports, fenêtres de repas, alignement sur l'horloge — est prometteuse mais reste sous-explorée dans la MRC ; la revue synthétise les preuves disponibles, identifie les lacunes et propose des pistes de recherche par stade de la maladie. En officine : le conseil diététique du patient MRC gagne une dimension temporelle : la répartition des prises protéiques et électrolytiques dans la JOURNÉE (et pas seulement leur quantité) devient un sujet de conseil, à rapprocher de la fiche horloge rein/œil de la rubrique et du conseil hydrosodé du soir chez le cardiorénal.",
-      "src": [["MDPI — Nutrients", "https://www.mdpi.com/2072-6630/17/3/389"], ["PMC (texte intégral)", "https://pmc.ncbi.nlm.nih.gov/articles/PMC11820925/"]],
-      "coi": "À vérifier",
-      "fin": "À vérifier"
-    }
-  ],
-  "recos": []
+ "revues": [
+  {
+   "id": "statines-chrono-jla-2026",
+   "ty": "Médicament",
+   "dom": "Chronopharmacologie",
+   "n": 1,
+   "dt": "2026-08",
+   "des": "Statines le soir : enfin une revue de synthèse — le soir ne profite qu'aux statines à demi-vie courte (Journal of Lipid and Atherosclerosis, août 2026)",
+   "tag": "statines · chronothérapie · soir · simvastatine · atorvastatine · rosuvastatine · LDL-C",
+   "res": "Revue factuelle (J Lipid Atheroscler, publiée en ligne le 21/08/2026, DOI 10.12997/jla.2027.16.e6 ; criblage de 411 articles, 11 études retenues : 6 essais randomisés + 5 méta-analyses, période 2010-2025, qualité évaluée par SORT) : la prise du SOIR réduit davantage le LDL-C pour les statines à demi-vie COURTE (simvastatine, pravastatine, fluvastatine, lovastatine — cohérent avec le pic nocturne de la synthèse hépatique du cholestérol), mais SANS aucune différence pour les statines à demi-vie longue (atorvastatine, rosuvastatine) ; signal isolé : bénéfice du soir à faible dose de pitavastatine dans une méta-analyse de basse qualité. En officine : la réponse moderne au mythe « les statines se prennent le soir » : vrai pour la simvastatine, indifférent pour atorvastatine/rosuvastatine — l'heure importe peu, la prise RÉGULIÈRE compte ; ne pas faire changer d'horaire un patient équilibré (la seule exception : simvastatine, à préférer le soir si possible).",
+   "src": [
+    [
+     "JLA — Journal of Lipid and Atherosclerosis (texte intégral)",
+     "https://e-jla.org/DOIx.php?id=10.12997%2Fjla.2027.16.e6"
+    ],
+    [
+     "DOI",
+     "https://doi.org/10.12997/jla.2027.16.e6"
+    ]
+   ],
+   "coi": "À vérifier",
+   "fin": "À vérifier",
+   "off": "Statines : l heure de prise (soir) est discutée cas par cas ; ce qui compte surtout est la régularité quotidienne. Ne changez pas l heure sans avis médical."
+  },
+  {
+   "id": "asthme-hyperractivite-horloge-2026",
+   "ty": "Médicament",
+   "dom": "Chronopharmacologie",
+   "n": 5,
+   "dt": "2026-11",
+   "des": "Asthme : l'hyperréactivité bronchique suit-elle l'horloge ? Variations temporelles, mécanismes circadiens et implications (revue, Clinical and Translational Allergy, nov. 2026)",
+   "tag": "asthme · hyperréactivité bronchique · rythme circadien · symptômes nocturnes · provocation bronchique",
+   "res": "Revue narrative (Clinical and Translational Allergy, 01/11/2026, DOI 10.1002/clt2.70221) : la physiologie des voies aériennes de l'asthmatique varie fortement au cours des 24 h (aggravation nocturne et au petit matin) ; la revue distingue la simple variation par l'heure horloge de la régulation circadienne ENDOGÈNE, à partir des études de provocation bronchique, et passe en revue les mécanismes neuroendocriniens et autonomiques reliant l'horloge à l'hyperréactivité bronchique, avec leurs implications translationnelles (caler les traitements sur le rythme nocturne de la maladie). En officine : le socle du conseil « traitements du soir chez l'asthmatique symptomatique la nuit » (théophylline LP, corticoïde inhalé du soir) : la nuit de l'asthme est une donnée physiologique, pas une coïncidence — renforcer l'observance de la prise du soir chez l'asthmatique nocturne est un conseil chrono fondé.",
+   "src": [
+    [
+     "Wiley — Clinical and Translational Allergy",
+     "https://onlinelibrary.wiley.com/doi/10.1002/clt2.70221"
+    ],
+    [
+     "PMC (texte intégral)",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC13744419/"
+    ]
+   ],
+   "coi": "À vérifier",
+   "fin": "À vérifier",
+   "off": "Asthme : la toux nocturne peut signer un contrôle insuffisant ; parlez-en plutôt que d augmenter seul les doses."
+  },
+  {
+   "id": "cesarienne-apres-midi-douleur-2025",
+   "ty": "Médicament",
+   "dom": "Chronopharmacologie",
+   "n": 4,
+   "dt": "2025-07",
+   "des": "Douleur postopératoire : les césariennes de l'après-midi font plus mal que celles du matin (cohortes rétrospective et prospective, Annals of Medicine, juil. 2025)",
+   "tag": "césarienne · douleur postopératoire · après-midi · variation diurne · antalgiques · IL-6",
+   "res": "Étude par cohortes, rétrospective (104 matin vs 104 après-midi) puis prospective (55 vs 55 ; Annals of Medicine, 05/07/2025, DOI 10.1080/07853890.2025.2528453) : césariennes réalisées entre 12h et 18h vs 6h-12h — les besoins en antalgiques dans les 24 h sont significativement plus élevés dans le groupe après-midi (AUC de la NRS et consommation d'antalgiques supérieures), avec une tolérance à la douleur de pression plus basse, des bêta-endorphines sériques plus élevées et une IL-6 postopératoire plus haute (aucun changement de ce type dans le groupe du matin). Conclusion : la césarienne de l'après-midi prédit une douleur postopératoire plus sévère. En officine : pas de levier d'horaire à choisir, mais un éclairage utile pour la patiente qui sort de césarienne : une douleur plus marquée après une césarienne de l'après-midi n'est pas un « échec » de l'analgésie — et le conseil de relais reste : paracétamol + AINS à horaires FIXES (principe d'horaires fixes, pas à la demande).",
+   "src": [
+    [
+     "Taylor & Francis — Annals of Medicine",
+     "https://www.tandfonline.com/doi/full/10.1080/07853890.2025.2528453"
+    ],
+    [
+     "PMC (texte intégral)",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC12231327/"
+    ]
+   ],
+   "coi": "À vérifier",
+   "fin": "ChiCTR2000039720",
+   "off": "Douleur post-opératoire : signalez votre douleur tôt, un protocole adapté à l heure de chirurgie peut être proposé."
+  },
+  {
+   "id": "appendicectomie-opioides-horaire-2025",
+   "ty": "Médicament",
+   "dom": "Chronopharmacologie",
+   "n": 4,
+   "dt": "2025-01",
+   "des": "Chez l'enfant, l'heure de l'appendicectomie ne change pas les besoins d'opioides — mais le rythme jour/nuit, lui, est bien réel (Acta Anaesthesiologica Scandinavica, janv. 2025)",
+   "tag": "pédiatrie · appendicectomie · opioides · morphine · heure d'intervention · rythme jour/nuit",
+   "res": "Cohorte rétrospective (241 appendicectomies laparoscopiques de jour vs 241 de nuit, appendicite compliquée ; Acta Anaesthesiologica Scandinavica, 01/01/2025, DOI 10.1111/aas.14551) : l'heure de l'intervention (jour vs nuit) n'a PAS d'impact sur les besoins postopératoires totaux en équivalent-morphine (différences minimes) ; en revanche, TOUS les enfants, quelle que soit l'heure de la chirurgie, nécessitent davantage de morphiniques pendant les heures DIURNES que nocturnes — la chirurgie de nuit ne décale pas le rythme circadien des besoins. En officine : exemple équilibré de la littérature chrono-pédiatrique : le rythme jour/nuit des besoins antalgiques est physiologique (plus le jour), et l'heure de l'acte ne se choisit pas pour des raisons antalgiques ; au retour à domicile, répartir les antalgiques de l'enfant à horaires FIXES, sans sur-doser la nuit « au cas où ».",
+   "src": [
+    [
+     "Wiley — Acta Anaesthesiologica Scandinavica",
+     "https://onlinelibrary.wiley.com/doi/10.1111/aas.14551"
+    ],
+    [
+     "DOI",
+     "https://doi.org/10.1111/aas.14551"
+    ]
+   ],
+   "coi": "À vérifier",
+   "fin": "À vérifier",
+   "off": "Chez l enfant, l heure de l intervention ne change pas les suites : rassurez les parents sur la planification."
+  },
+  {
+   "id": "sufentanil-matin-coelioscopie-2026",
+   "ty": "Médicament",
+   "dom": "Chronopharmacologie",
+   "n": 4,
+   "dt": "2026-06",
+   "des": "Chirurgie du matin = plus de sufentanil peropératoire : variation diurne des besoins en opioides (cohorte prospective, Journal of Pain Research, juin 2026)",
+   "tag": "sufentanil · cholécystectomie · anesthésie · heure de chirurgie · cortisol · ACTH",
+   "res": "Cohorte prospective (45 cholécystectomies laparoscopiques sous sévoflurane, guidage BIS + index pléthysmographique chirurgical ; Journal of Pain Research, 16/06/2026, DOI 10.2147/jpr.s614007) : groupe matin (8h-12h, n=24) vs après-midi (14h-18h, n=21) — le groupe MATIN nécessite des doses totales de sufentanil plus élevées (47,5 vs 36,1 µg, p=0,002 ; 0,52 vs 0,39 µg/kg/h, p<0,001), avec cortisol et ACTH plus élevés à tous les temps (p<0,001), à profondeur de sédation et analgésie équivalentes ; interprétation : influence possible du moment de la journée sur les besoins peropératoires via la variation neuroendocrinienne circadienne. En officine : fiche de veille pour suivre l'émergence de la chrono-anesthésie (avec les fiches césarienne et appendicectomie de la rubrique) ; côté patient, l'heure de programmation d'une cholécystectomie reste organisationnelle, pas un choix médical.",
+   "src": [
+    [
+     "Dove Press — Journal of Pain Research (DOI)",
+     "https://doi.org/10.2147/jpr.s614007"
+    ],
+    [
+     "PMC (texte intégral)",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC13283372/"
+    ]
+   ],
+   "coi": "À vérifier",
+   "fin": "À vérifier",
+   "off": "Anesthésie : le planning opératoire est optimisé par les équipes, rien à anticiper côté patient."
+  },
+  {
+   "id": "rein-oeil-horloge-2025",
+   "ty": "Médicament",
+   "dom": "Chronopharmacologie",
+   "n": 5,
+   "dt": "2025-05",
+   "des": "Horloge circadienne, rein et œil : la chrono-médecine s'étend à la néphrologie et à l'ophtalmologie (revue, Frontiers in Physiology, mai 2025)",
+   "tag": "horloge circadienne · maladie rénale chronique · glaucome · rétinopathie · fibrose · chronothérapie",
+   "res": "Revue (Frontiers in Physiology, 27/05/2025, DOI 10.3389/fphys.2025.1583502) : les rythmes circadiens régulent filtration, homéostasie hydrosodée et pression artérielle ; leur dérégulation contribue à la maladie rénale chronique et aux pathologies oculaires (glaucome, œil sec, rétinopathie diabétique) par des voies communes — stress oxydatif, inflammation, fibrose ; les stratégies de réalignement circadien (chronothérapie médicamenteuse, luminothérapie, alimentation restreinte dans le temps) montrent des promesses pour ralentir la progression de ces maladies. En officine : l'« heure » compte aussi pour les organes à rythme : sodium, tension et filtration oscillent sur 24 h — chez le patient MRC ou cardiorénal décompensé, limiter les apports hydrosodés du soir relève du même champ que le timing des médicaments.",
+   "src": [
+    [
+     "Frontiers in Physiology",
+     "https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2025.1583502/full"
+    ],
+    [
+     "PMC (texte intégral)",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC12149222/"
+    ]
+   ],
+   "coi": "À vérifier",
+   "fin": "À vérifier",
+   "off": "Rein et horloge biologique : la prise régulière de vos traitements à heures fixes reste la règle."
+  },
+  {
+   "id": "rein-matrice-glucocorticoides-2026",
+   "ty": "Médicament",
+   "dom": "Chronopharmacologie",
+   "n": 5,
+   "dt": "2026-01",
+   "des": "La matrice rénale se remodele selon l'horloge : rythme circadien, glucocorticoïdes et fibrose glomérulaire (revue, Nephron, janv. 2026)",
+   "tag": "rein · matrice extracellulaire · horloge circadienne · glucocorticoïdes · fibrose · glomérule",
+   "res": "Revue (Nephron, 29/01/2026, DOI 10.1159/000550773) : la matrice extracellulaire rénale, longtemps considérée comme un squelette statique, subit un remodelage continu rythmé par les horloges moléculaires des cellules rénales ; les horloges glomérulaires coordonnent le timing du renouvellement matriciel pour préserver l'intégrité structurelle, la filtration et la réparation ; les glucocorticoïdes sont des synchronisateurs majeurs de ce système, et la rupture de ces rythmes favorise l'accumulation matricielle maladaptive et la fibrose. En officine : volet fondamental de la chronopharmacologie rénale : caler les prises de corticoïdes sur le pic matinal du cortisol n'est pas cosmétique — c'est le langage chronobiologique des cellules rénales (le corticoïde oral reste une prise du MATIN).",
+   "src": [
+    [
+     "Karger — Nephron (DOI)",
+     "https://doi.org/10.1159/000550773"
+    ],
+    [
+     "PMC (texte intégral)",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC12975147/"
+    ]
+   ],
+   "coi": "À vérifier",
+   "fin": "À vérifier",
+   "off": "Maladie rénale chronique : prenez vos médicaments à heures régulières ; la chrononutrition est un axe de recherche."
+  },
+  {
+   "id": "prostate-radio-chrono-2025",
+   "ty": "Médicament",
+   "dom": "Chronopharmacologie",
+   "n": 4,
+   "dt": "2025-07",
+   "des": "Cancer de la prostate : l'heure de la radiothérapie influence-t-elle le contrôle biochimique ? Premières réponses (cohorte, Cancers, juil. 2025)",
+   "tag": "cancer de la prostate · radiothérapie · heure de séance · chrono-radiothérapie · contrôle biochimique",
+   "res": "Étude rétrospective (336 hommes, radiothérapie externe curative 2010-2019, suivi médian 55 mois ; Cancers, 23/07/2025, DOI 10.3390/cancers17152441) : sur l'ensemble de la cohorte, l'heure de traitement n'est pas associée au contrôle biochimique ni aux métastases ; dans le sous-groupe des patients blancs, les heures PRÉCOCES sont associées à un meilleur contrôle biochimique à 5 ans (89 % vs 67 %, p=0,014) et à moins de métastases (93 % vs 72 %, p=0,027), avec des tendances à moindre toxicité génito-urinaire pour les séances matinales ; pas de signal équivalent chez les patients noirs — un effet possiblement modulé par l'ethnie, à confirmer par des essais prospectifs. En officine : la chrono-radiothérapie progresse (3 fiches dans la rubrique) ; pour les patients sous radiothérapie, poser la question de l'heure des séances à l'équipe d'oncologie devient légitime.",
+   "src": [
+    [
+     "MDPI — Cancers",
+     "https://www.mdpi.com/2072-6694/17/15/2441"
+    ],
+    [
+     "PMC (texte intégral)",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC12346491/"
+    ]
+   ],
+   "coi": "À vérifier",
+   "fin": "À vérifier",
+   "off": "Radiothérapie : l heure des séances est planifiée par l équipe selon des contraintes surtout logistiques."
+  },
+  {
+   "id": "oesophagite-radio-soir-2025",
+   "ty": "Médicament",
+   "dom": "Chronopharmacologie",
+   "n": 4,
+   "dt": "2025-01",
+   "des": "Radiothérapie de l'œsophage après 19 h : plus d'œsophagites radiques de grade 2 ou plus (Radiation Oncology, janv. 2025)",
+   "tag": "œsophage · radiothérapie · œsophagite radique · soir · cycle cellulaire · muqueuse",
+   "res": "Étude rétrospective (488 patients éligibles, 369 irradiés le jour vs 119 le soir, carcinome épidermoïde sous chimioradiothérapie concomitante ; Radiation Oncology, 08/01/2025, DOI 10.1186/s13014-024-02575-7) : l'irradiation du SOIR (après 19 h) est associée à plus d'œsophagites radiques de grade 2 ou plus à dose élevée (OR 1,675 [1,062-2,643] si dose PGTV 59,34 Gy ou plus, pas de différence à dose plus basse) — raisonnement fondé sur le cycle cellulaire de la muqueuse (pics G2/M l'après-midi et la nuit) ; aucune différence de survie selon l'heure. En officine : pour le patient en radio-chimiothérapie œsophagienne, la prise en charge de l'œsophagite radique reste LE point de conseil officinal (anesthésiques locaux oraux, pansements digestifs, alimentation fractionnée) ; l'heure de la séance relève de l'oncologue, mais le lien cycle cellulaire/toxicité devient visible en pratique.",
+   "src": [
+    [
+     "BMC — Radiation Oncology",
+     "https://link.springer.com/article/10.1186/s13014-024-02575-7"
+    ],
+    [
+     "PMC (texte intégral)",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC11708085/"
+    ]
+   ],
+   "coi": "À vérifier",
+   "fin": "À vérifier",
+   "off": "Radiothérapie de l œsophage : les horaires sont organisés par le service, suivez le planning donné."
+  },
+  {
+   "id": "radio-chrono-sr-2025",
+   "ty": "Médicament",
+   "dom": "Chronopharmacologie",
+   "n": 1,
+   "dt": "2025-07",
+   "des": "Chrono-radiothérapie : revue systématique de 19 études (14 rétrospectives, 5 essais randomisés) — des signaux, pas encore de règle (Chronobiology International, juil. 2025)",
+   "tag": "chrono-radiothérapie · revue systématique · toxicité · tissus prolifératifs · heure de séance",
+   "res": "Revue systématique (Chronobiology International, 28/07/2025, DOI 10.1080/07420528.2025.2538581 ; littérature 2008-2024) : 19 études sur le lien entre heure de radiothérapie et résultats (14 rétrospectives dont 9 avec survie/contrôle tumoral, 5 essais randomisés prospectifs sur la toxicité matin vs soir) — résultats rétrospectifs NON concordants ; les essais prospectifs suggèrent que la chrono-RT peut réduire les effets indésirables dans les tissus hautement prolifératifs et améliorer certains résultats cliniques ; les auteurs appellent à des essais bien conçus pour valider l'hypothèse et homogénéiser les résultats. En officine : l'état de l'art honnête de la chrono-radiothérapie : signaux encourageants, littérature hétérogène, aucune règle d'horaire établie — exactement le cadrage à donner aux patients qui posent la question.",
+   "src": [
+    [
+     "Taylor & Francis — Chronobiology International (DOI)",
+     "https://doi.org/10.1080/07420528.2025.2538581"
+    ],
+    [
+     "Taylor & Francis (article complet)",
+     "https://www.tandfonline.com/doi/full/10.1080/07420528.2025.2538581"
+    ]
+   ],
+   "coi": "À vérifier",
+   "fin": "À vérifier",
+   "off": "Chrono-radiothérapie : les horaires sont un axe de recherche ; le planning est fixé par l équipe médicale."
+  },
+  {
+   "id": "hygia-chronotherapie-contestee-2021",
+   "ty": "Alerte",
+   "dom": "Chronopharmacologie",
+   "n": 5,
+   "dt": "2021-07",
+   "des": "Pourquoi « l'HTA au coucher » a vacillé : données sources du projet Hygia non vérifiées, et appel explicite à les ignorer (Hypertension + Journal of Hypertension, 2020-2021)",
+   "tag": "Hygia · chronothérapie HTA · prise au coucher · intégrité des données · Hermida · TIME",
+   "res": "Deux textes clés du débat : (1) une perspective dans Hypertension (07/07/2021, DOI 10.1161/HYPERTENSIONAHA.121.17356) documentant l'absence de vérification possible des données sources du projet HYGIA — l'essai chronothérapeutique espagnol qui prétendait réduire de ~45 % le risque cardiovasculaire en déplaçant TOUTES les prises d'antihypertenseurs au coucher ; (2) une lettre dans le Journal of Hypertension (17/08/2020, DOI 10.1097/hjh.0000000000002479) titrée sans ambiguïté : « Les antihypertenseurs ne doivent pas être systématiquement pris au coucher : il faut ignorer les données du projet HYGIA ». Depuis, l'essai randomisé britannique TIME (2022, >21 000 patients, en base) et la méta-analyse de janvier 2026 (en base) ont confirmé l'absence de bénéfice cardiovasculaire. En officine : la réponse historique complète au patient « j'ai entendu dire qu'il fallait tout prendre le soir » : la mode venait de Hygia (données invérifiables, résultats invraisemblables), contredite ensuite par TIME — le conseil reste « une heure régulière que vous tenez ».",
+   "src": [
+    [
+     "Hypertension — perspective (PMC)",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC8260337/"
+    ],
+    [
+     "Journal of Hypertension — lettre (DOI)",
+     "https://doi.org/10.1097/hjh.0000000000002479"
+    ]
+   ],
+   "coi": "À vérifier",
+   "fin": "À vérifier",
+   "off": "HTA : les études récentes montrent surtout l importance de la régularité de la prise ; suivez votre ordonnance."
+  },
+  {
+   "id": "chrononutrition-mrc-2025",
+   "ty": "Alimentation",
+   "dom": "Chronopharmacologie",
+   "n": 5,
+   "dt": "2025-01",
+   "des": "Chrononutrition et maladie rénale chronique : le moment des repas comme levier thérapeutique ? (revue, Nutrients, janv. 2025)",
+   "tag": "chrononutrition · maladie rénale chronique · rythme circadien · repas · apports protéiques · fenêtre alimentaire",
+   "res": "Revue (Nutrients, 22/01/2025, DOI 10.3390/nu17030389) : les patients en maladie rénale chronique cumulent les désalignements circadiens (facteurs rénaux, métaboliques, liés aux traitements et au mode de vie) qui pèsent sur l'état nutritionnel et les résultats cliniques ; la chrononutrition — distribution temporelle des apports, fenêtres de repas, alignement sur l'horloge — est prometteuse mais reste sous-explorée dans la MRC ; la revue synthétise les preuves disponibles, identifie les lacunes et propose des pistes de recherche par stade de la maladie. En officine : le conseil diététique du patient MRC gagne une dimension temporelle : la répartition des prises protéiques et électrolytiques dans la JOURNÉE (et pas seulement leur quantité) devient un sujet de conseil, à rapprocher de la fiche horloge rein/œil de la rubrique et du conseil hydrosodé du soir chez le cardiorénal.",
+   "src": [
+    [
+     "MDPI — Nutrients",
+     "https://www.mdpi.com/2072-6630/17/3/389"
+    ],
+    [
+     "PMC (texte intégral)",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC11820925/"
+    ]
+   ],
+   "coi": "À vérifier",
+   "fin": "À vérifier",
+   "off": "Rein et chrononutrition : répartir les apports et prendre les traitements à heures fixes reste la base."
+  }
+ ],
+ "recos": []
 }
