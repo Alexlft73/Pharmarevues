@@ -1,0 +1,26 @@
+{
+ "revues": [
+  {
+   "ty": "Médicament",
+   "dom": "Urologie & santé masculine",
+   "n": 2,
+   "dt": "2026-11",
+   "des": "Incontinence urinaire féminine : la thérapie par application mobile garde son efficacité à 48 semaines (DINKS, EClinicalMedicine)",
+   "tag": "application mobile, incontinence urinaire, thérapie numérique, DINKS, périnée",
+   "res": "Suivi préspecifié de 48 semaines de l'essai randomisé waitlist-controlled DINKS publié dans EClinicalMedicine (2026, eCollection nov. 2026, PMID 42991056, Frey et al.) : la rééducation périnéale guidée par application mobile, ajoutée aux soins usuels, maintient à 48 semaines la réduction significative des épisodes d'incontinence urinaire (stress, urge ou mixte) chez la femme, quel que soit le sous-type.",
+   "src": [
+    [
+     "PubMed (PMID 42991056)",
+     "https://pubmed.ncbi.nlm.nih.gov/42991056/"
+    ],
+    [
+     "Renal & Urology News",
+     "https://www.renalandurologynews.com/news/app-based-therapy-urinary-incontinence-episodes-women-treatment/"
+    ]
+   ],
+   "off": "Fuites urinaires au quotidien : une application de gym périnéale encadrée, chez soi, fait aussi bien que beaucoup de consultations ; l'adhérence à 1 an est la clé.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  }
+ ]
+}
