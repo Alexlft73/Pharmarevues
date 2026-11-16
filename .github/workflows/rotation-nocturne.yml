@@ -22,7 +22,7 @@ jobs:
           PICK=""
           for f in $(ls staging-veille/*.json 2>/dev/null | sort); do
             SLOT=$(basename "$f" .json)
-            if [[ "$SLOT" \< "$DUE" || "$SLOT" == "$DUE" ]]; then PICK="$f"; break; fi
+            if [[ "$SLOT" < "$DUE" || "$SLOT" == "$DUE" ]]; then PICK="$f"; break; fi
           done
           if [ -z "$PICK" ]; then echo "Aucune salve due — staging vide ou pas encore l'heure."; exit 0; fi
           echo "Salve due : $PICK"
