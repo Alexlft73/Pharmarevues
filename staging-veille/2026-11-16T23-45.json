@@ -1,0 +1,26 @@
+{
+ "revues": [
+  {
+   "ty": "Médicament",
+   "dom": "ORL & stomatologie",
+   "n": 2,
+   "dt": "2026-08",
+   "des": "Rhinosinusite aiguë récidivante : la chirurgie endoscopique sinusienne améliore nettement la qualité de vie (RCT finlandaise)",
+   "tag": "chirurgie endoscopique sinusienne, rhinosinusite aiguë récidivante, SNOT-22, qualité de vie",
+   "res": "Essai randomisé (59 adultes) publié dans JAMA Otolaryngology–Head & Neck Surgery (2026;152(8):776-782, 1er août 2026, doi:10.1001/jamaoto.2026.1537, PMID 42313411, Kaski et al.) : chez les patients avec rhinosinusite aiguë récidivante, la chirurgie endoscopique sinusienne en complément du traitement médical améliore significativement la qualité de vie spécifique (SNOT-22) par rapport au traitement médical seul. Distinct des entrées CRSwNP chroniques déjà en base : ici la forme aiguë RÉCIDIVANTE.",
+   "src": [
+    [
+     "JAMA Otolaryngol (doi)",
+     "https://doi.org/10.1001/jamaoto.2026.1537"
+    ],
+    [
+     "PubMed",
+     "https://pubmed.ncbi.nlm.nih.gov/42313411/"
+    ]
+   ],
+   "off": "Si vos sinusites aiguës reviennent plusieurs fois par an malgré les traitements, l'ORL peut proposer une petite chirurgie des sinus : elle réduit réellement le retentissement quotidien.",
+   "coi": "À vérifier (essai universitaire finlandais)",
+   "fin": "Financement non lisible dans les sources consultées."
+  }
+ ]
+}
