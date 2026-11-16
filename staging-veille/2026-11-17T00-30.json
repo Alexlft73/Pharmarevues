@@ -1,0 +1,22 @@
+{
+ "revues": [
+  {
+   "ty": "Médicament",
+   "dom": "Ophtalmologie",
+   "n": 1,
+   "dt": "2026-12",
+   "des": "Après LASIK ou PKR, la pression intraoculaire mesurée au Goldmann est sous-estimée : 54 études, 4 730 yeux",
+   "tag": "LASIK, PKR, pression intraoculaire, Goldmann, tonométrie, glaucome",
+   "res": "Revue systématique et méta-analyse (J Clin Med 2026;15(12):4426, doi:10.3390/jcm15124426, Lampsas, Chatziralli et al.) : après chirurgie réfractive (LASIK/PRK, 54 études, 4 730 yeux), la pression intraoculaire mesurée par aplanation de Goldmann est systématiquement sous-estimée, ce qui impose des méthodes tonométriques adaptées au suivi, notamment pour le dépistage du glaucome chez les opérés.",
+   "src": [
+    [
+     "J Clin Med (doi)",
+     "https://doi.org/10.3390/jcm15124426"
+    ]
+   ],
+   "off": "Opéré des yeux au laser ? Signalez-le à l'ophtalmologiste avant toute mesure de pression : la mesure classique sous-estime votre tension réelle.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  }
+ ]
+}
