@@ -1,0 +1,26 @@
+{
+ "revues": [
+  {
+   "ty": "Médicament",
+   "dom": "Urologie & santé masculine",
+   "n": 2,
+   "dt": "2026-06",
+   "des": "WATER III : l'Aquablation égale l'énucléation laser sur les symptômes, avec une bien meilleure préservation de l'éjaculation",
+   "tag": "Aquablation, WATER III, énucléation laser, HoLEP, HBP, éjaculation",
+   "res": "Essai prospectif partiellement randomisé WATER III (Eur Urol Focus 2026, en ligne, doi:10.1016/j.euf.2026.05.025) : chez les hommes avec grosse prostate, l'Aquablation (résection robotisée par jet d'eau) atteint une amélioration de l'IPSS comparable à l'énucléation laser (ΔIPSS 12,9 vs 13,1 à 3 mois) tout en préservant nettement mieux la fonction éjaculatoire ; les guidelines EAU ont rehaussé la place de l'Aquablation. Les guidelines 2026 de l'EAU sur l'HBP sont déjà en base ; ici l'essai chirurgical.",
+   "src": [
+    [
+     "Eur Urol Focus (doi)",
+     "https://doi.org/10.1016/j.euf.2026.05.025"
+    ],
+    [
+     "Urology Times (résultats)",
+     "https://www.urologytimes.com/view/water-iii-aquablation-achieves-comparable-outcomes-to-laser-enucleation-for-bph"
+    ]
+   ],
+   "off": "Prostate volumineuse + projet de paternité ou vie sexuelle active : certaines techniques chirurgicales préservent l'éjaculation, d'autres non ; c'est une question à poser à l'urologue.",
+   "coi": "À vérifier (essai sponsor par PROCEPT BioRobotics selon les sources)",
+   "fin": "PROCEPT BioRobotics (société d'étude déclarée)."
+  }
+ ]
+}
