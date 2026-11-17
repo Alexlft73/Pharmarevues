@@ -1,0 +1,26 @@
+{
+ "revues": [
+  {
+   "ty": "Médicament",
+   "dom": "Cardiologie",
+   "n": 4,
+   "dt": "2026-10",
+   "des": "RECO — Fibrillation auriculaire : recommandations APHRS 2026 (Partie II) sur la prévention de l'AVC",
+   "tag": "fibrillation auriculaire · AVC · anticoagulation · APHRS · recommandation 2026",
+   "res": "Recommandations 2026 de l'Asia Pacific Heart Rhythm Society (Journal of Arrhythmia, publié 21/10/2026, doi 10.1002/joa3.70491, 2e partie d'un ensemble de quatre) sur la prévention de l'AVC dans la fibrillation auriculaire : anticoagulation orale individualisée, stratégies de prévention, place de la gestion des facteurs de risque. Recommandation internationale (pas française) : en France, le socle reste ESC 2024/2026 déjà en base — l'APHRS apporte la vision Asie-Pacifique. En officine : un patient sous AOD pour FA ne doit jamais sauter ses prises : le risque d'AVC revient dès les premières heures.",
+   "src": [
+    [
+     "Journal of Arrhythmia (Wiley)",
+     "https://onlinelibrary.wiley.com/doi/10.1002/joa3.70491"
+    ],
+    [
+     "PMC (texte intégral)",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC13687583/"
+    ]
+   ],
+   "off": "Sous anticoagulant pour fibrillation auriculaire : prise quotidienne sans trou, pas d'automédication par AINS, et signaler tout saignement inhabituel.",
+   "coi": "Non applicable (recommandation de société savante)",
+   "fin": "Non applicable (guideline institutionnel APHRS)."
+  }
+ ]
+}
