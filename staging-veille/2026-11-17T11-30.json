@@ -1,0 +1,26 @@
+{
+ "revues": [
+  {
+   "ty": "Officine",
+   "dom": "Soins primaires & Officine",
+   "n": 2,
+   "dt": "2026-06",
+   "des": "IA et pharmacie clinique : l'état des lieux des applications intégrées aux services pharmaceutiques (scoping review)",
+   "tag": "intelligence artificielle · pharmacie clinique · scoping review · 2026",
+   "res": "Scoping review (Future Healthcare Journal, 26/06/2026, PMID 42471979, doi 10.1016/j.fhj.2026.100547) des applications d'intelligence artificielle intégrées aux services de pharmacie clinique (gestion médicamenteuse, sécurité, optimisation thérapeutique) : approche prometteuse mais efforts requis de collaboration, gouvernance et validation. À distinguer de l'enquête attitudes pharmaciens/IA déjà en base (2025-05) : ici les applications et services. En officine : l'IA arrive surtout côté vigilance (alertes d'interactions, aidants à la dispensation) — l'humain garde la main.",
+   "src": [
+    [
+     "PubMed 42471979",
+     "https://pubmed.ncbi.nlm.nih.gov/42471979/"
+    ],
+    [
+     "PMC (texte intégral)",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC13380203/"
+    ]
+   ],
+   "off": "L'intelligence artificielle devient un assistant du pharmacien (alertes, vérifications) — jamais un remplaçant : le conseil reste humain.",
+   "coi": "À vérifier (revue académique)",
+   "fin": "Financement non lisible dans les sources consultées."
+  }
+ ]
+}
