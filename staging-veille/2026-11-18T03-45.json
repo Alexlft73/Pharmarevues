@@ -1,0 +1,26 @@
+{
+ "revues": [
+  {
+   "ty": "Officine",
+   "n": 2,
+   "des": "Épilepsie : un suivi par pharmaciens cliniciens en clinique américaine (VA) améliore l'efficience économique et clinique",
+   "tag": "épilepsie · pharmacien clinicien · VA · ajustement posologique",
+   "res": "Étude qualité (Epilepsy & Behavior Reports, sept. 2026) : dans une clinique d'épilepsie d'hôpital américain pour vétérans, un suivi des patients par pharmaciens cliniciens sous supervision d'épileptologue (ajustements, observance, tolérance) montre un impact clinique et financier favorable au modèle pluriprofessionnel — un argument organisationnel pour étendre le rôle pharmaceutique en neurologie.",
+   "off": "Conforte le rôle du pharmacien dans les maladies chroniques neuro : suivi de l'observance des antiépileptiques et repérage des interactions au comptoir.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "SNC & psychiatrie",
+   "dt": "2026-09",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.1016/j.ebr.2026.100900"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42835542"
+    ]
+   ]
+  }
+ ]
+}
