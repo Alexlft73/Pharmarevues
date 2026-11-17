@@ -1,0 +1,48 @@
+{
+ "revues": [
+  {
+   "ty": "Médicament",
+   "n": 3,
+   "des": "Rythmes circadiens et réponse aux médicaments : de l'horloge moléculaire à la posologie de précision (Annual Review 2026)",
+   "tag": "horloge moléculaire · posologie de précision · pharmacocinétique circadienne",
+   "res": "Revue de référence (Annual Review of Pharmacology and Toxicology, oct. 2026) : les horloges moléculaires centrales et périphériques rythment absorption, distribution, métabolisme, élimination et sensibilité des cibles ; efficacité et toxicité d'un médicament varient selon l'heure de prise. La revue dresse l'état de l'art vers une « posologie de précision » intégrant le temps biologique, base théorique de la chronopharmacologie moderne.",
+   "off": "La revue à citer quand un patient demande « pourquoi l'heure compte ? » — un socle scientifique solide, encore loin d'une application systématique.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "Chronopharmacologie",
+   "dt": "2026-10",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.1146/annurev-pharmtox-060325-102258"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42862947"
+    ]
+   ]
+  },
+  {
+   "ty": "Officine",
+   "n": 2,
+   "des": "Hyperphosphatémie en hémodialyse : un modèle hiérarchique de pharmaciens réduit les taux de phosphore (RCT multicentrique chinois)",
+   "tag": "hyperphosphatémie · hémodialyse · chélateurs · pharmacien · RCT",
+   "res": "Essai randomisé multicentrique (Scientific Reports, janvier 2026) : face à la pénurie de pharmaciens cliniques, un modèle « hiérarchique » (pharmaciens superviseurs + personnel formé) qui éduque sur les chélateurs du phosphore et le régime réduit l'hyperphosphatémie des hémodialysés vs soins usuels — une organisation transposable de la délégation pharmaceutique.",
+   "off": "Intéressant surtout en rénovation de l'officine : l'éducation répétée sur les chélateurs (prise pendant les repas !) est le levier clé de l'observance.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "Néphrologie",
+   "dt": "2026-01",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.1038/s41598-025-34974-5"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/41554772"
+    ]
+   ]
+  }
+ ]
+}
