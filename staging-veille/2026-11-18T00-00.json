@@ -1,0 +1,48 @@
+{
+ "revues": [
+  {
+   "ty": "Médicament",
+   "n": 2,
+   "des": "Prise au coucher vs matin des antihypertenseurs : méta-analyse actualisée 2026 sur le risque cardiovasculaire",
+   "tag": "antihypertenseur · coucher · IDM · AVC · méta-analyse",
+   "res": "Méta-analyse actualisée (Frontiers in Pharmacology, mars 2026) : les études antérieures donnaient des résultats incohérents — les premières méta-analyses indiquaient une réduction de l'infarctus avec la prise au coucher, les travaux récents sont contradictoires. La synthèse conclut à l'absence de bénéfice cardiovasculaire démontré d'un horaire plutôt qu'un autre, dans la lignée de l'essai Time.",
+   "off": "À répéter au comptoir : changer l'heure du traitement antihypertenseur ne protège pas plus le cœur ; l'observance, oui.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "Chronopharmacologie",
+   "dt": "2026-03",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.3389/fphar.2026.1758890"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/41982670"
+    ]
+   ]
+  },
+  {
+   "ty": "Médicament",
+   "n": 2,
+   "des": "Albuminurie : matin ou soir pour les antihypertenseurs ? Essai pilote randomisé ouvert",
+   "tag": "albuminurie · antihypertenseur · matin vs soir · essai pilote",
+   "res": "Essai pilote randomisé ouvert, évaluateur masqué (Scientific Reports, juin 2026) chez des hypertendus avec albuminurie : la prise matinale vs vespérale des antihypertenseurs ne modifie pas précocément l'albuminurie de façon nette — petit essai monocentrique, générateur d'hypothèses plutôt que preuve.",
+   "off": "Pas de changement de pratique : dans l'HTA avec protéines rénales, l'horaire n'est pas le levier prioritaire — le contrôle tensionnel l'est.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "Chronopharmacologie",
+   "dt": "2026-06",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.1038/s41598-026-54798-1"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42230872"
+    ]
+   ]
+  }
+ ]
+}
