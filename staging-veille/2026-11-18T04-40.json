@@ -1,0 +1,378 @@
+{
+ "revues": [
+  {
+   "ty": "Complément",
+   "dom": "Nutrition & Compléments",
+   "n": 3,
+   "dt": "2025-09",
+   "des": "CoQ10 liposomale vs classique : +31 % de pic plasmatique dans un essai croisé randomisé",
+   "tag": "CoQ10 · liposomal · absorption · pharmacocinétique · RCT",
+   "res": "Essai randomisé croisé en double aveugle (Front Nutr, 2025, 18 sujets, 100 mg dose unique) : la forme liposomale de CoQ10 augmente significativement le pic plasmatique (+31,3 %) et l'exposition totale AUC0-24 (+22,6 %) vs la forme standard, sans problème de tolérance — une façon de contourner le problème historique du CoQ10 (liposoluble, absorption limitée et dépendante d'un repas gras).",
+   "src": [
+    [
+     "DOI — Frontiers in nutrition",
+     "https://doi.org/10.3389/fnut.2025.1605033"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/41041129"
+    ]
+   ],
+   "off": "Le patient sous statine qui demande du CoQ10 : la forme compte (liposomale ou dissolution améliorée), et dans tous les cas la prise AU repas gras reste la règle pour une forme classique.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Complément",
+   "dom": "Nutrition & Compléments",
+   "n": 3,
+   "dt": "2025-08",
+   "des": "Vitamine D buccale (nanoémulsion) vs gouttes orales dans les MICI : l'essai randomisé qui compare les voies",
+   "tag": "vitamine D · buccal · nanoémulsion · MICI · malabsorption",
+   "res": "Essai randomisé ouvert (Front Med, 2025, 120 patients MICI) : le spray buccal de cholécalciférol (4 000 UI × 2/semaine) obtient une remontée du 25(OH)D comparable aux gouttes orales à plus forte dose (14 000 UI/semaine) — la voie buccale contourne la malabsorption des patients intestins inflammatoires (27 % maladie active, 24 % des Crohn résequés) et permet d'atteindre la cible avec moins d'UI/semaine.",
+   "src": [
+    [
+     "DOI — Frontiers in medicine",
+     "https://doi.org/10.3389/fmed.2025.1649677"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/40927197"
+    ]
+   ],
+   "off": "Patient MICI (surtout Crohn opéré) dont la vitamine D orale « ne monte pas » : proposer la forme spray buccal est cohérent — à valider avec le gastro et doser le 25(OH)D à distance.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Complément",
+   "dom": "Nutrition & Compléments",
+   "n": 2,
+   "dt": "2026-08",
+   "des": "ScinTwelve : radioscopie d'un comprimé de B12 à libération prolongée dans le tube digestif (pharmacoscintigraphie)",
+   "tag": "vitamine B12 · libération prolongée · pharmacoscintigraphie · absorption iléon",
+   "res": "Étude de pharmacoscintigraphie (Cureus, 2026, 6 sujets, comprimé B12 1 500 µg radiomarqué au Tc-99m) : la couche superficielle se désagrège vite dans l'estomac, la couche à libération prolongée reste intacte puis se désagrège progressivement dans l'intestin, avec un pic sérique de B12 à 8 h — une démonstration visuelle du trajet d'une forme à libération prolongée, conçue pour couvrir au mieux la fenêtre d'absorption iléale.",
+   "src": [
+    [
+     "DOI — Cureus",
+     "https://doi.org/10.7759/cureus.114721"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42756790"
+    ]
+   ],
+   "off": "B12 orale et malabsorption : la libération prolongée est une astuce galénique pour maximiser l'absorption passive et la fenêtre iléale — utile surtout quand le facteur intrinsèque est limité (gastrectomie, metformine au long cours, âgés).",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Complément",
+   "dom": "Nutrition & Compléments",
+   "n": 2,
+   "dt": "2025-03",
+   "des": "Oméga-3 : le design de la formulation (TG vs esters éthyliques, micro-émulsions) change l'absorption orale (revue)",
+   "tag": "oméga-3 · triglycérides · esters éthyliques · bioaccessibilité · formulation",
+   "res": "Revue (Food Res Int, 2025) sur l'impact de la formulation des oméga-3 sur leur biodisponibilité orale : esters éthyliques (formes les moins bien absorbées, surtout sans repas gras), triglycérides reconstitués, formes phospholipidiques (krill) et systèmes auto-émulsifiants/micro-émulsifiés qui augmentent la bioaccessibilité intestinale — la molécule (EPA/DHA) compte, mais la forme galénique et le contexte du repas comptent autant.",
+   "src": [
+    [
+     "DOI — Food research international (Ottawa, Ont.)",
+     "https://doi.org/10.1016/j.foodres.2025.116171"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/40263835"
+    ]
+   ],
+   "off": "Choix éclairé au comptoir : préférer les formes TG ou phospholipidiques si le patient ne prend pas son oméga-3 au repas, ou s'assurer que les esters éthyliques se prennent avec un repas gras — sinon, une partie du produit passe sans être absorbée.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Complément",
+   "dom": "Nutrition & Compléments",
+   "n": 3,
+   "dt": "2025-03",
+   "des": "Fer lié à une matrice glycoprotéique vs bisglycinate vs fumarate : l'essai croisé qui compare l'absorption",
+   "tag": "fer · glycoprotéine · bisglycinate · fumarate · absorption · crossover",
+   "res": "Essai croisé en double aveugle (Cureus, 2025, 17 participants, 11 mg de fer par forme) comparant fer lié à une matrice glycoprotéique (fermenté par des micro-organismes), bisglycinate chélaté et fumarate : le fer de matrice glycoprotéique améliore l'absorption (meilleure iAUC/Cmax) vs les deux références — l'inscription du minéral dans une matrice alimentaire fermentée semble augmenter sa biodisponibilité, un principe « food matrix » appliqué au fer.",
+   "src": [
+    [
+     "DOI — Cureus",
+     "https://doi.org/10.7759/cureus.80224"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/40190969"
+    ]
+   ],
+   "off": "Fer et tolérance digestive : les formes chélatées (bisglycinate) restent la valeur sûre officinale, la matrice glycoprotéique est une piste prometteuse (peu de recul) — dans tous les cas, espacer les prises (1×/jour ou 1 jour sur 2) améliore l'absorption et la tolérance.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Alerte",
+   "dom": "Nutrition & Compléments",
+   "n": 4,
+   "dt": "2025-05",
+   "des": "Curcumine « haute biodisponibilité » : étude PK indépendante qui remet les formulations à leur place (iScience)",
+   "tag": "curcumine · biodisponibilité · NovaSOL · Longvida · esprit critique",
+   "res": "Étude croisée indépendante (iScience, 2025, 9 hommes, ~570 mg de curcumine sous 3 formulations commerciales, jusqu'à 2 280 mg avec pipérine) : les taux plasmatiques de curcumine libre restent minuscules dans la plupart des cas (<2 nM) ; NovaSOL atteint les plus hauts niveaux (6,7-38 nM à 30 min) mais avec une chute rapide — et ces concentrations restent 100 fois inférieures à celles testées in vitro : la curcumine orale agit surtout via ses métabolites, pas via la curcumine libre.",
+   "src": [
+    [
+     "DOI — iScience",
+     "https://doi.org/10.1016/j.isci.2025.112575"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/40487425"
+    ]
+   ],
+   "off": "Discours honnête face aux « curcumine 185× plus biodisponible » : les chiffres marketing comparent des formes entre elles, pas avec un seuil d'efficacité — les effets cliniques observés (douleur, digestion) sont modérés et passent probablement par les métabolites, pas par un effet direct spectaculaire.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Complément",
+   "dom": "Nutrition & Compléments",
+   "n": 2,
+   "dt": "2026-07",
+   "des": "Curcumine standardisée dans le diabète de type 2 : quelle formulation, quel effet glycémique et inflammatoire ? (revue)",
+   "tag": "curcumine · DT2 · glycémie · inflammation · formulation",
+   "res": "Revue (Front Nutr, 2026) des formulations standardisées de curcumine comme adjuvant du DT2 : l'immunométabolisme (hyperglycémie, insulinorésistance, stress oxydatif, inflammation chronique) est la cible, et les essais avec formulations à biodisponibilité améliorée montrent des effets glycémiques et inflammatoires modestes mais réels — un adjuvant de précision, pas un antidiabétique.",
+   "src": [
+    [
+     "DOI — Frontiers in nutrition",
+     "https://doi.org/10.3389/fnut.2026.1874887"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42523609"
+    ]
+   ],
+   "off": "Patient diabétique qui veut « naturellement baisser son sucre » avec de la curcumine : effet adjuvant modeste possible, jamais un remplacement des traitements — et vérifier les interactions (anticoagulants) et la qualité de la formulation.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Complément",
+   "dom": "Nutrition & Compléments",
+   "n": 2,
+   "dt": "2026-05",
+   "des": "BNT-C060, curcumine nano-liposomale double couche : biodisponibilité renforcée vs curcumine libre (essai randomisé)",
+   "tag": "curcumine · nano-liposomal · BNT-C060 · RCT · biodisponibilité",
+   "res": "Essai randomisé en double aveugle (Sci Rep, 2026, volontaires sains) : la curcumine nano-liposomale double couche (chitosane/alginate) améliore significativement la biodisponibilité relative vs la curcumine libre — un descendant de plus de la famille des formulées, dans la logique du marché : chaque marque sa nanotechnologie, l'effet clinique reste à documenter au cas par cas.",
+   "src": [
+    [
+     "DOI — Scientific reports",
+     "https://doi.org/10.1038/s41598-026-53709-8"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42225688"
+    ]
+   ],
+   "off": "Face aux comprimés de curcumine « de nouvelle génération » : la forme améliore l'absorption (les PK le montrent), mais demander quelle étude clinique (pas seulement PK) soutient l'allégation est la bonne question réflexe.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Complément",
+   "dom": "Nutrition & Compléments",
+   "n": 2,
+   "dt": "2025-07",
+   "des": "Curcumine et fer pris ensemble : que fait l'association sur l'absorption du fer et la santé intestinale ?",
+   "tag": "curcumine · fer · absorption · chélation · interaction",
+   "res": "Étude (Food Funct, 2025) sur la co-administration de curcumine (chélatante du fer) avec un supplément de fer : la curcumine modifie l'absorption du fer et pourrait atténuer certains effets digestifs de la supplémentation — une interaction à double tranchant : la curcumine chélate le fer (risque théorique de baisser son absorption), mais son action anti-inflammatoire/intestinale pourrait améliorer la tolérance.",
+   "src": [
+    [
+     "DOI — Food & function",
+     "https://doi.org/10.1039/d5fo00658a"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/40613696"
+    ]
+   ],
+   "off": "Conseil de sécurité simple : espacer la curcumine (et tout chélateur : thé, café, calcium) de la prise de fer d'au moins 2 h — l'association simultanée n'a aucun intérêt et fait perdre des deux côtés.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Complément",
+   "dom": "Nutrition & Compléments",
+   "n": 3,
+   "dt": "2024-11",
+   "des": "Resvératrol oral : méta-analyse des données de biodisponibilité des essais cliniques",
+   "tag": "resvératrol · biodisponibilité · méta-analyse · métabolisme",
+   "res": "Méta-analyse (Phytother Res, 2024) des données PK des essais cliniques de resvératrol oral : absorption rapide mais métabolisme intense (conjugaisons) et taux plasmatiques de resvératrol libre très faibles — les effets attribués passent majoritairement par les métabolites sulfatés/glucuronidés, ce qui tempère les extrapolations des études in vitro aux doses alimentaires ; les essais cliniques à doses supplémentaires restent prometteurs mais hétérogènes.",
+   "src": [
+    [
+     "DOI — Phytotherapy research : PTR",
+     "https://doi.org/10.1002/ptr.8379"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/39557444"
+    ]
+   ],
+   "off": "« Le resvératrol du vin rouge ? » — les quantités alimentaires sont infinitésimales vs les doses des essais (150-500 mg+) : pas de miracle au verre de vin, et les compléments restent des produits de recherche aux effets discutés, pas des certitudes.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Complément",
+   "dom": "Nutrition & Compléments",
+   "n": 3,
+   "dt": "2025-02",
+   "des": "Quercétine : comment améliorer sa biodisponibilité — SR et méta de 31 études humaines",
+   "tag": "quercétine · biodisponibilité · glucosides · formulations · méta",
+   "res": "SR et méta-analyse (Food Chem, 2025) de 31 études d'intervention humaine : la biodisponibilité dépend de la forme chimique (oligoglucosides de l'oignon ≈ 2× les glucosides, 10× la rutine, 20× l'aglycone seul), de la matrice alimentaire et des formulations (micro-émulsions, phytosomes) — enfin un classement utilisable des sources et formes, la quercétine seule (aglycone) étant la moins bien absorbée.",
+   "src": [
+    [
+     "DOI — Food chemistry",
+     "https://doi.org/10.1016/j.foodchem.2025.143630"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/40037045"
+    ]
+   ],
+   "off": "Pour l'allégation « quercétine » : la source change tout (extraits d'oignon riches en glucosides > poudre brute) — et les formulations lipidiques sont un vrai plus ; la quercétine reste un complément de fond, pas un traitement aigu.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Alimentation",
+   "dom": "Nutrition & Compléments",
+   "n": 3,
+   "dt": "2025-02",
+   "des": "Biodisponibilité des polyphénols alimentaires : l'état des connaissances (Annual Review)",
+   "tag": "polyphénols · biodisponibilité · microbiote · métabolites · revue",
+   "res": "Revue de référence (Annu Rev Food Sci Technol, 2025) : la plupart des polyphénols passent au côlon où le microbiote les catabolise, et ce sont les métabolites microbiens qui atteignent la circulation (parfois ~100 % de la dose sous forme de métabolites) — les polyphénols agissent donc comme des prébiotiques bidirectionnels, et parler de « biodisponibilité » sans les métabolites est une erreur de cadre.",
+   "src": [
+    [
+     "DOI — Annual review of food science and technology",
+     "https://doi.org/10.1146/annurev-food-060721-023817"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/39899845"
+    ]
+   ],
+   "off": "Un argument solide face aux jus détox : l'effet des polyphénols (fruits, thé, cacao) passe par le microbiote — la régularité alimentaire prime sur les pics de supplémentation ponctuelle.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Complément",
+   "dom": "Nutrition & Compléments",
+   "n": 2,
+   "dt": "2024-10",
+   "des": "L'encapsulation améliore-t-elle vraiment la biodisponibilité des polyphénols chez l'humain ? (revue d'études in vivo)",
+   "tag": "encapsulation · polyphénols · in vivo · biodisponibilité · revue",
+   "res": "Revue (Nutrients, 2024) des études in vivo humaines sur l'encapsulation des polyphénols : la protection par un enrobage améliore la stabilité digestive et parfois l'absorption, mais les preuves humaines restent parcellaires, hétérogènes et souvent sponsorisées — la réponse honnête est « ça dépend » : du composé, du procédé, et surtout de la matrice alimentaire comparée.",
+   "src": [
+    [
+     "DOI — Nutrients",
+     "https://doi.org/10.3390/nu16213625"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/39519458"
+    ]
+   ],
+   "off": "Face aux capsules de polyphénols « protégés » : l'encapsulation aide sur le papier, mais une alimentation polyphénol régulière (fruits, thé, cacao, olives) reste la stratégie la plus documentée — la gélule est un confort, pas une garantie.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Alerte",
+   "dom": "Nutrition & Compléments",
+   "n": 3,
+   "dt": "2026-02",
+   "des": "Le paradoxe redox des polyphénols : aux doses hautes, l'antioxydant devient pro-oxydant (revue)",
+   "tag": "polyphénols · redox · hormèse · sécurité · hautes doses",
+   "res": "Revue (Phytother Res, 2026) sur le paradoxe redox des polyphénols : aux niveaux alimentaires, effets bénéfiques (modulation redox, signalisation, enzymes protectrices) ; aux doses pharmacologiques ou supplémentaires élevées, activité pro-oxydante possible, inhibition enzymatique, perturbation endocrinienne — la relation dose-réponse des polyphénols est en U, pas linéaire, et « plus » n'est pas « mieux ».",
+   "src": [
+    [
+     "DOI — Phytotherapy research : PTR",
+     "https://doi.org/10.1002/ptr.70268"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/41697263"
+    ]
+   ],
+   "off": "Argument d'arbitrage : le patient qui empile les compléments antioxydants (curcumine + resvératrol + thé vert + quercétine...) cumule des doses pharmacologiques — il faut dédupliquer, pas additionner ; l'alimentation reste la voie la plus sûre.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Complément",
+   "dom": "Nutrition & Compléments",
+   "n": 2,
+   "dt": "2025-11",
+   "des": "Carence en fer : des nutraceutiques végétaux pour améliorer la biodisponibilité du fer et la tolérance (revue)",
+   "tag": "fer · nutraceutiques végétaux · carence · anémie · tolérance",
+   "res": "Revue (Antioxidants, 2025) sur les approches végétales pour améliorer la biodisponibilité du fer : 25 % de la population mondiale en carence, le fer oral mal toléré (effets digestifs, abandon, stress oxydatif associé) — et les nutraceutiques végétaux (formes liées à des matrices, cofacteurs antioxydants) visent à améliorer absorption et tolérance — des pistes sérieuses mais encore jeunes face au fer de référence.",
+   "src": [
+    [
+     "DOI — Antioxidants (Basel, Switzerland)",
+     "https://doi.org/10.3390/antiox14111335"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/41300492"
+    ]
+   ],
+   "off": "Patiente qui « ne supporte pas le fer » : bisglycinate + prises espacées + jamais avec le thé restent les réflexes éprouvés ; les formules végétales « enrichies » sont des options de deuxième intention, pas des preuves consolidées.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Alimentation",
+   "dom": "Nutrition & Compléments",
+   "n": 2,
+   "dt": "2025-08",
+   "des": "Microbiote intestinal et polyphénols : qui métabolise qui, et pourquoi ça change leurs effets santé (revue)",
+   "tag": "polyphénols · microbiote · métabolites · synergie · revue",
+   "res": "Revue (Nutrients, 2025) : les polyphénols ne sont que partiellement absorbés dans l'intestin grêle ; une grande fraction rejoint le côlon où les bactéries les convertissent en métabolites actifs (ou inactifs) — la biodisponibilité est donc individuelle, dépendante du microbiote de chacun, ce qui explique une partie de la variabilité des réponses entre personnes et entre études.",
+   "src": [
+    [
+     "DOI — Nutrients",
+     "https://doi.org/10.3390/nu17172793"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/40944183"
+    ]
+   ],
+   "off": "Explication patient : deux personnes peuvent réagir différemment au même complément polyphénol — ce n'est pas du hasard, c'est le microbiote ; d'où l'intérêt d'une alimentation diversifiée qui nourrit aussi les bactéries qui activent ces composés.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Alimentation",
+   "dom": "Cardiologie",
+   "n": 2,
+   "dt": "2026-10",
+   "des": "Polyphénols et santé cardiovasculaire : de la biodisponibilité à la pertinence clinique (revue)",
+   "tag": "polyphénols · cardiovasculaire · endothélium · biodisponibilité",
+   "res": "Revue (Molecules, 2026) sur les polyphénols et le système cardiovasculaire : au-delà de l'effet « antioxydant » des affiches, les mécanismes crédibles passent par la signalisation redox, l'inflammation, la fonction endothéliale, le métabolisme lipidique et la mitochondrie — mais l'impact biologique dépend fortement de la biodisponibilité et du devenir métabolique, ce qui limite la portée des études à fortes doses ponctuelles.",
+   "src": [
+    [
+     "DOI — Molecules (Basel, Switzerland)",
+     "https://doi.org/10.3390/molecules31193549"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42883312"
+    ]
+   ],
+   "off": "Le message tenable au comptoir : régime méditerranéen riche en polyphénols = bénéfice cardio documenté ; la capsule de polyphénols isolée = preuve fragile — la biodisponibilité, encore elle, décide de tout.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  }
+ ]
+}
