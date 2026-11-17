@@ -1,0 +1,26 @@
+{
+ "revues": [
+  {
+   "ty": "Officine",
+   "n": 2,
+   "des": "Pharmaciens et épilepsie : revue systématique des interventions officinales et ambulatoires",
+   "tag": "épilepsie · pharmacien communautaire · revue systématique · 50 millions",
+   "res": "Revue systématique (Exploratory Research in Clinical and Social Pharmacy, avril 2025) : 50 millions de personnes vivent avec une épilepsie, 70 % pourraient être sans crise si bien traitées ; les interventions pharmaceutiques communautaires et ambulatoires (éducation, observance, détection des problèmes liés aux médicaments) améliorent significativement la prise en charge au-delà de la simple dispensation.",
+   "off": "Une base bibliographique solide du rôle officinal en épilepsie : vérifier l'observance, interroger sur les crises restantes — signe que le traitement est à réévaluer.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "SNC & psychiatrie",
+   "dt": "2025-04",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.1080/20523211.2025.2487046"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/40224172"
+    ]
+   ]
+  }
+ ]
+}
