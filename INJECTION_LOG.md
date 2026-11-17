@@ -1,8 +1,8 @@
 # Injection automatique
 
-- REVUES: +1 → 866
+- REVUES: +1 → 867
 - RECO: +0 → 158
 - NEW: 1
 
 ## Écartés
-- DOUBLON: IA et pharmacie clinique : l'état des lieux des applications intégrées
+- aucun
