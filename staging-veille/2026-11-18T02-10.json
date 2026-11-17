@@ -1,0 +1,422 @@
+{
+ "revues": [
+  {
+   "ty": "Médicament",
+   "dom": "Psychiatrie",
+   "n": 2,
+   "dt": "2025-09",
+   "des": "Dépression résistante : bibliométrie des évolutions thérapeutiques sur 50 ans de recherche (analyse data-driven)",
+   "tag": "dépression résistante · bibliométrie · data-driven · psychiatrie",
+   "res": "Analyse bibliométrique (2025) de plus de 16 000 publications sur la dépression résistante : cartographie des bascules d'intérêt thérapeutique au fil des décennies (antidépresseurs → stimulation cérébrale, kétamine, psychédéliques…) et des travaux les plus influents — un panorama de où va le champ, non un guide de stratégie clinique.",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.1016/j.bpsgos.2025.100610"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/41141385"
+    ]
+   ],
+   "off": "Patient multi-antidépresseurs sans réponse : l'observance et la durée suffisante de chaque essai thérapeutique se vérifient d'abord à l'officine — deux causes fréquentes de « fausse » résistance.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Médicament",
+   "dom": "Seniors & polymédication",
+   "n": 1,
+   "dt": "2026-01",
+   "des": "Syndromes gériatriques et mortalité : synthèse des associations issue de la littérature",
+   "tag": "syndromes gériatriques · mortalité · seniors · revue",
+   "res": "Travail de synthèse (2026) sur l'association entre syndromes gériatriques (chutes, fragilité, dénutrition, incontinence, troubles cognitifs…) et mortalité : chaque syndrome ajouté dégrade le pronostic de façon additive — l'approche gériatrique intégrée, qui regarde le patient dans son ensemble plutôt que maladie par maladie, se justifie par les données.",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.1001/jamanetworkopen.2025.55740"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/41591773"
+    ]
+   ],
+   "off": "En officine, un senior qui chute, maigrit ou confuse doit déclencher une évaluation globale, pas seulement un ajustement de symptôme — signalement au médecin traitant.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Médicament",
+   "dom": "Dermatologie & peau",
+   "n": 2,
+   "dt": "2026-03",
+   "des": "Inhibiteurs d'IL-17 et lupus : signaux paradoxaux à connaître (revue des cas)",
+   "tag": "IL-17 · lupus érythémateux · effet paradoxal · dermatologie",
+   "res": "Revue (2026) des cas de lupus ou de manifestations lupiques survenus sous inhibiteurs d'IL-17 (psoriasis, spondyloarthrite) : l'effet paradoxal est rare mais documenté, cohérent avec l'implication de l'axe IL-17 dans l'auto-immunité — à connaître avant d'initier ou de poursuivre ces biothérapies chez un patient à terrain auto-immun.",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.1016/j.xkme.2026.101334"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42027197"
+    ]
+   ],
+   "off": "Patient sous anti-IL-17 qui développe arthralgies, éruption en vespertilio ou photosensibilité : orienter vers le médecin — ne pas banaliser.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Médicament",
+   "dom": "Dermatologie & peau",
+   "n": 2,
+   "dt": "2026-02",
+   "des": "Vitiligo : les inhibiteurs de JAK et les inhibiteurs de tyrosine kinase à l'épreuve de la repigmentation",
+   "tag": "vitiligo · JAK · ruxolitinib · upadacitinib · revue",
+   "res": "Revue (2026) des inhibiteurs de JAK et autres inhibiteurs de tyrosine kinase dans le vitiligo : le ruxolitinib en topique (AMM) a ouvert la voie, les données orales (upadacitinib…) sont prometteuses surtout sur le visage, avec des taux de repigmentation variables et des récidives à l'arrêt — une vraie rupture pour une maladie longtemps orpheline de traitement.",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.1002/hsr2.71842"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/41737427"
+    ]
+   ],
+   "off": "Message d'espoir mesuré : le vitiligo dispose enfin de traitements ciblés — l'observance est longue (mois) et l'arrêt expose à la récidive, d'où l'intérêt d'un suivi rapproché.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Médicament",
+   "dom": "Dermatologie & peau",
+   "n": 2,
+   "dt": "2026-10",
+   "des": "Psoriasis : persistance des biothérapies IL-23p19 vs IL-17 en vie réelle — revue systématique et méta-analyse exploratoire",
+   "tag": "psoriasis · IL-23p19 · IL-17 · persistance · vie réelle",
+   "res": "Revue systématique et méta-analyse exploratoire (2026) des comparaisons ajustées de vie réelle sur le temps jusqu'à arrêt des anti-IL-23p19 vs anti-IL-17 dans le psoriasis en plaques : la persistance est un marqueur intégré (efficacité tenue, tolérance, acceptabilité, contraintes d'injection) et les deux classes s'y distinguent — l'étude quantifie ces différences pour éclairer le choix de classe au cas par cas.",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.7759/cureus.117280"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42967204"
+    ]
+   ],
+   "off": "Question fréquente au comptoir : « pourquoi changer de biothérapie ? » — les données de persistance en vie réelle montrent que la première année est décisive ; les motifs d'arrêt (inefficacité, intolérance, injections) se repèrent à l'officine.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Alerte",
+   "dom": "Cardiologie",
+   "n": 2,
+   "dt": "2026-10",
+   "des": "Initiation ambulatoire du sotalol : réévaluer le risque à l'heure de la surveillance moderne (revue 2026)",
+   "tag": "sotalol · initiation ambulatoire · QT · torsades · monitoring",
+   "res": "Revue (2026) qui réévalue l'initiation ambulatoire du sotalol, traditionnellement hospitalière par crainte du QT long et des torsades : les données des deux dernières décennies, associées à une stratification moderne du risque et aux technologies de surveillance du rythme, suggèrent qu'une initiation en ville est discutable chez des patients sélectionnés — un changement de paradigme proposé, pas validé par des essais.",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.31083/rcm52301"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42985564"
+    ]
+   ],
+   "off": "Au comptoir : vérifier potassium et magnésium avant délivrance, refuser les associations QT-allongeantes (macrolides, fluoroquinolones…), et rappeler l'importance de l'ECG de contrôle.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Alimentation",
+   "dom": "Allergologie",
+   "n": 2,
+   "dt": "2025-11",
+   "des": "Prévention de l'allergie par les bioactifs alimentaires : où en est la preuve ? (revue 2026)",
+   "tag": "allergie · bioactifs · prévention · nutrition · revue",
+   "res": "Revue (2026) des bioactifs alimentaires (polyphénols, acides gras, probiotiques…) dans la prévention de la maladie allergique : les pistes immunomodulatrices sont nombreuses mais la preuve clinique reste fragile et hétérogène — aucune stratégie diététique de prévention validée à ce jour, loin des promesses marketing.",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.3390/nu17223506"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/41305557"
+    ]
+   ],
+   "off": "Face aux compléments « anti-allergie » vendus en ligne : aucune preuve solide de prévention — la diversification précoce (arachide notamment) reste la mesure validée chez l'enfant.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Alerte",
+   "dom": "Allergologie",
+   "n": 3,
+   "dt": "2026-03",
+   "des": "Anaphylaxie fatale : comment l'arrêt cardiaque survient — mécanismes et leçons pour la prise en charge",
+   "tag": "anaphylaxie · arrêt cardiaque · mécanisme · adrénaline",
+   "res": "Revue (2026) des mécanismes de l'arrêt cardiaque lors d'anaphylaxies fatales : vasoplégie profonde, hypovolémie de redistribution et dysfonction myocardique se combinent, souvent aggravées par un retard d'adrénaline et la position assise/décubitus — la précocité de l'adrénaline IM et la position allongée jambes surélevées sont les seuls leviers salvateurs documentés.",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.1111/cea.70289"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/41876126"
+    ]
+   ],
+   "off": "Répète le message simple : adrénaline IM dans la cuisse dès suspicion, patient allongé, jamais assis ou debout — chaque minute de retard coûte.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Alerte",
+   "dom": "Allergologie",
+   "n": 2,
+   "dt": "2026-09",
+   "des": "Syndrome α-Gal : des anticorps monoclonaux humains qui bloquent l'engagement des IgE — une piste thérapeutique",
+   "tag": "α-Gal · anticorps monoclonaux · IgE · allergie viande · immunothérapie",
+   "res": "Travail (2026) isolant 42 anticorps monoclonaux humains spécifiques de l'α-Gal : ces mAbs bloquent l'engagement des IgE sur les allergènes du syndrome α-Gal (allergie à la viande de mammifère transmise par les tiques) — une piste d'immunothérapie bloquante inspirée des approches développées pour l'arachide ou le pollen, encore au stade préclinique.",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.1172/jci192370"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42677844"
+    ]
+   ],
+   "off": "Patient avec allergie à la viande rouge « qui sort des sentiers battus » (réactions retardées, urticaire nocturne) : penser alpha-Gal ; tout nouveau traitement injectable en hospitalier se signale chez ces patients.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Médicament",
+   "dom": "Gastro-entérologie & Hépatologie",
+   "n": 2,
+   "dt": "2026-01",
+   "des": "Ténapanor dans le SII-constipation : soulagement plus précoce et soutenu vs placebo (analyse post hoc poolée)",
+   "tag": "ténapanor · SII-C · NHE3 · post hoc",
+   "res": "Analyse post hoc (2026) poolant trois essais randomisés (phase IIb, T3MPO-1, T3MPO-2) du ténapanor 50 mg × 2/j dans le SII-constipation : le soulagement de la constipation et des symptômes abdominaux survient plus tôt et se maintient vs placebo — un anti-NHE3 au mécanisme sécréteur qui complète l'offre (linaclotide, prucalopride).",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.1177/17562848251414831"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/41601848"
+    ]
+   ],
+   "off": "SII-C : le ténapanor (lorsqu'il sera disponible) se prendra à jeun avant les repas — l'observance aux horaires sera un point de conseil officinal clé.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Médicament",
+   "dom": "Gastro-entérologie & Hépatologie",
+   "n": 2,
+   "dt": "2026-04",
+   "des": "IPP et glycémie dans le diabète de type 2 : méta-analyse des effets sur l'HbA1c et le risque métabolique",
+   "tag": "IPP · glycémie · DT2 · HbA1c · méta-analyse",
+   "res": "Méta-analyse (2026) des effets des inhibiteurs de la pompe à protons sur la glycémie des patients DT2 : les associations retrouvées entre IPP et HbA1c plus élevée sont de faible amplitude et hétérogènes, sans certitude d'un lien causal — la littérature continue de faire vaciller ce signal ancien sans le confirmer nettement.",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.4103/jmh.jmh_210_25"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42583381"
+    ]
+   ],
+   "off": "Pas de raison d'arrêter un IPP nécessaire chez un diabétique ; en revanche, l'indication et la durée minimale restent la règle pour tous les patients.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Alerte",
+   "dom": "Seniors & polymédication",
+   "n": 2,
+   "dt": "2026-02",
+   "des": "Charge anticholinergique : panorama des échelles de mesure et de leurs limites (revue 2026)",
+   "tag": "charge anticholinergique · échelles · seniors · revue",
+   "res": "Revue (2026) des échelles de charge anticholinergique (ACB, ARS, DBI…) : chaque outil classe différemment les médicaments, aboutissant à des scores non interchangeables et à des associations inconstantes avec les chutes et la cognition — la mesure est utile pour repérer un sur-risque, mais aucune échelle ne fait consensus.",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.1111/jgs.70352"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/41730788"
+    ]
+   ],
+   "off": "Geste concret : additionner, à l'officine, les médicaments à potentialité anticholinergique (amitriptyline, oxybutynine, hydroxyzine, certains antihistaminiques…) chez le senior, et ouvrir la discussion de déprescription avec le médecin.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Médicament",
+   "dom": "Ophtalmologie",
+   "n": 2,
+   "dt": "2025-10",
+   "des": "Brolucizumab : inflammation, tolérance et place dans les œdèmes maculaires et DMLA (revue 2026)",
+   "tag": "brolucizumab · DMLA · inflammation intraoculaire · ophtalmologie",
+   "res": "Revue (2026) du brolucizumab, anti-VEGF de format « single-chain » à demi-vie prolongée : efficacité comparable aux autres anti-VEGF dans la DMLA, mais un signal d'inflammation intraoculaire (vitrites, vascularites) a conduit à des contre-indications et à une surveillance rapprochée — une place de « molécule à maniement expert » en pratique.",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.3390/ph18111620"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/41304869"
+    ]
+   ],
+   "off": "Patient sous brolucizumab : toute baisse d'acuité visuelle, œil rouge ou douleur après injection impose un avis ophtalmologique le jour même — ne pas attendre.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Médicament",
+   "dom": "Psychiatrie",
+   "n": 2,
+   "dt": "2025-10",
+   "des": "Memantine : mise à jour d'une décennie — pharmacologie et nouvelles pistes d'application au-delà de la démence",
+   "tag": "memantine · NMDA · démence · repositionnement · revue",
+   "res": "Revue (2025) des avancées de la décennie sur la mémantine : raffinement du mécanisme (antagoniste NMDA), effet symptomatique modeste confirmé dans la démence, et pistes de repositionnement explorées dans des modèles animaux d'autres maladies — une molécule dont l'horizon thérapeutique déborde désormais l'Alzheimer.",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.1007/s00702-025-03017-8"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/41136637"
+    ]
+   ],
+   "off": "La memantine se tolère souvent bien (vertiges occasionnels) ; l'arrêt brutal n'est pas recommandé, et l'observance doit être suivie — les proches signalent parfois une aggravation rapide en cas d'oublis répétés.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Vaccin",
+   "dom": "Infectiologie & Vaccins",
+   "n": 2,
+   "dt": "2026-09",
+   "des": "VRS : un vaccin vivant « single-cycle » axé sur la préfusion F, candidat pédiatrique",
+   "tag": "VRS · vaccin vivant · single-cycle · pédiatrie · préF",
+   "res": "Étude (2026) d'un vaccin vivant single-cycle contre le virus respiratoire syncytial : la réplication en un seul cycle concentre la réponse immunitaire sur la protéine F en préfusion (cible des anticorps neutralisants) et la région conservée de la protéine G, sans risque de maladie exacerbée par le vaccin chez l'enfant VRS-naïf — une approche prometteuse là où il n'existe encore aucun vaccin pédiatrique contre le VRS (seule l'immunisation passive par nirsevimab est disponible).",
+   "src": [
+    [
+     "DOI — Viruses",
+     "https://doi.org/10.3390/v18091013"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42797844"
+    ]
+   ],
+   "off": "Rappel officinal : aujourd'hui la prévention du VRS chez le nourrisson passe par l'anticorps monoclonal (nirsevimab) — un vaccin vivant pédiatrique reste à l'étude, à ne pas survendre.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Complément",
+   "dom": "Nutrition & Compléments",
+   "n": 2,
+   "dt": "2026-08",
+   "des": "Ictère physiologique du nouveau-né : quelle souche de probiotique fonctionne ? (revue systématique et méta)",
+   "tag": "probiotiques · ictère néonatal · bilirubine · souches",
+   "res": "Revue systématique et méta-analyse (2026) sur les probiotiques dans l'ictère physiologique néonatal : le microbiote intestinal participe au métabolisme de la bilirubine, et l'efficacité varie selon les souches — la méta-analyse identifie quelles souches (Lactobacillus, Saccharomyces…) montrent le meilleur signal en prévention et en traitement adjuvant. Un signal encourageant, mais sur un critère biologique et des essais de petite taille.",
+   "src": [
+    [
+     "DOI — Journal of research in medical sciences : the official journal of Isfahan University of Medical Sciences",
+     "https://doi.org/10.4103/jrms.jrms_746_25"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42808098"
+    ]
+   ],
+   "off": "Prudence officinale : l'ictère néonatal se surveille médicalement (bilirubine transcutanée) — un probiotique ne remplace jamais le suivi, et les produits pédiatriques se choisissent par souche, pas par marketing.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Complément",
+   "dom": "Nutrition & Compléments",
+   "n": 2,
+   "dt": "2026-09",
+   "des": "Santé bucco-dentaire des enfants : que valent les interventions par probiotiques ? (revue systématique)",
+   "tag": "probiotiques · caries · santé bucco-dentaire · enfants",
+   "res": "Revue systématique (2026) des interventions probiotiques sur la santé orale des enfants (caries, gingivite, plaque) : effets modestes et hétérogènes, avec des souches lait Streptococcus/Lactobacillus les plus étudiées — un complément possible d'hygiène, jamais un substitut au brossage et au fluor.",
+   "src": [
+    [
+     "DOI — Frontiers in dental medicine",
+     "https://doi.org/10.3389/fdmed.2026.1914359"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42819081"
+    ]
+   ],
+   "off": "Message simple au comptoir : brosse à dents + fluor + sucre limité restent la base ; les probiotiques « anti-caries » ne sont pas une protection démontrée.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Complément",
+   "dom": "Nutrition & Compléments",
+   "n": 2,
+   "dt": "2026-05",
+   "des": "Diabète gestationnel : Lactobacillus et Bifidobacterium pour moduler glycémie et inflammation (revue de cadrage)",
+   "tag": "probiotiques · diabète gestationnel · glycémie · inflammation",
+   "res": "Revue de cadrage (2026) sur le potentiel probiotique (Lactobacillus, Bifidobacterium) dans le diabète gestationnel, qui touche ~14 % des grossesses : modulation du microbiote, de l'inflammation et de l'insulinorésistance suggérées, mais essais cliniques encore incohérents — piste intéressante, preuve non acquise.",
+   "src": [
+    [
+     "DOI — Nutrition reviews",
+     "https://doi.org/10.1093/nutrit/nuaf238"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/41370015"
+    ]
+   ],
+   "off": "Chez la femme enceinte, tout complément (y compris probiotique) se valide avec l'équipe de suivi — la base reste activité physique adaptée et alimentation.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Complément",
+   "dom": "Nutrition & Compléments",
+   "n": 2,
+   "dt": "2025-12",
+   "des": "Lithiase rénale : probiotiques et symbiotiques qui dégradent l'oxalate, une piste préventive",
+   "tag": "lithiase · oxalate · probiotiques · Oxalobacter",
+   "res": "Revue (2025) des interventions probiotiques et symbiotiques ciblant les bactéries intestinales dégradant l'oxalate (Oxalobacter formigenes notamment) pour la prévention de la lithiase calcique : logique séduisante (moins d'oxalate absorbé), données cliniques encore préliminaires — la hygiène hydrique et diététique reste la base.",
+   "src": [
+    [
+     "DOI — Cureus",
+     "https://doi.org/10.7759/cureus.98728"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/41409368"
+    ]
+   ],
+   "off": "Patient lithiasique : boire assez pour uriner 2 L/j et réduire les excès d'oxalate (épinards, rhubarbe, chocolat) restent les mesures reines — les probiotiques « anti-lithiase » ne sont pas validés.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  }
+ ]
+}
