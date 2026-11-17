@@ -176,24 +176,31 @@ html.dark a:focus-visible,html.dark button:focus-visible{outline-color:var(--ble
 
 </style>
 <style id="pv-watercolor">
-/* Fond aquarelle turquoise/orange v3 (17/11/2026) — suit le bouton thème (html.dark). Ne pas supprimer. */
-html{background:#f2fbf9}
+/* Fond aquarelle turquoise/orange v4 (encore plus vive) (17/11/2026) — suit le bouton thème (html.dark). Ne pas supprimer. */
+html{background:#f0fbf7}
 body{background:transparent !important}
 body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:
-radial-gradient(62rem 42rem at 6% -8%,rgba(45,212,191,.60),rgba(45,212,191,0) 64%),
-radial-gradient(48rem 36rem at 106% 0%,rgba(255,159,64,.55),rgba(255,159,64,0) 60%),
-radial-gradient(56rem 42rem at 98% 88%,rgba(45,212,191,.42),rgba(45,212,191,0) 62%),
-radial-gradient(42rem 32rem at -6% 96%,rgba(255,159,64,.36),rgba(255,159,64,0) 58%),
-radial-gradient(36rem 26rem at 50% 42%,rgba(255,255,255,.65),rgba(255,255,255,0) 72%),
-linear-gradient(155deg,#ffffff 0%,#edfaf7 40%,#fff5e9 76%,#fdf0e0 100%)}
+radial-gradient(62rem 42rem at 6% -8%,rgba(45,212,191,.82),rgba(45,212,191,0) 64%),
+radial-gradient(48rem 36rem at 106% 0%,rgba(255,159,64,.75),rgba(255,159,64,0) 60%),
+radial-gradient(56rem 42rem at 98% 88%,rgba(45,212,191,.58),rgba(45,212,191,0) 62%),
+radial-gradient(42rem 32rem at -6% 96%,rgba(255,159,64,.50),rgba(255,159,64,0) 58%),
+radial-gradient(36rem 26rem at 50% 42%,rgba(255,255,255,.55),rgba(255,255,255,0) 72%),
+linear-gradient(155deg,#ffffff 0%,#e6faf5 40%,#fff2e0 76%,#fcead2 100%)}
 html.dark{background:#0a1320}
 html.dark body::before{background:
-radial-gradient(62rem 42rem at 6% -8%,rgba(45,212,191,.25),rgba(45,212,191,0) 64%),
-radial-gradient(48rem 36rem at 106% 0%,rgba(251,146,60,.16),rgba(251,146,60,0) 60%),
-radial-gradient(56rem 42rem at 98% 88%,rgba(45,212,191,.19),rgba(45,212,191,0) 62%),
-radial-gradient(42rem 32rem at -6% 96%,rgba(251,146,60,.12),rgba(251,146,60,0) 58%),
+radial-gradient(62rem 42rem at 6% -8%,rgba(45,212,191,.32),rgba(45,212,191,0) 64%),
+radial-gradient(48rem 36rem at 106% 0%,rgba(251,146,60,.20),rgba(251,146,60,0) 60%),
+radial-gradient(56rem 42rem at 98% 88%,rgba(45,212,191,.24),rgba(45,212,191,0) 62%),
+radial-gradient(42rem 32rem at -6% 96%,rgba(251,146,60,.15),rgba(251,146,60,0) 58%),
 linear-gradient(155deg,#101d2b 0%,#0a1320 45%,#181412 100%)}
 @media print{html,body{background:#fff !important}body::before{content:none}}
+
+/* Bandeau aux couleurs de l'aquarelle */
+header{background:linear-gradient(135deg,#0d9488 0%,#2dd4bf 46%,#ff9f40 100%) !important;text-shadow:0 1px 2px rgba(0,0,0,.18)}
+header::before{background:radial-gradient(720px 280px at 88% -50%,rgba(255,159,64,.38),transparent 60%),radial-gradient(560px 240px at -8% 115%,rgba(45,212,191,.34),transparent 60%) !important}
+html.dark header{background:linear-gradient(130deg,#0b3f35 0%,#0d5747 52%,#7a4a14 125%) !important}
+html.dark header::before{background:radial-gradient(720px 280px at 88% -50%,rgba(255,159,64,.18),transparent 60%),radial-gradient(560px 240px at -8% 115%,rgba(45,212,191,.16),transparent 60%) !important}
+@media print{header{background:#fff !important;text-shadow:none !important}}
 </style>
 </head>
 <body>

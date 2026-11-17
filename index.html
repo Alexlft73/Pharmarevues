@@ -248,11 +248,14 @@ html.dark #recostab .rgeo{color:#a5b4fc;background:rgba(99,102,241,.15)}
 #pedtab .psrc{font-size:.68rem;color:#0f766e;text-decoration:underline;text-underline-offset:2px;white-space:nowrap}
 #pedtab .pdis{margin:14px 2px 0;font-size:.8rem;color:#b91c1c;background:#fef2f2;border:1px solid #fecaca;border-radius:8px;padding:8px 11px;line-height:1.5}
 #pedtab .cfoot{margin-top:20px;font-size:.8rem;color:#64748b;text-align:center;border-top:1px solid #e2e8f0;padding-top:12px}
+#pedtab .pvsel{width:100%;margin:10px 0 0;padding:7px 9px;border:1.5px solid #0f766e;border-radius:9px;background:#f0fdfa;color:#0f172a;font-weight:700;font-size:.84rem;cursor:pointer;-webkit-appearance:auto;appearance:auto}
+#pedtab .pvsel:focus{outline:2px solid #14b8a6;outline-offset:1px}
 html.dark #pedtab .pbar label{color:var(--ink)}
 html.dark #pedtab #pds{background:var(--card);color:var(--ink);border-color:var(--line)}
 html.dark #pedtab .punit,html.dark #pedtab .phint{color:var(--muted)}
 html.dark #pedtab .pquick .pwbtn{background:#12251f;border-color:#0f766e;color:#5eead4}
 html.dark #pedtab .pquick .pwbtn:hover{background:#0f766e;color:#fff}
+html.dark #pedtab .pvsel{background:#12251f;color:#5eead4;border-color:#0f766e}
 html.dark #pedtab .pcard{background:var(--card);border-color:var(--line)}
 html.dark #pedtab .pchead b{color:var(--ink)}
 html.dark #pedtab .pcind{color:var(--muted)}
@@ -468,24 +471,31 @@ html.dark .asrc b,html.dark .asrc a{color:#5eead4}
 
 </style>
 <style id="pv-watercolor">
-/* Fond aquarelle turquoise/orange v3 (17/11/2026) — suit le bouton thème (html.dark). Ne pas supprimer. */
+/* Fond aquarelle turquoise/orange v4 (encore plus vive) (17/11/2026) — suit le bouton thème (html.dark). Ne pas supprimer. */
 html{background:#f2fbf9}
 body{background:transparent !important}
 body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:
-radial-gradient(62rem 42rem at 6% -8%,rgba(45,212,191,.60),rgba(45,212,191,0) 64%),
-radial-gradient(48rem 36rem at 106% 0%,rgba(255,159,64,.55),rgba(255,159,64,0) 60%),
-radial-gradient(56rem 42rem at 98% 88%,rgba(45,212,191,.42),rgba(45,212,191,0) 62%),
-radial-gradient(42rem 32rem at -6% 96%,rgba(255,159,64,.36),rgba(255,159,64,0) 58%),
-radial-gradient(36rem 26rem at 50% 42%,rgba(255,255,255,.65),rgba(255,255,255,0) 72%),
-linear-gradient(155deg,#ffffff 0%,#edfaf7 40%,#fff5e9 76%,#fdf0e0 100%)}
+radial-gradient(62rem 42rem at 6% -8%,rgba(45,212,191,.82),rgba(45,212,191,0) 64%),
+radial-gradient(48rem 36rem at 106% 0%,rgba(255,159,64,.75),rgba(255,159,64,0) 60%),
+radial-gradient(56rem 42rem at 98% 88%,rgba(45,212,191,.58),rgba(45,212,191,0) 62%),
+radial-gradient(42rem 32rem at -6% 96%,rgba(255,159,64,.50),rgba(255,159,64,0) 58%),
+radial-gradient(36rem 26rem at 50% 42%,rgba(255,255,255,.55),rgba(255,255,255,0) 72%),
+linear-gradient(155deg,#ffffff 0%,#e6faf5 40%,#fff2e0 76%,#fcead2 100%)}
 html.dark{background:#0a1320}
 html.dark body::before{background:
-radial-gradient(62rem 42rem at 6% -8%,rgba(45,212,191,.25),rgba(45,212,191,0) 64%),
-radial-gradient(48rem 36rem at 106% 0%,rgba(251,146,60,.16),rgba(251,146,60,0) 60%),
-radial-gradient(56rem 42rem at 98% 88%,rgba(45,212,191,.19),rgba(45,212,191,0) 62%),
-radial-gradient(42rem 32rem at -6% 96%,rgba(251,146,60,.12),rgba(251,146,60,0) 58%),
+radial-gradient(62rem 42rem at 6% -8%,rgba(45,212,191,.32),rgba(45,212,191,0) 64%),
+radial-gradient(48rem 36rem at 106% 0%,rgba(251,146,60,.20),rgba(251,146,60,0) 60%),
+radial-gradient(56rem 42rem at 98% 88%,rgba(45,212,191,.24),rgba(45,212,191,0) 62%),
+radial-gradient(42rem 32rem at -6% 96%,rgba(251,146,60,.15),rgba(251,146,60,0) 58%),
 linear-gradient(155deg,#101d2b 0%,#0a1320 45%,#181412 100%)}
 @media print{html,body{background:#fff !important}body::before{content:none}}
+
+/* Bandeau aux couleurs de l'aquarelle */
+header{background:linear-gradient(135deg,#0d9488 0%,#2dd4bf 46%,#ff9f40 100%) !important;text-shadow:0 1px 2px rgba(0,0,0,.18)}
+header::before{background:radial-gradient(720px 280px at 88% -50%,rgba(255,159,64,.38),transparent 60%),radial-gradient(560px 240px at -8% 115%,rgba(45,212,191,.34),transparent 60%) !important}
+html.dark header{background:linear-gradient(130deg,#0b3f35 0%,#0d5747 52%,#7a4a14 125%) !important}
+html.dark header::before{background:radial-gradient(720px 280px at 88% -50%,rgba(255,159,64,.18),transparent 60%),radial-gradient(560px 240px at -8% 115%,rgba(45,212,191,.16),transparent 60%) !important}
+@media print{header{background:#fff !important;text-shadow:none !important}}
 </style>
 </head>
 <body>
@@ -1166,7 +1176,7 @@ const PEDI = [
 {"d":"Amoxicilline","ind":"Sinusite maxillaire aiguë de l'enfant (non dentaire)","mg":[40,40],"f":2,"cap":3000,"capTxt":"3 g/jour","pos":"<b>40 mg/kg/prise</b> ×2/jour (soit 80 mg/kg/jour) pendant <b>10 jours</b>","n":"Sinusite maxillaire non liée à une origine dentaire. Pas d'AINS en 1ʳᵉ intention chez l'enfant (paracétamol d'abord ; risque accru d'infections invasives à SGA si varicelle). Sinusites ethmoïdale/sphénoïdale/frontale compliquées : avis spécialisé en urgence.","src":[["HAS — Fiche mémo Sinusites de l'enfant (maj mai 2025, PDF ouvert)","https://www.has-sante.fr/upload/docs/application/pdf/2021-08/fiche_memo_sinusite_enfant_durees_antibiotherapies.pdf"]]},
 {"d":"Cefpodoxime proxétil","ind":"Sinusite maxillaire aiguë de l'enfant — allergie documentée à la pénicilline","mg":[4,4],"f":2,"cap":400,"capTxt":"400 mg/jour","pos":"<b>4 mg/kg/prise</b> ×2/jour (soit 8 mg/kg/jour) pendant <b>10 jours</b>","n":"Sans contre-indication aux céphalosporines. Même dose dans la sinusite maxillaire d'origine dentaire (en relais de l'amoxicilline-acide clavulanique).","src":[["HAS — Fiche mémo Sinusites de l'enfant (maj mai 2025, PDF ouvert)","https://www.has-sante.fr/upload/docs/application/pdf/2021-08/fiche_memo_sinusite_enfant_durees_antibiotherapies.pdf"]]},
 {"d":"Pristinamycine","ind":"Sinusite maxillaire aiguë de l'enfant — contre-indication aux bêta-lactamines","mg":[25,25],"f":2,"cap":2000,"capTxt":"2 g/jour","pos":"<b>25 mg/kg/prise</b> ×2/jour (soit 50 mg/kg/jour) pendant <b>10 jours</b>","n":"Uniquement à partir de <b>6 ans</b> (prise de comprimé déconseillée avant — risque de fausse route ; pas d'autre présentation adaptée au jeune enfant).","src":[["HAS — Fiche mémo Sinusites de l'enfant (maj mai 2025, PDF ouvert)","https://www.has-sante.fr/upload/docs/application/pdf/2021-08/fiche_memo_sinusite_enfant_durees_antibiotherapies.pdf"]]},
-{"d":"Amoxicilline + acide clavulanique","ind":"Impétigo étendu/grave de l'enfant (voie générale)","mg":[80,80],"f":1,"cap":3000,"capTxt":"3 g/jour (dose exprimée en amoxicilline) — dose journalière","pos":"<b>80 mg/kg/jour</b> (dose exprimée en amoxicilline), sans dépasser 3 g/jour, pendant <b>7 jours</b>","n":"Dose JOURNALIÈRE (mg × poids avec f=1 donne le total/jour ; répartition en prises selon le RCP de la spécialité délivrée). Réservé aux formes graves (> 2 % surface, > 6 sites, extension rapide, ecthyma) ; impétigo localisé = soins locaux + mupirocine 5 jours, PAS d'antibiothérapie générale ; ne pas associer le topique à la voie générale. Éviction de collectivité 3 jours si lésions non protégeables.","src":[["HAS — Choix et durées d'antibiothérapies : impétigo de l'adulte et de l'enfant (page ouverte, maj 13/05/2025)","https://www.has-sante.fr/jcms/p_3282449/fr/choix-et-durees-d-antibiotherapies-prise-en-charge-de-l-impetigo-de-l-adulte-et-de-l-enfant"]]},
+{"d":"Amoxicilline-ac. clavulanique","ind":"Impétigo étendu/grave de l'enfant (voie générale)","mg":[80,80],"f":1,"cap":3000,"capTxt":"3 g/jour (dose exprimée en amoxicilline) — dose journalière","pos":"<b>80 mg/kg/jour</b> (dose exprimée en amoxicilline), sans dépasser 3 g/jour, pendant <b>7 jours</b>","n":"Dose JOURNALIÈRE (mg × poids avec f=1 donne le total/jour ; répartition en prises selon le RCP de la spécialité délivrée). Réservé aux formes graves (> 2 % surface, > 6 sites, extension rapide, ecthyma) ; impétigo localisé = soins locaux + mupirocine 5 jours, PAS d'antibiothérapie générale ; ne pas associer le topique à la voie générale. Éviction de collectivité 3 jours si lésions non protégeables.","src":[["HAS — Choix et durées d'antibiothérapies : impétigo de l'adulte et de l'enfant (page ouverte, maj 13/05/2025)","https://www.has-sante.fr/jcms/p_3282449/fr/choix-et-durees-d-antibiotherapies-prise-en-charge-de-l-impetigo-de-l-adulte-et-de-l-enfant"]]},
 {"d":"Ivermectine","ind":"Gale sarcoptique commune (gale)","mg":[0.2,0.2],"f":1,"pos":"<b>0,2 mg/kg</b> (200 µg/kg) en <b>1 prise unique</b>, à jeun avec de l'eau (pas de nourriture 2 h avant/après)","n":"Sécurité non établie < 15 kg. Comprimés écrasés chez l'enfant de moins de 6 ans. 2ᵉ dose uniquement si nouvelles lésions spécifiques ou examen parasitologique positif, <b>2 semaines</b> après la 1ʳᵉ (jamais avant). Guérison définitive estimée à 4 semaines — un prurit persistant ne justifie pas un re-traitement avant. Formes profuses/croûteuses : 2ᵉ dose et/ou topique à 8-15 jours.","src":[["RCP STROMECTOL 3 mg — ANSM (ecodex, ouvert)","https://agence-prd.ansm.sante.fr/php/ecodex/rcp/R0214575.htm"]]},
 {d:"Racecadotril", ind:"Diarrhée aiguë — complément de la réhydratation", mg:[1.5,1.5], f:3,
  pos:"<b>1,5 mg/kg/prise</b><br>× 3 prises/j",
@@ -1181,6 +1191,8 @@ function pdfmt(x){
   return String(Math.round(x));
 }
 function pdset(kg){ document.getElementById("pds").value = String(kg); pdgo(); }
+var pdSel = {};
+function pdshort(s){ s = (s||"").replace(/\s*\(.*$/, "").replace(/\s*—.*$/, "").replace(/\s*de l'enfant\S*$/i, "").trim(); return s || "Indication"; }
 function pdgo(){
   const grid = document.getElementById("pdgrid");
   const raw0 = (document.getElementById("pds").value || "").replace(/[\s\u00A0\u202F\u2009]/g, "");
@@ -1192,7 +1204,12 @@ function pdgo(){
   const badge = document.getElementById("pdok");
   if (badge) badge.textContent = ok ? "✓ " + pdfmt(w).replace(".", ",") + " kg" : "saisie invalide";
   let h = "<div class='pgrid'>";
-  PEDI.forEach(function(e){
+  const pdg = {}, pdorder = [];
+  PEDI.forEach(function(e, k){ if (!pdg[e.d]) { pdg[e.d] = []; pdorder.push(e.d); } pdg[e.d].push(k); });
+  pdorder.forEach(function(name){
+    const list = pdg[name];
+    const ks = (typeof pdSel[name] === "number" && list.indexOf(pdSel[name]) >= 0) ? pdSel[name] : list[0];
+    const e = PEDI[ks];
     let calc = "<span class='pdim'>saisir un poids ci-dessus</span>";
     if (ok) {
       const lo = e.mg[0]*w, hi = e.mg[1]*w;
@@ -1202,7 +1219,13 @@ function pdgo(){
       calc = "<span><span class='pdlab'>Par prise</span><span class='pval'>" + prise + " mg</span></span><span><span class='pdlab'>Par jour · " + e.f + " prise" + (e.f > 1 ? "s" : "") + "</span><span class='pval'>" + jour + " mg</span></span>";
       if (e.cap && jHi > e.cap) calc += "<div class='pcap'>⚠ Plafonné à " + e.capTxt + "</div>";
     }
+    let sel = "";
+    if (list.length > 1) {
+      sel = "<select class='pvsel' data-n=\"" + name.replace(/"/g, "&quot;") + "\" onchange='pdSel[this.dataset.n] = Number(this.value); pdgo();'>"
+        + list.map(function(k){ return "<option value='" + k + "'" + (k === ks ? " selected" : "") + ">" + pdshort(PEDI[k].ind) + "</option>"; }).join("") + "</select>";
+    }
     h += "<div class='pcard'><div class='pchead'><b>" + e.d + "</b><a class='psrc' href='" + e.src[0][1] + "' target='_blank' rel='noopener'>[" + e.src[0][0] + "]</a></div>"
+      + sel
       + "<div class='pcind'>" + e.ind + "</div>"
       + "<div class='pcpos'><b>Dose :</b> " + e.pos + "</div>"
       + "<div class='pdose'>" + calc + "</div>"
