@@ -1,0 +1,26 @@
+{
+ "revues": [
+  {
+   "ty": "Officine",
+   "n": 2,
+   "des": "Outils numériques pilotés par les pharmaciens dans l'asthme : revue systématique sur l'observance et le contrôle",
+   "tag": "asthme · application · pharmacien · observance · revue",
+   "res": "Revue systématique (Journal of the American Pharmacists Association, février 2026) : les interventions numériques menées par des pharmaciens (applications, rappels, suivi connecté) améliorent l'observance et le contrôle de l'asthme, avec des effets aussi sur l'utilisation des ressources ; le couplage pharmacien + outil numérique dépasse chacun pris isolément.",
+   "off": "Pour vos asthmatiques qui oublient : une simple application de rappel + une revue de technique d'inhalation à l'officine changent le contrôle de la maladie.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "Économie de la Santé",
+   "dt": "2026-02",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.1016/j.japh.2026.103054"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/41724433"
+    ]
+   ]
+  }
+ ]
+}
