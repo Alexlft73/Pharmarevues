@@ -1,0 +1,26 @@
+{
+ "revues": [
+  {
+   "ty": "Économie",
+   "n": 1,
+   "des": "Application mobile low-code pilotée par un pharmacien : sécurité et efficience de l'inventaire hospitalier",
+   "tag": "low-code · inventaire · pharmacie hospitalière · application mobile",
+   "res": "Étude prospective (Frontiers in Public Health, juillet 2026) : une application de gestion d'inventaire développée en low-code par l'équipe pharmaceutique réduit erreurs et temps de travail en pharmacie hospitalière — illustration de l'apport des outils numériques conçus par les pharmaciens eux-mêmes, avec évaluation rigoureuse.",
+   "off": "Sans portée officinale directe : un exemple de transformation numérique pharmaceutique à suivre pour les pharmacies qui digitalisent leurs achats.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "Économie de la Santé",
+   "dt": "2026-07",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.3389/fpubh.2026.1844863"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42528809"
+    ]
+   ]
+  }
+ ]
+}
