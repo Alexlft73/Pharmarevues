@@ -1,0 +1,26 @@
+{
+ "revues": [
+  {
+   "ty": "Officine",
+   "n": 3,
+   "des": "Femme épileptique en âge de procréer : les pharmaciens communautaires sont-ils prêts pour le conseil préconceptionnel ?",
+   "tag": "épilepsie · préconceptionnel · acide folique · tératogénicité · pharmacien",
+   "res": "Étude transversale (juillet 2026) comparant pharmaciens communautaires et pharmaciens certifiés périnatalité : les pharmaciens d'officine sont accessibles mais se sentent peu préparés au conseil préconceptionnel des femmes épileptiques (acide folique, tératogénicité des antiépileptiques, traitement substitutif adapté) — auto-efficacité et profondeur de conseil inférieures à leurs homologues certifiés. Un déficit de formation documenté.",
+   "off": "Message fort pour la profession : toute femme épileptique en âge de procréer sous antiépileptique doit recevoir acide folique et conseil de grossesse planifiée — le pharmacien a sa place, à condition de se former.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "SNC & psychiatrie",
+   "dt": "2026-07",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.1016/j.yebeh.2026.111175"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42398363"
+    ]
+   ]
+  }
+ ]
+}
