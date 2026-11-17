@@ -1,0 +1,48 @@
+{
+ "revues": [
+  {
+   "ty": "Médicament",
+   "n": 3,
+   "des": "Traitements locaux du psoriasis et de l'eczéma : des cibles pharmacologiques aux méta-analyses (revue Thérapie 2026)",
+   "tag": "psoriasis · dermatite atopique · topique · corticoïde · inhibiteur PDE4 · méta-analyse",
+   "res": "Revue (Thérapie, oct. 2026) : l'arsenal topique du psoriasis et de la dermatite atopique s'est élargi au-delà des dermocorticoïdes et analogues de la vitamine D — inhibiteurs de PDE4, de JAK, modulateurs de l'IL-33 etc. — avec pour chaque classe une revue des cibles et des méta-analyses d'efficacité ; le topique reste la pierre angulaire des formes légères à modérées et de l'enfant.",
+   "off": "Repère officinal utile : du nouveau non stéroïdien existe en topique (crisorgérol, tacrolimus...) — conseils d'application et rotation avec les corticoïdes à bien expliquer.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "Dermatologie",
+   "dt": "2026-10",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.1016/j.therap.2026.09.046"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42988660"
+    ]
+   ]
+  },
+  {
+   "ty": "Vaccin",
+   "n": 3,
+   "des": "Rappel COVID le matin ou l'après-midi ? RCT sur 4e dose (ARNm et protéine) : pas d'effet clair de l'heure",
+   "tag": "vaccin COVID · 4e dose · ARNm · Novavax · heure de vaccination · RCT",
+   "res": "Essai randomisé (Vaccine, avril 2026) : l'heure de vaccination (matin vs après-midi) d'une quatrième dose — ARNm bivalent Moderna ou vaccin à protéine Novavax — ne modifie pas de façon nette la réponse anticorps chez l'adulte ; cohérent avec les travaux récents montrant que, hors groupes fragiles, l'heure de vaccination n'est pas un levier d'immunogénicité.",
+   "off": "Conseil stable : l'heure de la piqûre ne change pas la protection ; ce qui compte est de faire le rappel, pas de choisir le créneau.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "Chronopharmacologie",
+   "dt": "2026-04",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.1016/j.vaccine.2026.128574"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/41967187"
+    ]
+   ]
+  }
+ ]
+}
