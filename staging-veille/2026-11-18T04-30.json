@@ -1,0 +1,26 @@
+{
+ "revues": [
+  {
+   "ty": "Officine",
+   "n": 2,
+   "des": "Anamnèse clinique devant une crise d'épilepsie : revue pratique alignée sur la classification ILAE 2025",
+   "tag": "anamnèse · crise · ILAE 2025 · diagnostic",
+   "res": "Revue (Epileptic Disorders, oct. 2026) : malgré l'EEG et l'imagerie, l'anamnèse soignée reste la pierre angulaire du diagnostic et de la classification des crises, intégrée ici à la classification ILAE 2025 mise à jour — description des événements, circonstances, facteurs déclenchant, antécédents. Utile à tout professionnel qui interroge un patient après un épisode.",
+   "off": "Quand un patient raconte « un malaise », posez les questions simples : durée, perte de contact, morsure de langue, confusion post-critique — ces éléments guident son médecin.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "SNC & psychiatrie",
+   "dt": "2026-10",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.1002/epd2.70368"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42858167"
+    ]
+   ]
+  }
+ ]
+}
