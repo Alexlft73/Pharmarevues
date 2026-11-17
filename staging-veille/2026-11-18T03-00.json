@@ -1,0 +1,26 @@
+{
+ "revues": [
+  {
+   "ty": "Médicament",
+   "n": 2,
+   "des": "Dermatoses qui flambe pendant la grossesse et le post-partum : classification, épidémiologie et mécanismes (CME partie 1)",
+   "tag": "grossesse · eczéma · psoriasis · acné · mélasma · hormon",
+   "res": "Revue pédagogique (Journal of the American Academy of Dermatology, février 2026) : la grossesse modifie immunité, hormones, vascularisation et barrière cutanée, exacerbant eczéma, psoriasis, acné ou mélasma chez certaines femmes ; première partie d'une revue CME sur la classification des dermatoses de grossesse et le post-partum — socle pour distinguer les éruptions bénignes des dermatoses spécifiques graves.",
+   "off": "En officine, toute éruption chez une femme enceinte qui démarre une automédication topique doit être orientée vers le médecin — certaines dermatoses de grossesse menacent le fœtus.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "Dermatologie",
+   "dt": "2026-02",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.1016/j.jaad.2026.01.089"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/41707708"
+    ]
+   ]
+  }
+ ]
+}
