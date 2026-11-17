@@ -1,0 +1,48 @@
+{
+ "revues": [
+  {
+   "ty": "Médicament",
+   "n": 3,
+   "des": "Chrono-immunothérapie : la rétractation d'un essai phare oblige à réévaluer l'effet de l'heure de perfusion",
+   "tag": "immunothérapie · rétractation · heure de perfusion · anticorps anti-PD-1",
+   "res": "Un essai randomisé souvent cité sur le moment de la perfusion des inhibiteurs de point de contrôle immunitaire a été rétracté (Cancer Discovery, sept. 2026) : ce premier essai randomisé sur la question était discrédité. Les chercheurs des deux camps recalculent ce que les preuves survivantes soutiennent réellement — l'hypothèse circadienne reste ouverte, la preuve randomisée manque.",
+   "off": "À dire simplement : les études sur l'heure de perfusion d'immunothérapie restent contradictoires, certaines ont été rétractées — aucune heure officielle ne s'impose aujourd'hui.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "Chronopharmacologie",
+   "dt": "2026-09",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.1158/2159-8290.cd-nw2026-0076"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42423479"
+    ]
+   ]
+  },
+  {
+   "ty": "Officine",
+   "n": 3,
+   "des": "Dépistage de la maladie rénale chronique en pharmacie australienne : faisabilité et population touchée (essai CKD-SAFE QUM)",
+   "tag": "MRC · dépistage officinal · pharmacien · Australie · faisabilité",
+   "res": "Analyse de faisabilité (Internal Medicine Journal, nov. 2026) de l'essai CKD-SAFE QUM : dépistage de la maladie rénale chronique en pharmacie communautaire australienne chez les 35-74 ans avec au moins un facteur de risque — le modèle pharmacien identifie une population à risque notable, faisabilité confirmée pour un dépistage en officine couplé à l'optimisation des médicaments.",
+   "off": "Une piste concrète pour l'officine française : repérer les patients à risque rénal (diabétiques, hypertendus, sous AINS au long cours) et rappeler la créatinine annuelle au médecin.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "Néphrologie",
+   "dt": "2026-11",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.1111/imj.70692"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42970048"
+    ]
+   ]
+  }
+ ]
+}
