@@ -1,0 +1,22 @@
+{
+ "revues": [
+  {
+   "ty": "Médicament",
+   "dom": "Nutrition & Compléments",
+   "n": 2,
+   "dt": "2026-07",
+   "des": "Interactions plantes-médicaments : revue des preuves cliniques mondiales sur les plantes médicinales les plus utilisées",
+   "tag": "plantes médicinales · interactions · phytothérapie · revue systématique 2026",
+   "res": "Revue systématique des preuves cliniques d'interactions plantes-médicaments (Journal of Ethnopharmacology, epub 21/07/2026, PMID 42480877) sur les plantes médicinales largement utilisées (contexte Équateur, preuves mondiales) : recensement des interactions cliniquement documentées entre phytothérapie et médicaments conventionnels. Pertinent pour le comptoir : les patients parlent rarement spontanément de leurs plantes. En officine : toujours demander « prenez-vous des plantes, tisanes, compléments ? » — millepertuis et anticoagulants, ginseng et glycémie restent les pièges classiques.",
+   "src": [
+    [
+     "PubMed 42480877",
+     "https://pubmed.ncbi.nlm.nih.gov/42480877/"
+    ]
+   ],
+   "off": "Les plantes ne sont pas inoffensives : millepertuis, ginseng ou ail peuvent interagir avec votre traitement — signalez toujours vos tisanes et compléments au pharmacien.",
+   "coi": "À vérifier (revue académique)",
+   "fin": "Financement non lisible dans les sources consultées."
+  }
+ ]
+}
