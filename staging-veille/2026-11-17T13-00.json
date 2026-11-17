@@ -1,0 +1,27 @@
+{
+ "revues": [
+  {
+   "ty": "Médicament",
+   "dom": "Dermatologie & peau",
+   "n": 2,
+   "dt": "2026-03",
+   "des": "Acné : individualiser la dose d'isotrétinoïne — les doses faibles quotidiennes font aussi bien à 24 semaines, avec une meilleure tolérance (revue systématique et méta-analyse)",
+   "tag": "isotrétinoïne · acné · dose faible · tolérabilité · SR/MA",
+   "res": "Revue systématique et méta-analyse (Frontiers in Medicine, 09/03/2026, doi 10.3389/fmed.2026.1771320) comparant les doses d'isotrétinoïne dans l'acné : à 24 semaines, les doses faibles quotidiennes ont une efficacité comparable aux doses conventionnelles avec une meilleure tolérance (GRADE évalué, résultats de niveau modéré selon les auteurs). À distinguer de l'entrée rechute/nouvelle cure (2025-04) déjà en base : ici la stratégique de dose. En officine : sécheresse cutanéo-muqueuse et photo-sensibilité restent le quotidien du patient sous isotrétinoïne — l'effort de tolérance passe par les émollients et le lever de contraception.",
+   "src": [
+    [
+     "Frontiers in Medicine (article)",
+     "https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2026.1771320/full"
+    ],
+    [
+     "PMC (texte intégral)",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC13006244/"
+    ]
+   ],
+   "off": "Sous isotrétinoïne : crème hydratante et lèvres au baume chaque jour, pas d'épilation ni d'exposition solaire intense, et contraception rigoureuse chez la femme.",
+   "coi": "À vérifier (méta-analyse académique)",
+   "fin": "Financement non lisible dans les sources consultées."
+  }
+ ],
+ "recos": []
+}
