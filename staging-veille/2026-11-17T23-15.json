@@ -1,0 +1,48 @@
+{
+ "revues": [
+  {
+   "ty": "Médicament",
+   "n": 3,
+   "des": "Immunothérapie et heure de perfusion : la méta-analyse JAMA Network Open de 2026 lève le doute",
+   "tag": "immunothérapie · heure de perfusion · méta-analyse · cancers avancés",
+   "res": "Revue systématique et méta-analyse (JAMA Network Open, mai 2026) sur l'association entre l'heure d'administration des inhibiteurs de point de contrôle et les résultats oncologiques dans les tumeurs solides avancées : les données observationnelles regroupées suggèrent une association entre perfusion matinale et survie, mais les auteurs insistent sur le risque de biais de confusion et l'absence d'essai randomisé validant un changement de pratique.",
+   "off": "Information de veille : la piste « matin meilleur » reste observationnelle ; ne pas promettre de bénéfice à changer l'heure d'hôpital de jour.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "Chronopharmacologie",
+   "dt": "2026-05",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.1001/jamanetworkopen.2026.10815"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42084869"
+    ]
+   ]
+  },
+  {
+   "ty": "Médicament",
+   "n": 2,
+   "des": "Heure de perfusion des anti-PD-1 : revue clinique des données 2026 (Frontiers in Immunology)",
+   "tag": "anti-PD-1 · heure · revue clinique · toxicité",
+   "res": "Revue clinique (mai 2026) restreinte aux inhibiteurs de point de contrôle (anti-CTLA-4, anti-PD-1, anti-PD-L1, anti-LAG-3) : plusieurs facteurs influencent efficacité et toxicité, et l'horaire circadien d'administration est activement étudié ; les preuves restent hétérogènes, majoritairement rétrospectives, sans recommandation posologique fondée sur l'heure à ce jour.",
+   "off": "Un exemple concret du débat « heure de perfusion » en cancérologie — utile pour répondre aux patients qui demandent s'ils doivent changer de créneau d'hôpital de jour.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "Chronopharmacologie",
+   "dt": "2026-05",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.3389/fimmu.2026.1837812"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42292486"
+    ]
+   ]
+  }
+ ]
+}
