@@ -1,0 +1,48 @@
+{
+ "revues": [
+  {
+   "ty": "Médicament",
+   "n": 3,
+   "des": "Antihypertenseurs le matin ou au coucher ? Méta-analyse en réseau 2026 : neutralité des grands essais",
+   "tag": "antihypertenseur · chronothérapie · méta-analyse en réseau · événements CV",
+   "res": "Revue systématique et méta-analyse en réseau exploratoire (sept. 2026) comparant les stratégies d'horaire des antihypertenseurs sur les événements cardiovasculaires : les anciens essais de chronothérapie suggéraient un bénéfice important de la prise au coucher, tandis que les essais randomisés contemporains (dont le grand essai espagnol Time) montrent des résultats neutres ; aucune stratégie horaire ne domine clairement.",
+   "off": "Message officinal simple et stable : l'essentiel est la prise régulière tous les jours à la même heure, pas l'heure elle-même.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "Chronopharmacologie",
+   "dt": "2026-09",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.4103/aam.aam_611_26"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42784004"
+    ]
+   ]
+  },
+  {
+   "ty": "Médicament",
+   "n": 3,
+   "des": "Fibrillation auriculaire et MRC avancée sans dialyse : apixaban vs warfarine vs pas d'anticoagulant (cohorte 2026)",
+   "tag": "apixaban · warfarine · FA · MRC avancée · hémorragie",
+   "res": "Étude de cohorte rétrospective (JAMA Network Open, sept. 2026) : chez les patients en fibrillation auriculaire avec MRC avancée non dialysée, l'apixaban est comparé à la warfarine et à l'absence d'anticoagulant pour la balance efficacité/sécurité — données observationnelles importantes sur une population où l'anticoagulation reste une décision délicate.",
+   "off": "Question d'officine fréquente (« il a les reins fatigués, l'anticoagulant ? ») : la décision appartient au médecin, mais l'apixaban est le plus étudié dans ce contexte — jamais d'arrêt spontané.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "Néphrologie",
+   "dt": "2026-09",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.1001/jamanetworkopen.2026.32225"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42696280"
+    ]
+   ]
+  }
+ ]
+}
