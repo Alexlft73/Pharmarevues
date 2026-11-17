@@ -1,0 +1,410 @@
+{
+ "revues": [
+  {
+   "ty": "Complément",
+   "dom": "Nutrition & Compléments",
+   "n": 2,
+   "dt": "2026-09",
+   "des": "Vitamine D et arthrodèse lombaire : statut et supplémentation à l'épreuve de la fusion (revue systématique + méta)",
+   "tag": "vitamine D · arthrodèse lombaire · fusion · supplementation",
+   "res": "Revue systématique et méta-analyse (2026) sur le statut en vitamine D et la supplémentation dans la fusion vertébrale lombaire : carence associée à de moins bons taux de consolidation dans plusieurs études observationnelles, mais les données interventionnelles (supplémentation périopératoire) restent limitées — un paramètre à corriger, pas un traitement miracle.",
+   "src": [
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42675950"
+    ]
+   ],
+   "off": "Patient candidat à une chirurgie rachidienne : un dosage de vitamine D avant l'intervention est discutable, et la supplémentation en cas de carence est simple — à signaler au chirurgien/médecin traitant.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Complément",
+   "dom": "Nutrition & Compléments",
+   "n": 2,
+   "dt": "2026-04",
+   "des": "Carence en vitamine D et facteurs de risque cardiovasculaire dans la région MENA (synthèse 2026)",
+   "tag": "vitamine D · risque cardiovasculaire · MENA · carence",
+   "res": "Synthèse (2026) des associations entre carence en vitamine D et facteurs de risque cardiovasculaire dans les populations du Moyen-Orient et d'Afrique du Nord : la carence y est très répandue et corrélée au syndrome métabolique, à l'hypertension et aux dyslipidémies — des associations qui, une fois encore, ne prouvent pas que supplémenter protège le cœur (les grands essais restent décevants).",
+   "src": [
+    [
+     "DOI — Journal of clinical medicine",
+     "https://doi.org/10.3390/jcm15083158"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42074959"
+    ]
+   ],
+   "off": "La vitamine D se corrige si carence (ostéoporose, chute, rachitisme) ; la supplémenter « pour le cœur » n'est pas démontré — un point de conseil honnête au comptoir.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Complément",
+   "dom": "Nutrition & Compléments",
+   "n": 3,
+   "dt": "2025-10",
+   "des": "Vitamine D en début et milieu de grossesse et prééclampsie : revue systématique et méta-analyse",
+   "tag": "vitamine D · grossesse · prééclampsie · méta-analyse",
+   "res": "Revue systématique et méta-analyse (2025) des taux de vitamine D en début et milieu de grossesse et du risque de prééclampsie : les taux bas sont associés à un risque accru, mais les essais de supplémentation n'ont pas démontré de prévention nette — l'association est réelle, la causalité incertaine, et le dépistage de la carence chez la femme enceinte reste la seule pratique claire.",
+   "src": [
+    [
+     "DOI — Frontiers in medicine",
+     "https://doi.org/10.3389/fmed.2025.1535359"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/41210876"
+    ]
+   ],
+   "off": "Femme enceinte : la vitamine D fait partie du suivi standard ; les dosages systématiques ne se discutent qu'avec la maternité — pas d'automédication à forte dose.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Complément",
+   "dom": "Nutrition & Compléments",
+   "n": 2,
+   "dt": "2026-05",
+   "des": "Vitamine D et arthroplastie totale du genou : la supplémentation améliore-t-elle les résultats ? (revue systématique)",
+   "tag": "vitamine D · prothèse genou · PTG · résultats",
+   "res": "Revue systématique (2026) de la supplémentation en vitamine D sur les résultats d'arthroplastie totale du genou (douleur, fonction, consolidation des implants) : les patients carencés ont de moins bons scores fonctionnels et l'optimisation préopératoire est plausible, mais l'effet propre de la supplémentation reste peu documenté — une mesure de bon sens à corriger sans en attendre un miracle.",
+   "src": [
+    [
+     "DOI — Orthopaedic journal of sports medicine",
+     "https://doi.org/10.1177/23259671261432670"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42212200"
+    ]
+   ],
+   "off": "Avant une prothèse de genou : vérifier la vitamine D avec le médecin est un geste simple et sans risque — le reste (poids, rééducation) pèse bien plus.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Complément",
+   "dom": "Nutrition & Compléments",
+   "n": 2,
+   "dt": "2025-09",
+   "des": "Psyllium (Plantago ovata) : propriétés de sa fibre, connaissances actuelles et usages",
+   "tag": "psyllium · fibres · Plantago ovata · transit",
+   "res": "Revue (2025) des propriétés structurales et fonctionnelles de la fibre de tégument de psyllium : gélification avec forte rétention d'eau, effet régulateur du transit (constipation comme selles molles), tolérance digestive meilleure que les fibres fermentescibles, place dans le syndrome de l'intestin irritable et le contrôle glycémique — probablement la fibre la plus utile de l'officine.",
+   "src": [
+    [
+     "DOI — Comprehensive reviews in food science and food safety",
+     "https://doi.org/10.1111/1541-4337.70297"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/40985195"
+    ]
+   ],
+   "off": "Conseil de comptoir : le psyllium se prend avec un grand verre d'eau, à distance des autres médicaments (il ralentit leur absorption) — et l'effet se construit en quelques jours.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Médicament",
+   "dom": "Douleur & Migraine",
+   "n": 3,
+   "dt": "2026-07",
+   "des": "Gépants dans la migraine : efficacité et sécurité d'atogepant et rimegepant (revue narrative 2026)",
+   "tag": "gépants · atogepant · rimegepant · CGRP · migraine",
+   "res": "Revue narrative (2026) sur les gépants, inhibiteurs oraux du récepteur du CGRP : atogepant (prévention) et rimegepant (crise et prévention) réduisent les jours de migraine et les douleurs vs placebo, avec peu d'interactions cliniquement pertinentes et une tolérance dominée par des nausées légères — une classe qui change la vie de migraineux bien sélectionnés, sans signal de sécurité émergent à ce jour au-delà de la pharmacovigilance de routine.",
+   "src": [
+    [
+     "DOI — Journal of oral & facial pain and headache",
+     "https://doi.org/10.22514/jofph.2026.046"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42548099"
+    ]
+   ],
+   "off": "Point officinal : le rimegepant sublingual se prend à la demande (max 1/jour) ; avertir que l'association aux triptans ne se fait que sur avis médical, et vérifier les interactions (notamment inhibiteurs puissants du CYP3A4).",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Médicament",
+   "dom": "Douleur & Migraine",
+   "n": 3,
+   "dt": "2026-09",
+   "des": "Migraine épisodique : OTC vs nouveaux oraux — réseau de méta-analyse comparant AAS/paracétamol/caféine et ibuprofène aux gépants et lasmiditan",
+   "tag": "OTC · AAC · ibuprofène · lasmiditan · ubrogepant · rimegepant · NMA",
+   "res": "Méta-analyse en réseau (2026) d'essais randomisés comparant les traitements de crise de la migraine épisodique : l'association AAS + paracétamol + caféine et l'ibuprofène tiennent remarquablement la comparaison face aux nouveaux agents de prescription (lasmiditan, ubrogepant, rimegepant) sur la douleur à 2 h — les OTC restent des options de première ligne validées chez les patients bien sélectionnés.",
+   "src": [
+    [
+     "DOI — Frontiers in neurology",
+     "https://doi.org/10.3389/fneur.2026.1884713"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42812259"
+    ]
+   ],
+   "off": "En officine : commencer par un OTC bien dosé pris tôt dans la crise reste pertinent ; l'escalade vers triptans/gépants se justifie si échecs répétés ou migraine invalidante (à réévaluer avec le médecin).",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Alerte",
+   "dom": "Douleur & Migraine",
+   "n": 3,
+   "dt": "2026-03",
+   "des": "Atogepant : symptômes neurologiques et événements cérébro-vasculaires — série de cas",
+   "tag": "atogepant · neurologique · cérébro-vasculaire · cas · pharmacovigilance",
+   "res": "Série de cas (2026) rapportant des symptômes neurologiques et des événements cérébro-vasculaires survenus sous atogepant : démyélinisation, AVC ou événements ischémiques transitoires rapportés de façon rare et sans lien causal certain — un signal de pharmacovigilance à connaître et à déclarer, pas une contre-indication établie.",
+   "src": [
+    [
+     "DOI — Journal of clinical medicine",
+     "https://doi.org/10.3390/jcm15051930"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/41827347"
+    ]
+   ],
+   "off": "Patient sous atogepant qui décrit des symptômes neurologiques nouveaux (vision, faiblesse, troubles du langage) : orientation médicale immédiate et déclaration de pharmacovigilance — ne pas banaliser.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Médicament",
+   "dom": "Douleur & Migraine",
+   "n": 2,
+   "dt": "2025-12",
+   "des": "Atogepant vs rimegepant en prévention de la migraine : comparaison indirecte ajustée (MAIC) au Japon",
+   "tag": "atogepant · rimegepant · MAIC · prévention · Japon",
+   "res": "Comparaison croisée ajustée (MAIC, 2025) entre atogepant et rimegepant en prévention de la migraine chez des patients japonais : les deux gépants montrent des réductions significatives des jours de migraine mensuels, sans supériorité nette et tranchée entre eux — les différences se joueront sur la galénique, la fréquence de prise et la tolérance individuelle.",
+   "src": [
+    [
+     "DOI — Expert review of neurotherapeutics",
+     "https://doi.org/10.1080/14737175.2025.2599853"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/41410310"
+    ]
+   ],
+   "off": "Au comptoir : la prévention de la migraine se choisit avec le médecin ; une fois initiée, l'observance quotidienne (atogepant) vs alternée (rimegepant) est le nerf de la guerre — expliquer le schéma clairement.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Médicament",
+   "dom": "Douleur & Migraine",
+   "n": 2,
+   "dt": "2026-05",
+   "des": "Eskétamine en arthroplastie de hanche et de genou : efficacité et sécurité en périopératoire (revue systématique + méta)",
+   "tag": "eskétamine · arthroplastie · analgésie périopératoire · opioïdes",
+   "res": "Revue systématique et méta-analyse (2026) de l'eskétamine en adjonction lors des arthroplasties totales de hanche et de genou : réduction de la douleur postopératoire et de la consommation d'opioïdes, effets psychotomimétiques à surveiller — un adjuvant anesthésique qui trouve sa place dans les protocoles de récupération améliorée, hors contexte psychiatrique ambulatoire.",
+   "src": [
+    [
+     "DOI — Cureus",
+     "https://doi.org/10.7759/cureus.109496"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42182549"
+    ]
+   ],
+   "off": "Rien à délivrer en ville (usage anesthésique hospitalier) — mais utile pour comprendre les suites opératoires moins douloureuses décrites par les patients opérés.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Alerte",
+   "dom": "Psychiatrie",
+   "n": 3,
+   "dt": "2025-08",
+   "des": "Antidépresseurs et risque de saignement après extractions dentaires : revue systématique des preuves",
+   "tag": "antidépresseurs · IRS · saignement · extractions dentaires",
+   "res": "Revue systématique (2025) sur le risque hémorragique des antidépresseurs (notamment IRS) après extraction dentaire : les données suggèrent un sur-risque modeste et hétérogène, dépendant des associations (AINS, anticoagulants) — pas de quoi reporter un soin dentaire, mais de quoi informer le chirurgien-dentiste du traitement en cours.",
+   "src": [
+    [
+     "DOI — Journal of clinical medicine",
+     "https://doi.org/10.3390/jcm14176140"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/40943900"
+    ]
+   ],
+   "off": "Conseil simple : signaler tout antidépresseur au dentiste avant une extraction ; pas d'automédication par AINS autour du geste, et respecter les consignes locales (compression, glace) sans arrêter le traitement de soi-même.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Alerte",
+   "dom": "Seniors & polymédication",
+   "n": 2,
+   "dt": "2026-09",
+   "des": "Déprescription des benzodiazépines et apparentés chez le senior : tendances mondiales de la recherche (analyse bibliométrique)",
+   "tag": "benzodiazépines · Z-drugs · déprescription · seniors · bibliométrie",
+   "res": "Étude bibliométrique (2026) sur les tendances mondiales de la déprescription des benzodiazépines et Z-drugs chez les personnes âgées : la littérature explose, les essais d'intervention (rééducation, tapering progressif, implication du pharmacien) se multiplient — un mouvement de fond mondial autour d'un sur-risque chutes/cognition anciennement banalisé.",
+   "src": [
+    [
+     "DOI — Healthcare (Basel, Switzerland)",
+     "https://doi.org/10.3390/healthcare14172856"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42737013"
+    ]
+   ],
+   "off": "La déprescription BZD/Z-drug du senior est un chantier d'avenir pour l'officine : réduire très progressivement (jamais d'arrêt brutal), sur calendrier médical, en travaillant l'hygiène du sommeil en parallèle.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Alerte",
+   "dom": "Psychiatrie",
+   "n": 2,
+   "dt": "2025-10",
+   "des": "Z-drugs (Zolpidem, Zopiclone, Zaleplon) : abus et dépendance — recommandation clinique de l'Académie brésilienne de neurologie",
+   "tag": "Z-drugs · zolpidem · dépendance · guideline · Brazilian Academy of Neurology",
+   "res": "Guideline (2025) de l'Académie brésilienne de neurologie sur l'abus et la dépendance aux Z-drugs : diagnostics, signes d'alerte (escalade de dose, usage non médical, troubles du sommeil paradoxaux), principes de sevrage progressif et alternatives non pharmacologiques — la caution « plus sûre que les benzodiazépines » des Z-drugs continue de se déliter.",
+   "src": [
+    [
+     "DOI — Arquivos de neuro-psiquiatria",
+     "https://doi.org/10.1055/s-0045-1812323"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/41187937"
+    ]
+   ],
+   "off": "Question de comptoir résolue : le zolpidem n'est pas un somnifère anodin — usage le plus court possible, jamais de paliers de dose auto-décidés, et vigilance sur les comportements d'emmagasinage/d'escalade.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Médicament",
+   "dom": "Psychiatrie",
+   "n": 1,
+   "dt": "2026-08",
+   "des": "Sevrage des benzodiazépines chez le patient en surpoids : élimination plus longue, symptômes de sevrage prolongés",
+   "tag": "benzodiazépines · sevrage · surpoids · lipophilie · demi-vie",
+   "res": "Étude (2026) chez des patients en surpoids en désintoxication de benzodiazépines : les BZD lipophiles s'accumulant dans le tissu adipeux, l'élimination est plus lente et les symptômes de sevrage persistent plus longtemps dans la phase de faible concentration — la surveillance médicale doit être prolongée chez ces patients.",
+   "src": [
+    [
+     "DOI — Alpha psychiatry",
+     "https://doi.org/10.31083/ap51895"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42694906"
+    ]
+   ],
+   "off": "Chez un patient en surpoids qui se sèvre d'une benzodiazépine : prévenir que la phase difficile peut durer plus longtemps, ne pas interpréter une recrudescence tardive comme un échec, et maintenir le contact avec le médecin.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Officine",
+   "dom": "Pneumologie",
+   "n": 2,
+   "dt": "2026-11",
+   "des": "Score PIT : un instrument standardisé pour évaluer la technique d'inhalation, valable pour tous les dispositifs",
+   "tag": "technique d'inhalation · score PIT · validation · dispositifs",
+   "res": "Travail (2026) de développement et validation d'un score standardisé de technique d'inhalation « device-neutral » (Portsmouth Inhaler Technique Score) : contrairement aux checklists propres à chaque dispositif, l'outil permet de comparer et suivre la technique dans le temps, avec une bonne fiabilité inter-évaluateurs — un pas vers une évaluation de qualité homogène en pratique.",
+   "src": [
+    [
+     "DOI — Respiratory medicine",
+     "https://doi.org/10.1016/j.rmed.2026.109294"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/43025817"
+    ]
+   ],
+   "off": "Un score unique pour tous les dispositifs serait précieux en officine : montrer la technique à chaque renouvellement reste la règle d'or, quel que soit l'inhalateur.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Officine",
+   "dom": "Pneumologie",
+   "n": 2,
+   "dt": "2026-11",
+   "des": "Sifflement aigu de l'enfant : technique d'inhalation et facteurs associés à une connaissance adéquate (urgences pédiatriques)",
+   "tag": "inhalation · chambre d'inhalation · bronchiolite · urgences pédiatriques",
+   "res": "Étude (2026) sur la technique d'inhalation chez les enfants vus en urgences pour sifflement aigu : les chambres d'inhalation sont souvent mal utilisées (cric, âge, détresse), et la connaissance adéquate de la technique dépend de l'éducation antérieure des parents — un geste simple mais technique, qui se travaille à chaque consultation et à l'officine.",
+   "src": [
+    [
+     "DOI — Anales de pediatria",
+     "https://doi.org/10.1016/j.anpede.2026.504415"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42995138"
+    ]
+   ],
+   "off": "Prestation officinale utile : refaire démonter une chambre d'inhalation aux parents (assemblage, masque adapté, 5 respirations, tapoter) — la majorité des « traitements inefficaces » sont en fait des gestes ratés.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Officine",
+   "dom": "Pneumologie",
+   "n": 2,
+   "dt": "2026-08",
+   "des": "BPCO : phénotypes comportementaux combinant technique d'inhalation et observance (étude transversale)",
+   "tag": "BPCO · observance · technique · phénotypes comportementaux",
+   "res": "Étude transversale (2026) qui classe les patients BPCO selon leur technique d'inhalation ET leur observance combinées : la double déficience (mauvaise technique + mauvaise observance) définit un phénotype à plus haut risque d'exacerbations — évaluer les deux dimensions ensemble, plutôt que séparément, identifie les patients à cibler en priorité.",
+   "src": [
+    [
+     "DOI — International journal of chronic obstructive pulmonary disease",
+     "https://doi.org/10.2147/copd.s629907"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42677230"
+    ]
+   ],
+   "off": "À l'officine, un renouvellement de BPCO sans vérification de la technique est une occasion manquée : les deux dimensions se vérifient en deux minutes au comptoir.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Officine",
+   "dom": "Pneumologie",
+   "n": 2,
+   "dt": "2026-11",
+   "des": "BPCO : littératie en santé et technique d'inhalation — classification combinée et trajectoires de symptômes à 12 mois",
+   "tag": "BPCO · littératie en santé · technique inhalation · trajectoires",
+   "res": "Étude prospective (2026) croisant littératie en santé et technique d'inhalation dans la BPCO : le profil « faible littératie + mauvaise technique » prédit les moins bonnes trajectoires de symptômes à 12 mois — la compréhension du patient, pas seulement son geste, structure le pronostic fonctionnel.",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.21203/rs.3.rs-11521684/v1"
+    ]
+   ],
+   "off": "Adapter le discours au patient : démontrer, faire reformuler, utiliser des supports visuels — la technique se transmet par l'éducation, pas par la répétition d'ordonnance.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Officine",
+   "dom": "Pneumologie",
+   "n": 1,
+   "dt": "2026-11",
+   "des": "BPCO : observance, satisfaction, technique et performance inspiratoire — état des lieux chez les patients ambulatoires",
+   "tag": "BPCO · observance · satisfaction inspiratoire · performance",
+   "res": "Étude (2026) mesurant simultanément observance, satisfaction, précision médicamenteuse et performance inspiratoire des patients BPCO : les déficits se superposent partiellement, et une fraction des patients échoue sur la capacité à générer un débit inspiratoire suffisant — les dispositifs ne se choisissent pas seulement par molécule, mais par capacités du patient.",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.21203/rs.3.rs-11268300/v1"
+    ]
+   ],
+   "off": "Chez le patient fragile (âgé, MRC élevé), un dispositif à faible effort inspiratoire (soft mist, chambre) peut transformer l'efficacité — à soulever au renouvellement.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  }
+ ]
+}
