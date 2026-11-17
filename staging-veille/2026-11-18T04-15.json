@@ -1,0 +1,22 @@
+{
+ "revues": [
+  {
+   "ty": "Médicament",
+   "n": 3,
+   "des": "Aspirine à dose faible et prééclampsie : le matin ou au coucher ? Première méta-analyse systématique 2026",
+   "tag": "aspirine · grossesse · prééclampsie · coucher vs matin",
+   "res": "Revue systématique et méta-analyse (oct. 2026) sur l'horaire de l'aspirine à faible dose recommandée contre la prééclampsie : les guidelines internationales restent muettes sur l'heure ; la synthèse compare efficacité et sécurité de la prise au coucher vs matin/jour — un premier état des lieux sur une question posée chaque semaine en officine aux femmes enceintes.",
+   "off": "La question est légitime, la réponse n'est pas tranchée : l'essentiel est la prise quotidienne régulière ; l'horaire se discute avec l'obstétricien.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "Chronopharmacologie",
+   "dt": "2026-10",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.21203/rs.3.rs-11339084/v1"
+    ]
+   ]
+  }
+ ]
+}
