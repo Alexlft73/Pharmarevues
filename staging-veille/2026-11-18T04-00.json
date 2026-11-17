@@ -21,6 +21,68 @@
      "https://europepmc.org/article/MED/42929421"
     ]
    ]
+  },
+  {
+   "ty": "Médicament",
+   "n": 3,
+   "des": "Aspirine à dose faible et prééclampsie : le matin ou au coucher ? Première méta-analyse systématique 2026",
+   "tag": "aspirine · grossesse · prééclampsie · coucher vs matin",
+   "res": "Revue systématique et méta-analyse (oct. 2026) sur l'horaire de l'aspirine à faible dose recommandée contre la prééclampsie : les guidelines internationales restent muettes sur l'heure ; la synthèse compare efficacité et sécurité de la prise au coucher vs matin/jour — un premier état des lieux sur une question posée chaque semaine en officine aux femmes enceintes.",
+   "off": "La question est légitime, la réponse n'est pas tranchée : l'essentiel est la prise quotidienne régulière ; l'horaire se discute avec l'obstétricien.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "Chronopharmacologie",
+   "dt": "2026-10",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.21203/rs.3.rs-11339084/v1"
+    ]
+   ]
+  },
+  {
+   "ty": "Officine",
+   "n": 2,
+   "des": "Anamnèse clinique devant une crise d'épilepsie : revue pratique alignée sur la classification ILAE 2025",
+   "tag": "anamnèse · crise · ILAE 2025 · diagnostic",
+   "res": "Revue (Epileptic Disorders, oct. 2026) : malgré l'EEG et l'imagerie, l'anamnèse soignée reste la pierre angulaire du diagnostic et de la classification des crises, intégrée ici à la classification ILAE 2025 mise à jour — description des événements, circonstances, facteurs déclenchant, antécédents. Utile à tout professionnel qui interroge un patient après un épisode.",
+   "off": "Quand un patient raconte « un malaise », posez les questions simples : durée, perte de contact, morsure de langue, confusion post-critique — ces éléments guident son médecin.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "SNC & psychiatrie",
+   "dt": "2026-10",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.1002/epd2.70368"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42858167"
+    ]
+   ]
+  },
+  {
+   "ty": "Médicament",
+   "n": 3,
+   "des": "Antiagrégants : le pic plaquettaire matinal mérite-t-il une prise calée sur l'horloge ? Revue systématique 2026",
+   "tag": "aspirine · clopidogrel · ticagrelor · réactivité plaquettaire · matin",
+   "res": "Revue systématique (oct. 2026) : la réactivité plaquettaire et les événements cardiovasculaires culminent le matin ; la revue évalue la variabilité diurne de l'effet des antiagrégants (aspirine, clopidogrel, ticagrelor…) et discute d'un calage horaire simple et peu coûteux pour améliorer l'efficacité — preuves encore insuffisantes pour une recommandation formelle d'horaire.",
+   "off": "Pour les patients qui demandent « matin ou soir ? » : pas de réponse fondée à ce jour ; l'observance quotidienne prime sur l'horaire.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "Chronopharmacologie",
+   "dt": "2026-10",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.1024/0301-1526/a001311"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42839650"
+    ]
+   ]
   }
  ]
 }

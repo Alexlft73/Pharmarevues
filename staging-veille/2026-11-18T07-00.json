@@ -21,6 +21,72 @@
      "https://europepmc.org/article/MED/42528809"
     ]
    ]
+  },
+  {
+   "ty": "Officine",
+   "n": 2,
+   "des": "Prévention du cancer de la peau en pharmacie communautaire : revue systématique des interventions",
+   "tag": "cancer de la peau · prévention · pharmacie · dépistage · revue",
+   "res": "Revue systématique (International Journal of Pharmacy Practice, oct. 2026) des interventions officinales de prévention primaire et secondaire des cancers cutanés : sensibilisation solaire, repérage des lésions suspectes, orientation — les pharmacies touchent des publics que la dermatologie n'atteint pas ; les preuves sont prometteuses mais les modalités hétérogènes.",
+   "off": "Concrètement à l'officine : affiches solaires, conseils de photoprotection, et savoir orienter une lésion qui change de forme, de couleur ou saigne vers le médecin.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "Économie de la Santé",
+   "dt": "2026-10",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.1093/ijpp/riag148"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42912466"
+    ]
+   ]
+  },
+  {
+   "ty": "Officine",
+   "n": 2,
+   "des": "Outils numériques pilotés par les pharmaciens dans l'asthme : revue systématique sur l'observance et le contrôle",
+   "tag": "asthme · application · pharmacien · observance · revue",
+   "res": "Revue systématique (Journal of the American Pharmacists Association, février 2026) : les interventions numériques menées par des pharmaciens (applications, rappels, suivi connecté) améliorent l'observance et le contrôle de l'asthme, avec des effets aussi sur l'utilisation des ressources ; le couplage pharmacien + outil numérique dépasse chacun pris isolément.",
+   "off": "Pour vos asthmatiques qui oublient : une simple application de rappel + une revue de technique d'inhalation à l'officine changent le contrôle de la maladie.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "Économie de la Santé",
+   "dt": "2026-02",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.1016/j.japh.2026.103054"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/41724433"
+    ]
+   ]
+  },
+  {
+   "ty": "Économie",
+   "n": 3,
+   "des": "Déprescription par les pharmaciens chez les seniors à domicile : revue systématique de l'efficience économique",
+   "tag": "déprescription · seniors · coût-utilité · pharmacien · revue",
+   "res": "Revue systématique (Journal of the American College of Clinical Pharmacy, février 2026) sur le rapport coût-utilité des interventions de déprescription menées par des pharmaciens chez les adultes âgés vivant à domicile : les études disponibles suggèrent un rapport coût-efficacité favorable quand la déprescription évite hospitalisations et effets indésirables — preuves économiques encore limitées mais encourageantes.",
+   "off": "Un argument économique de plus pour les revues de ordonnance au comptoir : retirer un médicament inutile chez le senior polythérasé rapporte plus qu'il ne coûte.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "Économie de la Santé",
+   "dt": "2026-02",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.1002/jac5.70166"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42009512"
+    ]
+   ]
   }
  ]
 }

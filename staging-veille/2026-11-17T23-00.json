@@ -43,6 +43,138 @@
      "https://europepmc.org/article/MED/42970048"
     ]
    ]
+  },
+  {
+   "ty": "Médicament",
+   "n": 3,
+   "des": "Immunothérapie et heure de perfusion : la méta-analyse JAMA Network Open de 2026 lève le doute",
+   "tag": "immunothérapie · heure de perfusion · méta-analyse · cancers avancés",
+   "res": "Revue systématique et méta-analyse (JAMA Network Open, mai 2026) sur l'association entre l'heure d'administration des inhibiteurs de point de contrôle et les résultats oncologiques dans les tumeurs solides avancées : les données observationnelles regroupées suggèrent une association entre perfusion matinale et survie, mais les auteurs insistent sur le risque de biais de confusion et l'absence d'essai randomisé validant un changement de pratique.",
+   "off": "Information de veille : la piste « matin meilleur » reste observationnelle ; ne pas promettre de bénéfice à changer l'heure d'hôpital de jour.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "Chronopharmacologie",
+   "dt": "2026-05",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.1001/jamanetworkopen.2026.10815"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42084869"
+    ]
+   ]
+  },
+  {
+   "ty": "Médicament",
+   "n": 2,
+   "des": "Heure de perfusion des anti-PD-1 : revue clinique des données 2026 (Frontiers in Immunology)",
+   "tag": "anti-PD-1 · heure · revue clinique · toxicité",
+   "res": "Revue clinique (mai 2026) restreinte aux inhibiteurs de point de contrôle (anti-CTLA-4, anti-PD-1, anti-PD-L1, anti-LAG-3) : plusieurs facteurs influencent efficacité et toxicité, et l'horaire circadien d'administration est activement étudié ; les preuves restent hétérogènes, majoritairement rétrospectives, sans recommandation posologique fondée sur l'heure à ce jour.",
+   "off": "Un exemple concret du débat « heure de perfusion » en cancérologie — utile pour répondre aux patients qui demandent s'ils doivent changer de créneau d'hôpital de jour.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "Chronopharmacologie",
+   "dt": "2026-05",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.3389/fimmu.2026.1837812"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42292486"
+    ]
+   ]
+  },
+  {
+   "ty": "Officine",
+   "n": 2,
+   "des": "Services de pharmacie clinique en prédialyse : essai randomisé sri-lankais — observance et qualité de vie améliorées",
+   "tag": "CKDu · prédialyse · pharmacie clinique · observance · essai randomisé",
+   "res": "Essai randomisé (BMC Nephrology, juillet 2025) chez des patients prédialyse (néphropathie d'étiologie indéterminée, Sri Lanka) : un programme de pharmacie clinique — éducation, revue de ordonnance, suivi — améliore significativement l'observance médicamenteuse et la qualité de vie vs soins usuels. La charge médicamenteuse croissante de la MRC est le point d'entrée du pharmacien.",
+   "off": "En MRC avancée, le pharmacien qui revoit l'ordonnance et explique les traitements améliore l'observance — un rôle officinal démontré, applicable en France dans les entretiens pharmaceutiques.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "Néphrologie",
+   "dt": "2025-07",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.1186/s12882-025-04301-1"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/40615962"
+    ]
+   ]
+  },
+  {
+   "ty": "Médicament",
+   "n": 3,
+   "des": "Biais méthodologiques de l'heure de perfusion : l'analyse de l'essai NCI/SWOG S1404 nuance l'effet matin",
+   "tag": "S1404 · biais de sélection · melanome · adjuvant · heure de perfusion",
+   "res": "Réanalyse planifiée (JCO Oncology Practice, juin 2026) de l'essai NCI/SWOG S1404 (mélanome résécable à haut risque, anti-PD-1 adjuvant) : les rapports antérieurs d'un bénéfice matinal n'ont pas tenu compte de facteurs de confusion (dont la distance au centre) et souffrent d'un biais du survivant ; après ajustement, l'heure de perfusion n'est pas associée de façon fiable aux résultats. Un sérieux coup de frein aux conclusions enthousiastes.",
+   "off": "Le contrepoint rigoureux aux études « perfusion matinale = meilleure survie » : les biais expliquent une bonne partie de l'effet observé.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "Chronopharmacologie",
+   "dt": "2026-06",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.1200/op-25-01413"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42335437"
+    ]
+   ]
+  },
+  {
+   "ty": "Médicament",
+   "n": 3,
+   "des": "Antihypertenseurs le matin ou au coucher ? Méta-analyse en réseau 2026 : neutralité des grands essais",
+   "tag": "antihypertenseur · chronothérapie · méta-analyse en réseau · événements CV",
+   "res": "Revue systématique et méta-analyse en réseau exploratoire (sept. 2026) comparant les stratégies d'horaire des antihypertenseurs sur les événements cardiovasculaires : les anciens essais de chronothérapie suggéraient un bénéfice important de la prise au coucher, tandis que les essais randomisés contemporains (dont le grand essai espagnol Time) montrent des résultats neutres ; aucune stratégie horaire ne domine clairement.",
+   "off": "Message officinal simple et stable : l'essentiel est la prise régulière tous les jours à la même heure, pas l'heure elle-même.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "Chronopharmacologie",
+   "dt": "2026-09",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.4103/aam.aam_611_26"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42784004"
+    ]
+   ]
+  },
+  {
+   "ty": "Médicament",
+   "n": 3,
+   "des": "Fibrillation auriculaire et MRC avancée sans dialyse : apixaban vs warfarine vs pas d'anticoagulant (cohorte 2026)",
+   "tag": "apixaban · warfarine · FA · MRC avancée · hémorragie",
+   "res": "Étude de cohorte rétrospective (JAMA Network Open, sept. 2026) : chez les patients en fibrillation auriculaire avec MRC avancée non dialysée, l'apixaban est comparé à la warfarine et à l'absence d'anticoagulant pour la balance efficacité/sécurité — données observationnelles importantes sur une population où l'anticoagulation reste une décision délicate.",
+   "off": "Question d'officine fréquente (« il a les reins fatigués, l'anticoagulant ? ») : la décision appartient au médecin, mais l'apixaban est le plus étudié dans ce contexte — jamais d'arrêt spontané.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "Néphrologie",
+   "dt": "2026-09",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.1001/jamanetworkopen.2026.32225"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42696280"
+    ]
+   ]
   }
  ]
 }

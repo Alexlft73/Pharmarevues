@@ -21,6 +21,72 @@
      "https://europepmc.org/article/MED/42013664"
     ]
    ]
+  },
+  {
+   "ty": "Officine",
+   "n": 1,
+   "des": "Convulsions provoquées par un médicament : prise en charge pharmaceutique d'une cascade d'effets indésirables (cas)",
+   "tag": "convulsion médicamenteuse · antimicrobien · pharmacovigilance · cas clinique",
+   "res": "Cas clinique (Frontiers in Pharmacology, juin 2026) : survenue de convulsions suspectées médicamenteuses (antimicrobien seizurogène) suivie d'effets indésirables séquentiels des antiseizure médicaments introduits en réponse — le pharmacien clinicien documente, réévalue et sécurise la chaîne des réactions en cascade ; une démonstration du rôle du pharmacien dans l'iatrogénie neurologique.",
+   "off": "Reflet du quotidien de la pharmacovigilance officinale : documenter toute suspicion de convulsion liée à un médicament dans le dossier du patient et la signaler au médecin.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "SNC & psychiatrie",
+   "dt": "2026-06",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.3389/fphar.2026.1853932"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42445248"
+    ]
+   ]
+  },
+  {
+   "ty": "Officine",
+   "n": 3,
+   "des": "Femme épileptique en âge de procréer : les pharmaciens communautaires sont-ils prêts pour le conseil préconceptionnel ?",
+   "tag": "épilepsie · préconceptionnel · acide folique · tératogénicité · pharmacien",
+   "res": "Étude transversale (juillet 2026) comparant pharmaciens communautaires et pharmaciens certifiés périnatalité : les pharmaciens d'officine sont accessibles mais se sentent peu préparés au conseil préconceptionnel des femmes épileptiques (acide folique, tératogénicité des antiépileptiques, traitement substitutif adapté) — auto-efficacité et profondeur de conseil inférieures à leurs homologues certifiés. Un déficit de formation documenté.",
+   "off": "Message fort pour la profession : toute femme épileptique en âge de procréer sous antiépileptique doit recevoir acide folique et conseil de grossesse planifiée — le pharmacien a sa place, à condition de se former.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "SNC & psychiatrie",
+   "dt": "2026-07",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.1016/j.yebeh.2026.111175"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42398363"
+    ]
+   ]
+  },
+  {
+   "ty": "Officine",
+   "n": 2,
+   "des": "Pharmaciens et épilepsie : revue systématique des interventions officinales et ambulatoires",
+   "tag": "épilepsie · pharmacien communautaire · revue systématique · 50 millions",
+   "res": "Revue systématique (Exploratory Research in Clinical and Social Pharmacy, avril 2025) : 50 millions de personnes vivent avec une épilepsie, 70 % pourraient être sans crise si bien traitées ; les interventions pharmaceutiques communautaires et ambulatoires (éducation, observance, détection des problèmes liés aux médicaments) améliorent significativement la prise en charge au-delà de la simple dispensation.",
+   "off": "Une base bibliographique solide du rôle officinal en épilepsie : vérifier l'observance, interroger sur les crises restantes — signe que le traitement est à réévaluer.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "SNC & psychiatrie",
+   "dt": "2025-04",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.1080/20523211.2025.2487046"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/40224172"
+    ]
+   ]
   }
  ]
 }
