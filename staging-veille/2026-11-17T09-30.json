@@ -1,0 +1,26 @@
+{
+ "revues": [
+  {
+   "ty": "Officine",
+   "dom": "Oncologie",
+   "n": 1,
+   "dt": "2026-04",
+   "des": "Anticancéreux oraux : la continuité des soins portée par les pharmaciens améliore l'observance et la persistance (revue systématique et méta-analyse)",
+   "tag": "anticancéreux oral · pharmacien · continuité des soins · observance · oncologie",
+   "res": "Revue systématique et méta-analyse (International Journal for Quality in Health Care, epub 01/04/2026, PMID 42152179) des interventions de continuité des soins dirigées par des pharmaciens chez les patients sous anticancéreux oral : contribution positive aux indicateurs de qualité, en particulier l'observance et la persistance du traitement ; les auteurs notent l'hétérogénéité des études et le besoin d'évaluations cliniques plus solides. En officine : les comprimés d'oncologie sont des marathons d'observance — suivi du pilulier, gestion des interactions (pamplemousse, IPP) et repérage du syndrome main-pied font partie de notre rôle.",
+   "src": [
+    [
+     "PubMed 42152179",
+     "https://pubmed.ncbi.nlm.nih.gov/42152179/"
+    ],
+    [
+     "Int J Qual Health Care (abstract)",
+     "https://academic.oup.com/intqhc/article-abstract/38/2/mzag066/8687116"
+    ]
+   ],
+   "off": "Sous anticancéreux oral, chaque renouvellement est une occasion de vérifier la prise exacte, les effets indésirables et les interactions : le pharmacien est un maillon de la continuité.",
+   "coi": "À vérifier (méta-analyse universitaire, financements non lus dans les extraits)",
+   "fin": "Financement non lisible dans les sources consultées."
+  }
+ ]
+}
