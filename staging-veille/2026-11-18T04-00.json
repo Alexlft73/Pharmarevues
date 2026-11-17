@@ -1,0 +1,26 @@
+{
+ "revues": [
+  {
+   "ty": "Médicament",
+   "n": 2,
+   "des": "HTA « non-dipper » : au-delà de la moyenne, la prise au coucher aide surtout certains répondeurs (analyse secondaire)",
+   "tag": "non-dipper · analyse secondaire · coucher · répondeurs · 2 mois",
+   "res": "Analyse secondaire d'un essai randomisé (Journal of Clinical Hypertension, oct. 2026) chez 60 hypertendus non contrôlés « non-dippers » : après 2 mois, la prise au coucher modifie la distribution des réponses — certains patients atteignent mieux les cibles tensionnelles nocturnes, d'autres non ; la moyenne seule masque cette hétérogénéité de répondeurs.",
+   "off": "Si un médecin a prescrit une prise au coucher à votre patient « non-dipper », c'est cohérent avec ces données — l'inverse n'est pas une erreur pour autant.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "Chronopharmacologie",
+   "dt": "2026-10",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.1111/jch.70372"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42929421"
+    ]
+   ]
+  }
+ ]
+}
