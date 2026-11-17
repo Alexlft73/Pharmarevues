@@ -1,0 +1,48 @@
+{
+ "revues": [
+  {
+   "ty": "Officine",
+   "n": 2,
+   "des": "Dépistage de la maladie rénale par les pharmaciens communautaires : revue systématique des stratégies",
+   "tag": "MRC · dépistage · pharmacien communautaire · revue systématique",
+   "res": "Revue systématique (Praxis, oct. 2025) des stratégies de dépistage de la MRC menées par des pharmaciens communautaires : plus de 700 millions de personnes touchées dans le monde, diagnostic précoce difficile car asymptomatique ; les interventions officinales (questionnaires de risque, orientation, éducation) identifient des patients à risque — revue des modalités et de leur efficacité.",
+   "off": "Confirme la place du pharmacien dans le dépistage rénal — en France, penser au DFG sur les bilans que le patient apporte et signaler les valeurs basses au médecin.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "Néphrologie",
+   "dt": "2025-10",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.20452/pamw.17136"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/41099719"
+    ]
+   ]
+  },
+  {
+   "ty": "Médicament",
+   "n": 2,
+   "des": "Prise au coucher et pression nocturne : l'effet dépend de la part de « non-dippers » (méta-analyse 2026)",
+   "tag": "non-dipper · PA nocturne · coucher · méta-analyse",
+   "res": "Méta-analyse d'essais randomisés (Journal of Clinical Hypertension, août 2026) : la prise au coucher abaisse la pression artérielle nocturne, mais l'ampleur de l'effet dépend de la prévalence des profils « non-dipper » (absence de baisse physiologique nocturne) dans chaque étude — les populations riches en non-dippers tirent plus de bénéfice d'un horaire coucher. Un pas vers la personnalisation du conseil d'horaire.",
+   "off": "Pour un patient « non-dipper » connu (MAPA), la prise au coucher peut avoir un sens à discuter avec son médecin — pas pour tous.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "Chronopharmacologie",
+   "dt": "2026-08",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.1111/jch.70331"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42631975"
+    ]
+   ]
+  }
+ ]
+}
