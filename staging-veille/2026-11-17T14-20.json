@@ -1,0 +1,23 @@
+{
+ "revues": [
+  {
+   "ty": "Médicament",
+   "dom": "Ophtalmologie",
+   "n": 3,
+   "dt": "2026-02",
+   "des": "Rétinopathie diabétique : les performances en vie réelle du dépistage par intelligence artificielle confirmées",
+   "tag": "rétinopathie diabétique · dépistage · intelligence artificielle · vie réelle",
+   "res": "Étude de vie réelle (Scientific Reports, 06/02/2026, doi 10.1038/s41598-026-37292-6) des performances d'un système d'IA pour le dépistage de la rétinopathie diabétique, cause majeure de cécité évitable : confirmation en conditions réelles des performances de l'IA de dépistage. À distinguer de l'entrée sémaglutide-rétinopathie (OHDSI) déjà en base : ici l'organisation du dépistage. En officine : le message patient reste « fundus une fois par an chez le diabétique » — l'IA aide à la relever, pas à la remplacer.",
+   "src": [
+    [
+     "Scientific Reports (article)",
+     "https://www.nature.com/articles/s41598-026-37292-6"
+    ]
+   ],
+   "off": "Diabétique ? La photographie du fond d'œil chaque année protège votre vue : le dépistage devient plus accessible grâce à l'IA.",
+   "coi": "À vérifier (étude académique)",
+   "fin": "Financement non lisible dans les sources consultées."
+  }
+ ],
+ "recos": []
+}
