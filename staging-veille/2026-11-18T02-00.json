@@ -1,0 +1,48 @@
+{
+ "revues": [
+  {
+   "ty": "Médicament",
+   "n": 2,
+   "des": "Analgésie péridurale du travail : la dose de ropivacaïne nécessaire varie selon l'heure (étude dose-réponse)",
+   "tag": "ropivacaïne · péridurale · travail · dose efficace · variation circadienne",
+   "res": "Étude dose-réponse à allocation randomisée (Drug Design, mars 2026) : après un précédent travail montrant une ED50 d'environ 15 % plus élevée la nuit, cette étude confirme que la ropivacaïne requise pour initier l'analgésie péridurale du travail varie selon l'heure — la douleur du travail et sa réponse aux anesthésiques locaux suivent un rythme circadien. Donnée hospitalière, fascinante pour la chronopharmacologie de la douleur.",
+   "off": "Sans portée officinale directe, mais une illustration rigoureuse que la sensibilité à la douleur et aux anesthésiques oscille sur 24 h.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "Chronopharmacologie",
+   "dt": "2026-03",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.2147/dddt.s573078"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/41836528"
+    ]
+   ]
+  },
+  {
+   "ty": "Officine",
+   "n": 1,
+   "des": "Photo clinique standardisée et observance des traitements dermatologiques : revue de portée 2026",
+   "tag": "photothérapie feedback · observance · dermatologie · scoping review",
+   "res": "Revue de portée (oct. 2026) : montrer au patient ses propres photos de peau standardisées au fil du traitement est une intervention potentielle pour améliorer l'observance des dermatoses chroniques ; les preuves restent clairsemées et les modalités (appareil, rythme, confidentialité) à standardiser avant d'en faire une pratique.",
+   "off": "Idée simple et transposable au comptoir : faire photographier les lésions par le patient à intervalles fixes — un suivi visuel motive souvent la poursuite du topique.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "Dermatologie",
+   "dt": "2026-10",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.2147/ccid.s639866"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42898099"
+    ]
+   ]
+  }
+ ]
+}
