@@ -1,0 +1,48 @@
+{
+ "revues": [
+  {
+   "ty": "Officine",
+   "n": 2,
+   "des": "Déprescription en maladie rénale : protocole d'un essai randomisé multidisciplinaire (Qatar)",
+   "tag": "polymédication · MRC · déprescription · équipe multidisciplinaire · protocole",
+   "res": "Protocole d'essai randomisé (nov. 2025) évaluant un programme multidisciplinaire de déprescription pour patients en dialyse ambulatoire (Qatar) : la polymédication inappropriée est fréquente en MRC et peut être atténuée par la déprescription ; l'essai mesurera impact clinique et économique. Un protocole à suivre pour les résultats.",
+   "off": "En dialyse, la liste des médicaments mérite un passage régulier au peigne fin — signalez toute ordonnance qui s'allonge sans retrait au néphrologue.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "Néphrologie",
+   "dt": "2025-11",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.1080/20523211.2025.2588928"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/41358144"
+    ]
+   ]
+  },
+  {
+   "ty": "Médicament",
+   "n": 2,
+   "des": "Alzheimer : rythmes circadiens, gènes d'horloge et chronothérapie — revue mécanistique 2026",
+   "tag": "Alzheimer · gènes d'horloge · tau · chronothérapie",
+   "res": "Revue narrative (juillet 2026) sur les liens entre dérégulation circadienne et maladie d'Alzheimer : les gènes d'horloge interagissent avec les cascades neurodégénératives (tau, amyloïde), la fragmentation du sommeil précède souvent le déclin cognitif, et l'heure des traitements symptomatiques pourrait être optimisée. Un champ surtout mécanistique à ce jour, avec des pistes d'intervention sur la lumière et les routines.",
+   "off": "Pour les aidants : régulariser les horaires (lever, repas, lumière du matin, coucher) fait partie des soins non médicamenteux — c'est de la chronobiologie appliquée.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "Chronopharmacologie",
+   "dt": "2026-07",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.1002/nep3.70046"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42499341"
+    ]
+   ]
+  }
+ ]
+}
