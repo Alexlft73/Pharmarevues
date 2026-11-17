@@ -1,0 +1,26 @@
+{
+ "revues": [
+  {
+   "ty": "Médicament",
+   "n": 2,
+   "des": "Chrono-immunothérapie de précision : le microenvironnement tumoral oscille, l'heure d'infusion pourrait suivre (revue 2026)",
+   "tag": "tumeur · microenvironnement · anti-PD-1 · heure d'infusion · perfusion",
+   "res": "Revue (Current Opinion in Pharmacology, juin 2026) : le trafic leucocytaire, les cytokines, la présentation antigénique et la perméabilité vasculaire tumorale oscillent sur 24 h ; bloquer PD-1/PD-L1 à la bonne fenêtre temporelle pourrait maximiser l'effet — synthèse des données précliniques et cliniques naissantes d'une chrono-immunothérapie « de précision ».",
+   "off": "Le cadre conceptuel derrière les études d'heure de perfusion : prometteur, mais les biais rappelés cette même année obligent à la prudence.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "Chronopharmacologie",
+   "dt": "2026-06",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.1016/j.coph.2026.102644"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42349114"
+    ]
+   ]
+  }
+ ]
+}
