@@ -1,0 +1,26 @@
+{
+ "revues": [
+  {
+   "ty": "Officine",
+   "n": 2,
+   "des": "Erreurs d'administration des médicaments par les aidants à domicile chez l'enfant malade chronique : revue systématique",
+   "tag": "aidants · pédiatrie · erreur d'administration · domicile · sécurité",
+   "res": "Revue systématique (International Journal for Quality in Health Care, nov. 2026) : à domicile, les enfants atteints de maladies chroniques (cancer, diabète, épilepsie, drépanocytose) dépendent d'aidants non professionnels pour l'administration des traitements — les erreurs de dose, de moment et de technique sont fréquentes et sous-documentées ; la revue en dresse les types et les pistes de prévention (éducation, outils d'aide).",
+   "off": "À l'officine : pour toute ordonnance pédiatrique chronique lourde, vérifier avec l'aidant qui administre, quand, avec quel dispositif de mesure — 80 % des erreurs se préviennent par une démonstration.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "SNC & psychiatrie",
+   "dt": "2026-11",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.1093/intqhc/mzag190"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42993078"
+    ]
+   ]
+  }
+ ]
+}
