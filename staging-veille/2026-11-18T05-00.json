@@ -1,0 +1,26 @@
+{
+ "revues": [
+  {
+   "ty": "Officine",
+   "n": 2,
+   "des": "Éducation thérapeutique et observance des antiépileptiques chez l'enfant : méta-analyse des essais randomisés",
+   "tag": "pédiatrie · épilepsie · observance · éducation · méta-analyse",
+   "res": "Revue systématique et méta-analyse (Journal of Pediatric Nursing, avril 2026) des essais randomisés d'interventions éducatives sur l'observance des antiépileptiques chez l'enfant épileptique : les programmes d'éducation (enfant et parents) améliorent l'observance, dont dépend directement le contrôle des crises — consolidation d'un levier non médicamenteux essentiel en pédiatrie.",
+   "off": "Pour les parents à l'officine : rappeler les piluliers, alarmes et rituels fixes — l'oubli d'une prise d'antiépileptique peut se payer par une crise.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "SNC & psychiatrie",
+   "dt": "2026-04",
+   "src": [
+    [
+     "DOI — revue source",
+     "https://doi.org/10.1016/j.pedn.2026.03.018"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42013664"
+    ]
+   ]
+  }
+ ]
+}
