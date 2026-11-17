@@ -1,0 +1,400 @@
+{
+ "revues": [
+  {
+   "ty": "Alerte",
+   "dom": "Pneumologie",
+   "n": 3,
+   "dt": "2026-09",
+   "des": "Montélukast et troubles du sommeil chez l'enfant allergique respiratoire : le point sur un signal connu",
+   "tag": "montélukast · sommeil · enfants · pharmacovigilance · cauchemars",
+   "res": "Mise au point (2026, en français) sur les troubles du sommeil associés au montélukast chez l'enfant (cauchemars, insomnies, comportements anormaux) : signal ancien, transposé dans l'AMM européenne avec la contre-indication chez le nourrisson de moins de 2 ans et les restrictions d'indication (asthme léger à modéré en dernière intention) — la réévaluation européenne du montélukast a durci le cadre.",
+   "src": [
+    [
+     "DOI — Revista medica del Instituto Mexicano del Seguro Social",
+     "https://doi.org/10.5281/zenodo.21462729"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42771719"
+    ]
+   ],
+   "off": "Toute famille qui démarre un montélukast doit être prévenue : cauchemars ou troubles du comportement = arrêt et contact médical — et le renouvellement chronique chez l'enfant se questionne une fois par an.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Médicament",
+   "dom": "Pneumologie",
+   "n": 2,
+   "dt": "2026-11",
+   "des": "Amygdalectomie de l'enfant : le montélukast diminue-t-il la douleur postopératoire ? (essai randomisé)",
+   "tag": "montélukast · amygdalectomie · douleur postopératoire · RCT · enfants",
+   "res": "Essai randomisé (2026) testant le montélukast en périopératoire de l'amygdalectomie pédiatrique : l'effet anti-leucotriène visait l'inflammation et la douleur postopératoire — la piste anti-leucotriène en analgésie ORL pédiatrique reste exploratoire et ne justifie aucun usage hors AMM à l'officine.",
+   "src": [
+    [
+     "DOI — The Laryngoscope",
+     "https://doi.org/10.1002/lary.71047"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/43014718"
+    ]
+   ],
+   "off": "Rien à changer en ville : le montélukast reste réservé à ses indications validées (asthme, rhinite allergique) — la douleur post-amygdalectomie relève du protocole antalgique du chirurgien.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Médicament",
+   "dom": "Pneumologie",
+   "n": 2,
+   "dt": "2026-10",
+   "des": "Rhinite allergique de l'enfant : montélukast + desloratadine vs antihistaminique seul — une combinaison réévaluée",
+   "tag": "montélukast · desloratadine · rhinite allergique pédiatrique · combinaison",
+   "res": "Étude (2026) sur l'association montélukast + desloratadine dans la rhinite allergique pédiatrique : la combinaison améliore les symptômes nasaux vs antihistaminique seul dans les rhinites modérées à sévères persistantes — un schéma parfois utilisé, dont le bénéfice marginal se pèse contre les restrictions actuelles du montélukast chez l'enfant.",
+   "src": [
+    [
+     "DOI — Journal of visualized experiments : JoVE",
+     "https://doi.org/10.3791/73250"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42965351"
+    ]
+   ],
+   "off": "Si un enfant est sous cette combinaison depuis longtemps : questionner l'actualité du bénéfice et la présence de tout trouble du sommeil/comportement — relais à prendre avec le médecin.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Officine",
+   "dom": "Pneumologie",
+   "n": 2,
+   "dt": "2026-09",
+   "des": "Purificateurs d'air HEPA dans l'asthme et la BPCO : leçons des essais randomisés",
+   "tag": "HEPA · purificateurs d'air · asthme · BPCO · qualité de l'air",
+   "res": "Synthèse (2026) des essais randomisés sur les purificateurs d'air à filtre HEPA dans l'asthme et la BPCO : réduction documentée des particules fines intérieures, effets cliniques modestes et inconstants (les patients passent peu de temps dans la pièce purifiée) — une mesure d'appoint crédible dans l'asthme allergique, pas un traitement.",
+   "src": [
+    [
+     "DOI — Expert review of respiratory medicine",
+     "https://doi.org/10.1080/17476348.2026.2735502"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42764252"
+    ]
+   ],
+   "off": "Conseil nuancé : un HEPA dans la chambre peut aider l'asthmatique allergique (acariens, pollens) à condition d'être correctement dimensionné et placé — mais il ne remplace ni le traitement de fond, ni le contrôle de l'humidité.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Médicament",
+   "dom": "Cardiologie",
+   "n": 2,
+   "dt": "2025-06",
+   "des": "PCSK9 (inhibiteurs et inclisiran) chez les patients neuromusculaires intolérants aux statines : sécurité et efficacité en vie réelle",
+   "tag": "PCSK9 · inclisiran · intolérance statines · myotoxicité · neuromusculaire",
+   "res": "Étude (2025) chez des patients avec troubles neuromusculaires et myotoxicité/hépatotoxicité aux statines : les inhibiteurs de PCSK9 (évolocumab, alirocumab) et l'inclisiran abaissent le LDL-c sans récidive de myotoxicité dans la grande majorité des cas — une alternative lipidique validée en vie réelle pour les vrais intolérants aux statines.",
+   "src": [
+    [
+     "DOI — European journal of neurology",
+     "https://doi.org/10.1111/ene.70175"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/40522062"
+    ]
+   ],
+   "off": "Patient « intolérant aux statines » avec douleurs musculaires : les alternatives existent (PCSK9, inclisiran, ezétimibe) — jamais d'abandon du contrôle lipidique sans avis cardiologue, et jamais d'automédication antalgique qui masque les symptômes.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Médicament",
+   "dom": "Diabète & Endocrinologie",
+   "n": 2,
+   "dt": "2026-09",
+   "des": "Diarrhée de la metformine : mécanismes et stratégies pour la prendre en charge (revue 2026)",
+   "tag": "metformine · diarrhée · mécanismes · tolérance · stratégies",
+   "res": "Revue (2026) sur la diarrhée induite par la metformine : mécanismes mieux compris (modification du microbiote, sécrétion intestinale, malabsorption des sels biliaires) et stratégies validées — titration lente, prise au milieu du repas, formes à libération modifiée, réduction de dose — avant d'abandonner le premier traitement du diabète de type 2.",
+   "src": [
+    [
+     "DOI — Medical sciences (Basel, Switzerland)",
+     "https://doi.org/10.3390/medsci14060621"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42930540"
+    ]
+   ],
+   "off": "Réponse de comptoir aux « la metformine me donne la diarrhée » : prendre au milieu du repas, titrer lentement, envisager une forme LP avec le médecin — la persévérance vaut mieux que l'abandon prématuré.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Alerte",
+   "dom": "Dermatologie & peau",
+   "n": 2,
+   "dt": "2026-08",
+   "des": "Isotrétinoïne : non-observance et diversion suspectées — enjeux éthiques pour un médicament sous restrictions",
+   "tag": "isotrétinoïne · observance · diversion · éthique · grossesse",
+   "res": "Article (2026) sur les enjeux éthiques de la non-observance et de la diversion (partage, revente) suspectées sous isotrétinoïne orale : un médicament sous programme de prévention de la grossesse dont la circulation hors contrôle expose à des tératogénicités évitables — la surveillance de l'observance et des quantités délivrées est un devoir pharmaceutique.",
+   "src": [
+    [
+     "DOI — Clinics in dermatology",
+     "https://doi.org/10.1016/j.clindermatol.2026.08.014"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42669317"
+    ]
+   ],
+   "off": "Rappel strict : délivrance mensuelle, contraception documentée, tests de grossesse, aucune avance de boîte — et vigilance sur les demandes inhabituelles (quantités, urgence, plusieurs prescripteurs).",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Alerte",
+   "dom": "Dermatologie & peau",
+   "n": 2,
+   "dt": "2026-08",
+   "des": "Isotrétinoïne et effets indésirables ophtalmologiques : revue des signaux à connaître",
+   "tag": "isotrétinoïne · ophtalmologie · sécheresse oculaire · effets indésirables",
+   "res": "Revue (2026) des effets ophtalmologiques de l'isotrétinoïne orale : sécheresse oculaire quasi constante (perte des cellules à mucus de la conjonctive), blépharites, intolérance aux lentilles, plus rarement photophobie et troubles visuels transitoires — des effets réversibles à l'arrêt, à prévenir plutôt qu'à subir.",
+   "src": [
+    [
+     "DOI — Life (Basel, Switzerland)",
+     "https://doi.org/10.3390/life16091441"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42795306"
+    ]
+   ],
+   "off": "Conseil de comptoir : larmes artificielles sans conservateur en systématique, éviter les lentilles pendant le traitement, et tout trouble visuel inhabituel se signale au dermatologue et à l'ophtalmologiste.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Médicament",
+   "dom": "Urologie & santé masculine",
+   "n": 2,
+   "dt": "2026-07",
+   "des": "Isotrétinoïne et infertilité masculine sévère : une piste pour améliorer le recueil de spermatozoïdes avant ICSI",
+   "tag": "isotrétinoïne · infertilité masculine · azoospermie · ICSI · spermatogenèse",
+   "res": "Revue (2026) d'une utilisation inattendue de l'isotrétinoïne : chez l'homme azoospermique, l'acide rétinoïque participe à la spermatogenèse et l'isotrétinoïne a été explorée pour augmenter les chances de recueil de spermatozoïdes avant ICSI (réussies ~50 % autrement) — une piste expérimentale de repositionnement, pas une indication validée.",
+   "src": [
+    [
+     "DOI — Current opinion in urology",
+     "https://doi.org/10.1097/mou.0000000000001429"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42467006"
+    ]
+   ],
+   "off": "À n'envisager jamais hors protocole spécialisé : cette donnée ne justifie aucune automédication, d'autant que l'isotrétinoïne reste tératogène et sous restrictions strictes.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Médicament",
+   "dom": "Gynécologie & Ménopause",
+   "n": 3,
+   "dt": "2026-08",
+   "des": "Traitement hormonal de la ménopause : principes de management actualisés (revue 2026)",
+   "tag": "THM · ménopause · gestion · revue · indications",
+   "res": "Revue (2026) sur la gestion du traitement hormonal de la ménopause : indications (symptômes vasomoteurs invalidants, prévention de l'ostéoporose avant 60 ans ou < 10 ans après la ménopause), contre-indications (cancer hormonodépendant, ATCV récent), schémas (continu vs séquentiel, voies locale et transdermique) et suivi — le THM reste le traitement le plus efficace des bouffées de chaleur.",
+   "src": [
+    [
+     "DOI — Current opinion in obstetrics & gynecology",
+     "https://doi.org/10.1097/gco.0000000000001135"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42563637"
+    ]
+   ],
+   "off": "Messages clés : la voie transdermique ne majore pas le risque thrombotique ; le THM se réévalue annuellement ; et le dosage de la plus petite dose efficace reste la règle — les patientes posent souvent la question au comptoir avant de la poser au médecin.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Médicament",
+   "dom": "Urologie & santé masculine",
+   "n": 2,
+   "dt": "2025-04",
+   "des": "Symptômes liés à la sonde JJ urinaire : solifénacine vs tamsulosine, une comparaison d'efficacité (revue systématique)",
+   "tag": "sonde JJ · solifénacine · tamsulosine · symptômes urinaires",
+   "res": "Revue systématique (2025) comparant solifénacine (anticholinergique) et tamsulosine (alpha-bloquant) pour soulager les symptômes liés à la sonde double J urinaire (urgence, pollakiurie, douleurs lombaires) : les deux approches sont efficaces vs absence de traitement, avec des avantages respectifs à discuter selon le profil du patient — la question de la supériorité reste débattue.",
+   "src": [
+    [
+     "DOI — Narra J",
+     "https://doi.org/10.52225/narra.v5i2.1683"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/40951488"
+    ]
+   ],
+   "off": "Patient porteur de sonde JJ gêné : vérifier la chronologie du retrait, rassurer sur la fréquence des symptômes, et alerter en cas de fièvre ou de douleur fébrile (infection sur sonde = urgence).",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Officine",
+   "dom": "Gastro-entérologie & Hépatologie",
+   "n": 2,
+   "dt": "2026-10",
+   "des": "Psychothérapie personnalisée dans le syndrome de l'intestin irritable : résultats d'un essai pilote randomisé",
+   "tag": "SII · psychothérapie · gut-brain · essai pilote",
+   "res": "Essai pilote randomisé (2026) d'une psychothérapie personnalisée dans le SII (axe intestin-cerveau) : réduction des symptômes vs contrôle chez les patients inclus, avec des effectifs modestes et des questions de reproductibilité — la voie psychothérapeutique se confirme comme adjuvant crédible du SII réfractaire, aux côtés du régime FODMAP et des antispasmodiques.",
+   "src": [
+    [
+     "DOI — Journal of psychosomatic research",
+     "https://doi.org/10.1016/j.jpsychores.2026.113003"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42837716"
+    ]
+   ],
+   "off": "Pour le patient SII épuisé : les approches cerveau-intestin (TCC, hypnose digestive) ont des preuves sérieuses — les évoquer comme complément, jamais comme exclusions du régime alimentaire.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Alimentation",
+   "dom": "Gastro-entérologie & Hépatologie",
+   "n": 3,
+   "dt": "2026-01",
+   "des": "Régime pauvre en FODMAP dans le SII : revue en parapluie des méta-analyses",
+   "tag": "FODMAP · SII · umbrella review · régime",
+   "res": "Revue en parapluie (2026) des méta-analyses sur le régime pauvre en FODMAP dans le syndrome de l'intestin irritable : efficacité sur les symptômes globaux et la qualité de vie confirmée à court terme, mais risque nutritionnel (apports réduits) et taux de non-répondeurs d'environ 30-50 % — la phase de réintroduction reste indispensable pour éviter un régime à vie inutile.",
+   "src": [
+    [
+     "DOI — Frontiers in nutrition",
+     "https://doi.org/10.3389/fnut.2025.1714281"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/41550863"
+    ]
+   ],
+   "off": "Conseil structuré : la phase d'élimination dure 4 à 6 semaines MAXI, puis on réintroduit par groupes — jamais de régime FODMAP chronique sans réintroduction, et un avis diététique évite les carences.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Complément",
+   "dom": "Gastro-entérologie & Hépatologie",
+   "n": 2,
+   "dt": "2026-08",
+   "des": "Curcuma et perméabilité intestinale : 3 jours de supplémentation testés sur les marqueurs LPS et chylomicrons dans le SII",
+   "tag": "curcuma · LPS · perméabilité intestinale · SII · supplémentation",
+   "res": "Essai (2026) testant 3 jours de supplémentation en curcuma chez des patients SII : effets sur le LPS (endotoxine bactérienne marqueur de perméabilité) et les marqueurs post-prandiaux liés aux chylomicrons après repas gras — courte durée, petit effectif, critères intermédiaires : une étude mécaniste, pas une preuve d'efficacité clinique.",
+   "src": [
+    [
+     "DOI — The British journal of nutrition",
+     "https://doi.org/10.1017/s0007114526108101"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42543530"
+    ]
+   ],
+   "off": "Le curcuma reste un complément à manier avec prudence (interactions anticoagulantes, cholérétique) — cette étude mécaniste ne justifie pas de le recommander dans le SII.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Complément",
+   "dom": "Oncologie",
+   "n": 2,
+   "dt": "2026-01",
+   "des": "Sarcopénie du patient atteint de cancer : interventions pour la santé musculaire (revue systématique + méta)",
+   "tag": "sarcopénie · cancer · muscle · nutrition · exercice",
+   "res": "Revue systématique et méta-analyse (2026) des interventions contre la sarcopénie de l'adulte avec cancer : l'entraînement physique et le support nutritionnel (protéines, parfois compléments) améliorent la masse et la fonction musculaire, avec des données encore hétérogènes selon les cancers — un enjeu de tolérance des traitements et de survie, distinct de la sarcopénie liée à l'âge.",
+   "src": [
+    [
+     "DOI — Frontiers in nutrition",
+     "https://doi.org/10.3389/fnut.2025.1671720"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/41561181"
+    ]
+   ],
+   "off": "Patient en traitement anticancereux qui fond : la perte musculaire n'est pas une fatalité — nutrition protéiquée et activité adaptée se discutent précocement avec l'équipe oncologique.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Complément",
+   "dom": "Nutrition & Compléments",
+   "n": 2,
+   "dt": "2025-11",
+   "des": "Vitamine D et péri-implantite : le statut en 25(OH)D influence-t-il la santé des implants dentaires ? (revue systématique)",
+   "tag": "vitamine D · péri-implantite · implants dentaires · 25(OH)D",
+   "res": "Revue systématique (2025) sur le lien entre taux de vitamine D et péri-implantite (inflammation autour des implants dentaires) : 5 études incluses, hétérogénéité significative ; les données suggèrent une association entre carence et risque accru de péri-implantite — un facteur modifiable parmi d'autres (hygiène, tabac), avec un niveau de preuve encore limité.",
+   "src": [
+    [
+     "DOI — The Saudi dental journal",
+     "https://doi.org/10.1007/s44445-025-00074-3"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/41247446"
+    ]
+   ],
+   "off": "Patient avec implants dentaires et carence connue en vitamine D : la correction est simple et se discute avec le dentiste/chirurgien — sans jamais promettre de « sauver » un implant.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Médicament",
+   "dom": "Douleur & Migraine",
+   "n": 2,
+   "dt": "2026-05",
+   "des": "Prémédication intranasale de l'enfant : dexmédétomidine vs eskétamine avant sédation — revue systématique et méta-analyse",
+   "tag": "dexmédétomidine · eskétamine · prémédication pédiatrique · intranasal",
+   "res": "Revue systématique et méta-analyse (2026) comparant dexmédétomidine et eskétamine en prémédication intranasale avant sédation de l'enfant : l'anxiété préopératoire prédit le delirium d'éveil et les troubles comportementaux postopératoires ; les deux molécules sont efficaces, avec des profils différents (sédation vs dissociation) — le choix dépend du terrain et du geste.",
+   "src": [
+    [
+     "DOI — Cureus",
+     "https://doi.org/10.7759/cureus.108763"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42291934"
+    ]
+   ],
+   "off": "Rien à délivrer en ville (usage anesthésique), mais utile pour rassurer les parents : la prémédication nasale de l'enfant est une pratique encadrée.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  },
+  {
+   "ty": "Médicament",
+   "dom": "Psychiatrie",
+   "n": 2,
+   "dt": "2026-05",
+   "des": "Eskétamine intranasale et psychothérapie des souvenirs traumatiques dans la dépression résistante : revue narrative et protocole de faisabilité",
+   "tag": "eskétamine · mémoire traumatique · psychothérapie · TRD",
+   "res": "Revue narrative (2026) explorant l'intégration de l'eskétamine intranasale avec une psychothérapie ciblant les souvenirs traumatiques dans la dépression résistante : les intrusions autobiographiques traumatiques sont fréquentes dans la TRD, et la fenêtre de plasticité ouverte par la kétamine pourrait amplifier le travail thérapeutique — un protocole de faisabilité est proposé, encore au stade expérimental.",
+   "src": [
+    [
+     "DOI — Behavioral sciences (Basel, Switzerland)",
+     "https://doi.org/10.3390/bs16050771"
+    ],
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42193649"
+    ]
+   ],
+   "off": "Pour les patients sous eskétamine (dispositif hospitalier/PUI) : l'accompagnement psychothérapique structuré fait partie du schéma — pas de « simple injection » sans suivi.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées."
+  }
+ ]
+}
