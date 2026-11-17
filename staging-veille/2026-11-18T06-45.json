@@ -1,0 +1,22 @@
+{
+ "revues": [
+  {
+   "ty": "Officine",
+   "n": 3,
+   "des": "Prescriptions dangereuses : le programme PRoTeCT évalue l'aide à la décision et les pharmaciens en Angleterre",
+   "tag": "prescription dangereuse · aide à la décision · OptimiseRx · PINCER · pharmacien",
+   "res": "Programme de recherche (augmentation 2026) : la prescription dangereuse est une cause évitable et coûteuse de dommages ; PRoTeCT évalue le déploiement à grande échelle d'une aide à la décision (OptimiseRx) et du programme PINCER (indicateurs de sécurité traités par les pharmaciens en soins primaires anglais) — deux leviers systémiques pour intercepter les prescriptions dangereuses identifiées via les dossiers électroniques.",
+   "off": "L'équivalent officinal : les alertes de grossesse, d'interactions et de doses maximales existent aussi sur votre logiciel — ne jamais les ignorer d'un clic distrait.",
+   "coi": "À vérifier",
+   "fin": "Financement non lisible dans les sources consultées.",
+   "dom": "Économie de la Santé",
+   "dt": "2026-08",
+   "src": [
+    [
+     "Europe PMC (notice)",
+     "https://europepmc.org/article/MED/42594233"
+    ]
+   ]
+  }
+ ]
+}
