@@ -526,6 +526,16 @@ html.dark header::before{background:radial-gradient(720px 280px at 88% -50%,rgba
     <div class="searchrow">
       <input id="q" type="search" placeholder="Rechercher : substance, pathologie, mot-clé… (ex : GLP-1, vitamine D, psilocybine)">
       <select id="fdom"></select>
+      <select id="ftype">
+        <option value="">Type : tous</option>
+        <option>Médicament</option>
+        <option>Complément alimentaire</option>
+        <option>Officine</option>
+        <option>Alimentation</option>
+        <option>Vaccin</option>
+        <option>Alerte</option>
+        <option>Économie</option>
+      </select>
       <select id="fniv">
         <option value="">Force : toutes</option>
         <option value="1">Niveau 1 — Méta-analyse / revue systématique</option>
@@ -543,6 +553,13 @@ html.dark header::before{background:radial-gradient(720px 280px at 88% -50%,rgba
       </select>
       <button class="printbtn" onclick="window.print()">🖨️ Imprimer</button>
       <button class="resetbtn" onclick="resetFilters()">✕ Effacer</button>
+    </div>
+    <div class="presets">
+      <span class="plbl">Accès rapide :</span>
+      <button class="preset" onclick="preset('Complément alimentaire')">🧪 Rayon compléments</button>
+      <button class="preset" onclick="preset('Alimentation')">🥗 Alimentation</button>
+      <button class="preset" onclick="preset('Officine')">🏥 Officine</button>
+      <button class="preset" onclick="preset('Alerte')">🚨 Alertes &amp; sécurité</button>
     </div>
   </div>
 </div>
@@ -902,6 +919,7 @@ function populateDomSel(){
 function syncInputs(){
   document.getElementById("q").value = state.q;
   document.getElementById("fdom").value = state.dom;
+  document.getElementById("ftype").value = state.type;
   document.getElementById("fniv").value = state.niv;
   document.getElementById("fcoi").value = state.coi;
 }
@@ -1048,6 +1066,12 @@ function recapHTML(){
   return h;
 }
 
+function preset(t){
+  state.type = t;
+  syncInputs();
+  apply();
+  if(t==="Complément alimentaire"){ setTimeout(()=>{ const r=document.getElementById("recap"); if(r && r.innerHTML) r.scrollIntoView({behavior:"smooth"}); },60); }
+}
 function apply(){
   const list = REVUES.filter(matches);
   if(state.tri==="force"){ list.sort((a,b)=> a.n-b.n || (a.dt<b.dt?1:-1)); }
@@ -1070,6 +1094,7 @@ document.getElementById("q").addEventListener("input", e=>{ state.q = e.target.v
 document.getElementById("fdom").addEventListener("change", e=>{ state.dom = e.target.value; apply(); });
 document.getElementById("fniv").addEventListener("change", e=>{ state.niv = e.target.value; apply(); });
 document.getElementById("fcoi").addEventListener("change", e=>{ state.coi = e.target.value; apply(); });
+document.getElementById("ftype").addEventListener("change", e=>{ state.type = e.target.value; apply(); });
 
 function pvfit(f){try{var d=f.contentDocument;if(!d)return;var h=Math.max(d.documentElement.scrollHeight,d.body?d.body.scrollHeight:0);if(h>120)f.style.height=h+"px"}catch(e){}}
 function pvfitAll(){var fs=document.querySelectorAll("#classestab .cframe,#thesestab .cframe");for(var i=0;i<fs.length;i++)pvfit(fs[i])}
