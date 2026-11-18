@@ -45,7 +45,30 @@ html.dark .gcount{background:rgba(45,212,191,.15);color:#5eead4}
 .gexp{margin-left:auto;display:flex;gap:6px}
 .gexp button{border:1.5px solid var(--bord);background:var(--carte);color:var(--teal);border-radius:999px;padding:3px 12px;font-size:.75rem;cursor:pointer;font-weight:600}
 .gexp button:hover{background:rgba(15,118,110,.08)}
-.mcard{background:var(--carte);border:1.5px solid var(--bord);border-left:5px solid var(--teal);border-radius:12px;padding:12px 13px;cursor:pointer;transition:transform .15s,box-shadow .15s,border-color .15s}
+.mcard{background:var(--carte);border:1.5px solid var(--bord);border-left:5px solid var(--teal);border-radius:12px;padding:12px 13px;cursor:pointer;transition:transform .15s,box-shadow .15s,border-color .15s;position:relative}
+.cmpb{position:absolute;top:8px;right:8px;border:1.5px solid var(--bord);background:var(--carte);color:var(--teal);border-radius:50%;width:24px;height:24px;line-height:1;padding:0;cursor:pointer;font-size:.95rem;z-index:2}
+.cmpb:hover{background:rgba(15,118,110,.12)}
+.cmpb.on{background:var(--teal);color:#fff;border-color:var(--teal)}
+.cmpbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:12px}
+.cmpchip{display:inline-flex;align-items:center;gap:6px;background:rgba(15,118,110,.08);border:1.5px solid var(--bord);border-radius:999px;padding:3px 10px;font-size:.8rem;font-weight:600}
+.cmpchip .dot{width:10px;height:10px;border-radius:50%;flex:none}
+.cmpx{border:0;background:none;cursor:pointer;color:var(--gris);font-size:.85rem;padding:0 2px;line-height:1}
+.cmpx:hover{color:var(--rouge)}
+.cmpquit{border:1.5px solid var(--bord);background:var(--carte);color:var(--rouge);border-radius:999px;padding:4px 13px;font-size:.78rem;cursor:pointer;font-weight:700}
+.cmpquit:hover{background:rgba(185,28,28,.07)}
+.cmpmsg{display:none;margin-top:8px;font-size:.8rem;color:var(--rouge);font-weight:600}
+.cmpmsg.show{display:block}
+.cmptab{border-collapse:collapse;font-size:.82rem;margin-top:6px;width:100%}
+.cmptab th,.cmptab td{border-bottom:1px solid var(--bord);padding:4px 8px;text-align:left;white-space:nowrap}
+.cmptab th{color:var(--gris);font-weight:600;font-size:.74rem}
+.cmpname th,.cmptab .cmpname{font-weight:700;white-space:normal}
+.cmptab .dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:baseline}
+html.dark .cmpchip{background:rgba(45,212,191,.10);color:#e2e8f0;border-color:rgba(148,163,184,.25)}
+html.dark .cmpb{background:#1e293b;border-color:rgba(148,163,184,.25);color:#5eead4}
+html.dark .cmpb.on{background:#0d9488;color:#fff}
+html.dark .cmpquit{background:#1e293b;border-color:rgba(148,163,184,.25);color:#fca5a5}
+html.dark .cmpmsg{color:#fca5a5}
+html.dark .cmptab th,html.dark .cmptab td{border-color:rgba(148,163,184,.18)}
 .mcard:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(15,23,42,.09)}
 .mcard.on{border-color:var(--bleu);box-shadow:0 0 0 3px rgba(14,116,144,.14)}
 .mcard h3{font-size:.95rem;line-height:1.3}
@@ -170,9 +193,6 @@ html.dark body::before{background:radial-gradient(820px 520px at 12% 8%,rgba(45,
 <div id="pkcard" class="panel" style="box-shadow:none;margin-top:16px"></div>
 </div>
 </div>
-
-
-
 <script>
 /* ============ SIMULATEUR PK PharmaVeille ============
    Modele : 1 compartiment, absorption 1er ordre (Bateman), superposition multi-doses,
@@ -382,7 +402,7 @@ function card(m,i){
   if(m.food) b+='<span class="cv">repas</span>';
   if(m.intr&&m.intr.length) b+='<span class="cv">'+m.intr.length+' inter.</span>';
   if(m.warn) b+='<span class="cv warm">⚠</span>';
-  return '<div class="mcard'+(st.i===i?" on":"")+'" onclick="sel('+i+')" role="button" tabindex="0"><h3>'+m.d+'</h3><div class="mg">'+m.g+'</div><div class="mt12">t½ '+fmt(m.t12,m.t12<1?1:(m.t12<10?1:0))+' h · Tmax '+fmt(m.tx,1)+' h</div>'+b+'</div>';
+  return '<div class="mcard'+(st.i===i?" on":"")+'" onclick="sel('+i+')" role="button" tabindex="0"><button class="cmpb'+(inCmp(i)?" on":"")+'" type="button" data-i="'+i+'" onclick="cmpClick(event,this)" title="Ajouter ou retirer de la comparaison">'+(inCmp(i)?"✕":"＋")+'</button><h3>'+m.d+'</h3><div class="mg">'+m.g+'</div><div class="mt12">t½ '+fmt(m.t12,m.t12<1?1:(m.t12<10?1:0))+' h · Tmax '+fmt(m.tx,1)+' h</div>'+b+'</div>';
 }
 var gopen={}; // groupes dépliés (session)
 function renderGrid(){
@@ -421,7 +441,7 @@ function renderGrid(){
 function toggleG(k){ if(gopen[k]===true) delete gopen[k]; else gopen[k]=true; renderGrid(); }
 function expandAll(v){ MOLS.forEach(function(m){ gopen[m.g]=v; }); if(!v) gopen={}; renderGrid(); }
 window.toggleG=toggleG; window.expandAll=expandAll;
-function sel(i){ st.i=i; var m=mol(); st.dose=m.ds[Math.min(1,m.ds.length-1)]; if(m.ds.length===1) st.dose=m.ds[0];
+function sel(i){ st.i=i; if(CMP.length){ renderGrid(); update(); return; } var m=mol(); st.dose=m.ds[Math.min(1,m.ds.length-1)]; if(m.ds.length===1) st.dose=m.ds[0];
   st.tau=m.tau; st.days=(m.tau===0)?1:Math.max(1,Math.min(14,Math.round(4*m.t12/24+1))); st.food=false; st.int=-1;
   st.win=suggestWin(m); gopen[m.g]=true; renderChips(); renderGrid(); buildControls(); update(); }
 window.sel=sel;
@@ -479,7 +499,132 @@ window.setFood=function(f){ st.food=f; buildControls(); update(); };
 /* ================= calcul + rendu ================= */
 function niceMax(y){ var e=Math.pow(10,Math.floor(Math.log10(y||1e-9))); var f=y/e; var n= f<=1?1: f<=2?2: f<=2.5?2.5: f<=5?5:10; return n*e*1.0; }
 function txLabel(t){ if(t>=48) return fmt(t/24,Math.round(t/24)===t/24?0:1)+" j"; return fmt(t,t<10?1:0)+" h"; }
+/* ================= Mode comparaison (superposition de courbes) ================= */
+var CMP=[];
+var CMPCOLS=["#0d9488","#b45309","#7c3aed","#b91c1c"];
+var CMPCOLSA=["rgba(13,148,136,.09)","rgba(180,83,9,.10)","rgba(124,58,237,.10)","rgba(185,28,28,.10)"];
+function cmpUnit(i){ return MOLS[i].un||"mg/L"; }
+function inCmp(i){ return CMP.some(function(c){return c.i===i;}); }
+function addCmp(i){
+  if(inCmp(i)){ removeCmpIdx(i); return; }
+  if(CMP.length>=4){ cmpMsg("Maximum : 4 molécules en comparaison."); return; }
+  if(CMP.length && cmpUnit(CMP[0].i)!==cmpUnit(i)){ cmpMsg("Unités plasmatiques différentes ("+cmpUnit(CMP[0].i)+" contre "+cmpUnit(i)+") : la superposition n\'aurait pas de sens clinique. Choisissez des molécules de même unité."); return; }
+  var m=MOLS[i];
+  CMP.push({i:i,dose:(m.ds.length===1?m.ds[0]:m.ds[Math.min(1,m.ds.length-1)]),tau:m.tau});
+  st.i=i;
+  cmpMsg("");
+  renderGrid();
+  buildCmpControls();
+  update();
+}
+function removeCmpIdx(i){ CMP=CMP.filter(function(c){return c.i!==i;}); afterCmpChange(); }
+function removeCmp(k){ CMP.splice(k,1); afterCmpChange(); }
+function clearCmp(){ CMP=[]; cmpMsg(""); sel(st.i); }
+function afterCmpChange(){
+  cmpMsg("");
+  if(!CMP.length){ sel(st.i); return; }
+  st.i=CMP[CMP.length-1].i;
+  renderGrid();
+  buildCmpControls();
+  update();
+}
+function cmpMsg(t){ var e=$("cmpmsg"); if(e){ e.textContent=t; e.className=t?"cmpmsg show":"cmpmsg"; } }
+function cmpClick(ev,btn){ if(ev&&ev.stopPropagation)ev.stopPropagation(); addCmp(parseInt(btn.getAttribute("data-i"),10)); }
+window.addCmp=addCmp; window.removeCmp=removeCmp; window.removeCmpIdx=removeCmpIdx; window.clearCmp=clearCmp; window.cmpClick=cmpClick;
+
+function buildCmpControls(){
+  var h='<h2 id="cmol">Comparaison — '+CMP.length+' molécule'+(CMP.length>1?'s':'')+'</h2>';
+  h+='<div class="molsub">Chaque courbe utilise la dose et le rythme PAR DÉFAUT de sa molécule ; le patient (poids, CLcr) et la durée sont partagés.</div>';
+  h+='<div class="ctl"><label>Durée du traitement <span class="hint">(<span id="v-days">'+st.days+'</span> jours)</span></label><input type="range" id="c-days" min="1" max="28" step="1" value="'+st.days+'"></div>';
+  h+='<div class="ctl"><label>Poids du patient <span class="hint">(<span id="v-w">'+st.w+'</span> kg)</span></label><input type="range" id="c-w" min="40" max="120" step="1" value="'+st.w+'"></div>';
+  h+='<div class="ctl"><label>Clairance de la créatinine <span class="hint">(<span id="v-cl">'+st.clcr+'</span> mL/min)</span></label><input type="range" id="c-cl" min="15" max="120" step="5" value="'+st.clcr+'"></div>';
+  h+='<div class="cmpbar">';
+  CMP.forEach(function(c,k){
+    h+='<span class="cmpchip"><span class="dot" style="background:'+CMPCOLS[k]+'"></span>'+MOLS[c.i].d+' <button class="cmpx" type="button" onclick="removeCmp('+k+')" title="Retirer de la comparaison">✕</button></span>';
+  });
+  h+='<button class="cmpquit" type="button" onclick="clearCmp()">Quitter la comparaison</button></div>';
+  h+='<div id="cmpmsg" class="cmpmsg"></div>';
+  $("ctrl").innerHTML=h;
+  $("c-days").addEventListener("input",function(){ st.days=Math.max(1,Math.min(28,parseInt(this.value,10)||1)); $("v-days").textContent=st.days; update(); });
+  $("c-w").addEventListener("input",function(){ st.w=parseInt(this.value,10)||70; $("v-w").textContent=st.w; update(); });
+  $("c-cl").addEventListener("input",function(){ st.clcr=parseInt(this.value,10)||100; $("v-cl").textContent=st.clcr; update(); });
+}
+
+function renderCmp(){
+  var sv={i:st.i,dose:st.dose,tau:st.tau,int:st.int,food:st.food};
+  var need=36;
+  CMP.forEach(function(c){ need=Math.max(need,5*MOLS[c.i].t12); });
+  var cand=[12,24,48,72,168,336,504,672], win=cand[cand.length-1];
+  for(var q=0;q<cand.length;q++){ if(cand[q]>=Math.min(need,668)){ win=cand[q]; break; } }
+  var N=700, i;
+  var tArr=[]; for(i=0;i<=N;i++) tArr.push(win*i/N);
+  var items=[];
+  CMP.forEach(function(c,idx){
+    st.i=c.i; st.dose=c.dose; st.tau=c.tau; st.int=-1; st.food=false;
+    var P=params(), m=MOLS[c.i], usf=m.usf||1, ds=dosesIn(win);
+    var curve=new Array(N+1), cmax=0;
+    for(i=0;i<=N;i++){ var cv=Cacc(P,tArr[i],ds); curve[i]=cv; if(cv>cmax)cmax=cv; }
+    var cs=0, cmin=Infinity;
+    if(m.tau>0){ for(i=0;i<=200;i++){ var th=(i/200)*m.tau; var v=Css(P,th,m.tau); if(v>cs)cs=v; if(v<cmin)cmin=v; } }
+    var c1max=0, t1max=0, span=Math.min(win,(m.tau>0?m.tau:win));
+    for(i=1;i<=400;i++){ var t=span*i/400, vv=c1(P,t); if(vv>c1max){c1max=vv;t1max=t;} }
+    items.push({m:m,P:P,ds:ds,usf:usf,curve:curve,cmax:cmax,cs:(m.tau>0?cs:0),cmin:(m.tau>0?cmin:0),c1max:c1max,t1max:t1max,R:(m.tau>0?1/(1-Math.exp(-P.kel*m.tau)):0)});
+  });
+  st.i=sv.i; st.dose=sv.dose; st.tau=sv.tau; st.int=sv.int; st.food=sv.food;
+  var un=cmpUnit(CMP[0].i), usf0=items[0].usf;
+  var ymax=0;
+  items.forEach(function(it){ ymax=Math.max(ymax,it.cmax,it.cs,(it.m.fen?it.m.fen[1]/it.usf:0)); });
+  ymax=niceMax(ymax*1.15);
+  var W=920,H=360,L=64,R=14,T=26,B=40, PW=W-L-R, PH=H-T-B;
+  function X(t){return L+PW*t/win;} function Y(c){return T+PH*(1-c/ymax);}
+  var g="";
+  items.forEach(function(it,idx){
+    if(!it.m.fen) return;
+    var y1=Y(it.m.fen[0]/it.usf), y2=Y(it.m.fen[1]/it.usf);
+    g+='<rect x="'+L+'" y="'+y2+'" width="'+PW+'" height="'+(y1-y2)+'" fill="'+CMPCOLSA[idx]+'" stroke="none"/>';
+    g+='<line x1="'+L+'" y1="'+y1+'" x2="'+(W-R)+'" y2="'+y1+'" stroke="'+CMPCOLS[idx]+'" stroke-dasharray="4 4" stroke-width="1" opacity=".6"/>';
+    g+='<line x1="'+L+'" y1="'+y2+'" x2="'+(W-R)+'" y2="'+y2+'" stroke="'+CMPCOLS[idx]+'" stroke-dasharray="4 4" stroke-width="1" opacity=".6"/>';
+  });
+  var ystep=niceMax(ymax/4);
+  for(i=0;;i++){ var vv2=ystep*i; if(vv2>ymax+1e-12) break; var y=Y(vv2);
+    g+='<line class="ax" x1="'+L+'" y1="'+y+'" x2="'+(W-R)+'" y2="'+y+'" stroke-width="1"/>';
+    g+='<text class="tk" x="'+(L-6)+'" y="'+(y+3.5)+'" text-anchor="end">'+fmt(vv2*usf0,(usf0>=100?0:(vv2*usf0<1?2:(vv2*usf0<10?1:0))))+'</text>'; }
+  var xcand=[1,2,3,6,12,24,36,48,72,96,120,144,168,240,336,504,672], xstep=xcand[0];
+  for(i=0;i<xcand.length;i++){ if(win/xcand[i]<=8){ xstep=xcand[i]; break; } xstep=xcand[xcand.length-1]; }
+  for(i=0;i<=win;i+=xstep){ var x=X(i);
+    g+='<line class="ax" x1="'+x+'" y1="'+T+'" x2="'+x+'" y2="'+(T+PH)+'" stroke-width="1"/>';
+    g+='<text class="tk" x="'+x+'" y="'+(T+PH+16)+'" text-anchor="middle">'+txLabel(i)+'</text>'; }
+  g+='<text class="tk" x="'+(W-R)+'" y="'+(T+PH+32)+'" text-anchor="end">temps depuis la 1re prise →</text>';
+  g+='<text class="tk" x="'+(L-6)+'" y="'+(T-12)+'" text-anchor="start">concentration ('+un+') — '+CMP.length+' courbe'+(CMP.length>1?'s':'')+'</text>';
+  items.forEach(function(it,idx){
+    var p="M";
+    for(i=0;i<=N;i++){ p+=(i?"L":"")+X(tArr[i]).toFixed(2)+" "+Y(it.curve[i]).toFixed(2); }
+    g+='<path d="'+p+'" fill="none" stroke="'+CMPCOLS[idx]+'" stroke-width="2.6" stroke-linejoin="round"/>';
+  });
+  var lx=L+6, ly=16;
+  items.forEach(function(it,idx){
+    var nm=it.m.d;
+    g+='<rect x="'+lx+'" y="'+(ly-9)+'" width="12" height="12" rx="3" fill="'+CMPCOLS[idx]+'"/>';
+    g+='<text class="tk" x="'+(lx+17)+'" y="'+(ly+1)+'" text-anchor="start" font-weight="600">'+nm+'</text>';
+    lx+=17+nm.length*6.6+14;
+  });
+  $("chart").innerHTML=g;
+  $("chartitle").innerHTML="Comparaison : "+items.map(function(it){return it.m.d;}).join(" · ");
+  $("chartun").textContent=un;
+  var h='<h3 style="margin-top:4px">Comparaison des cinétiques à 70 kg / CLcr '+st.clcr+' (moyens, sauf curseurs)</h3><table class="cmptab"><tr><th></th><th>t½ (h)</th><th>Tmax (h)</th><th>Cmax 1re prise</th><th>Cmax équilibre</th><th>Cmin équilibre</th><th>Accumulation</th></tr>';
+  items.forEach(function(it,idx){
+    h+='<tr><td class="cmpname"><span class="dot" style="background:'+CMPCOLS[idx]+'"></span>'+it.m.d+'</td><td>'+fmt(0.693/it.P.kel,1)+'</td><td>'+fmt(it.t1max,1)+'</td><td>'+fmt(it.c1max*it.usf,2)+' '+un+'</td><td>'+((it.m.tau>0)?(fmt(it.cs*it.usf,2)+' '+un):'-')+'</td><td>'+((it.m.tau>0)?(fmt(it.cmin*it.usf,2)+' '+un):'-')+'</td><td>'+((it.m.tau>0)?('×'+fmt(it.R,1)):'-')+'</td></tr>';
+  });
+  h+='</table><p class="note">Dose et rythme = valeurs par défaut de chaque molécule (RCP) ; poids, CLcr et durée partagés. Les hauteurs comparent les expositions plasmatiques, PAS la puissance clinique. Pour doses personnalisées, repas et interactions : sortez de la comparaison et sélectionnez la molécule seule.</p>';
+  $("stats").innerHTML=h;
+  var cvp=$("cvp"); if(cvp) cvp.style.display="none";
+  last.P=null; /* desactive le survol valeurs en mode comparaison */
+  $("pkcard").innerHTML='<div class="sec"><h3>Lecture comparée</h3><p class="note">Deux courbes superposées montrent qui monte vite, qui s\'accumule, qui flotte : amusez-vous à faire varier la CLcr (une molécule rénale chuterait, une molécule hépatique ne bouge pas). Les bandes pointillées colorées, si présentes, sont les fenêtres TDM respectives (concentrations cibles des dosages plasmatiques).</p></div>';
+}
+window.renderCmp=renderCmp;
+
 function update(){
+  if(CMP.length){ renderCmp(); return; }
   var m=mol(), P=params(), un=m.un||"mg/L", usf=m.usf||1, dj=m.dj||"mg", df=m.df||1;
   var win=st.win, N=700, i;
   var ds=dosesIn(win);
