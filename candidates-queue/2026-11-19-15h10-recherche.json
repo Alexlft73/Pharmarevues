@@ -1,0 +1,152 @@
+{
+ "revues": [
+  {
+   "id": "comp-vinaigre-cidre-meta-nutrients-2025",
+   "ty": "Complément",
+   "dom": "Nutrition & Compléments",
+   "n": 1,
+   "dt": "2025-09",
+   "des": "Vinaigre de cidre et perte de poids : la méta-analyse 2025 (10 essais, 789 adultes) montre un effet réel mais MODESTE sur le poids, l'IMC et le tour de taille (Nutrients, publié 19/09/2025)",
+   "tag": "vinaigre de cidre · acide acétique · poids · IMC · tour de taille · méta-analyse",
+   "res": "Revue systématique et méta-analyse (PubMed, Web of Science, Scopus, CENTRAL jusqu'en mars 2025 ; 10 ECR, 789 adultes surpoids et/ou DT2, ≥ 4 semaines ; évaluation Cochrane RoB 2) : le vinaigre de cidre réduit le poids (SMD −0,39), l'IMC (SMD −0,65) et le tour de taille (SMD −0,34) ; les relayages presse scientifique (NutraIngredients, news-medical, 22/09/2025) convergent vers ~30 mL/jour. Effet statistiquement réel mais de taille modeste, obtenu dans des essais courts, hétérogènes — et à replacer face à la rétractation de l'essai « positif » le plus cité (voir entrée Alerte). En officine : « le vinaigre de cidre n'est pas un amaigrissant miracle : l'effet démontré est modeste et le seul essai spectaculaire a été rétracté ; diluez-le toujours (protection de l'émail et de l'œsophage), pas de cure prolongée, et jamais en même temps qu'un diurétique ou un laxatif sans avis ».",
+   "src": [
+    [
+     "Nutrients — méta-analyse (PMC)",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC12472926/"
+    ],
+    [
+     "NutraIngredients (22/09/2025)",
+     "https://www.nutraingredients.com/Article/2025/09/22/apple-cider-vinegar-review-backs-weight-management-potential/"
+    ],
+    [
+     "news-medical (22/09/2025)",
+     "https://www.news-medical.net/news/20250922/How-much-apple-cider-vinegar-reduces-weight-Meta-analysis-points-to-30-mL-daily.aspx"
+    ]
+   ]
+  },
+  {
+   "id": "alert-vinaigre-cidre-bmj-retract-2025",
+   "ty": "Alerte",
+   "dom": "Nutrition & Compléments",
+   "n": 5,
+   "dt": "2025-09",
+   "des": "L'essai « vinaigre de cidre fait maigrir » le plus cité a été RÉTRACTÉ par le BMJ Group (BMJ Nutrition, Prevention & Health ; annonce du 24/09/2025)",
+   "tag": "vinaigre de cidre · rétractation · intégrité scientifique · perte de poids · BMJ",
+   "res": "Le BMJ Group a annoncé la rétractation de l'analyse indiquant que de petites quantités quotidiennes de vinaigre de cidre pouvaient aider à la perte de poids chez des personnes en surpoids : l'essai randomisé, publié dans BMJ Nutrition, Prevention & Health, a été retiré de la littérature (Healio, 24/09/2025). C'est précisément ce types d'étude « positive » qui alimente les allégations virales sur les réseaux. En officine : quand un patient cite une étude spectaculaire sur le vinaigre de cidre, savoir que l'essai le plus médiatisé a été rétracté par l'éditeur lui-même est une réponse ferme et factuelle ; s'appuyer sur la méta-analyse 2025 (effet modeste) et surtout sur hygiène de vie et suivi.",
+   "src": [
+    [
+     "Healio — BMJ Group announced retraction (24/09/2025)",
+     "https://www.healio.com/news/primary-care/20250924/study-supporting-apple-cider-vinegar-for-weight-loss-retracted"
+    ]
+   ]
+  },
+  {
+   "id": "comp-argent-colloidal-toxics-2025",
+   "ty": "Alerte",
+   "dom": "Nutrition & Compléments",
+   "n": 5,
+   "dt": "2025-11",
+   "des": "Argent colloïdal « booster immunitaire » : caractérisation d'une solution commerciale concentrée (1000 mg/L) et alerte toxicologique (Toxics, publié 18/11/2025 + Nanotoxicology 2025)",
+   "tag": "argent colloïdal · nanoparticules · argyrie · toxicité hépatique · allégation non autorisée",
+   "res": "Étude de caractérisation physico-chimique d'une solution commerciale d'argent colloïdal concentrée (1000 mg/L, stabilisée PVP) vendue comme complément oral : les auteurs documentent les risques toxicologiques associés à la consommation orale (Toxics 2025, 13(11):992, publié 18/11/2025). En parallèle (Nanotoxicology 2025), la toxicité des ions argent issus de solutions colloïdales commerciales est confirmée sur culture de cellules hépatiques humaines Huh-7. L'argent n'est pas un nutriment essentiel, aucune allégation de santé n'est autorisée pour lui en Europe, et l'argyrie (coloration cutanée définitive) est décrite de longue date. En officine : déconseiller fermement les cures d'argent colloïdal « pour l'immunité » ou « antibactériennes » : pas de bénéfice démontré, risques réels (dépôt cutané irréversible, atteinte hépatique cellulaire documentée), et signalement en nutrivigilance si un patient en consomme.",
+   "src": [
+    [
+     "Toxics 2025, 13(11):992 (MDPI)",
+     "https://www.mdpi.com/2305-6304/13/11/992"
+    ],
+    [
+     "Nanotoxicology — silver ion toxicity in commercial colloidal silver (Huh-7)",
+     "https://www.tandfonline.com/doi/full/10.1080/17435390.2025.2573968"
+    ]
+   ]
+  },
+  {
+   "id": "comp-celeri-meta-fnut-2025",
+   "ty": "Complément",
+   "dom": "Nutrition & Compléments",
+   "n": 1,
+   "dt": "2025-07",
+   "des": "Jus de céleri et tension : la méta-analyse (10 ECR, 511 adultes) trouve des effets sur la pression artérielle et la glycémie — mais surtout avec graines/extraits à doses, pas le jus populaire (Frontiers in Nutrition, publié 22/07/2025)",
+   "tag": "céleri · Apium graveolens · tension artérielle · glycémie · jus tendance · méta-analyse",
+   "res": "SR/MA (Front Nutr 2025;12:1597680, PubMed 40765738, publié 22/07/2025, 10 ECR, 511 participants) : effets significatifs sur la PAS (SMD −1,0 ; IC 95 % −1,85 à −0,14), la PAD (SMD −0,93), la glycémie à jeun (SMD −0,80) et les triglycérides (SMD −1,18) ; PAS d'effet sur cholestérol total, LDL ni HDL. L'analyse en sous-groupes : les graines de céleri ou les préparations > 1000 mg/jour sont plus efficaces que les autres parties — le populaire « jus de céleri à jeun » n'est pas ce qui a été étudié ; pas plus d'événements indésirables que le placebo, mais hétérogénéité substantielle des essais, SMD sur petits effectifs. En officine : « le céleri a des effets réels sur la tension surtout sous forme de graines ou d'extraits dosés — pas le jus des vidéos ; si vous avez de la tension, il ne remplace jamais un traitement ni le sel réduit ».",
+   "src": [
+    [
+     "Frontiers in Nutrition — texte intégral",
+     "https://public-pages-files-2025.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2025.1597680/text"
+    ],
+    [
+     "Frontiers (page article)",
+     "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2025.1597680/full"
+    ],
+    [
+     "PubMed 40765738",
+     "https://pubmed.ncbi.nlm.nih.gov/40765738/"
+    ]
+   ]
+  },
+  {
+   "id": "comp-chrome-meta-insulino-2025",
+   "ty": "Complément",
+   "dom": "Diabète & Endocrinologie",
+   "n": 1,
+   "dt": "2025-05",
+   "des": "Chrome et insulinorésistance : la méta-analyse 2025 dans le surpoids/l'obésité confirme un effet sur l'insuline à jeun, le HOMA-IR et le poids — mais pas sur l'IMC ni les lipides (J Trace Elem Med Biol, 2025)",
+   "tag": "chrome · picolinate de chrome · HOMA-IR · insuline · obésité · allégation glycémie",
+   "res": "SR/MA d'ECR dans le surpoids/obésité (J Trace Elem Med Biol, 2025 — article S0946672X25000586, relayé par Examine le 28/05/2025 ; synthèse indépendante PMC13437750) : le chrome réduit significativement l'insuline à jeun, le HOMA-IR et le poids ; les effets sur l'IMC, le tour de taille, les triglycérides et la plupart des paramètres lipidiques ne sont PAS statistiquement significatifs ; possible effet tensionnel (baisse) en surpoids/obésité selon l'abstract. Les essais vont de 1981 à 2024 (JHMS 2025;8(4), méta sur l'insulinorésistance). En officine : « le chrome a un effet réel mais modeste sur l'insulinorésistance — ce n'est ni un antidiabétique ni un brûle-graisse ; à discuter uniquement en appoint d'un régime et d'un traitement, pas en automédication « pour la glycémie », et l'EFSA n'autorise pas d'allégation glycémie pour le chrome ».",
+   "src": [
+    [
+     "J Trace Elem Med Biol — abstract (ScienceDirect)",
+     "https://www.sciencedirect.com/science/article/abs/pii/S0946672X25000586"
+    ],
+    [
+     "Examine — study summary (28/05/2025)",
+     "https://examine.com/research-feed/study/1a2Rr0/"
+    ],
+    [
+     "PMC — revue Chromium(III) Beyond Insulin",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC13437750/"
+    ]
+   ]
+  },
+  {
+   "id": "comp-myoinositol-grossesse-jama-2025",
+   "ty": "Complément",
+   "dom": "Gynécologie & Ménopause",
+   "n": 2,
+   "dt": "2025-10",
+   "des": "Myo-inositol pendant la grossesse SOPK : le grand essai randomisé est NÉGATIF — pas de réduction du diabète gestationnel, de la prééclampsie ni de la prématurité (JAMA, 7/10/2025)",
+   "tag": "myo-inositol · SOPK · grossesse · diabète gestationnel · prééclampsie · essai randomisé",
+   "res": "Essai randomisé néerlandais (van der Wel et al., JAMA 2025 Oct 7;334(13):1151-1159, doi 10.1001/jama.2025.13668, NL67329.078.18) : la supplémentation quotidienne en myo-inositol pendant la grossesse chez des patientes SOPK n'a PAS réduit l'incidence du critère combiné diabète gestationnel, prééclampsie ou prématurité, contredisant l'optimisme des petits essais antérieurs. Un éditorial JAMA (« Valuable Evidence Amid Complex Etiologies », PMC) nuance : la preuve antérieure venait d'essais courts et petits. En officine : « face à une patiente SOPK enceinte qui prend du myo-inositol pour éviter le diabète gestationnel : le grand essai dédié est négatif — on peut le stopper sans inquiétude, et la protection passe par le dépistage et le suivi conventionnel » ; pour l'inositol hors grossesse (ovulation, insulinorésistance), l'umbrella review reste plus favorable mais n'estompe pas cet essai.",
+   "src": [
+    [
+     "JAMA (article)",
+     "https://jamanetwork.com/journals/jama/fullarticle/2838634"
+    ],
+    [
+     "Maastricht University — conclusions affichées",
+     "https://www.maastrichtuniversity.nl/news/myo-inositol-supplementation-prevent-pregnancy-complications-polycystic-ovary-syndrome-randomized"
+    ]
+   ]
+  },
+  {
+   "id": "alert-he-menthe-hepato-jhep-2025",
+   "ty": "Alerte",
+   "dom": "Nutrition & Compléments",
+   "n": 5,
+   "dt": "2025-04",
+   "des": "Gélules d'huile essentielle de menthe poivrée et hépatotoxicité : cas documenté, même à doses usuelles (Journal of Hepatology, 09/04/2025)",
+   "tag": "huile essentielle · menthe poivrée · hépatotoxicité · voie orale · complément",
+   "res": "Cas rapporté par la Mayo Clinic (Ali K, Al Snih GM, Beyder A, Abdelmalek MF, J Hepatol 2025 Apr 9;83(2):e77-e78, doi 10.1016/j.jhep.2025.04.004) : un homme de 18 ans avec SII-D traité par gélules d'HE de menthe poivrée (IB Gard, 90 mg/j) puis une association complémentaire d'HE, a développé une atteinte hépatique attribuée aux monoterpènes de la menthe (mécanisme oxydatif intracellulaire discuté par les auteurs). Les HE par voie ORALE sont des doses actives, pas des arômes. En officine : « les gélules d'huiles essentielles ne sont pas anodines : le foie les métabolise — jamais de cure prolongée sans avis, prudence renforcée chez l'adolescent et sur association de produits, et tout ictère/fatigue intense sous HE = arrêt et orientation médicale immédiate ».",
+   "src": [
+    [
+     "Journal of Hepatology (article)",
+     "https://www.journal-of-hepatology.eu/article/S0168-8278(25)00230-2/fulltext"
+    ],
+    [
+     "PMC — texte intégral du cas",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC12766368/"
+    ]
+   ]
+  }
+ ]
+}
