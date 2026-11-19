@@ -1,0 +1,42 @@
+name: Contrôle qualité site PharmaVeille
+on:
+  workflow_run:
+    workflows: ["Injection automatique PharmaVeille"]
+    types: [completed]
+  schedule:
+    - cron: '0 * * * *'   # contrôle horaire, 24h/24 (utile surtout la nuit 23h-8h)
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  site-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - name: Batterie locale (7 pages) + comparaison GitHub Pages déployé
+        id: check
+        continue-on-error: true
+        env:
+          HEAD_SHA: ${{ github.sha }}
+          DEPLOY_RETRIES: '18'
+          DEPLOY_WAIT_MS: '45000'
+        run: node scripts/site-check.js
+      - name: Journaliser le résultat dans SITE_CHECKS.md
+        run: |
+          git config user.name "vibe-veille[bot]"
+          git config user.email "actions@users.noreply.github.com"
+          if [ ! -f SITE_CHECKS.md ]; then printf '| date (UTC) | sha | pages | comptages | déployé | verdict |\n|---|---|---|---|---|---|\n' > SITE_CHECKS.md; fi
+          git add SITE_CHECKS.md
+          if git diff --cached --quiet; then
+            echo "Rien à journaliser."
+          else
+            git commit -m "site-check: $(tail -1 SITE_CHECKS.md | grep -oE '✅ PASS|❌ FAIL[^|]*' | head -1)"
+            git push
+          fi
+      - name: Échec rendu visible (badge rouge Actions)
+        if: steps.check.outcome == 'failure'
+        run: |
+          echo "Échec de la batterie de contrôle — voir SITE_CHECKS.md et le log du run."
+          exit 1
