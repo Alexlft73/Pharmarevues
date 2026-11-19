@@ -21,9 +21,11 @@ const PAGES = {
   'classes-medicaments.html': { scripts: 2, arrays: ['CLASSES'] },
   'theses.html':          { scripts: 2, arrays: ['THESES'] },
   'pk-simulateur.html':   { scripts: 3, arrays: [] },
+  'allegations-sante.html': { scripts: 2, arrays: ['ALLEG'] },
+  'allegations-sante.html': { scripts: 2, arrays: ['ALLEG'] },
 };
-const MIN_LEN = { REVUES: 1000, RECO: 100, PEDI: 10, ALGOS: 5, THESES: 10, CLASSES: 10, FICHES: 10, MONTHS: 7 };
-const ALL_ARRAYS = ['REVUES', 'RECO', 'PEDI', 'ALGOS', 'MONTHS', 'THESES', 'CLASSES', 'FICHES'];
+const MIN_LEN = { ALLEG: 30, ALLEG: 30, REVUES: 1000, RECO: 100, PEDI: 10, ALGOS: 5, THESES: 10, CLASSES: 10, FICHES: 10, MONTHS: 7 };
+const ALL_ARRAYS = ['REVUES', 'RECO', 'PEDI', 'ALGOS', 'MONTHS', 'THESES', 'CLASSES', 'FICHES', 'ALLEG'];
 
 const results = []; // {page, check, ok, detail}
 function rec(page, check, ok, detail) { results.push({ page, check, ok, detail: detail || '' }); console.log(`${ok ? '  ✅' : '  ❌'} ${page} · ${check}${detail ? ' — ' + detail : ''}`); }
