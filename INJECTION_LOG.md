@@ -1,47 +1,8 @@
 # Injection automatique
 
-- Aucune nouvelle entrée : 42 doublon(s) écarté(s).
+- REVUES: +7 → 1078
+- RECO: +0 → 169
+- NEW: 7
 
 ## Écartés
-- DOUBLON: Bisglycinate de magnésium et sommeil : premier ECR dédié — un effet ré
-- DOUBLON: L-thréonate de magnésium (Magtein®) et cognition : l'ECR de 6 semaines
-- DOUBLON: Oméga-3 et fibrillation auriculaire : la plus grande méta-analyse (35 
-- DOUBLON: Ratio EPA:DHA des compléments oméga-3 : la première méta-analyse dose-
-- DOUBLON: DHA haute dose et prévention de la démence : l'essai randomisé montre 
-- DOUBLON: Oméga-3 et dépression : le « portrait optimisé » par méta-analyse dose
-- DOUBLON: Bifidobacterium lactis HN019 et constipation fonctionnelle : le grand 
-- DOUBLON: Confirmation européenne : B. lactis HN019 inefficace sur les selles sp
-- DOUBLON: Probiotiques vs traitements pharmacologiques dans la constipation fonc
-- DOUBLON: Symbiotique Heyndrickxia coagulans TBC169 + fibres : essai randomisé e
-- DOUBLON: Passiflore (extrait standardisé) contre stress et troubles du sommeil 
-- DOUBLON: Qualité des produits à la passiflore : les compléments alimentaires te
-- DOUBLON: Aubépine (Crataegus spp.) et tension artérielle : la méta-analyse des 
-- DOUBLON: Produits en accès direct (plantes, compléments, OTC) contre l'insomnie
-- DOUBLON: Mélatonine : la dose et l'heure comptent — dose-réponse sur 26 ECR, l'
-- DOUBLON: Mélatonine et sommeil : panorama mondial des revues systématiques — 57
-- DOUBLON: Mélatonine chez le senior avec trouble cognitif : +12 min de sommeil e
-- DOUBLON: Mélatonine chez les 0-6 ans : 1re cause d'exposition médicamenteuse no
-- DOUBLON: UC-II + collagène hydrolysé associés dans la gonarthrose : essai rando
-- DOUBLON: Méta-analyse mise à jour du collagène oral dans la gonarthrose : 11 EC
-- DOUBLON: Umbrella/dédicace meta UC-II (collagène de type II non dénaturé) sur l
-- DOUBLON: Umbrella review du collagène (peau + musculo-squelettique) : 113 ECR, 
-- DOUBLON: Curcumine et polyarthrite rhumatoïde : méta-analyse d'ECR vs placebo —
-- DOUBLON: Curcumine et MICI : méta-analyse de 13 ECR vs placebo — un adjuvant cr
-- DOUBLON: Curcumine nano-micellaire 80 mg en add-on au diénogest dans l'endométr
-- DOUBLON: Zinc et immunité antivirale : chez les végétariens et véganes carencés
-- DOUBLON: Corriger la carence en zinc du résident d'EHPAD : essai randomisé 12 m
-- DOUBLON: Vitamine C IV précoce dans le sepsis : l'essai C-EASIE confirme l'abse
-- DOUBLON: Formes « améliorées » de vitamine C (liposomale, calcium ascorbate, li
-- DOUBLON: Complément haute dose vitamine C + bioflavonoïdes : effets antioxydant
-- DOUBLON: Grossesse : une seule perfusion de fer carboxymaltose bat le fer oral 
-- DOUBLON: Syndrome des jambes sans repos : le fer IV carboxymaltose réduit réell
-- DOUBLON: Fer liposomal (SunActive) vs fer polymaltose chez l'enfant anémié : l'
-- DOUBLON: NOTE AST relative à la sécurité d'emploi, dans un complément alimentai
-- DOUBLON: Avis EFSA : niveau d'apport sûr en DHA supplémentaire fixé à 1 g/jour 
-- DOUBLON: Avis ANSES relatif à un cas d'anaphylaxie associée à la consommation d
-- DOUBLON: ANSES : avis sur les compléments alimentaires contenant de la mélatoni
-- DOUBLON: Avis ANSES : évaluation des risques liés aux compléments alimentaires 
-- DOUBLON: Santé Canada — Summary Safety Review curcuma/curcuminoïdes oraux : hép
-- DOUBLON: Avis relatif à la mise à jour de l'arrêté du 9 mai 2006 relatif aux nu
-- DOUBLON: Références nutritionnelles en vitamines et minéraux pour la population
-- DOUBLON: Recommandations pour le diagnostic, le traitement et la prévention de 
+- aucun
