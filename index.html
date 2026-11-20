@@ -147,13 +147,13 @@
 
 /* ==== MODULE CLASSES (onglet 3) : module complet en iframe (source unique classes-medicaments.html) ==== */
 #classestab,#thesestab,#pksimtab,#allegtab{max-width:none;margin:6px auto 0;padding:0}
-#classestab .cframe-wrap,#thesestab .cframe-wrap,#pksimtab .cframe-wrap,#allegtab .cframe-wrap{margin:0}
-#classestab .cframe,#thesestab .cframe,#pksimtab .cframe,#allegtab .cframe{width:100%;height:86vh;min-height:520px;border:0;border-radius:0;background:transparent;box-shadow:none;display:block}
+#classestab .cframe-wrap,#thesestab .cframe-wrap,#pksimtab .cframe-wrap,#allegtab .cframe,#comptab .cframe-wrap,#comptab .cframe-wrap{margin:0}
+#classestab .cframe,#thesestab .cframe,#pksimtab .cframe,#allegtab .cframe,#comptab .cframe{width:100%;height:86vh;min-height:520px;border:0;border-radius:0;background:transparent;box-shadow:none;display:block}
 #classestab .cfoot,#thesestab .cfoot,#pksimtab .cfoot,#allegtab .cfoot{max-width:1020px;margin:16px auto 0;font-size:.8rem;color:#64748b;text-align:center;border-top:1px solid #e2e8f0;padding:12px 20px 0}
 #thesestab .cfoot a{color:#0f766e;font-weight:600}
 #pksimtab .cfoot a,#allegtab .cfoot a{color:#0f766e;font-weight:600}
 #classestab .cfoot a{color:#0f766e;font-weight:600}
-@media (max-width:640px){#classestab .cframe,#thesestab .cframe,#pksimtab .cframe,#allegtab .cframe{height:78vh}}
+@media (max-width:640px){#classestab .cframe,#thesestab .cframe,#pksimtab .cframe,#allegtab .cframe,#comptab .cframe{height:78vh}}
 /* — Module recommandations (scopé) — */
 #recostab .cbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:10px 0 10px}
 #recostab .cbar select{flex:1 1 100%;padding:9px 12px;border:1.5px solid #e2e8f0;border-radius:10px;font-size:.9rem}
@@ -384,7 +384,7 @@ html.dark .printbtn:hover{filter:brightness(1.15)}
 html.dark a:focus-visible,html.dark button:focus-visible,html.dark summary:focus-visible{outline-color:var(--accent)}
 
 /* — Module classes (iframe) : mode sombre — */
-html.dark #classestab .cframe,html.dark #thesestab .cframe,html.dark #pksimtab .cframe,html.dark #allegtab .cframe{background:transparent}
+html.dark #classestab .cframe,html.dark #thesestab .cframe,html.dark #pksimtab .cframe,html.dark #allegtab .cframe,#comptab .cframe{background:transparent}
 html.dark #thesestab .cfoot{color:var(--muted);border-top-color:var(--line)}
 html.dark #classestab .cfoot{color:var(--muted);border-top-color:var(--line)}
 html.dark #classestab .cfoot a{color:#33d6c3}
@@ -1257,8 +1257,8 @@ document.getElementById("fcoi").addEventListener("change", e=>{ state.coi = e.ta
 document.getElementById("ftype").addEventListener("change", e=>{ state.type = e.target.value; apply(); });
 
 function pvfit(f){try{var d=f.contentDocument;if(!d)return;var h=Math.max(d.documentElement.scrollHeight,d.body?d.body.scrollHeight:0);if(h>120)f.style.height=h+"px"}catch(e){}}
-function pvfitAll(){var fs=document.querySelectorAll("#classestab .cframe,#thesestab .cframe,#pksimtab .cframe,#allegtab .cframe");for(var i=0;i<fs.length;i++)pvfit(fs[i])}
-(function(){var fs=document.querySelectorAll("#classestab .cframe,#thesestab .cframe,#pksimtab .cframe,#allegtab .cframe");for(var i=0;i<fs.length;i++){(function(f){f.addEventListener("load",function(){pvfit(f);try{var d=f.contentDocument;if(d)new MutationObserver(function(){pvfit(f)}).observe(d.documentElement,{childList:true,subtree:true,attributes:true})}catch(e){}setTimeout(function(){pvfit(f)},300);setTimeout(function(){pvfit(f)},1500)})})(fs[i])}window.addEventListener("resize",function(){clearTimeout(window._pvfitT);window._pvfitT=setTimeout(pvfitAll,150)})})();
+function pvfitAll(){var fs=document.querySelectorAll("#classestab .cframe,#thesestab .cframe,#pksimtab .cframe,#allegtab .cframe,#comptab .cframe");for(var i=0;i<fs.length;i++)pvfit(fs[i])}
+(function(){var fs=document.querySelectorAll("#classestab .cframe,#thesestab .cframe,#pksimtab .cframe,#allegtab .cframe,#comptab .cframe");for(var i=0;i<fs.length;i++){(function(f){f.addEventListener("load",function(){pvfit(f);try{var d=f.contentDocument;if(d)new MutationObserver(function(){pvfit(f)}).observe(d.documentElement,{childList:true,subtree:true,attributes:true})}catch(e){}setTimeout(function(){pvfit(f)},300);setTimeout(function(){pvfit(f)},1500)})})(fs[i])}window.addEventListener("resize",function(){clearTimeout(window._pvfitT);window._pvfitT=setTimeout(pvfitAll,150)})})();
 function showTab(t){
   const rev = (t==="revues"), cl = (t==="classes"), rc = (t==="recos"), pd = (t==="pedi"), ag = (t==="algos"), th = (t==="theses"), pk = (t==="pksim"), al = (t==="alleg"), cp = (t==="comp");
   document.getElementById("toolrev").style.display = rev ? "" : "none";
