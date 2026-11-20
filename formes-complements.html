@@ -46,6 +46,23 @@ ol.rank li:nth-child(n+4)::before{background:rgba(185,28,28,.10);color:var(--rou
 .srcs a{font-size:.76rem;color:var(--teal);text-decoration:none;font-weight:600}
 .srcs a:hover{text-decoration:underline}
 .foot{margin-top:18px;font-size:.8rem;color:var(--gris);text-align:center;line-height:1.6}
+/* — schéma physiologie + doses + rappels — */
+.schema-card,.dose-card{background:var(--carte);border:1px solid var(--bord);border-radius:14px;padding:18px 20px;margin:14px auto;max-width:1100px;box-shadow:0 1px 3px rgba(15,23,42,.05)}
+.schema-card h2,.dose-card h2{font-size:1.12rem;margin:0 0 4px}
+.svgholder{background:rgba(255,255,255,.03);border:1px solid var(--bord);border-radius:12px;padding:8px 6px;margin-top:8px;overflow-x:auto}
+.slegend{margin:12px 0 0;padding-left:22px;font-size:.84rem}
+.slegend li{margin-bottom:7px}
+.slegend b{color:var(--teal)}
+.dosescroll{overflow-x:auto}
+.dose-card table{width:100%;border-collapse:collapse;font-size:.82rem;margin-top:10px}
+.dose-card th{background:var(--teal);color:#fff;text-align:left;padding:7px 9px;font-size:.8rem}
+.dose-card th:first-child{border-radius:8px 0 0 0}.dose-card th:last-child{border-radius:0 8px 0 0}
+.dose-card td{padding:7px 9px;border-bottom:1px dashed var(--bord);vertical-align:top}
+.dose-card tr:nth-child(even) td{background:rgba(14,116,144,.045)}
+.dose-card td:first-child{font-weight:700;white-space:nowrap}
+.physio{background:rgba(14,116,144,.06);border-left:3px solid var(--teal);padding:9px 11px;font-size:.82rem;line-height:1.45;border-radius:0 9px 9px 0;margin:10px 0}
+.ph-t{font-weight:700;color:var(--teal);font-size:.72rem;letter-spacing:.5px;text-transform:uppercase;margin-bottom:4px}
+.ph-d{margin-top:6px;font-weight:600}
 </style>
 </head>
 <body>
@@ -56,6 +73,157 @@ ol.rank li:nth-child(n+4)::before{background:rgba(185,28,28,.10);color:var(--rou
   <div class="sub">Les formes galéniques des compléments alimentaires classées par assimilation <b>décroissante</b>, substance par substance : ce qui s'absorbe vraiment, ce qui ne se justifie pas, et le message du comptoir. Détail et sources dans les algorithmes « Échelles de biodisponibilité » (onglet 🧭). Mis à jour le 20/11/2026.</div>
 </header>
 <div class="intro">⚖️ <b>Comment lire :</b> n° 1 = la forme la mieux absorbée ; la liste descend jusqu'aux formes à éviter ou sans argument. Le rang 1 ne veut pas dire « la plus efficace cliniquement » : la <b>dose</b>, le <b>repas</b> et la <b>tolférance</b> comptent souvent plus que le sel. Pour chaque ligne : le chiffre d'absorption quand il existe, et le conseil du comptoir.</div>
+<div class="schema-card">
+  <h2>🔬 Rappel de physiologie : du comprimé au sang</h2>
+  <div class="csub">Où et comment chaque forme traverse la barrière intestinale — et pourquoi la forme, le repas et la dose changent tout.</div>
+  <div class="svgholder">
+  <svg viewBox="0 0 980 620" role="img" aria-label="Schéma physiologique de l'absorption intestinale des compléments" style="width:100%;height:auto;display:block;color:var(--encre)">
+    <defs>
+      <linearGradient id="gSto" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fbbf24"/><stop offset="1" stop-color="#f59e0b"/></linearGradient>
+      <linearGradient id="gSi" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8b799"/><stop offset="1" stop-color="#ef9a76"/></linearGradient>
+      <linearGradient id="gCo" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e2907e"/><stop offset="1" stop-color="#d97757"/></linearGradient>
+      <radialGradient id="gZoom" cx="0.5" cy="0.4" r="0.7"><stop offset="0" stop-color="#fffdf5"/><stop offset="1" stop-color="#fdf3dc"/></radialGradient>
+    </defs>
+    <style>
+      .ob{stroke:#c26d55;stroke-width:3;fill:none;stroke-linecap:round}
+      .pipe{stroke:#e1936f;stroke-width:20;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .thin{stroke:#e1936f;stroke-width:11;fill:none;stroke-linecap:round}
+      .colo{stroke:url(#gCo);stroke-width:26;fill:none;stroke-linecap:round}
+      .lbl{font:600 13px 'Segoe UI',system-ui,sans-serif;fill:currentColor}
+      .lb2{font:600 11px 'Segoe UI',system-ui,sans-serif;fill:#7c2d12}
+      .lb3{font:600 11px 'Segoe UI',system-ui,sans-serif;fill:#0e7490}
+      .lead{stroke:currentColor;stroke-width:1.4;fill:none;opacity:.55}
+      .badge{font:700 13px 'Segoe UI',system-ui,sans-serif;fill:#fff}
+    </style>
+
+    <!-- ===== TÊTE ===== -->
+    <path class="ob" d="M88 84 C124 74 148 88 150 104 C151.5 116 144 122 138 122 C126 122 112 116 100 116" fill="#ffe3cf" stroke-linejoin="round"/>
+    <path class="ob" d="M100 116 C96 126 98 134 106 138 L112 148" style="stroke-width:2.4"/>
+    <circle cx="122" cy="102" r="2.6" fill="#7c2d12"/>
+    <text class="lbl" x="14" y="92" text-anchor="start">Bouche</text>
+    <!-- œsophage -->
+    <path class="pipe" d="M104 148 C100 168 110 190 120 214" opacity="0.9"/>
+    <text class="lbl" x="14" y="180">Œsophage</text>
+    <g><circle cx="76" cy="118" r="11" fill="#0e7490"/><text class="badge" x="76" y="123" text-anchor="middle">1</text></g>
+
+    <!-- ===== ESTOMAC ===== -->
+    <path d="M96 200 C72 206 58 224 58 250 C58 282 80 302 112 306 C100 322 96 338 106 348 C118 359 138 356 148 346 C120 344 96 322 96 296 C96 262 112 224 140 210 C130 200 112 196 96 200 Z" fill="url(#gSto)" stroke="#d97706" stroke-width="3" stroke-linejoin="round"/>
+    <!-- vague HCl -->
+    <path d="M78 232 q10 12 0 24 M96 226 q10 14 0 28 M114 244 q8 10 0 20" class="ob" style="stroke-width:2;opacity:.65"/>
+    <text class="lbl" x="14" y="266">Estomac</text>
+    <text class="lb2" x="16" y="282">HCl · pH 1,5-3,5</text>
+    <g><circle cx="60" cy="188" r="11" fill="#0e7490"/><text class="badge" x="60" y="193" text-anchor="middle">2</text></g>
+
+    <!-- ===== FOIE + VÉSICULE + PANCRÉAS ===== -->
+    <path d="M232 148 C282 140 330 148 344 168 C330 186 296 196 262 194 C238 192 224 176 232 148 Z" fill="#b45151" stroke="#8f3d3d" stroke-width="3"/>
+    <text class="lbl" x="258" y="172">Foie</text>
+    <path d="M252 196 C246 210 246 222 252 230 C260 224 262 210 258 198 Z" fill="#7db63f" stroke="#5e8f2a" stroke-width="2.4"/>
+    <text class="lb3" x="284" y="224">Vésicule biliaire</text>
+    <!-- bile + pancréas -> duodénum -->
+    <path class="lead" d="M254 226 C230 246 216 268 220 288" stroke-dasharray="5 4" style="stroke-width:2;stroke:#5e8f2a"/>
+    <polygon points="217,292 224,284 226,296" fill="#5e8f2a"/>
+    <path d="M232 296 C252 292 272 296 282 306 C272 318 250 322 234 316 C224 310 224 300 232 296 Z" fill="#f2c14e" stroke="#b98a1d" stroke-width="2.6"/>
+    <text class="lbl" x="300" y="310">Pancréas</text>
+    <path class="lead" d="M236 314 C226 322 218 332 214 340" stroke-dasharray="5 4" style="stroke-width:2;stroke:#b98a1d"/>
+    <text class="lb2" x="286" y="242">bile + lipase :</text>
+    <text class="lb2" x="286" y="256">micelles</text>
+    <g><circle cx="238" cy="268" r="11" fill="#0e7490"/><text class="badge" x="238" y="273" text-anchor="middle">3</text></g>
+
+    <!-- ===== DUODÉNUM (C) ===== -->
+    <path class="pipe" d="M124 352 C120 372 132 392 156 398 C186 404 210 394 218 376 C224 360 214 344 196 340" fill="none" style="stroke:url(#gSi)"/>
+    <text class="lbl" x="250" y="356">Duodénum</text>
+    <text class="lb2" x="250" y="372">biliaux · pH ~6</text>
+
+    <!-- ===== JÉJUNUM (spirale) ===== -->
+    <path class="pipe" d="M198 342 C168 344 148 362 132 388 C114 416 116 446 136 462 C160 480 194 474 208 452 C222 430 214 406 190 402 C170 398 158 412 166 428 C172 440 188 442 196 434" fill="none" stroke="url(#gSi)"/>
+    <text class="lbl" x="34" y="524">Jéjunum — zone d'absorption</text>
+    <g><circle cx="188" cy="328" r="11" fill="#0e7490"/><text class="badge" x="188" y="333" text-anchor="middle">4</text></g>
+
+    <!-- ===== ILÉON → CÆCUM ===== -->
+    <path class="pipe" d="M196 436 C214 452 226 472 238 492 C248 510 262 532 280 546" fill="none" stroke="url(#gSi)"/>
+    <text class="lbl" x="262" y="470">Iléon</text>
+    <text class="lb3" x="262" y="486">B12 : facteur intrinsèque</text>
+    <text class="lb3" x="262" y="500">+ récepteur cubam</text>
+    <g><circle cx="224" cy="478" r="11" fill="#0e7490"/><text class="badge" x="224" y="483" text-anchor="middle">6</text></g>
+
+    <!-- ===== CÆCUM + CÔLON ===== -->
+    <ellipse cx="308" cy="556" rx="34" ry="22" fill="url(#gCo)" stroke="#c26d55" stroke-width="3"/>
+    <path class="colo" d="M298 574 C250 590 180 592 128 582 C104 577 88 568 80 556" fill="none"/>
+    <g><circle cx="308" cy="590" r="11" fill="#0e7490"/><text class="badge" x="308" y="595" text-anchor="middle">8</text></g>
+    <text class="lbl" x="102" y="608">Côlon — fermentation des fibres (SCFA)</text>
+
+    <!-- ===== ZOOM ENTÉROCYTE à droite ===== -->
+    <circle cx="636" cy="322" r="148" fill="url(#gZoom)" stroke="#c9a24b" stroke-width="3"/>
+    <path class="lead" d="M214 396 C300 372 420 356 488 326" stroke-dasharray="5 5"/>
+    <text x="494" y="310" font="600 11px 'Segoe UI'" fill="currentColor">zoom</text>
+    <!-- entérocyte : cellule -->
+    <path d="M542 254 L728 254 C740 254 748 262 748 274 L748 356 C748 386 728 400 700 400 L590 400 C562 400 542 386 542 356 Z" fill="#fdeee3" stroke="#c26d55" stroke-width="3"/>
+    <!-- microvillosités bord brosse apical (haut) -->
+    <path d="M540 254 L730 254" stroke="#c26d55" stroke-width="3" fill="none"/>
+    <g stroke="#e0935f" stroke-width="3.4" stroke-linecap="round">
+      <path d="M552 252 l-8 -12"/><path d="M570 252 l-8 -12"/><path d="M588 252 l-8 -12"/><path d="M606 252 l-8 -12"/><path d="M624 252 l-8 -12"/><path d="M642 252 l-8 -12"/><path d="M660 252 l-8 -12"/><path d="M678 252 l-8 -12"/><path d="M696 252 l-8 -12"/><path d="M714 252 l-8 -12"/><path d="M732 252 l-8 -12"/>
+    </g>
+    <text class="lb2" x="556" y="220">bord en brosse (microvillosités)</text>
+    <!-- noyau -->
+    <ellipse cx="646" cy="330" rx="34" ry="22" fill="#dfd4f5" stroke="#9081c9" stroke-width="2.4"/>
+    <text class="lb2" x="618" y="336">noyau</text>
+    <!-- transporteurs apicaux -->
+    <g font="600 10.5px 'Segoe UI'">
+      <rect x="550" y="248" rx="9" width="58" height="16" fill="#dc2626"/><text x="579" y="260" text-anchor="middle" fill="#fff">DMT1 fer</text>
+      <rect x="614" y="248" rx="9" width="52" height="16" fill="#d97706"/><text x="640" y="260" text-anchor="middle" fill="#fff">Ca · TRPV6</text>
+      <rect x="672" y="248" rx="9" width="54" height="16" fill="#7c3aed"/><text x="699" y="260" text-anchor="middle" fill="#fff">ZIP4 zinc</text>
+      <rect x="550" y="288" rx="9" width="78" height="16" fill="#be185d"/><text x="589" y="300" text-anchor="middle" fill="#fff">PepT1 chélates</text>
+      <rect x="634" y="288" rx="9" width="66" height="16" fill="#0369a1"/><text x="667" y="300" text-anchor="middle" fill="#fff">TRPM6/7 Mg</text>
+      <rect x="550" y="328" rx="9" width="66" height="16" fill="#15803d"/><text x="583" y="340" text-anchor="middle" fill="#fff">SVCT1 vit C</text>
+      <rect x="622" y="328" rx="9" width="96" height="16" fill="#0e7490"/><text x="670" y="340" text-anchor="middle" fill="#fff">IF + cubam : B12 (iléon)</text>
+      <rect x="550" y="368" rx="9" width="108" height="16" fill="#a16207"/><text x="604" y="380" text-anchor="middle" fill="#fff">micelles → SR-BI</text>
+    </g>
+    <!-- exit flèches basolatéral -->
+    <g><circle cx="756" cy="278" r="11" fill="#0e7490"/><text class="badge" x="756" y="283" text-anchor="middle">5</text></g>
+    <path d="M748 292 C778 304 802 318 824 336" stroke="#0369a1" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <text x="816" y="330" font="600 12px 'Segoe UI'" fill="#0369a1">→ veine porte</text>
+    <text x="820" y="346" font="10.5px 'Segoe UI'" fill="#0369a1">minéraux · vit C · B12</text>
+    <path d="M748 352 C778 366 802 380 824 398" stroke="#b45309" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <g><circle cx="792" cy="368" r="11" fill="#0e7490"/><text class="badge" x="792" y="373" text-anchor="middle">7</text></g>
+    <text x="816" y="398" font="600 12px 'Segoe UI'" fill="#7c2d12">→ lymphe : chylomicrons</text>
+    <text x="820" y="414" font="10.5px 'Segoe UI'" fill="#7c2d12">D · E · K · A · oméga-3</text>
+  </svg>
+  </div>
+  <ol class="slegend">
+    <li><b>Bouche &amp; œsophage</b> — simple transit : seules certaines galéniques (gastrorésistantes) y jouent un rôle (protéger l'estomac ou l'ingrédient).</li>
+    <li><b>Estomac</b> — l'acide chlorhydrique (pH 1,5-3,5) <b>dissout les sels</b> : condition n° 1 de l'absorption. Le carbonate de calcium en dépend totalement (« au repas »), l'oxyde de magnésium y survit sans pour autant s'absorber, le fer est maintenu soluble sous forme Fe²⁺.</li>
+    <li><b>Duodénum</b> — bile + lipase pancréatique forment des <b>micelles</b> : passage obligé des vitamines liposolubles et des oméga-3. À jeun, leur absorption chute.</li>
+    <li><b>Jéjunum</b> — la grande zone d'absorption : les sels solubilisés empruntent des <b>transporteurs apicaux saturables</b> (Mg : TRPM6/7 + paracellulaire ; Ca : TRPV6 ; Zn : ZIP4 ; fer : DMT1). Quand le transporteur est saturé, tout le surplus passe dans les selles.</li>
+    <li><b>Entérocyte</b> — le filtre : ferritine (fer), calbindine (Ca), métallothionéine (Zn) stockent ou bloquent ; l'hépcidine hépatique ferme l'export du fer quand les stocks sont pleins. Voie peptidique PepT1 pour les chélats (bisglycinate) — d'où leur absorption « comme un peptide », pas comme un sel.</li>
+    <li><b>Iléon</b> — le passage <b>exclusif</b> de la B12 : facteur intrinsèque + récepteur cubam, saturé vers 1,5-2 µg par prise (une résection iléale = carence B12, quelle que soit la forme).</li>
+    <li><b>Sorties</b> — minéraux et hydrosolubles → veine porte → foie ; liposolubles et oméga-3 → <b>chylomicrons → lymphe</b> : deux autoroutes différentes, d'où l'importance du repas gras pour la seconde.</li>
+    <li><b>Côlon</b> — pas d'absorption significative des formes usuelles ; c'est le siège de la <b>fermentation des fibres</b> (prébiotiques → acides gras à chaîne courte) et de la réabsorption de l'eau et des sels biliaires.</li>
+  </ol>
+</div>
+<div class="dose-card">
+  <h2>💊 Doses de référence — VNR (UE) vs PRI/AI (EFSA)</h2>
+  <div class="csub">Le « % VNR » de l'étiquette est un repère réglementaire (règlement UE 1169/2011), pas toujours la recommandation scientifique : quand l'EFSA a revu ses repères, la colonne PRI s'en écarte. À dire au patient au lieu de comparer des %.</div>
+  <table>
+    <thead><tr><th>Nutriment</th><th>VNR adulte (UE)</th><th>Repère EFSA (PRI/AI)</th><th>Le point comptoir</th></tr></thead>
+    <tbody>
+      <tr><td>Magnésium</td><td>375 mg</td><td>PRI 350 mg H / 300 mg F</td><td>Fractionner : l'absorption tombe quand la dose par prise monte (≈ 65 % à 36 mg → ≈ 11 % à ~1000 mg)</td></tr>
+      <tr><td>Fer</td><td>14 mg</td><td>PRI 11 mg H / 16 mg F</td><td>Un jour sur deux reste efficace (hépcidine) ; à 2 h du thé, café et produits laitiers</td></tr>
+      <tr><td>Calcium</td><td>800 mg</td><td>PRI 950 mg</td><td>≤ 500 mg par prise : le transporteur TRPV6 sature, le surplus n'est pas absorbé</td></tr>
+      <tr><td>Zinc</td><td>10 mg</td><td>PRI ≈ 9,3-16,4 mg (selon phytates du régime, EFSA 2023)</td><td>Ne pas dépasser ~40 mg/j au total : au-delà, carence induite en cuivre</td></tr>
+      <tr><td>Sélénium</td><td>55 µg</td><td>PRI 70 µg</td><td>Marge étroite : les apports toxiques ne sont pas très loin des apports utiles</td></tr>
+      <tr><td>Iode</td><td>150 µg</td><td>AI 150 µg ; 200 µ grossesse et allaitement</td><td>Grossesse : ne pas rester à 150 µg, le besoin monte</td></tr>
+      <tr><td>Chrome</td><td>40 µg</td><td>pas de PRI établie</td><td>Le VNR existe à l'étiquette, la science ne l'a jamais validé</td></tr>
+      <tr><td>Vitamine D</td><td>5 µg (200 UI)</td><td>PRI 15 µg/d (600 UI) ; 20 µg ≥ 65 ans</td><td>Écart majeur entre l'étiquette et EFSA ; +K2 chinoise sous AVK : prudence, avis médical</td></tr>
+      <tr><td>Vitamine E</td><td>12 mg</td><td>PRI 13 mg H / 11 mg F</td><td>Haut de fourchette alimentaire atteignable par l'alimentation (huiles, noix)</td></tr>
+      <tr><td>Vitamine K</td><td>75 µg</td><td>AI 70 µg</td><td>Convergent ; sous anticoagulant AVK, apports stables, pas de changement brusqué</td></tr>
+      <tr><td>Vitamine C</td><td>80 mg</td><td>PRI 110 mg (≈ 155 si fumeur)</td><td>Au-delà de ~1 g/j, l'excès urinaire suit : le transporteur SVCT1 sature</td></tr>
+      <tr><td>Vitamine B12</td><td>2,5 µg</td><td>PRI 4 µg ; AI 4 µg (EFSA 2015)</td><td>Iléon saturé vers 1,5-2 µg par prise ; à 1000 µg oral, ~1 % passe par diffusion passive</td></tr>
+      <tr><td>EPA + DHA</td><td>pas de VNR</td><td>AI 250 mg EPA+DHA (EFSA 2010, +100-200 mg grossesse)</td><td>Lire « EPA+DHA » sur l'étiquette, pas « huile de poisson »</td></tr>
+      <tr><td>CoQ10</td><td>pas de VNR</td><td>pas de repère : essais 100-300 mg/j</td><td>Comparer les mg de CoQ10 réellement dosés, pas les « équivalences »</td></tr>
+      <tr><td>Curcumine</td><td>pas de VNR</td><td>pas de repère : doses étudiées 500-2000 mg/j</td><td>Le « ×N » mesure la PK plasmatique, pas un effet clinique dose-pour-dose</td></tr>
+    </tbody>
+  </table>
+</div>
 <div class="grid" id="gx"></div>
 <div class="foot">Reprend les 9 échelles de biodisponibilité des algorithmes PharmaVeille (données PK humaines : Firoz &amp; Graber 2001, Walker 2003, Recker NEJM 1985, Dyerberg 2010, Langsjoen 2014, FAO, NIH ODS, revue PK curcumine 2018). Jamais un substitut au RCP ni à l'avis du médecin.</div>
 </div>
@@ -138,12 +306,24 @@ warn:"Pris au milieu d'un repas gras, l'écart entre formes se réduit beaucoup 
 note:"Au comptoir : vérifier la forme sur l'étiquette (rTG vs EE ; ubiquinol vs ubiquinone) avant de comparer les prix au mg.",
 src:[["Dyerberg 2010 (PubMed)","https://pubmed.ncbi.nlm.nih.gov/20638827/"],["Langsjoen 2014 — ubiquinol vs ubiquinone","https://accp1.onlinelibrary.wiley.com/doi/abs/10.1002/cpdd.73"]]}
 ];
+const P4 = {
+"Magnésium — sels & chélats":{phys:"Absorption duale : une voie paracellulaire (majoritaire, efficace surtout à faible dose) et une voie membranaire via TRPM6/TRPM7 (jéjunum). Plus la dose par prise monte, plus la fraction absorbée baisse — c'est la donnée clé qui justifie de fractionner plutôt que de changer de sel. Le rein ajuste l'excrétion pour maintenir le stock (≈ 25 g, dont moitié osseux).",dose:"PRI EFSA 350 mg H / 300 mg F ; VNR 375 mg"},
+"Fer — héminique et sels":{phys:"L'acidité gastrique maintient le fer non-héminique sous forme soluble Fe²⁺, absorbé par DMT1 au duodénum. L'hepcidine hépatique ferme l'export (ferroportine) quand les stocks sont pleins : absorber un jour sur deux reste efficace et limite les effets digestifs. Le bisglycinate franchit le bord en brosse via le transporteur peptidique PepT1, sans compétition avec les inhibiteurs du repas.",dose:"PRI 11 mg H / 16 mg F ; VNR 14 mg"},
+"Calcium — citrate ou carbonate":{phys:"Entrée via TRPV6, vitamine D-dépendante et saturable : au-delà de ≈ 500 mg par prise, le surplus n'est pas absorbé. Le carbonate nécessite un pH gastrique bas donc un repas ; le citrate s'en affranchit (IPP au long cours, gastrectomie : citrate d'office).",dose:"PRI EFSA 950 mg ; VNR 800 mg"},
+"Zinc — le picolinate mérite-t-il son prix ?":{phys:"Entrée via ZIP4, avec une régulation rapide par la métallothionéine intestinale : l'organisme s'adapte à l'apport. À haute dose, compétition directe avec le cuivre (mêmes transporteurs) : > 40 mg/j au long cours peut induire une carence cuprique. Le picolinate n'a pas montré d'absorption supérieure aux sels usuels dans les PK comparatives.",dose:"PRI EFSA ≈ 9,3-16,4 mg selon phytates ; plafond de sécurité ≈ 40 mg/j tout apport confondu"},
+"Oligo-éléments — sélénium, iode, chrome":{phys:"Sélénium : la sélénométhionine est absorbée comme un acide aminé et incorporée dans les protéines sans régulation — stockage non contrôlé, d'où le risque de surcharge. Iode : capté par le symporteur NIS (thyroïde). Chrome : très faiblement absorbé (≈ 0,4-2,5 %) et l'EFSA n'a pas établi de PRI — le VNR de l'étiquette n'est pas un repère scientifique.",dose:"PRI Se 70 µg ; AI iode 150 µg (200 µg grossesse/allaitement) ; chrome : pas de PRI"},
+"Vitamines liposolubles — D, E, K":{phys:"Toutes passent par les micelles biliaires puis repartent en chylomicrons par la lymphe : un repas contenant du gras conditionne l'absorption (à jeun, elle chute franchement). D et K agissent en tandem (calbindine, gamma-carboxylation des facteurs de coagulation), d'où les formules D3+K2 — à signaler sous antivitamine K.",dose:"PRI D 15 µg (600 UI), 20 µg ≥ 65 ans ; E 13/11 mg ; AI K 70 µg"},
+"B12 & vitamine C — la dose avant la forme":{phys:"B12 : après libération pancréatique du complexe haptocorrine, captation par le récepteur cubam de l'iléon, saturé vers 1,5-2 µg par repas ; au-delà, ≈ 1 % franchit la barrière par diffusion passive — d'où les comprimés de 1000 µg qui délivrent in fine ~10 µg. Vitamine C : transporteur SVCT1 saturable ; l'excès non absorbé reste dans la lumière intestinale (effet laxatif possible).",dose:"PRI B12 4 µg ; PRI C 110 mg (≈ 155 mg si fumeur)"},
+"Curcumine & polyphénols — décoder les « ×N »":{phys:"La curcumine native est insoluble à pH neutre et subit une conjugaison de phase II (glucuronidation, sulfatation) dès la muqueuse et le foie : ce sont surtout des métabolites conjugués qui circulent. Les formes « ×N » (pipérine, phytosome, nanoparticules) augmentent la PK plasmatique, ce qui ne prouve pas une efficacité clinique dose-pour-dose. La pipérine inhibe en outre des enzymes et transporteurs : interactions possibles.",dose:"Pas de repère : doses étudiées 500-2000 mg/j"},
+"Oméga-3 & CoQ10 — lire la forme, pas seulement les mg":{phys:"Oméga-3 : les esters éthyliques doivent être hydrolysés par la lipase pancréatique avant d'être incorporés aux micelles — hors repas gras, leur absorption s'effondre ; les rTG arrivent déjà sous forme de triglycérides. CoQ10 : très lipophile, dépend de la solubilisation dans l'huile de la capsule et du repas ; l'ubiquinol (déjà réduit) donne des taux plasmatiques supérieurs, surtout après 45-50 ans — le jeune organisme réduit lui-même l'ubiquinone.",dose:"AI EPA+DHA 250 mg (EFSA) ; CoQ10 : essais 100-300 mg/j, pas de VNR"}
+};
 function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;')}
 document.getElementById('gx').innerHTML = FORMES.map(c =>
  '<div class="card"><h2>'+c.ic+' '+esc(c.t)+'</h2><div class="csub">'+esc(c.sub)+'</div>' +
  '<ol class="rank">' + c.ranks.map(r =>
    '<li><span class="rk-f">'+esc(r.f)+(r.v?' <span class="'+(r.cls||'rk-v')+'">— '+esc(r.v)+'</span>':'')+'</span>' +
    (r.d?'<span class="rk-d">'+esc(r.d)+'</span>':'') + '</li>').join('') + '</ol>' +
+ (P4[c.t]?'<div class="physio"><div class="ph-t">🧬 Rappel physiologique</div><div>'+P4[c.t].phys+'</div><div class="ph-d">💊 <b>Dose de référence :</b> '+P4[c.t].dose+'</div></div>':'') +
  (c.warn?'<div class="warn">⚠️ '+esc(c.warn)+'</div>':'') +
  (c.note?'<div class="note">🧑‍⚕️ '+esc(c.note)+'</div>':'') +
  '<div class="srcs">'+c.src.map(s=>'<a href="'+esc(s[1])+'" target="_blank" rel="noopener">🔗 '+esc(s[0])+'</a>').join('')+'</div></div>'
