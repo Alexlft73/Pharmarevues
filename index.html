@@ -61,6 +61,7 @@
   .rtier tr:first-child td{border-top:none}
   .rtier td.rc-c{font-weight:700; white-space:nowrap}
   .rtier td.rc-n{text-align:center; white-space:nowrap; font-weight:800}
+.rtier td.rc-f{font-size:.68rem; color:var(--muted,#64748b); white-space:normal; line-height:1.3; max-width:150px; font-style:italic}
   .rtier .rnote{padding:6px 12px; font-size:.74rem; color:#64748b; border-top:1px dashed var(--line); background:#fafafa}
   .date{margin-left:auto; font-size:.78rem; color:var(--muted); white-space:nowrap}
   .card h2{font-size:1.06rem; margin:2px 0 6px; color:var(--ink)}
@@ -1211,7 +1212,7 @@ function recapHTML(){
   let h = "<div class='rtintro'><b>🧪 Rayon compléments — synthèse du comptoir.</b> Classement établi à partir des revues sourcées de cette base (mise à jour du 18/11/2026 — 149 revues « Complément alimentaire ») : chaque ligne résume une revue dont les sources sont cliquables dans les cartes ci-dessous.</div>";
   RECAP_COMP.forEach(tier=>{
     h += "<div class='rtier'><h4 style='background:"+tier.c+"'><span>"+tier.t+"</span><small>"+tier.s+"</small></h4><table>";
-    tier.rows.forEach(r=>{ h += "<tr><td class='rc-c'>"+r[0]+"</td><td>"+r[1]+"</td><td class='rc-n'>"+r[2]+"</td><td>"+r[3]+"</td></tr>"; });
+    tier.rows.forEach(r=>{ const fm=/\(([^()]*)\)\s*$/.exec(r[0]); const nm=fm?r[0].replace(/\s*\([^()]*\)\s*$/,"").trim():r[0]; h += "<tr><td class='rc-c'>"+nm+"</td><td>"+r[1]+"</td><td class='rc-n'>"+r[2]+"</td><td class='rc-f'>"+(fm?fm[1]:"")+"</td><td>"+r[3]+"</td></tr>"; });
     h += "</table><div class='rnote'>"+tier.note+"</div></div>";
   });
   return h;
