@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta name="color-scheme" content="light dark">
+<script id="pv-theme-init">
+(function(){try{var d=document.documentElement;if(window.top!==window.self){d.classList.add("embed")}var t=null;try{t=localStorage.getItem("pv-theme")}catch(e){}if(t!=="dark"&&t!=="light")t=(window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";if(t=="dark")d.classList.add("dark");window.addEventListener("beforeprint",function(){d.classList.remove("dark")});window.addEventListener("afterprint",function(){var v=null;try{v=localStorage.getItem("pv-theme")}catch(e){}if(v=="dark")d.classList.add("dark")});document.addEventListener("DOMContentLoaded",function(){var b=document.getElementById("themeBtn");if(!b)return;function sync(){var dk=d.classList.contains("dark");b.textContent=dk?"\u2600\uFE0F":"\uD83C\uDF19";b.title=dk?"Passer en mode clair":"Passer en mode sombre"}sync();b.addEventListener("click",function(){var dk=d.classList.toggle("dark");try{localStorage.setItem("pv-theme",dk?"dark":"light")}catch(e){}sync()});});}catch(e){}})();
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PharmaVeille · Rayon compléments — formes classées par assimilation</title>
+<style>
+:root{--bleu:#0e7490;--teal:#0f766e;--encre:#0f172a;--gris:#64748b;--fond:#f1f5f9;--carte:#ffffff;--vert:#15803d;--ambre:#b45309;--rouge:#b91c1c;--bord:#e2e8f0}
+html.dark{--encre:#e2e8f0;--fond:#0b1120;--carte:#151b28;--bord:#28324a;--gris:#94a3b8}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--fond);color:var(--encre);line-height:1.5}
+.wrap{max-width:1280px;margin:0 auto;padding:18px 16px 40px}
+header{background:linear-gradient(135deg,var(--teal),var(--bleu));color:#fff;border-radius:16px;padding:26px 24px 22px;margin-bottom:16px;box-shadow:0 6px 18px rgba(15,23,42,.12);position:relative}
+header h1{font-size:1.5rem;letter-spacing:.2px;margin-right:44px}
+header .sub{margin-top:6px;font-size:.95rem;opacity:.92;max-width:900px}
+.themebtn{position:absolute;top:18px;right:18px;width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,.4);background:rgba(255,255,255,.15);color:#fff;font-size:1rem;cursor:pointer}
+html.dark .themebtn{border-color:rgba(255,255,255,.35);background:rgba(255,255,255,.08)}
+.intro{background:var(--carte);border:1.5px solid var(--bord);border-radius:16px;padding:16px 20px;margin-bottom:16px;font-size:.92rem;box-shadow:0 4px 14px rgba(15,23,42,.06)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(430px,1fr));gap:16px}
+html.dark .grid{grid-template-columns:repeat(auto-fill,minmax(430px,1fr))}
+@media(max-width:640px){.grid{grid-template-columns:1fr}}
+.card{background:var(--carte);border:1.5px solid var(--bord);border-radius:16px;padding:18px 18px 14px;box-shadow:0 6px 20px rgba(15,23,42,.07);break-inside:avoid}
+.card h2{font-size:1.05rem;margin-bottom:2px}
+.card .csub{font-size:.8rem;color:var(--gris);margin-bottom:12px}
+ol.rank{list-style:none;counter-reset:rk;margin-bottom:10px}
+ol.rank li{counter-increment:rk;position:relative;padding:8px 10px 8px 46px;border-bottom:1px dashed var(--bord);font-size:.88rem}
+ol.rank li:last-child{border-bottom:none}
+ol.rank li::before{content:counter(rk);position:absolute;left:8px;top:7px;width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.82rem}
+ol.rank li:nth-child(1)::before{background:rgba(21,128,61,.15);color:var(--vert)}
+ol.rank li:nth-child(2)::before{background:rgba(180,83,9,.15);color:var(--ambre)}
+ol.rank li:nth-child(3)::before{background:rgba(100,116,139,.15);color:var(--gris)}
+ol.rank li:nth-child(n+4)::before{background:rgba(185,28,28,.10);color:var(--rouge)}
+.rk-f{font-weight:700}
+.rk-v{color:var(--vert);font-weight:700}
+.rk-a{color:var(--ambre);font-weight:600}
+.rk-r{color:var(--rouge);font-weight:600}
+.rk-n{color:var(--gris)}
+.rk-d{display:block;font-size:.8rem;color:var(--gris);font-weight:400;margin-top:2px}
+.warn{background:rgba(185,28,28,.07);border-left:3px solid var(--rouge);padding:8px 12px;border-radius:8px;font-size:.83rem;margin-bottom:8px}
+.note{font-size:.83rem;color:var(--gris);font-style:italic;margin-bottom:10px}
+.srcs{display:flex;flex-wrap:wrap;gap:6px 14px;padding-top:8px;border-top:1px solid var(--bord)}
+.srcs a{font-size:.76rem;color:var(--teal);text-decoration:none;font-weight:600}
+.srcs a:hover{text-decoration:underline}
+.foot{margin-top:18px;font-size:.8rem;color:var(--gris);text-align:center;line-height:1.6}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <button id="themeBtn" class="themebtn" aria-label="Basculer le mode sombre"></button>
+  <h1>🧪 Rayon compléments — formes &amp; assimilation</h1>
+  <div class="sub">Les formes galéniques des compléments alimentaires classées par assimilation <b>décroissante</b>, substance par substance : ce qui s'absorbe vraiment, ce qui ne se justifie pas, et le message du comptoir. Détail et sources dans les algorithmes « Échelles de biodisponibilité » (onglet 🧭). Mis à jour le 20/11/2026.</div>
+</header>
+<div class="intro">⚖️ <b>Comment lire :</b> n° 1 = la forme la mieux absorbée ; la liste descend jusqu'aux formes à éviter ou sans argument. Le rang 1 ne veut pas dire « la plus efficace cliniquement » : la <b>dose</b>, le <b>repas</b> et la <b>tolférance</b> comptent souvent plus que le sel. Pour chaque ligne : le chiffre d'absorption quand il existe, et le conseil du comptoir.</div>
+<div class="grid" id="gx"></div>
+<div class="foot">Reprend les 9 échelles de biodisponibilité des algorithmes PharmaVeille (données PK humaines : Firoz &amp; Graber 2001, Walker 2003, Recker NEJM 1985, Dyerberg 2010, Langsjoen 2014, FAO, NIH ODS, revue PK curcumine 2018). Jamais un substitut au RCP ni à l'avis du médecin.</div>
+</div>
+<script>
+const FORMES = [
+{ic:"🧲",t:"Magnésium — sels & chélats",sub:"≈ 300 mg élément, absorption mesurée sur excrétion urinaire 24 h",ranks:[
+ {f:"Citrate, lactate, chlorure, aspartate",v:"≈ 28-33 % absorbé",d:"Haut de l'échelle — citrate le mieux documenté (Walker 2003, confirmé à 400 mg, Werner 2019)"},
+ {f:"Bisglycinate",v:"≈ comparable au citrate",d:"Double voie (ion libre + transporteur peptidique) — la mieux tolérée digestivement"},
+ {f:"Malate, taurate, L-thréonate",v:"pas de PK comparative humaine publiée",d:"Pas d'argument absorption : ne pas payer plus cher pour le nom du sel",cls:"rk-n"},
+ {f:"Oxyde",v:"≈ 4-10 % absorbé",d:"Riche en Mg élément mais cathartique — utile seulement si l'effet laxatif est recherché",cls:"rk-r"}],
+warn:"Piège : la dose compte plus que la forme — ≈ 65 % absorbé à 36 mg vs ≈ 11 % à 973 mg (Schuchardt & Hahn 2017) → fractionner plutôt que changer de sel.",
+note:"Au comptoir : prises fractionnées et tolérance digestive avant le marketing du sel.",
+src:[["Nutrient Metrics — formes du Mg","https://nutrient-metrics.com/en/micronutrients/magnesium-forms-bioavailability/"],["Walker 2003 (PubMed)","https://pubmed.ncbi.nlm.nih.gov/14596323/"],["Werner 2019 (PubMed)","https://pubmed.ncbi.nlm.nih.gov/32162607/"]]},
+
+{ic:"🩸",t:"Fer — héminique et sels",sub:"Absorption alimentaire et des compléments (NIH ODS)",ranks:[
+ {f:"Fer héminique (viande, poisson)",v:"15-35 % absorbé",d:"Peu influencé par la composition du repas"},
+ {f:"Bisglycinate (fer chélaté)",v:"absorption ≈ ×2 le sulfate à dose équivalente",d:"Meilleure tolérance digestive — mais pas d'avantage clinique constant sur l'hémoglobine (AJCN)"},
+ {f:"Fer non-héminique : sels ferreux (sulfate, gluconate), sources végétales",v:"5-12 %",d:"Très sensible aux facilitateurs et inhibiteurs du repas",cls:"rk-a"}],
+warn:"Inhibiteurs au repas : thé, café (tannins), calcium, phytates — espacer la prise de 2 h. La vitamine C au même repas facilite nettement l'absorption.",
+note:"Au comptoir : carence confirmée ou anémie → dose, durée et cause = avis médical ; fer pédiatrique à distance du lait.",
+src:[["NIH ODS — Iron","https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/"],["AJCN — bisglycinate","https://ajcn.nutrition.org/article/S0002-9165(23)06895-8/fulltext"]]},
+
+{ic:"🦴",t:"Calcium — citrate ou carbonate",sub:"Selon la forme et l'état gastrique (Recker, NEJM 1985)",ranks:[
+ {f:"Citrate",v:"mieux absorbé à jeun",d:"Surtout chez l'achlorhydrique et sous IPP — teneur élément plus faible par comprimé"},
+ {f:"Carbonate",v:"≈ 20-30 %",d:"Nécessite l'acidité gastrique : à prendre au milieu du repas — le moins cher et le plus concentré",cls:"rk-a"}],
+warn:"Au-delà de 500 mg élément par prise, la fraction absorbée chute : fractionner la dose journalière.",
+note:"Au comptoir : l'alimentation d'abord (laitages, eaux calciques) — un sel ne rattrape pas des apports alimentaires nuls.",
+src:[["Recker 1985 (NEJM)","https://www.nejm.org/doi/full/10.1056/NEJM198507113130202"]]},
+
+{ic:"🔧",t:"Zinc — le picolinate mérite-t-il son prix ?",sub:"Revue humaine 2024 des formes de zinc",ranks:[
+ {f:"Gluconate, citrate, acétate, picolinate (formes solubles)",v:"absorption comparable",d:"Le picolinate n'a pas de supériorité documentée"},
+ {f:"Bisglycinate",v:"données limitées, ordre identique aux formes organiques",cls:"rk-a"},
+ {f:"Oxyde",v:"le moins bien absorbé",d:"Le moins cher mais le moins efficace par mg",cls:"rk-r"}],
+warn:"Doses > 40 mg/j au long cours : compétition avec le cuivre et le fer — plus de zinc ne veut pas dire mieux.",
+note:"Au comptoir : une forme soluble peu chère suffit ; le vrai levier est la dose instituée (et sa durée).",
+src:[["Revue narrative 2024 (PMC)","https://pmc.ncbi.nlm.nih.gov/articles/PMC11677333/"]]},
+
+{ic:"⚙️",t:"Oligo-éléments — sélénium, iode, chrome",sub:"Trois échelles très différentes (FAO, NIH ODS)",ranks:[
+ {f:"Iode (iodure)",v:"absorption quasi totale",d:"Sel iodé et compléments équivalents"},
+ {f:"Sélénium : sélénométhionine",v:"≈ 90 %",d:"La forme compte peu…"},
+ {f:"Sélénium : sélénite",v:"> 80 %",cls:"rk-a",d:"…très bien absorbé sous toutes les formes"},
+ {f:"Chrome Cr³⁺ (picolinate, chlorure…)",v:"≈ 0,4-2,5 % absorbé seulement",d:"Formes d'absorption similaire — et le bénéfice clinique du chrome reste non établi",cls:"rk-r"}],
+note:"Au comptoir : sélénium et iode s'absorbent bien sous toutes les formes — pour le chrome, l'argument « biodisponibilité » masque un problème d'efficacité.",
+src:[["FAO — Sélénium","https://www.fao.org/4/y2809e/y2809e0l.htm"],["NIH ODS — Chromium","https://ods.od.nih.gov/factsheets/Chromium-HealthProfessional/"]]},
+
+{ic:" ☀️",t:"Vitamines liposolubles — D, E, K",sub:"Formes et conditions de prise (données humaines)",ranks:[
+ {f:"Vitamine D3 (cholécalciférol)",v:"élève plus la 25(OH)D que la D2",d:"Méta-analyse 2012 : D3 = le choix (la D2, ergocalciférol, est la forme descendante)"},
+ {f:"Vitamine E naturelle RRR (d-α)",v:"≈ 2× la bioactivité du dl-α synthétique",d:"Le dl-α (mélange de 8 stéréoisomères) domine la liste descendante"},
+ {f:"Vitamine K2 MK-7 (natto)",v:"demi-vie plasmatique ~3 jours (AUC supérieure)",d:"La K1 reste néanmoins bien absorbée — demi-vie courte",cls:"rk-a"}],
+warn:"Toutes les liposolubles se prennent avec un repas contenant du gras — à jeun, l'absorption chute.",
+note:"Au comptoir : D3 plutôt que D2, RRR plutôt que dl-α, et toujours au repas gras.",
+src:[["Tripkovic 2012 (PubMed)","https://pubmed.ncbi.nlm.nih.gov/22552031/"],["Nutrition Reviews — RRR- vs dl-α","https://academic.oup.com/nutritionreviews/article/76/3/141/4781933"],["Schurgers 2007 — MK-7 vs K1","https://www.nutraingredients.com/Article/2006/12/18/Vitamin-K2-higher-bioavailability-than-K1-say-scientists/"]]},
+
+{ic:"💊",t:"B12 & vitamine C — la dose avant la forme",sub:"Voies saturables et diffusion passive (NIH ODS)",ranks:[
+ {f:"B12 (cyano-, méthyl-, hydroxocobalamine)",v:"toutes corrigent la carence",d:"Pas de supériorité documentée de la méthyl — la forme importe peu, la dose oui"},
+ {f:"Vitamine C doses modérées",v:"bien absorbée (voie saturable)",d:"Zone utile d'une dose raisonnable",cls:"rk-a"},
+ {f:"Vitamine C > 500 mg/prise",v:"fraction absorbée en chute",d:"Saturable et dose-dépendante : le surplus est éliminé",cls:"rk-a"},
+ {f:"Vitamine C « liposomale »",v:"gain non documenté",cls:"rk-r",d:"Pas d'argument scientifique pour le prix premium"}],
+warn:"B12 : la voie du facteur intrinsèque est saturée vers 1,5-2 µg par prise — c'est la diffusion passive (≈ 1 %) qui justifie les compléments à 500-1000 µg (une gélule à 1000 µg apporte ~10-13 µg absorbés).",
+note:"Au comptoir : carence B12 = dosage et avis médical (rechercher la cause).",
+src:[["NIH ODS — Vitamine B12","https://ods.od.nih.gov/factsheets/VitaminB12-HealthProfessional/"]]},
+
+{ic:"🌿",t:"Curcumine & polyphénols — décoder les « ×N »",sub:"Gains de biodisponibilité vs curcumine native non formulée (revue PK 2018)",ranks:[
+ {f:"Curcumine micellisée (NovaSOL)",v:"×185 (AUC totale)"},
+ {f:"CurcuWin",v:"×136",cls:"rk-a"},
+ {f:"Longvida",v:"×100",cls:"rk-a"},
+ {f:"Curcumine micronisée",v:"×9",cls:"rk-r"},
+ {f:"Resvératrol",v:"biodisponibilité < 1 %",cls:"rk-r",d:"Métabolisme de phase II massif — pas de forme miracle documentée"}],
+warn:"Les « ×N » mesurent la curcumine TOTALE (métabolites inclus) : l'étude PK indépendante 2025 retrouve la curcumine libre < 2 nM, quelle que soit la formulation. « ×185 biodisponible » ne veut pas dire « 185 fois plus efficace ».",
+note:"Quercétine : les glucosides sont mieux absorbés que l'aglycone (méta-analyse de 31 études).",
+src:[["Revue PK formulations de curcumine (2018)","https://pubmed.ncbi.nlm.nih.gov/30006023/"],["Étude PK indépendante 2025 (PMC)","https://pmc.ncbi.nlm.nih.gov/articles/PMC12144411/"]]},
+
+{ic:"🐟",t:"Oméga-3 & CoQ10 — lire la forme, pas seulement les mg",sub:"PK humaines (Dyerberg 2010, Langsjoen 2014)",ranks:[
+ {f:"Oméga-3 triglycérides ré-estérifiés (rTG)",v:"≈ 124 % vs huile naturelle (100 %)",d:"La forme « concentrée » n'est pas la mieux absorbée… c'est l'inverse"},
+ {f:"Huile naturelle",v:"référence = 100 %",cls:"rk-a"},
+ {f:"Oméga-3 esters éthyliques (EE)",v:"≈ 73 %",cls:"rk-r",d:"Moins absorbés hors repas gras"},
+ {f:"CoQ10 ubiquinol",v:"taux plasmatiques > ubiquinone",d:"Surtout après 45 ans et chez l'insuffisant cardiaque — chez le sujet jeune, la réduction se fait in vivo"},
+ {f:"CoQ10 ubiquinone (poudre native)",v:"très lipophile, mal absorbé",cls:"rk-r",d:"Privilégier les capsules molles solubilisées et la prise au repas"}],
+warn:"Pris au milieu d'un repas gras, l'écart entre formes se réduit beaucoup — le repas est le premier levier d'absorption.",
+note:"Au comptoir : vérifier la forme sur l'étiquette (rTG vs EE ; ubiquinol vs ubiquinone) avant de comparer les prix au mg.",
+src:[["Dyerberg 2010 (PubMed)","https://pubmed.ncbi.nlm.nih.gov/20638827/"],["Langsjoen 2014 — ubiquinol vs ubiquinone","https://accp1.onlinelibrary.wiley.com/doi/abs/10.1002/cpdd.73"]]}
+];
+function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;')}
+document.getElementById('gx').innerHTML = FORMES.map(c =>
+ '<div class="card"><h2>'+c.ic+' '+esc(c.t)+'</h2><div class="csub">'+esc(c.sub)+'</div>' +
+ '<ol class="rank">' + c.ranks.map(r =>
+   '<li><span class="rk-f">'+esc(r.f)+(r.v?' <span class="'+(r.cls||'rk-v')+'">— '+esc(r.v)+'</span>':'')+'</span>' +
+   (r.d?'<span class="rk-d">'+esc(r.d)+'</span>':'') + '</li>').join('') + '</ol>' +
+ (c.warn?'<div class="warn">⚠️ '+esc(c.warn)+'</div>':'') +
+ (c.note?'<div class="note">🧑‍⚕️ '+esc(c.note)+'</div>':'') +
+ '<div class="srcs">'+c.src.map(s=>'<a href="'+esc(s[1])+'" target="_blank" rel="noopener">🔗 '+esc(s[0])+'</a>').join('')+'</div></div>'
+).join('');
+</script>
+</body>
+</html>
