@@ -523,6 +523,7 @@ html.dark header::before{background:radial-gradient(720px 280px at 88% -50%,rgba
       <button class="tab" id="btn-theses" onclick="showTab('theses')">🎓 Thèses 2020–2026</button>
       <button class="tab" id="btn-pksim" onclick="showTab('pksim')">⏱️ Simulateur PK</button>
       <button class="tab" id="btn-alleg" onclick="showTab('alleg')">⚖️ Allégations santé</button>
+      <button class="tab" id="btn-comp" onclick="showTab('comp')">🧪 Rayon compléments</button>
     </nav>
   </div>
 </header>
@@ -621,6 +622,13 @@ html.dark header::before{background:radial-gradient(720px 280px at 88% -50%,rgba
     <iframe class="cframe" src="allegations-sante.html" title="Allégations santé — 47 allégations du comptoir : preuve, non-preuve ou danger, toujours avec sources" loading="lazy"></iframe>
   </div>
   <p class="cfoot">⚖️ Allégations santé — les affirmations entendues au comptoir face aux preuves : verdict ✅ / 🟡 / ❌, dangers ⚠️ (EFSA, Anses/ANSM, interactions) et sources à l'appui de chaque ligne. Générées depuis la base de revues, complément du dossier « stimulateurs d'immunité » du 19/11/2026.</p>
+</section>
+
+<section id="comptab" class="panel" style="display:none">
+  <div class="cframe-wrap">
+    <iframe class="cframe" src="formes-complements.html" title="Rayon compléments — formes galéniques des compléments alimentaires classées par assimilation décroissante" loading="lazy"></iframe>
+  </div>
+  <p class="cfoot">🧪 Rayon compléments — les formes galéniques (sels, chélats, voies) classées par assimilation décroissante, substance par substance, avec le chiffre d'absorption quand il existe et le conseil du comptoir. Reprend les 9 échelles de biodisponibilité des algorithmes. Le rang 1 n'est pas un avis médical : dose, repas et tolérance comptent souvent plus que le sel.</p>
 </section>
 <section id="recostab" class="panel" style="display:none">
   <div class="cbar">
@@ -1252,7 +1260,7 @@ function pvfit(f){try{var d=f.contentDocument;if(!d)return;var h=Math.max(d.docu
 function pvfitAll(){var fs=document.querySelectorAll("#classestab .cframe,#thesestab .cframe,#pksimtab .cframe,#allegtab .cframe");for(var i=0;i<fs.length;i++)pvfit(fs[i])}
 (function(){var fs=document.querySelectorAll("#classestab .cframe,#thesestab .cframe,#pksimtab .cframe,#allegtab .cframe");for(var i=0;i<fs.length;i++){(function(f){f.addEventListener("load",function(){pvfit(f);try{var d=f.contentDocument;if(d)new MutationObserver(function(){pvfit(f)}).observe(d.documentElement,{childList:true,subtree:true,attributes:true})}catch(e){}setTimeout(function(){pvfit(f)},300);setTimeout(function(){pvfit(f)},1500)})})(fs[i])}window.addEventListener("resize",function(){clearTimeout(window._pvfitT);window._pvfitT=setTimeout(pvfitAll,150)})})();
 function showTab(t){
-  const rev = (t==="revues"), cl = (t==="classes"), rc = (t==="recos"), pd = (t==="pedi"), ag = (t==="algos"), th = (t==="theses"), pk = (t==="pksim"), al = (t==="alleg");
+  const rev = (t==="revues"), cl = (t==="classes"), rc = (t==="recos"), pd = (t==="pedi"), ag = (t==="algos"), th = (t==="theses"), pk = (t==="pksim"), al = (t==="alleg"), cp = (t==="comp");
   document.getElementById("toolrev").style.display = rev ? "" : "none";
   document.getElementById("legendrev").style.display = rev ? "" : "none";
   document.getElementById("mainrev").style.display = rev ? "" : "none";
@@ -1263,7 +1271,8 @@ function showTab(t){
   document.getElementById("thesestab").style.display = th ? "" : "none";
   document.getElementById("pksimtab").style.display = pk ? "" : "none";
   document.getElementById("allegtab").style.display = al ? "" : "none";
-  if(cl||th||pk||al){setTimeout(pvfitAll,80);setTimeout(pvfitAll,450)}
+  document.getElementById("comptab").style.display = cp ? "" : "none";
+  if(cl||th||pk||al||cp){setTimeout(pvfitAll,80);setTimeout(pvfitAll,450)}
   document.getElementById("btn-revues").className = "tab" + (rev ? " on" : "");
   document.getElementById("btn-classes").className = "tab" + (cl ? " on" : "");
   document.getElementById("btn-recos").className = "tab" + (rc ? " on" : "");
@@ -1272,6 +1281,7 @@ function showTab(t){
   document.getElementById("btn-theses").className = "tab" + (th ? " on" : "");
   document.getElementById("btn-pksim").className = "tab" + (pk ? " on" : "");
   document.getElementById("btn-alleg").className = "tab" + (al ? " on" : "");
+  document.getElementById("btn-comp").className = "tab" + (cp ? " on" : "");
   if (pd) { try { document.getElementById("pds").focus(); } catch(e){} }
 }
 
