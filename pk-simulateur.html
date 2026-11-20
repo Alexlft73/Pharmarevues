@@ -104,6 +104,10 @@ input[type=range]{width:100%;accent-color:var(--teal);cursor:pointer}
 #chartbox .un{font-size:.8rem;color:var(--gris)}
 #play{border:1.5px solid var(--teal);background:var(--teal);color:#fff;border-radius:10px;padding:7px 14px;font-size:.85rem;cursor:pointer}
 #play.stop{background:#be123c;border-color:#be123c}
+.ovbtn{border:1.5px solid var(--teal);background:transparent;color:var(--teal);border-radius:10px;padding:8px 13px;font-weight:600;font-size:.8rem;cursor:pointer;font-family:inherit}
+.ovbtn.on{background:var(--teal);color:#fff}
+html.dark .ovbtn{border-color:var(--teal);color:#33d6c3}
+html.dark .ovbtn.on{background:#0d9488;color:#fff}
 #chart{width:100%;height:auto;display:block;background:#fff;border-radius:12px}
 #chart .tk{fill:#64748b;font-size:11px}
 #chart .ax{stroke:#e2e8f0}
@@ -186,6 +190,7 @@ html.dark body::before{background:radial-gradient(820px 520px at 12% 8%,rgba(45,
 <h2 id="chartitle">Choisir une molécule</h2>
 <span class="un" id="chartun"></span>
 <button id="play" style="display:none">▶ Lecture animée</button>
+<button id="ovbtn" class="ovbtn" type="button" onclick="toggleOV()" title="Toutes les molécules sur un seul schéma : courbes normalisées + accumulation">🌐 Vue d'ensemble</button>
 </div>
 <svg id="chart" viewBox="0 0 920 360" role="img" aria-label="Courbe concentration en fonction du temps"></svg>
 <div id="cvp" style="display:none"></div>
@@ -460,7 +465,7 @@ function renderGrid(){
 function toggleG(k){ if(gopen[k]===true) delete gopen[k]; else gopen[k]=true; renderGrid(); }
 function expandAll(v){ MOLS.forEach(function(m){ gopen[m.g]=v; }); if(!v) gopen={}; renderGrid(); }
 window.toggleG=toggleG; window.expandAll=expandAll;
-function sel(i){ st.i=i; if(CMP.length){ renderGrid(); update(); return; } var m=mol(); st.dose=m.ds[Math.min(1,m.ds.length-1)]; if(m.ds.length===1) st.dose=m.ds[0];
+function sel(i){ exitOV(); st.i=i; if(CMP.length){ renderGrid(); update(); return; } var m=mol(); st.dose=m.ds[Math.min(1,m.ds.length-1)]; if(m.ds.length===1) st.dose=m.ds[0];
   st.tau=m.tau; st.days=(m.tau===0)?1:Math.max(1,Math.min(14,Math.round(4*m.t12/24+1))); st.food=false; st.int=-1;
   st.win=suggestWin(m); gopen[m.g]=true; renderChips(); renderGrid(); buildControls(); update(); }
 window.sel=sel;
@@ -654,7 +659,74 @@ function renderCmp(){
 }
 window.renderCmp=renderCmp;
 
+/* ================= Vue d'ensemble : toutes les molécules ================= */
+var OVM=false;
+var GCOLS={"Antalgiques & AINS":"#0d9488","Anti-infectieux":"#b45309","Cardiologie":"#dc2626","Endocrinologie & diabète":"#7c3aed","Gastro-entérologie":"#d97706","Psychiatrie":"#2563eb","Neurologie & épilepsie":"#16a34a","Urologie & santé masculine":"#db2777","ORL & allergologie":"#0891b2","Corticoïdes":"#64748b"};
+function visMols(){ var a=[]; MOLS.forEach(function(m,i){ var hay=(m.d+" "+m.g).toLowerCase(); if(qv&&hay.indexOf(qv)<0) return; if(gfilter&&m.g!==gfilter) return; a.push(i); }); return a; }
+function f2(x){ return (Math.round(x*100)/100).toString(); }
+function renderOV(){
+  var list=visMols(), W=920,H=360;
+  var L=44,R=16,T=30,B=46, PW=W-L-R, PH=H-T-B;
+  function X(u){ return L+PW*u/6; } function Y(p){ return T+PH*(1-p/100); }
+  var g='',i,k;
+  /* grille panneau A */
+  [0,25,50,75,100].forEach(function(p){ var y=Y(p);
+    g+='<line class="ax" x1="'+L+'" y1="'+y+'" x2="'+(W-R)+'" y2="'+y+'" stroke-width="1"/>';
+    g+='<text class="tk" x="'+(L-5)+'" y="'+(y+3.5)+'" text-anchor="end">'+p+' %</text>'; });
+  for(k=0;k<=6;k++){ var x=X(k);
+    g+='<line class="ax" x1="'+x+'" y1="'+T+'" x2="'+x+'" y2="'+(T+PH)+'" stroke-width="1"/>';
+    g+='<text class="tk" x="'+x+'" y="'+(T+PH+15)+'" text-anchor="middle">'+(k===0?"0":(k===1?"×1 t½":"×"+k))+'</text>'; }
+  g+='<text class="tk" x="'+(W-R)+'" y="'+(T+PH+31)+'" text-anchor="end">temps (en demi-vies de chaque molécule) →</text>';
+  g+='<text class="tk" x="'+(L-5)+'" y="'+(T-13)+'" text-anchor="start">% du Cmax propre à chaque molécule (dose unique)</text>';
+  /* courbes normalisées */
+  list.forEach(function(ix){
+    var m=MOLS[ix], kel=LN2/m.t12, ka=m._ka; if(ka<kel*1.05) ka=kel*1.05;
+    var slow=Math.min(ka,kel), fast=Math.max(ka,kel), t12=m.t12;
+    var NQ=200, mx=0, vv=[], q, u;
+    for(q=0;q<=NQ;q++){ u=6*q/NQ; var v=Math.exp(-slow*t12*u)-Math.exp(-fast*t12*u); vv.push(u,v); if(v>mx)mx=v; }
+    if(mx<=0) return;
+    var p="M"+f2(X(0))+" "+f2(Y(0));
+    for(q=0;q<=NQ;q++){ p+="L"+f2(X(vv[2*q]))+" "+f2(Y(100*vv[2*q+1]/mx)); }
+    g+='<path d="'+p+'" fill="none" stroke="'+(GCOLS[m.g]||"#64748b")+'" stroke-width="1.7" opacity=".8" stroke-linejoin="round" style="cursor:pointer" onclick="ovSel('+ix+')"><title>'+esc(m.d)+' — t½ '+fmt(m.t12,m.t12<10?1:0)+' h · Tmax '+fmt(m.tx,1)+' h · clic : ouvrir cette molécule</title></path>';
+  });
+  /* panneau B : accumulation à l'équilibre */
+  var acc=[]; list.forEach(function(ix){ var m=MOLS[ix]; if(m.tau>0){ acc.push({i:ix,m:m,R:1/(1-Math.exp(-LN2*m.tau/m.t12))}); } });
+  acc.sort(function(a,b){ return b.R-a.R; });
+  var top=acc.slice(0,16);
+  var BL=598,BRr=904,BT=30,BBH=360-BT-14;
+  var nb=top.length, bh=Math.min(14,nb?((BBH-30)/nb-4):14);
+  var Rmx=top.length?top[0].R:1;
+  g+='<text class="tk" x="'+BL+'" y="'+(BT-13)+'">Accumulation à l\'équilibre (rythme par défaut) — top '+nb+'</text>';
+  top.forEach(function(a,k){
+    var y=BT+8+k*(bh+4), x0=BL+148, x1m=BRr-42;
+    var bw=Math.max((x1m-x0)*(a.R-1)/(Rmx-1||1),1.4);
+    var col=(GCOLS[a.m.g]||"#64748b");
+    g+='<text class="tk" x="'+(x0-4)+'" y="'+(y+bh-3)+'" text-anchor="end">'+esc(a.m.d.length>21?a.m.d.slice(0,20)+"…":a.m.d)+'</text>';
+    g+='<rect x="'+x0+'" y="'+y+'" width="'+bw+'" height="'+bh+'" rx="2.5" fill="'+col+'" opacity=".88" style="cursor:pointer" onclick="ovSel('+a.i+')"><title>'+esc(a.m.d)+' : accumulation ×'+fmt(a.R,1)+' (t½ '+fmt(a.m.t12,a.m.t12<10?1:0)+' h, une prise toutes les '+a.m.tau+' h)</title></rect>';
+    g+='<text class="tk" x="'+(x0+bw+4)+'" y="'+(y+bh-3)+'">×'+fmt(a.R,Rmx<10?1:0)+'</text>';
+  });
+  g+='<text class="tk" x="'+BL+'" y="'+(360-4)+'">×1 = pas d\'accumulation — plus la barre est longue, plus le plasmatique "flotte" entre les prises</text>';
+  $("chart").innerHTML=g;
+  $("chartitle").textContent="Vue d'ensemble — "+list.length+" molécule"+(list.length>1?"s":"")+" d'un coup d'œil";
+  $("chartun").textContent="";
+  $("play").style.display="none";
+  var cvp=$("cvp"); if(cvp) cvp.style.display="none";
+  last={acc:null,ss:null,tArr:null,P:null,ds:null,x0:0,x1:1,y1:1};
+  var gs={}; list.forEach(function(ix){ gs[MOLS[ix].g]=(gs[MOLS[ix].g]||0)+1; });
+  var s='<h3 style="margin-top:4px">Lecture en 10 secondes</h3><p class="note" style="margin:6px 0 10px">Chaque courbe est sur <b>sa propre échelle</b> (% de son Cmax) : les hauteurs ne se comparent pas d\'une molécule à l\'autre — elles montrent <b>qui monte vite et qui persiste</b>. L\'axe du temps est exprimé en <b>demi-vies</b> : à ×1 il reste 50 % du pic, à ×4 il reste ~6 % (d\'où la règle des 4-5 t½ pour atteindre l\'équilibre).</p>';
+  s+='<div style="display:flex;flex-wrap:wrap;gap:6px 14px;margin-bottom:10px">';
+  Object.keys(gs).forEach(function(k){ s+='<span style="font-size:.78rem"><span class="dot" style="display:inline-block;width:10px;height:10px;border-radius:3px;vertical-align:baseline;background:'+(GCOLS[k]||"#64748b")+'"></span> '+k+' <b>'+gs[k]+'</b></span>'; });
+  s+='</div><p class="note">Panneau de droite : les molécules <b>qui s\'accumulent le plus</b> à leur rythme par défaut (intervalle court devant la demi-vie). Cliquez une courbe ou une barre pour ouvrir la molécule complète (doses, repas, interactions, fenêtre TDM). Utilisez les filtres de groupe ou la recherche pour restreindre la vue.</p>';
+  $("stats").innerHTML=s;
+  $("pkcard").innerHTML='<div class="sec"><h3>Pourquoi tout superposer « en vrai » ne marcherait pas</h3><p class="note">Les molécules ont des unités plasmatiques différentes (mg/L, µg/L, µg/mL, mU/L…), des doses et des volumes de distribution très différents : superposer les valeurs absolues n\'aurait aucun sens clinique. La vue d\'ensemble normalise donc chaque courbe sur <b>son</b> Cmax et <b>sa</b> demi-vie : c\'est la comparaison des <b>formes</b> qui est parlante. Pour superposer 2 à 4 molécules en valeurs réelles (même unité), utilisez le bouton ＋ des cartes (mode comparaison).</p>';
+}
+function exitOV(){ if(!OVM) return; OVM=false; var b=$("ovbtn"); if(b){ b.classList.remove("on"); b.textContent="🌐 Vue d\'ensemble"; } }
+function toggleOV(){ OVM=!OVM; var b=$("ovbtn"); b.classList.toggle("on",OVM); b.textContent=OVM?"✕ Quitter la vue d\'ensemble":"🌐 Vue d\'ensemble"; if(OVM) renderOV(); else update(); }
+function ovSel(i){ exitOV(); sel(i); }
+window.toggleOV=toggleOV; window.ovSel=ovSel;
+
 function update(){
+  if(OVM){ renderOV(); return; }
   if(CMP.length){ renderCmp(); return; }
   var m=mol(), P=params(), un=m.un||"mg/L", usf=m.usf||1, dj=m.dj||"mg", df=m.df||1;
   var win=st.win, N=700, i;
