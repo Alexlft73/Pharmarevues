@@ -141,6 +141,7 @@ function vlabel(f,v){
   if(f==="year") return v;
   return v;
 }
+function pvSrc(s){ return Array.isArray(s) ? s : (typeof s === "string" && s ? [["Source", s]] : []); }
 function esc(s){ return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;"); }
 function buildFacets(){
   var host = document.getElementById("facets");
@@ -178,7 +179,7 @@ function refreshFacetCounts(){
   });
 }
 function cardHTML(r){
-  var srcs = (r.src||[]).map(function(s){ return "<a href='"+s[1]+"' target='_blank' rel='noopener'>"+esc(s[0])+"</a>"; }).join(" · ");
+  var srcs = pvSrc(r.src).map(function(s){ return "<a href='"+s[1]+"' target='_blank' rel='noopener'>"+esc(s[0])+"</a>"; }).join(" · ");
   var off = r.off ? "<details><summary>💬 À dire au patient</summary><p>"+esc(r.off)+"</p></details>" : "";
   return "<article class='card'><div class='tags'>"
     +"<span class='nb' style='background:"+NC[r.n]+"'>N"+r.n+"</span>"
