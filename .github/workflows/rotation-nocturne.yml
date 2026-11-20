@@ -3,6 +3,8 @@ on:
   schedule:
     - cron: '*/10 22-23,0-6 * * *'   # 23h00 → 07h50 Paris (UTC+1) — 6 rotations/heure
     - cron: '0 7 * * *'               # balayage final à 08h00 Paris
+    - cron: '*/10 12-17 * * *'      # EXCEPTIONNEL diurne 20/11/2026 : 13h00 → 18h50 Paris (6 rotations/h)
+    - cron: '0,10 18 * * *'          # EXCEPTIONNEL diurne 20/11/2026 : balayages finaux 19h00 et 19h10 Paris
   workflow_dispatch:
 permissions:
   contents: write
@@ -36,6 +38,24 @@ jobs:
             git push
             gh workflow run inject.yml --ref main
             echo "Injection déclenchée pour $PICKED salve(s)"
+          fi
+      - name: Auto-retrait des crons diurnes du 20/11/2026 (après 19h10 Paris)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          NOW=$(TZ='Europe/Paris' date +%s)
+          END=$(TZ='Europe/Paris' date -d '2026-11-20 19:10' +%s)
+          if [ "$NOW" -ge "$END" ]; then
+            sed -i "/cron: '\*\/10 12-17 \* \* \*'/d;/cron: '0,10 18 \* \* \*'/d" .github/workflows/rotation-nocturne.yml
+            git config user.name "vibe-veille[bot]"
+            git config user.email "actions@users.noreply.github.com"
+            git add .github/workflows/rotation-nocturne.yml
+            if ! git diff --cached --quiet; then
+              git commit -m "Rotation: retrait des crons diurnes du 20/11/2026 (fenêtre écoulée)"
+              git push
+            fi
+          else
+            echo "Fenêtre diurne encore active — crons conservés ($(TZ='Europe/Paris' date '+%H:%M') Paris)."
           fi
       - name: Auto-extinction après la fenêtre « jusqu'à la fin du mois » (30/11/2026)
         env:

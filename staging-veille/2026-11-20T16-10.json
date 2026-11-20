@@ -1,0 +1,9 @@
+{
+  "salve": "Tuberculose latente (ITL) : doctrine et régimes courts",
+  "revues": [
+    {"id":"itl-cdc-2024","ty":"Médicament","dom":"Infectiologie & Vaccins","n":5,"dt":"2024-09","des":"Tuberculose latente : le CDC actualise ses recommandations sur le régime court 3HP, isoniazide + rifapentine une fois par semaine pendant 3 mois (MMWR, 12/09/2024)","tag":"tuberculose latente · 3HP · isoniazide · rifapentine · CDC","res":"L'actualisation MMWR consolide le 3HP (12 prises hebdomadaires) parmi les options privilégiées de traitement de l'infection tuberculeuse latente, aux côtés du 4R et du 3HR. En officine : observance à construire autour d'un calendrier hebdomadaire simple ; anticiper les interactions de la rifapentine (contraception hormonale notamment), prévenir la coloration orangée des urines et larmes, et ne pas laisser interrompre au premier inconfort sans avis.","src":"https://www.cdc.gov/tb/latent-tb-infection-resources/index.html"}
+  ],
+  "recos": [
+    {"spe":"Infectiologie & Vaccins","org":"HCSP","dt":"2026-11","titre":"Tuberculose latente : avis actualisé du HCSP sur la prise en charge de l'infection tuberculeuse latente","res":"Le HCSP actualise sa doctrine : le traitement de référence de l'ITL reste l'association isoniazide + rifampicine pendant 3 mois (3HR), avec des alternatives selon les situations (terrain, nature du contact, tolérance). Un cadre réactualisé dans le prolongement des tests IGRA revus par la HAS, alors que la tuberculose progresse en France. En officine : la pharmacie est un maillon du repérage des contacts et de l'observance des schémas courts.","src":"https://www.omedit-idf.fr/veille/actualisation-des-recommandations-relatives-a-linfection-tuberculeuse-latente/"}
+  ]
+}
