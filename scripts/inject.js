@@ -23,7 +23,12 @@ function toCanvas(c) {
   const m = res.match(/^(.*?)(?:\s*(?:En officine\s*:\s*|Le message officinal\s*:\s*|officine\s*:\s*|À dire au patient\s*:\s*))(.*)$/i);
   if (!off && m && m[2] && m[2].length > 10) { res = m[1].trim(); off = m[2].trim().replace(/^./, x => x.toUpperCase()); }
   res = res.replace(/\s*Distinct de [^;.]*en base[^;.]*[;.]/gi, '').trim();
-  return { dom: c.dom, type: TY[c.ty] || c.ty, n: c.n, dt: c.dt, titre: c.des, subst: c.tag, res, src: c.src, coi: c.coi || 'À vérifier', fin: c.fin || 'Financement non lisible dans les sources consultées.', ...(off ? { off } : {}) };
+  return { dom: c.dom, type: TY[c.ty] || c.ty, n: c.n, dt: c.dt, titre: c.des, subst: c.tag, res, src: normSrc(c.src, "REVUE " + (c.des || c.titre || "?")), coi: c.coi || 'À vérifier', fin: c.fin || 'Financement non lisible dans les sources consultées.', ...(off ? { off } : {}) };
+}
+function normSrc(s, label) {
+  if (typeof s === 'string' && /^https?:\/\//.test(s.trim())) return [['Source', s.trim()]];
+  if (Array.isArray(s) && s.length && s.every(x => Array.isArray(x) && x.length >= 2 && typeof x[1] === 'string' && x[1])) return s;
+  return fail('Champ "src" invalide (' + label + ') : attendu [[nom, url]] ou une URL seule');
 }
 let newRevues = [], newRecos = [];
 const skipped = [];
@@ -37,6 +42,7 @@ for (const f of files) {
 const R = eval(q(/const REVUES = (\[[\s\S]*?\n]);/, html));
 const RC = eval(q(/const RECO = (\[[\s\S]*?\n]);/, html));
 const rTitles = new Set(R.map(r => r.titre)), cTitles = new Set(RC.map(r => r.titre));
+newRecos.forEach(c => { c.src = normSrc(c.src, "RECO " + (c.titre || "?")); });
 const dup = newRevues.filter(c => rTitles.has(c.titre)); newRevues = newRevues.filter(c => !rTitles.has(c.titre));
 const dupR = newRecos.filter(c => cTitles.has(c.titre)); newRecos = newRecos.filter(c => !cTitles.has(c.titre));
 dup.concat(dupR).forEach(c => skipped.push('DOUBLON: ' + (c.titre || c.des || '?').slice(0, 70)));
@@ -87,7 +93,7 @@ const bad = html.match(/<script[^>]*>\..{0,40}/); if (bad) fail('balise script+c
 const R2 = eval(q(/const REVUES = (\[[\s\S]*?\n]);/, html));
 const RC2 = eval(q(/const RECO = (\[[\s\S]*?\n]);/, html));
 let hole = 0; R2.forEach(() => hole++); if (R2.length !== hole) fail('case vide dans REVUES (double virgule)');
-let n = 0; R2.forEach(r => { if (!r.titre || !r.src) n++; }); if (n) fail(n + ' entrées REVUES incomplètes');
+let n = 0; R2.forEach(r => { if (!r.titre || !Array.isArray(r.src) || !r.src.length || !r.src.every(x => Array.isArray(x) && x.length >= 2)) n++; }); RC2.forEach(r => { if (!Array.isArray(r.src) || !r.src.length) n++; }); if (n) fail(n + ' entrées REVUES incomplètes');
 if (R2.length !== R.length + newRevues.length) fail('comptage REVUES incohérent');
 if (RC2.length !== RC.length + newRecos.length) fail('comptage RECO incohérent');
 try { new Function(html.match(/<script>([\s\S]*?)<\/script>/)[1]); } catch (e) { fail('JS principal: ' + e.message); }
