@@ -1,6 +1,0 @@
-{
-  "salve": "Néphrologie : anticiper au comptoir",
-  "revues": [
-    {"id":"ckd-management-2026","ty":"Médicament","dom":"Néphrologie","n":5,"dt":"2026-01","des":"Maladie rénale chronique avancée : prise en charge contemporaine fondée sur les preuves (European Journal of Internal Medicine)","tag":"maladie rénale chronique · MRC · DFG · néphroprotection · polymédication","res":"La revue synthétise la prise en charge de la maladie rénale chronique avancée : néphroprotection (IEC/ARA2, inhibiteurs du SGLT2 type dapagliflozine ou empagliflozine), gestion de l'anémie et du métabolisme osseux, hyperkaliémie à surveiller, et révision de la polymédication selon le débit de filtration glomérulaire. En officine : un DFG bas signale un patient fragile ; réviser les doses de metformine, éviter les AINS en automédication et vérifier que chaque nouvel ajout tient compte du stade rénal.","src":"https://doi.org/10.1016/j.ejim.2025.106557"}
-  ]
-}
