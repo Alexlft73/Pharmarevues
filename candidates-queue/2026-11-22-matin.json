@@ -1,0 +1,165 @@
+{
+ "revues": [
+  {
+   "id": "pneumo-toux-chronique-approche-clinique-2025",
+   "ty": "Médicament",
+   "dom": "Pneumologie",
+   "n": 2,
+   "dt": "2025-03",
+   "des": "Toux chronique de l'adulte : la revue pratique de l'approche clinique, des « traits traitables » à la toux réfractaire (JACI: In Practice)",
+   "tag": "toux chronique · toux réfractaire · trait traitable · hypersensibilité à la toux · revue",
+   "res": "Revue « The Clinical Approach to Chronic Cough » (Satia et al., Journal of Allergy and Clinical Immunology: In Practice, vol. 13, n° 3, mars 2025, pages 460-475 — mois vérifié DOUBLE canal : bandeau « J ALLERGY CLIN IMMUNOL PRACT · MARCH 2025 · 460 · SATIA ET AL » lu sur le PDF vu, et « Volume 13, Issue 3, March 2025 » lu sur la page ScienceDirect) : fait le point sur les investigations et les options de prise en charge de la toux chronique et de la toux chronique réfractaire (RCC), via le prisme des traits traitables (motifs lus dans les extraits ; la gestion d'une apnée du sommeil associée peut réduire nettement les symptômes de toux). Hiérarchie thérapeutique chiffrée non lue : ne pas inventer de classement. Base : AUCUNE entrée toux chronique (seule l'alerte ANSM codéine/tramadol sirops pédiatriques 2025-03, angle distinct). En officine : une toux qui traîne plus de 8 semaines n'est plus une « toux banale » — revoir avec le patient ses traitements de fond (certaines classes d'antihypertenseurs sont classiquement pourvoyeuses de toux), le tabac et le reflux ; aucun sirop au comptoir ne remplace cette démarche ; orientation médicale si toux persistante, surtout chez le fumeur ou le senior.",
+   "src": [
+    [
+     "JACI: In Practice (PDF vu)",
+     "https://www.jaci-inpractice.org/article/S2213-2198(24)01169-3/pdf"
+    ],
+    [
+     "ScienceDirect (référencement vu)",
+     "https://www.sciencedirect.com/science/article/pii/S2213219824011693"
+    ]
+   ]
+  },
+  {
+   "id": "orl-audition-senior-score-risque-2025",
+   "ty": "Officine",
+   "dom": "ORL & stomatologie",
+   "n": 2,
+   "dt": "2025-07",
+   "des": "Dépistage communautaire de la déficience auditive du senior : un score de risque composite pour cibler les plus à risque (BMC Geriatrics)",
+   "tag": "presbyacousie · perte auditive · senior · dépistage communautaire · score de risque composite",
+   "res": "Étude « A composite risk score to identify older adults at high risk of hearing loss in a community screening program » (Li et al., BMC Geriatrics 2025;25(1):565, publié 2025-07-30 — date vérifiée sur la citation PubMed « 2025 Jul 30;25(1):565. doi: 10.1186/s12877-025-06208-w ») : la perte auditive liée à l'âge, très fréquente chez les seniors, reste souvent non détectée et non traitée ; le dépistage de routine en milieu communautaire n'est pas répandu et l'appariement en aides auditives reste très faible (extraits lus) ; les auteurs construisent un score de risque composite pour repérer les individus à haut risque au sein d'un programme de dépistage communautaire. Performance chiffrée du score (AUC, sensibilité) NON lue dans les extraits vus : ne pas inventer. Base : AUCUNE entrée audition/presbyacousie (l'entrée acouphènes 2025-09 = angle traitement, distinct) ; complément de la candidate n°3. En officine : un senior qui fait répéter, monte le son de la télé ou se replie dans les conversations mérite un dépistage — c'est aussi un facteur de risque modifiable de déclin cognitif régulièrement cité ; orientation vers le médecin traitant/ORL ou une audioprothésiste pour un premier bilan, sans attendre l'isolement social.",
+   "src": [
+    [
+     "PubMed (citation vue)",
+     "https://pubmed.ncbi.nlm.nih.gov/40739219/"
+    ],
+    [
+     "Springer Nature Link (URL vue)",
+     "https://link.springer.com/article/10.1186/s12877-025-06208-w"
+    ]
+   ]
+  },
+  {
+   "id": "orl-presbyacousie-soins-primaires-sr-2026",
+   "ty": "Officine",
+   "dom": "ORL & stomatologie",
+   "n": 2,
+   "dt": "2026-05",
+   "des": "Presbyacousie : où en est le dépistage et la prise en charge de la perte auditive en soins primaires ? Revue systématique (Cureus)",
+   "tag": "presbyacousie · soins primaires · médecin généraliste · dépistage · revue systématique · protocoles",
+   "res": "Revue systématique « Primary Care Screening and Management of Hearing Loss in Older Adults » (Cureus 2026 May 4;18(5):e108230, doi 10.7759/cureus.108230 — page PMC OUVERTE et lue : « Accepted 2026 May 3 · Collection date 2026 May », mois vérifié) : les médecins généralistes montrent des connaissances et pratiques sous-optimales vis-à-vis du dépistage de la perte auditive liée à l'âge (extrait lu) ; les auteurs plaident pour intégrer des protocoles de dépistage auditif structurés en soins primaires. ⚠️ Limite assumée : Cureus est un journal à relecture plus légère — signal cohérent avec la candidate n°2 (BMC Geriatrics) mais à pondérer ; angle DISTINCT de n°2 (ici l'état des lieux du dépistage en soins primaires, là-bas un outil opérationnel). Amplitudes (prévalences, tailles) non lues : ne pas chiffrer. En officine : la pharmacie croise les seniors isolés bien avant le cabinet — un mot sur l'audition à l'occasion d'une remise d'ordonnance, la vérification que la personne a entendu les consignes de prise, et l'orientation simple vers un dépistage sont des gestes de premier recours réalisables dès maintenant.",
+   "src": [
+    [
+     "PMC (page ouverte et lue)",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC13232374/"
+    ],
+    [
+     "DOI",
+     "https://doi.org/10.7759/cureus.108230"
+    ]
+   ]
+  },
+  {
+   "id": "voyageur-arboviroses-reunion-2026",
+   "ty": "Alerte",
+   "dom": "Santé du voyageur",
+   "n": 4,
+   "dt": "2026-04",
+   "des": "Arboviroses à La Réunion : circulation résiduelle de chikungunya (28 cas) et reprise de la dengue (109 cas) — le diagnostic différentiel « chikungunya/dengue/leptospirose » à connaître au retour de l'océan Indien (Santé publique France)",
+   "tag": "chikungunya · dengue · leptospirose · La Réunion · arboviroses · diagnostic différentiel · voyageur",
+   "res": "Bulletin régional de surveillance sanitaire à La Réunion, semaine 16 (Santé publique France, bulletin du 24/04/2026 — PDF OUVERT et lu, « Date de publication : 24/04/2026 ») : 28 cas de chikungunya et 109 cas de dengue AUTOCHTONES détectés depuis le début de l'année, avec des regroupements de cas de dengue à Saint-Leu et dans plusieurs quartiers de Saint-Paul ; dans un contexte de circulation active de dengue, chikungunya et leptospirose, le diagnostic différentiel doit être évoqué avec possibilité de prescription d'une PCR triplex (points clés lus). Contexte lu sur la page institutionnelle ANRS MIE : l'épidémie de chikungunya 2024-2025 à La Réunion a totalisé 54 340 cas autochtones confirmés par PCR et 28 décès (août 2024 - 8 juillet 2025), officiellement terminée mais avec une transmission résiduelle qui persiste — cohérent avec le bulletin. Usage DISTINCT de l'entrée « vaccins dengue et chikungunya pour les voyageurs » (2026-10, options vaccinales) : ici la situation épidémiologique et le conseil au retour de voyage. En officine : toute fièvre + algies/éruption au retour de l'océan Indien ou de zone tropicale = consulter sans délai, pas d'automédication qui masquerait l'évolution ; en cas de suspicion de dengue, éviter les AINS/aspirine (risque hémorragique) et privilégier le paracétamol sur avis médical ; pour le départ vers La Réunion/Mayotte/Madagascar : protection antimoustique (répulsifs, vêtements) tout compris intertropical.",
+   "src": [
+    [
+     "Santé publique France (bulletin PDF ouvert et lu)",
+     "https://www.santepubliquefrance.fr/sites/default/files/2026-04/bullreg_la_reunion_20260424.pdf"
+    ],
+    [
+     "ANRS MIE — Cellule émergence chikungunya (page vue)",
+     "https://anrs.fr/en/disease-outbreak/emergence-units/cellule-emergence-chikungunya/"
+    ]
+   ]
+  },
+  {
+   "id": "sante-publique-angine-tdr-pharmacie-mg-2026",
+   "ty": "Officine",
+   "dom": "Santé publique",
+   "n": 3,
+   "dt": "2026-10",
+   "des": "Angine : quand le pharmacien fait le test streptococcique, que devient le médecin généraliste ? Revue systématique des services « sore throat » en pharmacie communautaire (J Eval Clin Pract)",
+   "tag": "angine · TDR · pharmacie communautaire · médecin généraliste · organisation des soins · revue systématique · France",
+   "res": "Revue systématique « What Happens to the General Practitioner When the Pharmacist Tests for Strep Throat? » (Fischer et al. — département de médecine générale, UVSQ — Journal of Evaluation in Clinical Practice 2026 Oct 25;32(7):e70675, doi 10.1111/jep.70675 — page PMC OUVERTE et lue : « Received 2026 Jul 4 · Accepted 2026 Oct 5 · Issue date 2026 Oct », mois vérifié ; recherche jusqu'au 15/02/2026) : dans plusieurs pays à revenu élevé, les pharmaciens évaluent l'angine par score clinique + test rapide antigénique ; les conséquences pour le médecin généraliste (charge de travail, prescription, sécurité) n'avaient jamais été synthétisées en perspective soins primaires. Lecture attentive des méthodes (ouvertes) : une SEULE étude comparative identifiée (cohorte rétrospective appariée, n = 72 736 personnes, risque de biais modéré ROBINS-I) et AUCUNE estimation poolée calculée → preuves limitées, hétérogènes : NE PAS SURVENDRE un transfert de charge ou un bénéfice sécurité. Usage DISTINCT des entrées angine en base (NMA 24 antibiotiques Frontiers 2026-06, fiches HAS/SPILF/GPIP 2025-05 : clinique/antibiothérapie) : ici l'angle est l'ORGANISATION des soins autour du test pharmacien — première revue systématique française sur la question. En officine : le TDR angine conduit par le pharmacien n'existe pas dans le cadre français actuel ; cette revue intéresse les évolutions de mission ; au comptoir, l'angine reste score clinique/âge ± avis médical, et le pharmacien oriente tout signe d'alerte.",
+   "src": [
+    [
+     "PMC (page ouverte et lue)",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC13696016"
+    ],
+    [
+     "DOI",
+     "https://doi.org/10.1111/jep.70675"
+    ]
+   ]
+  },
+  {
+   "id": "nephro-ains-mrc-risque-2025",
+   "ty": "Médicament",
+   "dom": "Néphrologie",
+   "n": 2,
+   "dt": "2025-03",
+   "des": "AINS au long cours : quel est le risque réel de maladie rénale chronique ? Revue systématique et méta-analyse (Romanian Journal of Internal Medicine)",
+   "tag": "AINS · maladie rénale chronique · risque à long terme · survenue · progression · méta-analyse",
+   "res": "« Non-steroidal anti-inflammatory drugs: what is the actual risk of chronic kidney disease? A systematic review and meta-analysis » (Romanian Journal of Internal Medicine 2025 Mar 31;63(1):3-27, PMID 39412516 — date vérifiée sur la citation « Rom J Intern Med. 2025 Mar 31;63(1):3–27 » lue dans DEUX extraits indépendants) : l'usage au LONG COURS des AINS augmente la survenue ET la progression de la maladie rénale chronique, en particulier chez les patients ayant déjà une MRC (conclusion PubMed lue) ; revue critiquant les synthèses antérieures datées et méthodologiquement imparfaites ; la méta-analyse poolerait 40 études et 1 757 118 participants (extrait ResearchGate vu) — le HR poolé chiffré était TRONQUÉ dans l'extrait : ne pas citer de valeur numérique d'effet. Usage DISTINCT des entrées AINS en base (colique néphrétique Cochrane 2025-03, AINS gel topique 38 % d'EI en moins 2025-01, AINS arthrose NMA 2025-05) : aucune entrée sur le risque rénal CHRONIQUE des AINS systémiques. En officine : un patient qui rachète de l'ibuprofène « tous les mois depuis deux ans » est un signal d'alerte — questionner rein (DFG), hypertension, diurétiques/IEC/ARA2, âge ; dose minimale, durée minimale, paracétamol en première intention ; l'automédication AINS prolongée ne doit jamais devenir un fond de traitement.",
+   "src": [
+    [
+     "PubMed (page vue, conclusion lue)",
+     "https://pubmed.ncbi.nlm.nih.gov/39412516/"
+    ],
+    [
+     "Référencement éditeur (URL vue)",
+     "https://reference-global.com/article/10.2478/rjim-2024-0029"
+    ]
+   ]
+  },
+  {
+   "id": "economie-ruptures-critiques-ue-2025",
+   "ty": "Économie",
+   "dom": "Économie de la Santé",
+   "n": 3,
+   "dt": "2025-09",
+   "des": "Ruptures critiques de médicaments : la Cour des comptes européenne audite la politique de l'UE — des mesures utiles, mais des problèmes structurels qui demeurent (rapport spécial 19/2025)",
+   "tag": "ruptures de stock · Europe · Cour des comptes · Critical Medicines Act · chaîne d'approvisionnement · disponibilité · officine",
+   "res": "Rapport spécial 19/2025 de la Cour des comptes européenne « Critical shortages of medicines: EU measures were of added value, but structural problems remain » (PDF OUVERT et lu ; publié le 17/09/2025 — date lue sur le communiqué de presse « Luxembourg, 17 September 2025 » et confirmée par la couverture presse) : l'UE a apporté une valeur ajoutée (mandat étendu de l'EMA pour les ruptures, appui aux États membres) MAIS le système manque toujours d'un cadre juridique adéquat pour prévenir et atténuer les ruptures critiques, et les causes racines ne sont pas traitées (constats du sommaire lu) ; entre 2022 et octobre 2024, les autorités nationales ont signalé 136 ruptures critiques, à des niveaux records en 2023-2024 (chiffres lus dans extraits presse reprenant la présentation du rapport — signaler la source). Usage DISTINCT de l'entrée « DREES ruptures France » (Économie/Santé publique 2025-03, mesure nationale) et de l'entrée ruptures-pédiatrie Slovaquie (2026-03) : ici l'audit EUROPÉEN systémique, incluant le levier Critical Medicines Act proposé en mars 2025. En officine : la rupture n'est pas un incident local mais un problème structurel européen — anticiper avec le patient (délais de réapprovisionnement, alternatives validées avec le prescripteur, J+2 des retirés de vente), ne jamais constituer de stock tampon hors cadre réglementaire, et garder l'observance comme priorité lors des substitutions.",
+   "src": [
+    [
+     "Cour des comptes européenne (rapport PDF ouvert et lu)",
+     "https://www.eca.europa.eu/ECAPublications/SR-2025-19/SR-2025-19_EN.pdf"
+    ],
+    [
+     "Communiqué de presse ECA (date vue)",
+     "https://www.presseportal.de/en/pm/111458/6119858"
+    ]
+   ]
+  },
+  {
+   "id": "opht-glaucome-gels-sans-conservateur-2025",
+   "ty": "Médicament",
+   "dom": "Ophtalmologie",
+   "n": 2,
+   "dt": "2025-10",
+   "des": "Glaucome : les traitements en gel sans conservateur apparaissent aussi efficaces et mieux tolérés que leurs équivalents conservés — tour d'horizon des leçons du passé et perspectives (Advances in Therapy)",
+   "tag": "glaucome · collyres sans conservateur · tolérance oculaire · gel · observance · bimatoprost",
+   "res": "Revue « Preservative-Free Gel-Formulated Glaucoma Therapies: Learning from the Past, Looking to the Future » (Konstas et al., Advances in Therapy 2025;42(12):5896-5930, publiée en ligne le 2025-10-13 — date vérifiée sur la citation PubMed « 2025 Dec;42(12):5896-5930. doi: 10.1007/s12325-025-03342-0. Epub 2025 Oct 13 » ET sur Springer « Volume 42, pages 5896–5930 (2025) », article en ACCÈS LIBRE) : les agents en gel SANS conservateur « apparaissent plus sûrs et aussi efficaces » que leurs équivalents conservés (conclusion PubMed lue — garder « apparaissent », extracteur tronqué) ; les auteurs plaident pour une adoption plus large des formes sans conservateur dans le glaucome chronique . Candidate REPORTÉE de la dose du 21/11 (écartée pour équilibre du lot 2 ophtalmo, documentée « à reprendre ») — reprise ce soir conformément au protocole. Usage DISTINCT des lignes glaucome en base (biothérapies/efficacité) : AUCUNE entrée sur les conservateurs et le confort d'instillation. En officine : brûlures, picotements ou inconfort chronique sous collyre du glaucome = à signaler au prescripteur (des alternatives sans conservateur existent, dont des gels), car la gêne est une des premières causes d'arrêt du traitement ; rappeler la technique d'instillation et l'observance, déterminants du contrôle de la pression.",
+   "src": [
+    [
+     "Springer Nature Link (article vu, accès libre)",
+     "https://link.springer.com/article/10.1007/s12325-025-03342-0"
+    ],
+    [
+     "PubMed (citation vue)",
+     "https://pubmed.ncbi.nlm.nih.gov/41082073/"
+    ]
+   ]
+  }
+ ],
+ "recos": []
+}
