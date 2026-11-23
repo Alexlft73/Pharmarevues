@@ -1,0 +1,161 @@
+{
+ "revues": [
+  {
+   "ty": "Médicament",
+   "dom": "Santé du voyageur",
+   "n": 2,
+   "dt": "2026-02",
+   "des": "Thrombose du vol : pour la première fois un SR/MA chiffre le risque — chirurgie récente + avion, augmentation numérique mais NON significative (Phlebology)",
+   "tag": "thrombose veineuse · vol aérien · chirurgie récente · voyage long-courrier · méta-analyse · délai avant de voler",
+   "res": "« A systematic review and meta-analysis of venous thromboembolism risk in surgical patients with recent air travel » (Shea, Ghosh, Turner, Davies, Onida — Phlebology 2026;41(1), fascicule imprimé février 2026 selon Crossref, Epub 2025-05-14 selon Europe PMC — les deux canaux lus) : 7 études RÉTROSPECTIVES, 24 975 patients au total ; OR poolé de TEV « vol + chirurgie » = 1,96 (IC95 % 0,54-7,08, NON significatif) ; vol PRÉ-opératoire OR 7,86 (IC95 % 0,23-265,26 — IC immense, à ne pas présenter comme un risque démontré) ; vols > 4 h OR 2,35 (IC95 % 0,29-19,36) ; taux de TVC groupés 0,67 % (vol+chirurgie) vs 0,45 % (chirurgie seule) ; le taux d'EP groupé était TRONQUÉ dans l'extrait : ne pas le citer. Lecture honnête : un signal numérique cohérent avec la physiopathologie, mais des intervalles de confiance larges (données rétrospectives) — NE PAS SURVENDRE une « interdiction de voler ». REPRISE OFFICIELLE de la piste « thrombose du vol » laissée non couverte les nuits du 19-20/11 (WJBPHS douteux) et 21-22/11 (chapitre Yellow Book = doublon de l'entrée Yellow Book 2026) ; ici un journal clinique fiable (Phle, SAGE). Base : grep « air travel »/« vol aérien » = 0 entrée. En officine : après une opération, le projet de vol se discute avec le chirurgien ou le médecin AVANT la réservation (délai dépendant du type de chirurgie et des facteurs de risque : TEV antérieur, contraception œstroprogestative/THM, cancer, immobilisation, âge) ; au comptoir : rappeler hydratation, mobilisation pendant le vol, et signaler toute anomalie veineuse au retour de voyage ; les bas de compression restent une décision d'avis médical selon le niveau de risque.",
+   "src": [
+    [
+     "PubMed (référence 40364793 vue)",
+     "https://pubmed.ncbi.nlm.nih.gov/40364793/"
+    ],
+    [
+     "SAGE Journals (référencement vu; Crossref lu)",
+     "https://journals.sagepub.com/doi/10.1177/02683555251342912"
+    ]
+   ]
+  },
+  {
+   "ty": "Complément alimentaire",
+   "dom": "Santé du voyageur",
+   "n": 3,
+   "dt": "2024-10",
+   "des": "Jet lag : que vaut la panoplie chronobiologique (mélatonine, lumière personnalisée) ? Revue systématique sur voyage et rythme circadien (Cureus)",
+   "tag": "jet lag · décalage horaire · rythme circadien · mélatonine · lumière · voyage transméridien",
+   "res": "« Unraveling the Impact of Travel on Circadian Rhythm and Crafting Optimal Management Approaches: A Systematic Review » (Ahmed, Ibrahiam, Al-Qassab et al., Cureus 2024;16(10):e71316, DOI 10.7759/cureus.71316, PMID 39534813 — date vérifiée DOUBLE canal : bandeau du PDF OUVERT et lu « Published 10/12/2024 · © Copyright 2024 » + Europe PMC « 2024-10-12 ») : PRISMA 2020, SEULEMENT 3 études de haute qualité identifiées et analysées ; résultat lu : les interventions comme la supplémentation en mélatonine, l'exposition lumineuse personnalisée et la chrono-modulation « peuvent significativement améliorer la qualité du sommeil et réduire les symptômes de jet lag » ; le voyage transméridien perturbe le rythme circadien avec au-delà du jet lag des risques métaboliques et neuropsychiatriques (extraits lus). ⚠️ Limites assumées : Cureus = journal à relecture plus légère (même signal que la candidate presbyacousie du 22/11, à faire relire en session) + la revue est catégorisée « Integrative/Complementary Medicine » + SR limitée à 3 études → ne pas survendre, n fixé à 3. Base : grep « jet lag » = 0 entrée (la mélatonine en base = angles sommeil senior/rhume, usages distincts ; la méta Cochrane 2002 jet lag avait été écartée en 2024-2026 pour hors fenêtre). En officine : après un vol avec décalage, la lumière du jour locale dès l'arrivée, des horaires de repas et de coucher calés sur la destination dès le premier jour et des siestes courtes (< 30 min) aident l'horloge à recaler ; pour les gros décalages (≥ 5 fuseaux), la mélatonine peut se discuter au cas par cas — demander conseil systématiquement (grossesse, enfants, somnifères/opioïdes... : ne pas délivrer sans avis).",
+   "src": [
+    [
+     "Cureus (PDF ouvert et lu)",
+     "https://www.cureus.com/articles/303255-unraveling-the-impact-of-travel-on-circadian-rhythm-and-crafting-optimal-management-approaches-a-systematic-review.pdf"
+    ],
+    [
+     "DOI / Europe PMC (PMID 39534813 vu)",
+     "https://doi.org/10.7759/cureus.71316"
+    ]
+   ]
+  },
+  {
+   "ty": "Médicament",
+   "dom": "Rhumatologie",
+   "n": 2,
+   "dt": "2025-10",
+   "des": "Goutte : mise à jour complète du traitement — treat-to-target uricémie ≤ 5-6 mg/dL, 3-6 mois de prophylaxie à l'initiation du fond, et seulement un tiers à un patient sur deux réellement traité (Ther Adv Musculoskelet Dis)",
+   "tag": "goutte · uricémie · traiter-vers-la-cible · traitement de fond · adhérence · prophylaxie des crises",
+   "res": "« Gout therapy updated » (McCarty, Gaffo, Diaz-Torne — Therapeutic Advances in Musculoskeletal Disease 2025, « First published Oct 21, 2025 » lu sur le site SAGE + PMID 41146690/Europe PMC « 2025-10-21 » — ⚠️ écart Crossref « published-print 2025-08 » documenté, deux canaux fiables convergent sur octobre, reçu 17/04/2025 accepté 17/09/2025 vus sur PMC12553874) : prévalence et incidence de la goutte en hausse mondiale ; comorbidités (diabète, HTA, obésité, MRC, syndrome métabolique) à intégrer dans le choix de l'hypouricémiant ; SEULEMENT un tiers à la moitié des patients reçoivent un traitement de fond et moins de la moitié restent adhérents (chiffres lus) ; stratégie « treat to target » visant une uricémie ≤ 5-6 mg/dL ; initiation du traitement de fond avec 3-6 mois de prophylaxie des crises pour réduire le risque de crise à l'instauration. Usage DISTINCT des 2 entrées goutte en base (traiter-vers-la-cible < 360 µmol/L réduisant les événements CV, 2025-06, ESSAI ; colchicine vs AINS prophylaxie des crises, 2025-09, COMPARATIF) : ici le NOUVEAU = le constat d'adhérence (un tiers à la moitié seulement traités au fond, moins de la moitié adhérents) + le choix de l'ULT guidé par les comorbidités. En officine : l'allopurinol/febuxostat ne se prend pas « quand ça fait mal », c'est un traitement de FOND au long cours — l'arrêt ramène l'uricémie au-dessus de la cible ; les crises du début sont prévenues par la prophylaxie associée (souvent colchicine quelques mois) ; POURSUIVRE le fond même pendant une crise (selon avis médical) ; interrogatoire des comorbidités et interactions (azathioprine, et régression de la dose sous insuffisance rénale) au comptoir.",
+   "src": [
+    [
+     "SAGE Journals (référencement + « First published Oct 21, 2025 » vus)",
+     "https://journals.sagepub.com/doi/10.1177/1759720X251384584"
+    ],
+    [
+     "PubMed (référence 41146690 vue)",
+     "https://pubmed.ncbi.nlm.nih.gov/41146690/"
+    ],
+    [
+     "PMC (page vue dans les résultats; reçu/accepté lus)",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC12553874/"
+    ]
+   ]
+  },
+  {
+   "ty": "Médicament",
+   "dom": "Neurologie",
+   "n": 2,
+   "dt": "2025-07",
+   "des": "Alzheimer : première ligne directrice officielle sur les biomarqueurs sanguins — sensibilité ≥ 90 % pour trier, ≥ 90 %/90 % pour remplacer PET ou ponction lombaire, en milieu spécialisé (Alzheimer's Association)",
+   "tag": "Alzheimer · biomarqueurs sanguins · p-tau217 · diagnostic · ligne directrice · consultation mémoire",
+   "res": "« Alzheimer's Association Clinical Practice Guideline on the use of blood-based biomarkers... within specialized care settings » (Palmqvist et al., Alzheimer's & Dementia 2025;21(7) fascicule 7, publié en ligne 29/07/2025 selon Crossref, Europe PMC « 2025-07-01 » — les deux lus) : recommandations fondées sur revue systématique + GRADE, POUR LE MILIEU SPÉCIALISÉ (consultations mémoire) ; (1) les tests sanguins avec ≥ 90 % de sensibilité et ≥ 75 % de spécificité peuvent servir de test de TRIAGE ; (2) ceux avec ≥ 90 % de sensibilité ET de spécificité peuvent remplacer l'imagerie amyloïde PET ou les biomarqueurs du LCR chez les patients évalués par des cliniciens expérimentés ; analyseurs évalués : p-tau217, ratio %p-tau217, p-tau181, p-tau231, ratio Aβ42/40 (lus dans les recommandations) ; le communiqué AAIC 2025 (vu) annonce que le soin primaire fera l'objet d'une ligne directrice distincte. Financement : Alzheimer's Association (funder lu sur Crossref). Base : la ligne voisine « détection de l'Alzheimer en soins primaires : test cognitif digital + biomarqueurs sanguins » (2025-09) couvre l'OUTIL de dépistage digital ; ici ce sont les RECOMMANDATIONS OFFICIELLES d'utilisation des biomarqueurs sanguins en milieu spécialisé — angles distincts. Complément des entrées lecanemab/donanemab (2026-06, AMM) avec le volet diagnostic. En officine : des patients demanderont le « test sanguin Alzheimer » vu dans la presse : c'est un outil de SPÉCIALISTE, aucun test d'officine ni de soin primaire n'est validé aujourd'hui — aucune prise de sang « de curiosité » ; orienter vers le médecin traitant/consultation mémoire en cas de troubles cognitifs objectifs, pas d'autodiagnostic.",
+   "src": [
+    [
+     "Wiley Online Library (référencement vu)",
+     "https://alz-journals.onlinelibrary.wiley.com/doi/10.1002/alz.70535"
+    ],
+    [
+     "AAIC 2025 — communiqué Alzheimer's Association (vu)",
+     "https://aaic.alz.org/releases-2025/clinical-practice-guideline-blood-based-biomarkers.asp"
+    ]
+   ]
+  },
+  {
+   "ty": "Officine",
+   "dom": "Neurologie",
+   "n": 2,
+   "dt": "2025-09",
+   "des": "Épilepsie de l'adulte : que valent l'éducation thérapeutique, l'autogestion et les modèles de suivi ? La Cochrane répond avec prudence — léger gain sur les crises, preuves quality-of-life limitées",
+   "tag": "épilepsie · autogestion · éducation thérapeutique · organisation des soins · observance · Cochrane",
+   "res": "« Service delivery, behavioural, and self-management interventions for adults with epilepsy » (Huang et al., Cochrane Database of Systematic Reviews 2025;9:CD015284, mis à jour le 24/09/2025 selon Crossref « created 2025-09-24 » — lu) : l'épilepsie touche environ 660/100 000 personnes dans le monde et un tiers ne deviennent pas libres de crises malgré les antiépileptiques (lus) ; la revue inclut des ECR/quasi-ECR (âge moyen ≥ 16 ans) d'interventions comportementales, d'autogestion et d'organisation des soins, critère principal = fréquence des crises, recherche au 21/08/2023 (lue) ; conclusion de la page Cochrane (lue) : « les traitements psycho-comportementaux réduisent PROBABLEMENT LÉGÈREMENT la fréquence des crises », effet sur la qualité de vie non démontré ; des études mieux conçues et des mesures validées à long terme sont nécessaires. Usage DISTINCT des lignes épilepsie voisines en base (interventions OFFICINALES 2025-04 et SNC 2025-04 = angle pharmacie ; éducation/observance de l'ENFANT 2026-04 ; SANAD-II 2021 = choix de molécule ; VA 2026-09 et anamnèse 2026-10 = angles service/clinique américains) : ici la SYNTHÈSE Cochrane des modèles d'organisation des soins + interventions comportementales et d'autogestion chez l'ADULTE, avec cotation GRADE — la première synthèse générale du thème. En officine : pour le patient épiletique, la régularité horaire du traitement est le geste n° 1 (chaque oubli favorise une crise : pilulier, rappels, carnet de crises) ; ne JAMAIS arrêter ou réduire un antiépileptique d'un coup ; signaler au médecin toute crise nouvelle, somnolence inhabituelle ou éruption (avis immédiat pour certaines molécules) ; alcool et privation de sommeil = déclencheurs classiques.",
+   "src": [
+    [
+     "Cochrane Library (page vue, conclusions lues)",
+     "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD015284.pub2/full"
+    ],
+    [
+     "DOI / Crossref (date lue)",
+     "https://doi.org/10.1002/14651858.CD015284.pub2"
+    ]
+   ]
+  },
+  {
+   "ty": "Médicament",
+   "dom": "Urologie & santé masculine",
+   "n": 2,
+   "dt": "2025-10",
+   "des": "Hypertrophie bénigne de la prostate : panorama intégré de la cascade thérapeutique — α-bloquants, 5-ARI, IPDE5, puis les gestes mini-invasifs Rezūm/UroLift/Aquablation/embolisation, TURP et HoLEP pour les gros prostates (Frontiers in Urology)",
+   "tag": "HBP · SBAU · α-bloquants · inhibiteurs 5-alpha réductase · tadalafil · gestes mini-invasifs · UroLift · Rezūm · embolisation",
+   "res": "« Integrated management strategies for benign prostatic hyperplasia » (Frontiers in Urology, Volume 5, 13 October 2025 — page OUVERTE et lue : « Front. Urol., 13 October 2025 », DOI 10.3389/fruro.2025.1641171) : en première ligne des SBAU/HBP légers à modérés, les α-bloquants, les inhibiteurs de la 5-alpha réductase et les inhibiteurs de la PDE5 ; les thérapies mini-invasives (Rezūm, UroLift, Aquablation, embolisation des artères prostatiques) offrent des alternatives moins invasives avec des convalescences plus courtes ; pour les prostates volumineuses, la TURP et la HoLEP restent les standards de référence avec un soulagement symptomatique durable (tout lu dans le résumé de l'article ouvert). Revue narrative (affiliation urologique chinoise unique lue) → n fixé à 2, pas une synthèse systématique. Usage DISTINCT des 2 entrées HBP en base (tamsulosine N-of-1 déprescription 2026-07 ; essai VAPEUR France Rezūm vs bithérapie 2026-08 = UN essai comparatif français) : ici la CASCADE thérapeutique internationale complète, du médicament au geste. En officine : sous tamsulosine ou α-bloquant, prévenir l'hypotension orthostatique (se lever lentement, surtout la nuit) ; le médicament soulage sans réduire le volume prostatique — l'évolution se surveille ; orienter sans délai vers le médecin en cas de rétention urinaire aiguë, d'infections urinaires répétées ou de sang dans les urines ; jamais d'automédication par tadalafil « pour la prostate » sans avis.",
+   "src": [
+    [
+     "Frontiers (page ouverte et lue, date lue)",
+     "https://www.frontiersin.org/journals/urology/articles/10.3389/fruro.2025.1641171/full"
+    ],
+    [
+     "DOI",
+     "https://doi.org/10.3389/fruro.2025.1641171"
+    ]
+   ]
+  },
+  {
+   "ty": "Officine",
+   "dom": "Pneumologie",
+   "n": 3,
+   "dt": "2025-09",
+   "des": "Technique d'inhalation contrôlée en officine : le service allemand remboursé évalué en routine — médiane de 2 erreurs de manipulation par patient, dont 77 % corrigées pendant la consultation (J Eval Clin Pract)",
+   "tag": "technique d'inhalation · pharmacie communautaire · service remboursé · erreurs de manipulation · asthme · BPCO · observance",
+   "res": "« Community Pharmacy Service for Patients With Inhaled Medications: A Multi-Perspective Observation and Assessment Under Routine Conditions » (Journal of Evaluation in Clinical Practice, DOI 10.1111/jep.70271, septembre 2025 selon Europe PMC « 2025-09-01 » — résumé lu via Europe PMC ; référence PMC12416124 vue dans les résultats) : l'Allemagne a rendu remboursable la consultation d'inhalation en pharmacie communautaire (fondement dans les guidelines, lu) ; évaluation par observateur externe entraîné sous conditions RÉELLES en Saxe : 48 services remboursés analysés dans 13 officines ; répartition aérosol-doseur pressurisé 42 % / poudre sèche 42 % ; MÉDIANE de n = 2 erreurs de manipulation par patient à la démonstration (Q25 : 1, Q75 : 3) ; en moyenne 77 % de ces erreurs (IC95 % [69 ; 86], min 0 % max 100 % selon les officines — l'hétérogénéité est un signal pour la formation continue) ont été traitées pendant la consultation qui a suivi ; satisfaction patient très élevée (médiane 5), durée non corrélée aux erreurs non traitées (r = 0,16, p = 0,35 — lus). Base : 5 lignes voisines technique d'inhalation en base (score PIT 2026-11, urgences pédiatriques 2026-11, phénotypes comportementaux 2026-08, littératie 2026-11, satisfaction/engagement pharmacien 2025-09) — mais AUCUNE n'évalue un SERVICE REMBOURSÉ délivré en routine avec observateur externe et comptage chiffré des erreurs corrigées : l'angle (implémentation réelle d'un service, pas la technique du patient isolée) est neuf. En officine : refaire démontrer le dispositif à CHAQUE renouvellement devant le comptoir, pas seulement à la première délivrance ; corriger la coordination main-poussée-inspiration (aérosols) ou le flux inspiratoire insuffisant (poudres) ; rinçage de bouche après corticoïde inhalé ; un dispositif bien maîtrisé « ancien » vaut mieux qu'un nouveau dispositif mal utilisé — et l'erreur fausse l'efficacité ressentie avant d'être un problème d'observance.",
+   "src": [
+    [
+     "PMC (référence vue dans les résultats; résumé lu via Europe PMC)",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC12416124/"
+    ],
+    [
+     "DOI / Wiley",
+     "https://doi.org/10.1111/jep.70271"
+    ]
+   ]
+  },
+  {
+   "ty": "Médicament",
+   "dom": "Rhumatologie",
+   "n": 2,
+   "dt": "2026-09",
+   "des": "Rhumatisme psoriasique : la revue des comorbidités qui change la prise en charge — cardiovasculaire, obésité, diabète, fatigue/sommeil, santé mentale, MICI, uvéite, vers une évaluation multidisciplinaire (Best Pract Res Clin Rheumatol)",
+   "tag": "rhumatisme psoriasique · comorbidités · prise en charge intégrée · psoriasis · uvéite · MICI",
+   "res": "« Managing comorbidities in psoriatic arthritis: A state-of-the-art approach to integrated care » (Best Practice & Research Clinical Rheumatology, DOI 10.1016/j.berh.2026.102166, publié 2026-09-02 selon Europe PMC — lu ; ⚠️ le titre de collection porte « (2025) » alors que la publication est datée 2026-09 : les deux mentions lues et documentées, l'Europe PMC fait foi pour dt) : le RP n'est pas un problème articulaire isolé mais une maladie inflammatoire SYSTÉMIQUE (peau, enthèses, rachis, tube digestif) ; le paysage des comorbidités lu : maladies cardiovasculaires, obésité, diabète, fatigue et troubles du sommeil, troubles de santé mentale, complications rénales/hépatiques/osseuses, et maladies immunitaires associées (MICI, uvéite) ; les auteurs plaident pour une évaluation MULTIDISCIPLINAIRE et des recommandations de dépistage/traitement intégrées, avec un volet outils numériques. Amplitudes chiffrées (prévalences, RR) NON lues : ne pas chiffrer. Usage DISTINCT des 2 entrées RP en base (icotrokinra ICOTYDE 2026-11 et sonelokimab IZAR-1 2026-08 = toplines d'essais) : ici le visage systémique du RP au comptoir — aucun angle « comorbidités/prise en charge intégrée » en base. En officine : patient sous biothérapie pour un RP : vaccins à jour AVANT l'initiation (et vaccins vivants contre-indiqués sous biothérapie), surveillance du poids et du risque cardiovasculaire, signe d'alerte à transmettre au médecin : œil rouge/douloureux (uvéite), douleurs abdominales/diarrhée chronique (MICI), psoriasis qui change — le pharmacien est bien placé pour repérer les comorbidités entre deux ordonnances.",
+   "src": [
+    [
+     "ScienceDirect (référencement vu)",
+     "https://www.sciencedirect.com/science/article/abs/pii/S1521694226000513"
+    ],
+    [
+     "DOI / Europe PMC (date lue)",
+     "https://doi.org/10.1016/j.berh.2026.102166"
+    ]
+   ]
+  }
+ ],
+ "recos": []
+}
