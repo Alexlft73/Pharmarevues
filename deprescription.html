@@ -102,7 +102,7 @@ footer{margin-top:18px;text-align:center;font-size:.78rem;color:var(--gris)}
 <div id="ctrl" class="panel">
 <h2 id="cmol">—</h2>
 <div class="molsub" id="cmolsub"></div>
-<div class="ctl"><label>Médicament</label><select id="selmol" onchange="run()"></select></div>
+<div class="ctl"><label>Médicament</label><select id="selmol" onchange="molChanged()"></select></div>
 <div class="ctl"><label>Dose actuelle <span class="hint">(par prise)</span></label><select id="seldose" onchange="run()"></select></div>
 <div class="ctl"><label>Posologie actuelle</label><select id="seltau" onchange="run()"></select></div>
 <div class="ctl"><label>Plan de décroissance</label><select id="selplan" onchange="planChanged()"></select></div>
@@ -418,6 +418,11 @@ function planChanged(rerun){
   var p=cls().prev[ST.plan];
   $("ctlcustom").style.display=(p&&p.cust)?"block":"none";
   if(rerun!==false) run();
+}
+function molChanged(){
+  ST.i=parseInt($("selmol").value,10)||0;
+  fillDose();          /* doses, posologie et plans de la nouvelle molécule/classe */
+  run();
 }
 function run(){
   var m=mol(), c=cls();
