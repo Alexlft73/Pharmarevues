@@ -41,6 +41,8 @@ html.dark .disc b{color:#fca5a5}
 .ctl .inline{display:flex;gap:8px}
 .ctl .inline>*{flex:1}
 .pillinfo{background:rgba(15,118,110,.07);border-radius:10px;padding:9px 11px;font-size:.8rem;margin-bottom:12px}
+.tmsg{font-size:.78rem;margin-top:6px;color:var(--gris);line-height:1.4}
+.tmsg b{color:var(--teal)}
 .badge{display:inline-block;border-radius:999px;padding:3px 11px;font-size:.78rem;font-weight:700}
 .b-ok{background:rgba(21,128,61,.13);color:var(--vert)}
 .b-warn{background:rgba(180,83,9,.14);color:var(--ambre)}
@@ -112,6 +114,10 @@ footer{margin-top:18px;text-align:center;font-size:.78rem;color:var(--gris)}
 <div class="ctl" id="ctlcustom" style="display:none"><label>Palier personnalisé</label>
 <div class="inline"><div><label class="hint">Réduction (%)</label><input id="cpct" type="number" min="5" max="50" step="5" value="25" onchange="run()"></div>
 <div><label class="hint">Toutes les (semaines)</label><input id="cweeks" type="number" min="1" max="8" step="1" value="2" onchange="run()"></div></div>
+</div>
+<div class="ctl" id="ctltarget"><label>🎯 Finir avant le… <span class="hint">(optionnel)</span></label>
+<input id="cibledate" type="date" onchange="targetChanged()">
+<div class="tmsg" id="tmsg"></div>
 </div>
 <div class="pillinfo" id="pillinfo"></div>
 </div>
@@ -431,6 +437,50 @@ function molChanged(){
   ST.i=parseInt($("selmol").value,10)||0;
   fillDose();          /* doses, posologie et plans de la nouvelle molécule/classe */
   run();
+  if($("cibledate").value) targetChanged();   /* ré-optimise le plan cible pour la nouvelle molécule */
+}
+/* durée d'un plan (jours) : même logique que buildSchedule (paliers fins < 30 %) */
+function planDuration(pct,w){
+  var stepH=w*7*24, f=1, n=0, guard=0, pp;
+  while(f>0.126&&guard<60){ pp=pct; if(f<0.30) pp=Math.max(pct/2,6.25); f*=(1-pp/100); if(f<0.126) f=0; n++; guard++; }
+  /* le calendrier affiche le dernier palier (passage à 0) au temps (n-1)·stepH */
+  return Math.max((n-1)*stepH/24,0);
+}
+function targetChanged(){
+  var v=$("cibledate").value;
+  if(!v){ $("tmsg").innerHTML=""; return; }
+  var today=new Date(); today.setHours(12,0,0,0);
+  var tgt=new Date(v+"T12:00:00");
+  var D=Math.round((tgt-today)/864e5);
+  if(D<7){ $("tmsg").innerHTML="⚠️ Trop tôt : comptez au moins 2 à 3 semaines, et davantage pour un traitement au long cours ; en dessous, seul un arrêt direct encadré par le médecin convient."; return; }
+  var PCTS=[10,12.5,15,20,25,30,40,50], WS=[1,2,3,4,5,6,7,8];
+  var cands=[], i, j, pct, w, dur, rate, tier;
+  for(i=0;i<PCTS.length;i++) for(j=0;j<WS.length;j++){
+    pct=PCTS[i]; w=WS[j]; dur=planDuration(pct,w); rate=pct/w;
+    tier=(rate<=12.5+1e-9)?0:((rate<=25+1e-9)?1:2);
+    if(tier<=1) cands.push({pct:pct,w:w,dur:dur,rate:rate,tier:tier});
+  }
+  var ok=cands.filter(function(c){return c.dur<=D+1&&c.pct<=25;});
+  if(!ok.length) ok=cands.filter(function(c){return c.dur<=D+1;});
+  var pick;
+  if(ok.length){
+    ok.sort(function(a,b){ return (a.tier-b.tier)||(a.rate-b.rate)||(a.pct-b.pct)||(b.dur-a.dur); });
+    pick=ok[0];
+    $("tmsg").innerHTML="🎯 Pour finir au plus tard le <b>"+fmtDate(tgt)+"</b> : paliers de <b>−"+fmt(pick.pct,pick.pct%1?1:0)+" % toutes les "+pick.w+" semaine"+(pick.w>1?"s":"")+"</b> (fin estimée J+"+Math.round(pick.dur)+", soit le "+fmtDate(new Date(today.getTime()+Math.round(pick.dur)*864e5))+").";
+  } else {
+    cands.sort(function(a,b){ return a.dur-b.dur; });
+    pick=cands[0];
+    $("tmsg").innerHTML="⚠️ La date demandée ("+fmtDate(tgt)+") est trop ambitieuse pour une décroissance prudente : le plan le plus rapide compatible applique <b>−"+fmt(pick.pct,pick.pct%1?1:0)+" % toutes les "+pick.w+" semaine"+(pick.w>1?"s":"")+"</b>, fin estimée J+"+Math.round(pick.dur)+" ("+fmtDate(new Date(today.getTime()+Math.round(pick.dur)*864e5))+"). À réévaluer avec le prescripteur.";
+  }
+  /* applique : bascule sur le plan personnalisé + saisie des valeurs */
+  var idx=-1, prev=cls().prev;
+  for(i=0;i<prev.length;i++) if(prev[i].cust) idx=i;
+  if(idx>=0){
+    $("selplan").value=String(idx);
+    $("cpct").value=String(pick.pct);
+    $("cweeks").value=String(pick.w);
+    planChanged();
+  }
 }
 function run(){
   var m=mol(), c=cls();
