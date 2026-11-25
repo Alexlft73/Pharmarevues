@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta name="color-scheme" content="light dark">
+<script id="pv-theme-init">
+(function(){try{var d=document.documentElement;if(window.top!==window.self){d.classList.add("embed")}var t=null;try{t=localStorage.getItem("pv-theme")}catch(e){}if(t!=="dark"&&t!=="light")t=(window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";if(t==="dark")d.classList.add("dark");window.addEventListener("beforeprint",function(){d.classList.remove("dark")});window.addEventListener("afterprint",function(){var v=null;try{v=localStorage.getItem("pv-theme")}catch(e){}if(v==="dark")d.classList.add("dark")});document.addEventListener("DOMContentLoaded",function(){var b=document.getElementById("themeBtn");if(!b)return;function sync(){var dk=d.classList.contains("dark");b.textContent=dk?"\u2600\uFE0F":"\uD83C\uDF19";b.title=dk?"Passer en mode clair":"Passer en mode sombre"}sync();b.addEventListener("click",function(){var dk=d.classList.toggle("dark");try{localStorage.setItem("pv-theme",dk?"dark":"light")}catch(e){}sync()});});}catch(e){}})();
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PharmaVeille · Module déprescription</title>
+<style>
+:root{--bleu:#0e7490;--teal:#0f766e;--encre:#0f172a;--gris:#64748b;--fond:#f1f5f9;--carte:#ffffff;--vert:#15803d;--ambre:#b45309;--rouge:#b91c1c;--bord:#e2e8f0;--violet:#7c3aed}
+html.dark{--encre:#e2e8f0;--gris:#94a3b8;--fond:#0b1220;--carte:#141d2e;--bord:#26324a;--bleu:#38bdf8;--teal:#2dd4bf;--vert:#4ade80;--ambre:#fbbf24;--rouge:#f87171;--violet:#a78bfa}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--fond);color:var(--encre);line-height:1.55}
+.wrap{max-width:1280px;margin:0 auto;padding:18px 16px 48px}
+header{background:linear-gradient(135deg,var(--teal),var(--bleu));color:#fff;border-radius:16px;padding:26px 24px 22px;margin-bottom:16px;box-shadow:0 6px 18px rgba(15,118,110,.25);position:relative}
+header h1{font-size:1.45rem;letter-spacing:.2px}
+header .sub{margin-top:6px;font-size:.93rem;opacity:.92;max-width:900px}
+.themebtn{position:absolute;top:14px;right:16px;z-index:60;width:42px;height:42px;border-radius:50%;border:1px solid rgba(255,255,255,.45);background:rgba(255,255,255,.14);color:#fff;font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(6px)}
+@media print{.themebtn{display:none}}
+.disc{background:rgba(185,28,28,.06);border:1.5px solid rgba(185,28,28,.28);border-radius:12px;padding:10px 14px;font-size:.85rem;color:#7f1d1d;margin-bottom:14px}
+.disc b{color:#b91c1c}
+html.dark .disc{background:rgba(248,113,113,.08);border-color:rgba(248,113,113,.3);color:#fecaca}
+html.dark .disc b{color:#fca5a5}
+#modebar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+.mchip{border:1.5px solid var(--bord);background:var(--carte);border-radius:999px;padding:7px 16px;font-size:.9rem;cursor:pointer;color:var(--encre);font-weight:600}
+.mchip.on{background:var(--teal);border-color:var(--teal);color:#fff}
+#app{display:grid;grid-template-columns:330px 1fr;gap:16px;align-items:start}
+@media(max-width:960px){#app{grid-template-columns:1fr}}
+.panel{background:var(--carte);border:1.5px solid var(--bord);border-radius:16px;box-shadow:0 8px 26px rgba(15,23,42,.07)}
+#ctrl{padding:18px 18px 22px;position:sticky;top:10px}
+@media(max-width:960px){#ctrl{position:static}}
+#ctrl h2{font-size:1.08rem;margin-bottom:3px;line-height:1.3}
+.molsub{font-size:.8rem;color:var(--gris);margin-bottom:14px}
+.ctl{margin-bottom:13px}
+.ctl label{display:block;font-size:.8rem;font-weight:700;color:var(--encre);margin-bottom:5px}
+.ctl label .hint{font-weight:400;color:var(--gris)}
+.ctl select,.ctl input{width:100%;padding:9px 11px;border:1.5px solid var(--bord);border-radius:10px;font-size:.95rem;background:var(--carte);color:var(--encre)}
+.ctl select:focus,.ctl input:focus{outline:none;border-color:var(--bleu)}
+.ctl .inline{display:flex;gap:8px}
+.ctl .inline>*{flex:1}
+.pillinfo{background:rgba(15,118,110,.07);border-radius:10px;padding:9px 11px;font-size:.8rem;margin-bottom:12px}
+.badge{display:inline-block;border-radius:999px;padding:3px 11px;font-size:.78rem;font-weight:700}
+.b-ok{background:rgba(21,128,61,.13);color:var(--vert)}
+.b-warn{background:rgba(180,83,9,.14);color:var(--ambre)}
+.b-stop{background:rgba(185,28,28,.13);color:var(--rouge)}
+#chartbox{padding:18px 18px 20px}
+.cbhead{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:10px}
+.cbhead h2{font-size:1.05rem;line-height:1.3}
+.verdict{margin-left:auto}
+#chart{width:100%;height:auto;display:block;background:var(--carte)}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:.8rem;color:var(--gris);margin-top:6px}
+.legend .sw{display:inline-block;width:18px;height:4px;border-radius:2px;margin-right:5px;vertical-align:middle}
+#tooltip{position:absolute;pointer-events:none;background:var(--encre);color:var(--fond);border-radius:8px;padding:6px 10px;font-size:.78rem;display:none;white-space:nowrap;z-index:30}
+html.dark #tooltip{background:#e2e8f0;color:#0b1220}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:14px}
+.stat{background:rgba(15,118,110,.06);border:1.5px solid var(--bord);border-radius:12px;padding:9px 11px}
+.stat .v{font-size:1.06rem;font-weight:700;color:var(--teal)}
+.stat .k{font-size:.72rem;color:var(--gris)}
+#paliers{margin-top:16px}
+#paliers h3{font-size:.95rem;margin-bottom:8px}
+.ptab{border-collapse:collapse;font-size:.85rem;width:100%}
+.ptab th,.ptab td{border-bottom:1px solid var(--bord);padding:5px 9px;text-align:left}
+.ptab th{color:var(--gris);font-weight:600;font-size:.74rem}
+.ptab td.num{font-variant-numeric:tabular-nums}
+.note{font-size:.78rem;color:var(--gris);margin-top:8px}
+#info{padding:18px 18px 20px;margin-top:16px}
+#info h2{font-size:1.05rem;margin-bottom:10px}
+.card{border:1.5px solid var(--bord);border-left:5px solid var(--teal);border-radius:12px;padding:12px 14px;margin-bottom:11px;background:var(--carte)}
+.card.warn{border-left-color:var(--ambre)}
+.card.stop{border-left-color:var(--rouge)}
+.card h3{font-size:.95rem;margin-bottom:5px}
+.card p,.card li{font-size:.86rem}
+.card ul{padding-left:18px}
+.card ul li{margin-bottom:3px}
+.eqtab{border-collapse:collapse;font-size:.82rem;margin-top:4px}
+.eqtab th,.eqtab td{border-bottom:1px solid var(--bord);padding:4px 9px;text-align:left}
+.eqtab th{color:var(--gris);font-size:.74rem}
+.src{font-size:.78rem;color:var(--gris);margin-top:14px}
+.src a{color:var(--teal)}
+footer{margin-top:18px;text-align:center;font-size:.78rem;color:var(--gris)}
+@media print{body::before{display:none}#app{grid-template-columns:1fr}#ctrl{position:static}.panel{box-shadow:none;border:1px solid #94a3b8}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<button id="themeBtn" class="themebtn" aria-label="Basculer le mode sombre"></button>
+<h1>🪜 PharmaVeille · Module déprescription</h1>
+<div class="sub">Visualiser comment un traitement IPP, benzodiazépine (+ métabolites actifs), apparenté « Z » ou antidépresseur descend « en escalier » : courbe de concentration (PK) et courbe d'effet (PD) pendant la décroissance — pour sécuriser, expliquer et rassurer.</div>
+</header>
+
+<div class="disc"><b>Outil pédagogique</b> : modèle compartimental simplifié et paramètres moyens de population (RCP, section 5.2). Un plan de déprescription est TOUJOURS une décision médicale individualisée (durée du traitement, dose, antécédents) — ce module sert à l'expliquer et à préparer le dialogue, jamais à remplacer le prescripteur.</div>
+
+<div id="modebar">
+<button class="mchip on" id="chip-pro" onclick="setMode('pro')" type="button">🧑‍⚕️ Version professionnelle</button>
+<button class="mchip" id="chip-pat" onclick="setMode('pat')" type="button">👤 Version patient</button>
+</div>
+
+<div id="app">
+<div id="ctrl" class="panel">
+<h2 id="cmol">—</h2>
+<div class="molsub" id="cmolsub"></div>
+<div class="ctl"><label>Médicament</label><select id="selmol" onchange="run()"></select></div>
+<div class="ctl"><label>Dose actuelle <span class="hint">(par prise)</span></label><select id="seldose" onchange="run()"></select></div>
+<div class="ctl"><label>Posologie actuelle</label><select id="seltau" onchange="run()"></select></div>
+<div class="ctl"><label>Plan de décroissance</label><select id="selplan" onchange="planChanged()"></select></div>
+<div class="ctl" id="ctlcustom" style="display:none"><label>Palier personnalisé</label>
+<div class="inline"><div><label class="hint">Réduction (%)</label><input id="cpct" type="number" min="5" max="50" step="5" value="25" onchange="run()"></div>
+<div><label class="hint">Toutes les (semaines)</label><input id="cweeks" type="number" min="1" max="8" step="1" value="2" onchange="run()"></div></div>
+</div>
+<div class="pillinfo" id="pillinfo"></div>
+</div>
+
+<div>
+<div id="chartbox" class="panel">
+<div class="cbhead"><h2 id="chartitle">Choisir un médicament</h2><span class="verdict" id="verdict"></span></div>
+<svg id="chart" viewBox="0 0 920 400" role="img" aria-label="Courbes concentration et effet pendant la décroissance"></svg>
+<div class="legend" id="legend"></div>
+<div id="tooltip"></div>
+<div class="stats" id="stats"></div>
+<div id="paliers"></div>
+</div>
+<div id="info" class="panel"></div>
+</div>
+</div>
+<div class="src" id="srcp"></div>
+<footer>Fichiers générés localement, aucune donnée envoyée · Pharmaceutique : modèle 1 compartiment + compartiment effet (ke0) · <span id="ftot"></span></footer>
+</div>
+<script id="pv-depres-data">
+"use strict";
+const MOLS_D = {
+/* Paramètres PK repris verbatim du Simulateur PK (RCP 5.2, outil pédagogique) ;
+   + cls (classe déprescription), tips (note pro spécifique). */
+omez:{d:"Oméprazole",cls:"IPP",t12:1.2,tx:1.5,f:.35,vd:.3,pb:.95,fe:.02,ds:[10,20],tau:24,
+  tips:"IPP de référence : demi-vie plasmatique courte mais inhibition des pompes longue (24-48 h), effet antisécrétoire maximal après 3-5 jours. La courbe d'effet est volontairement lissée par un compartiment effet lent (t½e ≈ 36 h) qui traduit cette persistance."},
+esom:{d:"Ésoméprazole",cls:"IPP",t12:1.3,tx:1.5,f:.7,vd:.8,pb:.97,fe:.02,ds:[20,40],tau:24,
+  tips:"S-isomère de l'oméprazole, biodisponibilité plus élevée. Même logique : l'effet sur la pompe dure bien au-delà de la demi-vie plasmatique."},
+pant:{d:"Pantoprazole",cls:"IPP",t12:1.5,tx:1.5,f:.77,vd:.3,pb:.98,fe:.05,ds:[20,40],tau:24,
+  tips:"IPP à demi-vie courte, inhibition acide persistante plusieurs jours : un arrêt sans palier est envisageable chez la plupart des patients ; rebond acide transitoire possible."},
+diaz:{d:"Diazépam",cls:"BZD",t12:40,tx:1,f:.94,vd:1.2,pb:.98,fe:.02,ds:[2,5,10],tau:12,
+  met:{n:"désméthyldiazépam",fr:.45,t12:60,vd:1.1,q:.95,fe:.02,txt:"La désméthyldiazépam (nordazépam, t½ ≈ 60 h) s'accumule sur plusieurs jours et prolonge la sédation bien après l'arrêt — déterminant chez le sujet âgé (chutes)."},
+  tips:"Benzodiazépine « pivot » des conversions : demi-vie longue (≈ 40 h) + métabolite actif (≈ 60 h) qui lissent naturellement la décroissance. La molécule la plus « confortable » pour un sevrage."},
+lorz:{d:"Lorazépam",cls:"BZD",t12:12,tx:2,f:.93,vd:1.1,pb:.85,fe:.02,ds:[.5,1,2],tau:12,
+  tips:"Demi-vie intermédiaire (≈ 12 h), pas de métabolite actif (glucuronidation directe) : décroissance plus « sensible » que le diazépam, paliers fins utiles en fin de parcours ; préféré chez le sujet âgé ou cirrhotique."},
+alpz:{d:"Alprazolam",cls:"BZD",t12:11.5,tx:1.2,f:.9,vd:.8,pb:.8,fe:.02,ds:[.25,.5],tau:12,
+  tips:"Demi-vie courte (≈ 11,5 h), risque de creux inter-doses : espacer les paliers, ou conversion au diazépam (équivalence) à discuter avec le prescripteur."},
+clop:{d:"Clonazépame",cls:"BZD",t12:35,tx:1.5,f:.85,vd:3,pb:.86,fe:.02,ds:[.5,1,2],tau:24,
+  tips:"Demi-vie longue (≈ 35 h), décroissance plus douce qu'une BZD courte mais puissance élevée. Usage strictement épileptique hors protocoles particuliers : un sevrage expose à la reprise de crises si indication épileptique, coordination médicale indispensable."},
+zolp:{d:"Zolpidem",cls:"Z",t12:2.5,tx:1.5,f:.7,vd:.54,pb:.93,fe:.01,ds:[5,10],tau:24,
+  tips:"Demi-vie très courte (≈ 2,5 h), pas de métabolite actif. Arrêt brutal après usage prolongé : insomnie de rebond marquée les 1-3 premières nuits — préférer demi-dose puis quart, ou « nuits alternées »."},
+zopi:{d:"Zopiclone",cls:"Z",t12:5,tx:1.5,f:.75,vd:1.5,pb:.6,fe:.1,ds:[3.75,7.5],tau:24,
+  tips:"Demi-vie courte (≈ 5 h). Même logique que le zolpidem : symptômes surtout d'insomnie de rebond ; pas d'équivalence diazépam fiable."},
+parx:{d:"Paroxétine",cls:"AD",t12:21,tx:5,f:.5,vd:8,pb:.95,fe:.02,ds:[10,20],tau:24,
+  tips:"ISRS à demi-vie courte sans métabolite actif : syndrome d'interruption le plus marqué des ISRS (vertiges, « décharges électriques », nausées). Paliers obligatoirement lents, parfois fractionnaires en fin de parcours."},
+sert:{d:"Sertraline",cls:"AD",t12:26,tx:6,f:.44,vd:20,pb:.98,fe:0,ds:[25,50,100],tau:24,
+  tips:"ISRS de demi-vie intermédiaire (≈ 26 h). Syndrome d'interruption possible mais généralement plus modéré que la paroxétine ; décroissance 2-4 semaines en paliers usuels."},
+escx:{d:"Escitalopram",cls:"AD",t12:30,tx:4,f:.8,vd:12,pb:.56,fe:.08,ds:[5,10,20],tau:24,
+  tips:"ISRS, isomère S de la citalopram (demi-vie ≈ 30 h). Décroissance simple en paliers de 25 % toutes les 2-4 semaines dans la plupart des cas."},
+flux:{d:"Fluoxétine",cls:"AD",t12:96,tx:6,f:.9,vd:20,pb:.95,fe:.02,ds:[10,20],tau:24,
+  met:{n:"norfluoxétine",fr:.4,t12:180,vd:20,q:.96,fe:.1,txt:"La norfluoxétine s'accumule pendant des semaines (t½ ≈ 4-16 jours) : après l'arrêt, elle reste inhibitrice du CYP2D6 des semaines durant."},
+  tips:"« Auto-décroissance » intégrée : demi-vie très longue (≈ 96 h) + norfluoxétine (t½ ≈ 180 h). Arrêt souvent bien toléré ; la courbe le montre : l'effet redescend seul, en pente douce."},
+venl:{d:"Venlafaxine",cls:"AD",t12:5,tx:2,f:.45,vd:7.5,pb:.27,fe:.05,ds:[37.5,75],tau:12,
+  met:{n:"O-désméthylvenlafaxine",fr:.45,t12:10,vd:3.4,q:.95,fe:.5,txt:"Métabolite antidépresseur à part entière (desvenlafaxine) : une grande partie de l'effet et de l'accumulation passe par lui."},
+  tips:"IRSNa à demi-vie TRÈS courte (≈ 5 h) + métabolite actif (≈ 10 h) : syndrome d'interruption fréquent et parfois intense si les paliers sont rapides. Réductions petites et régulières ; les formes LP facilitent les paliers."},
+mirt:{d:"Mirtazapine",cls:"AD",t12:30,tx:2,f:.5,vd:3.4,pb:.85,fe:.15,ds:[15,30],tau:24,
+  tips:"Demi-vie ≈ 30 h, syndrome d'interruption plus rare que les ISRS/IRSNa courts. Attention : la reprise de l'insomnie ou de la baisse d'appétit (indications où elle est prescrite) est attendue et peut inquiéter."}
+};
+/* t½e (h) : demi-vie d'équilibre du compartiment effet, pédagogique, par classe.
+   ok/warn : seuils de verdict sur Δ7j (chute maximale de l'effet sur 7 jours glissants, en %). */
+const CLASSES = {
+IPP:{label:"IPP (inhibiteurs de la pompe à protons)",t12e:36,ok:999,warn:999,eq:null,
+  prev:[{k:"−25 % toutes les 2 semaines",pct:25,w:2},{k:"−25 % toutes les 4 semaines (ou passage à la demande)",pct:25,w:4},{k:"Palier personnalisé…",cust:1},{k:"Arrêt d'un coup aujourd'hui (référence)",stop:1}],
+  pat:{title:"Arrêter un IPP : ce qu'il faut savoir",
+    what:"Il n'y a <b>pas de dépendance</b> aux IPP : rien de comparable aux benzodiazépines. En revanche, après plusieurs semaines, l'estomac produit « un peu plus » d'acidité qu'avant le traitement. À l'arrêt, surtout brutal, un rebond acide peut donner pendant quelques jours à 2 semaines : brûlures, remontées acides, digestion difficile. C'est bénin, prévisible et ça passe.",
+    how:["Continuer, ou repasser à la prise « à la demande » quelques semaines avant l'arrêt complet","Repas fractionnés, dîner léger, ne pas se coucher dans les 2-3 h après manger","Surélever la tête du lit, éviter ses aliments déclencheurs (épices, gras, alcool, café en excès)","Un antiacide local à la demande (type gel d'alginate, en pharmacie) suffit souvent pour le rebond","Si les symptômes durent au-delà de 2 semaines ou reviennent : revoir le médecin (parfois une cause à traiter)"],
+    red:["Difficulté à avaler, perte de poids involontaire, vomissements, anémie : consulter sans attendre, ne pas remettre un IPP seul."]},
+  pro:{title:"Points professionnels — IPP",
+    points:["Pas de syndrome de sevrage au sens pharmacologique ; rebond d'hyperacidité (hypergastrinémie) documenté à l'arrêt, souvent 1-2 semaines.","Décroissance souvent inutile : passage à la demande ou demi-dose 2-4 semaines suffit, surtout si usage prolongé.","Réévaluation annuelle de l'indication (recommandations HAS) ; l'arrêt est envisagé quand l'indication initiale a disparu.","Attention : un IPP peut masquer des signes digestifs d'alerte (cf. drapeaux rouges patient ci-dessous) ; l'arrêt sans avis médical est déconseillé si l'indication persiste (RGO érosif, prévention sous AINS/antiagrégant).","Après quelques semaines de traitement continu, la prise à la demande est souvent possible, sauf situations à risque."]}},
+BZD:{label:"Benzodiazépines",t12e:4,ok:20,warn:35,
+  prev:[{k:"−25 % toutes les 2 semaines (palier classique)",pct:25,w:2},{k:"−25 % toutes les 4 semaines (senior / traitement ancien)",pct:25,w:4},{k:"−50 % toutes les 2 semaines (traitement court, < 4 semaines)",pct:50,w:2},{k:"Palier personnalisé…",cust:1},{k:"Arrêt d'un coup aujourd'hui (démonstration)",stop:1}],
+  eq:{title:"Équivalences approximatives (pivot : diazépam 10 mg)",note:"Approximations d'usage (tables de conversion usuelles), à titre indicatif : la conversion individuelle reste une décision médicale. Les apparentés « Z » (zolpidem, zopiclone) n'ont pas d'équivalence diazépam fiable ; le clonazépame change d'indication (épilepsie) : ne jamais convertir sans le prescripteur.",
+    rows:[["Diazépam","10 mg"],["Lorazépam","1 mg"],["Alprazolam","0,5 mg"],["Clonazépame","0,5 mg (approximation d'usage, discutée)"]]},
+  pat:{title:"Arrêter une benzodiazépine : ce qu'il faut savoir",
+    what:"Après quelques semaines de prise régulière, le cerveau s'est habitué : l'arrêt d'un coup peut donner un vrai syndrome de sevrage (insomnie pire qu'avant, anxiété en vagues, tremblements, sueurs, très rarement convulsions). La bonne nouvelle : avec des <b>paliers</b>, le corps s'adapte à chaque marche de l'escalier, et la majorité des symptômes sont légers et passagers. La courbe le montre : l'effet descend doucement, c'est le principe de sécurité du palier.",
+    how:["Descendre en escalier, jamais en ascenseur : la dose baisse d'un cran, puis on laisse au corps 2 à 4 semaines pour s'habituer avant le cran suivant","Insomnie ou anxiété de rebond les premiers jours d'un palier : c'est attendu, ça s'atténue en quelques jours sans changer le palier","Méditation guidée et relaxation : programmes type Headspace (série « Guide de la méditation » disponible sur Netflix), cohérence cardiaque (applications gratuites), visualisation","Hygiène du sommeil : heure fixe, chambre fraîche et sombre, pas d'écrans la dernière heure, se lever si pas de sommeil au bout de 20 min","Activité physique dans la journée (pas tard le soir), café seulement le matin, <b>pas d'alcool</b> (il potentialise la sédation et ravive le problème)","Tenir un petit journal sommeil/anxiété : voir les progrès semaine après semaine rassure énormément","Si une étape est trop difficile : pause de 2 semaines au même palier, puis reprise de la descente, ou paliers plus fins avec le médecin"],
+    red:["Tremblements marqués, confusion, hallucinations, crise convulsive : contact médical urgent. Idées noires : médecin ou 3114 (24h/24)."]},
+  pro:{title:"Points professionnels — benzodiazépines",
+    points:["Règles françaises (HAS/ANSM, plan MILDECA) : durée maximale 4 semaines pour les hypnotiques, 12 semaines pour les anxiolytiques, sevrage inclus ; annoncer la durée dès l'instauration.","Préférer une demi-vie longue (diazépam) ou convertir via équivalences pour lisser les paliers, en particulier depuis une BZD courte (alprazolam, lorazépam).","Paliers classiques : −25 % toutes les 2-4 semaines ; sous 25 % de la dose initiale, paliers plus fins (−12,5 % ou prises alternées) car la baisse relative devient grande pour un même delta en mg.","Syndrome de sevrage à distinguer du retour de l'anxiété primitive : la réaction au palier s'estompe en jours ; la rechute persiste et doit être réévaluée (psychothérapie/TCC, suivi médical).","Risque convulsif à l'arrêt brutal : dose élevée, terrain épileptique, alcoolodépendance associée : ces situations relèvent d'un suivi médical rapproché.","Chez le sujet âgé : somnolence, chutes, confusion ; critère de prescription potentiellement inappropriée qui renforce le projet d'arrêt."]}} ,
+Z:{label:"Apparentés « Z » (hypnotiques)",t12e:2,ok:20,warn:35,eq:null,
+  prev:[{k:"−25 % toutes les 2 semaines (palier classique)",pct:25,w:2},{k:"Palier personnalisé…",cust:1},{k:"Arrêt d'un coup aujourd'hui (démonstration)",stop:1}],
+  pat:{title:"Arrêter le zolpidem ou la zopiclone : ce qu'il faut savoir",
+    what:"Ce sont des cousins des benzodiazépines, ciblés sur le sommeil. À l'arrêt brutal après un usage prolongé, la 1re à 3e nuit(s) sont souvent plus mauvaises qu'avant le traitement : c'est l'insomnie de rebond, attendue et passagère. Elle est quasi constante, mieux vaut donc la prévoir au calendrier : c'est justement elle qui fait reprendre le médicament « pour être sûr de dormir ».",
+    how:["Passer à la demi-dose quelques jours (comprimé sécable), puis au quart, ou « nuits alternées » : un soir sur deux, puis un soir sur trois","Méditation de sommeil guidée type Headspace sur Netflix (« Guide de la méditation »), sophrologie, scan corporel au lit","Rituel du soir constant, chambre sombre et fraîche, se lever si éveil > 20 min et s'occuper calmement","Pas d'alcool : il endort puis fragmente le sommeil et ravive le problème","Café et thé : après 14 h au maximum","Lumière du matin et activité physique : les deux meilleurs hypnotiques naturels","Annoncer la règle des « 3 nuits » les plus difficiles, l'écrire au calendrier : ça dédramatise"],
+    red:["Somnambulisme, comportements nocturnes étranges (y compris déjà sous traitement), anxiété diurne croissante : en parler au médecin."]},
+  pro:{title:"Points professionnels — apparentés « Z »",
+    points:["Règle ANSM : durée maximale 4 semaines, période de sevrage incluse ; réévaluer régulièrement.","Somnambulisme et comportements complexes rapportés avec le zolpidem (contre-indication à la reprise) : question systématique à l'officine ; femmes : 5 mg préférentiel.","Paliers courts et fractionnés (demi-dose, quart, nuits alternées) bien adaptés à la demi-vie très courte ; pas d'équivalence diazépam fiable à proposer d'emblée.","Insomnie de rebond quasi constante à l'arrêt brutal : l'anticiper avec le patient (nuits 1-3), c'est la clé de l'arrêt.","Chez le sujet âgé : chutes, confusion nocturne ; critère de prescription inappropriée qui renforce le projet d'arrêt."]}} ,
+AD:{label:"Antidépresseurs",t12e:24,ok:15,warn:25,eq:null,
+  prev:[{k:"−25 % toutes les 2 semaines",pct:25,w:2},{k:"−25 % toutes les 4 semaines (plus prudent)",pct:25,w:4},{k:"Palier personnalisé…",cust:1},{k:"Arrêt d'un coup aujourd'hui (démonstration)",stop:1}],
+  pat:{title:"Arrêter un antidépresseur : ce qu'il faut savoir",
+    what:"L'arrêt peut donner un <b>syndrome d'interruption</b> : vertiges (surtout aux mouvements des yeux), sensations de « décharges électriques », nausées, grippette, insomnie, irritabilité, anxiété. Il apparaît 1 à 5 jours après la baisse, il est bénin, et il passe en 1 à 3 semaines. Il ne veut pas dire que la dépression revient : c'est le cerveau qui réajuste ses récepteurs. À savoir aussi : la rechute dépressive est plus fréquente en cas d'arrêt prématuré (moins de 6 mois de traitement) ; l'arrêt se planifie, avec le médecin, en période stable.",
+    how:["Descente progressive sur au moins 2 à 4 semaines, souvent plus longue pour la paroxétine et la venlafaxine","Paliers : la dose baisse d'un cran (par exemple −25 %), puis on attend 2 à 4 semaines, le temps que le corps retrouve son équilibre","Symptômes d'arrêt ≠ rechute : vertiges, sensations électriques, nausées dans les jours suivant une baisse = adaptation, ça s'atténue seul en 1-3 semaines ; tristesse ou anxiété qui persiste et s'aggrave = en parler au médecin","Méditation guidée et hygiène de sommeil, activité physique régulière (effet antidépresseur démontré), garder les liens sociaux","La fluoxétine descend « toute seule » : sa longue demi-vie fait le travail du palier ; pour la paroxétine et la venlafaxine, c'est l'inverse : ne jamais couper d'un coup","Signaux positifs : noter chaque jour ce qui va bien, et reprendre contact avec le médecin si une tristesse durable revient"],
+    red:["Idées noires, remontée franche de tristesse ou d'angoisse : médecin ou 3114 (24h/24), urgences si danger immédiat."]},
+  pro:{title:"Points professionnels — antidépresseurs",
+    points:["Syndrome d'interruption fréquent (environ 20 %), corrélé à la demi-vie : quasi systématique si arrêt brutal de paroxétine ou venlafaxine, rare et léger avec la fluoxétine (auto-tamponnée par la norfluoxétine, t½ ≈ 180 h).","Paliers usuels : −25 % toutes les 2-4 semaines ; fin de parcours plus lente (−12,5 % ou prises alternées) pour les molécules courtes ; les formes LP facilitent le fractionnement des doses.","Distinguer syndrome d'interruption (horodaté sur la baisse, somatique, résolutif en 1-3 semaines) et rechute (retour progressif des symptômes psychiatriques, évolutif) : message clé de l'éducation thérapeutique.","Arrêt envisagé après rémission prolongée (en général 6 mois à 1 an après la rémission d'un premier épisode, plus si facteurs de risque) : décision médicale.","Grossesse, allaitement, comorbidités : jamais d'arrêt sauvage, validation médicale systématique.","Méditations guidées (type Headspace/Netflix), TCC, exercice physique : leviers non médicamenteux validés qui soutiennent le sevrage."]}}
+};
+</script>
+<script id="pv-depres-app">
+"use strict";
+/* ===== moteur PK (repris du Simulateur PK, simplifié : ni interactions, ni repas,
+   poids fixe 70 kg) ===== */
+var LN2=Math.LN2;
+function kaFor(kel,tx){
+  var lo=Math.log(kel*1.000001), hi=Math.log(Math.min(400,Math.max(kel*500,50)));
+  if(hi<=lo) hi=lo+2;
+  var g=function(lka){var ka=Math.exp(lka); if(ka<=kel) return 1e9; var v=Math.log(ka/kel)/(ka-kel); return Math.abs(v-tx);};
+  var best=(lo+hi)/2, bv=1e18, i, lka, v;
+  for(i=0;i<=300;i++){lka=lo+(hi-lo)*i/300; v=g(lka); if(v<bv){bv=v;best=lka;}}
+  var step=(hi-lo)/300;
+  for(i=-40;i<=40;i++){lka=best+step*i/40; if(lka<lo||lka>hi) continue; v=g(lka); if(v<bv){bv=v;best=lka;}}
+  var ka=Math.exp(best);
+  if(ka<kel*1.15) ka=kel*1.15;
+  return ka;
+}
+function paramsD(m,D){
+  var kel=LN2/m.t12;
+  var ka=kaFor(kel,m.tx); if(ka<kel*1.05) ka=kel*1.05;
+  var F=m.f, V=m.vd*70;
+  var A=F*D*ka/(V*Math.abs(ka-kel));
+  var mt=null;
+  if(m.met){
+    var mq=m.met.q||1, mfr=Math.min(Math.max(m.met.fr||1,0),1);
+    var kelM=LN2/m.met.t12;
+    if(kelM>ka/1.05) kelM=ka/1.05;
+    if(Math.abs(kel-kelM)<0.05*Math.max(kel,kelM)){ kelM=(kelM>=kel)?kel*1.12:Math.max(kel/1.12,1e-5); }
+    var Vm=(m.met.vd||m.vd)*70;
+    var la=[ka,kel,kelM], aa=[], j, u, den;
+    for(j=0;j<3;j++){ den=1; for(u=0;u<3;u++){ if(u!==j) den*=(la[u]-la[j]); } aa.push(mq*mfr*kel*ka*F*D/(Vm*den)); }
+    mt={n:m.met.n,t12:m.met.t12,aa:aa,la:la};
+  }
+  return {kel:kel,ka:ka,A:A,slow:Math.min(ka,kel),fast:Math.max(ka,kel),met:mt};
+}
+function c1(P,t){ if(t<0) return 0; return P.A*(Math.exp(-P.slow*t)-Math.exp(-P.fast*t)); }
+function c1m(P,t){ if(!P.met||t<0) return 0; var s=0; for(var j=0;j<3;j++) s+=P.met.aa[j]*Math.exp(-P.met.la[j]*t); return s; }
+
+/* ===== état ===== */
+var $=function(id){return document.getElementById(id);};
+var MODE="pro";
+var ST={i:0,dose:null,tau:24,plan:0};
+var KEYS=Object.keys(MOLS_D);
+var CLSICON={IPP:"🍽️",BZD:"💊",Z:"🌙",AD:"🧠"};
+var last=null;
+
+function mol(){ return MOLS_D[KEYS[ST.i]]; }
+function cls(){ return CLASSES[mol().cls]; }
+function fmt(n,d){ if(!isFinite(n)) return "-"; d=(d===undefined)?2:d; return n.toFixed(d).replace(".",","); }
+function dstr(x){ x=Math.round(x*1000)/1000; return String(x).replace(".",","); }
+function fmtDate(d){ return d.toLocaleDateString("fr-FR",{day:"2-digit",month:"short",year:"numeric"}); }
+
+/* ===== plan ===== */
+function activePlan(){
+  var p=cls().prev[ST.plan];
+  if(!p) return null;
+  if(p.stop) return {stop:1};
+  if(p.cust){
+    var pct=Math.min(Math.max(parseFloat($("cpct").value)||25,5),50);
+    var w=Math.min(Math.max(parseFloat($("cweeks").value)||2,1),8);
+    return {pct:pct,w:w};
+  }
+  return p;
+}
+function buildSchedule(){
+  var m=mol(), p=activePlan(), c=cls();
+  var t12max=Math.max(m.t12, m.met?m.met.t12:0);
+  /* pré-équilibre : 5 demi-vies PK et du compartiment effet, cap 60 j */
+  var preD=Math.min(Math.max(Math.ceil(5*t12max/24),Math.ceil(5*c.t12e/24))+2,60);
+  var preH=preD*24;
+  var steps=[];
+  if(p&&p.stop){
+    steps.push({h:preH,factor:0});
+  } else if(p){
+    var stepH=p.w*7*24, f=1, h=preH, guard=0;
+    while(f>0.126&&guard<40){
+      var pct=p.pct;
+      if(f<0.30) pct=Math.max(pct/2,6.25); /* paliers fins sous 30 % */
+      f=f*(1-pct/100);
+      if(f<0.126) f=0;
+      steps.push({h:h,factor:f});
+      h+=stepH; guard++;
+    }
+  } else { steps.push({h:preH,factor:0}); }
+  var stopH=steps[steps.length-1].h;
+  var tailD=Math.min(Math.ceil(5*t12max/24)+7,120);
+  return {preH:preH,steps:steps,stopH:stopH,tailD:tailD};
+}
+function factorAtT(h,sch){ /* heure absolue depuis début de sim (dose 1 = h 0) */
+  var f=1;
+  for(var k=0;k<sch.steps.length;k++){ if(h>=sch.steps[k].h) f=sch.steps[k].factor; }
+  return f;
+}
+
+/* ===== simulation ===== */
+function simulate(){
+  var m=mol(), c=cls();
+  var sch=buildSchedule();
+  var tau=ST.tau, P=paramsD(m,ST.dose);
+  var dt=0.5, totalH=sch.stopH+sch.tailD*24;
+  var ke0=LN2/c.t12e;
+  var useMet=P.met?1:0;
+  var evH=[], e;
+  for(e=0;e*tau<=totalH;e++) evH.push(e*tau);
+  var evF=evH.map(function(h){ return factorAtT(h,sch); });
+  var Ce=0, t, out={t:[],cp:[],cm:[],ce:[]};
+  var Cbar=0,Cmbar=0,Cebar=0,baseN=0;
+  for(t=0;t<=totalH;t+=dt){
+    var C=0,Cm=0;
+    for(e=0;e<evH.length;e++){
+      var u=t-evH[e];
+      if(u<0) break;
+      if(evF[e]>0){ C+=evF[e]*c1(P,u); Cm+=evF[e]*c1m(P,u); }
+    }
+    Ce+=ke0*((C+(useMet?Cm:0))-Ce)*dt;
+    if(t>=sch.preH-tau&&t<sch.preH){ Cbar+=C; Cmbar+=Cm; Cebar+=Ce; baseN++; }
+    if(t>=sch.preH-7*24){ out.t.push(t-sch.preH); out.cp.push(C); out.cm.push(Cm); out.ce.push(Ce); }
+  }
+  /* effet lissé : moyenne glissante TRAILING 24 h (constante pour un régime périodique,
+     lisse la dent de scie inter-doses, chute proprement à l'arrêt) */
+  var n=out.t.length, pre=new Array(n+1).fill(0), i2;
+  for(i2=0;i2<n;i2++) pre[i2+1]=pre[i2]+out.ce[i2];
+  out.cer=[];
+  for(i2=0;i2<n;i2++){
+    var a=Math.max(0,i2-47), b=i2;
+    out.cer.push((pre[b+1]-pre[a])/(b-a+1));
+  }
+  if(baseN<1) baseN=1;
+  Cbar/=baseN; Cmbar/=baseN; Cebar/=baseN;
+  if(Cbar<=0)   Cbar=1e-9;
+  if(Cmbar<=0)  Cmbar=1e-9;
+  if(Cebar<=0)  Cebar=1e-9;
+  /* Δ7j : chute max de l'effet lissé sur fenêtre glissante de 7 j (échantillon 3 h) */
+  var d7=0, q, r, best, drop;
+  for(q=0;q<out.t.length;q+=6){
+    if(out.t[q]<-0.5) continue;
+    var tt=out.t[q]+168;
+    best=null;
+    for(r=q;r<out.t.length;r++){ if(out.t[r]<=tt) best=r; else break; }
+    if(best!==null){ drop=(out.cer[q]-out.cer[best])/Cebar*100; if(drop>d7) d7=drop; }
+  }
+  /* effet résiduel 7 j après l'arrêt */
+  var eff7=null, z, tt2=sch.stopH-sch.preH+168;
+  for(z=0;z<out.t.length;z++){ if(out.t[z]<=tt2) eff7=out.cer[z]/Cebar*100; else break; }
+  return {sch:sch,out:out,Cbar:Cbar,Cmbar:Cmbar,Cebar:Cebar,d7:d7,eff7:eff7,ke0:ke0,P:P};
+}
+
+/* ===== verdict : vitesse de descente (points d'équilibre perdus par semaine) ===== */
+function verdict(res){
+  var m=mol(), p=activePlan();
+  if(m.cls==="IPP"){
+    if(p&&p.stop) return '<span class="badge b-warn">⚠️ Arrêt d\'un coup</span> rebond acide plus marqué (1-2 semaines) : prévoir un antiacide local à la demande';
+    return '<span class="badge b-ok">✅ Pas de sevrage grave</span> simple rebond acide possible, transitoire';
+  }
+  if(p&&p.stop){
+    if(m.met&&m.met.t12>=90) return '<span class="badge b-ok">✅ Arrêt direct souvent bien toléré</span> demi-vie très longue + métabolite actif ('+m.met.n+') : l\'effet descend seul, en pente douce';
+    if(m.cls==="AD") return '<span class="badge b-stop">🛑 Arrêt brutal</span> syndrome d\'interruption très probable (vertiges, « décharges électriques ») : ne jamais couper d\'un coup, voir le prescripteur';
+    return '<span class="badge b-stop">🛑 Arrêt brutal</span> sevrage mal maîtrisé (rebond, parfois convulsions à forte dose) : uniquement sous surveillance médicale';
+  }
+  var rate=p.pct/p.w;
+  if(rate<=12.5+1e-9) return '<span class="badge b-ok">✅ Descente en douceur</span> ≈ '+fmt(rate,1)+' % de l\'équilibre perdu par semaine';
+  if(rate<=25+1e-9) return '<span class="badge b-warn">⚠️ Descente rapide</span> ≈ '+fmt(rate,1)+' % par semaine : réservée aux traitements courts, réévaluer si symptômes';
+  return '<span class="badge b-stop">🛑 Trop rapide</span> ≈ '+fmt(rate,1)+' % par semaine : ralentir le plan (paliers plus petits ou plus espacés)';
+}
+
+/* ===== UI ===== */
+function setMode(md){
+  MODE=md;
+  $("chip-pro").classList.toggle("on",md==="pro");
+  $("chip-pat").classList.toggle("on",md==="pat");
+  renderInfo();
+}
+function fillSelectors(){
+  var sel=$("selmol"), byCls={};
+  KEYS.forEach(function(k,i){ var m=MOLS_D[k]; (byCls[m.cls]=byCls[m.cls]||[]).push({i:i,m:m}); });
+  ["IPP","BZD","Z","AD"].forEach(function(c){
+    if(!byCls[c]) return;
+    var og=document.createElement("optgroup"); og.setAttribute("label",CLSICON[c]+" "+CLASSES[c].label);
+    byCls[c].forEach(function(o){
+      var op=document.createElement("option"); op.value=o.i; op.textContent=o.m.d;
+      og.appendChild(op);
+    });
+    sel.appendChild(og);
+  });
+  sel.value="0";
+}
+function fillDose(){
+  var m=mol(), sd=$("seldose");
+  sd.innerHTML="";
+  m.ds.forEach(function(d){
+    var op=document.createElement("option"); op.value=String(d); op.textContent=dstr(d)+" mg";
+    sd.appendChild(op);
+  });
+  var di=Math.min(1,m.ds.length-1);
+  sd.value=String(m.ds[di]);
+  ST.dose=m.ds[di];
+  var sq=$("seltau");
+  sq.innerHTML="";
+  [{v:24,k:"1 prise / jour"},{v:12,k:"2 prises / jour"}].forEach(function(o){
+    var op=document.createElement("option"); op.value=o.v; op.textContent=o.k; sq.appendChild(op);
+  });
+  sq.value=String(m.tau); ST.tau=m.tau;
+  var sp=$("selplan");
+  sp.innerHTML="";
+  cls().prev.forEach(function(p,i){ var op=document.createElement("option"); op.value=i; op.textContent=p.k; sp.appendChild(op); });
+  sp.value="0"; ST.plan=0;
+  planChanged(false);
+}
+function planChanged(rerun){
+  var p=cls().prev[ST.plan];
+  $("ctlcustom").style.display=(p&&p.cust)?"block":"none";
+  if(rerun!==false) run();
+}
+function run(){
+  var m=mol(), c=cls();
+  ST.dose=parseFloat($("seldose").value)||m.ds[0];
+  ST.tau=parseFloat($("seltau").value)||m.tau;
+  ST.plan=parseInt($("selplan").value,10)||0;
+  $("cmol").textContent=CLSICON[m.cls]+" "+m.d;
+  $("cmolsub").textContent=c.label+" · t½ "+fmt(m.t12,1)+" h"+(m.met?" · métabolite actif : "+m.met.n+" (t½ "+fmt(m.met.t12,0)+" h)":"");
+  var res=simulate();
+  last=res;
+  $("chartitle").textContent=m.d+" — plan : "+$("selplan").options[$("selplan").selectedIndex].text;
+  $("verdict").innerHTML=verdict(res);
+  renderChart(res);
+  renderStats(res);
+  renderPaliers(res);
+  renderInfo();
+  var pill='<b>'+c.label+'</b><br>'+m.tips;
+  $("pillinfo").innerHTML=pill;
+  $("srcp").innerHTML='Sources : paramètres PK moyens issus des RCP (section 5.2), consultables sur la <a href="https://base-donnees-publique.medicaments.gouv.fr/" target="_blank" rel="noopener">base publique du médicament (ANSM)</a> ; recommandations françaises HAS/ANSM sur la durée de prescription et l\'arrêt des benzodiazépines, apparentés et antidépresseurs. Compartiment effet : modèle à effect-site (ke0) pédagogique, relation concentration-effet supposée linéaire dans cette zone.';
+  $("legend").innerHTML='<span><span class="sw" style="background:var(--teal)"></span>Effet (pharmacodynamie, % de l\'équilibre antérieur)</span>'
+   +'<span><span class="sw" style="background:var(--bleu)"></span>Concentration du médicament</span>'
+   +(m.met?'<span><span class="sw" style="background:var(--violet)"></span>Métabolite actif ('+m.met.n+')</span>':'');
+  $("ftot").textContent="15 molécules — phase 1 (IPP, benzodiazépines, apparentés Z, antidépresseurs)";
+}
+function renderStats(res){
+  var m=mol(), s=$("stats");
+  var stopD=Math.round((res.sch.stopH-res.sch.preH)/24);
+  var nSteps=res.sch.steps.length;
+  var h='<div class="stat"><div class="v">'+fmt(m.t12,1)+' h</div><div class="k">demi-vie'+(m.met?" (+ métabolite "+fmt(m.met.t12,0)+" h)":"")+'</div></div>';
+  h+='<div class="stat"><div class="v">J+'+stopD+'</div><div class="k">arrêt complet ('+nSteps+' palier'+(nSteps>1?"s":"")+')</div></div>';
+  if(MODE==="pro") h+='<div class="stat"><div class="v">'+fmt(res.d7,1)+' %</div><div class="k">chute max de l\'effet sur 7 j (modèle)</div></div>';
+  if(res.eff7!==null) h+='<div class="stat"><div class="v">'+fmt(Math.max(res.eff7,0),0)+' %</div><div class="k">effet résiduel 7 j après l\'arrêt</div></div>';
+  s.innerHTML=h;
+}
+function renderPaliers(res){
+  var box=$("paliers"), today=new Date();
+  var rows='<tr><td>Aujourd\'hui</td><td class="num">'+dstr(ST.dose)+' mg / prise</td><td class="num">100 %</td></tr>';
+  res.sch.steps.forEach(function(st){
+    var d=new Date(today.getTime()+Math.round((st.h-res.sch.preH)/24)*864e5);
+    if(st.factor<=0){
+      rows+='<tr><td>'+fmtDate(d)+'</td><td class="num">arrêt</td><td class="num">0 %</td></tr>';
+    } else {
+      rows+='<tr><td>'+fmtDate(d)+'</td><td class="num">'+dstr(ST.dose*Math.max(st.factor,0.05))+' mg / prise</td><td class="num">'+fmt(st.factor*100,1)+' %</td></tr>';
+    }
+  });
+  box.innerHTML='<h3>Calendrier des paliers</h3><table class="ptab"><tr><th>Date</th><th>Dose par prise</th><th>% de la dose initiale</th></tr>'+rows+'</table>'
+   +'<div class="note">Adapter chaque palier à la forme disponible (comprimé sécable, quart de comprimé, gouttes) ; ce calendrier est un support de discussion avec le prescripteur, pas une ordonnance.</div>';
+}
+function renderInfo(){
+  var m=mol(), c=cls(), box=$("info"), h="";
+  if(MODE==="pro"){
+    h+='<h2>🧑‍⚕️ Fiche professionnelle — '+m.d+'</h2>';
+    h+='<div class="card"><h3>'+m.d+' et déprescription</h3><p>'+m.tips+'</p></div>';
+    h+='<div class="card"><h3>'+c.pro.title+'</h3><ul>'+c.pro.points.map(function(p){return '<li>'+p+'</li>';}).join("")+'</ul></div>';
+    if(c.eq){
+      h+='<div class="card warn"><h3>'+c.eq.title+'</h3><table class="eqtab"><tr><th>Molécule</th><th>≈ équivalent de 10 mg de diazépam</th></tr>'+c.eq.rows.map(function(r){return '<tr><td>'+r[0]+'</td><td>'+r[1]+'</td></tr>';}).join("")+'</table><p class="note">'+c.eq.note+'</p></div>';
+    }
+    if(m.met) h+='<div class="card"><h3>Métabolite actif : '+m.met.n+'</h3><p>'+(m.met.txt||"")+' t½ ≈ '+fmt(m.met.t12,0)+' h : il contribue à l\'effet et allonge la décroissance.</p></div>';
+    h+='<div class="card stop"><h3>Limites du modèle</h3><p>Modèle 1 compartiment + effect-site linéaire, paramètres moyens de population (RCP 5.2) : la courbe est pédagogique. La tolérance installée, la durée réelle du traitement, les comorbidités et les antécédents de sevrage modifient largement la réalité clinique.</p></div>';
+  } else {
+    h+='<h2>👤 Version patient — '+m.d+'</h2>';
+    h+='<div class="card"><h3>✅ Ce que la courbe montre</h3><p>On descend <b>en escalier</b>, pas en ascenseur : à chaque palier, votre corps a le temps de s\'habituer avant le suivant. Les symptômes éventuels apparaissent surtout les premiers jours d\'un palier, puis s\'atténuent.</p></div>';
+    h+='<div class="card warn"><h3>'+c.pat.title+'</h3><p>'+c.pat.what+'</p></div>';
+    h+='<div class="card"><h3>🛠️ Comment préparer chaque palier (sans médicament)</h3><ul>'+c.pat.how.map(function(p2){return '<li>'+p2+'</li>';}).join("")+'</ul></div>';
+    h+='<div class="card stop"><h3>📞 Quand appeler</h3><p>'+c.pat.red.join(" ")+'</p></div>';
+  }
+  box.innerHTML=h;
+}
+
+/* ===== chart SVG ===== */
+function renderChart(res){
+  var m=mol(), svg=$("chart");
+  var W=920,H=400,L=52,R=14,T=16,B=34;
+  var iw=W-L-R, ih=H-T-B;
+  var out=res.out, t0=-7, t1=out.t[out.t.length-1]/24;
+  var ymax=118;
+  var X=function(day){ return L+(day-t0)/(t1-t0)*iw; };
+  var Y=function(pct){ return T+ih-(Math.max(0,Math.min(pct,ymax))/ymax)*ih; };
+  var s='<defs></defs>';
+  s+='<rect x="'+L+'" y="'+Y(100)+'" width="'+iw+'" height="'+(Y(75)-Y(100))+'" fill="rgba(21,128,61,.05)"/>';
+  s+='<rect x="'+L+'" y="'+Y(75)+'" width="'+iw+'" height="'+(Y(50)-Y(75))+'" fill="rgba(180,83,9,.05)"/>';
+  s+='<rect x="'+L+'" y="'+Y(50)+'" width="'+iw+'" height="'+(Y(0)-Y(50))+'" fill="rgba(185,28,28,.04)"/>';
+  [0,25,50,75,100].forEach(function(g){
+    s+='<line x1="'+L+'" y1="'+Y(g)+'" x2="'+(W-R)+'" y2="'+Y(g)+'" stroke="var(--bord)" stroke-width="1"/>';
+    s+='<text x="'+(L-6)+'" y="'+(Y(g)+3)+'" text-anchor="end" font-size="11" fill="var(--gris)">'+g+' %</text>';
+  });
+  s+='<text x="'+(L+4)+'" y="'+(T+10)+'" font-size="10" fill="var(--gris)">100 % = équilibre avant la décroissance</text>';
+  var span=t1-t0, step=(span>120?28:(span>45?14:7)), d;
+  for(d=Math.ceil(t0/step)*step; d<=t1; d+=step){
+    s+='<line x1="'+X(d)+'" y1="'+T+'" x2="'+X(d)+'" y2="'+(T+ih)+'" stroke="var(--bord)" stroke-width="0.6" stroke-dasharray="2,3"/>';
+    s+='<text x="'+X(d)+'" y="'+(T+ih+14)+'" text-anchor="middle" font-size="10" fill="var(--gris)">'+(d===0?"auj.":"J"+(d>0?"+":"")+d)+'</text>';
+  }
+  s+='<line x1="'+X(0)+'" y1="'+T+'" x2="'+X(0)+'" y2="'+(T+ih)+'" stroke="var(--gris)" stroke-width="1.4"/>';
+  res.sch.steps.forEach(function(st){
+    var dd=(st.h-res.sch.preH)/24;
+    if(dd<0||dd>t1) return;
+    s+='<line x1="'+X(dd)+'" y1="'+T+'" x2="'+X(dd)+'" y2="'+(T+ih)+'" stroke="var(--teal)" stroke-width="1" stroke-dasharray="3,4" opacity=".75"/>';
+    s+='<text x="'+X(dd)+'" y="'+(T+ih-6)+'" text-anchor="middle" font-size="9" fill="var(--teal)">'+Math.round(st.factor*100)+' %</text>';
+  });
+  var stopD=(res.sch.stopH-res.sch.preH)/24;
+  if(stopD>0&&stopD<=t1){
+    s+='<line x1="'+X(stopD)+'" y1="'+T+'" x2="'+X(stopD)+'" y2="'+(T+ih)+'" stroke="var(--rouge)" stroke-width="1.6"/>';
+    s+='<text x="'+(X(stopD)+4)+'" y="'+(T+ih+14)+'" font-size="10" fill="var(--rouge)">arrêt (J+'+Math.round(stopD)+')</text>';
+  }
+  function path(get,bar,color,wid,dash){
+    var p="", pen=false, v, x, y;
+    for(var i=0;i<out.t.length;i+=2){
+      v=get(i)/bar*100;
+      x=X(out.t[i]/24); y=Y(v);
+      p+=(pen?"L":"M")+x.toFixed(1)+" "+y.toFixed(1); pen=true;
+    }
+    return '<path d="'+p+'" fill="none" stroke="'+color+'" stroke-width="'+wid+'"'+(dash?' stroke-dasharray="'+dash+'"':'')+' stroke-linejoin="round"/>';
+  }
+  s+=path(function(i){return out.cm[i];},res.Cmbar,"var(--violet)",1.6,"4,3");
+  s+=path(function(i){return out.cp[i];},res.Cbar,"var(--bleu)",1.6,null);
+  s+=path(function(i){return out.cer[i];},res.Cebar,"var(--teal)",3,null);
+  s+='<rect id="hoverzone" x="'+L+'" y="'+T+'" width="'+iw+'" height="'+ih+'" fill="transparent" style="cursor:crosshair"/>';
+  svg.innerHTML=s;
+  var hz=svg.querySelector("#hoverzone"), tip=$("tooltip"), STd=ST;
+  function onmove(evv){
+    var rect=svg.getBoundingClientRect();
+    var px=(evv.clientX-rect.left)*(W/rect.width);
+    var day=t0+(px-L)/iw*(t1-t0);
+    if(day<t0||day>t1){ tip.style.display="none"; return; }
+    var j=null;
+    for(var i=0;i<out.t.length;i++){ if(out.t[i]/24<=day) j=i; else break; }
+    if(j===null){ tip.style.display="none"; return; }
+    var dte=new Date(); dte.setDate(dte.getDate()+Math.round(day));
+    var f=factorAtT(res.sch.preH+Math.max(0,day)*24,res.sch);
+    var doss=(day<0)?(dstr(STd.dose)+" mg (en cours)"):(f>0?dstr(STd.dose*f)+" mg / prise":"arrêt");
+    tip.style.display="block";
+    tip.style.left=(evv.clientX+12)+"px";
+    tip.style.top=(evv.clientY-14)+"px";
+    tip.innerHTML=fmtDate(dte)+'<br>Dose : '+doss+'<br>Effet : '+fmt(out.cer[j]/res.Cebar*100,0)+' %<br>Concentration : '+fmt(out.cp[j]/res.Cbar*100,0)+' %'+(res.P.met?' · métabolite '+fmt(out.cm[j]/res.Cmbar*100,0)+' %':'');
+    var vr=svg.querySelector("#vline"); if(vr) vr.remove();
+    var vline=document.createElementNS("http://www.w3.org/2000/svg","line");
+    vline.setAttribute("id","vline"); vline.setAttribute("x1",px); vline.setAttribute("x2",px);
+    vline.setAttribute("y1",T); vline.setAttribute("y2",T+ih);
+    vline.setAttribute("stroke","var(--gris)"); vline.setAttribute("stroke-width","1"); vline.setAttribute("opacity",".7");
+    svg.appendChild(vline);
+  }
+  function onout(){ tip.style.display="none"; var vr=svg.querySelector("#vline"); if(vr) vr.remove(); }
+  if(hz){ hz.addEventListener("mousemove",onmove); hz.addEventListener("mouseleave",onout); }
+}
+
+/* ===== init ===== */
+fillSelectors();
+fillDose();
+run();
+</script>
+</body>
+</html>
