@@ -58,6 +58,9 @@ html.dark #tooltip{background:#e2e8f0;color:#0b1220}
 .stat{background:rgba(15,118,110,.06);border:1.5px solid var(--bord);border-radius:12px;padding:9px 11px}
 .stat .v{font-size:1.06rem;font-weight:700;color:var(--teal)}
 .stat .k{font-size:.72rem;color:var(--gris)}
+#estim{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px;margin:2px 0 4px}
+#estim .v{font-size:1.12rem}
+#estim .badge{margin-left:6px;font-size:.72rem}
 #paliers{margin-top:16px}
 #paliers h3{font-size:.95rem;margin-bottom:8px}
 .ptab{border-collapse:collapse;font-size:.85rem;width:100%}
@@ -116,6 +119,11 @@ footer{margin-top:18px;text-align:center;font-size:.78rem;color:var(--gris)}
 <div>
 <div id="chartbox" class="panel">
 <div class="cbhead"><h2 id="chartitle">Choisir un médicament</h2><span class="verdict" id="verdict"></span></div>
+<div id="estim">
+  <div class="stat"><div class="v" id="estdate">—</div><div class="k">📅 Fin estimée du sevrage</div></div>
+  <div class="stat"><div class="v" id="estpk">—</div><div class="k" id="estklab">📉 Manque maximal estimé</div></div>
+</div>
+<div class="note" id="estnote"></div>
 <svg id="chart" viewBox="0 0 920 400" role="img" aria-label="Courbes concentration et effet pendant la décroissance"></svg>
 <div class="legend" id="legend"></div>
 <div id="tooltip"></div>
@@ -435,6 +443,7 @@ function run(){
   last=res;
   $("chartitle").textContent=m.d+" — plan : "+$("selplan").options[$("selplan").selectedIndex].text;
   $("verdict").innerHTML=verdict(res);
+  renderEstim(res);
   renderChart(res);
   renderStats(res);
   renderPaliers(res);
@@ -446,6 +455,21 @@ function run(){
    +'<span><span class="sw" style="background:var(--bleu)"></span>Concentration du médicament</span>'
    +(m.met?'<span><span class="sw" style="background:var(--violet)"></span>Métabolite actif ('+m.met.n+')</span>':'');
   $("ftot").textContent="15 molécules — phase 1 (IPP, benzodiazépines, apparentés Z, antidépresseurs)";
+}
+function renderEstim(res){
+  var m=mol(), c=cls(), p=activePlan();
+  var stopD=Math.round((res.sch.stopH-res.sch.preH)/24);
+  var d=new Date(); d.setDate(d.getDate()+stopD);
+  var lab={BZD:"Manque maximal estimé",Z:"Manque maximal estimé",AD:"Syndrome d'interruption maximal estimé",IPP:"Rebond acide maximal estimé"}[m.cls]||"Manque maximal estimé";
+  var v=Math.max(res.d7,0);
+  var state, word;
+  if(m.cls==="IPP"){ state=(p&&p.stop&&v>60)?"warn":"ok"; word=(p&&p.stop)?"modéré":"léger"; }
+  else if(p&&p.stop&&m.met&&m.met.t12>=90){ state="ok"; word="pente douce (t½ longue)"; }
+  else { state=(v<c.ok)?"ok":(v<c.warn)?"warn":"stop"; word=(v<c.ok)?"léger":(v<c.warn?"modéré":"marqué"); }
+  $("estdate").textContent=(stopD===0)?fmtDate(d)+" (aujourd'hui, arrêt immédiat)":fmtDate(d)+" (J+"+stopD+")";
+  $("estpk").innerHTML=fmt(v,1)+' % <span class="badge b-'+state+'">'+word+'</span>';
+  $("estklab").textContent="📉 "+lab;
+  $("estnote").textContent="Estimation du modèle compartimental à visée pédagogique (paramètres moyens RCP 5.2) : le ressenti réel dépend de la durée du traitement, de la dose et du terrain. Ces deux chiffres servent à préparer et rassurer le dialogue, pas à prédire un cas individuel.";
 }
 function renderStats(res){
   var m=mol(), s=$("stats");
