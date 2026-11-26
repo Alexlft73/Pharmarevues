@@ -1,0 +1,60 @@
+{
+  "revues": [
+    {
+      "id": "r2611-1730a",
+      "ty": "Alerte",
+      "dom": "Autorisations & Sécurité",
+      "n": 5,
+      "dt": "2026-11",
+      "des": "ANSM : 8 effets indésirables graves liés aux conseils médicamenteux de l intelligence artificielle, alerte du 25 novembre 2026",
+      "tag": "intelligence artificielle · automédication · posologie · pharmacovigilance · ANSM",
+      "res": "L ANSM a lancé le 25 novembre 2026 une alerte sur les recommandations médicamenteuses générées par les outils d IA : huit cas d effets indésirables, dont une hospitalisation, recensés entre 2024 et 2026, la moitié concernant des patients de 18 ans ou moins, avec des erreurs de posologie et de traduction à l origine de traitements inappropriés. En officine : demander systématiquement si le patient a utilisé une IA pour ses doses ou son automédication, recaler les posologies douteuses, orienter vers le médecin et déclarer tout effet indésirable suspecté ; l IA ne remplace jamais le conseil du comptoir.",
+      "src": [["ANSM via Entrevue", "https://entrevue.fr/sante/medicaments-lagence-nationale-de-securite-du-medicament-alertent/"], ["Clubic", "https://www.clubic.com/actualite-641089-l-ansm-alerte-sur-les-conseils-de-l-ia-pour-doser-les-medicaments.html"]]
+    },
+    {
+      "id": "r2611-1730b",
+      "ty": "Alerte",
+      "dom": "Autorisations & Sécurité",
+      "n": 5,
+      "dt": "2026-11",
+      "des": "Fucithalmic 1 % gel ophtalmique : rappel du lot par le laboratoire Centre Spécialités Pharmaceutiques, en accord avec l ANSM (avis du 10/11/2026)",
+      "tag": "rappel · acide fusidique · gel ophtalmique · ANSM · lot",
+      "res": "Rappel de produit du gel ophtalmique de fusidique (Fucithalmic 1 pour cent), lancé par mesure de précaution par le laboratoire avec l accord de l ANSM, avis publié le 10 novembre 2026. Les pharmaciens doivent cesser la délivrance du lot concerné et organiser le retour des boîtes. En officine : vérifier le stock au comptoir et au rayon, isoler les unités du lot rappelé, échanger les boîtes rapportées par les patients et signaler tout défaut supplémentaire au laboratoire et au CRPV.",
+      "src": [["ANSM", "https://ansm.sante.fr/informations-de-securite/fucithalmic-1-pour-cent-gel-ophtalmique-laboratoire-centre-specialites-pharmaceutiques"]]
+    },
+    {
+      "id": "r2611-1730c",
+      "ty": "Alerte",
+      "dom": "Autorisations & Sécurité",
+      "n": 5,
+      "dt": "2026-11",
+      "des": "Lénalidomide : actualisation des mesures de réduction des risques après défauts qualité sur les gélules Viatris puis Arrow (Vidal, mis à jour le 19/11/2026)",
+      "tag": "lénalidomide · défaut qualité · MRR · pharmacovigilance · Vidal",
+      "res": "Après la découverte à l automne 2025 d un défaut qualité (présence de poudre dans certaines alvéoles des plaquettes), puis d autres signalements plus récents sur les boîtes du laboratoire Arrow, les mesures de réduction des risques du lénalidomide ont été actualisées en novembre 2026. Le risque majeur est une dose inefficace ou une exposition irrégulière chez un patient myélome. En officine : délivrer les boîtes intactes, contrôler visuellement les plaquettes avant remise, rappeler la contraception obligatoire et signaler immédiatement toute plaquette anormale (poudre, alvéole vide ou endommagée) sans la faire prendre au patient.",
+      "src": [["Vidal", "https://www.vidal.fr/actualites/38643-lenalidomide-actualisation-des-mesures-de-reduction-des-risques.html"]]
+    },
+    {
+      "id": "r2611-1730d",
+      "ty": "Alerte",
+      "dom": "Obésité & Métabolisme",
+      "n": 5,
+      "dt": "2026-10",
+      "des": "3e rapport de pharmacovigilance ANSM sur les aGLP-1 : mésusage persistant avec complications graves et risque d interactions médicamenteuses (publié le 07/10/2026)",
+      "tag": "GLP-1 · pharmacovigilance · mésusage · interactions · ANSM",
+      "res": "Entre février 2025 et janvier 2026, plus de 840 000 patients étaient traités par un aGLP-1 en France et l ANSM a recensé 2 801 cas sur cette période, avec une persistance du mésusage (usage amaigrissant hors indication, produits détournés) associé à des complications graves, et une mise en évidence du risque d interactions médicamenteuses, notamment retard de vidange gastrique affectant l absorption des traitements co-délivrés. En officine : interroger sur le motif réel d usage et le circuit d obtention du médicament, alerter sur les interactions (en particulier traitements à marge étroite et contraception orale en cas de vomissements), et déclarer tout effet indésirable.",
+      "src": [["ANSM", "https://ansm.sante.fr/actualites/3-rapport-de-pharmacovigilance-sur-les-aglp-1-persistance-du-mesusage-associe-a-des-complications-graves-et-mise-en-evidence-du-risque-dinteractions-medicamenteuses"]]
+    },
+    {
+      "id": "r2611-1730e",
+      "ty": "Alerte",
+      "dom": "SNC & psychiatrie",
+      "n": 5,
+      "dt": "2026-10",
+      "des": "MHRA : nouvelles mesures de sécurité sur les antidépresseurs, mieux communiquer le risque d idées suicidaires et de dysfonction sexuelle persistante (Safety Roundup, 27 octobre 2026)",
+      "tag": "antidépresseurs · MHRA · idées suicidaires · PSSD · notice patient",
+      "res": "Le MHRA (Royaume-Uni) met en place de nouvelles mesures pour tous les patients sous antidépresseurs : encadré d alerte dans la notice, carte patient et brochure de sécurité, à la suite d une revue sur la communication des risques d idées et comportements suicidaires et de dysfonction sexuelle persistante, le terme post SSRI sexual dysfunction (PSSD) étant ajouté aux notices de certaines spécialités. En officine : à l initiation ou au renouvellement, ouvrir la discussion sur ces risques, remettre la carte patient, inviter à un avis urgent en cas d idées suicidaires et ne pas banaliser les troubles sexuels qui persistent après l arrêt.",
+      "src": [["MHRA (GOV.UK)", "https://www.gov.uk/drug-device-alerts/mhra-safety-roundup-october-2026"]]
+    }
+  ],
+  "recos": []
+}
