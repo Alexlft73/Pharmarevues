@@ -1,0 +1,85 @@
+{
+  "revues": [
+    {
+      "id": "r2611-1920a",
+      "ty": "Alimentation",
+      "dom": "Pédiatrie officinale",
+      "n": 3,
+      "dt": "2026-05",
+      "des": "Essai MARVEL : complément nutritionnel oral et croissance/composition corporelle chez les enfants dénutris ou à risque (ECR multicentrique, European Journal of Nutrition)",
+      "tag": "CNO · dénutrition pédiatrique · croissance · z-scores",
+      "res": "Essai randomisé multicentrique thaïlandais chez des enfants de 1 à 6 ans dénutris ou à risque : après 3 mois, le groupe complément nutritionnel oral (CNO) gagne davantage de poids, de taille et de z-scores poids-pour-âge et poids-pour-taille que le groupe conseil diététique seul (différence moyenne de poids 0,16 kg). Publié en ligne le 26 mai 2026 (Eur J Nutr, DOI 10.1007/s00394-026-03916-w). En officine : devant un enfant au poids stagnant ou une courbe qui s'infléchit, ne pas se contenter de conseils diététiques oraux ; orienter vers le médecin et proposer un CNO pédiatrique adapté avec suivi mensuel du poids.",
+      "src": [
+        [
+          "European Journal of Nutrition (Springer)",
+          "https://link.springer.com/article/10.1007/s00394-026-03916-w"
+        ],
+        [
+          "ResearchGate",
+          "https://www.researchgate.net/publication/405299526_Effects_of_oral_nutritional_supplement_on_growth_and_body_composition_in_malnutrition_at_risk_and_malnourished_children_MARVEL_study_a_multi-center_randomized_controlled_trial"
+        ]
+      ]
+    },
+    {
+      "id": "r2611-1920b",
+      "ty": "Alimentation",
+      "dom": "Oncologie",
+      "n": 3,
+      "dt": "2026-11",
+      "des": "Supplémentation nutritionnelle orale précoce vs habituelle pendant la chimioradiothérapie du carcinome nasopharyngé : ECR de 236 patients (JAMA Oncology)",
+      "tag": "CNO · chimioradiothérapie · carcinome nasopharyngé · perte de poids · mucite",
+      "res": "Dans cet essai randomisé chinois (6 centres, 216 patients analysés), démarrer les CNO dès l'initiation de la chimioradiothérapie plutôt qu'après détérioration nutritionnelle réduit la perte de poids supérieure à 5 % (65,4 % vs 80,7 % ; RR 0,81) et la mucite radiique de grade 3+ (14,0 % vs 26,6 % ; RR 0,53), avec un profil potentiellement coût-efficace. Publié dans JAMA Oncology, couvert par l'ASCO Post le 23 novembre 2026. En officine : pour un patient sous radio-chimiothérapie ORL, anticiper plutôt que rattraper : proposer les CNO riches en énergie/protéines dès le début du traitement et surveiller poids et déglutition à chaque passage.",
+      "src": [
+        [
+          "ASCO Post",
+          "https://ascopost.com/articles/2026/11-november/nasopharyngeal-carcinoma-initiating-nutritional-supplementation-earlier-may-reduce-chemoradiotherapy-related-weight-loss"
+        ],
+        [
+          "JAMA Oncology",
+          "https://jamanetwork.com/journals/jamaoncology/article-abstract/2856379"
+        ]
+      ]
+    },
+    {
+      "id": "r2611-1920c",
+      "ty": "Complément",
+      "dom": "Neurologie",
+      "n": 3,
+      "dt": "2026-08",
+      "des": "Probiotiques multiesouches et pathologie tau : essai randomisé en double aveugle dans le trouble cognitif léger (Journal of Alzheimer's Disease, août 2026)",
+      "tag": "probiotiques multiesouches · axe intestin-cerveau · pTau181 · cognition · Alzheimer",
+      "res": "Chez des seniors coréens avec trouble cognitif léger (cohorte GARD), 24 semaines de probiotique multiesource vs placebo ont amélioré plusieurs tests cognitifs (notamment visuospatiaux) et réduit la phosphorylation de la tau plasmatique (pTau181), marqueur sanguin de la maladie d'Alzheimer. Essai préliminaire, sans preuve d'effet sur les enchevêtrements cérébraux (Journal of Alzheimer's Disease, vol 113, août 2026). En officine : pas de probiotique à visée prévention d'Alzheimer à ce jour, mais garder l'axe intestin-cerveau en tête lors du conseil probiotique et attendre des essais de confirmation avant toute promesse au comptoir.",
+      "src": [
+        [
+          "Journal of Alzheimer's Disease (DOI SAGE)",
+          "https://doi.org/10.1177/13872877261477084"
+        ],
+        [
+          "ScholarBro",
+          "https://mail.scholarbro.com/p/222219-multistrain-probiotics-modulate-tau-pathology-and-preserve-visuospatia"
+        ]
+      ]
+    },
+    {
+      "id": "r2611-1920d",
+      "ty": "Complément",
+      "dom": "Gastro-entérologie & Hépatologie",
+      "n": 3,
+      "dt": "2026-06",
+      "des": "Associations probiotiques-phytonutriments (pissenlit, bioflavonoïdes d'agrumes) sur le transit et la barrière intestinale : ECR vs placebo (Nutrients, juin 2026)",
+      "tag": "probiotiques · phytonutriments · transit · zonuline · butyrate · aliment fonctionnel",
+      "res": "Essai randomisé placebo (Nutrients 2026;18(13):2085) : une association probiotiques-poudre de racine de pissenlit et bioflavonoïdes d'agrumes améliore la fonction intestinale, normalise les selles, augmente les acides gras à chaîne courte fécaux (butyrate) et réduit la zonuline (marqueur de perméabilité intestinale), surtout chez les participants en surpoids. Étude industrielle, effect modeste. En officine : utile pour cadrer la demande croissante d'aliments fonctionnels intestinaux ; privilégier les souches documentées et rappeler qu'un transit irrégulier isolé ne justifie pas de cures prolongées sans avis médical.",
+      "src": [
+        [
+          "NutraIngredients",
+          "https://www.nutraingredients.com/Article/2026/06/29/probioticphytonutrient-blends-may-boost-bowel-function-and-other-gut-health-measures/"
+        ],
+        [
+          "Nutrients 2026;18(13):2085",
+          "https://doi.org/10.3390/nu18132085"
+        ]
+      ]
+    }
+  ],
+  "recos": []
+}
