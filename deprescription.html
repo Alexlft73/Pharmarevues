@@ -115,6 +115,11 @@ footer{margin-top:18px;text-align:center;font-size:.78rem;color:var(--gris)}
 <div class="inline"><div><label class="hint">Réduction (%)</label><input id="cpct" type="number" min="5" max="50" step="5" value="25" onchange="run()"></div>
 <div><label class="hint">Toutes les (semaines)</label><input id="cweeks" type="number" min="1" max="8" step="1" value="2" onchange="run()"></div></div>
 </div>
+<div class="ctl" id="ctlmydose" style="display:none"><label>✍️ Mes doses <span class="hint">(une dose par palier, en mg par prise)</span></label>
+<input id="mydoses" type="text" inputmode="decimal" placeholder="ex : 7,5 puis 5 puis 2,5" onfocus="this.select()" onchange="run()">
+<div class="inline"><div><label class="hint">Durée de chaque palier</label><select id="mydw" onchange="run()"><option value="1">1 semaine</option><option value="2" selected>2 semaines</option><option value="3">3 semaines</option><option value="4">4 semaines</option></select></div></div>
+<div class="hint" id="mydmsg" style="margin-top:6px">Du plus grand au plus petit (ex. 7,5 · 5 · 2,5) ; l'arrêt est ajouté automatiquement à la fin. Possible aussi : « 5 2,5 » ou une seule dose.</div>
+</div>
 <div class="ctl" id="ctltarget"><label>🎯 Finir avant le… <span class="hint">(optionnel)</span></label>
 <input id="cibledate" type="date" onchange="targetChanged()">
 <div class="tmsg" id="tmsg"></div>
@@ -184,7 +189,7 @@ mirt:{d:"Mirtazapine",cls:"AD",t12:30,tx:2,f:.5,vd:3.4,pb:.85,fe:.15,ds:[15,30],
    ok/warn : seuils de verdict sur Δ7j (chute maximale de l'effet sur 7 jours glissants, en %). */
 const CLASSES = {
 IPP:{label:"IPP (inhibiteurs de la pompe à protons)",t12e:36,ok:999,warn:999,eq:null,
-  prev:[{k:"Praticien — ½ cp 2 semaines, puis arrêt (J+14)",frac:[{f:0.5,d:14},{f:0}]},{k:"Doux — −25 % toutes les 2 semaines",pct:25,w:2},{k:"Très doux — −25 % toutes les 4 semaines (ou à la demande)",pct:25,w:4},{k:"Palier personnalisé…",cust:1},{k:"Arrêt d'un coup (référence)",stop:1}],
+  prev:[{k:"Praticien — ½ cp 2 semaines, puis arrêt (J+14)",frac:[{f:0.5,d:14},{f:0}]},{k:"✍️ Mes doses — je choisis les paliers moi-même",mydose:1},{k:"Doux — −25 % toutes les 2 semaines",pct:25,w:2},{k:"Très doux — −25 % toutes les 4 semaines (ou à la demande)",pct:25,w:4},{k:"Palier personnalisé…",cust:1},{k:"Arrêt d'un coup (référence)",stop:1}],
   pat:{title:"Arrêter un IPP : ce qu'il faut savoir",
     what:"Il n'y a <b>pas de dépendance</b> aux IPP : rien de comparable aux benzodiazépines. En revanche, après plusieurs semaines, l'estomac produit « un peu plus » d'acidité qu'avant le traitement. À l'arrêt, surtout brutal, un rebond acide peut donner pendant quelques jours à 2 semaines : brûlures, remontées acides, digestion difficile. C'est bénin, prévisible et ça passe.",
     how:["Continuer, ou repasser à la prise « à la demande » quelques semaines avant l'arrêt complet","Repas fractionnés, dîner léger, ne pas se coucher dans les 2-3 h après manger","Surélever la tête du lit, éviter ses aliments déclencheurs (épices, gras, alcool, café en excès)","Un antiacide local à la demande (type gel d'alginate, en pharmacie) suffit souvent pour le rebond","Si les symptômes durent au-delà de 2 semaines ou reviennent : revoir le médecin (parfois une cause à traiter)"],
@@ -192,7 +197,7 @@ IPP:{label:"IPP (inhibiteurs de la pompe à protons)",t12e:36,ok:999,warn:999,eq
   pro:{title:"Points professionnels — IPP",
     points:["Pas de syndrome de sevrage au sens pharmacologique ; rebond d'hyperacidité (hypergastrinémie) documenté à l'arrêt, souvent 1-2 semaines.","Décroissance souvent inutile : passage à la demande ou demi-dose 2-4 semaines suffit, surtout si usage prolongé.","Réévaluation annuelle de l'indication (recommandations HAS) ; l'arrêt est envisagé quand l'indication initiale a disparu.","Attention : un IPP peut masquer des signes digestifs d'alerte (cf. drapeaux rouges patient ci-dessous) ; l'arrêt sans avis médical est déconseillé si l'indication persiste (RGO érosif, prévention sous AINS/antiagrégant).","Après quelques semaines de traitement continu, la prise à la demande est souvent possible, sauf situations à risque."]}},
 BZD:{label:"Benzodiazépines",t12e:4,ok:20,warn:35,
-  prev:[{k:"Praticien — ¾ → ½ → ¼ cp, un jour sur 2 en fin (J+35)",frac:[{f:0.75,d:7},{f:0.5,d:7},{f:0.5,d:7,alt:1},{f:0.25,d:7},{f:0.25,d:7,alt:1},{f:0}]},{k:"Doux — −25 % toutes les 2 semaines",pct:25,w:2},{k:"Très doux — −25 % toutes les 4 semaines (senior, ancien traitement)",pct:25,w:4},{k:"Rapide — −50 % toutes les 2 semaines (traitement court)",pct:50,w:2},{k:"Palier personnalisé…",cust:1},{k:"Arrêt d'un coup (référence)",stop:1}],
+  prev:[{k:"Praticien — ¾ → ½ → ¼ cp, un jour sur 2 en fin (J+35)",frac:[{f:0.75,d:7},{f:0.5,d:7},{f:0.5,d:7,alt:1},{f:0.25,d:7},{f:0.25,d:7,alt:1},{f:0}]},{k:"✍️ Mes doses — je choisis les paliers moi-même",mydose:1},{k:"Doux — −25 % toutes les 2 semaines",pct:25,w:2},{k:"Très doux — −25 % toutes les 4 semaines (senior, ancien traitement)",pct:25,w:4},{k:"Rapide — −50 % toutes les 2 semaines (traitement court)",pct:50,w:2},{k:"Palier personnalisé…",cust:1},{k:"Arrêt d'un coup (référence)",stop:1}],
   eq:{title:"Équivalences approximatives (pivot : diazépam 10 mg)",note:"Approximations d'usage (tables de conversion usuelles), à titre indicatif : la conversion individuelle reste une décision médicale. Les apparentés « Z » (zolpidem, zopiclone) n'ont pas d'équivalence diazépam fiable ; le clonazépame change d'indication (épilepsie) : ne jamais convertir sans le prescripteur.",
     rows:[["Diazépam","10 mg"],["Lorazépam","1 mg"],["Alprazolam","0,5 mg"],["Clonazépame","0,5 mg (approximation d'usage, discutée)"]]},
   pat:{title:"Arrêter une benzodiazépine : ce qu'il faut savoir",
@@ -202,7 +207,7 @@ BZD:{label:"Benzodiazépines",t12e:4,ok:20,warn:35,
   pro:{title:"Points professionnels — benzodiazépines",
     points:["Règles françaises (HAS/ANSM, plan MILDECA) : durée maximale 4 semaines pour les hypnotiques, 12 semaines pour les anxiolytiques, sevrage inclus ; annoncer la durée dès l'instauration.","Préférer une demi-vie longue (diazépam) ou convertir via équivalences pour lisser les paliers, en particulier depuis une BZD courte (alprazolam, lorazépam).","Paliers classiques : −25 % toutes les 2-4 semaines ; sous 25 % de la dose initiale, paliers plus fins (−12,5 % ou prises alternées) car la baisse relative devient grande pour un même delta en mg.","Syndrome de sevrage à distinguer du retour de l'anxiété primitive : la réaction au palier s'estompe en jours ; la rechute persiste et doit être réévaluée (psychothérapie/TCC, suivi médical).","Risque convulsif à l'arrêt brutal : dose élevée, terrain épileptique, alcoolodépendance associée : ces situations relèvent d'un suivi médical rapproché.","Chez le sujet âgé : somnolence, chutes, confusion ; critère de prescription potentiellement inappropriée qui renforce le projet d'arrêt."]}} ,
 Z:{label:"Apparentés « Z » (hypnotiques)",t12e:2,ok:20,warn:35,eq:null,
-  prev:[{k:"Praticien — ½ cp, puis un soir sur 2, puis ¼ (J+21)",frac:[{f:0.5,d:7},{f:0.5,d:7,alt:1},{f:0.25,d:7},{f:0}]},{k:"Doux — −25 % toutes les 2 semaines",pct:25,w:2},{k:"Palier personnalisé…",cust:1},{k:"Arrêt d'un coup (référence)",stop:1}],
+  prev:[{k:"Praticien — ½ cp, puis un soir sur 2, puis ¼ (J+21)",frac:[{f:0.5,d:7},{f:0.5,d:7,alt:1},{f:0.25,d:7},{f:0}]},{k:"✍️ Mes doses — je choisis les paliers moi-même",mydose:1},{k:"Doux — −25 % toutes les 2 semaines",pct:25,w:2},{k:"Palier personnalisé…",cust:1},{k:"Arrêt d'un coup (référence)",stop:1}],
   pat:{title:"Arrêter le zolpidem ou la zopiclone : ce qu'il faut savoir",
     what:"Ce sont des cousins des benzodiazépines, ciblés sur le sommeil. À l'arrêt brutal après un usage prolongé, la 1re à 3e nuit(s) sont souvent plus mauvaises qu'avant le traitement : c'est l'insomnie de rebond, attendue et passagère. Elle est quasi constante, mieux vaut donc la prévoir au calendrier : c'est justement elle qui fait reprendre le médicament « pour être sûr de dormir ».",
     how:["Passer à la demi-dose quelques jours (comprimé sécable), puis au quart, ou « nuits alternées » : un soir sur deux, puis un soir sur trois","Méditation de sommeil guidée type Headspace sur Netflix (« Guide de la méditation »), sophrologie, scan corporel au lit","Rituel du soir constant, chambre sombre et fraîche, se lever si éveil > 20 min et s'occuper calmement","Pas d'alcool : il endort puis fragmente le sommeil et ravive le problème","Café et thé : après 14 h au maximum","Lumière du matin et activité physique : les deux meilleurs hypnotiques naturels","Annoncer la règle des « 3 nuits » les plus difficiles, l'écrire au calendrier : ça dédramatise"],
@@ -210,7 +215,7 @@ Z:{label:"Apparentés « Z » (hypnotiques)",t12e:2,ok:20,warn:35,eq:null,
   pro:{title:"Points professionnels — apparentés « Z »",
     points:["Règle ANSM : durée maximale 4 semaines, période de sevrage incluse ; réévaluer régulièrement.","Somnambulisme et comportements complexes rapportés avec le zolpidem (contre-indication à la reprise) : question systématique à l'officine ; femmes : 5 mg préférentiel.","Paliers courts et fractionnés (demi-dose, quart, nuits alternées) bien adaptés à la demi-vie très courte ; pas d'équivalence diazépam fiable à proposer d'emblée.","Insomnie de rebond quasi constante à l'arrêt brutal : l'anticiper avec le patient (nuits 1-3), c'est la clé de l'arrêt.","Chez le sujet âgé : chutes, confusion nocturne ; critère de prescription inappropriée qui renforce le projet d'arrêt."]}} ,
 AD:{label:"Antidépresseurs",t12e:24,ok:15,warn:25,eq:null,
-  prev:[{k:"Praticien — ¾ → ½ → ¼ cp (2 sem/palier), puis un jour sur 2 (J+56)",frac:[{f:0.75,d:14},{f:0.5,d:14},{f:0.25,d:14},{f:0.25,d:14,alt:1},{f:0}]},{k:"Doux — −25 % toutes les 2 semaines",pct:25,w:2},{k:"Très doux — −25 % toutes les 4 semaines (plus prudent)",pct:25,w:4},{k:"Palier personnalisé…",cust:1},{k:"Arrêt d'un coup (référence)",stop:1}],
+  prev:[{k:"Praticien — ¾ → ½ → ¼ cp (2 sem/palier), puis un jour sur 2 (J+56)",frac:[{f:0.75,d:14},{f:0.5,d:14},{f:0.25,d:14},{f:0.25,d:14,alt:1},{f:0}]},{k:"✍️ Mes doses — je choisis les paliers moi-même",mydose:1},{k:"Doux — −25 % toutes les 2 semaines",pct:25,w:2},{k:"Très doux — −25 % toutes les 4 semaines (plus prudent)",pct:25,w:4},{k:"Palier personnalisé…",cust:1},{k:"Arrêt d'un coup (référence)",stop:1}],
   pat:{title:"Arrêter un antidépresseur : ce qu'il faut savoir",
     what:"L'arrêt peut donner un <b>syndrome d'interruption</b> : vertiges (surtout aux mouvements des yeux), sensations de « décharges électriques », nausées, grippette, insomnie, irritabilité, anxiété. Il apparaît 1 à 5 jours après la baisse, il est bénin, et il passe en 1 à 3 semaines. Il ne veut pas dire que la dépression revient : c'est le cerveau qui réajuste ses récepteurs. À savoir aussi : la rechute dépressive est plus fréquente en cas d'arrêt prématuré (moins de 6 mois de traitement) ; l'arrêt se planifie, avec le médecin, en période stable.",
     how:["Descente progressive sur au moins 2 à 4 semaines, souvent plus longue pour la paroxétine et la venlafaxine","Paliers : la dose baisse d'un cran (par exemple −25 %), puis on attend 2 à 4 semaines, le temps que le corps retrouve son équilibre","Symptômes d'arrêt ≠ rechute : vertiges, sensations électriques, nausées dans les jours suivant une baisse = adaptation, ça s'atténue seul en 1-3 semaines ; tristesse ou anxiété qui persiste et s'aggrave = en parler au médecin","Méditation guidée et hygiène de sommeil, activité physique régulière (effet antidépresseur démontré), garder les liens sociaux","La fluoxétine descend « toute seule » : sa longue demi-vie fait le travail du palier ; pour la paroxétine et la venlafaxine, c'est l'inverse : ne jamais couper d'un coup","Signaux positifs : noter chaque jour ce qui va bien, et reprendre contact avec le médecin si une tristesse durable revient"],
@@ -272,11 +277,27 @@ function dstr(x){ x=Math.round(x*1000)/1000; return String(x).replace(".",","); 
 function fmtDate(d){ return d.toLocaleDateString("fr-FR",{day:"2-digit",month:"short",year:"numeric"}); }
 
 /* ===== plan ===== */
+function parseMyDoses(txt){
+  if(!txt||!txt.trim()) return null;
+  var toks=txt.replace(/(\d)[,\.](\d)/g,"$1.$2").match(/\d+(?:\.\d+)?/g);
+  if(!toks) return null;
+  var out=[],i;
+  for(i=0;i<toks.length;i++){ out.push(parseFloat(toks[i])); }
+  if(out.length>30) return null;
+  for(i=1;i<out.length;i++){ if(out[i]>=out[i-1]) return null; } /* strictement décroissantes */
+  return out;
+}
 function activePlan(){
   var p=cls().prev[ST.plan];
   if(!p) return null;
   if(p.stop) return {stop:1};
-  if(p&&p.frac){ return {frac:p.frac}; }
+  if(p.mydose){
+    var ds=parseMyDoses($("mydoses").value);
+    if(!ds) return {bad:1};
+    var w=Math.min(Math.max(parseInt($("mydw").value,10)||2,1),4);
+    return {myds:ds,w:w};
+  }
+  if(p.frac){ return {frac:p.frac}; }
   if(p.cust){
     var pct=Math.min(Math.max(parseFloat($("cpct").value)||25,5),50);
     var w=Math.min(Math.max(parseFloat($("cweeks").value)||2,1),8);
@@ -293,6 +314,14 @@ function buildSchedule(){
   var steps=[];
   if(p&&p.stop){
     steps.push({h:preH,factor:0});
+  } else if(p&&p.myds){
+    var cum2=0, q2;
+    if(p.myds[0]<ST.dose+1e-9){ steps.push({h:preH,factor:p.myds[0]/ST.dose}); }
+    for(q2=1;q2<p.myds.length;q2++){
+      cum2+=p.w*7*24;
+      steps.push({h:preH+cum2,factor:p.myds[q2]/ST.dose});
+    }
+    steps.push({h:preH+cum2+p.w*7*24,factor:0});
   } else if(p&&p.frac){
     /* plan praticien : paliers quantifiés en comprimés, durations explicites en jours */
     var cum=0, q;
@@ -392,6 +421,14 @@ function verdict(res){
     if(m.cls==="AD") return '<span class="badge b-stop">🛑 Arrêt brutal</span> syndrome d\'interruption très probable (vertiges, « décharges électriques ») : ne jamais couper d\'un coup, voir le prescripteur';
     return '<span class="badge b-stop">🛑 Arrêt brutal</span> sevrage mal maîtrisé (rebond, parfois convulsions à forte dose) : uniquement sous surveillance médicale';
   }
+  if(p&&p.myds){
+    var fs2=[ST.dose].concat(p.myds), rmax=0, q3;
+    for(q3=1;q3<fs2.length;q3++){ rmax=Math.max(rmax,(1-fs2[q3]/fs2[q3-1])*100/p.w); }
+    var rate0=rmax;
+    if(rate0<=12.5+1e-9) return '<span class="badge b-ok">✅ Plan « mes doses »</span> vitesse max ≈ '+fmt(rate0,1)+' % par semaine : descente en douceur';
+    if(rate0<=25+1e-9) return '<span class="badge b-warn">⚠️ Plan « mes doses »</span> vitesse max ≈ '+fmt(rate0,1)+' % par semaine : surveiller la tolérance, espacer si besoin';
+    return '<span class="badge b-stop">🛑 Plan « mes doses » trop rapide</span> ≈ '+fmt(rate0,1)+' % par semaine : espacer les paliers ou subdiviser les doses';
+  }
   if(p&&p.frac){
     var VT={IPP:'<span class="badge b-ok">✅ Plan usuel</span> demi-dose 2 semaines puis arrêt : conforme aux pratiques de sevrage des IPP (rebond acide transitoire possible, prévoir un antiacide local)',
       BZD:'<span class="badge b-warn">⚠️ Paliers praticiens</span> ≈ 25 % par semaine en comprimés sécables (¾, ½, ½ un jour sur 2, ¼) : adapté aux traitements courts à modérés ; traitement au long cours, dose élevée ou sujet âgé → préférer −25 % toutes les 2 à 4 semaines',
@@ -449,8 +486,10 @@ function fillDose(){
   planChanged(false);
 }
 function planChanged(rerun){
-  var p=cls().prev[ST.plan];
+  var pi=parseInt($("selplan").value,10); if(isNaN(pi)||pi<0||pi>=cls().prev.length) pi=ST.plan||0;
+  var p=cls().prev[pi];
   $("ctlcustom").style.display=(p&&p.cust)?"block":"none";
+  $("ctlmydose").style.display=(p&&p.mydose)?"block":"none";
   if(rerun!==false) run();
 }
 function molChanged(){
@@ -504,6 +543,19 @@ function targetChanged(){
 }
 function run(){
   var m=mol(), c=cls();
+  var pv=cls().prev[parseInt($("selplan").value,10)||0];
+  if(pv&&pv.mydose){
+    var dsx=parseMyDoses($("mydoses").value), dcour=parseFloat($("seldose").value)||ST.dose;
+    if(!dsx){
+      $("mydmsg").innerHTML='⚠️ Doses non valides : indiquer une à plusieurs doses en mg, <b>du plus grand au plus petit</b> (ex. 7,5 puis 5 puis 2,5). La courbe affichée reste celle du plan précédent.';
+      return;
+    }
+    if(dsx[0]>dcour+1e-9){
+      $("mydmsg").innerHTML='⚠️ La première dose saisie ('+dstr(dsx[0])+' mg) dépasse la dose actuelle ('+dstr(dcour)+' mg) : saisir des paliers qui partent de la dose actuelle ou en dessous.';
+      return;
+    }
+    $("mydmsg").textContent='Dose actuelle : '+dstr(dcour)+' mg. Paliers saisis : '+dsx.length+' ('+dsx.map(dstr).join(' → ')+' mg), arrêt automatique à la fin.';
+  }
   ST.dose=parseFloat($("seldose").value)||m.ds[0];
   ST.tau=parseFloat($("seltau").value)||m.tau;
   ST.plan=parseInt($("selplan").value,10)||0;
