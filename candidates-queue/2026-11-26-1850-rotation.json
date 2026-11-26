@@ -1,0 +1,69 @@
+{
+  "revues": [
+    {
+      "id": "r2611-1850e",
+      "ty": "Médicament",
+      "dom": "Gynécologie & Allaitement",
+      "n": 3,
+      "dt": "2026-09",
+      "des": "Cariprazine dans le lait maternel : premières données empiriques, exposition estimée du nourrisson sous les seuils de sécurité mais effets indésirables rapportés (Journal of Clinical Psychopharmacology, 46(5), sept-oct 2026)",
+      "tag": "cariprazine · allaitement · lait maternel · antipsychotique · DDCAR",
+      "res": "Premières mesures empiriques de cariprazine et de ses métabolites dans le lait humain (banque InfantRisk) : l'exposition estimée du nourrisson reste sous les seuils de sécurité classiques, mais des effets indésirables chez des nourrissons allaités ont été rapportés et le métabolite DDCAR a une demi-vie très longue qui fait craindre une accumulation. Les auteurs concluent à un allaitement possible sous supervision clinique, avec prudence. En officine : si une patiente sous cariprazine (ou un antipsychotique de dernière génération) souhaite allaiter, ne pas décider seule au comptoir — orienter vers le prescripteur et un centre de référence, surveiller somnolence et prises de poids inhabituelles du nourrisson."
+    },
+    {
+      "id": "r2611-1851e",
+      "ty": "Alerte",
+      "dom": "Gynécologie & Allaitement",
+      "n": 5,
+      "dt": "2026-10",
+      "des": "Pharmacovigilance de précision chez les femmes enceintes, en post-partum et allaitantes : cartographier les critères de sécurité au-delà des malformations congénitales (revue, Pharmaceuticals 2026, 19(11):1686, publiée le 26/10/2026)",
+      "tag": "pharmacovigilance · grossesse · allaitement · post-partum · critères de sécurité",
+      "res": "Revue qui analyse le passage d'une surveillance centrée sur les malformations et les événements néonataux aigus vers des critères de sécurité plus larges (neurodéveloppement, trajectoires de croissance, maladies chroniques de l'enfant), dans la lignée du projet européen ConcePTION. Les auteurs plaident pour des registres et bases de données mieux interconnectés et une notification plus systématique des expositions médicamenteuses pendant la grossesse et l'allaitement. En officine : toute patiente enceinte ou allaitante qui démarre ou continue un traitement est une source de donnée — encourager la déclaration des effets indésirables (et des expositions sans problème) au réseau des CRPV, c'est ainsi que se combler le déficit de preuves."
+    },
+    {
+      "id": "r2611-1852e",
+      "ty": "Officine",
+      "dom": "Gynécologie & Allaitement",
+      "n": 5,
+      "dt": "2026-05",
+      "des": "La FDA finalise son guide sur les études de sécurité des médicaments pendant la grossesse : attentes post-AMM clarifiées, étiquetage enrichi, rôle renforcé des pharmaciens dans la notification (Drug Topics, 21/05/2026)",
+      "tag": "FDA · grossesse · études post-AMM · étiquetage · pharmacovigilance",
+      "res": "Le guide final de la FDA formalise ce que les laboratoires doivent produire comme données de sécurité humaine post-AMM sur la grossesse, pour mieux remplir les sous-sections d'étiquetage et éclairer les décisions bénéfice-risque. L'article souligne que l'exclusion historique des femmes enceintes des essais laisse la surveillance et la notification d'effets indésirants comme principale source d'information, avec un rôle clé des cliniciens et pharmaciens. En officine : signal international à suivre — les RCP et notices des médicaments prescrits aux femmes enceintes devraient s'enrichir progressivement de données réelles ; au comptoir, toujours vérifier le statut de grossesse/allaitement avant de délivrer un nouveau traitement."
+    },
+    {
+      "id": "r2611-1853e",
+      "ty": "Alerte",
+      "dom": "Gynécologie & Allaitement",
+      "n": 5,
+      "dt": "2025-04",
+      "des": "ANSM : AINS chez les femmes enceintes, améliorer l'information sur les risques pour un meilleur usage (actualité publiée le 25/04/2025)",
+      "tag": "AINS · grossesse · ibuprofène · aspirine · automédication · RCP",
+      "res": "L'ANSM alerte sur la consommation persistante d'AINS (ibuprofène, aspirine) par les femmes enceintes alors que ces molécules exposent à des risques graves (fausses couches, malformations, atteintes rénales et cardio-pulmonaires fœtales), avec des chiffres de prescriptions et d'exposition jugés encore trop élevés. L'agence annonce la modification des RCP et notices pour clarifier les contre-indications par trimestre. En officine : réflexe comptoir — chez toute femme en âge de procréer qui demande un AINS en automédication, demander s'il y a un projet ou une grossesse en cours ; dès le 6e mois c'est une contre-indication stricte, et dès le début de grossesse proposer systématiquement le paracétamol."
+    }
+  ],
+  "recos": [
+    {
+      "spe": "Gynécologie",
+      "org": "HAS",
+      "dt": "2025-06",
+      "titre": "Cytomégalovirus (CMV) chez la femme enceinte : la HAS recommande un dépistage systématique pour toutes, à réévaluer après 3 ans de mise en œuvre",
+      "res": "Communiqué HAS du 17/06/2025 : la Haute Autorité de Santé recommande un dépistage systématique de l'infection à CMV chez toutes les femmes enceintes (le risque de complications fœtales étant d'autant plus élevé que l'infection survient tôt), avec une réévaluation de la mesure après 3 ans. La HAS précise aussi le parcours de prise en charge et le rappel des mesures d'hygiène à adopter dès le projet de grossesse. En officine : anticiper les questions au comptoir — expliquer les gestes simples de prévention (lavage des mains après change ou contact avec de jeunes enfants, ne pas partager couverts et gobelets), et rassurer : le dépistage va se généraliser, un résultat positif n'est pas une fatalité et l'aciclovir/valaciclovir peuvent être discutés avec le prescripteur.",
+      "src": [
+        ["HAS", "https://www.has-sante.fr/jcms/p_3610208/fr/cytomegalovirus-cmv-chez-la-femme-enceinte-la-has-recommande-un-depistage-systematique-pour-toutes-a-reevaluer-apres-3-ans-de-mise-en-oeuvre"]
+      ],
+      "geo": "fr"
+    },
+    {
+      "spe": "Vaccins",
+      "org": "Ministère de la Santé (calendrier vaccinal 2026)",
+      "dt": "2026-04",
+      "titre": "Calendrier vaccinal 2026 : vaccination contre la coqueluche recommandée à chaque grossesse à partir du 2e trimestre",
+      "res": "Le calendrier vaccinal 2026 (avril 2026) maintient et précise la recommandation de vaccination cocooning étendue : la femme enceinte doit recevoir un rappel coqueluche à chaque grossesse, de préférence entre 20 et 36 semaines d'aménorrhée, pour protéger le nouveau-né avant qu'il puisse être vacciné ; en l'absence de vaccination maternelle, l'entourage du nourrisson est concerné. En officine : anticiper la demande — vérifier le carnet vaccinal des femmes enceintes qui passent au comptoir, rappeler que le rappel coqueluche se fait à CHAQUE grossesse, et que les vaccins recommandés pendant la grossesse (coqueluche, grippe en saison) sont compatibles avec l'allaitement.",
+      "src": [
+        ["Ministère de la Santé", "https://sante.gouv.fr/IMG/pdf/calendrier_vaccinal-2026_a4_92p_v10.pdf"],
+        ["VIDAL", "https://www.vidal.fr/maladies/recommandations/grossesse-suivi-de-4020.html"]
+      ],
+      "geo": "fr"
+    }
+  ]
+}
