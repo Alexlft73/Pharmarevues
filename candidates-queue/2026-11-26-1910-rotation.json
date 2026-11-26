@@ -1,0 +1,85 @@
+{
+  "revues": [
+    {
+      "id": "r2611-1910a",
+      "ty": "Économie",
+      "dom": "Économie de la Santé",
+      "n": 5,
+      "dt": "2026-11",
+      "des": "Daraxonrasib vs chimiothérapie dans le cancer du pancréas métastatique : première analyse coût-efficacité (Chine, Frontiers in Pharmacology)",
+      "tag": "daraxonrasib | coût-efficacité | pharmacoéconomie | cancer du pancréas",
+      "res": "Analyse coût-efficacité publiée le 12 novembre 2026 modélisant le daraxonrasib (inhibiteur RAS(ON), recommandé par le CHMP en octobre 2026) contre la chimiothérapie en 2e ligne de cancer pancréatique métastatique, avec analyse de seuil de prix dans le contexte chinois. Elle illustre le délai désormais court entre un résultat clinique majeur (RASolute 302, déjà en base sous l'angle efficacité) et sa mise en perspective budgétaire : ici l'usage économie est distinct. En officine : traitement délivré en établissement, mais au comptoir on peut expliquer au patient et aux proches que le prix de ces innovations fait l'objet d'évaluations et de négociations, et orienter vers l'équipe oncologue pour toute question d'accès.",
+      "src": [
+        [
+          "Frontiers in Pharmacology",
+          "https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2026.1930284/full"
+        ]
+      ]
+    },
+    {
+      "id": "r2611-1910b",
+      "ty": "Économie",
+      "dom": "Économie de la Santé",
+      "n": 5,
+      "dt": "2026-07",
+      "des": "Pays-Bas : comment les analyses coût-efficacité servent réellement la décision de remboursement des médicaments (PharmacoEconomics)",
+      "tag": "remboursement | coût-efficacité | Pays-Bas | ZIN | HTA",
+      "res": "Revue publiée en ligne le 7 juillet 2026 sur l'usage des analyses coût-efficacité par l'institut néerlandais ZIN : les rapports ICER informent directement les négociations de prix et les valeurs de référence servent d'ancres plutôt que de seuils stricts, avec des considérations additionnelles (gravité, équité, innovation) documentées. Un éclairage utile pour comprendre les différences d'accès aux nouveaux médicaments entre pays européens. En officine : face à un patient étonné qu'un médicament disponible ailleurs ne soit pas encore remboursé en France, expliquer que chaque pays évalue le rapport bénéfice/prix selon ses propres règles, et orienter vers le prescripteur pour les dispositifs d'accès précoce si pertinent.",
+      "src": [
+        [
+          "PharmacoEconomics (PubMed)",
+          "https://pubmed.ncbi.nlm.nih.gov/42412364/"
+        ]
+      ]
+    },
+    {
+      "id": "r2611-1910c",
+      "ty": "Économie",
+      "dom": "Économie de la Santé",
+      "n": 5,
+      "dt": "2026-08",
+      "des": "Choisir un seuil de coût-efficacité dans les pays « price-takers » : principes internationaux (Expert Review of Pharmacoeconomics)",
+      "tag": "seuil coût-efficacité | price-taker | HTA | politique de prix",
+      "res": "Article de Kaló et collaborateurs publié le 12 août 2026 proposant des principes de sélection des seuils de coût-efficacité adaptés aux pays qui ne fixent pas les prix (price-takers), où appliquer les seuils classiques basés sur la disposition à payer peut mal orienter les décisions de remboursement. Sujet distinct de la ligne NICE déjà en base (seuils britanniques) : ici l'angle est la transférabilité des seuils pour les petits et moyens systèmes de santé. En officine : utile pour argumenter au comptoir que le remboursement d'un médicament dépend d'évaluations économiques nationales, et rappeler que générique et biosimilaire restent les leviers concrets d'économies à l'échelle de l'officine.",
+      "src": [
+        [
+          "Expert Review of Pharmacoeconomics (PubMed)",
+          "https://pubmed.ncbi.nlm.nih.gov/42565364/"
+        ]
+      ]
+    },
+    {
+      "id": "r2611-1910d",
+      "ty": "Économie",
+      "dom": "Économie de la Santé",
+      "n": 5,
+      "dt": "2026-07",
+      "des": "Rapport Cnam « Produits de santé 2027 » : 1,3 milliard d'euros d'économies visées sur les médicaments, les officines dans le collimateur",
+      "tag": "Cnam | rapport charges et produits | économies | régulation | officine",
+      "res": "Dans son rapport Charges et produits 2027 (analysé le 16 juillet 2026 par PharmaPex), la Cnam confirme 1,3 milliard d'euros d'économies attendues sur les produits de santé, devant les 800 millions de la pertinence des soins, après les 1,4 milliard du PLFSS 2026 : régulation tarifaire, pénétration biosimilaire et substitution concentrent la pression, avec des répercussions directes sur le compte de résultat des officines. Distinct de la ligne « 27,2 milliards remboursés » (chiffres-clés Cnam de janvier 2026) : ici c'est la trajectoire d'économies et son impact officinal. En officine : anticiper les chantiers qui vont structurer l'année (substitution biosimilaire, délivrance du moins cher, bilan de médication) et les valoriser en services plutôt que de les subir, car chaque point de régulation se lit ligne à ligne dans la comptabilité du titulaire.",
+      "src": [
+        [
+          "PharmaPex",
+          "https://pharmapex.fr/actualites/rapport-cnam-2027-1-3-milliard-sur-les-medicaments-votre-officine-ciblee"
+        ]
+      ]
+    },
+    {
+      "id": "r2611-1910e",
+      "ty": "Officine",
+      "dom": "Soins primaires & Officine",
+      "n": 5,
+      "dt": "2026-09",
+      "des": "Substitution par médicament hybride ou biosimilaire : ce qui change au 1er septembre 2026 en officine (LFSS 2026)",
+      "tag": "substitution | biosimilaire | hybride | tiers payant | LFSS 2026",
+      "res": "Depuis le 1er septembre 2026, de nouvelles règles issues de la LFSS 2026 encadrent la délivrance et le remboursement des médicaments hybrides et biosimilaires, dont le mécanisme de tiers payant contre biosimilaire ; l'aflibercept puis l'ustékinumab (avril 2026) ont porté à 11 le nombre de groupes de biomédicaments substituables en officine. Ce changement réglementaire touche directement le geste quotidien du comptoir. En officine : vérifier systématiquement l'éligibilité à la substitution sur les ordonnances concernées, informer le patient de l'équivalence (même efficacité et sécurité) et anticiper les questions sur le changement d'aspect du stylo ou de l'emballage, le refus motivé restant possible mais devant rester exceptionnel.",
+      "src": [
+        [
+          "meSoigner.fr",
+          "https://www.mesoigner.fr/actualites/2633-substitution-par-un-medicament-hybride-ou-biosimilaire-ce-qui-change-au-1er-septembre-2026"
+        ]
+      ]
+    }
+  ],
+  "recos": []
+}
