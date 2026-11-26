@@ -1,0 +1,59 @@
+{
+  "revues": [
+    {
+      "id": "r2611-1600a",
+      "ty": "Médicament",
+      "dom": "Rhumatologie",
+      "n": 3,
+      "dt": "2026-10",
+      "des": "Goutte réfractaire : le pozdeutinurad (AR882), nouvel inhibiteur URAT1 de nouvelle génération, abaisse durablement l'acide urique sur 12 mois (phase 3)",
+      "tag": "pozdeutinurad · URAT1 · goutte · acide urique · uricosurique",
+      "res": "Résultats phase 3 randomisés vs placebo présentés en late-breaking à l'ACR Convergence 2026 : le pozdeutinurad (Sobi/ArmGO) entraîne des baisses de l'uricémie significatives et soutenues sur 12 mois chez des patients goutteux insuffisamment contrôlés, avec un profil de tolérance rénale encourageant. Aucune specialité disponible en France pour l'instant : pipeline à suivre pour la 2e ligne après allopurinol/febuxostat. En officine : chez le patient goutteux non contrôlé sous allopurinol, rappeler l'observance du traitement de fond hypouricémiant (objectif uricémie < 360 µmol/L) et la prophylaxie des crises, sans promettre une molécule encore non commercialisée."
+    },
+    {
+      "id": "r2611-1600b",
+      "ty": "Officine",
+      "dom": "Rhumatologie",
+      "n": 3,
+      "dt": "2026-11",
+      "des": "KneeCAPS : une prise en charge personnalisée de la gonarthrose portée par les pharmaciens communautaires réduit le handicap fonctionnel et les coûts (essai randomisé, Lancet Regional Health Western Pacific)",
+      "tag": "gonarthrose · pharmacien communautaire · KneeCAPS · soins primaires · coûts",
+      "res": "Essai randomisé de 12 mois (Université d'Otago, Nouvelle-Zélande) : plus de 240 participants, 26 officines et plus de 70 diététiciens et kinésithérapeutes mobilisés. Le modèle de soins coordonné et activant, mené depuis la pharmacie de proximité (information fondée sur les preuves, orientation vers diététique et activité physique), améliore le handicap fonctionnel et réduit les coûts pour la majorité des participants. En officine : la gonarthrose se conseille au comptoir : information sur les preuves, orientation vers kinésithérapeute et diététicien, AINS aux doses minimales efficaces, et renfort de l'activité physique adaptée, premier traitement de l'arthrose."
+    },
+    {
+      "id": "r2611-1600c",
+      "ty": "Officine",
+      "dom": "Douleur & Migraine",
+      "n": 1,
+      "dt": "2026-05",
+      "des": "Quelle modalité et quelle dose d'exercice pour la lombalgie chronique ? Revue systématique et méta-analyse en réseau des paramètres de dose (Frontiers in Physiology)",
+      "tag": "lombalgie chronique · exercice · dose · méta-analyse en réseau · non médicamenteux",
+      "res": "Méta-analyse en réseau comparant modalités et paramètres de dose d'exercice chez l'adulte lombalgique chronique : les programmes d'exercice supervisé dépassent les soins usuels sur la douleur et la fonction, avec un effet dose documenté (fréquence, intensité, volume) au-delà duquel le bénéfice plafonne. Message convergent avec les recommandations internationales : l'exercice actif est le socle du traitement de la lombalgie chronique, avant les antalgiques au long cours. En officine : conseiller un programme d'exercice actif et progressif (renforcement, aérobie, mobilité) plutôt que le repos, détourner les demandes d'antalgiques prolongés et rappeler que le mouvement est l'antalgique le mieux prouvé de la lombalgie chronique."
+    }
+  ],
+  "recos": [
+    {
+      "spe": "Rhumatologie",
+      "org": "British Society for Rheumatology",
+      "dt": "2026-06",
+      "titre": "2026 BSR guideline for pain management in people with inflammatory arthritis",
+      "res": "Première guideline britannique dédiée à la douleur des rhumatismes inflammatoires (PR, rhumatisme psoriasique, spondyloarthrite), sur tout le parcours de vie. Constat fondé sur les données UK : recours fréquent aux opioïdes et gabapentinoïdes au long cours malgré l'absence de preuve d'efficacité, et sous-utilisation des approches non pharmacologiques pourtant soutenues par les essais ; la guideline recommande une stratégie graduée, non médicamenteuse d'abord, et limiter les opioïdes. En officine : chez le patient rhumatismal douloureux sous opioïde ou gabapentinoïde de longue durée, ouvrir la discussion de réévaluation avec le médecin (déprescription possible) et orienter vers les stratégies non médicamenteuses (activité physique adaptée, gestion de la douleur).",
+      "src": [
+        ["Rheumatology (Oxford Academic)", "https://academic.oup.com/rheumatology/article/65/7/keag320/8738151"],
+        ["University of Manchester Research Explorer", "https://research.manchester.ac.uk/en/publications/british-society-for-rheumatology-guideline-for-pain-management-in/"]
+      ]
+    },
+    {
+      "spe": "Rhumatologie",
+      "org": "HAS",
+      "dt": "2026-07",
+      "titre": "Épaule douloureuse non traumatique de l'adulte et tendinopathies de la coiffe des rotateurs : recommandation HAS (validation 02/07/2026)",
+      "res": "Recommandation HAS mise à jour (date de validation 02 juillet 2026, argumentaire chirurgical des tendinopathies rompues publié juillet 2026) : environ 70 % des douleurs d'épaule relèvent de la coiffe des rotateurs ; conduite diagnostique clinique d'abord, imagerie non systématique, prise en charge médicale graduée avant chirurgie, place précisée de la chirurgie dans les ruptures. Première entrée épaule/coiffe dans la base. En officine : face à une douleur d'épaule qui traîne au comptoir, éviter les antalgiques au long cours sans diagnostic, écarter les urgences (traumatisme, fièvre, perte de mobilité brutale), favoriser l'adaptation des gestes et la rééducation, et orienter vers le médecin avant tout renouvellement prolongé d'AINS ou de paracétamol.",
+      "src": [
+        ["HAS", "https://www.has-sante.fr/jcms/p_3459565/fr/conduite-diagnostique-en-cas-d-epaule-douloureuse-non-traumatique-de-l-adulte-et-prise-en-charge-medicale-et-chirurgicale-des-tendinopathies-de-la-coiffe-des-rotateurs"],
+        ["HAS - argumentaire PDF", "https://www.has-sante.fr/upload/docs/application/pdf/2026-07/dir3/prise_en_charge_des_tendinopathies_rompues_de_la_coiffe_des_rotateurs_-_place_de_la_chirurgie_-_argumentaire.pdf"]
+      ],
+      "geo": "fr"
+    }
+  ]
+}
