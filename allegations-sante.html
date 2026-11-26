@@ -231,6 +231,11 @@ document.querySelectorAll('.chip').forEach(ch => ch.addEventListener('click', ()
   document.querySelectorAll('.chip').forEach(c => c.classList.remove('on'));
   ch.classList.add('on'); F.v = ch.dataset.v; apply();
 }));
+document.getElementById('ch-all').textContent = 'Tout · ' + ALLEG.length;
+document.getElementById('ch-2').textContent = '✅ Prouvée · ' + ALLEG.filter(a => a.vf === 2).length;
+document.getElementById('ch-1').textContent = '🟡 Partielle · ' + ALLEG.filter(a => a.vf === 1).length;
+document.getElementById('ch-0').textContent = '❌ Non prouvée · ' + ALLEG.filter(a => a.vf === 0).length;
+document.getElementById('ch-dg').textContent = '⚠️ Danger signalé · ' + ALLEG.filter(a => !!a.dg).length;
 apply();
 </script>
 </body>
