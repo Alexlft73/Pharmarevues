@@ -1,0 +1,101 @@
+{
+ "revues": [
+  {
+   "id": "r2611-1840a",
+   "ty": "Médicament",
+   "dom": "Ophtalmologie",
+   "n": 3,
+   "dt": "2026-10",
+   "des": "Uvéite non infectieuse : deux essais de phase 3 concluants pour le brepocitinib 45 mg/j, rémission sans corticoïdes chez 62 % des patients à 48 semaines",
+   "tag": "brepocitinib · uvéite non infectieuse · inhibiteur JAK/TYK2 · œdème maculaire",
+   "res": "Les deux essais de phase 3 évaluant le brepocitinib 45 mg une fois par jour dans l'uvéite non infectieuse ont atteint leurs critères principaux : en moyenne 62 % des patients sous brepocitinib ont obtenu une rémission sans corticoïdes à la semaine 48 contre 20 % sous placebo, et 42 % des œdèmes maculaires ont résolu contre 4,8 %. Le temps médian jusqu'à l'échec du traitement dépassait 48 semaines sous brepocitinib contre environ 12 semaines sous placebo ; une demande d'autorisation est attendue. Usage distinct de la dermatomyosite (VALOR) déjà en base. En officine : si le produit est autorisé, anticiper le conseil des patients uvéitiques sous mydriatiques et corticoïdes, la surveillance ophtalmologique rapprochée et les précautions de la classe JAK ; ne jamais substituer le traitement de fond.",
+   "src": [
+    [
+     "EyeWorld",
+     "https://www.eyeworld.org/2026/eyeworld-weekly-october-30-2026/"
+    ]
+   ]
+  },
+  {
+   "id": "r2611-1840b",
+   "ty": "Alerte",
+   "dom": "Ophtalmologie",
+   "n": 5,
+   "dt": "2026-03",
+   "des": "Reproxalap : troisième refus de la FDA dans le syndrome sec oculaire, efficacité non démontrée sur les signes et les symptômes",
+   "tag": "reproxalap · syndrome sec · RASP modulateur · refus FDA · CRL",
+   "res": "La FDA a adressé à Aldeyra sa troisième Complete Response Letter (après 2023 et 2025) : l'efficacité du reproxalap dans la maladie de l'oeil sec nest pas démontrée, avec des résultats inconstants entre essais. La firme envisage une procédure de recours formel ; l'essai ALLEVIATE de phase 3 avait pourtant montré une supériorité sur l'inconfort oculaire (P = 0,004). En officine : aucune place au comptoir pour ce candidat ; continuer de conseiller les substituts lacrymaux sans conservateur, la compliance aux cyclosporines et léviction des facteurs aggravants (écrans, air sec).",
+   "src": [
+    [
+     "HCPLive",
+     "https://www.hcplive.com/view/fda-issues-third-reproxalap-crl-for-dry-eye-disease"
+    ]
+   ]
+  },
+  {
+   "id": "r2611-1840c",
+   "ty": "Médicament",
+   "dom": "Ophtalmologie",
+   "n": 3,
+   "dt": "2026-04",
+   "des": "Motugivatrep, premier collyre antagoniste du TRPV1, lancé au Japon dans le syndrome sec : essai de phase 3 positif sur le score DEQS",
+   "tag": "motugivatrep · TRPV1 · syndrome sec · Japon · symptômes",
+   "res": "Le motugivatrep, premier antagoniste topique du TRPV1, a été commercialisé au Japon pour la maladie de l'oeil sec après un essai de phase 3 montrant une amélioration statistiquement significative du score patient DEQS. Le mécanisme cible les nocicepteurs cornéens liés à l'osmolarité et à l'inflammation ; les critères secondaires et la sécurité à long terme restent à publier. En officine : piste à suivre pour les patients symptomatiques à prédominance de douleur oculaire, pour l'instant non disponible en France ; rappeler que les collyres symptomatiques ne remplacent pas la prise en charge de la maladie.",
+   "src": [
+    [
+     "Ophthalmology Times",
+     "https://www.ophthalmologytimes.com/view/motugivatrep-eye-drops-for-dry-eye-disease-launch-in-japan"
+    ]
+   ]
+  },
+  {
+   "id": "r2611-1840d",
+   "ty": "Médicament",
+   "dom": "Ophtalmologie",
+   "n": 5,
+   "dt": "2026-07",
+   "des": "Lytenava (bevacizumab-vikg) : la FDA approuve la première formulation ophtalmique de bévacizumab pour la DMLA humide",
+   "tag": "bevacizumab-vikg · Lytenava · DMLA humide · anti-VEGF · préparation stérile",
+   "res": "La FDA a approuvé Lytenava, première formulation ophtalmique de bévacizumab destinée à la DMLA humide, après un parcours réglementaire en plusieurs refus depuis 2022. Cette approbation offre une alternative officielle à l'usage hors AMM du bévacizumab injectable reconditionné en officine hospitalière. En officine : les patients sous anti-VEGF demanderont la différence avec leurs injections actuelles ; expliquer que chaque injection reste un acte ophtalmologique stérile et que la fréquence de suivi ne change pas.",
+   "src": [
+    [
+     "Ophthalmology Times",
+     "https://www.ophthalmologytimes.com/view/fda-approves-outlook-therapeutics-lytenava-for-the-treatment-of-wet-amd"
+    ]
+   ]
+  },
+  {
+   "id": "r2611-1840e",
+   "ty": "Médicament",
+   "dom": "Ophtalmologie",
+   "n": 5,
+   "dt": "2026-01",
+   "des": "Yuvezzi (carbachol + brimonidine) : première goutte combinée approuvée par la FDA dans la presbytie (essais BRIO de phase 3)",
+   "tag": "carbachol · brimonidine · presbytie · myosis thérapeutique · goutte quotidienne",
+   "res": "La FDA a approuvé la combinaison fixe carbachol 2,75 % + tartrate de brimonidine 0,1 % (Yuvezzi), première goutte en association pour la presbytie de l'adulte, après les essais de phase 3 BRIO : vision de près supérieure à chaque composant seul, sans événement indésirable grave lié au traitement. La stratégie repose sur le myosis thérapeutique, qui élargit la profondeur de foc sans gêner la vision de loin. En officine : si ce type de goutte arrive en Europe, prévenir les effets attendus (myosis, possible céphalée initiale), l'instillation à horaire fixe et le maintien des corrections optiques ; ne pas banaliser une baisse dacuité inexpliquée chez le presbyte, à orienter vers lophtalmologiste.",
+   "src": [
+    [
+     "Ophthalmology Times",
+     "https://www.ophthalmologytimes.com/view/fda-approves-carbachol-brimonidine-eye-drop-for-presbyopia"
+    ]
+   ]
+  },
+  {
+   "id": "r2611-1840f",
+   "ty": "Médicament",
+   "dom": "Ophtalmologie",
+   "n": 3,
+   "dt": "2025-06",
+   "des": "Vezocolmitide (ST-100) dans le syndrome sec : premiers résultats de phase 3, soulagement rapide des symptômes en 2 à 4 jours mais critère principal non atteint",
+   "tag": "vezocolmitide · ST-100 · collagène · surface oculaire · phase 3",
+   "res": "Le vezocolmitide, collyre réparateur du collagène de la surface oculaire, a montré dans son premier essai de phase 3 un soulagement des symptômes de la maladie de l'oeil sec dès 2 à 4 jours de traitement, avec des améliorations significatives de la cicatrisation de surface et de la fonction visuelle vs placebo ; le critère principal nest toutefois pas atteint statistiquement, et un second essai de phase 3 est en préparation. En officine : candidat à suivre pour les patients en échec des larmes artificielles ; en attendant, le conseil reste hydratation, pauses écrans et substituts sans conservateur.",
+   "src": [
+    [
+     "Ophthalmology Times",
+     "https://www.ophthalmologytimes.com/view/stuart-therapeutics-releases-initial-results-of-phase-3-clinical-trial-evaluating-st-100-vezocolmitide-ophthalmic-solution-for-dry-eye-disease"
+    ]
+   ]
+  }
+ ],
+ "recos": []
+}
