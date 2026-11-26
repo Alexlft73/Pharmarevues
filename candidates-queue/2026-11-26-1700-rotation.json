@@ -1,0 +1,57 @@
+{
+  "revues": [
+    {
+      "id": "r2611-1700a",
+      "ty": "Médicament",
+      "dom": "Infectiologie & Vaccins",
+      "n": 2,
+      "dt": "2026-07",
+      "des": "PediCAP : relais oral précoce et durée raccourcie d'antibiothérapie dans les pneumonies communautaires sévères de l'enfant hospitalisé (essai randomisé factoriel, The Lancet)",
+      "tag": "amoxicilline · co-amoxiclav · pneumonie sévère · relais oral · durée · stewardship",
+      "res": "Essai randomisé factoriel conduit dans 13 hôpitaux d'Afrique australe et de l'Est (1 101 enfants de 2 mois à 6 ans) : le relais oral précoce (amoxicilline ou co-amoxiclav) dès l'amélioration clinique est aussi sûr que 5 jours complets d'injectable, avec des taux de réhospitalisation ou de décès à 28 jours similaires (6 % et 7 % vs 6 %), et l'amoxicilline simple fait aussi bien que le co-amoxiclav à spectre plus large. Publié dans The Lancet, communiqué UCL du 24 juillet 2026 lu. En officine : à la sortie d'hôpital d'un enfant traité pour pneumonie sévère, le relais oral par amoxicilline seule est validé — vérifier la dose en mg/kg (50 mg/kg/j), sécuriser la fin du traitement prescrit sans allonger inutilement, et ne pas substituer par un antibiotique plus large sur demande des parents.",
+      "src": [["UCL News", "https://www.ucl.ac.uk/news/2026/jul/children-severe-pneumonia-can-leave-hospital-sooner-after-switching-oral-antibiotics"], ["EurekAlert", "https://www.eurekalert.org/news-releases/1137271"]]
+    },
+    {
+      "id": "r2611-1700b",
+      "ty": "Médicament",
+      "dom": "Pédiatrie officinale",
+      "n": 3,
+      "dt": "2026-10",
+      "des": "PAEAN : l'érythropoïétine à haute dose n'améliore pas le pronostic neurologique de l'encéphalopathie hypoxique-ischémique du nouveau-né refroidi (essai de phase 3, JAMA Pediatrics)",
+      "tag": "érythropoïétine · EPO · encéphalopathie hypoxique-ischémique · hypothermie thérapeutique · nouveau-né · neuroprotection",
+      "res": "Essai randomisé de phase 3 (24 unités de soins intensifs néonatals en Australie, Nouvelle-Zélande et Singapour, 313 nouveau-nés d'encéphalopathie hypoxique-ischémique modérée à sévère) : cinq doses IV d'érythropoïétine en plus de l'hypothermie thérapeutique n'améliorent pas le devenir — décès ou handicap modéré à sévère similaires entre groupes à 2 ans (communiqué Mater Research du 28 octobre 2026 lu). L'hypothermie reste le traitement de référence. En officine : message utile pour les parents d'un enfant ancien prématuré ou ayant présenté une souffrance néonatale : aucune neuroprotection médicamenteuse complémentaire n'a fait ses preuves à ce jour, l'accompagnement précoce (suivi neuropédiatrique, kinésithérapie, stimulation) prime, et aucun complément censé « réparer le cerveau » n'a de fondement.",
+      "src": [["Mater Research", "https://www.materresearch.org.au/news-publications/news/2026/october/landmark-trial-confirms-cooling-remains-best-treatment-for-newborn-brain-injury"]]
+    },
+    {
+      "id": "r2611-1700c",
+      "ty": "Médicament",
+      "dom": "Infectiologie & Vaccins",
+      "n": 1,
+      "dt": "2026-10",
+      "des": "Cours courts vs cours standards d'antibiotiques oraux dans les pneumonies et infections respiratoires basses de l'enfant : revue systématique et méta-analyse d'essais randomisés (Frontiers in Pharmacology)",
+      "tag": "antibiothérapie · durée courte · pneumonie · infection respiratoire basse · enfant · stewardship",
+      "res": "Revue systématique et méta-analyse d'essais randomisés (Frontiers in Pharmacology, publié le 14 octobre 2026, page ouverte et lue) comparant les durées courtes d'antibiotiques oraux aux durées standard ou allongées dans les pneumonies et infections respiratoires basses non compliquées de l'enfant : les durées courtes n'augmentent pas les échecs cliniques, dans la logique du stewardship antimicrobien pédiatrique. En officine : appui scientifique pour rassurer les parents qui s'inquiètent d'une ordonnance courte (« seulement 3-5 jours ») : courte durée = même efficacité et moins d'effets indésirables et de résistances — expliquer de ne jamais prolonger « au cas où » ni garder les comprimés restants pour une prochaine infection.",
+      "src": [["Frontiers in Pharmacology", "https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2026.1877367/full"]]
+    }
+  ],
+  "recos": [
+    {
+      "spe": "Pédiatrie",
+      "org": "HAS",
+      "dt": "2026-11",
+      "titre": "Pneumocoque : une dose de vaccin conjugué 21-valent (Capvaxive) recommandée chez certains enfants et adolescents à très haut risque (HAS, mise en ligne le 16/11/2026)",
+      "res": "Recommandation HAS publiée le 16 novembre 2026 (lue via Santé Matin) : une dose unique de Capvaxive (VPC21) est préconisée pour certaines situations de vulnérabilité majeure (enfants et adolescents à haut risque d'infection pneumococcique invasive, dès 2 ans), sans remplacer la stratégie vaccinale des autres enfants à risque. Premier vaccin 21-valent positionné en pédiatrie en France, après la base nourrisson sur Prevenar 20. En officine : lors du bilan vaccinal d'un enfant suivi pour drépanocytose, asplénie, immunodépression ou cardiopathie congénitale, vérifier si une dose de VPC21 est indiquée avant le VPP23, et rappeler aux parents que ce vaccin ciblé ne concerne pas les nourrissons standards du calendrier.",
+      "src": [["Santé Matin", "https://www.santematin.fr/pneumocoque-has-capvaxive-enfants-haut-risque-novembre-2026"]],
+      "geo": "fr"
+    },
+    {
+      "spe": "Pédiatrie",
+      "org": "ANSM",
+      "dt": "2026-09",
+      "titre": "Prévention des bronchiolites à VRS : profil de sécurité rassurant du nirsévimab, mais des erreurs médicamenteuses d'administration persistent (actualité ANSM du 16/09/2026)",
+      "res": "Point ANSM du 16 septembre 2026 (page ouverte, date lue) sur la campagne de prévention des bronchiolites à VRS : aucun nouveau risque identifié avec le nirsévimab, profil de sécurité rassurant, mais plus de la moitié des déclarations de pharmacovigilance concernent des erreurs médicamenteuses — comme l'année précédente (confusion de flacon 50 vs 100 mg, erreurs de dose et d'administration). En officine : lors de la délivrance ou de l'accompagnement d'une injection de Beyfortus en maternité ou au cabinet : relecture systématique du dosage selon le poids (< 5 kg : 50 mg ; ≥ 5 kg : 100 mg une fois), et rappel aux parents que l'injection est saisonnière, unique, et sans douleur notable le plus souvent.",
+      "src": [["ANSM", "https://ansm.sante.fr/actualites/prevention-des-bronchiolites-a-vrs-un-profil-de-securite-rassurant-des-erreurs-medicamenteuses-qui-persistent"]],
+      "geo": "fr"
+    }
+  ]
+}
