@@ -207,6 +207,13 @@ function apply() {
     (!F.cat || a.cat === F.cat) &&
     (!q || (a.cl + ' ' + a.sub + ' ' + a.off + ' ' + a.dg + ' ' + a.src.map(s => s[0]).join(' ')).toLowerCase().includes(q))
   );
+  const CATORD = Array.from(document.getElementById('cat').options).map(o => o.value).filter(Boolean);
+  const strip = s => s.replace(/^[««\s]+/, '');
+  rows.sort((x, y) =>
+    (CATORD.indexOf(x.cat) - CATORD.indexOf(y.cat)) ||
+    (y.vf - x.vf) ||
+    (strip(x.cl).localeCompare(strip(y.cl), 'fr'))
+  );
   document.getElementById('tb').innerHTML = rows.map(a => {
     const [lab, cls] = VF[a.vf];
     return '<tr><td><div class="acl">' + esc(a.cl) + '</div><div class="asub">' + esc(a.sub) + '</div><span class="acat">' + esc(a.cat) + (a.dt ? '</span> <span class="dtf">· preuve la plus récente : ' + esc(a.dt) : '') + '</span></td>' +
@@ -215,7 +222,7 @@ function apply() {
       '<td>' + a.src.map(s => '<span class="srcl">🔗 <a href="' + esc(s[1]) + '" target="_blank" rel="noopener">' + esc(s[0]) + '</a></span>').join('') + '</td>' +
       '<td><div class="off">' + esc(a.off) + '</div></td></tr>';
   }).join('');
-  document.getElementById('count').textContent = rows.length + ' / ' + ALLEG.length + ' allégations';
+  document.getElementById('count').textContent = rows.length + ' / ' + ALLEG.length + ' allégations · classées par catégorie, puis verdict';
   document.getElementById('empty').style.display = rows.length ? 'none' : '';
 }
 document.getElementById('q').addEventListener('input', e => { F.q = e.target.value; apply(); });
