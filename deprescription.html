@@ -66,6 +66,7 @@ html.dark #tooltip{background:#e2e8f0;color:#0b1220}
 #paliers{margin-top:16px}
 #paliers h3{font-size:.95rem;margin-bottom:8px}
 .ptab{border-collapse:collapse;font-size:.85rem;width:100%}
+.ptab tr.swrow td{background:rgba(14,165,233,.10)}
 .ptab th,.ptab td{border-bottom:1px solid var(--bord);padding:5px 9px;text-align:left}
 .ptab th{color:var(--gris);font-weight:600;font-size:.74rem}
 .ptab td.num{font-variant-numeric:tabular-nums}
@@ -110,6 +111,7 @@ footer{margin-top:18px;text-align:center;font-size:.78rem;color:var(--gris)}
 <div class="ctl"><label>Médicament</label><select id="selmol" onchange="molChanged()"></select></div>
 <div class="ctl"><label>Dose actuelle <span class="hint">(par prise)</span></label><select id="seldose" onchange="run()"></select></div>
 <div class="ctl"><label>Posologie actuelle</label><select id="seltau" onchange="run()"></select></div>
+<div class="ctl" id="ctlform"><label>Forme actuelle <span class="hint">(pour un protocole réalisable)</span></label><select id="selform" onchange="run()"></select></div>
 <div class="ctl"><label>Plan de décroissance</label><select id="selplan" onchange="planChanged()"></select></div>
 <div class="ctl" id="ctlcustom" style="display:none"><label>Palier personnalisé</label>
 <div class="inline"><div><label class="hint">Réduction (%)</label><input id="cpct" type="number" min="5" max="50" step="5" value="25" onchange="run()"></div>
@@ -151,38 +153,38 @@ footer{margin-top:18px;text-align:center;font-size:.78rem;color:var(--gris)}
 const MOLS_D = {
 /* Paramètres PK repris verbatim du Simulateur PK (RCP 5.2, outil pédagogique) ;
    + cls (classe déprescription), tips (note pro spécifique). */
-omez:{d:"Oméprazole",cls:"IPP",t12:1.2,tx:1.5,f:.35,vd:.3,pb:.95,fe:.02,ds:[10,20],tau:24,
+omez:{d:"Oméprazole",cls:"IPP",t12:1.2,tx:1.5,f:.35,vd:.3,pb:.95,fe:.02,ds:[10,20],tau:24,frm:{cp:0,gel:1,sw:"Oméprazole oral : gélules gastro-résistantes (10/20/40 mg), non sécables ; pas de forme liquide en France. Pour un palier : prise un jour sur 2 ou à la demande ; si une vraie demi-dose est souhaitée, switch vers le pantoprazole comprimé sécable (équivalence approximative, à valider avec le prescripteur)."},
   tips:"IPP de référence : demi-vie plasmatique courte mais inhibition des pompes longue (24-48 h), effet antisécrétoire maximal après 3-5 jours. La courbe d'effet est volontairement lissée par un compartiment effet lent (t½e ≈ 36 h) qui traduit cette persistance."},
-esom:{d:"Ésoméprazole",cls:"IPP",t12:1.3,tx:1.5,f:.7,vd:.8,pb:.97,fe:.02,ds:[20,40],tau:24,
+esom:{d:"Ésoméprazole",cls:"IPP",t12:1.3,tx:1.5,f:.7,vd:.8,pb:.97,fe:.02,ds:[20,40],tau:24,frm:{cp:0,gel:1,sach:10,sw:"Ésoméprazole oral : gélules (20/40 mg) et granulés gastro-résistants en sachets de 10 mg. Les sachets rendent les demi-doses réalisables (20 mg → 2 sachets, palier → 1 sachet de 10 mg)."},
   tips:"S-isomère de l'oméprazole, biodisponibilité plus élevée. Même logique : l'effet sur la pompe dure bien au-delà de la demi-vie plasmatique."},
-pant:{d:"Pantoprazole",cls:"IPP",t12:1.5,tx:1.5,f:.77,vd:.3,pb:.98,fe:.05,ds:[20,40],tau:24,
+pant:{d:"Pantoprazole",cls:"IPP",t12:1.5,tx:1.5,f:.77,vd:.3,pb:.98,fe:.05,ds:[20,40],tau:24,frm:{cp:1,sw:"Pantoprazole : comprimés gastro-résistants sécables (20/40 mg) — la forme de switch pratique pour fractionner quand un patient est sur gélules d'un autre IPP (équivalence approximative, à valider avec le prescripteur)."},
   tips:"IPP à demi-vie courte, inhibition acide persistante plusieurs jours : un arrêt sans palier est envisageable chez la plupart des patients ; rebond acide transitoire possible."},
-diaz:{d:"Diazépam",cls:"BZD",t12:40,tx:1,f:.94,vd:1.2,pb:.98,fe:.02,ds:[2,5,10],tau:12,
+diaz:{d:"Diazépam",cls:"BZD",t12:40,tx:1,f:.94,vd:1.2,pb:.98,fe:.02,ds:[2,5,10],tau:12,frm:{cp:1,gt:0.3333333333333333,gtd:"1 goutte ≈ 0,33 mg",sw:"Switch classique des paliers fins : comprimé sécable → Valium 1 % en gouttes (1 mL = 30 gouttes = 10 mg), même dose en mg, puis baisse de 2-3 gouttes par palier."},
   met:{n:"désméthyldiazépam",fr:.45,t12:60,vd:1.1,q:.95,fe:.02,txt:"La désméthyldiazépam (nordazépam, t½ ≈ 60 h) s'accumule sur plusieurs jours et prolonge la sédation bien après l'arrêt — déterminant chez le sujet âgé (chutes)."},
   tips:"Benzodiazépine « pivot » des conversions : demi-vie longue (≈ 40 h) + métabolite actif (≈ 60 h) qui lissent naturellement la décroissance. La molécule la plus « confortable » pour un sevrage."},
-lorz:{d:"Lorazépam",cls:"BZD",t12:12,tx:2,f:.93,vd:1.1,pb:.85,fe:.02,ds:[.5,1,2],tau:12,
+lorz:{d:"Lorazépam",cls:"BZD",t12:12,tx:2,f:.93,vd:1.1,pb:.85,fe:.02,ds:[.5,1,2],tau:12,frm:{cp:1,sw:"Lorazépam : comprimés sécables (0,5/1/2 mg) ; pas de forme liquide en France. Paliers fins : ¼ de cp (0,25 mg avec le cp à 1 mg) puis un jour sur 2."},
   tips:"Demi-vie intermédiaire (≈ 12 h), pas de métabolite actif (glucuronidation directe) : décroissance plus « sensible » que le diazépam, paliers fins utiles en fin de parcours ; préféré chez le sujet âgé ou cirrhotique."},
-alpz:{d:"Alprazolam",cls:"BZD",t12:11.5,tx:1.2,f:.9,vd:.8,pb:.8,fe:.02,ds:[.25,.5],tau:12,
+alpz:{d:"Alprazolam",cls:"BZD",t12:11.5,tx:1.2,f:.9,vd:.8,pb:.8,fe:.02,ds:[.25,.5],tau:12,frm:{cp:1,sw:"Alprazolam : comprimés sécables ; pas de forme liquide en France. Si le ¼ de cp reste trop grand : conversion au diazépam (lui-même disponible en gouttes) à discuter avec le prescripteur."},
   tips:"Demi-vie courte (≈ 11,5 h), risque de creux inter-doses : espacer les paliers, ou conversion au diazépam (équivalence) à discuter avec le prescripteur."},
-clop:{d:"Clonazépame",cls:"BZD",t12:35,tx:1.5,f:.85,vd:3,pb:.86,fe:.02,ds:[.5,1,2],tau:24,
+clop:{d:"Clonazépame",cls:"BZD",t12:35,tx:1.5,f:.85,vd:3,pb:.86,fe:.02,ds:[.5,1,2],tau:24,frm:{cp:1,gt:0.1,gtd:"1 goutte = 0,1 mg",sw:"Rivotril gouttes (1 goutte = 0,1 mg) : décroissance de 1 à 2 gouttes par palier possible. Usage strictement épileptique en France : coordination médicale indispensable."},
   tips:"Demi-vie longue (≈ 35 h), décroissance plus douce qu'une BZD courte mais puissance élevée. Usage strictement épileptique hors protocoles particuliers : un sevrage expose à la reprise de crises si indication épileptique, coordination médicale indispensable."},
-zolp:{d:"Zolpidem",cls:"Z",t12:2.5,tx:1.5,f:.7,vd:.54,pb:.93,fe:.01,ds:[5,10],tau:24,
+zolp:{d:"Zolpidem",cls:"Z",t12:2.5,tx:1.5,f:.7,vd:.54,pb:.93,fe:.01,ds:[5,10],tau:24,frm:{cp:1,sw:"Zolpidem : cp 10 mg sécable et cp 5 mg (dose préférentielle chez la femme, ANSM) ; pas de forme liquide. Paliers : 5 mg puis 2,5 mg (¼ de cp 10) puis nuits alternées."},
   tips:"Demi-vie très courte (≈ 2,5 h), pas de métabolite actif. Arrêt brutal après usage prolongé : insomnie de rebond marquée les 1-3 premières nuits — préférer demi-dose puis quart, ou « nuits alternées »."},
-zopi:{d:"Zopiclone",cls:"Z",t12:5,tx:1.5,f:.75,vd:1.5,pb:.6,fe:.1,ds:[3.75,7.5],tau:24,
+zopi:{d:"Zopiclone",cls:"Z",t12:5,tx:1.5,f:.75,vd:1.5,pb:.6,fe:.1,ds:[3.75,7.5],tau:24,frm:{cp:1,sw:"Zopiclone : cp sécables 3,75/7,5 mg ; pas de forme liquide. Paliers : ½ cp puis ¼ cp puis nuits alternées."},
   tips:"Demi-vie courte (≈ 5 h). Même logique que le zolpidem : symptômes surtout d'insomnie de rebond ; pas d'équivalence diazépam fiable."},
-parx:{d:"Paroxétine",cls:"AD",t12:21,tx:5,f:.5,vd:8,pb:.95,fe:.02,ds:[10,20],tau:24,
+parx:{d:"Paroxétine",cls:"AD",t12:21,tx:5,f:.5,vd:8,pb:.95,fe:.02,ds:[10,20],tau:24,frm:{cp:1,sw:"Paroxétine : comprimés sécables. La suspension buvable (Deroxat 20 mg/10 mL) a été supprimée en France : pas de forme liquide. Paliers fins : ½ cp puis ¼ cp, puis un jour sur 2 ; syndrome d'interruption marqué → espacer."},
   tips:"ISRS à demi-vie courte sans métabolite actif : syndrome d'interruption le plus marqué des ISRS (vertiges, « décharges électriques », nausées). Paliers obligatoirement lents, parfois fractionnaires en fin de parcours."},
-sert:{d:"Sertraline",cls:"AD",t12:26,tx:6,f:.44,vd:20,pb:.98,fe:0,ds:[25,50,100],tau:24,
+sert:{d:"Sertraline",cls:"AD",t12:26,tx:6,f:.44,vd:20,pb:.98,fe:0,ds:[25,50,100],tau:24,frm:{cp:1,sw:"Sertraline : comprimés sécables (25/50/100 mg) ; pas de forme liquide commercialisée en France. Paliers usuels : 50 → 25 mg puis un jour sur 2."},
   tips:"ISRS de demi-vie intermédiaire (≈ 26 h). Syndrome d'interruption possible mais généralement plus modéré que la paroxétine ; décroissance 2-4 semaines en paliers usuels."},
-escx:{d:"Escitalopram",cls:"AD",t12:30,tx:4,f:.8,vd:12,pb:.56,fe:.08,ds:[5,10,20],tau:24,
+escx:{d:"Escitalopram",cls:"AD",t12:30,tx:4,f:.8,vd:12,pb:.56,fe:.08,ds:[5,10,20],tau:24,frm:{cp:1,gt:1,gtd:"1 goutte = 1 mg",sw:"Séroplex gouttes (20 mg/mL, 1 goutte = 1 mg) : switch pratique pour les paliers fins, surtout en fin de parcours (5 mg → 4 puis 3 gouttes…)."},
   tips:"ISRS, isomère S de la citalopram (demi-vie ≈ 30 h). Décroissance simple en paliers de 25 % toutes les 2-4 semaines dans la plupart des cas."},
-flux:{d:"Fluoxétine",cls:"AD",t12:96,tx:6,f:.9,vd:20,pb:.95,fe:.02,ds:[10,20],tau:24,
+flux:{d:"Fluoxétine",cls:"AD",t12:96,tx:6,f:.9,vd:20,pb:.95,fe:.02,ds:[10,20],tau:24,frm:{cp:1,gel:1,solc:4,sold:"solution buvable 20 mg/5 mL (4 mg/mL)",sw:"Fluoxétine : gélules 20 mg non sécables, cp dispersibles sécables, et solution buvable 20 mg/5 mL (4 mg/mL) pour les paliers fins (5 mL = 20 mg ; 1,25 mL = 5 mg)."},
   met:{n:"norfluoxétine",fr:.4,t12:180,vd:20,q:.96,fe:.1,txt:"La norfluoxétine s'accumule pendant des semaines (t½ ≈ 4-16 jours) : après l'arrêt, elle reste inhibitrice du CYP2D6 des semaines durant."},
   tips:"« Auto-décroissance » intégrée : demi-vie très longue (≈ 96 h) + norfluoxétine (t½ ≈ 180 h). Arrêt souvent bien toléré ; la courbe le montre : l'effet redescend seul, en pente douce."},
-venl:{d:"Venlafaxine",cls:"AD",t12:5,tx:2,f:.45,vd:7.5,pb:.27,fe:.05,ds:[37.5,75],tau:12,
+venl:{d:"Venlafaxine",cls:"AD",t12:5,tx:2,f:.45,vd:7.5,pb:.27,fe:.05,ds:[37.5,75],tau:12,frm:{cp:0,gel:1,sw:"Venlafaxine orale : gélules LP (37,5/75 mg) non sécables ; plus de comprimé non-LP commercialisé en France. Décroissance usuelle : 75 → 37,5 mg (dosage inférieur), puis 37,5 mg un jour sur 2, puis un jour sur 3. Tensions d'approvisionnement ponctuelles sur les gélules LP (ANSM) : anticiper les commandes."},
   met:{n:"O-désméthylvenlafaxine",fr:.45,t12:10,vd:3.4,q:.95,fe:.5,txt:"Métabolite antidépresseur à part entière (desvenlafaxine) : une grande partie de l'effet et de l'accumulation passe par lui."},
   tips:"IRSNa à demi-vie TRÈS courte (≈ 5 h) + métabolite actif (≈ 10 h) : syndrome d'interruption fréquent et parfois intense si les paliers sont rapides. Réductions petites et régulières ; les formes LP facilitent les paliers."},
-mirt:{d:"Mirtazapine",cls:"AD",t12:30,tx:2,f:.5,vd:3.4,pb:.85,fe:.15,ds:[15,30],tau:24,
+mirt:{d:"Mirtazapine",cls:"AD",t12:30,tx:2,f:.5,vd:3.4,pb:.85,fe:.15,ds:[15,30],tau:24,frm:{cp:1,sw:"Mirtazapine : comprimés orodispersibles sécables (15/30 mg). Paliers : 15 mg puis 7,5 mg (½ cp) puis un jour sur 2."},
   tips:"Demi-vie ≈ 30 h, syndrome d'interruption plus rare que les ISRS/IRSNa courts. Attention : la reprise de l'insomnie ou de la baisse d'appétit (indications où elle est prescrite) est attendue et peut inquiéter."}
 };
 /* t½e (h) : demi-vie d'équilibre du compartiment effet, pédagogique, par classe.
@@ -265,7 +267,7 @@ function c1m(P,t){ if(!P.met||t<0) return 0; var s=0; for(var j=0;j<3;j++) s+=P.
 /* ===== état ===== */
 var $=function(id){return document.getElementById(id);};
 var MODE="pro";
-var ST={i:0,dose:null,tau:24,plan:0};
+var ST={i:0,dose:null,tau:24,plan:0,form:"cp"};
 var KEYS=Object.keys(MOLS_D);
 var CLSICON={IPP:"🍽️",BZD:"💊",Z:"🌙",AD:"🧠"};
 var last=null;
@@ -479,6 +481,16 @@ function fillDose(){
     var op=document.createElement("option"); op.value=o.v; op.textContent=o.k; sq.appendChild(op);
   });
   sq.value=String(m.tau); ST.tau=m.tau;
+  var sf=$("selform"); sf.innerHTML="";
+  var fo=[], fr=m.frm||{};
+  if(fr.cp) fo.push(["cp","Comprimé(s) sécable(s)"]);
+  if(fr.gel) fo.push(["gel","Gélule(s) (non sécable)"]);
+  if(fr.gt) fo.push(["gt","Gouttes ("+fr.gtd+")"]);
+  if(fr.solc) fo.push(["sol","Solution buvable"]);
+  fo.forEach(function(o2){ var op2=document.createElement("option"); op2.value=o2[0]; op2.textContent=o2[1]; sf.appendChild(op2); });
+  var hasF=fo.some(function(o2){ return o2[0]===ST.form; });
+  sf.value=hasF?ST.form:(fo.length?fo[0][0]:"cp");
+  ST.form=sf.value;
   var sp=$("selplan");
   sp.innerHTML="";
   cls().prev.forEach(function(p,i){ var op=document.createElement("option"); op.value=i; op.textContent=p.k; sp.appendChild(op); });
@@ -559,6 +571,7 @@ function run(){
   ST.dose=parseFloat($("seldose").value)||m.ds[0];
   ST.tau=parseFloat($("seltau").value)||m.tau;
   ST.plan=parseInt($("selplan").value,10)||0;
+  var sfv=$("selform").value; if(sfv) ST.form=sfv;
   $("cmol").textContent=CLSICON[m.cls]+" "+m.d;
   $("cmolsub").textContent=c.label+" · t½ "+fmt(m.t12,1)+" h"+(m.met?" · métabolite actif : "+m.met.n+" (t½ "+fmt(m.met.t12,0)+" h)":"");
   var res=simulate();
@@ -571,7 +584,7 @@ function run(){
   renderInfo();
   var pill='<b>'+c.label+'</b><br>'+m.tips;
   $("pillinfo").innerHTML=pill;
-  $("srcp").innerHTML='Sources : paramètres PK moyens issus des RCP (section 5.2), consultables sur la <a href="https://base-donnees-publique.medicaments.gouv.fr/" target="_blank" rel="noopener">base publique du médicament (ANSM)</a> ; recommandations françaises HAS/ANSM sur la durée de prescription et l\'arrêt des benzodiazépines, apparentés et antidépresseurs. Compartiment effet : modèle à effect-site (ke0) pédagogique, relation concentration-effet supposée linéaire dans cette zone.';
+  $("srcp").innerHTML='Sources : paramètres PK moyens issus des RCP (section 5.2), consultables sur la <a href="https://base-donnees-publique.medicaments.gouv.fr/" target="_blank" rel="noopener">base publique du médicament (ANSM)</a> ; recommandations françaises HAS/ANSM sur la durée de prescription et l\'arrêt des benzodiazépines, apparentés et antidépresseurs. Équivalences des formes (RCP ANSM) : Valium 1 % gouttes (1 mL = 30 gouttes = 10 mg de diazépam), Rivotril 2,5 mg/mL (1 goutte = 0,1 mg de clonazépam), Séroplex 20 mg/mL (1 goutte = 1 mg d\'escitalopram), fluoxétine solution buvable 20 mg/5 mL. Compartiment effet : modèle à effect-site (ke0) pédagogique, relation concentration-effet supposée linéaire dans cette zone.';
   $("legend").innerHTML='<span><span class="sw" style="background:var(--teal)"></span>Effet du médicament, en % du niveau d\'avant la décroissance — les pointillés verticaux marquent les changements de palier</span>';
   $("ftot").textContent="15 molécules — phase 1 (IPP, benzodiazépines, apparentés Z, antidépresseurs)";
 }
@@ -595,20 +608,68 @@ function fracStr(f){
   for(var i=0;i<M.length;i++){ if(Math.abs(f-M[i][0])<1e-9) return M[i][1]; }
   return null;
 }
+/* ===== formes : gouttes / solution / gélules (V4) ===== */
+function liqOf(){ /* forme liquide disponible pour la molécule courante (gouttes ou solution) */
+  var m=mol(), fr=m.frm||{};
+  if(fr.gt) return {kind:"gt",mg:fr.gt,label:"gouttes ("+fr.gtd+")"};
+  if(fr.solc) return {kind:"sol",mg:fr.solc,label:fr.sold};
+  return null;
+}
+function liqEq(mg){ /* équivalent liquide d'une dose, quelle que soit la forme sélectionnée */
+  var L=liqOf(); if(!L) return null;
+  if(L.kind==="gt"){ var n=Math.max(1,Math.round(mg/L.mg)); return {t:n+" goutte"+(n>1?"s":"")+" ("+dstr(n*L.mg)+" mg)",mg:n*L.mg}; }
+  var ml=Math.max(0.25,Math.round(mg/L.mg*4)/4);
+  return {t:dstr(ml)+" mL ("+dstr(ml*L.mg)+" mg)",mg:ml*L.mg};
+}
+function mgTxt(mg){ /* dose (mg) exprimée dans l'unité de la forme LIQUIDE courante ; null sinon */
+  var m=mol(), fr=m.frm||{};
+  if(ST.form==="gt"&&fr.gt){ var n=Math.max(1,Math.round(mg/fr.gt)); return {t:n+" goutte"+(n>1?"s":""),mg:n*fr.gt}; }
+  if(ST.form==="sol"&&fr.solc){ var ml=Math.max(0.25,Math.round(mg/fr.solc*4)/4); return {t:dstr(ml)+" mL",mg:ml*fr.solc}; }
+  return null;
+}
+function firstTxt(){ /* libellé de la prise actuelle selon la forme */
+  var q=mgTxt(ST.dose);
+  if(q) return q.t+" ("+dstr(q.mg)+" mg)";
+  if(ST.form==="gel") return "1 gélule entière ("+dstr(ST.dose)+" mg)";
+  return "comprimé entier ("+dstr(ST.dose)+" mg)";
+}
 function priseTxt(factor,alt,refMg){
-  var fs=fracStr(factor), mg=refMg*factor;
+  var m=mol(), fr=m.frm||{}, mg=refMg*factor;
+  var q=mgTxt(mg);
+  if(q){ var t2=q.t+" ("+dstr(q.mg)+" mg)"+(alt?" <b>un jour sur 2</b>":""); return t2; }
+  if(ST.form==="gel"&&fr.gel){
+    if(fr.sach){
+      var nn=Math.round(mg/fr.sach);
+      if(nn>=1&&Math.abs(nn*fr.sach-mg)<=1e-6) return nn+" sachet"+(nn>1?"s":"")+" de "+dstr(fr.sach)+" mg ("+dstr(mg)+" mg)";
+      if(nn<1) return "fraction de sachet peu précise : garder 1 sachet de "+dstr(fr.sach)+" mg ("+dstr(fr.sach)+" mg)";
+      return "viser "+dstr(mg)+" mg : arrondir à "+nn+" sachet(s) ("+dstr(nn*fr.sach)+" mg) ou alterner les jours";
+    }
+    if(factor>=1-1e-9) return "1 gélule entière ("+dstr(mg)+" mg)";
+    if(factor>=0.45-1e-9) return "1 gélule <b>un jour sur 2</b> (moyenne ≈ "+dstr(mg)+" mg/j)";
+    return "≈ "+dstr(mg)+" mg : gélule non sécable → utiliser le dosage inférieur disponible et/ou l'alternance (un jour sur 2 puis un jour sur 3), à convenir avec le prescripteur";
+  }
+  var fs=fracStr(factor);
   var t=fs?fs:(fmt(factor*100,0)+' % de la dose');
   if(alt) t+=' <b>un jour sur 2</b>';
   t+=' ('+dstr(mg)+' mg)';
   return t;
 }
 function renderPaliers(res){
-  var box=$("paliers"), today=new Date();
-  var rows='<tr><td>'+fmtDate(today)+'</td><td>comprimé entier</td><td class="num">'+dstr(ST.dose)+' mg</td></tr>';
+  var box=$("paliers"), today=new Date(), m=mol(), fr=m.frm||{}, liq=liqOf();
+  var sw=(ST.form==="gel"&&liq);
+  var prevForm=ST.form;
+  var fT=firstTxt(); /* 1re ligne = forme actuelle du patient */
+  if(sw) ST.form=liq.kind; /* après le switch, les paliers s'expriment dans la forme liquide */
+  var rows='<tr><td>'+fmtDate(today)+'</td><td>'+fT+'</td><td class="num">'+dstr(ST.dose)+' mg</td></tr>';
+  if(sw){ var t0=new Date(today.getTime()+864e5); var q0=liqEq(ST.dose); rows+='<tr class="swrow"><td>Dès demain ('+fmtDate(t0)+')</td><td>🔄 <b>Switch</b> : même dose en '+liq.label+' → '+(q0?q0.t:"—")+'</td><td class="num">'+dstr(ST.dose)+' mg</td></tr>'; }
   res.sch.steps.forEach(function(st,idx){
     if(idx===0&&st.h===res.sch.preH&&st.factor>0&&st.factor<1){
       var t1=new Date(today.getTime()+864e5);
-      rows+='<tr><td>Dès demain ('+fmtDate(t1)+')</td><td>'+priseTxt(st.factor,st.alt,ST.dose)+'</td><td class="num">'+dstr(ST.dose*st.factor)+' mg</td></tr>';
+      if(sw){
+        rows+='<tr class="swrow"><td>Dès demain ('+fmtDate(t1)+')</td><td>🔄 Switch + 1<sup>er</sup> palier : '+priseTxt(st.factor,st.alt,ST.dose)+'</td><td class="num">'+dstr(ST.dose*st.factor)+' mg</td></tr>';
+      } else {
+        rows+='<tr><td>Dès demain ('+fmtDate(t1)+')</td><td>'+priseTxt(st.factor,st.alt,ST.dose)+'</td><td class="num">'+dstr(ST.dose*st.factor)+' mg</td></tr>';
+      }
       return;
     }
     var d=new Date(today.getTime()+Math.round((st.h-res.sch.preH)/24)*864e5);
@@ -618,14 +679,26 @@ function renderPaliers(res){
       rows+='<tr><td>'+fmtDate(d)+'</td><td>'+priseTxt(st.factor,st.alt,ST.dose)+'</td><td class="num">'+dstr(ST.dose*st.factor)+' mg</td></tr>';
     }
   });
+  var note="Comprimés : supposés sécables en quarts ; sinon, utiliser le dosage inférieur disponible ou une forme liquide. ";
+  if(liq&&ST.form!=="gel") note+="💡 Paliers fins possibles : "+liq.label+". ";
+  if(fr.sw) note+=fr.sw+" ";
+  note+="Support de discussion avec le prescripteur, pas une ordonnance.";
   box.innerHTML='<h3>Calendrier des paliers</h3><table class="ptab"><tr><th>Quand</th><th>Prise</th><th>Dose journalière</th></tr>'+rows+'</table>'
-   +'<div class="note">Comprimés supposés sécables en quarts ; sinon, utiliser le dosage inférieur disponible ou les gouttes. Support de discussion avec le prescripteur, pas une ordonnance.</div>';
+   +'<div class="note">'+note+'</div>';
+  ST.form=prevForm;
 }
 function renderInfo(){
   var m=mol(), c=cls(), box=$("info"), h="";
   if(MODE==="pro"){
     h+='<h2>🧑‍⚕️ Fiche professionnelle — '+m.d+'</h2>';
     h+='<div class="card"><h3>'+m.d+' et déprescription</h3><p>'+m.tips+'</p></div>';
+    var fr=m.frm||{}, fb=[];
+    if(fr.cp) fb.push("comprimés sécables");
+    if(fr.gel) fb.push("gélules (non sécables)");
+    if(fr.gt) fb.push("gouttes ("+fr.gtd+")");
+    if(fr.sach) fb.push("sachets de granulés "+dstr(fr.sach)+" mg");
+    if(fr.solc) fb.push(fr.sold);
+    if(fb.length) h+='<div class="card"><h3>Formes orales disponibles & switch</h3><p><b>En France :</b> '+fb.join(" · ")+'. '+(fr.sw||"")+'</p></div>';
     h+='<div class="card"><h3>'+c.pro.title+'</h3><ul>'+c.pro.points.map(function(p){return '<li>'+p+'</li>';}).join("")+'</ul></div>';
     if(c.eq){
       h+='<div class="card warn"><h3>'+c.eq.title+'</h3><table class="eqtab"><tr><th>Molécule</th><th>≈ équivalent de 10 mg de diazépam</th></tr>'+c.eq.rows.map(function(r){return '<tr><td>'+r[0]+'</td><td>'+r[1]+'</td></tr>';}).join("")+'</table><p class="note">'+c.eq.note+'</p></div>';
