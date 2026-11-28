@@ -1,0 +1,109 @@
+{
+ "revues": [
+  {
+   "id": "r2711a",
+   "ty": "Médicament",
+   "dom": "Pneumologie",
+   "n": 3,
+   "dt": "2026-11",
+   "des": "Antifibrotiques dans les pneumopathies interstitielles fibrosantes : état des preuves et pratique clinique (revue narrative, Biomedicines 14(12):2737)",
+   "tag": "antifibrotiques | FPI | fibrose pulmonaire progressive | nintédanib | pirfénidone | nérandomilast",
+   "res": "Revue narrative des traitements antifibrotiques dans les pneumopathies interstitielles fibrosantes (FPI et fibrose pulmonaire progressive) : état des preuves et pratique clinique. Distinct de la ligne « FDA approuve le nérandomilast » (2025-10, alerte autorisation) : ici la synthèse thérapeutique globale. En officine : Pour vos patients sous pirfénidone ou nintédanib : rappeler la prise pendant le repas (tolérance digestive), la protection solaire sous pirfénidone, et l'arrêt du tabac ; le nérandomilast (inhibiteur PDE4B oral) est le premier traitement nouveau de la FPI en plus d'une décennie.",
+   "src": [
+    [
+     "MDPI Biomedicines (page ouverte, « Review | 25 November 2026 »)",
+     "https://www.mdpi.com/2227-9059/14/12/2737"
+    ]
+   ]
+  },
+  {
+   "id": "r2711b",
+   "ty": "Médicament",
+   "dom": "Rhumatologie",
+   "n": 1,
+   "dt": "2026-04",
+   "des": "Ostéoporose à très haut risque de fracture : la stratégie « anabolique d'abord » passe en revue systématique (SR/MA, Medicina 62(4):687)",
+   "tag": "ostéoporose | stratégie anabolique d'abord | tériparatide | abaloparatide | rombosozumab | risque de fracture très élevé",
+   "res": "Revue systématique et méta-analyse sur la stratégie « anabolique d'abord » vs antirésorptif d'abord chez les patients à TRÈS HAUT risque de fracture : évaluation des résultats fracturaires. Complète la RECO NOGG 2024 en base sur l'axe séquence thérapeutique. Chiffres non lus. En officine : chez vos patientes ostéoporotiques ayant déjà eu une fracture (poignet, vertèbre), le traitement « fort d'emblée » (anabolique) est de plus en plus défendu : la suite du traitement reste nécessaire (bisphosphonate) après la cure ; questions fréquentes au comptoir sur la conservation au frigo du stylo.",
+   "src": [
+    [
+     "MDPI Medicina (page ouverte, « Systematic Review | 3 April 2026 »)",
+     "https://doi.org/10.3390/medicina62040687"
+    ]
+   ]
+  },
+  {
+   "id": "r2711c",
+   "ty": "Médicament",
+   "dom": "ORL & stomatologie",
+   "n": 3,
+   "dt": "2026-04",
+   "des": "Sinusite chronique réfractaire : adaptation des biofilms et dysrégulation immunitaire muqueuse, de la pathogénie à la feuille de route thérapeutique (Frontiers in Immunology 17:1797096)",
+   "tag": "sinusite chronique réfractaire | biofilm | dysimmunité muqueuse | roadmap thérapeutique",
+   "res": "Revue narrative : adaptation des biofilms et dérégulation immunitaire muqueuse dans les rhinosinusites chroniques réfractaires, du mécanisme à la feuille de route thérapeutique. Angle microbiote/biofilm distinct des lignes CRS en base (biothérapies, guideline AAO-HNS, chirurgie). En officine : les lavages de nez réguliers restent le socle : ils déstabilisent mécaniquement les biofilms ; dans les sinusites chroniques « qui traînent », c'est souvent la persistance du biofilm, pas un manque d'antibiotique.",
+   "src": [
+    [
+     "Frontiers in Immunology (page ouverte, « Front. Immunol., 14 April 2026 »)",
+     "https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2026.1797096/full"
+    ]
+   ]
+  },
+  {
+   "id": "r2711d",
+   "ty": "Officine",
+   "dom": "Santé publique",
+   "n": 1,
+   "dt": "2026-08",
+   "des": "Interventions en pharmacie pour patients à littératie en santé limitée et maladie chronique : revue systématique focus co-conception (Research in Social and Administrative Pharmacy)",
+   "tag": "littératie en santé | pharmacie | maladie chronique | co-conception",
+   "res": "Revue systématique (PMID 42637584, epub 22/08/2026, confirmé en session) des interventions en pharmacie pour patients à littératie en santé limitée et maladie chronique, avec focus sur la co-construction (co-design) : efficacité sur les résultats liés au médicament et place des éléments co-conçus. Distinct de la ligne « BPCO : littératie en santé et technique d'inhalation » (angle pathologie spécifique). En officine : un patient qui « ne comprend pas la notice » n'est pas inattentif : préférer des consignes courtes, orales, répétées, avec démonstration (inhalateur, stylo), et des supports co-construits avec les patients.",
+   "src": [
+    [
+     "PubMed (PMID 42637584, DOI 10.1016/j.sapharm.2026.08.006, epub 22/08/2026 vérifié via Europe PMC)",
+     "https://pubmed.ncbi.nlm.nih.gov/42637584/"
+    ],
+    [
+     "ScienceDirect (page article vue en résultats)",
+     "https://www.sciencedirect.com/science/article/pii/S1551741126001890"
+    ]
+   ]
+  },
+  {
+   "id": "r2711e",
+   "ty": "Médicament",
+   "dom": "Gynécologie & Ménopause",
+   "n": 3,
+   "dt": "2026-02",
+   "des": "Vaginose bactérienne : reconnaître la transmission sexuelle et le pipeline des thérapies (Current Opinion in Infectious Diseases 39(1):67-74)",
+   "tag": "vaginose bactérienne | transmission sexuelle | pipeline thérapeutique | microbiote vaginal",
+   "res": "Revue (numéro de février 2026, epub 27/11/2025) : reconnaître la transmission sexuelle de la vaginose bactérienne et le pipeline des thérapies ; récidive > 50 % à 6 mois après antibiothérapie standard, d'où les approches « microbiome-informed », durables et contrôlées par la femme. Distinct de la ligne VIBRANT (essai L. crispatus, 2026-05). En officine : la vaginose qui revient n'est pas une « hygiène » insuffisante : c'est une dysbiose, possiblement transmise ; éviter les douches vaginales, et les récidives répétées justifient une consultation (le traitement du partenaire se discute).",
+   "src": [
+    [
+     "Ovid citation (Current Opinion in Infectious Diseases 39(1):p 67-74, February 2026)",
+     "https://www.ovid.com/jnls/co-infectiousdiseases/abstract/10.1097/qco.0000000000001172~advances-in-treating-bacterial-vaginosis-recognizing-sexual?context=latestarticles&redirectionsource=fulltextview"
+    ],
+    [
+     "PubMed 41452092 (récidive >50 % à 6 mois lue dans l'abstract)",
+     "https://pubmed.ncbi.nlm.nih.gov/41452092/"
+    ]
+   ]
+  },
+  {
+   "id": "r2711f",
+   "ty": "Médicament",
+   "dom": "ORL & stomatologie",
+   "n": 3,
+   "dt": "2026-09",
+   "des": "Vertige positionnel paroxystique bénin : revue des différentes méthodes diagnostiques (Audiology Research 16(5):137)",
+   "tag": "VPPB | diagnostic | manœuvres positionnelles | nystagmus",
+   "res": "Revue narrative des différentes méthodes diagnostiques du vertige positionnel paroxystique bénin. Distinct de la ligne « VPPB : bétahistine contre les vertiges résiduels » (angle traitement) : ici l'axe diagnostique. En officine : un vertige qui survient uniquement au changement de position (retournement au lit, lever brusque) et dure moins d'une minute oriente vers le VPPB : c'est bénin et ça se soigne par manœuvre, pas par cachet au long cours.",
+   "src": [
+    [
+     "MDPI Audiology Research (page ouverte, « Review | 17 September 2026 », Audiol. Res. 2026, 16(5), 137)",
+     "https://doi.org/10.3390/audiolres16050137"
+    ]
+   ]
+  }
+ ],
+ "recos": []
+}
